@@ -56,7 +56,7 @@
             "44eb5b49b8b424a0",
             "075a15808a098657"
         ],
-        "x": 54,
+        "x": 74,
         "y": 219,
         "w": 632,
         "h": 302
@@ -77,7 +77,7 @@
             "9b648872ae81aab5",
             "c8ed469b996d6c31"
         ],
-        "x": 254,
+        "x": 274,
         "y": 919,
         "w": 432,
         "h": 302
@@ -94,7 +94,7 @@
             "323bd09eef621b97",
             "0fbc2b8ebb65e449"
         ],
-        "x": 534,
+        "x": 554,
         "y": 79,
         "w": 152,
         "h": 122
@@ -115,7 +115,7 @@
             "6bc8c275a77643bf",
             "7df6c5b3dd81f3d3"
         ],
-        "x": 534,
+        "x": 554,
         "y": 539,
         "w": 152,
         "h": 362
@@ -470,7 +470,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "information-text",
-        "x": 610,
+        "x": 630,
         "y": 260,
         "wires": []
     },
@@ -492,7 +492,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "information-text",
-        "x": 610,
+        "x": 630,
         "y": 320,
         "wires": []
     },
@@ -514,7 +514,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "information-text",
-        "x": 610,
+        "x": 630,
         "y": 380,
         "wires": []
     },
@@ -536,7 +536,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "information-text",
-        "x": 610,
+        "x": 630,
         "y": 960,
         "wires": []
     },
@@ -558,7 +558,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "information-text",
-        "x": 610,
+        "x": 630,
         "y": 1020,
         "wires": []
     },
@@ -580,7 +580,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "information-text",
-        "x": 610,
+        "x": 630,
         "y": 1080,
         "wires": []
     },
@@ -626,7 +626,7 @@
         "topic": "",
         "payload": "{\"software-version\":\"v2024.0.0-aplha.0\",\"instrument-type\":\"PlanktoScope v2.6\",\"instrument-name\":\"complete-wind-49753\"}",
         "payloadType": "json",
-        "x": 160,
+        "x": 180,
         "y": 320,
         "wires": [
             [
@@ -801,7 +801,7 @@
         "fontSize": "74",
         "color": "#000000",
         "className": "title-top",
-        "x": 610,
+        "x": 630,
         "y": 120,
         "wires": []
     },
@@ -827,7 +827,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 610,
+        "x": 630,
         "y": 160,
         "wires": [
             []
@@ -855,7 +855,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 610,
+        "x": 630,
         "y": 580,
         "wires": [
             []
@@ -883,7 +883,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 610,
+        "x": 630,
         "y": 700,
         "wires": [
             []
@@ -911,7 +911,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 610,
+        "x": 630,
         "y": 820,
         "wires": [
             []
@@ -935,7 +935,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 610,
+        "x": 630,
         "y": 620,
         "wires": []
     },
@@ -957,7 +957,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 610,
+        "x": 630,
         "y": 740,
         "wires": []
     },
@@ -979,7 +979,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 610,
+        "x": 630,
         "y": 860,
         "wires": []
     },
@@ -1080,7 +1080,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 610,
+        "x": 630,
         "y": 440,
         "wires": [
             []
@@ -1104,7 +1104,7 @@
         "topic": "",
         "payload": "Connected",
         "payloadType": "str",
-        "x": 370,
+        "x": 390,
         "y": 480,
         "wires": [
             [
@@ -1130,7 +1130,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 610,
+        "x": 630,
         "y": 480,
         "wires": []
     },
@@ -1152,7 +1152,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 610,
+        "x": 630,
         "y": 1180,
         "wires": []
     },
@@ -1174,7 +1174,7 @@
         "topic": "",
         "payload": "250 Go Remaining",
         "payloadType": "str",
-        "x": 390,
+        "x": 410,
         "y": 1180,
         "wires": [
             [
@@ -1204,7 +1204,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 610,
+        "x": 630,
         "y": 1140,
         "wires": [
             []
