@@ -1,5 +1,13 @@
 [
     {
+        "id": "54343cf33bf0a216",
+        "type": "tab",
+        "label": "Global",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "a707f17e5367291d",
         "type": "tab",
         "label": "Page Home",
@@ -56,7 +64,7 @@
             "44eb5b49b8b424a0",
             "075a15808a098657"
         ],
-        "x": 74,
+        "x": 54,
         "y": 219,
         "w": 632,
         "h": 302
@@ -77,7 +85,7 @@
             "9b648872ae81aab5",
             "c8ed469b996d6c31"
         ],
-        "x": 274,
+        "x": 254,
         "y": 919,
         "w": 432,
         "h": 302
@@ -92,11 +100,13 @@
         },
         "nodes": [
             "323bd09eef621b97",
-            "0fbc2b8ebb65e449"
+            "0fbc2b8ebb65e449",
+            "cc0d72fac71f394d",
+            "0007fbbf1742c6e8"
         ],
-        "x": 554,
+        "x": 534,
         "y": 79,
-        "w": 152,
+        "w": 492,
         "h": 122
     },
     {
@@ -113,11 +123,17 @@
             "b05631dc409a09e2",
             "127bf74d5d7eab6b",
             "6bc8c275a77643bf",
-            "7df6c5b3dd81f3d3"
+            "7df6c5b3dd81f3d3",
+            "8a142d5df39bb034",
+            "f19782d70300bd35",
+            "a89f1c52710b353b",
+            "9512f26042fce871",
+            "e33ffe5425144df6",
+            "e9aa014928dbf283"
         ],
-        "x": 554,
+        "x": 534,
         "y": 539,
-        "w": 152,
+        "w": 492,
         "h": 362
     },
     {
@@ -134,12 +150,16 @@
             "a6b029701951e396",
             "e96f71ebfe63a096",
             "c5c38b219eae9cb1",
-            "5ce0f6f785b673d5"
+            "5ce0f6f785b673d5",
+            "56be1c1433d47087",
+            "20117488794ba954",
+            "218c0062b645c48b",
+            "0c0c9e99761af7a4"
         ],
-        "x": 534,
-        "y": 359,
-        "w": 512,
-        "h": 162
+        "x": 484,
+        "y": 539,
+        "w": 202,
+        "h": 282
     },
     {
         "id": "cb3409a9c0969265",
@@ -159,12 +179,21 @@
             "ce0b97fbe12096d4",
             "4874dff54f36d7c5",
             "ea111f01cf618fcc",
-            "dfa130d77e0f7593"
+            "dfa130d77e0f7593",
+            "a216d7b242ae1c11",
+            "14ec7f6db647b1ea",
+            "200adbd137d1bb48",
+            "af6f20dca4623118",
+            "0f7cd6bef1fabbae",
+            "d1978bb3ebd07df5",
+            "e2bd9ff70c986f83",
+            "c8c4b479eda45fd6",
+            "6d96f609b6fe014e"
         ],
-        "x": 534,
-        "y": 139,
-        "w": 512,
-        "h": 202
+        "x": 484,
+        "y": 79,
+        "w": 202,
+        "h": 442
     },
     {
         "id": "33c938d6423969a7",
@@ -186,9 +215,9 @@
             "977d11b921fcd1ab"
         ],
         "x": 534,
-        "y": 539,
-        "w": 512,
-        "h": 262
+        "y": 839,
+        "w": 152,
+        "h": 442
     },
     {
         "id": "da259b2c4e6e3578",
@@ -204,9 +233,33 @@
             "145a816e57898c7f"
         ],
         "x": 534,
-        "y": 819,
-        "w": 512,
-        "h": 82
+        "y": 1299,
+        "w": 152,
+        "h": 162
+    },
+    {
+        "id": "90e4b408c6998f71",
+        "type": "group",
+        "z": "856e96fc4678e0ab",
+        "name": "Settings",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "23ad5da3e2cba669",
+            "ccac4bc3157e9909",
+            "eec271879f59041a",
+            "a265553dae3d4f6f",
+            "138e5fa64dc3fdbc",
+            "b358b79901f11352",
+            "3774989fb468f88f",
+            "3aaa1a0b628e30af",
+            "c4b57da3bf2d860d"
+        ],
+        "x": 734,
+        "y": 179,
+        "w": 272,
+        "h": 322
     },
     {
         "id": "1eeac55ba6b9065f",
@@ -308,7 +361,7 @@
     {
         "id": "e7f37ce9c08266be",
         "type": "ui-page",
-        "name": "Page Sample",
+        "name": "Sample",
         "ui": "1eeac55ba6b9065f",
         "path": "/sample",
         "icon": "file",
@@ -322,7 +375,7 @@
     {
         "id": "3720bdc972d93bca",
         "type": "ui-page",
-        "name": "Page Preview",
+        "name": "Preview",
         "ui": "1eeac55ba6b9065f",
         "path": "/preview",
         "icon": "eye-outline",
@@ -336,7 +389,7 @@
     {
         "id": "156c087dabd0538c",
         "type": "ui-page",
-        "name": "Page Acquisition",
+        "name": "Acquisition",
         "ui": "1eeac55ba6b9065f",
         "path": "/acquisition",
         "icon": "camera",
@@ -350,7 +403,7 @@
     {
         "id": "b59606fb98c818ca",
         "type": "ui-page",
-        "name": "Page Segmentation",
+        "name": "Segmentation",
         "ui": "1eeac55ba6b9065f",
         "path": "/segmentation",
         "icon": "puzzle",
@@ -453,6 +506,95 @@
         "disabled": "false"
     },
     {
+        "id": "2a664c8b638bbad5",
+        "type": "ui-group",
+        "name": "Settings",
+        "page": "3720bdc972d93bca",
+        "width": "4",
+        "height": "7",
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "f0c03d9da6035e34",
+        "type": "ui-group",
+        "name": "Preview",
+        "page": "3720bdc972d93bca",
+        "width": "8",
+        "height": "9",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "8c7099c47f2f84ee",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "156c087dabd0538c",
+        "width": "12",
+        "height": "1",
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "343127516357e339",
+        "type": "ui-group",
+        "name": "Group 2",
+        "page": "156c087dabd0538c",
+        "width": "12",
+        "height": "1",
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "8a0bb0712047ff56",
+        "type": "ui-group",
+        "name": "Section-bottom",
+        "page": "e7f37ce9c08266be",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "db628ba400a981fc",
+        "type": "ui-template",
+        "z": "54343cf33bf0a216",
+        "group": "",
+        "page": "",
+        "ui": "1eeac55ba6b9065f",
+        "name": "Custom CSS - All pages",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Global CSS - All pages */\n\n.v-navigation-drawer {\n    border: 0px solid transparent;\n    color: #000000;\n    background-color: transparent !important;\n}\n\n.elevation-1 {\n    box-shadow: 0 0px 0px 0px !important;\n}\n\n.v-toolbar-title__placeholder {\n    color: #000000 !important;\n    font-weight: bold;\n}\n\ntemplate {\n    background-color: white !important;\n}",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 630,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "8d830e194c4c638c",
         "type": "ui-text",
         "z": "a707f17e5367291d",
@@ -470,7 +612,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "information-text",
-        "x": 630,
+        "x": 610,
         "y": 260,
         "wires": []
     },
@@ -492,7 +634,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "information-text",
-        "x": 630,
+        "x": 610,
         "y": 320,
         "wires": []
     },
@@ -514,7 +656,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "information-text",
-        "x": 630,
+        "x": 610,
         "y": 380,
         "wires": []
     },
@@ -536,7 +678,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "information-text",
-        "x": 630,
+        "x": 610,
         "y": 960,
         "wires": []
     },
@@ -558,7 +700,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "information-text",
-        "x": 630,
+        "x": 610,
         "y": 1020,
         "wires": []
     },
@@ -580,7 +722,7 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "information-text",
-        "x": 630,
+        "x": 610,
         "y": 1080,
         "wires": []
     },
@@ -596,7 +738,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".styled-button-visual .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n    color: #000000;\n}\n\n.styled-button-visual .v-btn {\n    background-color:rgba(255, 0, 0, 0);\n    padding: 2.5em 2.5em;\n}\n\n.button-label span.nrdb-ui-text-value {\n    color: #000000;\n    font-weight: bold;\n    font-size: 14px;\n    margin-bottom: 10%;\n}\n\n.styled-button .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n}\n\n.styled-button .v-btn {\n    padding: 3.5em 3.5em;\n}\n\n.title-top {\n    margin-bottom: 25px;\n}\n\n.top-button {\n    justify-content: center;\n    width: 100%;\n}\n\n.top-button .v-btn {\n    border-radius: 10px;\n}\n\n.top-button .v-btn * {\n    font-size: xx-large;\n    padding: 0.5em 2em;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #000000;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-radius: 20px;\n    color: #ffffff\n}\n\n.information-text span.nrdb-ui-text-value {\n    color: #000000;\n    font-size: 14px;\n    margin-bottom: 11%;\n}\n\n.v-navigation-drawer {\n    border: 0px solid transparent;\n    color: #000000;\n}\n\n.elevation-1 {\n    box-shadow: 0 0px 0px 0px !important;\n}\n\n.v-toolbar-title__placeholder {\n    color: #000000 !important;\n    background-color: rgba(255, 255, 255, 0) !important;\n    font-weight: bold;\n}\n\ntemplate {\n    background-color: white !important;\n}\n\n.title-top {\n    align-content: center;\n    justify-content: center;\n}\n\n.top-home {\n    margin-bottom: 2rem;\n    background-color: transparent !important;\n}",
+        "format": "/* Custom CSS - Home page */\n\n/* .styled-button-visual */\n\n.styled-button-visual .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n    color: #000000;\n}\n\n.styled-button-visual .v-btn {\n    background-color:rgba(255, 0, 0, 0);\n    padding: 2.5em 2.5em;\n}\n\n/* .button-label */\n\n.button-label span.nrdb-ui-text-value {\n    color: #000000;\n    font-weight: bold;\n    font-size: 14px;\n    margin-bottom: 10%;\n}\n\n/* .styled-button */\n\n.styled-button .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n}\n\n.styled-button .v-btn {\n    padding: 3.5em 3.5em;\n}\n\n/* .title-top */\n\n.title-top {\n    margin-bottom: 25px;\n}\n\n/* .top-button */\n\n.top-button {\n    justify-content: center;\n    width: 100%;\n}\n\n.top-button .v-btn {\n    border-radius: 10px;\n}\n\n.top-button .v-btn * {\n    font-size: xx-large;\n    padding: 0.5em 2em;\n}\n\n/* .information-text */\n\n.information-text label {\n    text-align: center;\n    background-color: #000000;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-radius: 20px;\n    color: #ffffff\n}\n\n.information-text span.nrdb-ui-text-value {\n    color: #000000;\n    font-size: 14px;\n    margin-bottom: 11%;\n}\n\n/* .top-home */\n\n.top-home {\n    margin-bottom: 2rem;\n    background-color: transparent !important;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -626,7 +768,7 @@
         "topic": "",
         "payload": "{\"software-version\":\"v2024.0.0-aplha.0\",\"instrument-type\":\"PlanktoScope v2.6\",\"instrument-name\":\"complete-wind-49753\"}",
         "payloadType": "json",
-        "x": 180,
+        "x": 160,
         "y": 320,
         "wires": [
             [
@@ -801,7 +943,7 @@
         "fontSize": "74",
         "color": "#000000",
         "className": "title-top",
-        "x": 630,
+        "x": 610,
         "y": 120,
         "wires": []
     },
@@ -823,14 +965,16 @@
         "className": "top-button",
         "icon": "",
         "iconPosition": "left",
-        "payload": "test",
+        "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
+        "x": 610,
         "y": 160,
         "wires": [
-            []
+            [
+                "cc0d72fac71f394d"
+            ]
         ]
     },
     {
@@ -855,10 +999,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
+        "x": 610,
         "y": 580,
         "wires": [
-            []
+            [
+                "9512f26042fce871"
+            ]
         ]
     },
     {
@@ -883,10 +1029,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
+        "x": 610,
         "y": 700,
         "wires": [
-            []
+            [
+                "8a142d5df39bb034"
+            ]
         ]
     },
     {
@@ -911,10 +1059,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
+        "x": 610,
         "y": 820,
         "wires": [
-            []
+            [
+                "e33ffe5425144df6"
+            ]
         ]
     },
     {
@@ -935,7 +1085,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 630,
+        "x": 610,
         "y": 620,
         "wires": []
     },
@@ -957,7 +1107,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 630,
+        "x": 610,
         "y": 740,
         "wires": []
     },
@@ -979,7 +1129,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 630,
+        "x": 610,
         "y": 860,
         "wires": []
     },
@@ -1080,7 +1230,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
+        "x": 610,
         "y": 440,
         "wires": [
             []
@@ -1104,7 +1254,7 @@
         "topic": "",
         "payload": "Connected",
         "payloadType": "str",
-        "x": 390,
+        "x": 370,
         "y": 480,
         "wires": [
             [
@@ -1130,7 +1280,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 630,
+        "x": 610,
         "y": 480,
         "wires": []
     },
@@ -1152,7 +1302,7 @@
         "fontSize": 16,
         "color": "#000000",
         "className": "button-label",
-        "x": 630,
+        "x": 610,
         "y": 1180,
         "wires": []
     },
@@ -1174,7 +1324,7 @@
         "topic": "",
         "payload": "250 Go Remaining",
         "payloadType": "str",
-        "x": 410,
+        "x": 390,
         "y": 1180,
         "wires": [
             [
@@ -1204,8 +1354,176 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
+        "x": 610,
         "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc0d72fac71f394d",
+        "type": "change",
+        "z": "a707f17e5367291d",
+        "g": "527d5d50cd394426",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\":\"Sample\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 160,
+        "wires": [
+            [
+                "0007fbbf1742c6e8"
+            ]
+        ]
+    },
+    {
+        "id": "0007fbbf1742c6e8",
+        "type": "ui-control",
+        "z": "a707f17e5367291d",
+        "g": "527d5d50cd394426",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 940,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a89f1c52710b353b",
+        "type": "ui-control",
+        "z": "a707f17e5367291d",
+        "g": "332ccbf2ae090d80",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 940,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9512f26042fce871",
+        "type": "change",
+        "z": "a707f17e5367291d",
+        "g": "332ccbf2ae090d80",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\":\"Documentation\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 580,
+        "wires": [
+            [
+                "a89f1c52710b353b"
+            ]
+        ]
+    },
+    {
+        "id": "8a142d5df39bb034",
+        "type": "change",
+        "z": "a707f17e5367291d",
+        "g": "332ccbf2ae090d80",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\":\"Connectivity\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 700,
+        "wires": [
+            [
+                "f19782d70300bd35"
+            ]
+        ]
+    },
+    {
+        "id": "f19782d70300bd35",
+        "type": "ui-control",
+        "z": "a707f17e5367291d",
+        "g": "332ccbf2ae090d80",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 940,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e33ffe5425144df6",
+        "type": "change",
+        "z": "a707f17e5367291d",
+        "g": "332ccbf2ae090d80",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\":\"Feedback\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 820,
+        "wires": [
+            [
+                "e9aa014928dbf283"
+            ]
+        ]
+    },
+    {
+        "id": "e9aa014928dbf283",
+        "type": "ui-control",
+        "z": "a707f17e5367291d",
+        "g": "332ccbf2ae090d80",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 940,
+        "y": 820,
         "wires": [
             []
         ]
@@ -1222,13 +1540,13 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".section-four div.nrdb-layout-group--grid {\n    display: flex;\n    justify-content: space-between;\n}\n\n.section-three-body {\n    margin-bottom: 2rem;\n}\n\n.section-one-body div.nrdb-layout-group--grid {\n    grid-gap: 10px;\n}\n\n.section-two-body div.nrdb-layout-group--grid {\n    grid-gap: 10px;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #000000;\n    padding: 1% 8% 1% 8% !important;\n    margin: 0% !important;\n    min-width: 60%;\n    border-radius: 20px;\n    color: #ffffff;\n}\n\n.section-title .v-card-text {\n    padding: 0% 1rem !important;\n}\n\n.v-navigation-drawer {\n    border: 0px solid transparent;\n    color: #000000;\n    background-color: transparent !important;\n}\n\n.elevation-1 {\n    box-shadow: 0 0px 0px 0px !important;\n}\n\n.v-toolbar-title__placeholder {\n    color: #000000 !important;\n    font-weight: bold;\n}\n\ntemplate {\n    background-color: white !important;\n}",
+        "format": "/* Custom CSS - Sample page */\n\n/* .section-four */\n\n.section-four div.nrdb-layout-group--grid {\n    display: flex !important;\n    justify-content: space-between !important;\n}\n\n/* .section-three-body */\n\n.section-three-body {\n    margin-bottom: 2rem !important;\n}\n\n/* .section-one-body */\n\n.section-one-body div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n/* .section-two-body*/\n\n.section-two-body div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n/* .information-text */\n\n.information-text label {\n    text-align: center !important;\n    background-color: #000000 !important;\n    padding: 1% 8% 1% 8% !important;\n    margin: 0% !important;\n    min-width: 60% !important;\n    border-radius: 20px !important;\n    color: #ffffff !important;\n}\n\n/* .section-title */\n\n.section-title .v-card-text {\n    padding: 0% 1rem !important;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "page:style",
         "className": "",
-        "x": 810,
+        "x": 610,
         "y": 40,
         "wires": [
             []
@@ -1253,7 +1571,7 @@
         "color": "#717171",
         "className": "information-text",
         "x": 610,
-        "y": 180,
+        "y": 120,
         "wires": []
     },
     {
@@ -1277,7 +1595,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 220,
+        "y": 160,
         "wires": [
             []
         ]
@@ -1303,7 +1621,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 260,
+        "y": 200,
         "wires": [
             []
         ]
@@ -1329,7 +1647,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 300,
+        "y": 240,
         "wires": [
             []
         ]
@@ -1354,8 +1672,8 @@
         "sendOnBlur": true,
         "sendOnEnter": true,
         "className": "",
-        "x": 790,
-        "y": 220,
+        "x": 610,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1380,8 +1698,8 @@
         "sendOnBlur": true,
         "sendOnEnter": true,
         "className": "",
-        "x": 790,
-        "y": 260,
+        "x": 610,
+        "y": 320,
         "wires": [
             []
         ]
@@ -1406,8 +1724,8 @@
         "sendOnBlur": true,
         "sendOnEnter": true,
         "className": "",
-        "x": 790,
-        "y": 300,
+        "x": 610,
+        "y": 360,
         "wires": [
             []
         ]
@@ -1432,8 +1750,8 @@
         "sendOnBlur": true,
         "sendOnEnter": true,
         "className": "",
-        "x": 970,
-        "y": 220,
+        "x": 610,
+        "y": 400,
         "wires": [
             []
         ]
@@ -1458,8 +1776,8 @@
         "sendOnBlur": true,
         "sendOnEnter": true,
         "className": "",
-        "x": 970,
-        "y": 260,
+        "x": 610,
+        "y": 440,
         "wires": [
             []
         ]
@@ -1484,8 +1802,8 @@
         "sendOnBlur": true,
         "sendOnEnter": true,
         "className": "",
-        "x": 970,
-        "y": 300,
+        "x": 610,
+        "y": 480,
         "wires": [
             []
         ]
@@ -1509,7 +1827,7 @@
         "color": "#717171",
         "className": "information-text",
         "x": 610,
-        "y": 400,
+        "y": 580,
         "wires": []
     },
     {
@@ -1532,8 +1850,8 @@
         "sendOnBlur": true,
         "sendOnEnter": true,
         "className": "",
-        "x": 790,
-        "y": 440,
+        "x": 610,
+        "y": 700,
         "wires": [
             []
         ]
@@ -1569,7 +1887,7 @@
         "topicType": "msg",
         "className": "",
         "x": 610,
-        "y": 440,
+        "y": 620,
         "wires": [
             []
         ]
@@ -1594,8 +1912,8 @@
         "sendOnBlur": true,
         "sendOnEnter": true,
         "className": "",
-        "x": 970,
-        "y": 440,
+        "x": 610,
+        "y": 780,
         "wires": [
             []
         ]
@@ -1621,7 +1939,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 480,
+        "y": 660,
         "wires": [
             []
         ]
@@ -1646,8 +1964,8 @@
         "sendOnBlur": true,
         "sendOnEnter": true,
         "className": "",
-        "x": 790,
-        "y": 480,
+        "x": 610,
+        "y": 740,
         "wires": [
             []
         ]
@@ -1671,7 +1989,7 @@
         "color": "#717171",
         "className": "information-text",
         "x": 610,
-        "y": 580,
+        "y": 880,
         "wires": []
     },
     {
@@ -1692,8 +2010,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 790,
-        "y": 620,
+        "x": 610,
+        "y": 940,
         "wires": []
     },
     {
@@ -1714,8 +2032,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 790,
-        "y": 720,
+        "x": 610,
+        "y": 1120,
         "wires": []
     },
     {
@@ -1741,7 +2059,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 610,
-        "y": 660,
+        "y": 1020,
         "wires": [
             []
         ]
@@ -1768,8 +2086,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 970,
-        "y": 660,
+        "x": 610,
+        "y": 1060,
         "wires": [
             []
         ]
@@ -1792,8 +2110,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 790,
-        "y": 660,
+        "x": 610,
+        "y": 980,
         "wires": []
     },
     {
@@ -1818,8 +2136,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 970,
-        "y": 760,
+        "x": 610,
+        "y": 1240,
         "wires": [
             []
         ]
@@ -1842,8 +2160,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 790,
-        "y": 760,
+        "x": 610,
+        "y": 1160,
         "wires": []
     },
     {
@@ -1869,7 +2187,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 610,
-        "y": 760,
+        "y": 1200,
         "wires": [
             []
         ]
@@ -1897,7 +2215,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 610,
-        "y": 860,
+        "y": 1340,
         "wires": [
             []
         ]
@@ -1924,8 +2242,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 790,
-        "y": 860,
+        "x": 610,
+        "y": 1380,
         "wires": [
             []
         ]
@@ -1952,10 +2270,282 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 970,
-        "y": 860,
+        "x": 610,
+        "y": 1420,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "a216d7b242ae1c11",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "cb3409a9c0969265",
+        "name": "link in 5",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 160,
+        "wires": [
+            [
+                "f25e848644692981"
+            ]
+        ]
+    },
+    {
+        "id": "14ec7f6db647b1ea",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "cb3409a9c0969265",
+        "name": "link in 6",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 200,
+        "wires": [
+            [
+                "99dd39f5bbec7746"
+            ]
+        ]
+    },
+    {
+        "id": "200adbd137d1bb48",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "cb3409a9c0969265",
+        "name": "link in 7",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 240,
+        "wires": [
+            [
+                "16a4c7cd1d7e8533"
+            ]
+        ]
+    },
+    {
+        "id": "af6f20dca4623118",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "cb3409a9c0969265",
+        "name": "link in 8",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 280,
+        "wires": [
+            [
+                "70f610f6b44b688f"
+            ]
+        ]
+    },
+    {
+        "id": "0f7cd6bef1fabbae",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "cb3409a9c0969265",
+        "name": "link in 9",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 320,
+        "wires": [
+            [
+                "fedc36d5e5a1233b"
+            ]
+        ]
+    },
+    {
+        "id": "d1978bb3ebd07df5",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "cb3409a9c0969265",
+        "name": "link in 10",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 360,
+        "wires": [
+            [
+                "ce0b97fbe12096d4"
+            ]
+        ]
+    },
+    {
+        "id": "e2bd9ff70c986f83",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "cb3409a9c0969265",
+        "name": "link in 11",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 400,
+        "wires": [
+            [
+                "4874dff54f36d7c5"
+            ]
+        ]
+    },
+    {
+        "id": "c8c4b479eda45fd6",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "cb3409a9c0969265",
+        "name": "link in 12",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 440,
+        "wires": [
+            [
+                "ea111f01cf618fcc"
+            ]
+        ]
+    },
+    {
+        "id": "6d96f609b6fe014e",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "cb3409a9c0969265",
+        "name": "link in 13",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 480,
+        "wires": [
+            [
+                "dfa130d77e0f7593"
+            ]
+        ]
+    },
+    {
+        "id": "ace29899b948e3ac",
+        "type": "inject",
+        "z": "981fcccea4aa6cd3",
+        "name": "hard placeholder",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "placeholder",
+        "payloadType": "str",
+        "x": 190,
+        "y": 40,
+        "wires": [
+            [
+                "f1688594df89190d"
+            ]
+        ]
+    },
+    {
+        "id": "f1688594df89190d",
+        "type": "link out",
+        "z": "981fcccea4aa6cd3",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "0f7cd6bef1fabbae",
+            "14ec7f6db647b1ea",
+            "200adbd137d1bb48",
+            "6d96f609b6fe014e",
+            "a216d7b242ae1c11",
+            "af6f20dca4623118",
+            "c8c4b479eda45fd6",
+            "d1978bb3ebd07df5",
+            "e2bd9ff70c986f83",
+            "56be1c1433d47087",
+            "20117488794ba954",
+            "218c0062b645c48b",
+            "0c0c9e99761af7a4",
+            "c6d84d4329f124c6"
+        ],
+        "x": 325,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "56be1c1433d47087",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "b698ee124c6364a8",
+        "name": "link in 14",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 660,
+        "wires": [
+            [
+                "c5c38b219eae9cb1"
+            ]
+        ]
+    },
+    {
+        "id": "20117488794ba954",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "b698ee124c6364a8",
+        "name": "link in 15",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 700,
+        "wires": [
+            [
+                "4d9f66a9d7ff2fb3"
+            ]
+        ]
+    },
+    {
+        "id": "218c0062b645c48b",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "b698ee124c6364a8",
+        "name": "link in 16",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 780,
+        "wires": [
+            [
+                "e96f71ebfe63a096"
+            ]
+        ]
+    },
+    {
+        "id": "0c0c9e99761af7a4",
+        "type": "link in",
+        "z": "981fcccea4aa6cd3",
+        "g": "b698ee124c6364a8",
+        "name": "link in 17",
+        "links": [
+            "f1688594df89190d"
+        ],
+        "x": 525,
+        "y": 740,
+        "wires": [
+            [
+                "5ce0f6f785b673d5"
+            ]
         ]
     },
     {
@@ -1970,7 +2560,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".styled-button-visual .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n    color: #000000;\n}\n\n.styled-button-visual .v-btn {\n    background-color:rgba(255, 0, 0, 0);\n    padding: 2.5em 2.5em;\n}\n\n.button-label span.nrdb-ui-text-value {\n    color: #000000;\n    font-weight: bold;\n    font-size: 14px;\n    margin-bottom: 10%;\n}\n\n.styled-button .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n}\n\n.styled-button .v-btn {\n    padding: 3.5em 3.5em;\n}\n\n.home-top {\n    margin-bottom: 25px;\n}\n\n.top-button {\n    justify-content: center;\n    width: 100%;\n}\n\n.top-button .v-btn {\n    border-radius: 10px;\n}\n\n.top-button .v-btn * {\n    font-size: xx-large;\n    padding: 0.5em 2em;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #000000;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-radius: 20px;\n    color: #ffffff\n}\n\n.information-text span.nrdb-ui-text-value {\n    color: #000000;\n    font-size: 14px;\n    margin-bottom: 11%;\n}\n\n.v-navigation-drawer {\n    border: 0px solid transparent;\n    color: #000000;\n    background-color: transparent !important;\n}\n\n.elevation-1 {\n    box-shadow: 0 0px 0px 0px !important;\n}\n\n.v-toolbar-title__placeholder {\n    color: #000000 !important;\n    font-weight: bold;\n}\n\ntemplate {\n    background-color: white !important;\n}\n\n.home-top {\n    align-content: center;\n    justify-content: center;\n}",
+        "format": "",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -1978,6 +2568,254 @@
         "className": "",
         "x": 610,
         "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23ad5da3e2cba669",
+        "type": "ui-button",
+        "z": "856e96fc4678e0ab",
+        "g": "90e4b408c6998f71",
+        "group": "2a664c8b638bbad5",
+        "name": "",
+        "label": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "preview-chevron",
+        "icon": "chevron-up",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 870,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccac4bc3157e9909",
+        "type": "ui-text-input",
+        "z": "856e96fc4678e0ab",
+        "g": "90e4b408c6998f71",
+        "group": "2a664c8b638bbad5",
+        "name": "",
+        "label": "text",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 870,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eec271879f59041a",
+        "type": "ui-text-input",
+        "z": "856e96fc4678e0ab",
+        "g": "90e4b408c6998f71",
+        "group": "2a664c8b638bbad5",
+        "name": "",
+        "label": "text",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 870,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a265553dae3d4f6f",
+        "type": "ui-button",
+        "z": "856e96fc4678e0ab",
+        "g": "90e4b408c6998f71",
+        "group": "2a664c8b638bbad5",
+        "name": "",
+        "label": "button",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "minus",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 810,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "138e5fa64dc3fdbc",
+        "type": "ui-button",
+        "z": "856e96fc4678e0ab",
+        "g": "90e4b408c6998f71",
+        "group": "2a664c8b638bbad5",
+        "name": "",
+        "label": "button",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "plus",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 930,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b358b79901f11352",
+        "type": "ui-button",
+        "z": "856e96fc4678e0ab",
+        "g": "90e4b408c6998f71",
+        "group": "2a664c8b638bbad5",
+        "name": "",
+        "label": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "setting-icon",
+        "icon": "eye-outline",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 870,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3774989fb468f88f",
+        "type": "ui-button",
+        "z": "856e96fc4678e0ab",
+        "g": "90e4b408c6998f71",
+        "group": "2a664c8b638bbad5",
+        "name": "",
+        "label": "button",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "minus",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 810,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3aaa1a0b628e30af",
+        "type": "ui-button",
+        "z": "856e96fc4678e0ab",
+        "g": "90e4b408c6998f71",
+        "group": "2a664c8b638bbad5",
+        "name": "",
+        "label": "button",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "plus",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 930,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4b57da3bf2d860d",
+        "type": "ui-button",
+        "z": "856e96fc4678e0ab",
+        "g": "90e4b408c6998f71",
+        "group": "2a664c8b638bbad5",
+        "name": "",
+        "label": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "chevron-down",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 870,
+        "y": 460,
         "wires": [
             []
         ]
@@ -1994,9 +2832,9 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".styled-button-visual .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n    color: #000000;\n}\n\n.styled-button-visual .v-btn {\n    background-color:rgba(255, 0, 0, 0);\n    padding: 2.5em 2.5em;\n}\n\n.button-label span.nrdb-ui-text-value {\n    color: #000000;\n    font-weight: bold;\n    font-size: 14px;\n    margin-bottom: 10%;\n}\n\n.styled-button .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n}\n\n.styled-button .v-btn {\n    padding: 3.5em 3.5em;\n}\n\n.home-top {\n    margin-bottom: 25px;\n}\n\n.top-button {\n    justify-content: center;\n    width: 100%;\n}\n\n.top-button .v-btn {\n    border-radius: 10px;\n}\n\n.top-button .v-btn * {\n    font-size: xx-large;\n    padding: 0.5em 2em;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #000000;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-radius: 20px;\n    color: #ffffff\n}\n\n.information-text span.nrdb-ui-text-value {\n    color: #000000;\n    font-size: 14px;\n    margin-bottom: 11%;\n}\n\n.v-navigation-drawer {\n    border: 0px solid transparent;\n    color: #000000;\n    background-color: transparent !important;\n}\n\n.elevation-1 {\n    box-shadow: 0 0px 0px 0px !important;\n}\n\n.v-toolbar-title__placeholder {\n    color: #000000 !important;\n    font-weight: bold;\n}\n\ntemplate {\n    background-color: white !important;\n}\n\n.home-top {\n    align-content: center;\n    justify-content: center;\n}",
+        "format": "",
         "storeOutMessages": true,
-        "passthru": false,
+        "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "page:style",
         "className": "",
@@ -2004,6 +2842,405 @@
         "y": 40,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "d4fd99fb7b088d55",
+        "type": "ui-button",
+        "z": "b4a53df95ffe5a7e",
+        "group": "8c7099c47f2f84ee",
+        "name": "button",
+        "label": "Show group 2",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "d2c4b2bd3bf7a824"
+            ]
+        ]
+    },
+    {
+        "id": "36e77e3496925fe2",
+        "type": "ui-button",
+        "z": "b4a53df95ffe5a7e",
+        "group": "343127516357e339",
+        "name": "button",
+        "label": "Show group 1",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 340,
+        "wires": [
+            [
+                "313e7d26d0dd01b4"
+            ]
+        ]
+    },
+    {
+        "id": "c3d0984f4757d8c8",
+        "type": "ui-text",
+        "z": "b4a53df95ffe5a7e",
+        "group": "8c7099c47f2f84ee",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "text",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 270,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "0d8e265f57710ffc",
+        "type": "ui-text",
+        "z": "b4a53df95ffe5a7e",
+        "group": "343127516357e339",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "text",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 270,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9eb7b7e2a8fcfd2f",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "Value text 1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Ceci est le groupe 1",
+        "payloadType": "str",
+        "x": 110,
+        "y": 40,
+        "wires": [
+            [
+                "53ebb7c7a827d65c"
+            ]
+        ]
+    },
+    {
+        "id": "5639e2b8614a30e6",
+        "type": "link in",
+        "z": "b4a53df95ffe5a7e",
+        "name": "link in 1",
+        "links": [
+            "53ebb7c7a827d65c"
+        ],
+        "x": 185,
+        "y": 400,
+        "wires": [
+            [
+                "c3d0984f4757d8c8"
+            ]
+        ]
+    },
+    {
+        "id": "53ebb7c7a827d65c",
+        "type": "link out",
+        "z": "b4a53df95ffe5a7e",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "5639e2b8614a30e6"
+        ],
+        "x": 215,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "5fe221c6b1bfe17f",
+        "type": "link in",
+        "z": "b4a53df95ffe5a7e",
+        "name": "link in 2",
+        "links": [
+            "26ce9d48c5f1c269"
+        ],
+        "x": 185,
+        "y": 460,
+        "wires": [
+            [
+                "0d8e265f57710ffc"
+            ]
+        ]
+    },
+    {
+        "id": "8b14e52309709f67",
+        "type": "ui-control",
+        "z": "b4a53df95ffe5a7e",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 900,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2c4b2bd3bf7a824",
+        "type": "change",
+        "z": "b4a53df95ffe5a7e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Group 1\"], \"show\": [\"Group 2\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "90df16c7261274d3"
+            ]
+        ]
+    },
+    {
+        "id": "313e7d26d0dd01b4",
+        "type": "change",
+        "z": "b4a53df95ffe5a7e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Group 1\"], \"hide\": [\"Group 2\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 340,
+        "wires": [
+            [
+                "90df16c7261274d3"
+            ]
+        ]
+    },
+    {
+        "id": "26ce9d48c5f1c269",
+        "type": "link out",
+        "z": "b4a53df95ffe5a7e",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "5fe221c6b1bfe17f"
+        ],
+        "x": 215,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "0e9e4cabc256ba76",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "Value text 2",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Ceci est le groupe 2",
+        "payloadType": "str",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "26ce9d48c5f1c269"
+            ]
+        ]
+    },
+    {
+        "id": "4a0c9059b0a260df",
+        "type": "ui-control",
+        "z": "b4a53df95ffe5a7e",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 900,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f88e44dc61a7c1d",
+        "type": "link in",
+        "z": "b4a53df95ffe5a7e",
+        "name": "link in 3",
+        "links": [
+            "90df16c7261274d3"
+        ],
+        "x": 805,
+        "y": 300,
+        "wires": [
+            [
+                "8b14e52309709f67"
+            ]
+        ]
+    },
+    {
+        "id": "90df16c7261274d3",
+        "type": "link out",
+        "z": "b4a53df95ffe5a7e",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "1f88e44dc61a7c1d",
+            "77970bbf0f1edb5b"
+        ],
+        "x": 585,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6dc17a37bdeddc95",
+        "type": "change",
+        "z": "b4a53df95ffe5a7e",
+        "name": "Reload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\":\"\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 340,
+        "wires": [
+            [
+                "4a0c9059b0a260df"
+            ]
+        ]
+    },
+    {
+        "id": "77970bbf0f1edb5b",
+        "type": "link in",
+        "z": "b4a53df95ffe5a7e",
+        "name": "link in 4",
+        "links": [
+            "90df16c7261274d3"
+        ],
+        "x": 665,
+        "y": 340,
+        "wires": [
+            [
+                "6dc17a37bdeddc95"
+            ]
+        ]
+    },
+    {
+        "id": "ce5d86d4a63be561",
+        "type": "ui-control",
+        "z": "b4a53df95ffe5a7e",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 340,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de905b4ce98ae857",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "Initial state groupe",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"group\":{\"hide\":[\"Group 2\"], \"show\": [\"Group 1\"]}}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "ce5d86d4a63be561"
+            ]
         ]
     },
     {
@@ -2018,7 +3255,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".styled-button-visual .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n    color: #000000;\n}\n\n.styled-button-visual .v-btn {\n    background-color:rgba(255, 0, 0, 0);\n    padding: 2.5em 2.5em;\n}\n\n.button-label span.nrdb-ui-text-value {\n    color: #000000;\n    font-weight: bold;\n    font-size: 14px;\n    margin-bottom: 10%;\n}\n\n.styled-button .v-btn .v-icon {\n    height: 0px !important;\n    --v-icon-size-multiplier: 3;\n}\n\n.styled-button .v-btn {\n    padding: 3.5em 3.5em;\n}\n\n.home-top {\n    margin-bottom: 25px;\n}\n\n.top-button {\n    justify-content: center;\n    width: 100%;\n}\n\n.top-button .v-btn {\n    border-radius: 10px;\n}\n\n.top-button .v-btn * {\n    font-size: xx-large;\n    padding: 0.5em 2em;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #000000;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-radius: 20px;\n    color: #ffffff\n}\n\n.information-text span.nrdb-ui-text-value {\n    color: #000000;\n    font-size: 14px;\n    margin-bottom: 11%;\n}\n\n.v-navigation-drawer {\n    border: 0px solid transparent;\n    color: #000000;\n    background-color: transparent !important;\n}\n\n.elevation-1 {\n    box-shadow: 0 0px 0px 0px !important;\n}\n\n.v-toolbar-title__placeholder {\n    color: #000000 !important;\n    font-weight: bold;\n}\n\ntemplate {\n    background-color: white !important;\n}\n\n.home-top {\n    align-content: center;\n    justify-content: center;\n}",
+        "format": "",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
