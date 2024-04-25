@@ -269,7 +269,7 @@
             "125e784f6d4792e3"
         ],
         "x": 514,
-        "y": 1759,
+        "y": 1719,
         "w": 272,
         "h": 242
     },
@@ -319,7 +319,7 @@
             "3948a37ec1b8c803"
         ],
         "x": 514,
-        "y": 379,
+        "y": 119,
         "w": 272,
         "h": 322
     },
@@ -346,7 +346,7 @@
             "ba9e2b8ab8b10f00"
         ],
         "x": 514,
-        "y": 119,
+        "y": 459,
         "w": 622,
         "h": 242
     },
@@ -650,7 +650,7 @@
         "page": "e7f37ce9c08266be",
         "width": "12",
         "height": "1",
-        "order": 10,
+        "order": 13,
         "showTitle": false,
         "className": "section-bouton-4",
         "visible": "true",
@@ -663,7 +663,7 @@
         "page": "e7f37ce9c08266be",
         "width": "12",
         "height": "1",
-        "order": 9,
+        "order": 12,
         "showTitle": false,
         "className": "section-bouton-3",
         "visible": "true",
@@ -702,7 +702,7 @@
         "page": "e7f37ce9c08266be",
         "width": "12",
         "height": "1",
-        "order": 8,
+        "order": 9,
         "showTitle": false,
         "className": "section-bouton-2",
         "visible": "true",
@@ -724,7 +724,7 @@
     {
         "id": "adf5a6b0c32b20f0",
         "type": "ui-group",
-        "name": "Section-bouton-1.2-title",
+        "name": "Section-bouton-1-2-title",
         "page": "e7f37ce9c08266be",
         "width": "12",
         "height": "1",
@@ -737,13 +737,52 @@
     {
         "id": "3a7277d2d5e66a34",
         "type": "ui-group",
-        "name": "Section-bouton-1.2",
+        "name": "Section-bouton-1-2",
         "page": "e7f37ce9c08266be",
         "width": "12",
         "height": "1",
         "order": 7,
         "showTitle": false,
         "className": "section-bouton-1-2",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "3ab8a80c05b53e0c",
+        "type": "ui-group",
+        "name": "Section-bouton-2-title",
+        "page": "e7f37ce9c08266be",
+        "width": "12",
+        "height": "1",
+        "order": 8,
+        "showTitle": false,
+        "className": "section-bouton-2-title",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "332b02cefa57a63d",
+        "type": "ui-group",
+        "name": "Section-bouton-2-1-title",
+        "page": "e7f37ce9c08266be",
+        "width": "12",
+        "height": "1",
+        "order": 10,
+        "showTitle": false,
+        "className": "section-bouton-2-1-title",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ce6d4145d73e4379",
+        "type": "ui-group",
+        "name": "Section-bouton-2-1",
+        "page": "e7f37ce9c08266be",
+        "width": "12",
+        "height": "1",
+        "order": 11,
+        "showTitle": false,
+        "className": "section-bouton-2-1",
         "visible": "true",
         "disabled": "false"
     },
@@ -1749,7 +1788,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "/* Custom CSS - Sample page */\n\n.sample-page {\n    margin-right: 5rem;\n    margin-left: 5rem;\n}\n\n.section-global-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-1-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-3 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-4 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    margin-bottom: 1rem;\n}\n\n.section-preset .v-card-text {\n    padding: 0% 1rem !important;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-radius: 10px;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.information-text-2 label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 12% 2% 12%;\n    min-width: 10%;\n    border-radius: 10px;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}",
+        "format": "/* Custom CSS - Sample page */\n\n.sample-page {\n    margin-right: 5rem;\n    margin-left: 5rem;\n}\n\n.section-global-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-1-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-3 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-4 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    margin-bottom: 1rem;\n}\n\n.section-preset .v-card-text {\n    padding: 0% 1rem !important;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-radius: 10px;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.information-text-2 label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 12% 2% 12%;\n    min-width: 10%;\n    border-radius: 10px;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -1840,7 +1879,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1.2\",\"Section-bouton-1.2-title\",\"Section-bouton-2\",\"Section-bouton-3\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\",\"Section-global\",\"Section-preset\"]},\"groups\":{\"enable\":[\"Section-bouton-1\",\"Section-bouton-2\",\"Section-bouton-3\",\"Section-bouton-4\",\"Section-bouton-5\",\"Section-global\",\"Section-preset\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1\",\"Section-bouton-3\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\",\"Section-global\",\"Section-preset\"]}}",
         "payloadType": "json",
         "x": 190,
         "y": 80,
@@ -1953,7 +1992,7 @@
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 240,
+        "y": 580,
         "wires": [
             [
                 "49275fc2c8a90339"
@@ -1999,7 +2038,7 @@
         "repair": false,
         "outputs": 5,
         "x": 760,
-        "y": 240,
+        "y": 580,
         "wires": [
             [
                 "624dbdfc580f320d"
@@ -2029,7 +2068,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-3\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1.2\",\"Section-bouton-1.2-title\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-1\",\"Section-bouton-2-1-title\",\"Section-bouton-3\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\"]}}",
                 "tot": "json"
             }
         ],
@@ -2039,7 +2078,7 @@
         "to": "",
         "reg": false,
         "x": 970,
-        "y": 160,
+        "y": 500,
         "wires": [
             [
                 "b156d7b379fd5166"
@@ -2057,7 +2096,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1.2\",\"Section-bouton-1.2-title\",\"Section-bouton-3\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-2\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-3\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-1\",\"Section-bouton-2-1-title\"]}}",
                 "tot": "json"
             }
         ],
@@ -2067,7 +2106,7 @@
         "to": "",
         "reg": false,
         "x": 970,
-        "y": 200,
+        "y": 540,
         "wires": [
             [
                 "b5df891429cc0f13"
@@ -2085,7 +2124,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1.2\",\"Section-bouton-1.2-title\",\"Section-bouton-2\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-3\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-1\",\"Section-bouton-2-1-title\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-3\"]}}",
                 "tot": "json"
             }
         ],
@@ -2095,7 +2134,7 @@
         "to": "",
         "reg": false,
         "x": 970,
-        "y": 240,
+        "y": 580,
         "wires": [
             [
                 "8f1385d8c3aaee84"
@@ -2113,7 +2152,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-3\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1.2\",\"Section-bouton-1.2-title\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-4\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-1\",\"Section-bouton-2-1-title\",\"Section-bouton-3\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-4\"]}}",
                 "tot": "json"
             }
         ],
@@ -2123,7 +2162,7 @@
         "to": "",
         "reg": false,
         "x": 970,
-        "y": 280,
+        "y": 620,
         "wires": [
             [
                 "bc7487ac5d0886ba"
@@ -2142,7 +2181,7 @@
             "ae6efe138e099d69"
         ],
         "x": 1095,
-        "y": 160,
+        "y": 500,
         "wires": []
     },
     {
@@ -2157,7 +2196,7 @@
             "ae6efe138e099d69"
         ],
         "x": 1095,
-        "y": 200,
+        "y": 540,
         "wires": []
     },
     {
@@ -2172,7 +2211,7 @@
             "ae6efe138e099d69"
         ],
         "x": 1095,
-        "y": 240,
+        "y": 580,
         "wires": []
     },
     {
@@ -2187,7 +2226,7 @@
             "ae6efe138e099d69"
         ],
         "x": 1095,
-        "y": 280,
+        "y": 620,
         "wires": []
     },
     {
@@ -2201,7 +2240,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-3\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1.2\",\"Section-bouton-1.2-title\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-1\",\"Section-bouton-2-1-title\",\"Section-bouton-3\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\"]}}",
                 "tot": "json"
             }
         ],
@@ -2211,7 +2250,7 @@
         "to": "",
         "reg": false,
         "x": 970,
-        "y": 320,
+        "y": 660,
         "wires": [
             [
                 "ba9e2b8ab8b10f00"
@@ -2230,7 +2269,7 @@
             "ae6efe138e099d69"
         ],
         "x": 1095,
-        "y": 320,
+        "y": 660,
         "wires": []
     },
     {
@@ -2254,7 +2293,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 1960,
+        "y": 1920,
         "wires": [
             []
         ]
@@ -2280,7 +2319,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 1920,
+        "y": 1880,
         "wires": [
             []
         ]
@@ -2306,7 +2345,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 630,
-        "y": 1800,
+        "y": 1760,
         "wires": [
             []
         ]
@@ -2332,7 +2371,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 640,
-        "y": 1840,
+        "y": 1800,
         "wires": [
             []
         ]
@@ -2414,7 +2453,7 @@
         "g": "97c213bdacc78737",
         "group": "06db5d6897cf91d8",
         "order": 1,
-        "width": "4",
+        "width": "2",
         "height": "1",
         "name": "Net specificity",
         "label": "Net specificity",
@@ -2682,7 +2721,7 @@
         "color": "#000000",
         "className": "information-text",
         "x": 650,
-        "y": 420,
+        "y": 160,
         "wires": []
     },
     {
@@ -2706,7 +2745,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 460,
+        "y": 200,
         "wires": [
             []
         ]
@@ -2732,7 +2771,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 500,
+        "y": 240,
         "wires": [
             []
         ]
@@ -2758,7 +2797,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 590,
-        "y": 540,
+        "y": 280,
         "wires": [
             []
         ]
@@ -2784,7 +2823,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 600,
-        "y": 580,
+        "y": 320,
         "wires": [
             []
         ]
@@ -2810,7 +2849,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 620,
+        "y": 360,
         "wires": [
             []
         ]
@@ -2836,7 +2875,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 660,
+        "y": 400,
         "wires": [
             []
         ]
@@ -2862,7 +2901,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 650,
-        "y": 1880,
+        "y": 1840,
         "wires": [
             []
         ]
@@ -2872,10 +2911,10 @@
         "type": "ui-text",
         "z": "981fcccea4aa6cd3",
         "g": "c4b509fbaccac842",
-        "group": "84824637436cb7fb",
+        "group": "332b02cefa57a63d",
         "order": 3,
-        "width": "0",
-        "height": "0",
+        "width": "2",
+        "height": "1",
         "name": "Launching",
         "label": "Launching",
         "format": "{{msg.payload}}",
@@ -2920,10 +2959,10 @@
         "type": "ui-text",
         "z": "981fcccea4aa6cd3",
         "g": "c4b509fbaccac842",
-        "group": "84824637436cb7fb",
+        "group": "3ab8a80c05b53e0c",
         "order": 1,
-        "width": "0",
-        "height": "0",
+        "width": "2",
+        "height": "1",
         "name": "Net specificity",
         "label": "Net specificity",
         "format": "{{msg.payload}}",
@@ -2942,7 +2981,7 @@
         "type": "ui-text-input",
         "z": "981fcccea4aa6cd3",
         "g": "c4b509fbaccac842",
-        "group": "84824637436cb7fb",
+        "group": "ce6d4145d73e4379",
         "name": "text",
         "label": "text",
         "order": 6,
@@ -2968,7 +3007,7 @@
         "type": "ui-text-input",
         "z": "981fcccea4aa6cd3",
         "g": "c4b509fbaccac842",
-        "group": "84824637436cb7fb",
+        "group": "ce6d4145d73e4379",
         "name": "",
         "label": "text",
         "order": 5,
@@ -3020,7 +3059,7 @@
         "type": "ui-text-input",
         "z": "981fcccea4aa6cd3",
         "g": "c4b509fbaccac842",
-        "group": "84824637436cb7fb",
+        "group": "ce6d4145d73e4379",
         "name": "",
         "label": "text",
         "order": 6,
@@ -3046,7 +3085,7 @@
         "type": "ui-text-input",
         "z": "981fcccea4aa6cd3",
         "g": "c4b509fbaccac842",
-        "group": "84824637436cb7fb",
+        "group": "ce6d4145d73e4379",
         "name": "",
         "label": "text",
         "order": 6,
