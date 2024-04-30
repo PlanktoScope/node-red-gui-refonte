@@ -150,30 +150,6 @@
         "h": 302
     },
     {
-        "id": "90e4b408c6998f71",
-        "type": "group",
-        "z": "856e96fc4678e0ab",
-        "name": "Settings",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "23ad5da3e2cba669",
-            "ccac4bc3157e9909",
-            "eec271879f59041a",
-            "a265553dae3d4f6f",
-            "138e5fa64dc3fdbc",
-            "b358b79901f11352",
-            "3774989fb468f88f",
-            "3aaa1a0b628e30af",
-            "c4b57da3bf2d860d"
-        ],
-        "x": 734,
-        "y": 179,
-        "w": 272,
-        "h": 322
-    },
-    {
         "id": "5a0c5f993457e27b",
         "type": "group",
         "z": "b4a53df95ffe5a7e",
@@ -286,12 +262,13 @@
             "fa6efd27c2cae95d",
             "415b7ae07be2dcb9",
             "ebd5d0506fb585a5",
-            "2592fea3481db2e0"
+            "2592fea3481db2e0",
+            "61c14c31ebe22e15"
         ],
         "x": 514,
         "y": 2259,
         "w": 272,
-        "h": 742
+        "h": 822
     },
     {
         "id": "97c213bdacc78737",
@@ -419,7 +396,7 @@
             "74679c26e1f8d3b5"
         ],
         "x": 514,
-        "y": 3019,
+        "y": 3139,
         "w": 222,
         "h": 82
     },
@@ -489,9 +466,48 @@
             "c7f94f75479b696d"
         ],
         "x": 514,
-        "y": 519,
+        "y": 479,
         "w": 222,
         "h": 82
+    },
+    {
+        "id": "9d0751cea25c9f6b",
+        "type": "group",
+        "z": "b7320d7a8092d013",
+        "name": "Left",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4bc924848d1aa059",
+            "6d239757436463dc",
+            "c5274de66061e638",
+            "3def6f73561b4a57"
+        ],
+        "x": 244,
+        "y": 119,
+        "w": 542,
+        "h": 142
+    },
+    {
+        "id": "e7181a1f189fb286",
+        "type": "group",
+        "z": "b7320d7a8092d013",
+        "name": "Right",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5952b5c1b591331d",
+            "6a44905c3029763e",
+            "d0d04723865883c6",
+            "4c1bd4be4312b6f0",
+            "0dcc516044f9d1b4"
+        ],
+        "x": 244,
+        "y": 279,
+        "w": 542,
+        "h": 182
     },
     {
         "id": "1eeac55ba6b9065f",
@@ -602,7 +618,7 @@
         "theme": "c0ea559892f9bd33",
         "order": 2,
         "className": "sample-page",
-        "visible": "true",
+        "visible": true,
         "disabled": "false"
     },
     {
@@ -778,7 +794,7 @@
         "page": "e7f37ce9c08266be",
         "width": "12",
         "height": "1",
-        "order": 18,
+        "order": 20,
         "showTitle": false,
         "className": "section-bouton-4",
         "visible": "true",
@@ -789,8 +805,8 @@
         "type": "ui-group",
         "name": "Section-bouton-3",
         "page": "e7f37ce9c08266be",
-        "width": "8",
-        "height": "1",
+        "width": "4",
+        "height": "2",
         "order": 15,
         "showTitle": false,
         "className": "section-bouton-3",
@@ -934,7 +950,7 @@
         "page": "e7f37ce9c08266be",
         "width": "9",
         "height": "1",
-        "order": 17,
+        "order": 19,
         "showTitle": false,
         "className": "section-bouton-3-1",
         "visible": "true",
@@ -947,7 +963,7 @@
         "page": "e7f37ce9c08266be",
         "width": "12",
         "height": "1",
-        "order": 19,
+        "order": 21,
         "showTitle": false,
         "className": "section-navigation",
         "visible": "true",
@@ -995,11 +1011,11 @@
     {
         "id": "edd7517fed16d256",
         "type": "ui-group",
-        "name": "Section-global",
+        "name": "Section-navigation",
         "page": "b59606fb98c818ca",
         "width": "12",
         "height": "1",
-        "order": -1,
+        "order": 5,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1065,9 +1081,87 @@
         "page": "e7f37ce9c08266be",
         "width": "12",
         "height": "1",
-        "order": 16,
+        "order": 18,
         "showTitle": false,
         "className": "section-bouton-3-1-title",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "bf96bb35cb8939da",
+        "type": "ui-group",
+        "name": "Section-left-title",
+        "page": "b59606fb98c818ca",
+        "width": "9",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "b5142ce757f44ce6",
+        "type": "ui-group",
+        "name": "Section-right-title",
+        "page": "b59606fb98c818ca",
+        "width": "3",
+        "height": "1",
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d4699922e3e31baf",
+        "type": "ui-group",
+        "name": "Section-left",
+        "page": "b59606fb98c818ca",
+        "width": "9",
+        "height": "1",
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "140ce5ad50b22aa0",
+        "type": "ui-group",
+        "name": "Section-right",
+        "page": "b59606fb98c818ca",
+        "width": "3",
+        "height": "1",
+        "order": 4,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "79b34b3c4f1264d3",
+        "type": "ui-group",
+        "name": "Section-bouton-3-or",
+        "page": "e7f37ce9c08266be",
+        "width": "1",
+        "height": "2",
+        "order": 16,
+        "showTitle": false,
+        "className": "section-bouton-3-or",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "5880d067ca89ae45",
+        "type": "ui-group",
+        "name": "Section-boutton-3-0",
+        "page": "e7f37ce9c08266be",
+        "width": "6",
+        "height": "1",
+        "order": 17,
+        "showTitle": false,
+        "className": "Section-bouton-3-0",
         "visible": "true",
         "disabled": "false"
     },
@@ -2031,7 +2125,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "/* Custom CSS - Sample page */\n\n.coord-value div.nrdb-ui-text.nrdb-ui-text--col-center {\n    display: block;\n}\n\n.coord-value {\n    max-width: 1% !important;\n    margin: 0%;\n    padding: 0%;\n}\n\n.sample-page {\n    margin-right: 5rem;\n    margin-left: 5rem;\n}\n\n.section-global-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-1-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.Section-bouton-3-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-1-coord div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-3 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-3-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n} \n\n.section-bouton-4 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    margin-bottom: 1rem;\n}\n\n.section-preset .v-card-text {\n    padding: 0% 1rem !important;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-color: #0a6eca !important;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.information-text-2 label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 5% 2% 5%;\n    min-width: 10%;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.section-navigation:first-child {\n    display: flex;\n    background-color: #0a6eca;\n}",
+        "format": "/* Custom CSS - Sample page */\n\n.coord-value div.nrdb-ui-text.nrdb-ui-text--col-center {\n    display: block;\n}\n\n.coord-value {\n    max-width: 1% !important;\n    margin: 0%;\n    padding: 0%;\n}\n\n.sample-page {\n    margin-right: 5rem;\n    margin-left: 5rem;\n}\n\n.section-global-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-1-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.Section-bouton-3-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-1-coord div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-3 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.Section-bouton-3-0 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-3-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n} \n\n.section-bouton-4 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    margin-bottom: 1rem;\n}\n\n.section-preset .v-card-text {\n    padding: 0% 1rem !important;\n}\n\n.or-button .v-btn {\n    font-size: x-large;\n    color: #0a6eca;\n    /* color: black; */\n    background-color: transparent;\n    pointer-events: none;\n}\n\n.or-button {\n    padding: 0%;\n    margin: 0%;\n}\n\n.section-bouton-3-or {\n    padding-top: 0.75rem;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-color: #0a6eca !important;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.information-text-2 label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 5% 2% 5%;\n    min-width: 10%;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.section-navigation:first-child {\n    display: flex;\n    background-color: #0a6eca;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -2122,7 +2216,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-1-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-coord\",\"Section-bouton-3-1-title\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\",\"Section-global\",\"Section-preset\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-1-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-coord\",\"Section-bouton-3-1-title\",\"Section-bouton-3\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-3-title\",\"Section-bouton-3-1\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\",\"Section-global\",\"Section-preset\"]}}",
         "payloadType": "json",
         "x": 190,
         "y": 80,
@@ -2312,7 +2406,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\"]}}",
                 "tot": "json"
             }
         ],
@@ -2340,7 +2434,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1\",\"Section-bouton-3-1-title\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1\",\"Section-bouton-3-1-title\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\"]}}",
                 "tot": "json"
             }
         ],
@@ -2368,7 +2462,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-3-1\"]}}",
                 "tot": "json"
             }
         ],
@@ -2396,7 +2490,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-4\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-4\"]}}",
                 "tot": "json"
             }
         ],
@@ -2482,7 +2576,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\"]}}",
+                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\"]}}",
                 "tot": "json"
             }
         ],
@@ -2533,7 +2627,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 2880,
+        "y": 2960,
         "wires": [
             []
         ]
@@ -2559,7 +2653,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 2840,
+        "y": 2920,
         "wires": [
             []
         ]
@@ -2585,7 +2679,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 630,
-        "y": 2800,
+        "y": 2880,
         "wires": [
             []
         ]
@@ -2595,10 +2689,10 @@
         "type": "ui-text-input",
         "z": "981fcccea4aa6cd3",
         "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
+        "group": "5880d067ca89ae45",
         "name": "Latitude (eg: 45.7656)",
         "label": "Latitude (eg: 45.7656)",
-        "order": 10,
+        "order": 1,
         "width": "4",
         "height": "1",
         "topic": "topic",
@@ -2611,7 +2705,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 640,
-        "y": 2660,
+        "y": 2740,
         "wires": [
             []
         ]
@@ -3125,10 +3219,10 @@
         "type": "ui-text-input",
         "z": "981fcccea4aa6cd3",
         "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
+        "group": "5880d067ca89ae45",
         "name": "Longitude (eg: -21.5224)",
         "label": "Longitude (eg: -21.5224)",
-        "order": 5,
+        "order": 2,
         "width": "4",
         "height": "1",
         "topic": "topic",
@@ -3141,7 +3235,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 650,
-        "y": 2700,
+        "y": 2780,
         "wires": [
             []
         ]
@@ -3579,7 +3673,7 @@
         "g": "c4b509fbaccac842",
         "group": "a29880480a93f7a3",
         "name": "minutes",
-        "label": "minutes",
+        "label": "minutes (\")",
         "order": 8,
         "width": "1",
         "height": "1",
@@ -3667,7 +3761,7 @@
         "group": "bb7ac3a5f1da594e",
         "name": "Degrees",
         "label": "Degrees",
-        "order": 7,
+        "order": 6,
         "width": "1",
         "height": "1",
         "topic": "topic",
@@ -3693,7 +3787,7 @@
         "group": "bb7ac3a5f1da594e",
         "name": "minutes",
         "label": "minutes",
-        "order": 8,
+        "order": 7,
         "width": "1",
         "height": "1",
         "topic": "topic",
@@ -3745,7 +3839,7 @@
         "group": "bb7ac3a5f1da594e",
         "name": "E-W",
         "label": "",
-        "order": 6,
+        "order": 5,
         "width": "1",
         "height": "1",
         "columns": "2",
@@ -3832,7 +3926,7 @@
         "group": "bb7ac3a5f1da594e",
         "name": "seconds",
         "label": "seconds",
-        "order": 9,
+        "order": 8,
         "width": "1",
         "height": "1",
         "topic": "topic",
@@ -3892,7 +3986,7 @@
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 3060,
+        "y": 3180,
         "wires": [
             [
                 "74679c26e1f8d3b5"
@@ -3910,7 +4004,7 @@
             "d4f15128bec6629d"
         ],
         "x": 695,
-        "y": 3060,
+        "y": 3180,
         "wires": []
     },
     {
@@ -4008,7 +4102,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 2960,
+        "y": 3040,
         "wires": [
             []
         ]
@@ -4034,7 +4128,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 2920,
+        "y": 3000,
         "wires": [
             []
         ]
@@ -4058,8 +4152,36 @@
         "color": "#000000",
         "className": "information-text-2",
         "x": 630,
-        "y": 2760,
+        "y": 2840,
         "wires": []
+    },
+    {
+        "id": "61c14c31ebe22e15",
+        "type": "ui-button",
+        "z": "981fcccea4aa6cd3",
+        "g": "adbf2350e2df0ee2",
+        "group": "79b34b3c4f1264d3",
+        "name": "or button",
+        "label": "OR",
+        "order": 5,
+        "width": "1",
+        "height": "2",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "or-button",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 600,
+        "y": 2680,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "c3200c17efce8790",
@@ -4081,254 +4203,6 @@
         "className": "",
         "x": 610,
         "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "23ad5da3e2cba669",
-        "type": "ui-button",
-        "z": "856e96fc4678e0ab",
-        "g": "90e4b408c6998f71",
-        "group": "2a664c8b638bbad5",
-        "name": "",
-        "label": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "preview-chevron",
-        "icon": "chevron-up",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 870,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ccac4bc3157e9909",
-        "type": "ui-text-input",
-        "z": "856e96fc4678e0ab",
-        "g": "90e4b408c6998f71",
-        "group": "2a664c8b638bbad5",
-        "name": "",
-        "label": "text",
-        "order": 0,
-        "width": "2",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 870,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "eec271879f59041a",
-        "type": "ui-text-input",
-        "z": "856e96fc4678e0ab",
-        "g": "90e4b408c6998f71",
-        "group": "2a664c8b638bbad5",
-        "name": "",
-        "label": "text",
-        "order": 0,
-        "width": "2",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 870,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a265553dae3d4f6f",
-        "type": "ui-button",
-        "z": "856e96fc4678e0ab",
-        "g": "90e4b408c6998f71",
-        "group": "2a664c8b638bbad5",
-        "name": "",
-        "label": "button",
-        "order": 0,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "minus",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 810,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "138e5fa64dc3fdbc",
-        "type": "ui-button",
-        "z": "856e96fc4678e0ab",
-        "g": "90e4b408c6998f71",
-        "group": "2a664c8b638bbad5",
-        "name": "",
-        "label": "button",
-        "order": 0,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "plus",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 930,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b358b79901f11352",
-        "type": "ui-button",
-        "z": "856e96fc4678e0ab",
-        "g": "90e4b408c6998f71",
-        "group": "2a664c8b638bbad5",
-        "name": "",
-        "label": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "setting-icon",
-        "icon": "eye-outline",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 870,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3774989fb468f88f",
-        "type": "ui-button",
-        "z": "856e96fc4678e0ab",
-        "g": "90e4b408c6998f71",
-        "group": "2a664c8b638bbad5",
-        "name": "",
-        "label": "button",
-        "order": 0,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "minus",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 810,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3aaa1a0b628e30af",
-        "type": "ui-button",
-        "z": "856e96fc4678e0ab",
-        "g": "90e4b408c6998f71",
-        "group": "2a664c8b638bbad5",
-        "name": "",
-        "label": "button",
-        "order": 0,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "plus",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 930,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c4b57da3bf2d860d",
-        "type": "ui-button",
-        "z": "856e96fc4678e0ab",
-        "g": "90e4b408c6998f71",
-        "group": "2a664c8b638bbad5",
-        "name": "",
-        "label": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "chevron-down",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 870,
-        "y": 460,
         "wires": [
             []
         ]
@@ -4920,7 +4794,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "",
+        "format": ".left-title label {\n    text-align: left;\n    background-color: #0a6eca;\n    padding:  0.75% 2% 0.5% 1.5%;\n    min-width: 100%;\n    border-bottom: 3px solid #0a6eca;\n    border-radius: 10px;\n    color: #ffffff;\n    font-weight: bold;\n    font-size: larger;\n}\n\n.right-title label {\n    text-align: left;\n    background-color: #0a6eca;\n    padding: 2% 4.5% 1.5% 4.5%;\n    min-width: 100%;\n    border-bottom: 3px solid #0a6eca;\n    border-radius: 10px;\n    color: #ffffff;\n    font-weight: bold;\n    font-size: larger;\n}\n\n.button-queue .v-btn {\n    background-color: #0a6eca;\n    color: #ffffff;\n    font-weight: bold;\n    border-radius: 5px;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -4981,7 +4855,7 @@
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 560,
+        "y": 520,
         "wires": [
             [
                 "c7f94f75479b696d"
@@ -4999,8 +4873,226 @@
             "d5c7b49fc191116b"
         ],
         "x": 695,
-        "y": 560,
+        "y": 520,
         "wires": []
+    },
+    {
+        "id": "4bc924848d1aa059",
+        "type": "ui-text",
+        "z": "b7320d7a8092d013",
+        "g": "9d0751cea25c9f6b",
+        "group": "bf96bb35cb8939da",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "name": "Directories to segment",
+        "label": "Directories to segment",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "left-title",
+        "x": 640,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6d239757436463dc",
+        "type": "ui-table",
+        "z": "b7320d7a8092d013",
+        "g": "9d0751cea25c9f6b",
+        "group": "d4699922e3e31baf",
+        "name": "",
+        "label": "text",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "maxrows": "10",
+        "passthru": false,
+        "autocols": false,
+        "selectionType": "checkbox",
+        "columns": [
+            {
+                "title": "Acquisition name",
+                "key": "acquisition_name"
+            },
+            {
+                "title": "Image",
+                "key": "image"
+            },
+            {
+                "title": "Segmented",
+                "key": "segmented"
+            }
+        ],
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "3def6f73561b4a57"
+            ]
+        ]
+    },
+    {
+        "id": "c5274de66061e638",
+        "type": "inject",
+        "z": "b7320d7a8092d013",
+        "g": "9d0751cea25c9f6b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"acquisition_name\":\"OSM2024_Mix_1\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_2\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_3\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_4\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_5\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_6\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_7\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_8\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_9\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_10\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_11\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_12\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_13\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_14\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_15\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_16\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_17\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_18\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_19\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_20\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_21\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_22\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_23\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_24\",\"image\":\"3000\",\"segmented\":\"false\"}]",
+        "payloadType": "json",
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "6d239757436463dc"
+            ]
+        ]
+    },
+    {
+        "id": "5952b5c1b591331d",
+        "type": "ui-button",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "group": "140ce5ad50b22aa0",
+        "name": "Launch queue",
+        "label": "Launch queue",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-queue",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 620,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a44905c3029763e",
+        "type": "ui-text",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "group": "b5142ce757f44ce6",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "name": "Segmentation in queue",
+        "label": "Segmentation in queue",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "right-title",
+        "x": 650,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "d0d04723865883c6",
+        "type": "ui-table",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "group": "140ce5ad50b22aa0",
+        "name": "",
+        "label": "text",
+        "order": 1,
+        "width": "3",
+        "height": "11",
+        "maxrows": "8",
+        "passthru": false,
+        "autocols": false,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "Acquisition name",
+                "key": "acquisition_name"
+            },
+            {
+                "title": "Remaining time",
+                "key": "remaining_time"
+            }
+        ],
+        "x": 590,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c1bd4be4312b6f0",
+        "type": "function",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "name": "function 7",
+        "func": "msg.payload.forEach(function(/** @type {{ hasOwnProperty: (arg0: string) => any; remaining_time: string; }} */ obj) {\n    if (!obj.hasOwnProperty(\"remaining_time\")) {\n        obj.remaining_time = \"1h30\";\n    }\n});\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 380,
+        "wires": [
+            [
+                "d0d04723865883c6"
+            ]
+        ]
+    },
+    {
+        "id": "3def6f73561b4a57",
+        "type": "link out",
+        "z": "b7320d7a8092d013",
+        "g": "9d0751cea25c9f6b",
+        "name": "link out 29",
+        "mode": "link",
+        "links": [
+            "0dcc516044f9d1b4"
+        ],
+        "x": 745,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0dcc516044f9d1b4",
+        "type": "link in",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "name": "link in 30",
+        "links": [
+            "3def6f73561b4a57"
+        ],
+        "x": 285,
+        "y": 380,
+        "wires": [
+            [
+                "4c1bd4be4312b6f0"
+            ]
+        ]
     },
     {
         "id": "835e4cc018194bf5",
