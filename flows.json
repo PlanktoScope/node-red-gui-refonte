@@ -482,7 +482,7 @@
             "c7f94f75479b696d"
         ],
         "x": 514,
-        "y": 759,
+        "y": 639,
         "w": 222,
         "h": 82
     },
@@ -498,11 +498,12 @@
             "4bc924848d1aa059",
             "6d239757436463dc",
             "c5274de66061e638",
-            "3def6f73561b4a57"
+            "3def6f73561b4a57",
+            "e33f2bbff6ee7b27"
         ],
         "x": 244,
-        "y": 339,
-        "w": 522,
+        "y": 219,
+        "w": 542,
         "h": 142
     },
     {
@@ -518,12 +519,17 @@
             "d0d04723865883c6",
             "4c1bd4be4312b6f0",
             "0dcc516044f9d1b4",
-            "28d4578c1b3d0281"
+            "b553b86305674be3",
+            "bcf1f20cbc5f1be6",
+            "65edfe79cd2baf8e",
+            "bf3047ecf9efb2c7",
+            "c862350c16ac8039",
+            "6e090003b424942f"
         ],
         "x": 244,
-        "y": 499,
-        "w": 542,
-        "h": 222
+        "y": 379,
+        "w": 732,
+        "h": 242
     },
     {
         "id": "8436d0de9088e6db",
@@ -1330,7 +1336,7 @@
         "page": "b59606fb98c818ca",
         "width": "12",
         "height": "1",
-        "order": 5,
+        "order": 6,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1407,7 +1413,7 @@
         "type": "ui-group",
         "name": "Section-left-title",
         "page": "b59606fb98c818ca",
-        "width": "9",
+        "width": "8",
         "height": "1",
         "order": 1,
         "showTitle": false,
@@ -1420,7 +1426,7 @@
         "type": "ui-group",
         "name": "Section-right-title",
         "page": "b59606fb98c818ca",
-        "width": "3",
+        "width": "4",
         "height": "1",
         "order": 2,
         "showTitle": false,
@@ -1433,8 +1439,8 @@
         "type": "ui-group",
         "name": "Section-left",
         "page": "b59606fb98c818ca",
-        "width": "9",
-        "height": "1",
+        "width": "8",
+        "height": "11",
         "order": 3,
         "showTitle": false,
         "className": "",
@@ -1446,11 +1452,11 @@
         "type": "ui-group",
         "name": "Section-right",
         "page": "b59606fb98c818ca",
-        "width": "3",
-        "height": "1",
+        "width": "4",
+        "height": "11",
         "order": 4,
         "showTitle": false,
-        "className": "",
+        "className": "section-right",
         "visible": "true",
         "disabled": "false"
     },
@@ -7820,7 +7826,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".left-title label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 0.5% 5% 0.5% 5%;\n    min-width: 100%;\n    border-color: #0a6eca !important;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n    /* text-align: center;\n    background-color: #0a6eca;\n    padding:  0.75% 2% 0.5% 1.5%;\n    min-width: 100%;\n    border-bottom: 3px solid #0a6eca;\n    border-radius: 10px;\n    color: #ffffff;\n    font-weight: bold;\n    font-size: larger; */\n}\n\n.right-title label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 0.5% 5% 0.5% 5%;\n    min-width: 100%;\n    border-color: #0a6eca !important;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n    /* text-align: center;\n    background-color: #0a6eca;\n    padding: 2% 4.5% 1.5% 4.5%;\n    min-width: 100%;\n    border-bottom: 3px solid #0a6eca;\n    border-radius: 10px;\n    color: #ffffff;\n    font-weight: bold;\n    font-size: larger; */\n}\n\n.button-queue-start .v-btn {\n    background-color: #0a6eca;\n    color: #ffffff;\n    font-weight: bold;\n    border-radius: 5px;\n}\n\n.button-queue-stop .v-btn {\n    background-color: #0a6eca;\n    color: #ffffff;\n    font-weight: bold;\n    border-radius: 5px;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 0.5% 5% 0.5% 5%;\n    /* min-width: 60%; */\n    border-color: #0a6eca !important;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}",
+        "format": ".left-title label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 0.5% 5% 0.5% 5%;\n    min-width: 100%;\n    border-color: #0a6eca !important;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.right-title label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 0.5% 5% 0.5% 5%;\n    min-width: 100%;\n    border-color: #0a6eca !important;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.button-queue-start .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n}\n\n.button-queue-start .v-btn::hov {\n    background-color: #0a6eca;\n    color: #ffffff;\n}\n\n.button-queue-stop .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 0.5% 5% 0.5% 5%;\n    border-color: #0a6eca !important;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.button-queue-start {\n    margin-top: 10px;\n    margin-left: 5px;\n}\n\n.button-queue-stop {\n    margin-right: 5px;\n    margin-top: 10px;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -7830,35 +7836,6 @@
         "y": 40,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "f8817126da7d7948",
-        "type": "ui-control",
-        "z": "b7320d7a8092d013",
-        "name": "",
-        "ui": "1eeac55ba6b9065f",
-        "events": "all",
-        "x": 200,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d5c7b49fc191116b",
-        "type": "link in",
-        "z": "b7320d7a8092d013",
-        "name": "link in 28",
-        "links": [
-            "c7f94f75479b696d"
-        ],
-        "x": 75,
-        "y": 40,
-        "wires": [
-            [
-                "f8817126da7d7948"
-            ]
         ]
     },
     {
@@ -7881,7 +7858,7 @@
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 800,
+        "y": 680,
         "wires": [
             [
                 "c7f94f75479b696d"
@@ -7896,10 +7873,11 @@
         "name": "link out 24",
         "mode": "link",
         "links": [
-            "d5c7b49fc191116b"
+            "d5c7b49fc191116b",
+            "c61f2045d26b8d17"
         ],
         "x": 695,
-        "y": 800,
+        "y": 680,
         "wires": []
     },
     {
@@ -7909,8 +7887,8 @@
         "g": "9d0751cea25c9f6b",
         "group": "bf96bb35cb8939da",
         "order": 0,
-        "width": "0",
-        "height": "0",
+        "width": "8",
+        "height": "1",
         "name": "Directories to segment",
         "label": "Directories to segment",
         "format": "{{msg.payload}}",
@@ -7921,7 +7899,7 @@
         "color": "#717171",
         "className": "left-title",
         "x": 640,
-        "y": 380,
+        "y": 260,
         "wires": []
     },
     {
@@ -7933,8 +7911,8 @@
         "name": "",
         "label": "text",
         "order": 0,
-        "width": 0,
-        "height": 0,
+        "width": "8",
+        "height": "11",
         "maxrows": "10",
         "passthru": false,
         "autocols": false,
@@ -7954,7 +7932,7 @@
             }
         ],
         "x": 590,
-        "y": 440,
+        "y": 320,
         "wires": [
             [
                 "3def6f73561b4a57"
@@ -7980,7 +7958,7 @@
         "payload": "[{\"acquisition_name\":\"OSM2024_Mix_1\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_2\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_3\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_4\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_5\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_6\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_7\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_8\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_9\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_10\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_11\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_12\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_13\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_14\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_15\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_16\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_17\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_18\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_19\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_20\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_21\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_22\",\"image\":\"3000\",\"segmented\":\"false\"},{\"acquisition_name\":\"OSM2024_Mix_23\",\"image\":\"2000\",\"segmented\":\"true\"},{\"acquisition_name\":\"OSM2024_Mix_24\",\"image\":\"3000\",\"segmented\":\"false\"}]",
         "payloadType": "json",
         "x": 350,
-        "y": 440,
+        "y": 320,
         "wires": [
             [
                 "6d239757436463dc"
@@ -7998,155 +7976,9 @@
             "0dcc516044f9d1b4",
             "84d91a7efa815441"
         ],
-        "x": 725,
-        "y": 440,
+        "x": 745,
+        "y": 320,
         "wires": []
-    },
-    {
-        "id": "54be0fd765e9bb5d",
-        "type": "inject",
-        "z": "b7320d7a8092d013",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 130,
-        "y": 80,
-        "wires": [
-            [
-                "3783942c29068b16",
-                "767ab1c3073f7411"
-            ]
-        ]
-    },
-    {
-        "id": "3783942c29068b16",
-        "type": "link out",
-        "z": "b7320d7a8092d013",
-        "name": "link out 37",
-        "mode": "link",
-        "links": [],
-        "x": 255,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "767ab1c3073f7411",
-        "type": "function",
-        "z": "b7320d7a8092d013",
-        "name": "Get env variables",
-        "func": "var env_variables = global.get(\"envVariables\");\nvar LAUNCH_BUTTON_STATE = env_variables.get(\"LAUNCH_BUTTON_STATE\");\n\nmsg.payload = LAUNCH_BUTTON_STATE;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 150,
-        "y": 120,
-        "wires": [
-            [
-                "ad3c9d6e80f4af95"
-            ]
-        ]
-    },
-    {
-        "id": "ad3c9d6e80f4af95",
-        "type": "switch",
-        "z": "b7320d7a8092d013",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "STOP",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "START",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 120,
-        "y": 200,
-        "wires": [
-            [
-                "787d1edc7a44bf8e"
-            ],
-            [
-                "ed2abdea9cb185e2"
-            ]
-        ]
-    },
-    {
-        "id": "ed2abdea9cb185e2",
-        "type": "template",
-        "z": "b7320d7a8092d013",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "css",
-        "syntax": "mustache",
-        "template": ".button-queue-start {\n    visibility: initial;\n}\n\n.button-queue-stop {\n    visibility: hidden;\n}",
-        "output": "str",
-        "x": 280,
-        "y": 220,
-        "wires": [
-            [
-                "1ec6185e23cc1bf4"
-            ]
-        ]
-    },
-    {
-        "id": "787d1edc7a44bf8e",
-        "type": "template",
-        "z": "b7320d7a8092d013",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "css",
-        "syntax": "plain",
-        "template": ".button-queue-start {\n    visibility: hidden;\n}\n\n.button-queue-stop {\n    visibility: initial;\n}",
-        "output": "str",
-        "x": 280,
-        "y": 180,
-        "wires": [
-            [
-                "1ec6185e23cc1bf4"
-            ]
-        ]
-    },
-    {
-        "id": "1ec6185e23cc1bf4",
-        "type": "function",
-        "z": "b7320d7a8092d013",
-        "name": "function 8",
-        "func": "msg.class = msg.payload;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 440,
-        "y": 200,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "6a44905c3029763e",
@@ -8167,7 +7999,7 @@
         "color": "#717171",
         "className": "right-title",
         "x": 650,
-        "y": 540,
+        "y": 420,
         "wires": []
     },
     {
@@ -8179,8 +8011,8 @@
         "name": "",
         "label": "text",
         "order": 1,
-        "width": "3",
-        "height": "11",
+        "width": "4",
+        "height": "12",
         "maxrows": "9",
         "passthru": false,
         "autocols": false,
@@ -8196,7 +8028,7 @@
             }
         ],
         "x": 590,
-        "y": 600,
+        "y": 480,
         "wires": [
             []
         ]
@@ -8215,7 +8047,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 600,
+        "y": 480,
         "wires": [
             [
                 "d0d04723865883c6"
@@ -8232,7 +8064,7 @@
             "3def6f73561b4a57"
         ],
         "x": 285,
-        "y": 600,
+        "y": 480,
         "wires": [
             [
                 "4c1bd4be4312b6f0"
@@ -8240,29 +8072,251 @@
         ]
     },
     {
-        "id": "28d4578c1b3d0281",
-        "type": "ui-template",
+        "id": "b553b86305674be3",
+        "type": "ui-button",
         "z": "b7320d7a8092d013",
         "g": "e7181a1f189fb286",
         "group": "140ce5ad50b22aa0",
-        "page": "",
-        "ui": "",
         "name": "",
-        "order": 0,
-        "width": "3",
+        "label": "Launch queue",
+        "order": 3,
+        "width": "2",
         "height": "1",
-        "head": "",
-        "format": "<template>\n    <div >\n        <div >\n            <v-btn @click=\"buttonClicked(1)\">\n                <div class=\"icon-wrapper\">\n                    <p :class=\"{ 'clicked-text': buttonStates[1] }\">Net (horizontal)</p>\n                </div>\n            </v-btn>\n        </div>\n        <div >\n            <v-btn @click=\"buttonClicked(1)\">\n                <div class=\"icon-wrapper\">\n                    <p :class=\"{ 'clicked-text': buttonStates[1] }\">Net (horizontal)</p>\n                </div>\n            </v-btn>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                buttonStates: {\n                    1: false,\n                    2: false,\n                    3: false,\n                    4: false,\n                    5: false\n                }\n            }\n        },\n        methods: {\n            buttonClicked: function (buttonNumber) {\n                for (let key in this.buttonStates) {\n                    this.buttonStates[key] = false;\n                }\n                this.buttonStates[buttonNumber] = true;\n                this.send({ payload: `Button ${buttonNumber} clicked` });\n            }\n        }\n    }\n</script>\n\n<style>\n    .button-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .button-wrapper {\n        margin: 10px;\n        text-align: center;\n    }\n\n    .square-button {\n        width: 140px;\n        height: 100px;\n        border-radius: 5px;\n        background-color: #ffffff;\n        border: 1px solid #0a6eca;\n        padding: 10px;\n    }\n\n    .square-button:hover {\n        background-color: #b5d3ef;\n    }\n\n    .square-button.clicked {\n        background-color: #0a6eca;\n    }\n\n    .icon-wrapper {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .icon-wrapper i {\n        font-size: 30px;\n        color: #0a6eca;\n        margin-bottom: 5px;\n    }\n\n    .icon-wrapper p {\n        margin: 0;\n        color: #0a6eca;\n    }\n\n    .clicked-text {\n        color: #fff !important;\n    }\n\n    .clicked-icon {\n        color: #fff !important;\n    }\n</style>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 600,
-        "y": 680,
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-queue-start",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 620,
+        "y": 580,
+        "wires": [
+            [
+                "65edfe79cd2baf8e"
+            ]
+        ]
+    },
+    {
+        "id": "e33f2bbff6ee7b27",
+        "type": "inject",
+        "z": "b7320d7a8092d013",
+        "g": "9d0751cea25c9f6b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"acquisition_name\":\"OSM2024_Mix_1\",\"image\":\"2000\",\"segmented\":\"true\"}]",
+        "payloadType": "json",
+        "x": 360,
+        "y": 260,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "bcf1f20cbc5f1be6",
+        "type": "ui-button",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "group": "140ce5ad50b22aa0",
+        "name": "",
+        "label": "Stop queue",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-queue-stop",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 610,
+        "y": 540,
+        "wires": [
+            [
+                "c862350c16ac8039"
+            ]
+        ]
+    },
+    {
+        "id": "65edfe79cd2baf8e",
+        "type": "change",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"disable\":[\"Section-left\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 580,
+        "wires": [
+            [
+                "bf3047ecf9efb2c7"
+            ]
+        ]
+    },
+    {
+        "id": "bf3047ecf9efb2c7",
+        "type": "link out",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "name": "link out 48",
+        "mode": "link",
+        "links": [
+            "d5c7b49fc191116b",
+            "c61f2045d26b8d17",
+            "f6aa1d60edd7af11"
+        ],
+        "x": 935,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "5c2ee28b37289bae",
+        "type": "ui-control",
+        "z": "b7320d7a8092d013",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 320,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c61f2045d26b8d17",
+        "type": "link in",
+        "z": "b7320d7a8092d013",
+        "name": "link in 33",
+        "links": [
+            "bf3047ecf9efb2c7",
+            "c7f94f75479b696d",
+            "6e090003b424942f"
+        ],
+        "x": 55,
+        "y": 40,
+        "wires": [
+            [
+                "5c2ee28b37289bae"
+            ]
+        ]
+    },
+    {
+        "id": "1dd42885b314971c",
+        "type": "change",
+        "z": "b7320d7a8092d013",
+        "name": "Reload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\": \"\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "5c2ee28b37289bae"
+            ]
+        ]
+    },
+    {
+        "id": "f6aa1d60edd7af11",
+        "type": "link in",
+        "z": "b7320d7a8092d013",
+        "name": "link in 34",
+        "links": [
+            "6e090003b424942f",
+            "bf3047ecf9efb2c7"
+        ],
+        "x": 55,
+        "y": 80,
+        "wires": [
+            [
+                "1dd42885b314971c"
+            ]
+        ]
+    },
+    {
+        "id": "c862350c16ac8039",
+        "type": "change",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"enable\":[\"Section-left\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 540,
+        "wires": [
+            [
+                "6e090003b424942f"
+            ]
+        ]
+    },
+    {
+        "id": "6e090003b424942f",
+        "type": "link out",
+        "z": "b7320d7a8092d013",
+        "g": "e7181a1f189fb286",
+        "name": "link out 49",
+        "mode": "link",
+        "links": [
+            "d5c7b49fc191116b",
+            "c61f2045d26b8d17",
+            "f6aa1d60edd7af11"
+        ],
+        "x": 935,
+        "y": 540,
+        "wires": []
     },
     {
         "id": "835e4cc018194bf5",
