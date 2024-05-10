@@ -601,11 +601,11 @@
             "label": true
         },
         "nodes": [
-            "f40a54353cabd66f",
             "5d57d963942840f7",
             "c11f2c292e0231cd",
             "b18c1839eac1e370",
-            "e1f2bbf84ece7889"
+            "e1f2bbf84ece7889",
+            "f40a54353cabd66f"
         ],
         "x": 314,
         "y": 719,
@@ -706,7 +706,7 @@
             "8a0c87ad55152093"
         ],
         "x": 514,
-        "y": 3259,
+        "y": 3199,
         "w": 232,
         "h": 82
     },
@@ -727,7 +727,7 @@
             "114419c4a04e1cd3"
         ],
         "x": 314,
-        "y": 2759,
+        "y": 2719,
         "w": 472,
         "h": 202
     },
@@ -748,7 +748,7 @@
             "1d5f1f97e58de6e5"
         ],
         "x": 254,
-        "y": 2999,
+        "y": 2939,
         "w": 592,
         "h": 202
     },
@@ -765,7 +765,7 @@
             "826fa53a3385d66c"
         ],
         "x": 514,
-        "y": 4039,
+        "y": 4419,
         "w": 222,
         "h": 82
     },
@@ -832,7 +832,7 @@
         "x": 228,
         "y": 2639,
         "w": 644,
-        "h": 588
+        "h": 528
     },
     {
         "id": "3d4ab37c1a64c226",
@@ -851,7 +851,7 @@
             "c23d793ba22e1f8e"
         ],
         "x": 294,
-        "y": 3399,
+        "y": 3339,
         "w": 492,
         "h": 202
     },
@@ -872,7 +872,7 @@
             "74676b211a66587e"
         ],
         "x": 274,
-        "y": 3639,
+        "y": 3579,
         "w": 532,
         "h": 202
     },
@@ -889,9 +889,68 @@
             "5c327d7c24051f5d"
         ],
         "x": 248,
-        "y": 3373,
+        "y": 3313,
         "w": 584,
         "h": 494
+    },
+    {
+        "id": "b21751835e3085cb",
+        "type": "group",
+        "z": "d9ea61f169af1fad",
+        "name": "Niskin-bottle",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fe6d71d7bf5cc7ee",
+            "a352dc2823d26a04"
+        ],
+        "x": 248,
+        "y": 3893,
+        "w": 564,
+        "h": 494
+    },
+    {
+        "id": "fe6d71d7bf5cc7ee",
+        "type": "group",
+        "z": "d9ea61f169af1fad",
+        "g": "b21751835e3085cb",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "de1929c8d27a29e1",
+            "174154a76f635975",
+            "92ef213ba0fe816d",
+            "a41668b4cefb2f6d",
+            "52085f267aa5fb18"
+        ],
+        "x": 294,
+        "y": 3919,
+        "w": 492,
+        "h": 202
+    },
+    {
+        "id": "a352dc2823d26a04",
+        "type": "group",
+        "z": "d9ea61f169af1fad",
+        "g": "b21751835e3085cb",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "750effbc508bb434",
+            "6c1368e19a9f4775",
+            "3e4456230a3dba35",
+            "cb9af687d873bd5b",
+            "10fbe3adfad95d47"
+        ],
+        "x": 274,
+        "y": 4159,
+        "w": 492,
+        "h": 202
     },
     {
         "id": "1eeac55ba6b9065f",
@@ -947,7 +1006,7 @@
         "sizes": {
             "pagePadding": "12px",
             "groupGap": "0px",
-            "groupBorderRadius": "4px",
+            "groupBorderRadius": "0px",
             "widgetGap": "0px"
         }
     },
@@ -1556,7 +1615,7 @@
         "ui": "1eeac55ba6b9065f",
         "path": "/sample-2",
         "icon": "file",
-        "layout": "grid",
+        "layout": "notebook",
         "theme": "c0ea559892f9bd33",
         "order": 3,
         "className": "",
@@ -1568,25 +1627,12 @@
         "type": "ui-group",
         "name": "Project-name",
         "page": "cab77b193831ccdd",
-        "width": "3",
+        "width": "2",
         "height": "1",
         "order": 3,
         "showTitle": false,
         "className": "short-input",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "35bc9ec8025d7356",
-        "type": "ui-group",
-        "name": "Station-ID",
-        "page": "cab77b193831ccdd",
-        "width": "1",
-        "height": "1",
-        "order": 5,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
+        "visible": false,
         "disabled": "false"
     },
     {
@@ -1594,7 +1640,7 @@
         "type": "ui-group",
         "name": "Station-ID-Input",
         "page": "cab77b193831ccdd",
-        "width": "3",
+        "width": "2",
         "height": "1",
         "order": 6,
         "showTitle": false,
@@ -1633,7 +1679,7 @@
         "type": "ui-group",
         "name": "Project-name-input",
         "page": "cab77b193831ccdd",
-        "width": "3",
+        "width": "2",
         "height": "1",
         "order": 4,
         "showTitle": false,
@@ -1672,7 +1718,7 @@
         "type": "ui-group",
         "name": "starting-point-coord-1",
         "page": "cab77b193831ccdd",
-        "width": "12",
+        "width": "10",
         "height": "1",
         "order": 9,
         "showTitle": false,
@@ -1685,7 +1731,7 @@
         "type": "ui-group",
         "name": "starting-point-coord-2",
         "page": "cab77b193831ccdd",
-        "width": "12",
+        "width": "8",
         "height": "1",
         "order": 10,
         "showTitle": false,
@@ -1733,32 +1779,6 @@
         "disabled": "false"
     },
     {
-        "id": "f45d88a256d2f89d",
-        "type": "ui-group",
-        "name": "mesh-size",
-        "page": "cab77b193831ccdd",
-        "width": "3",
-        "height": "1",
-        "order": 16,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "edab3d101b32c403",
-        "type": "ui-group",
-        "name": "net-mouth-opening",
-        "page": "cab77b193831ccdd",
-        "width": "2",
-        "height": "1",
-        "order": 18,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "35cd15dfd3970684",
         "type": "ui-group",
         "name": "net-mouth-opening-input",
@@ -1778,7 +1798,7 @@
         "page": "cab77b193831ccdd",
         "width": "12",
         "height": "1",
-        "order": 25,
+        "order": 29,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1815,7 +1835,7 @@
         "type": "ui-group",
         "name": "ending-point-coord-1",
         "page": "cab77b193831ccdd",
-        "width": "12",
+        "width": "10",
         "height": "1",
         "order": 13,
         "showTitle": false,
@@ -1828,24 +1848,11 @@
         "type": "ui-group",
         "name": "ending-point-coord-2",
         "page": "cab77b193831ccdd",
-        "width": "12",
+        "width": "8",
         "height": "1",
         "order": 14,
         "showTitle": false,
         "className": "ending-point-coord-2",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "3c0b9cd6b4e2eeb9",
-        "type": "ui-group",
-        "name": "bottle-volume",
-        "page": "cab77b193831ccdd",
-        "width": "3",
-        "height": "1",
-        "order": 21,
-        "showTitle": false,
-        "className": "",
         "visible": "true",
         "disabled": "false"
     },
@@ -1863,19 +1870,6 @@
         "disabled": "false"
     },
     {
-        "id": "4f0e043c579487ba",
-        "type": "ui-group",
-        "name": "sampling-volume",
-        "page": "cab77b193831ccdd",
-        "width": "1",
-        "height": "1",
-        "order": 23,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "2333441017b73f6f",
         "type": "ui-group",
         "name": "sampling-volume-input",
@@ -1883,6 +1877,32 @@
         "width": "3",
         "height": "1",
         "order": 24,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7e12efecf9de6360",
+        "type": "ui-group",
+        "name": "sieve-size-input",
+        "page": "cab77b193831ccdd",
+        "width": "3",
+        "height": "1",
+        "order": 26,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "1a6bd504b69eced8",
+        "type": "ui-group",
+        "name": "dillution-factor-input",
+        "page": "cab77b193831ccdd",
+        "width": "3",
+        "height": "1",
+        "order": 28,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -4939,7 +4959,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "/* Custom CSS - Sample-2 page */\n\n    .title {\n        padding: 0% 10% !important;\n        margin-bottom: 1rem !important;\n    }\n\n/* Début long input */\n\n    .label-project-name {\n        text-align: center !important;\n        align-items: center !important;\n    }\n\n    .label-project-name p {\n        color: #0a6eca !important;\n        font-size: large !important;\n        font-weight: bold !important;\n    }\n\n    .project-name div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n        padding: 0rem 15rem !important;\n    }\n\n/* Fin long input */\n\n/* Début short input */\n\n    .label-short-input span {\n        padding-top: 0rem !important;\n        text-align: right !important;\n        align-items: center !important;\n        max-width: 100% !important;\n        color: #0a6eca !important;\n    }\n\n    .short-input div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n    }\n\n    .short-input-gap div.nrdb-layout-group--grid {\n        grid-gap: 10px  !important;\n    }\n\n/* Fin short input */\n\n    .selection {\n        padding: 0rem 20rem !important;\n        margin-bottom: 2rem !important;\n    }\n\n/* Début starting-point-body */\n\n    .starting-point-body {\n        padding: 0rem 20rem !important;\n        margin-bottom: 2rem !important;\n    }\n\n    .starting-point-body div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n/* Fin starting-point-body */\n\n/* Début Starting-point-coord-1 */\n\n    .starting-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .starting-point-coord-1 {\n        margin-left: 18rem;\n    }\n\n/* Fin Starting-point-coord-1 */\n\n/* Début Starting-point-coord-2 */\n\n    .starting-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .starting-point-coord-2 {\n        margin-left: 18rem;\n    }\n\n/* Fin Starting-point-coord-2 */\n\n/* Début ending-point-body */\n\n    .ending-point-body {\n        padding: 0rem 20rem !important;\n        margin-bottom: 2rem !important;\n    }\n\n    .ending-point-body div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n/* Fin ending-point-body */\n\n/* Début ending-point-coord-1 */\n\n    .ending-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .ending-point-coord-1 {\n        margin-left: 18rem;\n    }\n\n/* Fin ending-point-coord-1 */\n\n/* Début ending-point-coord-2 */\n\n    .ending-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .ending-point-coord-2 {\n        margin-left: 18rem;\n    }\n\n/* Fin ending-point-coord-2 */\n\n\n/* Fin net-specificity-body */\n\n    .net-spicificity-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .net-spicificity-body {\n        margin-left: 18rem;\n    }\n\n/* Fin net-specificity-body */\n\n",
+        "format": "/* Custom CSS - Sample-2 page */\n\n    .title {\n        /* padding: 0% 10% !important; */\n        margin-bottom: 1rem !important;\n    }\n\n/* Début long input */\n\n    .label-project-name {\n        text-align: center !important;\n        align-items: center !important;\n    }\n\n    .label-project-name p {\n        color: #0a6eca !important;\n        font-size: large !important;\n        font-weight: bold !important;\n    }\n\n    .project-name div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n        padding: 0rem 15rem !important;\n    }\n\n/* Fin long input */\n\n/* Début short input */\n\n    .label-short-input span {\n        /* padding-top: 0rem !important; */\n        text-align: right !important;\n        align-items: center !important;\n        max-width: 100% !important;\n        color: #0a6eca !important;\n    }\n\n    .short-input div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n    }\n\n    .short-input-gap div.nrdb-layout-group--grid {\n        grid-gap: 10px  !important;\n    }\n\n/* Fin short input */\n\n    .selection {\n        /* padding: 0rem 20rem !important; */\n        margin-bottom: 2rem !important;\n    }\n\n/* Début starting-point-body */\n\n    .starting-point-body {\n        /* padding: 0rem 20rem !important; */\n        margin-bottom: 1rem !important;\n    }\n\n    .starting-point-body div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n/* Fin starting-point-body */\n\n/* Début Starting-point-coord-1 */\n\n    .starting-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n    .starting-point-coord-1 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin Starting-point-coord-1 */\n\n/* Début Starting-point-coord-2 */\n\n    .starting-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n    .starting-point-coord-2 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin Starting-point-coord-2 */\n\n/* Début ending-point-body */\n\n    .ending-point-body {\n        /* padding: 0rem 20rem !important; */\n        margin-bottom: 1rem !important;\n    }\n\n    .ending-point-body div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n/* Fin ending-point-body */\n\n/* Début ending-point-coord-1 */\n\n    .ending-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n    .ending-point-coord-1 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin ending-point-coord-1 */\n\n/* Début ending-point-coord-2 */\n\n    .ending-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n    .ending-point-coord-2 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin ending-point-coord-2 */\n\n\n/* Fin net-specificity-body */\n\n    .net-spicificity-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .net-spicificity-body {\n        margin-left: 18rem;\n    }\n\n/* Fin net-specificity-body */\n\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -4979,7 +4999,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"group\":{\"hide\":[\"starting-point-title\",\"starting-point-body\",\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"net-specificity-title\",\"other-information-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\",\"mesh-size\",\"mesh-size-input\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"starting-point-title\",\"starting-point-body\",\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"net-specificity-title\",\"other-information-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\",\"sieve-size\",\"sieve-size-input\",\"dillution-factor\",\"dillution-factor-input\",\"mesh-size\",\"mesh-size-input\"]}}",
         "payloadType": "json",
         "x": 190,
         "y": 40,
@@ -5197,9 +5217,9 @@
         "group": "477ed6277d18808c",
         "name": "",
         "order": 3,
-        "width": "3",
+        "width": "2",
         "height": "1",
-        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua._",
+        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit._",
         "className": "",
         "x": 610,
         "y": 1100,
@@ -5216,7 +5236,7 @@
         "name": "Station ID - INPUT",
         "label": "",
         "order": 2,
-        "width": "3",
+        "width": "2",
         "height": "1",
         "topic": "topic",
         "topicType": "msg",
@@ -5238,14 +5258,14 @@
         "type": "ui-text",
         "z": "d9ea61f169af1fad",
         "g": "fdc545ad189aafe7",
-        "group": "35bc9ec8025d7356",
-        "order": 0,
-        "width": "1",
+        "group": "477ed6277d18808c",
+        "order": 1,
+        "width": "2",
         "height": "1",
         "name": "",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "row-left",
         "style": false,
         "font": "",
         "fontSize": 16,
@@ -5332,24 +5352,6 @@
         "wires": []
     },
     {
-        "id": "f40a54353cabd66f",
-        "type": "ui-markdown",
-        "z": "d9ea61f169af1fad",
-        "g": "5cd6f86db4e4a766",
-        "group": "53898a08bb1b5f67",
-        "name": "",
-        "order": 3,
-        "width": "3",
-        "height": "1",
-        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua._",
-        "className": "",
-        "x": 610,
-        "y": 880,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "5d57d963942840f7",
         "type": "ui-text-input",
         "z": "d9ea61f169af1fad",
@@ -5358,7 +5360,7 @@
         "name": "Project name - INPUT",
         "label": "",
         "order": 2,
-        "width": "3",
+        "width": "2",
         "height": "1",
         "topic": "topic",
         "topicType": "msg",
@@ -5380,14 +5382,14 @@
         "type": "ui-text",
         "z": "d9ea61f169af1fad",
         "g": "5cd6f86db4e4a766",
-        "group": "6917aea311ac1137",
-        "order": 0,
-        "width": "3",
+        "group": "53898a08bb1b5f67",
+        "order": 1,
+        "width": "1",
         "height": "1",
         "name": "",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "row-left",
         "style": false,
         "font": "",
         "fontSize": 16,
@@ -5500,7 +5502,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-global-title\">\n      <h2>Global sample information</h2>\n    </div>\n    <div class=\"right-section-global-title\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-global-title {\n  flex: 1 !important;\n}\n\n.right-section-global-title {\n  flex: 3 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-global-title\">\n      <h2>Global sample information</h2>\n    </div>\n    <div class=\"right-section-global-title\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-global-title {\n  flex: 2 !important;\n}\n\n.right-section-global-title {\n  flex: 4 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -5556,7 +5558,7 @@
         "sendOnDelay": false,
         "sendOnBlur": true,
         "sendOnEnter": true,
-        "className": "",
+        "className": "sampling-date",
         "x": 620,
         "y": 1260,
         "wires": [
@@ -5706,7 +5708,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"starting-point-coord-2\",\"starting-point-coord-1\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\"],\"show\":[\"starting-point-title\",\"starting-point-body\",\"ending-point-title\",\"ending-point-body\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\",\"other-information-title\"]}}",
+                "to": "{\"group\":{\"hide\":[\"starting-point-coord-2\",\"starting-point-coord-1\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\"],\"show\":[\"starting-point-title\",\"starting-point-body\",\"ending-point-title\",\"ending-point-body\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\",\"other-information-title\",\"sieve-size\",\"sieve-size-input\",\"dillution-factor\",\"dillution-factor-input\"]}}",
                 "tot": "json"
             }
         ],
@@ -5749,7 +5751,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\"],\"show\":[\"starting-point-title\",\"starting-point-body\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\",\"other-information-title\"]}}",
+                "to": "{\"group\":{\"hide\":[\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\"],\"show\":[\"starting-point-title\",\"starting-point-body\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\",\"other-information-title\",\"sieve-size\",\"sieve-size-input\",\"dillution-factor\",\"dillution-factor-input\"]}}",
                 "tot": "json"
             }
         ],
@@ -5792,7 +5794,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\"],\"show\":[\"starting-point-title\",\"other-information-title\",\"starting-point-body\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\"]}}",
+                "to": "{\"group\":{\"hide\":[\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\"],\"show\":[\"starting-point-title\",\"other-information-title\",\"starting-point-body\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\",\"sieve-size\",\"sieve-size-input\",\"dillution-factor\",\"dillution-factor-input\"]}}",
                 "tot": "json"
             }
         ],
@@ -5835,7 +5837,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"starting-point-title\",\"starting-point-body\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\",\"other-information-title\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\"]}}",
+                "to": "{\"group\":{\"hide\":[\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"starting-point-title\",\"starting-point-body\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\",\"other-information-title\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\",\"sieve-size\",\"sieve-size-input\",\"dillution-factor\",\"dillution-factor-input\"]}}",
                 "tot": "json"
             }
         ],
@@ -5878,7 +5880,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"starting-point-title\",\"starting-point-body\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\",\"other-information-title\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\"]}}",
+                "to": "{\"group\":{\"hide\":[\"starting-point-coord-1\",\"starting-point-coord-2\",\"ending-point-title\",\"ending-point-body\",\"ending-point-title\",\"ending-point-body\",\"ending-point-coord-1\",\"ending-point-coord-2\",\"starting-point-title\",\"starting-point-body\",\"net-specificity-title\",\"net-mouth-opening\",\"net-mouth-opening-input\",\"mesh-size\",\"mesh-size-input\",\"other-information-title\",\"bottle-volume\",\"bottle-volume-input\",\"sampling-volume\",\"sampling-volume-input\",\"sieve-size\",\"sieve-size-input\",\"dillution-factor\",\"dillution-factor-input\"]}}",
                 "tot": "json"
             }
         ],
@@ -5971,7 +5973,7 @@
         "name": "N-S",
         "label": "",
         "order": 1,
-        "width": "1",
+        "width": "2",
         "height": "1",
         "columns": "2",
         "passthru": false,
@@ -6004,7 +6006,7 @@
         "g": "bd50abffc6f61dca",
         "group": "4efa31be9ec960c1",
         "name": "Degrees",
-        "label": "Degrees",
+        "label": "D",
         "order": 6,
         "width": "1",
         "height": "1",
@@ -6030,7 +6032,7 @@
         "g": "bd50abffc6f61dca",
         "group": "4efa31be9ec960c1",
         "name": "minutes",
-        "label": "minutes",
+        "label": "M",
         "order": 7,
         "width": "1",
         "height": "1",
@@ -6056,7 +6058,7 @@
         "g": "bd50abffc6f61dca",
         "group": "4efa31be9ec960c1",
         "name": "seconds",
-        "label": "seconds",
+        "label": "S",
         "order": 4,
         "width": "1",
         "height": "1",
@@ -6084,7 +6086,7 @@
         "name": "E-W",
         "label": "",
         "order": 5,
-        "width": "1",
+        "width": "2",
         "height": "1",
         "columns": "2",
         "passthru": false,
@@ -6117,7 +6119,7 @@
         "g": "bd50abffc6f61dca",
         "group": "4efa31be9ec960c1",
         "name": "Degrees",
-        "label": "Degrees",
+        "label": "D",
         "order": 2,
         "width": "1",
         "height": "1",
@@ -6143,7 +6145,7 @@
         "g": "bd50abffc6f61dca",
         "group": "4efa31be9ec960c1",
         "name": "minutes",
-        "label": "minutes",
+        "label": "M",
         "order": 3,
         "width": "1",
         "height": "1",
@@ -6169,7 +6171,7 @@
         "g": "bd50abffc6f61dca",
         "group": "4efa31be9ec960c1",
         "name": "seconds",
-        "label": "seconds",
+        "label": "S",
         "order": 8,
         "width": "1",
         "height": "1",
@@ -6484,14 +6486,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-other-information\">\n      <h2>Other information</h2>\n    </div>\n    <div class=\"right-section-other-information\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-other-information {\n  flex: 1 !important;\n}\n\n.right-section-other-information {\n  flex: 5 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-other-information\">\n      <h2>Other information</h2>\n    </div>\n    <div class=\"right-section-other-information\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-other-information {\n  flex: 2 !important;\n}\n\n.right-section-other-information {\n  flex: 6 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 630,
-        "y": 3300,
+        "y": 3240,
         "wires": [
             []
         ]
@@ -6506,10 +6508,10 @@
         "order": 3,
         "width": "2",
         "height": "1",
-        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua._",
+        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit._",
         "className": "",
         "x": 610,
-        "y": 2920,
+        "y": 2880,
         "wires": [
             []
         ]
@@ -6535,7 +6537,7 @@
         "sendOnEnter": true,
         "className": "short-input",
         "x": 650,
-        "y": 2880,
+        "y": 2840,
         "wires": [
             []
         ]
@@ -6545,21 +6547,21 @@
         "type": "ui-text",
         "z": "d9ea61f169af1fad",
         "g": "d3acc0e8dbfe63de",
-        "group": "f45d88a256d2f89d",
-        "order": 0,
-        "width": "3",
+        "group": "5b8a8c4aeb2b7255",
+        "order": 1,
+        "width": "2",
         "height": "1",
         "name": "",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "row-left",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 590,
-        "y": 2840,
+        "y": 2800,
         "wires": []
     },
     {
@@ -6581,7 +6583,7 @@
         "payload": "Mesh size (µm)",
         "payloadType": "str",
         "x": 440,
-        "y": 2840,
+        "y": 2800,
         "wires": [
             [
                 "e23a069d3697d8fd"
@@ -6596,7 +6598,7 @@
         "name": "Short input",
         "info": "",
         "x": 420,
-        "y": 2800,
+        "y": 2760,
         "wires": []
     },
     {
@@ -6609,10 +6611,10 @@
         "order": 3,
         "width": "2",
         "height": "1",
-        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua._",
+        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit._",
         "className": "",
         "x": 610,
-        "y": 3160,
+        "y": 3100,
         "wires": [
             []
         ]
@@ -6638,7 +6640,7 @@
         "sendOnEnter": true,
         "className": "short-input",
         "x": 680,
-        "y": 3120,
+        "y": 3060,
         "wires": [
             []
         ]
@@ -6648,21 +6650,21 @@
         "type": "ui-text",
         "z": "d9ea61f169af1fad",
         "g": "3048145f3940f357",
-        "group": "edab3d101b32c403",
-        "order": 0,
+        "group": "35cd15dfd3970684",
+        "order": 1,
         "width": "2",
         "height": "1",
         "name": "",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "row-left",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 590,
-        "y": 3080,
+        "y": 3020,
         "wires": []
     },
     {
@@ -6684,7 +6686,7 @@
         "payload": "Net mouth opening (cm)",
         "payloadType": "str",
         "x": 410,
-        "y": 3080,
+        "y": 3020,
         "wires": [
             [
                 "58f24bdd08a4eb76"
@@ -6699,7 +6701,7 @@
         "name": "Short input",
         "info": "",
         "x": 360,
-        "y": 3040,
+        "y": 2980,
         "wires": []
     },
     {
@@ -6722,7 +6724,7 @@
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 4080,
+        "y": 4460,
         "wires": [
             [
                 "826fa53a3385d66c"
@@ -6740,7 +6742,7 @@
             "84fd0d7ef8a9fa4a"
         ],
         "x": 695,
-        "y": 4080,
+        "y": 4460,
         "wires": []
     },
     {
@@ -6802,7 +6804,7 @@
         "g": "439bfc3dd6263439",
         "group": "3e990a3057795779",
         "name": "seconds",
-        "label": "seconds",
+        "label": "S",
         "order": 8,
         "width": "1",
         "height": "1",
@@ -6830,7 +6832,7 @@
         "name": "N-S",
         "label": "",
         "order": 1,
-        "width": "1",
+        "width": "2",
         "height": "1",
         "columns": "2",
         "passthru": false,
@@ -6863,7 +6865,7 @@
         "g": "439bfc3dd6263439",
         "group": "3e990a3057795779",
         "name": "Degrees",
-        "label": "Degrees",
+        "label": "D",
         "order": 6,
         "width": "1",
         "height": "1",
@@ -6889,7 +6891,7 @@
         "g": "439bfc3dd6263439",
         "group": "3e990a3057795779",
         "name": "minutes",
-        "label": "minutes",
+        "label": "M",
         "order": 7,
         "width": "1",
         "height": "1",
@@ -6915,7 +6917,7 @@
         "g": "439bfc3dd6263439",
         "group": "3e990a3057795779",
         "name": "seconds",
-        "label": "seconds",
+        "label": "S",
         "order": 4,
         "width": "1",
         "height": "1",
@@ -6943,7 +6945,7 @@
         "name": "E-W",
         "label": "",
         "order": 5,
-        "width": "1",
+        "width": "2",
         "height": "1",
         "columns": "2",
         "passthru": false,
@@ -6976,7 +6978,7 @@
         "g": "439bfc3dd6263439",
         "group": "3e990a3057795779",
         "name": "Degrees",
-        "label": "Degrees",
+        "label": "D",
         "order": 2,
         "width": "1",
         "height": "1",
@@ -7002,7 +7004,7 @@
         "g": "439bfc3dd6263439",
         "group": "3e990a3057795779",
         "name": "minutes",
-        "label": "minutes",
+        "label": "M",
         "order": 3,
         "width": "1",
         "height": "1",
@@ -7343,7 +7345,7 @@
         "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua._",
         "className": "",
         "x": 610,
-        "y": 3560,
+        "y": 3500,
         "wires": [
             []
         ]
@@ -7369,7 +7371,7 @@
         "sendOnEnter": true,
         "className": "short-input",
         "x": 650,
-        "y": 3520,
+        "y": 3460,
         "wires": [
             []
         ]
@@ -7379,21 +7381,21 @@
         "type": "ui-text",
         "z": "d9ea61f169af1fad",
         "g": "3d4ab37c1a64c226",
-        "group": "3c0b9cd6b4e2eeb9",
-        "order": 0,
+        "group": "6624aefd31353dd6",
+        "order": 1,
         "width": "3",
         "height": "1",
         "name": "",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "row-left",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 590,
-        "y": 3480,
+        "y": 3420,
         "wires": []
     },
     {
@@ -7415,7 +7417,7 @@
         "payload": "Bottle volume (..)",
         "payloadType": "str",
         "x": 430,
-        "y": 3480,
+        "y": 3420,
         "wires": [
             [
                 "88b8448c2fbbb70f"
@@ -7430,7 +7432,7 @@
         "name": "Short input",
         "info": "",
         "x": 400,
-        "y": 3440,
+        "y": 3380,
         "wires": []
     },
     {
@@ -7446,7 +7448,7 @@
         "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua._",
         "className": "",
         "x": 610,
-        "y": 3800,
+        "y": 3740,
         "wires": [
             []
         ]
@@ -7472,7 +7474,7 @@
         "sendOnEnter": true,
         "className": "short-input",
         "x": 660,
-        "y": 3760,
+        "y": 3700,
         "wires": [
             []
         ]
@@ -7482,21 +7484,21 @@
         "type": "ui-text",
         "z": "d9ea61f169af1fad",
         "g": "5c327d7c24051f5d",
-        "group": "4f0e043c579487ba",
-        "order": 0,
+        "group": "2333441017b73f6f",
+        "order": 1,
         "width": "1",
         "height": "1",
         "name": "",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "row-left",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 590,
-        "y": 3720,
+        "y": 3660,
         "wires": []
     },
     {
@@ -7518,7 +7520,7 @@
         "payload": "Sampling volume (..)",
         "payloadType": "str",
         "x": 420,
-        "y": 3720,
+        "y": 3660,
         "wires": [
             [
                 "f1f0c7a3a0c2833f"
@@ -7533,8 +7535,232 @@
         "name": "Short input",
         "info": "",
         "x": 380,
-        "y": 3680,
+        "y": 3620,
         "wires": []
+    },
+    {
+        "id": "de1929c8d27a29e1",
+        "type": "ui-markdown",
+        "z": "d9ea61f169af1fad",
+        "g": "fe6d71d7bf5cc7ee",
+        "group": "7e12efecf9de6360",
+        "name": "",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua._",
+        "className": "",
+        "x": 610,
+        "y": 4080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "174154a76f635975",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "fe6d71d7bf5cc7ee",
+        "group": "7e12efecf9de6360",
+        "name": "Sieve size (µm) - INPUT",
+        "label": "",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "short-input",
+        "x": 650,
+        "y": 4040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92ef213ba0fe816d",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "fe6d71d7bf5cc7ee",
+        "group": "7e12efecf9de6360",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 590,
+        "y": 4000,
+        "wires": []
+    },
+    {
+        "id": "a41668b4cefb2f6d",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "fe6d71d7bf5cc7ee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Sieve size (µm)",
+        "payloadType": "str",
+        "x": 420,
+        "y": 4000,
+        "wires": [
+            [
+                "92ef213ba0fe816d"
+            ]
+        ]
+    },
+    {
+        "id": "52085f267aa5fb18",
+        "type": "comment",
+        "z": "d9ea61f169af1fad",
+        "g": "fe6d71d7bf5cc7ee",
+        "name": "Short input",
+        "info": "",
+        "x": 400,
+        "y": 3960,
+        "wires": []
+    },
+    {
+        "id": "750effbc508bb434",
+        "type": "ui-markdown",
+        "z": "d9ea61f169af1fad",
+        "g": "a352dc2823d26a04",
+        "group": "1a6bd504b69eced8",
+        "name": "",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua._",
+        "className": "",
+        "x": 610,
+        "y": 4320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c1368e19a9f4775",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "a352dc2823d26a04",
+        "group": "1a6bd504b69eced8",
+        "name": "Dillution factor - INPUT",
+        "label": "",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "short-input",
+        "x": 640,
+        "y": 4280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e4456230a3dba35",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "a352dc2823d26a04",
+        "group": "1a6bd504b69eced8",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 590,
+        "y": 4240,
+        "wires": []
+    },
+    {
+        "id": "cb9af687d873bd5b",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "a352dc2823d26a04",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Dillution factor",
+        "payloadType": "str",
+        "x": 400,
+        "y": 4240,
+        "wires": [
+            [
+                "3e4456230a3dba35"
+            ]
+        ]
+    },
+    {
+        "id": "10fbe3adfad95d47",
+        "type": "comment",
+        "z": "d9ea61f169af1fad",
+        "g": "a352dc2823d26a04",
+        "name": "Short input",
+        "info": "",
+        "x": 380,
+        "y": 4200,
+        "wires": []
+    },
+    {
+        "id": "f40a54353cabd66f",
+        "type": "ui-markdown",
+        "z": "d9ea61f169af1fad",
+        "g": "5cd6f86db4e4a766",
+        "group": "53898a08bb1b5f67",
+        "name": "",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "content": "_Lorem ipsum dolor sit amet, consectetur adipiscing elit._",
+        "className": "",
+        "x": 610,
+        "y": 880,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "c3200c17efce8790",
