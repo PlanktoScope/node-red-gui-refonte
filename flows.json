@@ -2,7 +2,7 @@
     {
         "id": "2d41a8ed5aea3449",
         "type": "tab",
-        "label": "Env variables",
+        "label": "Setup",
         "disabled": false,
         "info": "",
         "env": []
@@ -643,7 +643,7 @@
             "84b2e2c863b0d35a"
         ],
         "x": 294,
-        "y": 139,
+        "y": 239,
         "w": 452,
         "h": 82
     },
@@ -661,8 +661,146 @@
             "2b689b7936903f14"
         ],
         "x": 514,
-        "y": 639,
+        "y": 739,
         "w": 192,
+        "h": 82
+    },
+    {
+        "id": "b49d5419b808ad28",
+        "type": "group",
+        "z": "fb15c917381dd273",
+        "name": "Form",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "22f2ca24e7ed1695",
+            "d7059e7342276f63",
+            "3fc41b5d1227afd1",
+            "ae4d3fc339f99099",
+            "1edf16bf7984462a",
+            "5972d2dd3d7342e8",
+            "e879bc4be5d359ca",
+            "589743bc50f72a96",
+            "3c65f10b5789b40f",
+            "11c1fbdee32f55a6",
+            "000aaa99eb505460",
+            "1204489b4eaf1bfe",
+            "c1d01711b02de203",
+            "284e47ae04575ac7",
+            "06d866cd016cb6eb",
+            "07e57705d69196a0"
+        ],
+        "x": 164,
+        "y": 339,
+        "w": 1012,
+        "h": 382
+    },
+    {
+        "id": "72fbdf3432fd7e66",
+        "type": "group",
+        "z": "8480f672239bc1d5",
+        "name": "Feedback title",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "f50b58164c0fad22",
+            "52c6d427a6c43d76"
+        ],
+        "x": 314,
+        "y": 139,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "20025d5321eaeec6",
+        "type": "group",
+        "z": "8480f672239bc1d5",
+        "name": "Information & thanks",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "3781303c9c2f1549"
+        ],
+        "x": 514,
+        "y": 499,
+        "w": 192,
+        "h": 82
+    },
+    {
+        "id": "de794feadafd3a7a",
+        "type": "group",
+        "z": "8480f672239bc1d5",
+        "name": "Form",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "3eadc3fc2ed544f4",
+            "35d9832bb4cab417",
+            "f8a01b90ce722c0a",
+            "3cc66c313148c5d6",
+            "1e7ca4476b3cd758",
+            "e49d361896e7b836",
+            "bdade2686f129173",
+            "6947bb2fd11f07fc",
+            "701d2b15c6d53029"
+        ],
+        "x": 164,
+        "y": 239,
+        "w": 562,
+        "h": 242
+    },
+    {
+        "id": "de2b0f7cb4455c9b",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Global variable",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "885ac675497d0229",
+            "60dbf0a81c4be17e",
+            "dd51b147fcd3bf55",
+            "de5ce0a5d51b4a20"
+        ],
+        "x": 284,
+        "y": 59,
+        "w": 702,
+        "h": 82
+    },
+    {
+        "id": "96bb330907da5bdb",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "First visit",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "9d5c5f31e49c7414",
+            "d130bfaef3e31cc2",
+            "26ef12e53ec2958f",
+            "85d18d7f5d8af6b8"
+        ],
+        "x": 284,
+        "y": 159,
+        "w": 742,
         "h": 82
     },
     {
@@ -790,100 +928,6 @@
         "y": 3999,
         "w": 492,
         "h": 202
-    },
-    {
-        "id": "b49d5419b808ad28",
-        "type": "group",
-        "z": "fb15c917381dd273",
-        "name": "Form",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "22f2ca24e7ed1695",
-            "d7059e7342276f63",
-            "3fc41b5d1227afd1",
-            "ae4d3fc339f99099",
-            "1edf16bf7984462a",
-            "5972d2dd3d7342e8",
-            "e879bc4be5d359ca",
-            "589743bc50f72a96",
-            "3c65f10b5789b40f",
-            "11c1fbdee32f55a6",
-            "000aaa99eb505460",
-            "1204489b4eaf1bfe",
-            "c1d01711b02de203",
-            "284e47ae04575ac7"
-        ],
-        "x": 164,
-        "y": 239,
-        "w": 622,
-        "h": 382
-    },
-    {
-        "id": "72fbdf3432fd7e66",
-        "type": "group",
-        "z": "8480f672239bc1d5",
-        "name": "Feedback title",
-        "style": {
-            "label": true,
-            "stroke": "#000000",
-            "color": "#000000"
-        },
-        "nodes": [
-            "f50b58164c0fad22",
-            "52c6d427a6c43d76"
-        ],
-        "x": 314,
-        "y": 139,
-        "w": 412,
-        "h": 82
-    },
-    {
-        "id": "20025d5321eaeec6",
-        "type": "group",
-        "z": "8480f672239bc1d5",
-        "name": "Information & thanks",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "3781303c9c2f1549"
-        ],
-        "x": 514,
-        "y": 499,
-        "w": 192,
-        "h": 82
-    },
-    {
-        "id": "de794feadafd3a7a",
-        "type": "group",
-        "z": "8480f672239bc1d5",
-        "name": "Form",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "3eadc3fc2ed544f4",
-            "35d9832bb4cab417",
-            "f8a01b90ce722c0a",
-            "3cc66c313148c5d6",
-            "1e7ca4476b3cd758",
-            "e49d361896e7b836",
-            "bdade2686f129173",
-            "6947bb2fd11f07fc",
-            "701d2b15c6d53029"
-        ],
-        "x": 164,
-        "y": 239,
-        "w": 562,
-        "h": 242
     },
     {
         "id": "1eeac55ba6b9065f",
@@ -1674,10 +1718,26 @@
         "disabled": "false"
     },
     {
+        "id": "3da386409fa03189",
+        "type": "persistent values config",
+        "name": "Config 0",
+        "values": [
+            {
+                "id": "a820b210-1122-11ef-859a-e74349e74cab",
+                "name": "first-visit",
+                "datatype": "bool",
+                "default": true,
+                "description": "First visit of the user on the PlanktoScope",
+                "scope": "global",
+                "storage": "default"
+            }
+        ]
+    },
+    {
         "id": "ab7abe42214339fd",
         "type": "inject",
         "z": "2d41a8ed5aea3449",
-        "name": "",
+        "name": "Begin",
         "props": [
             {
                 "p": "payload"
@@ -1689,12 +1749,12 @@
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
-        "payloadType": "date",
-        "x": 210,
-        "y": 40,
+        "payloadType": "str",
+        "x": 90,
+        "y": 100,
         "wires": [
             [
-                "885ac675497d0229"
+                "97790217bf3c2c85"
             ]
         ]
     },
@@ -1702,16 +1762,17 @@
         "id": "885ac675497d0229",
         "type": "function",
         "z": "2d41a8ed5aea3449",
+        "g": "de2b0f7cb4455c9b",
         "name": "Set env variables",
-        "func": "const ENV_VARIABLES = new Map()\n\nENV_VARIABLES.set(\"LAUNCH_BUTTON_STATE\", \"STOP\");\n\nglobal.set(\"envVariables\", ENV_VARIABLES);\nreturn msg;",
+        "func": "const ENV_VARIABLES = new Map()\n\nENV_VARIABLES.set(\"\", \"\");\n\nglobal.set(\"envVariables\", ENV_VARIABLES);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 40,
+        "x": 450,
+        "y": 100,
         "wires": [
             [
                 "dd51b147fcd3bf55"
@@ -1722,6 +1783,7 @@
         "id": "60dbf0a81c4be17e",
         "type": "debug",
         "z": "2d41a8ed5aea3449",
+        "g": "de2b0f7cb4455c9b",
         "name": "Env variables set",
         "active": true,
         "tosidebar": true,
@@ -1732,13 +1794,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 850,
-        "y": 40,
+        "y": 100,
         "wires": []
     },
     {
         "id": "dd51b147fcd3bf55",
         "type": "function",
         "z": "2d41a8ed5aea3449",
+        "g": "de2b0f7cb4455c9b",
         "name": "Get env variables",
         "func": "var env_variables = global.get(\"envVariables\");\nvar LAUNCH_BUTTON_STATE = env_variables.get(\"LAUNCH_BUTTON_STATE\");\n\nmsg.payload = LAUNCH_BUTTON_STATE;\n\nreturn msg;",
         "outputs": 1,
@@ -1747,11 +1810,197 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
-        "y": 40,
+        "x": 650,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97790217bf3c2c85",
+        "type": "link out",
+        "z": "2d41a8ed5aea3449",
+        "name": "link out 56",
+        "mode": "link",
+        "links": [
+            "de5ce0a5d51b4a20",
+            "0234f277c190141d",
+            "be8a3a5edab2a6a2",
+            "82f782054187a6a8",
+            "a25d7b80746001e3",
+            "d130bfaef3e31cc2"
+        ],
+        "x": 175,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "de5ce0a5d51b4a20",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "de2b0f7cb4455c9b",
+        "name": "link in 40",
+        "links": [
+            "97790217bf3c2c85"
+        ],
+        "x": 325,
+        "y": 100,
         "wires": [
             [
-                "60dbf0a81c4be17e"
+                "885ac675497d0229"
+            ]
+        ]
+    },
+    {
+        "id": "9d5c5f31e49c7414",
+        "type": "change",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "26ef12e53ec2958f"
+            ]
+        ]
+    },
+    {
+        "id": "d130bfaef3e31cc2",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "link in 45",
+        "links": [
+            "97790217bf3c2c85"
+        ],
+        "x": 325,
+        "y": 200,
+        "wires": [
+            [
+                "9d5c5f31e49c7414"
+            ]
+        ]
+    },
+    {
+        "id": "26ef12e53ec2958f",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Config 0",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 670,
+        "y": 200,
+        "wires": [
+            [
+                "85d18d7f5d8af6b8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "85d18d7f5d8af6b8",
+        "type": "debug",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "Read first visit state",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "6a5d78b1bdbbd9da",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Config 0",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 270,
+        "y": 420,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9a59e8d02ffe1f9b",
+        "type": "inject",
+        "z": "2d41a8ed5aea3449",
+        "name": "Reset",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 420,
+        "wires": [
+            [
+                "6a5d78b1bdbbd9da"
             ]
         ]
     },
@@ -1798,7 +2047,7 @@
         "payload": "WELCOME ON PLANKTOSCOPE",
         "payloadType": "str",
         "x": 430,
-        "y": 180,
+        "y": 280,
         "wires": [
             [
                 "84b2e2c863b0d35a"
@@ -1850,7 +2099,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 280,
+        "y": 380,
         "wires": [
             []
         ]
@@ -1876,7 +2125,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 320,
+        "y": 420,
         "wires": [
             []
         ]
@@ -1902,7 +2151,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 590,
-        "y": 360,
+        "y": 460,
         "wires": [
             []
         ]
@@ -1928,7 +2177,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 400,
+        "y": 500,
         "wires": [
             []
         ]
@@ -1956,7 +2205,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 590,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
                 "589743bc50f72a96"
@@ -1981,15 +2230,15 @@
         "className": "",
         "icon": "",
         "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
+        "payload": "false",
+        "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
         "x": 600,
-        "y": 580,
+        "y": 680,
         "wires": [
             [
-                "284e47ae04575ac7"
+                "06d866cd016cb6eb"
             ]
         ]
     },
@@ -2014,7 +2263,7 @@
         "to": "",
         "reg": false,
         "x": 330,
-        "y": 400,
+        "y": 500,
         "wires": [
             [
                 "22f2ca24e7ed1695",
@@ -2037,7 +2286,7 @@
             "1204489b4eaf1bfe"
         ],
         "x": 675,
-        "y": 540,
+        "y": 640,
         "wires": []
     },
     {
@@ -2051,7 +2300,7 @@
             "c24d1751dd739fe4"
         ],
         "x": 205,
-        "y": 400,
+        "y": 500,
         "wires": [
             [
                 "e879bc4be5d359ca"
@@ -2062,7 +2311,7 @@
         "id": "14dcfaa3c3d9cfcd",
         "type": "inject",
         "z": "fb15c917381dd273",
-        "name": "",
+        "name": "Begin",
         "props": [
             {
                 "p": "topic",
@@ -2074,7 +2323,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 140,
+        "x": 130,
         "y": 40,
         "wires": [
             [
@@ -2091,9 +2340,10 @@
         "links": [
             "3c65f10b5789b40f",
             "1204489b4eaf1bfe",
-            "57fd38433196163e"
+            "57fd38433196163e",
+            "5144a6f881adaa91"
         ],
-        "x": 235,
+        "x": 215,
         "y": 40,
         "wires": []
     },
@@ -2138,7 +2388,7 @@
         "topicType": "msg",
         "className": "",
         "x": 600,
-        "y": 440,
+        "y": 540,
         "wires": [
             []
         ]
@@ -2164,7 +2414,7 @@
         "to": "",
         "reg": false,
         "x": 330,
-        "y": 440,
+        "y": 540,
         "wires": [
             [
                 "11c1fbdee32f55a6"
@@ -2182,7 +2432,7 @@
             "c24d1751dd739fe4"
         ],
         "x": 205,
-        "y": 440,
+        "y": 540,
         "wires": [
             [
                 "000aaa99eb505460"
@@ -2210,7 +2460,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 650,
-        "y": 480,
+        "y": 580,
         "wires": [
             []
         ]
@@ -2228,7 +2478,7 @@
         "content": "## Why whe ask this information\n\n_At vero eos et accusamus et iusto odio dignissimos ducimus \nqui blanditiis praesentium voluptatum deleniti atque \ncorrupti quos dolores et quas molestias excepturi sint \noccaecati cupiditate non provident, similique sunt in \nculpa qui officia deserunt mollitia animi, id est \nlaborum et dolorum fuga. Et harum quidem rerum facilis \nest et expedita distinctio. Nam libero tempore, cum \nsoluta nobis est eligendi optio cumque nihil impedit quo \nminus id quod maxime placeat facere possimus, omnis \nvoluptas assumenda est, omnis dolor repellendus. \nTemporibus autem quibusdam et aut officiis debitis \naut rerum necessitatibus saepe eveniet ut et voluptates \nrepudiandae sint et molestiae non recusandae. \nItaque earum rerum hic tenetur a sapiente delectus, \nut aut reiciendis voluptatibus maiores alias \nconsequatur aut perferendis doloribus asperiores repellat._\n\n### Thank you\n\n_At vero eos et accusamus et iusto odio dignissimos ducimus \nqui blanditiis praesentium voluptatum deleniti atque \ncorrupti quos dolores et quas molestias excepturi sint \noccaecati cupiditate non provident, similique sunt in \nculpa qui officia deserunt mollitia animi, id est \nlaborum et dolorum fuga. Et harum quidem rerum facilis \nest et expedita distinctio._",
         "className": "markdown",
         "x": 610,
-        "y": 680,
+        "y": 780,
         "wires": [
             []
         ]
@@ -2252,7 +2502,7 @@
         "color": "#717171",
         "className": "welcome-message",
         "x": 630,
-        "y": 180,
+        "y": 280,
         "wires": []
     },
     {
@@ -2263,7 +2513,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 200,
-        "y": 80,
+        "y": 200,
         "wires": [
             []
         ]
@@ -2278,8 +2528,8 @@
         "links": [
             "f2332fa1b7e6397e"
         ],
-        "x": 695,
-        "y": 580,
+        "x": 1135,
+        "y": 680,
         "wires": []
     },
     {
@@ -2288,13 +2538,211 @@
         "z": "fb15c917381dd273",
         "name": "link in 37",
         "links": [
+            "5a6d4529c23e5762",
             "284e47ae04575ac7"
         ],
         "x": 95,
-        "y": 80,
+        "y": 200,
         "wires": [
             [
                 "43dd46a8e4c6e486"
+            ]
+        ]
+    },
+    {
+        "id": "360917da5f1a9e18",
+        "type": "persistent value",
+        "z": "fb15c917381dd273",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Config 0",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "638b0a62601acf8b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "638b0a62601acf8b",
+        "type": "switch",
+        "z": "fb15c917381dd273",
+        "name": "if \"false\"",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "1660c112924a30ff"
+            ]
+        ]
+    },
+    {
+        "id": "1660c112924a30ff",
+        "type": "change",
+        "z": "fb15c917381dd273",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\": \"Home\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 140,
+        "wires": [
+            [
+                "5a6d4529c23e5762"
+            ]
+        ]
+    },
+    {
+        "id": "5a6d4529c23e5762",
+        "type": "link out",
+        "z": "fb15c917381dd273",
+        "name": "link out 57",
+        "mode": "link",
+        "links": [
+            "f2332fa1b7e6397e"
+        ],
+        "x": 795,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "06d866cd016cb6eb",
+        "type": "persistent value",
+        "z": "fb15c917381dd273",
+        "g": "b49d5419b808ad28",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Config 0",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 790,
+        "y": 680,
+        "wires": [
+            [
+                "07e57705d69196a0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "07e57705d69196a0",
+        "type": "change",
+        "z": "fb15c917381dd273",
+        "g": "b49d5419b808ad28",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\": \"Home\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 680,
+        "wires": [
+            [
+                "284e47ae04575ac7"
+            ]
+        ]
+    },
+    {
+        "id": "350889dfdbf346b1",
+        "type": "ui-event",
+        "z": "fb15c917381dd273",
+        "ui": "1eeac55ba6b9065f",
+        "name": "",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "945d328e119695c0"
+            ]
+        ]
+    },
+    {
+        "id": "945d328e119695c0",
+        "type": "switch",
+        "z": "fb15c917381dd273",
+        "name": "If \"First welcoming page\"",
+        "property": "payload.page.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "First welcoming",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "360917da5f1a9e18"
             ]
         ]
     },
