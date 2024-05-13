@@ -1,5 +1,13 @@
 [
     {
+        "id": "2d41a8ed5aea3449",
+        "type": "tab",
+        "label": "Env variables",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "54343cf33bf0a216",
         "type": "tab",
         "label": "Global",
@@ -24,18 +32,9 @@
         "env": []
     },
     {
-        "id": "981fcccea4aa6cd3",
-        "type": "tab",
-        "label": "Page Sample",
-        "disabled": false,
-        "locked": true,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "d9ea61f169af1fad",
         "type": "tab",
-        "label": "Page Sample 2",
+        "label": "Page Sample",
         "disabled": false,
         "info": "",
         "env": []
@@ -73,9 +72,9 @@
         "env": []
     },
     {
-        "id": "2d41a8ed5aea3449",
+        "id": "8480f672239bc1d5",
         "type": "tab",
-        "label": "Env variables",
+        "label": "Page Feedback",
         "disabled": false,
         "info": "",
         "env": []
@@ -100,29 +99,6 @@
         "x": 74,
         "y": 539,
         "w": 692,
-        "h": 202
-    },
-    {
-        "id": "f4342ba54d87c333",
-        "type": "group",
-        "z": "a707f17e5367291d",
-        "name": "Third line",
-        "style": {
-            "label": true,
-            "fill": "#ffbfbf"
-        },
-        "nodes": [
-            "b1e36b2718644cab",
-            "f366a87b6ae313da",
-            "0dc415ec85c54eaf",
-            "1da8f6bad390834c",
-            "c70fcb3a379e78b2",
-            "107b489639a008f0",
-            "d80807f8f8f08a43"
-        ],
-        "x": 74,
-        "y": 759,
-        "w": 672,
         "h": 202
     },
     {
@@ -263,169 +239,6 @@
         "h": 82
     },
     {
-        "id": "adbf2350e2df0ee2",
-        "type": "group",
-        "z": "981fcccea4aa6cd3",
-        "name": "Section bouton 3",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "efb49e3720df4f6d",
-            "02a8618305ef81fb",
-            "aa0c3c84fed6a9a9",
-            "502129c38ddf8198",
-            "125e784f6d4792e3",
-            "15d56e040a7613ef",
-            "2b65d7c5796237b2",
-            "2d807fb6695930c2",
-            "72978948e1c4018a",
-            "d2ccc69925ea1062",
-            "d8f7c295113a9193",
-            "17b426522e8a26e8",
-            "d9b1d674f8d02f84",
-            "fa6efd27c2cae95d",
-            "415b7ae07be2dcb9",
-            "ebd5d0506fb585a5",
-            "2592fea3481db2e0",
-            "61c14c31ebe22e15"
-        ],
-        "x": 514,
-        "y": 2259,
-        "w": 272,
-        "h": 822
-    },
-    {
-        "id": "97c213bdacc78737",
-        "type": "group",
-        "z": "981fcccea4aa6cd3",
-        "name": "Section bouton 1",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "ead8d63b1f127f17",
-            "b4e9c8a5779f0f26",
-            "6f0237b3132c58c9",
-            "126e6e0e955da1b4",
-            "47a5e1b4757d0805",
-            "97d33131818ddc29",
-            "fec6ed07bd47c30f",
-            "425c59ada598d55d",
-            "cdd3fedc02055976",
-            "95d446f698cd96df",
-            "8c444c94aeb724ae",
-            "d0229f1f355ac27b",
-            "6a6fa2a6db3757c1"
-        ],
-        "x": 514,
-        "y": 719,
-        "w": 272,
-        "h": 582
-    },
-    {
-        "id": "4f5f1f069ed4f6e2",
-        "type": "group",
-        "z": "981fcccea4aa6cd3",
-        "name": "Section global",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "f562df42f5a4b75e",
-            "f49db7b930892fd8",
-            "735dd79ab910351c",
-            "795e86d9be7c58d6",
-            "3948a37ec1b8c803",
-            "993103c3c34b3156",
-            "0169d773ecfbbbcc"
-        ],
-        "x": 514,
-        "y": 119,
-        "w": 272,
-        "h": 322
-    },
-    {
-        "id": "f1ed5ca80185892b",
-        "type": "group",
-        "z": "981fcccea4aa6cd3",
-        "name": "Section preset",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "756698c99ceee2c8",
-            "49275fc2c8a90339",
-            "624dbdfc580f320d",
-            "ea586a296790564c",
-            "1fc584727e7a50d0",
-            "45f51b11651ef1b7",
-            "b156d7b379fd5166",
-            "b5df891429cc0f13",
-            "8f1385d8c3aaee84",
-            "bc7487ac5d0886ba",
-            "c3626f3aa764bd03",
-            "ba9e2b8ab8b10f00"
-        ],
-        "x": 514,
-        "y": 459,
-        "w": 622,
-        "h": 242
-    },
-    {
-        "id": "c4b509fbaccac842",
-        "type": "group",
-        "z": "981fcccea4aa6cd3",
-        "name": "Section bouton 2",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9a609df7529298d8",
-            "ef6aea27efcf872a",
-            "bd3b30728cdce18b",
-            "03506d264b8dc351",
-            "08e4f811c66098ce",
-            "7d76a23ff246e288",
-            "8c47d33528fc74bc",
-            "31b4f418e9b95a6e",
-            "fce629a76a43c949",
-            "1557a78603a005b1",
-            "a6f1a04555ed8ca5",
-            "5aece39579178eb8",
-            "728b32486424cc9b",
-            "2fc56bf948e3fc7d",
-            "ef399131c3d32fea",
-            "ece1189d50558a6c",
-            "a438fbc83e0e72be",
-            "4105a842792147d2",
-            "55880ba6e45e08d7",
-            "f1edd3aa5f7561df",
-            "8143c21edfbea652"
-        ],
-        "x": 514,
-        "y": 1319,
-        "w": 272,
-        "h": 922
-    },
-    {
-        "id": "ca1a2f7bcebcd1b0",
-        "type": "group",
-        "z": "981fcccea4aa6cd3",
-        "name": "Navigation",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "0b76724133f50bfc",
-            "74679c26e1f8d3b5"
-        ],
-        "x": 514,
-        "y": 3139,
-        "w": 222,
-        "h": 82
-    },
-    {
         "id": "1f5b7433d4de7aae",
         "type": "group",
         "z": "856e96fc4678e0ab",
@@ -474,7 +287,7 @@
             "9b648872ae81aab5"
         ],
         "x": 74,
-        "y": 979,
+        "y": 759,
         "w": 612,
         "h": 142
     },
@@ -816,6 +629,43 @@
         "h": 494
     },
     {
+        "id": "78cb5158be62cbf7",
+        "type": "group",
+        "z": "fb15c917381dd273",
+        "name": "Welcome message",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "a0596a20ee161733",
+            "84b2e2c863b0d35a"
+        ],
+        "x": 294,
+        "y": 139,
+        "w": 452,
+        "h": 82
+    },
+    {
+        "id": "4c9d6bc55b0e95c2",
+        "type": "group",
+        "z": "fb15c917381dd273",
+        "name": "Information & thanks",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "2b689b7936903f14"
+        ],
+        "x": 514,
+        "y": 639,
+        "w": 192,
+        "h": 82
+    },
+    {
         "id": "d3acc0e8dbfe63de",
         "type": "group",
         "z": "d9ea61f169af1fad",
@@ -942,26 +792,7 @@
         "h": 202
     },
     {
-        "id": "78cb5158be62cbf7",
-        "type": "group",
-        "z": "fb15c917381dd273",
-        "name": "Welcome message",
-        "style": {
-            "label": true,
-            "stroke": "#000000",
-            "color": "#000000"
-        },
-        "nodes": [
-            "a0596a20ee161733",
-            "84b2e2c863b0d35a"
-        ],
-        "x": 334,
-        "y": 159,
-        "w": 412,
-        "h": 82
-    },
-    {
-        "id": "32750df488f8e55c",
+        "id": "b49d5419b808ad28",
         "type": "group",
         "z": "fb15c917381dd273",
         "name": "Form",
@@ -983,17 +814,37 @@
             "11c1fbdee32f55a6",
             "000aaa99eb505460",
             "1204489b4eaf1bfe",
-            "c1d01711b02de203"
+            "c1d01711b02de203",
+            "284e47ae04575ac7"
         ],
         "x": 164,
-        "y": 259,
+        "y": 239,
         "w": 622,
         "h": 382
     },
     {
-        "id": "4c9d6bc55b0e95c2",
+        "id": "72fbdf3432fd7e66",
         "type": "group",
-        "z": "fb15c917381dd273",
+        "z": "8480f672239bc1d5",
+        "name": "Feedback title",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "f50b58164c0fad22",
+            "52c6d427a6c43d76"
+        ],
+        "x": 314,
+        "y": 139,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "20025d5321eaeec6",
+        "type": "group",
+        "z": "8480f672239bc1d5",
         "name": "Information & thanks",
         "style": {
             "stroke": "#000000",
@@ -1001,12 +852,38 @@
             "color": "#000000"
         },
         "nodes": [
-            "2b689b7936903f14"
+            "3781303c9c2f1549"
         ],
         "x": 514,
-        "y": 659,
+        "y": 499,
         "w": 192,
         "h": 82
+    },
+    {
+        "id": "de794feadafd3a7a",
+        "type": "group",
+        "z": "8480f672239bc1d5",
+        "name": "Form",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "3eadc3fc2ed544f4",
+            "35d9832bb4cab417",
+            "f8a01b90ce722c0a",
+            "3cc66c313148c5d6",
+            "1e7ca4476b3cd758",
+            "e49d361896e7b836",
+            "bdade2686f129173",
+            "6947bb2fd11f07fc",
+            "701d2b15c6d53029"
+        ],
+        "x": 164,
+        "y": 239,
+        "w": 562,
+        "h": 242
     },
     {
         "id": "1eeac55ba6b9065f",
@@ -1030,7 +907,7 @@
         "icon": "home",
         "layout": "notebook",
         "theme": "c0ea559892f9bd33",
-        "order": 1,
+        "order": 2,
         "className": "home-page",
         "visible": "true",
         "disabled": "false"
@@ -1107,20 +984,6 @@
         "disabled": "false"
     },
     {
-        "id": "e7f37ce9c08266be",
-        "type": "ui-page",
-        "name": "Sample-old",
-        "ui": "1eeac55ba6b9065f",
-        "path": "/sample-old",
-        "icon": "file",
-        "layout": "grid",
-        "theme": "c0ea559892f9bd33",
-        "order": 2,
-        "className": "sample-page",
-        "visible": false,
-        "disabled": "false"
-    },
-    {
         "id": "3720bdc972d93bca",
         "type": "ui-page",
         "name": "Preview",
@@ -1160,19 +1023,6 @@
         "order": 6,
         "className": "",
         "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "bad72850424336e4",
-        "type": "ui-group",
-        "name": "Section-preset",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 3,
-        "showTitle": false,
-        "className": "section-preset",
-        "visible": true,
         "disabled": "false"
     },
     {
@@ -1274,201 +1124,6 @@
         "disabled": "false"
     },
     {
-        "id": "48024fe939a23893",
-        "type": "ui-group",
-        "name": "Section-global",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 2,
-        "showTitle": false,
-        "className": "section-global",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "ed66a2d109aa792e",
-        "type": "ui-group",
-        "name": "Section-bouton-4",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 20,
-        "showTitle": false,
-        "className": "section-bouton-4",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "bb7ac3a5f1da594e",
-        "type": "ui-group",
-        "name": "Section-bouton-3",
-        "page": "e7f37ce9c08266be",
-        "width": "4",
-        "height": "2",
-        "order": 15,
-        "showTitle": false,
-        "className": "section-bouton-3",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "21984aa69938bf88",
-        "type": "ui-group",
-        "name": "Section-bouton-1",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 5,
-        "showTitle": false,
-        "className": "section-bouton-1",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "01a287087d24199d",
-        "type": "ui-group",
-        "name": "Section-global-title",
-        "page": "e7f37ce9c08266be",
-        "width": "3",
-        "height": "1",
-        "order": 1,
-        "showTitle": false,
-        "className": "section-global-title",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "84824637436cb7fb",
-        "type": "ui-group",
-        "name": "Section-bouton-2",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 9,
-        "showTitle": false,
-        "className": "section-bouton-2",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "06db5d6897cf91d8",
-        "type": "ui-group",
-        "name": "Section-bouton-1-title",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 4,
-        "showTitle": false,
-        "className": "section-bouton-1-title",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "adf5a6b0c32b20f0",
-        "type": "ui-group",
-        "name": "Section-bouton-1-2-title",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 6,
-        "showTitle": false,
-        "className": "section-bouton-1-2-title",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "3a7277d2d5e66a34",
-        "type": "ui-group",
-        "name": "Section-bouton-1-2",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 7,
-        "showTitle": false,
-        "className": "section-bouton-1-2",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "3ab8a80c05b53e0c",
-        "type": "ui-group",
-        "name": "Section-bouton-2-title",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 8,
-        "showTitle": false,
-        "className": "section-bouton-2-title",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "332b02cefa57a63d",
-        "type": "ui-group",
-        "name": "Section-bouton-2-1-title",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 10,
-        "showTitle": false,
-        "className": "section-bouton-2-1-title",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "a29880480a93f7a3",
-        "type": "ui-group",
-        "name": "Section-bouton-2-1-coord",
-        "page": "e7f37ce9c08266be",
-        "width": "8",
-        "height": "1",
-        "order": 11,
-        "showTitle": false,
-        "className": "section-bouton-2-1-coord",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "69a2d6fcf772d1d0",
-        "type": "ui-group",
-        "name": "Section-bouton-3-title",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 14,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "e70e8efdc77b18cb",
-        "type": "ui-group",
-        "name": "Section-bouton-3-1",
-        "page": "e7f37ce9c08266be",
-        "width": "9",
-        "height": "1",
-        "order": 19,
-        "showTitle": false,
-        "className": "section-bouton-3-1",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "eb21a8a88e7c9ea4",
-        "type": "ui-group",
-        "name": "Section-navigation",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 21,
-        "showTitle": false,
-        "className": "section-navigation",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "4e7e4bba9c5a1a15",
         "type": "ui-group",
         "name": "Section-navigation",
@@ -1548,45 +1203,6 @@
         "disabled": "false"
     },
     {
-        "id": "3c2dcd295d2c882b",
-        "type": "ui-group",
-        "name": "Section-bouton-2-2-title",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 12,
-        "showTitle": false,
-        "className": "section-bouton-2-2-title",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "d23c73d3fe8198f4",
-        "type": "ui-group",
-        "name": "Section-bouton-2-2",
-        "page": "e7f37ce9c08266be",
-        "width": "9",
-        "height": "1",
-        "order": 13,
-        "showTitle": false,
-        "className": "section-bouton-2-2",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "e369fba3e4349c38",
-        "type": "ui-group",
-        "name": "Section-bouton-3-1-title",
-        "page": "e7f37ce9c08266be",
-        "width": "12",
-        "height": "1",
-        "order": 18,
-        "showTitle": false,
-        "className": "section-bouton-3-1-title",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "bf96bb35cb8939da",
         "type": "ui-group",
         "name": "Section-left-title",
@@ -1635,32 +1251,6 @@
         "order": 4,
         "showTitle": false,
         "className": "section-right",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "79b34b3c4f1264d3",
-        "type": "ui-group",
-        "name": "Section-bouton-3-or",
-        "page": "e7f37ce9c08266be",
-        "width": "1",
-        "height": "2",
-        "order": 16,
-        "showTitle": false,
-        "className": "section-bouton-3-or",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "5880d067ca89ae45",
-        "type": "ui-group",
-        "name": "Section-boutton-3-0",
-        "page": "e7f37ce9c08266be",
-        "width": "6",
-        "height": "1",
-        "order": 17,
-        "showTitle": false,
-        "className": "Section-bouton-3-0",
         "visible": "true",
         "disabled": "false"
     },
@@ -1960,9 +1550,9 @@
         "icon": "human-greeting",
         "layout": "notebook",
         "theme": "c0ea559892f9bd33",
-        "order": -1,
+        "order": 1,
         "className": "",
-        "visible": "true",
+        "visible": "false",
         "disabled": "false"
     },
     {
@@ -2018,6 +1608,154 @@
         "disabled": "false"
     },
     {
+        "id": "49049f18470fb25c",
+        "type": "ui-page",
+        "name": "Feedback",
+        "ui": "1eeac55ba6b9065f",
+        "path": "/feedback",
+        "icon": "comment-quote",
+        "layout": "notebook",
+        "theme": "c0ea559892f9bd33",
+        "order": 8,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "12d8b8bab14423fc",
+        "type": "ui-group",
+        "name": "Feedback title",
+        "page": "49049f18470fb25c",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "e4e3d6debfa2a69d",
+        "type": "ui-group",
+        "name": "Feedback input",
+        "page": "49049f18470fb25c",
+        "width": "12",
+        "height": "3",
+        "order": -1,
+        "showTitle": false,
+        "className": "feedback-input",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "b1a3199db6d057fb",
+        "type": "ui-group",
+        "name": "Feedback-button",
+        "page": "49049f18470fb25c",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "feedback-button",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "83a8d2f40529ce6e",
+        "type": "ui-group",
+        "name": "Information",
+        "page": "49049f18470fb25c",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ab7abe42214339fd",
+        "type": "inject",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 40,
+        "wires": [
+            [
+                "885ac675497d0229"
+            ]
+        ]
+    },
+    {
+        "id": "885ac675497d0229",
+        "type": "function",
+        "z": "2d41a8ed5aea3449",
+        "name": "Set env variables",
+        "func": "const ENV_VARIABLES = new Map()\n\nENV_VARIABLES.set(\"LAUNCH_BUTTON_STATE\", \"STOP\");\n\nglobal.set(\"envVariables\", ENV_VARIABLES);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 40,
+        "wires": [
+            [
+                "dd51b147fcd3bf55"
+            ]
+        ]
+    },
+    {
+        "id": "60dbf0a81c4be17e",
+        "type": "debug",
+        "z": "2d41a8ed5aea3449",
+        "name": "Env variables set",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "dd51b147fcd3bf55",
+        "type": "function",
+        "z": "2d41a8ed5aea3449",
+        "name": "Get env variables",
+        "func": "var env_variables = global.get(\"envVariables\");\nvar LAUNCH_BUTTON_STATE = env_variables.get(\"LAUNCH_BUTTON_STATE\");\n\nmsg.payload = LAUNCH_BUTTON_STATE;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 40,
+        "wires": [
+            [
+                "60dbf0a81c4be17e"
+            ]
+        ]
+    },
+    {
         "id": "db628ba400a981fc",
         "type": "ui-template",
         "z": "54343cf33bf0a216",
@@ -2046,7 +1784,7 @@
         "type": "inject",
         "z": "fb15c917381dd273",
         "g": "78cb5158be62cbf7",
-        "name": "",
+        "name": "Welcome message",
         "props": [
             {
                 "p": "payload"
@@ -2057,10 +1795,10 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "BIENVENUE SUR LE PLANKTOSCOPE",
+        "payload": "WELCOME ON PLANKTOSCOPE",
         "payloadType": "str",
-        "x": 440,
-        "y": 200,
+        "x": 430,
+        "y": 180,
         "wires": [
             [
                 "84b2e2c863b0d35a"
@@ -2079,7 +1817,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "/* Custom CSS - Home page */\n\n.welcome-message span {\n    font-size: 40px;\n    color: #0a6eca;\n}\n\n.welcome-message {\n    margin-bottom: 3rem;\n}\n\n/* */\n\n.form div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n/* */\n\n.form-button button {\n    background-color: white;\n    border: 1px solid #0a6eca;\n    color: #0a6eca;\n}\n\n.form-button div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n.markdown h1 {\n    color: #0a6eca;\n}",
+        "format": "/* Custom CSS - Home page */\n\n.welcome-message span {\n    font-size: 40px;\n    color: #0a6eca;\n}\n\n.welcome-message {\n    margin-bottom: 3rem;\n}\n\n/* */\n\n.form div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n/* */\n\n.form-button button {\n    background-color: white;\n    border: 1px solid #0a6eca;\n    color: #0a6eca;\n}\n\n.form-button div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n.markdown h2 {\n    color: #0a6eca;\n}\n\n.markdown h3 {\n    color: #0a6eca;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -2095,7 +1833,7 @@
         "id": "22f2ca24e7ed1695",
         "type": "ui-text-input",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "group": "38a038b123d4100c",
         "name": "First name",
         "label": "First name (required)",
@@ -2112,7 +1850,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 300,
+        "y": 280,
         "wires": [
             []
         ]
@@ -2121,7 +1859,7 @@
         "id": "d7059e7342276f63",
         "type": "ui-text-input",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "group": "38a038b123d4100c",
         "name": "Last name",
         "label": "Last name (required)",
@@ -2138,7 +1876,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 610,
-        "y": 340,
+        "y": 320,
         "wires": [
             []
         ]
@@ -2147,7 +1885,7 @@
         "id": "3fc41b5d1227afd1",
         "type": "ui-text-input",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "group": "38a038b123d4100c",
         "name": "Email",
         "label": "Email (required)",
@@ -2164,7 +1902,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 590,
-        "y": 380,
+        "y": 360,
         "wires": [
             []
         ]
@@ -2173,7 +1911,7 @@
         "id": "ae4d3fc339f99099",
         "type": "ui-text-input",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "group": "38a038b123d4100c",
         "name": "Phone number",
         "label": "Phone number",
@@ -2190,7 +1928,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 420,
+        "y": 400,
         "wires": [
             []
         ]
@@ -2199,7 +1937,7 @@
         "id": "1edf16bf7984462a",
         "type": "ui-button",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "group": "c1ba6611d9d31bee",
         "name": "clear",
         "label": "clear",
@@ -2218,7 +1956,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 590,
-        "y": 560,
+        "y": 540,
         "wires": [
             [
                 "589743bc50f72a96"
@@ -2229,7 +1967,7 @@
         "id": "5972d2dd3d7342e8",
         "type": "ui-button",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "group": "c1ba6611d9d31bee",
         "name": "validate",
         "label": "validate",
@@ -2248,16 +1986,18 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 600,
-        "y": 600,
+        "y": 580,
         "wires": [
-            []
+            [
+                "284e47ae04575ac7"
+            ]
         ]
     },
     {
         "id": "e879bc4be5d359ca",
         "type": "change",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "name": "",
         "rules": [
             {
@@ -2274,7 +2014,7 @@
         "to": "",
         "reg": false,
         "x": 330,
-        "y": 420,
+        "y": 400,
         "wires": [
             [
                 "22f2ca24e7ed1695",
@@ -2289,7 +2029,7 @@
         "id": "589743bc50f72a96",
         "type": "link out",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "name": "link out 50",
         "mode": "link",
         "links": [
@@ -2297,21 +2037,21 @@
             "1204489b4eaf1bfe"
         ],
         "x": 675,
-        "y": 560,
+        "y": 540,
         "wires": []
     },
     {
         "id": "3c65f10b5789b40f",
         "type": "link in",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "name": "link in 35",
         "links": [
             "589743bc50f72a96",
             "c24d1751dd739fe4"
         ],
         "x": 205,
-        "y": 420,
+        "y": 400,
         "wires": [
             [
                 "e879bc4be5d359ca"
@@ -2350,7 +2090,8 @@
         "mode": "link",
         "links": [
             "3c65f10b5789b40f",
-            "1204489b4eaf1bfe"
+            "1204489b4eaf1bfe",
+            "57fd38433196163e"
         ],
         "x": 235,
         "y": 40,
@@ -2360,7 +2101,7 @@
         "id": "11c1fbdee32f55a6",
         "type": "ui-dropdown",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "group": "38a038b123d4100c",
         "name": "Organism",
         "label": "Organism",
@@ -2397,7 +2138,7 @@
         "topicType": "msg",
         "className": "",
         "x": 600,
-        "y": 460,
+        "y": 440,
         "wires": [
             []
         ]
@@ -2406,7 +2147,7 @@
         "id": "000aaa99eb505460",
         "type": "change",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "name": "",
         "rules": [
             {
@@ -2423,7 +2164,7 @@
         "to": "",
         "reg": false,
         "x": 330,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
                 "11c1fbdee32f55a6"
@@ -2434,14 +2175,14 @@
         "id": "1204489b4eaf1bfe",
         "type": "link in",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "name": "link in 36",
         "links": [
             "589743bc50f72a96",
             "c24d1751dd739fe4"
         ],
         "x": 205,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
                 "000aaa99eb505460"
@@ -2452,7 +2193,7 @@
         "id": "c1d01711b02de203",
         "type": "ui-text-input",
         "z": "fb15c917381dd273",
-        "g": "32750df488f8e55c",
+        "g": "b49d5419b808ad28",
         "group": "38a038b123d4100c",
         "name": "Name of the organisme",
         "label": "Name of the organisme",
@@ -2469,7 +2210,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 650,
-        "y": 500,
+        "y": 480,
         "wires": [
             []
         ]
@@ -2484,10 +2225,10 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "content": "# Why whe ask this information\n\n_At vero eos et accusamus et iusto odio dignissimos ducimus \nqui blanditiis praesentium voluptatum deleniti atque \ncorrupti quos dolores et quas molestias excepturi sint \noccaecati cupiditate non provident, similique sunt in \nculpa qui officia deserunt mollitia animi, id est \nlaborum et dolorum fuga. Et harum quidem rerum facilis \nest et expedita distinctio. Nam libero tempore, cum \nsoluta nobis est eligendi optio cumque nihil impedit quo \nminus id quod maxime placeat facere possimus, omnis \nvoluptas assumenda est, omnis dolor repellendus. \nTemporibus autem quibusdam et aut officiis debitis \naut rerum necessitatibus saepe eveniet ut et voluptates \nrepudiandae sint et molestiae non recusandae. \nItaque earum rerum hic tenetur a sapiente delectus, \nut aut reiciendis voluptatibus maiores alias \nconsequatur aut perferendis doloribus asperiores repellat._\n\n# Thank you\n\n_At vero eos et accusamus et iusto odio dignissimos ducimus \nqui blanditiis praesentium voluptatum deleniti atque \ncorrupti quos dolores et quas molestias excepturi sint \noccaecati cupiditate non provident, similique sunt in \nculpa qui officia deserunt mollitia animi, id est \nlaborum et dolorum fuga. Et harum quidem rerum facilis \nest et expedita distinctio._",
+        "content": "## Why whe ask this information\n\n_At vero eos et accusamus et iusto odio dignissimos ducimus \nqui blanditiis praesentium voluptatum deleniti atque \ncorrupti quos dolores et quas molestias excepturi sint \noccaecati cupiditate non provident, similique sunt in \nculpa qui officia deserunt mollitia animi, id est \nlaborum et dolorum fuga. Et harum quidem rerum facilis \nest et expedita distinctio. Nam libero tempore, cum \nsoluta nobis est eligendi optio cumque nihil impedit quo \nminus id quod maxime placeat facere possimus, omnis \nvoluptas assumenda est, omnis dolor repellendus. \nTemporibus autem quibusdam et aut officiis debitis \naut rerum necessitatibus saepe eveniet ut et voluptates \nrepudiandae sint et molestiae non recusandae. \nItaque earum rerum hic tenetur a sapiente delectus, \nut aut reiciendis voluptatibus maiores alias \nconsequatur aut perferendis doloribus asperiores repellat._\n\n### Thank you\n\n_At vero eos et accusamus et iusto odio dignissimos ducimus \nqui blanditiis praesentium voluptatum deleniti atque \ncorrupti quos dolores et quas molestias excepturi sint \noccaecati cupiditate non provident, similique sunt in \nculpa qui officia deserunt mollitia animi, id est \nlaborum et dolorum fuga. Et harum quidem rerum facilis \nest et expedita distinctio._",
         "className": "markdown",
         "x": 610,
-        "y": 700,
+        "y": 680,
         "wires": [
             []
         ]
@@ -2511,8 +2252,51 @@
         "color": "#717171",
         "className": "welcome-message",
         "x": 630,
-        "y": 200,
+        "y": 180,
         "wires": []
+    },
+    {
+        "id": "43dd46a8e4c6e486",
+        "type": "ui-control",
+        "z": "fb15c917381dd273",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "284e47ae04575ac7",
+        "type": "link out",
+        "z": "fb15c917381dd273",
+        "g": "b49d5419b808ad28",
+        "name": "link out 52",
+        "mode": "link",
+        "links": [
+            "f2332fa1b7e6397e"
+        ],
+        "x": 695,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "f2332fa1b7e6397e",
+        "type": "link in",
+        "z": "fb15c917381dd273",
+        "name": "link in 37",
+        "links": [
+            "284e47ae04575ac7"
+        ],
+        "x": 95,
+        "y": 80,
+        "wires": [
+            [
+                "43dd46a8e4c6e486"
+            ]
+        ]
     },
     {
         "id": "8d830e194c4c638c",
@@ -2578,72 +2362,6 @@
         "className": "information-text",
         "x": 650,
         "y": 700,
-        "wires": []
-    },
-    {
-        "id": "b1e36b2718644cab",
-        "type": "ui-text",
-        "z": "a707f17e5367291d",
-        "g": "f4342ba54d87c333",
-        "group": "a3b1938e41297818",
-        "order": 1,
-        "width": "4",
-        "height": "1",
-        "name": "Image taken",
-        "label": "Image taken",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "information-text",
-        "x": 630,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "f366a87b6ae313da",
-        "type": "ui-text",
-        "z": "a707f17e5367291d",
-        "g": "f4342ba54d87c333",
-        "group": "a3b1938e41297818",
-        "order": 2,
-        "width": "4",
-        "height": "1",
-        "name": "Time used",
-        "label": "Time used",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "information-text",
-        "x": 630,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "0dc415ec85c54eaf",
-        "type": "ui-text",
-        "z": "a707f17e5367291d",
-        "g": "f4342ba54d87c333",
-        "group": "a3b1938e41297818",
-        "order": 3,
-        "width": "4",
-        "height": "1",
-        "name": "Sample taken",
-        "label": "Sample taken",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "information-text",
-        "x": 640,
-        "y": 920,
         "wires": []
     },
     {
@@ -2758,97 +2476,6 @@
         "wires": [
             [
                 "34dbd3041722720a"
-            ]
-        ]
-    },
-    {
-        "id": "d80807f8f8f08a43",
-        "type": "inject",
-        "z": "a707f17e5367291d",
-        "g": "f4342ba54d87c333",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"image-taken\":\"34.587.624\",\"time-used\":\"256h\",\"sample-taken\":\"10.000\"}",
-        "payloadType": "json",
-        "x": 180,
-        "y": 860,
-        "wires": [
-            [
-                "1da8f6bad390834c",
-                "c70fcb3a379e78b2",
-                "107b489639a008f0"
-            ]
-        ]
-    },
-    {
-        "id": "1da8f6bad390834c",
-        "type": "function",
-        "z": "a707f17e5367291d",
-        "g": "f4342ba54d87c333",
-        "name": "function 4",
-        "func": "var value = msg.payload[\"image-taken\"];\n\nmsg.payload = value\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 800,
-        "wires": [
-            [
-                "b1e36b2718644cab"
-            ]
-        ]
-    },
-    {
-        "id": "c70fcb3a379e78b2",
-        "type": "function",
-        "z": "a707f17e5367291d",
-        "g": "f4342ba54d87c333",
-        "name": "function 5",
-        "func": "var value = msg.payload[\"time-used\"];\n\nmsg.payload = value\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 860,
-        "wires": [
-            [
-                "f366a87b6ae313da"
-            ]
-        ]
-    },
-    {
-        "id": "107b489639a008f0",
-        "type": "function",
-        "z": "a707f17e5367291d",
-        "g": "f4342ba54d87c333",
-        "name": "function 6",
-        "func": "var value = msg.payload[\"sample-taken\"];\n\nmsg.payload = value\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 920,
-        "wires": [
-            [
-                "0dc415ec85c54eaf"
             ]
         ]
     },
@@ -3157,7 +2784,7 @@
         "payload": "Connected",
         "payloadType": "str",
         "x": 190,
-        "y": 1020,
+        "y": 800,
         "wires": [
             [
                 "44eb5b49b8b424a0"
@@ -3183,7 +2810,7 @@
         "color": "#000000",
         "className": "information-text",
         "x": 610,
-        "y": 1020,
+        "y": 800,
         "wires": []
     },
     {
@@ -3205,7 +2832,7 @@
         "color": "#000000",
         "className": "information-text",
         "x": 610,
-        "y": 1080,
+        "y": 860,
         "wires": []
     },
     {
@@ -3227,7 +2854,7 @@
         "payload": "250 Go",
         "payloadType": "str",
         "x": 180,
-        "y": 1080,
+        "y": 860,
         "wires": [
             [
                 "967f57a653bbd135"
@@ -3437,2097 +3064,6 @@
         "x": 895,
         "y": 260,
         "wires": []
-    },
-    {
-        "id": "759b2907628ee6e4",
-        "type": "ui-template",
-        "z": "981fcccea4aa6cd3",
-        "group": "",
-        "page": "e7f37ce9c08266be",
-        "ui": "",
-        "name": "Custom CSS",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "/* Custom CSS - Sample page */\n\n.coord-value div.nrdb-ui-text.nrdb-ui-text--col-center {\n    display: block;\n}\n\n.coord-value {\n    max-width: 1% !important;\n    margin: 0%;\n    padding: 0%;\n}\n\n.sample-page {\n    margin-right: 5rem;\n    margin-left: 5rem;\n}\n\n.section-global-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-1-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2-2-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.Section-bouton-3-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-1-title div.v-card-text {\n    padding: 0% !important;\n}\n\n.section-bouton-2-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-1-coord div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-2-2 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-3 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.Section-bouton-3-0 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-bouton-3-1 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n} \n\n.section-bouton-4 div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    grid-gap: 10px !important;\n}\n\n.section-global div.nrdb-layout-group--grid {\n    margin-bottom: 1rem;\n}\n\n.section-preset .v-card-text {\n    padding: 0% 1rem !important;\n}\n\n.or-button .v-btn {\n    font-size: x-large;\n    color: #0a6eca;\n    /* color: black; */\n    background-color: transparent;\n    pointer-events: none;\n}\n\n.or-button {\n    padding: 0%;\n    margin: 0%;\n}\n\n.section-bouton-3-or {\n    padding-top: 0.75rem;\n}\n\n.information-text label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 12% 2% 12%;\n    min-width: 60%;\n    border-color: #0a6eca !important;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.information-text-2 label {\n    text-align: center;\n    background-color: #ffffff;\n    padding: 2% 5% 2% 5%;\n    min-width: 10%;\n    border-bottom: 3px solid #0a6eca;\n    color: #0a6eca;\n    font-weight: bold;\n}\n\n.section-navigation:first-child {\n    display: flex;\n    background-color: #0a6eca;\n}",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "page:style",
-        "className": "",
-        "x": 610,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ace29899b948e3ac",
-        "type": "inject",
-        "z": "981fcccea4aa6cd3",
-        "name": "hard placeholder",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "placeholder",
-        "payloadType": "str",
-        "x": 190,
-        "y": 40,
-        "wires": [
-            [
-                "f1688594df89190d"
-            ]
-        ]
-    },
-    {
-        "id": "f1688594df89190d",
-        "type": "link out",
-        "z": "981fcccea4aa6cd3",
-        "name": "link out 4",
-        "mode": "link",
-        "links": [
-            "0f7cd6bef1fabbae",
-            "14ec7f6db647b1ea",
-            "200adbd137d1bb48",
-            "6d96f609b6fe014e",
-            "a216d7b242ae1c11",
-            "af6f20dca4623118",
-            "c8c4b479eda45fd6",
-            "d1978bb3ebd07df5",
-            "e2bd9ff70c986f83",
-            "56be1c1433d47087",
-            "20117488794ba954",
-            "218c0062b645c48b",
-            "0c0c9e99761af7a4",
-            "c6d84d4329f124c6"
-        ],
-        "x": 315,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "8651f72f38174fc4",
-        "type": "ui-control",
-        "z": "981fcccea4aa6cd3",
-        "name": "",
-        "ui": "1eeac55ba6b9065f",
-        "events": "all",
-        "x": 380,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2e134859fc51a8e2",
-        "type": "inject",
-        "z": "981fcccea4aa6cd3",
-        "name": "Initial group state",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-1-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-coord\",\"Section-bouton-3-1-title\",\"Section-bouton-3\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-3-title\",\"Section-bouton-3-1\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\",\"Section-global\",\"Section-preset\"]}}",
-        "payloadType": "json",
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "b657585b8e15beaa"
-            ]
-        ]
-    },
-    {
-        "id": "b657585b8e15beaa",
-        "type": "link out",
-        "z": "981fcccea4aa6cd3",
-        "name": "link out 6",
-        "mode": "link",
-        "links": [
-            "d4f15128bec6629d"
-        ],
-        "x": 315,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "d4f15128bec6629d",
-        "type": "link in",
-        "z": "981fcccea4aa6cd3",
-        "name": "link in 20",
-        "links": [
-            "b657585b8e15beaa",
-            "bc7487ac5d0886ba",
-            "8f1385d8c3aaee84",
-            "b5df891429cc0f13",
-            "b156d7b379fd5166",
-            "ba9e2b8ab8b10f00",
-            "74679c26e1f8d3b5",
-            "66ad827c8eba5ee1",
-            "e0227a7ae2c1d0d2",
-            "5faf08df09ce7287",
-            "b68ac01e0eafd0e8",
-            "d72bbeb02d973f73"
-        ],
-        "x": 115,
-        "y": 140,
-        "wires": [
-            [
-                "8651f72f38174fc4"
-            ]
-        ]
-    },
-    {
-        "id": "101e5f329322e2ef",
-        "type": "change",
-        "z": "981fcccea4aa6cd3",
-        "name": "Reload",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"page\": \"\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 220,
-        "y": 180,
-        "wires": [
-            [
-                "8651f72f38174fc4"
-            ]
-        ]
-    },
-    {
-        "id": "ae6efe138e099d69",
-        "type": "link in",
-        "z": "981fcccea4aa6cd3",
-        "name": "link in 19",
-        "links": [
-            "4694d602eb145576",
-            "32a0d9a5b9f97de8",
-            "b156d7b379fd5166",
-            "b5df891429cc0f13",
-            "8f1385d8c3aaee84",
-            "bc7487ac5d0886ba",
-            "ba9e2b8ab8b10f00",
-            "66ad827c8eba5ee1",
-            "e0227a7ae2c1d0d2",
-            "5faf08df09ce7287",
-            "b68ac01e0eafd0e8",
-            "d72bbeb02d973f73"
-        ],
-        "x": 115,
-        "y": 180,
-        "wires": [
-            [
-                "101e5f329322e2ef"
-            ]
-        ]
-    },
-    {
-        "id": "756698c99ceee2c8",
-        "type": "ui-template",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "group": "bad72850424336e4",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 0,
-        "width": "12",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n    <div class=\"button-container\">\n        <div class=\"button-wrapper\">\n            <v-btn :class=\"{ 'square-button': true, 'clicked': buttonStates[1] }\" @click=\"buttonClicked(1)\">\n                <div class=\"icon-wrapper\">\n                    <i :class=\"{ 'clicked-icon': buttonStates[1] }\" class=\"mdi mdi-water\"></i>\n                    <p :class=\"{ 'clicked-text': buttonStates[1] }\">Net (horizontal)</p>\n                </div>\n            </v-btn>\n        </div>\n        <div class=\"button-wrapper\">\n            <v-btn :class=\"{ 'square-button': true, 'clicked': buttonStates[2] }\" @click=\"buttonClicked(2)\">\n                <div class=\"icon-wrapper\">\n                    <i :class=\"{ 'clicked-icon': buttonStates[2] }\" class=\"mdi mdi-water\"></i>\n                    <p :class=\"{ 'clicked-text': buttonStates[2] }\">Net (vertical)</p>\n                </div>\n            </v-btn>\n        </div>\n        <div class=\"button-wrapper\">\n            <v-btn :class=\"{ 'square-button': true, 'clicked': buttonStates[3] }\" @click=\"buttonClicked(3)\">\n                <div class=\"icon-wrapper\">\n                    <i :class=\"{ 'clicked-icon': buttonStates[3] }\" class=\"mdi mdi-water\"></i>\n                    <p :class=\"{ 'clicked-text': buttonStates[3] }\">Niskin bottle</p>\n                </div>\n            </v-btn>\n        </div>\n        <div class=\"button-wrapper\">\n            <v-btn :class=\"{ 'square-button': true, 'clicked': buttonStates[4] }\" @click=\"buttonClicked(4)\">\n                <div class=\"icon-wrapper\">\n                    <i :class=\"{ 'clicked-icon': buttonStates[4] }\" class=\"mdi mdi-water\"></i>\n                    <p :class=\"{ 'clicked-text': buttonStates[4] }\">Lab culture</p>\n                </div>\n            </v-btn>\n        </div>\n        <div class=\"button-wrapper\">\n            <v-btn :class=\"{ 'square-button': true, 'clicked': buttonStates[5] }\" @click=\"buttonClicked(5)\">\n                <div class=\"icon-wrapper\">\n                    <i :class=\"{ 'clicked-icon': buttonStates[5] }\" class=\"mdi mdi-water\"></i>\n                    <p :class=\"{ 'clicked-text': buttonStates[5] }\">Demo / Test</p>\n                </div>\n            </v-btn>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                buttonStates: {\n                    1: false,\n                    2: false,\n                    3: false,\n                    4: false,\n                    5: false\n                }\n            }\n        },\n        methods: {\n            buttonClicked: function (buttonNumber) {\n                for (let key in this.buttonStates) {\n                    this.buttonStates[key] = false;\n                }\n                this.buttonStates[buttonNumber] = true;\n                this.send({ payload: `Button ${buttonNumber} clicked` });\n            }\n        }\n    }\n</script>\n\n<style>\n    .button-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .button-wrapper {\n        margin: 10px;\n        text-align: center;\n    }\n\n    .square-button {\n        width: 140px;\n        height: 100px;\n        border-radius: 5px;\n        background-color: #ffffff;\n        border: 1px solid #0a6eca;\n        padding: 10px;\n    }\n\n    .square-button:hover {\n        background-color: #b5d3ef;\n    }\n\n    .square-button.clicked {\n        background-color: #0a6eca;\n    }\n\n    .icon-wrapper {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .icon-wrapper i {\n        font-size: 30px;\n        color: #0a6eca;\n        margin-bottom: 5px;\n    }\n\n    .icon-wrapper p {\n        margin: 0;\n        color: #0a6eca;\n    }\n\n    .clicked-text {\n        color: #fff !important;\n    }\n\n    .clicked-icon {\n        color: #fff !important;\n    }\n</style>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 600,
-        "y": 580,
-        "wires": [
-            [
-                "49275fc2c8a90339"
-            ]
-        ]
-    },
-    {
-        "id": "49275fc2c8a90339",
-        "type": "switch",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Button 1 clicked",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Button 2 clicked",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Button 3 clicked",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Button 4 clicked",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Button 5 clicked",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 5,
-        "x": 760,
-        "y": 580,
-        "wires": [
-            [
-                "624dbdfc580f320d"
-            ],
-            [
-                "ea586a296790564c"
-            ],
-            [
-                "1fc584727e7a50d0"
-            ],
-            [
-                "45f51b11651ef1b7"
-            ],
-            [
-                "c3626f3aa764bd03"
-            ]
-        ]
-    },
-    {
-        "id": "624dbdfc580f320d",
-        "type": "change",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 970,
-        "y": 500,
-        "wires": [
-            [
-                "b156d7b379fd5166"
-            ]
-        ]
-    },
-    {
-        "id": "ea586a296790564c",
-        "type": "change",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1\",\"Section-bouton-3-1-title\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 970,
-        "y": 540,
-        "wires": [
-            [
-                "b5df891429cc0f13"
-            ]
-        ]
-    },
-    {
-        "id": "1fc584727e7a50d0",
-        "type": "change",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-4\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-3-1\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 970,
-        "y": 580,
-        "wires": [
-            [
-                "8f1385d8c3aaee84"
-            ]
-        ]
-    },
-    {
-        "id": "45f51b11651ef1b7",
-        "type": "change",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-5\"],\"show\":[\"Section-bouton-4\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 970,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b156d7b379fd5166",
-        "type": "link out",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "link out 16",
-        "mode": "link",
-        "links": [
-            "d4f15128bec6629d",
-            "ae6efe138e099d69",
-            "84fd0d7ef8a9fa4a",
-            "d19c4717d81085f6"
-        ],
-        "x": 1095,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "b5df891429cc0f13",
-        "type": "link out",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "link out 17",
-        "mode": "link",
-        "links": [
-            "d4f15128bec6629d",
-            "ae6efe138e099d69",
-            "84fd0d7ef8a9fa4a",
-            "d19c4717d81085f6"
-        ],
-        "x": 1095,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "8f1385d8c3aaee84",
-        "type": "link out",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "link out 18",
-        "mode": "link",
-        "links": [
-            "d4f15128bec6629d",
-            "ae6efe138e099d69",
-            "84fd0d7ef8a9fa4a",
-            "d19c4717d81085f6"
-        ],
-        "x": 1095,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "bc7487ac5d0886ba",
-        "type": "link out",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "link out 19",
-        "mode": "link",
-        "links": [
-            "d4f15128bec6629d",
-            "ae6efe138e099d69",
-            "84fd0d7ef8a9fa4a",
-            "d19c4717d81085f6"
-        ],
-        "x": 1095,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "c3626f3aa764bd03",
-        "type": "change",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-bouton-2\",\"Section-bouton-2-title\",\"Section-bouton-2-2-title\",\"Section-bouton-2-2\",\"Section-bouton-2-1-title\",\"Section-bouton-2-1-coord\",\"Section-bouton-3\",\"Section-bouton-3-title\",\"Section-bouton-3-1-title\",\"Section-bouton-3-1\",\"Section-boutton-3-0\",\"Section-bouton-3-or\",\"Section-bouton-1\",\"Section-bouton-1-title\",\"Section-bouton-1-2\",\"Section-bouton-1-2-title\",\"Section-bouton-4\"],\"show\":[\"Section-bouton-5\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 970,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ba9e2b8ab8b10f00",
-        "type": "link out",
-        "z": "981fcccea4aa6cd3",
-        "g": "f1ed5ca80185892b",
-        "name": "link out 20",
-        "mode": "link",
-        "links": [
-            "d4f15128bec6629d",
-            "ae6efe138e099d69",
-            "84fd0d7ef8a9fa4a",
-            "d19c4717d81085f6"
-        ],
-        "x": 1095,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "efb49e3720df4f6d",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "e70e8efdc77b18cb",
-        "name": "Bottle volume",
-        "label": "Bottle volume",
-        "order": 11,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 2960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "02a8618305ef81fb",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "e70e8efdc77b18cb",
-        "name": "Max depth",
-        "label": "Max depth",
-        "order": 12,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 610,
-        "y": 2920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aa0c3c84fed6a9a9",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "e70e8efdc77b18cb",
-        "name": "Sampling volume",
-        "label": "Sampling volume",
-        "order": 13,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 630,
-        "y": 2880,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "502129c38ddf8198",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "5880d067ca89ae45",
-        "name": "Latitude (eg: 45.7656)",
-        "label": "Latitude (eg: 45.7656)",
-        "order": 1,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 640,
-        "y": 2740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ead8d63b1f127f17",
-        "type": "ui-text",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "adf5a6b0c32b20f0",
-        "order": 3,
-        "width": "6",
-        "height": "1",
-        "name": "Starting point",
-        "label": "Starting point",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "className": "information-text-2",
-        "x": 610,
-        "y": 900,
-        "wires": []
-    },
-    {
-        "id": "b4e9c8a5779f0f26",
-        "type": "ui-text",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "adf5a6b0c32b20f0",
-        "order": 4,
-        "width": "6",
-        "height": "1",
-        "name": "Ending point",
-        "label": "Ending point",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "className": "information-text-2",
-        "x": 610,
-        "y": 940,
-        "wires": []
-    },
-    {
-        "id": "d0229f1f355ac27b",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "21984aa69938bf88",
-        "name": "Mesh size (µm)",
-        "label": "Mesh size (in microns)",
-        "order": 2,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6a6fa2a6db3757c1",
-        "type": "ui-text",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "06db5d6897cf91d8",
-        "order": 1,
-        "width": "2",
-        "height": "1",
-        "name": "Net specificity",
-        "label": "Net specificity",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "className": "information-text",
-        "x": 620,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "6f0237b3132c58c9",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "3a7277d2d5e66a34",
-        "name": "text",
-        "label": "text",
-        "order": 2,
-        "width": "6",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 590,
-        "y": 980,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "126e6e0e955da1b4",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "3a7277d2d5e66a34",
-        "name": "",
-        "label": "text",
-        "order": 1,
-        "width": "6",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 590,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8c444c94aeb724ae",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "21984aa69938bf88",
-        "name": "Net mouth opening (cm)",
-        "label": "Net mouth opening (cm)",
-        "order": 2,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 650,
-        "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "47a5e1b4757d0805",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "3a7277d2d5e66a34",
-        "name": "",
-        "label": "text",
-        "order": 4,
-        "width": "6",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 590,
-        "y": 1060,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "97d33131818ddc29",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "3a7277d2d5e66a34",
-        "name": "",
-        "label": "text",
-        "order": 5,
-        "width": "6",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 590,
-        "y": 1100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fec6ed07bd47c30f",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "3a7277d2d5e66a34",
-        "name": "",
-        "label": "text",
-        "order": 6,
-        "width": "6",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 590,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "425c59ada598d55d",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "3a7277d2d5e66a34",
-        "name": "",
-        "label": "text",
-        "order": 3,
-        "width": "6",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 590,
-        "y": 1180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "cdd3fedc02055976",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "3a7277d2d5e66a34",
-        "name": "",
-        "label": "text",
-        "order": 7,
-        "width": "6",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 590,
-        "y": 1220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "95d446f698cd96df",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "97c213bdacc78737",
-        "group": "3a7277d2d5e66a34",
-        "name": "",
-        "label": "text",
-        "order": 8,
-        "width": "6",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 590,
-        "y": 1260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f562df42f5a4b75e",
-        "type": "ui-text",
-        "z": "981fcccea4aa6cd3",
-        "g": "4f5f1f069ed4f6e2",
-        "group": "01a287087d24199d",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "name": "Global sample information",
-        "label": "Global sample information",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "className": "information-text",
-        "x": 650,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "f49db7b930892fd8",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "4f5f1f069ed4f6e2",
-        "group": "48024fe939a23893",
-        "name": "Project name",
-        "label": "Project name",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 610,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "735dd79ab910351c",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "4f5f1f069ed4f6e2",
-        "group": "48024fe939a23893",
-        "name": "Station ID",
-        "label": "Station ID",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "125e784f6d4792e3",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "5880d067ca89ae45",
-        "name": "Longitude (eg: -21.5224)",
-        "label": "Longitude (eg: -21.5224)",
-        "order": 2,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 650,
-        "y": 2780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9a609df7529298d8",
-        "type": "ui-text",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "332b02cefa57a63d",
-        "order": 3,
-        "width": "2",
-        "height": "1",
-        "name": "Starting point",
-        "label": "Starting point",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "className": "information-text-2",
-        "x": 610,
-        "y": 1500,
-        "wires": []
-    },
-    {
-        "id": "ef6aea27efcf872a",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "84824637436cb7fb",
-        "name": "Mesh size (µm)",
-        "label": "Mesh size (µm)",
-        "order": 2,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 1400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bd3b30728cdce18b",
-        "type": "ui-text",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "3ab8a80c05b53e0c",
-        "order": 1,
-        "width": "2",
-        "height": "1",
-        "name": "Net specificity",
-        "label": "Net specificity",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "className": "information-text",
-        "x": 620,
-        "y": 1360,
-        "wires": []
-    },
-    {
-        "id": "03506d264b8dc351",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "d23c73d3fe8198f4",
-        "name": "Min depth",
-        "label": "Min depth",
-        "order": 4,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 2000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "08e4f811c66098ce",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "d23c73d3fe8198f4",
-        "name": "Max depth",
-        "label": "Max depth",
-        "order": 1,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 610,
-        "y": 2040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7d76a23ff246e288",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "84824637436cb7fb",
-        "name": "Net mouth opening (cm)",
-        "label": "Net mouth opening (cm)",
-        "order": 2,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 650,
-        "y": 1440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8c47d33528fc74bc",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "d23c73d3fe8198f4",
-        "name": "Filtered volume",
-        "label": "Filtered volume",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 2080,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "31b4f418e9b95a6e",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "d23c73d3fe8198f4",
-        "name": "Volume collected",
-        "label": "Volume collected",
-        "order": 5,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 630,
-        "y": 2120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fce629a76a43c949",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "Latitude (eg: 45.7656)",
-        "label": "Latitude (eg: 45.7656)",
-        "order": 10,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 640,
-        "y": 1860,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1557a78603a005b1",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "Longitude (eg: -21.5224)",
-        "label": "Longitude (eg: -21.5224)",
-        "order": 5,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 650,
-        "y": 1900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a6f1a04555ed8ca5",
-        "type": "ui-radio-group",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "N-S",
-        "label": "",
-        "order": 1,
-        "width": "1",
-        "height": "1",
-        "columns": "2",
-        "passthru": false,
-        "options": [
-            {
-                "label": "N",
-                "value": "N",
-                "type": "str"
-            },
-            {
-                "label": "S",
-                "value": "S",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 590,
-        "y": 1540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5aece39579178eb8",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "Degrees",
-        "label": "Degrees",
-        "order": 2,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 1580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "728b32486424cc9b",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "minutes",
-        "label": "minutes",
-        "order": 3,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 1620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2fc56bf948e3fc7d",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "seconds",
-        "label": "seconds",
-        "order": 9,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 1660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ef399131c3d32fea",
-        "type": "ui-radio-group",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "E-W",
-        "label": "",
-        "order": 6,
-        "width": "1",
-        "height": "1",
-        "columns": "2",
-        "passthru": false,
-        "options": [
-            {
-                "label": "E",
-                "value": "E",
-                "type": "str"
-            },
-            {
-                "label": "W",
-                "value": "W",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 590,
-        "y": 1700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ece1189d50558a6c",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "Degrees",
-        "label": "Degrees",
-        "order": 7,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 1740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a438fbc83e0e72be",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "minutes",
-        "label": "minutes (\")",
-        "order": 8,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 1780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4105a842792147d2",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "a29880480a93f7a3",
-        "name": "seconds",
-        "label": "seconds",
-        "order": 4,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 1820,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "15d56e040a7613ef",
-        "type": "ui-radio-group",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
-        "name": "N-S",
-        "label": "",
-        "order": 1,
-        "width": "1",
-        "height": "1",
-        "columns": "2",
-        "passthru": false,
-        "options": [
-            {
-                "label": "N",
-                "value": "N",
-                "type": "str"
-            },
-            {
-                "label": "S",
-                "value": "S",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 590,
-        "y": 2340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2b65d7c5796237b2",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
-        "name": "Degrees",
-        "label": "Degrees",
-        "order": 6,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 2380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2d807fb6695930c2",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
-        "name": "minutes",
-        "label": "minutes",
-        "order": 7,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 2420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "72978948e1c4018a",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
-        "name": "seconds",
-        "label": "seconds",
-        "order": 4,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 2460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d2ccc69925ea1062",
-        "type": "ui-radio-group",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
-        "name": "E-W",
-        "label": "",
-        "order": 5,
-        "width": "1",
-        "height": "1",
-        "columns": "2",
-        "passthru": false,
-        "options": [
-            {
-                "label": "E",
-                "value": "E",
-                "type": "str"
-            },
-            {
-                "label": "W",
-                "value": "W",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 590,
-        "y": 2500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d8f7c295113a9193",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
-        "name": "Degrees",
-        "label": "Degrees",
-        "order": 2,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 2540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "17b426522e8a26e8",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
-        "name": "minutes",
-        "label": "minutes",
-        "order": 3,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 2580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d9b1d674f8d02f84",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "bb7ac3a5f1da594e",
-        "name": "seconds",
-        "label": "seconds",
-        "order": 8,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 600,
-        "y": 2620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fa6efd27c2cae95d",
-        "type": "ui-text",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "69a2d6fcf772d1d0",
-        "order": 3,
-        "width": "2",
-        "height": "1",
-        "name": "Starting point",
-        "label": "Starting point",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "className": "information-text-2",
-        "x": 610,
-        "y": 2300,
-        "wires": []
-    },
-    {
-        "id": "0b76724133f50bfc",
-        "type": "ui-template",
-        "z": "981fcccea4aa6cd3",
-        "g": "ca1a2f7bcebcd1b0",
-        "group": "eb21a8a88e7c9ea4",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 0,
-        "width": "12",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n    <div class=\"button-block\">\n        <div class=\"button-wrap\">\n            <v-btn disabled class=\"my-button disabled\">\n                <i class=\"mdi mdi-arrow-left\"></i>\n            </v-btn>\n        </div>\n        <div class=\"button-wrap\">\n            <i class=\"mdi mdi-file\"></i>\n        </div>\n        <div class=\"button-wrap\">\n            <v-btn class=\"my-button\" @click=\"buttonClicked()\">\n                <i class=\"mdi mdi-arrow-right\"></i>\n            </v-btn>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                buttonStates: {\n                    1: false,\n                    2: false,\n                }\n            }\n        },\n        methods: {\n            buttonClicked: function (buttonNumber) {\n                this.send({ payload: \"+1\" });\n            }\n        }\n    }\n</script>\n\n<style>\n    .button-block {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        border: none;\n    }\n\n    .button-wrap {\n        margin: 10px;\n        text-align: center;\n        font-size: 20px;\n        border: none;\n        color: #0a6eca;\n    }\n\n    .my-button {\n        font-size: 20px;\n        color: #0a6eca;\n        border: none;\n        box-shadow: none;\n        background-color: rgba(255, 255, 255, 0);\n    }\n\n    .my-button.disabled {\n        color: #ccc;\n        pointer-events: none;\n        background-color: rgba(255, 255, 255, 0);\n    }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 600,
-        "y": 3180,
-        "wires": [
-            [
-                "74679c26e1f8d3b5"
-            ]
-        ]
-    },
-    {
-        "id": "74679c26e1f8d3b5",
-        "type": "link out",
-        "z": "981fcccea4aa6cd3",
-        "g": "ca1a2f7bcebcd1b0",
-        "name": "link out 21",
-        "mode": "link",
-        "links": [
-            "d4f15128bec6629d",
-            "84fd0d7ef8a9fa4a"
-        ],
-        "x": 695,
-        "y": 3180,
-        "wires": []
-    },
-    {
-        "id": "55880ba6e45e08d7",
-        "type": "ui-text",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "3c2dcd295d2c882b",
-        "order": 3,
-        "width": "2",
-        "height": "1",
-        "name": "Other information",
-        "label": "Other information",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "className": "information-text-2",
-        "x": 630,
-        "y": 1960,
-        "wires": []
-    },
-    {
-        "id": "f1edd3aa5f7561df",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "d23c73d3fe8198f4",
-        "name": "Sieve size (µm)",
-        "label": "Sieve size",
-        "order": 3,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 2160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8143c21edfbea652",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "c4b509fbaccac842",
-        "group": "d23c73d3fe8198f4",
-        "name": "Dilution factor",
-        "label": "Dilution factor",
-        "order": 6,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 2200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "415b7ae07be2dcb9",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "e70e8efdc77b18cb",
-        "name": "Dilution factor",
-        "label": "Dilution factor",
-        "order": 6,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 3040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ebd5d0506fb585a5",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "e70e8efdc77b18cb",
-        "name": "Sieve size (µm)",
-        "label": "Sieve size",
-        "order": 3,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 3000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2592fea3481db2e0",
-        "type": "ui-text",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "e369fba3e4349c38",
-        "order": 3,
-        "width": "2",
-        "height": "1",
-        "name": "Other information",
-        "label": "Other information",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "className": "information-text-2",
-        "x": 630,
-        "y": 2840,
-        "wires": []
-    },
-    {
-        "id": "61c14c31ebe22e15",
-        "type": "ui-button",
-        "z": "981fcccea4aa6cd3",
-        "g": "adbf2350e2df0ee2",
-        "group": "79b34b3c4f1264d3",
-        "name": "or button",
-        "label": "OR",
-        "order": 5,
-        "width": "1",
-        "height": "2",
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "or-button",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 600,
-        "y": 2680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "795e86d9be7c58d6",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "4f5f1f069ed4f6e2",
-        "group": "48024fe939a23893",
-        "name": "Sampling date",
-        "label": "Sampling date",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "date",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3948a37ec1b8c803",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "4f5f1f069ed4f6e2",
-        "group": "48024fe939a23893",
-        "name": "Sampling time",
-        "label": "Sampling time",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "time",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "993103c3c34b3156",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "4f5f1f069ed4f6e2",
-        "group": "48024fe939a23893",
-        "name": "User",
-        "label": "You",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 590,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0169d773ecfbbbcc",
-        "type": "ui-text-input",
-        "z": "981fcccea4aa6cd3",
-        "g": "4f5f1f069ed4f6e2",
-        "group": "48024fe939a23893",
-        "name": "Campagn name",
-        "label": "Campagn name",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "text",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 620,
-        "y": 200,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "2aca86e491522c72",
@@ -9489,10 +7025,103 @@
         "wires": []
     },
     {
-        "id": "ab7abe42214339fd",
+        "id": "efadddfd0db47335",
+        "type": "ui-template",
+        "z": "8480f672239bc1d5",
+        "group": "",
+        "page": "49049f18470fb25c",
+        "ui": "",
+        "name": "Custom CSS",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Custom CSS - Home page */\n\n.feedback-title span {\n    font-size: 40px;\n    color: #0a6eca;\n}\n\n.feedback-title {\n    margin-bottom: 3rem;\n}\n\n/* */\n\n.form div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n/* */\n\n.feedback-button button {\n    background-color: white;\n    border: 1px solid #0a6eca;\n    color: #0a6eca;\n}\n\n.feedback-button div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n.markdown h2 {\n    color: #0a6eca;\n}\n\n.feedback-input div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 610,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "77ead63ad41630ce",
         "type": "inject",
-        "z": "2d41a8ed5aea3449",
+        "z": "8480f672239bc1d5",
         "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 40,
+        "wires": [
+            [
+                "ebb3cd923f6c62a4"
+            ]
+        ]
+    },
+    {
+        "id": "ebb3cd923f6c62a4",
+        "type": "link out",
+        "z": "8480f672239bc1d5",
+        "name": "link out 53",
+        "mode": "link",
+        "links": [
+            "1e7ca4476b3cd758",
+            "6f573f1cf6fa3b1c",
+            "57fd38433196163e"
+        ],
+        "x": 235,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e74ec7f6ab14e0d4",
+        "type": "ui-control",
+        "z": "8480f672239bc1d5",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f50d4389a3967bc3",
+        "type": "link in",
+        "z": "8480f672239bc1d5",
+        "name": "link in 38",
+        "links": [
+            "e49d361896e7b836"
+        ],
+        "x": 95,
+        "y": 80,
+        "wires": [
+            [
+                "e74ec7f6ab14e0d4"
+            ]
+        ]
+    },
+    {
+        "id": "f50b58164c0fad22",
+        "type": "inject",
+        "z": "8480f672239bc1d5",
+        "g": "72fbdf3432fd7e66",
+        "name": "Feedback title",
         "props": [
             {
                 "p": "payload"
@@ -9503,71 +7132,268 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 210,
-        "y": 40,
+        "payload": "Please let we know",
+        "payloadType": "str",
+        "x": 440,
+        "y": 180,
         "wires": [
             [
-                "885ac675497d0229"
+                "52c6d427a6c43d76"
             ]
         ]
     },
     {
-        "id": "885ac675497d0229",
-        "type": "function",
-        "z": "2d41a8ed5aea3449",
-        "name": "Set env variables",
-        "func": "const ENV_VARIABLES = new Map()\n\nENV_VARIABLES.set(\"LAUNCH_BUTTON_STATE\", \"STOP\");\n\nglobal.set(\"envVariables\", ENV_VARIABLES);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 40,
-        "wires": [
-            [
-                "dd51b147fcd3bf55"
-            ]
-        ]
-    },
-    {
-        "id": "60dbf0a81c4be17e",
-        "type": "debug",
-        "z": "2d41a8ed5aea3449",
-        "name": "Env variables set",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 850,
-        "y": 40,
+        "id": "52c6d427a6c43d76",
+        "type": "ui-text",
+        "z": "8480f672239bc1d5",
+        "g": "72fbdf3432fd7e66",
+        "group": "12d8b8bab14423fc",
+        "order": 0,
+        "width": "12",
+        "height": "1",
+        "name": "Feedback title",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "feedback-title",
+        "x": 620,
+        "y": 180,
         "wires": []
     },
     {
-        "id": "dd51b147fcd3bf55",
-        "type": "function",
-        "z": "2d41a8ed5aea3449",
-        "name": "Get env variables",
-        "func": "var env_variables = global.get(\"envVariables\");\nvar LAUNCH_BUTTON_STATE = env_variables.get(\"LAUNCH_BUTTON_STATE\");\n\nmsg.payload = LAUNCH_BUTTON_STATE;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 630,
-        "y": 40,
+        "id": "3781303c9c2f1549",
+        "type": "ui-markdown",
+        "z": "8480f672239bc1d5",
+        "g": "20025d5321eaeec6",
+        "group": "83a8d2f40529ce6e",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "content": "## Information\n\n_At vero eos et accusamus et iusto odio dignissimos ducimus \nqui blanditiis praesentium voluptatum deleniti atque \ncorrupti quos dolores et quas molestias excepturi sint \noccaecati cupiditate non provident, similique sunt in \nculpa qui officia deserunt mollitia animi, id est \nlaborum et dolorum fuga. Et harum quidem rerum facilis \nest et expedita distinctio._",
+        "className": "markdown",
+        "x": 610,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3eadc3fc2ed544f4",
+        "type": "ui-button",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "group": "b1a3199db6d057fb",
+        "name": "clear",
+        "label": "clear",
+        "order": 0,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 590,
+        "y": 400,
         "wires": [
             [
-                "60dbf0a81c4be17e"
+                "3cc66c313148c5d6"
             ]
+        ]
+    },
+    {
+        "id": "35d9832bb4cab417",
+        "type": "ui-button",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "group": "b1a3199db6d057fb",
+        "name": "send",
+        "label": "send",
+        "order": 0,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"page\": \"Home\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 590,
+        "y": 440,
+        "wires": [
+            [
+                "e49d361896e7b836"
+            ]
+        ]
+    },
+    {
+        "id": "f8a01b90ce722c0a",
+        "type": "change",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "701d2b15c6d53029",
+                "6947bb2fd11f07fc",
+                "bdade2686f129173"
+            ]
+        ]
+    },
+    {
+        "id": "3cc66c313148c5d6",
+        "type": "link out",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "name": "link out 54",
+        "mode": "link",
+        "links": [
+            "1e7ca4476b3cd758"
+        ],
+        "x": 675,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1e7ca4476b3cd758",
+        "type": "link in",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "name": "link in 39",
+        "links": [
+            "3cc66c313148c5d6",
+            "ebb3cd923f6c62a4"
+        ],
+        "x": 205,
+        "y": 280,
+        "wires": [
+            [
+                "f8a01b90ce722c0a"
+            ]
+        ]
+    },
+    {
+        "id": "e49d361896e7b836",
+        "type": "link out",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "name": "link out 55",
+        "mode": "link",
+        "links": [
+            "f50d4389a3967bc3"
+        ],
+        "x": 675,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bdade2686f129173",
+        "type": "ui-text-input",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "group": "e4e3d6debfa2a69d",
+        "name": "Feedback input",
+        "label": "...",
+        "order": 3,
+        "width": "12",
+        "height": "3",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "textarea",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 620,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6947bb2fd11f07fc",
+        "type": "ui-text-input",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "group": "e4e3d6debfa2a69d",
+        "name": "Contact email",
+        "label": "Contact email (optional)",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "email",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": false,
+        "className": "",
+        "x": 620,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "701d2b15c6d53029",
+        "type": "ui-text-input",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "group": "e4e3d6debfa2a69d",
+        "name": "Contact name",
+        "label": "Contact name (optional)",
+        "order": 2,
+        "width": "6",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": false,
+        "className": "",
+        "x": 620,
+        "y": 280,
+        "wires": [
+            []
         ]
     }
 ]
