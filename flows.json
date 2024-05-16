@@ -251,7 +251,7 @@
             "4c954a4151e90460"
         ],
         "x": 514,
-        "y": 659,
+        "y": 899,
         "w": 222,
         "h": 82
     },
@@ -731,7 +731,7 @@
             "3781303c9c2f1549"
         ],
         "x": 514,
-        "y": 499,
+        "y": 719,
         "w": 192,
         "h": 82
     },
@@ -754,12 +754,14 @@
             "e49d361896e7b836",
             "bdade2686f129173",
             "6947bb2fd11f07fc",
-            "701d2b15c6d53029"
+            "701d2b15c6d53029",
+            "1f73e48b06db300c",
+            "781bbb0873fba871"
         ],
-        "x": 164,
-        "y": 239,
-        "w": 562,
-        "h": 242
+        "x": 134,
+        "y": 419,
+        "w": 632,
+        "h": 282
     },
     {
         "id": "de2b0f7cb4455c9b",
@@ -930,6 +932,27 @@
         "h": 202
     },
     {
+        "id": "8542f90dc5f7a87c",
+        "type": "group",
+        "z": "8480f672239bc1d5",
+        "name": "Emoticon ",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "743a7db4cf1853d4",
+            "3426cc626ba9b764",
+            "3190006e8b3ec66d",
+            "e13149faae126209"
+        ],
+        "x": 134,
+        "y": 239,
+        "w": 632,
+        "h": 162
+    },
+    {
         "id": "1eeac55ba6b9065f",
         "type": "ui-base",
         "name": "PlanktoScope Dashboard",
@@ -1072,7 +1095,6 @@
     {
         "id": "2a664c8b638bbad5",
         "type": "ui-group",
-        "d": true,
         "name": "Settings",
         "page": "3720bdc972d93bca",
         "width": "4",
@@ -1086,7 +1108,6 @@
     {
         "id": "f0c03d9da6035e34",
         "type": "ui-group",
-        "d": true,
         "name": "Preview",
         "page": "3720bdc972d93bca",
         "width": "8",
@@ -1672,7 +1693,7 @@
         "page": "49049f18470fb25c",
         "width": "12",
         "height": "1",
-        "order": -1,
+        "order": 1,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1685,7 +1706,7 @@
         "page": "49049f18470fb25c",
         "width": "12",
         "height": "3",
-        "order": -1,
+        "order": 3,
         "showTitle": false,
         "className": "feedback-input",
         "visible": "true",
@@ -1698,7 +1719,7 @@
         "page": "49049f18470fb25c",
         "width": "12",
         "height": "1",
-        "order": -1,
+        "order": 4,
         "showTitle": false,
         "className": "feedback-button",
         "visible": "true",
@@ -1711,7 +1732,7 @@
         "page": "49049f18470fb25c",
         "width": "12",
         "height": "1",
-        "order": -1,
+        "order": 5,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1732,6 +1753,19 @@
                 "storage": "default"
             }
         ]
+    },
+    {
+        "id": "d807efe6a3910a10",
+        "type": "ui-group",
+        "name": "Emoticon-group",
+        "page": "49049f18470fb25c",
+        "width": "12",
+        "height": "1",
+        "order": 2,
+        "showTitle": false,
+        "className": "feedback-input",
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "ab7abe42214339fd",
@@ -3525,7 +3559,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "/* Custom CSS - Sample-2 page */\n\n    .title {\n        /* padding: 0% 10% !important; */\n        margin-bottom: 1rem !important;\n    }\n\n/* Début long input */\n\n    .label-project-name {\n        text-align: center !important;\n        align-items: center !important;\n    }\n\n    .label-project-name p {\n        color: #0a6eca !important;\n        font-size: large !important;\n        font-weight: bold !important;\n    }\n\n    .project-name div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n        padding: 0rem 15rem !important;\n    }\n\n/* Fin long input */\n\n/* Début short input */\n\n    .label-short-input span {\n        /* padding-top: 0rem !important; */\n        text-align: right !important;\n        align-items: center !important;\n        max-width: 100% !important;\n        color: #0a6eca !important;\n    }\n\n    .short-input div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n    }\n\n    .short-input-gap div.nrdb-layout-group--grid {\n        grid-gap: 10px  !important;\n    }\n\n/* Fin short input */\n\n    .selection {\n        /* padding: 0rem 20rem !important; */\n        margin-bottom: 2rem !important;\n    }\n\n/* Début starting-point-body */\n\n    .starting-point-body {\n        /* padding: 0rem 20rem !important; */\n        margin-bottom: 1rem !important;\n    }\n\n    .starting-point-body div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n/* Fin starting-point-body */\n\n/* Début Starting-point-coord-1 */\n\n    .starting-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n    .starting-point-coord-1 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin Starting-point-coord-1 */\n\n/* Début Starting-point-coord-2 */\n\n    .starting-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n    .starting-point-coord-2 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin Starting-point-coord-2 */\n\n/* Début ending-point-body */\n\n    .ending-point-body {\n        /* padding: 0rem 20rem !important; */\n        margin-bottom: 1rem !important;\n    }\n\n    .ending-point-body div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n/* Fin ending-point-body */\n\n/* Début ending-point-coord-1 */\n\n    .ending-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n    .ending-point-coord-1 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin ending-point-coord-1 */\n\n/* Début ending-point-coord-2 */\n\n    .ending-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n    .ending-point-coord-2 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin ending-point-coord-2 */\n\n\n/* Fin net-specificity-body */\n\n    .net-spicificity-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .net-spicificity-body {\n        margin-left: 18rem;\n    }\n\n/* Fin net-specificity-body */\n\n",
+        "format": "/* Custom CSS - Sample-2 page */\n\n    .title {\n        /* padding: 0% 10% !important; */\n        margin-bottom: 1rem !important;\n    }\n\n/* Début long input */\n\n    .label-project-name {\n        text-align: center !important;\n        align-items: center !important;\n    }\n\n    .label-project-name p {\n        color: #0a6eca !important;\n        font-size: large !important;\n        font-weight: bold !important;\n    }\n\n    .project-name div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n        padding: 0rem 15rem !important;\n    }\n\n/* Fin long input */\n\n/* Début label-drawer */\n\n    .label-drawer {\n        margin-right: 1rem !important;\n    }\n\n    .label-drawer span {\n        color: #0a6eca !important;\n    }\n\n/* Fin label-drawer */\n\n\n/* Début short input */\n\n    .label-short-input span {\n        text-align: right !important;\n        align-items: center !important;\n        max-width: 100% !important;\n        color: #0a6eca !important;\n    }\n\n    .short-input div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n    }\n\n    .short-input-gap div.nrdb-layout-group--grid {\n        grid-gap: 10px  !important;\n    }\n\n/* Fin short input */\n\n    .selection {\n        /* padding: 0rem 20rem !important; */\n        margin-bottom: 2rem !important;\n    }\n\n/* Début starting-point-body */\n\n    .starting-point-body {\n        /* padding: 0rem 20rem !important; */\n        margin-bottom: 1rem !important;\n    }\n\n    .starting-point-body div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n/* Fin starting-point-body */\n\n/* Début Starting-point-coord-1 */\n\n    .starting-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n    .starting-point-coord-1 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin Starting-point-coord-1 */\n\n/* Début Starting-point-coord-2 */\n\n    .starting-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n    .starting-point-coord-2 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin Starting-point-coord-2 */\n\n/* Début ending-point-body */\n\n    .ending-point-body {\n        /* padding: 0rem 20rem !important; */\n        margin-bottom: 1rem !important;\n    }\n\n    .ending-point-body div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n/* Fin ending-point-body */\n\n/* Début ending-point-coord-1 */\n\n    .ending-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n    .ending-point-coord-1 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin ending-point-coord-1 */\n\n/* Début ending-point-coord-2 */\n\n    .ending-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 50px !important;\n    }\n\n    .ending-point-coord-2 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin ending-point-coord-2 */\n\n\n/* Fin net-specificity-body */\n\n    .net-spicificity-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .net-spicificity-body {\n        margin-left: 18rem;\n    }\n\n/* Fin net-specificity-body */\n\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -4058,7 +4092,7 @@
         "type": "inject",
         "z": "d9ea61f169af1fad",
         "g": "cb753ad2e8667739",
-        "name": "Sample recuperation system",
+        "name": "Sampling gear",
         "props": [
             {
                 "p": "payload"
@@ -4069,9 +4103,9 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Sample recuperation system",
+        "payload": "Sampling gear",
         "payloadType": "str",
-        "x": 400,
+        "x": 360,
         "y": 380,
         "wires": [
             [
@@ -4091,12 +4125,12 @@
         "name": "",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "layout": "row-right",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
-        "className": "label-short-input",
+        "className": "label-drawer",
         "x": 590,
         "y": 380,
         "wires": []
@@ -6257,7 +6291,7 @@
         "page": "",
         "ui": "",
         "name": "",
-        "order": 0,
+        "order": 1,
         "width": "12",
         "height": "1",
         "head": "",
@@ -6268,7 +6302,7 @@
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 700,
+        "y": 940,
         "wires": [
             [
                 "4c954a4151e90460"
@@ -6286,7 +6320,7 @@
             "fceeacd118ec8668"
         ],
         "x": 695,
-        "y": 700,
+        "y": 940,
         "wires": []
     },
     {
@@ -7339,7 +7373,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <h2 class=\"title\">Machine Shutdown Confirmation</h2>\n        <p class=\"message\">Are you sure you want to shut down the machine?</p>\n        <v-btn class=\"confirm-btn\" color=\"error\" dark @click=\"turnOff()\">Confirm</v-btn>\n        <v-btn class=\"cancel-btn\" dark @click=\"cancel()\">Cancel</v-btn>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            turnOff() {\n                this.send({ payload: `Shutdown` });\n            },\n            cancel() {\n                this.send({ payload: `Return` });\n            }\n        }\n    }\n</script>\n\n<style>\n    .center-container {\n        position: absolute;\n        padding: 5rem 5rem;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        text-align: center;\n        background-color: #f5f5f5; /* Légèrement moins blanc */\n        border-radius: 10px;\n        border: solid 1px #ccc;\n    }\n\n    .title {\n        font-size: 28px;\n        font-weight: bold;\n        margin-bottom: 1rem;\n    }\n\n    .message {\n        font-size: 16px;\n        margin-bottom: 3rem;\n    }\n\n    .confirm-btn, .cancel-btn {\n        margin-top: 20px; /* Ajout d'un espace entre les boutons */\n        padding: 15px 30px; /* Agrandir les boutons */\n        font-size: 18px; /* Agrandir la taille de la police des boutons */\n    }\n\n    .confirm-btn {\n        margin-right: 10px;\n    }\n\n    .cancel-btn {\n        margin-left: 10px;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\">\n        <h2 class=\"title\">Machine Shutdown Confirmation</h2>\n        <p class=\"message\">Are you sure you want to shut down the machine?</p>\n        <v-btn class=\"confirm-btn\" color=\"error\" dark @click=\"turnOff()\">Confirm</v-btn>\n        <v-btn class=\"cancel-btn\" dark @click=\"cancel()\">Cancel</v-btn>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            turnOff() {\n                this.send({ payload: `Shutdown` });\n            },\n            cancel() {\n                this.send({ payload: `Return` });\n            }\n        }\n    }\n</script>\n\n<style>\n    .center-container {\n        position: absolute;\n        padding: 5rem 5rem;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        text-align: center;\n        background-color: #f5f5f5; /* Légèrement moins blanc */\n        border-radius: 10px;\n        border: solid 1px #ccc;\n    }\n\n    .title {\n        font-size: 28px;\n        font-weight: bold;\n        margin-bottom: 1rem;\n    }\n\n    .message {\n        font-size: 16px;\n        margin-bottom: 3rem;\n    }\n\n    .confirm-btn, .cancel-btn {\n        margin-top: 20px; \n        padding: 15px 30px; \n        font-size: 18px;\n    }\n\n    .confirm-btn {\n        margin-right: 10px;\n    }\n\n    .cancel-btn {\n        margin-left: 10px;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -7484,7 +7518,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "/* Custom CSS - Home page */\n\n.feedback-title span {\n    font-size: 40px;\n    color: #0a6eca;\n}\n\n.feedback-title {\n    margin-bottom: 3rem;\n}\n\n/* */\n\n.form div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n/* */\n\n.feedback-button button {\n    background-color: white;\n    border: 1px solid #0a6eca;\n    color: #0a6eca;\n}\n\n.feedback-button div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n.markdown h2 {\n    color: #0a6eca;\n}\n\n.feedback-input div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}",
+        "format": "/* Custom CSS - Home page */\n\n.feedback-title span {\n    font-size: 40px;\n    color: #0a6eca;\n}\n\n.feedback-title {\n    margin-bottom: 3rem;\n}\n\n/* */\n\n.form div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n/* */\n\n.feedback-button button {\n    background-color: white;\n    border: 1px solid #0a6eca;\n    color: #0a6eca;\n}\n\n.feedback-button div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n.markdown h2 {\n    color: #0a6eca;\n}\n\n.feedback-input div.nrdb-layout-group--grid {\n    grid-gap: 15px !important;\n}\n\n.emoticon-text span {\n    color: #0a6eca;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -7596,7 +7630,7 @@
         "z": "8480f672239bc1d5",
         "g": "72fbdf3432fd7e66",
         "group": "12d8b8bab14423fc",
-        "order": 0,
+        "order": 1,
         "width": "12",
         "height": "1",
         "name": "Feedback title",
@@ -7625,7 +7659,7 @@
         "content": "## Information\n\n_At vero eos et accusamus et iusto odio dignissimos ducimus \nqui blanditiis praesentium voluptatum deleniti atque \ncorrupti quos dolores et quas molestias excepturi sint \noccaecati cupiditate non provident, similique sunt in \nculpa qui officia deserunt mollitia animi, id est \nlaborum et dolorum fuga. Et harum quidem rerum facilis \nest et expedita distinctio._",
         "className": "markdown",
         "x": 610,
-        "y": 540,
+        "y": 760,
         "wires": [
             []
         ]
@@ -7653,7 +7687,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 590,
-        "y": 400,
+        "y": 620,
         "wires": [
             [
                 "3cc66c313148c5d6"
@@ -7683,7 +7717,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 590,
-        "y": 440,
+        "y": 660,
         "wires": [
             [
                 "e49d361896e7b836"
@@ -7711,7 +7745,7 @@
         "to": "",
         "reg": false,
         "x": 330,
-        "y": 280,
+        "y": 500,
         "wires": [
             [
                 "701d2b15c6d53029",
@@ -7730,8 +7764,8 @@
         "links": [
             "1e7ca4476b3cd758"
         ],
-        "x": 675,
-        "y": 400,
+        "x": 685,
+        "y": 620,
         "wires": []
     },
     {
@@ -7745,7 +7779,7 @@
             "ebb3cd923f6c62a4"
         ],
         "x": 205,
-        "y": 280,
+        "y": 500,
         "wires": [
             [
                 "f8a01b90ce722c0a"
@@ -7762,8 +7796,8 @@
         "links": [
             "f50d4389a3967bc3"
         ],
-        "x": 675,
-        "y": 440,
+        "x": 685,
+        "y": 660,
         "wires": []
     },
     {
@@ -7774,7 +7808,7 @@
         "group": "e4e3d6debfa2a69d",
         "name": "Feedback input",
         "label": "...",
-        "order": 3,
+        "order": 4,
         "width": "12",
         "height": "3",
         "topic": "topic",
@@ -7787,7 +7821,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 360,
+        "y": 580,
         "wires": [
             []
         ]
@@ -7800,7 +7834,7 @@
         "group": "e4e3d6debfa2a69d",
         "name": "Contact email",
         "label": "Contact email (optional)",
-        "order": 1,
+        "order": 2,
         "width": "6",
         "height": "1",
         "topic": "topic",
@@ -7813,7 +7847,7 @@
         "sendOnEnter": false,
         "className": "",
         "x": 620,
-        "y": 320,
+        "y": 540,
         "wires": [
             []
         ]
@@ -7826,7 +7860,7 @@
         "group": "e4e3d6debfa2a69d",
         "name": "Contact name",
         "label": "Contact name (optional)",
-        "order": 2,
+        "order": 3,
         "width": "6",
         "height": "1",
         "topic": "topic",
@@ -7839,7 +7873,243 @@
         "sendOnEnter": false,
         "className": "",
         "x": 620,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "743a7db4cf1853d4",
+        "type": "ui-button-group",
+        "z": "8480f672239bc1d5",
+        "g": "8542f90dc5f7a87c",
+        "name": "Numeric button group",
+        "group": "d807efe6a3910a10",
+        "order": 2,
+        "width": "12",
+        "height": "1",
+        "label": "",
+        "rounded": false,
+        "useThemeColors": false,
+        "passthru": false,
+        "options": [
+            {
+                "label": "",
+                "icon": "numeric-1",
+                "value": "option_0",
+                "valueType": "str",
+                "color": "#00a336"
+            },
+            {
+                "label": "",
+                "icon": "numeric-2",
+                "value": "option_1",
+                "valueType": "str",
+                "color": "#0fdb00"
+            },
+            {
+                "label": "",
+                "icon": "numeric-3",
+                "value": "option_2",
+                "valueType": "str",
+                "color": "#baff24"
+            },
+            {
+                "label": "",
+                "icon": "numeric-4",
+                "value": "option_3",
+                "valueType": "str",
+                "color": "#fbff00"
+            },
+            {
+                "label": "",
+                "icon": "numeric-5",
+                "value": "option_4",
+                "valueType": "str",
+                "color": "#fdcd49"
+            },
+            {
+                "label": "",
+                "icon": "numeric-6",
+                "value": "option_5",
+                "valueType": "str",
+                "color": "#ffa852"
+            },
+            {
+                "label": "",
+                "icon": "numeric-7",
+                "value": "option_6",
+                "valueType": "str",
+                "color": "#ff7b00"
+            },
+            {
+                "label": "",
+                "icon": "numeric-8",
+                "value": "option_7",
+                "valueType": "str",
+                "color": "#ff6600"
+            },
+            {
+                "label": "",
+                "icon": "numeric-9",
+                "value": "option_8",
+                "valueType": "str",
+                "color": "#ff0000"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 640,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3426cc626ba9b764",
+        "type": "ui-text",
+        "z": "8480f672239bc1d5",
+        "g": "8542f90dc5f7a87c",
+        "group": "d807efe6a3910a10",
+        "order": 1,
+        "width": "12",
+        "height": "1",
+        "name": "Option emoticon",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "emoticon-text",
+        "x": 620,
         "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3190006e8b3ec66d",
+        "type": "inject",
+        "z": "8480f672239bc1d5",
+        "g": "8542f90dc5f7a87c",
+        "name": "What is your opinion about the PlanktoScope",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "What is your opinion about the PlanktoScope",
+        "payloadType": "str",
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "3426cc626ba9b764"
+            ]
+        ]
+    },
+    {
+        "id": "1f73e48b06db300c",
+        "type": "inject",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "name": "Please leave yout feedback bellow :",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Please leave your feedback bellow :",
+        "payloadType": "str",
+        "x": 330,
+        "y": 460,
+        "wires": [
+            [
+                "781bbb0873fba871"
+            ]
+        ]
+    },
+    {
+        "id": "781bbb0873fba871",
+        "type": "ui-text",
+        "z": "8480f672239bc1d5",
+        "g": "de794feadafd3a7a",
+        "group": "e4e3d6debfa2a69d",
+        "order": 1,
+        "width": "12",
+        "height": "1",
+        "name": "Label feedback input",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "emoticon-text",
+        "x": 640,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e13149faae126209",
+        "type": "ui-button-group",
+        "z": "8480f672239bc1d5",
+        "d": true,
+        "g": "8542f90dc5f7a87c",
+        "name": "Emoticon button group",
+        "group": "d807efe6a3910a10",
+        "order": 2,
+        "width": "12",
+        "height": "1",
+        "label": "",
+        "rounded": false,
+        "useThemeColors": false,
+        "passthru": false,
+        "options": [
+            {
+                "label": "",
+                "icon": "emoticon-outline",
+                "value": "option_0",
+                "valueType": "str",
+                "color": "#00a336"
+            },
+            {
+                "label": "",
+                "icon": "emoticon-neutral-outline",
+                "value": "option_1",
+                "valueType": "str",
+                "color": "#e0f000"
+            },
+            {
+                "label": "",
+                "icon": "emoticon-sad-outline",
+                "value": "option_2",
+                "valueType": "str",
+                "color": "#ffa200"
+            },
+            {
+                "label": "",
+                "icon": "emoticon-angry-outline",
+                "value": "option_3",
+                "valueType": "str",
+                "color": "#db0000"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 640,
+        "y": 360,
         "wires": [
             []
         ]
