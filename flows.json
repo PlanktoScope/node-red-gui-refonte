@@ -48,6 +48,14 @@
         "env": []
     },
     {
+        "id": "db2c2b41874b30f6",
+        "type": "tab",
+        "label": "Preview 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "b4a53df95ffe5a7e",
         "type": "tab",
         "label": "Page Acquisition",
@@ -251,7 +259,7 @@
             "4c954a4151e90460"
         ],
         "x": 514,
-        "y": 899,
+        "y": 1059,
         "w": 222,
         "h": 82
     },
@@ -953,6 +961,154 @@
         "h": 202
     },
     {
+        "id": "e2a3c9a8513b2d3a",
+        "type": "group",
+        "z": "856e96fc4678e0ab",
+        "name": "Pump settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "073765a7790a4a92",
+            "44e3592616e0dc4b",
+            "6c823ff1329935a7",
+            "810b8ed9f174ebda",
+            "1fd1c35d7ee81888"
+        ],
+        "x": 294,
+        "y": 139,
+        "w": 452,
+        "h": 222
+    },
+    {
+        "id": "3026527ce2761c70",
+        "type": "group",
+        "z": "856e96fc4678e0ab",
+        "name": "Focus settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "aa4d4fe0409f9d96",
+            "4e8a08b71c0f6903",
+            "214d85907aaf081f",
+            "2090deeb4e94bdd0",
+            "c7adf6ee87a3f2eb",
+            "488444e9e5cb1027",
+            "fe7be12fec4780c0",
+            "6227aaa9a4811216",
+            "e839a99339b97a59",
+            "f15b0ee19eb7b23f",
+            "6e11dda42f3d9717"
+        ],
+        "x": 294,
+        "y": 379,
+        "w": 612,
+        "h": 382
+    },
+    {
+        "id": "8460f8a75194d389",
+        "type": "group",
+        "z": "856e96fc4678e0ab",
+        "name": "Other settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "3b360c07247e178b",
+            "b6848ef4b21798e7"
+        ],
+        "x": 294,
+        "y": 779,
+        "w": 372,
+        "h": 82
+    },
+    {
+        "id": "4d764152bb765691",
+        "type": "group",
+        "z": "db2c2b41874b30f6",
+        "name": "Other settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "92930edd1c4a8b89"
+        ],
+        "x": 554,
+        "y": 659,
+        "w": 212,
+        "h": 82
+    },
+    {
+        "id": "c9bcd3032bf7e2b2",
+        "type": "group",
+        "z": "db2c2b41874b30f6",
+        "name": "Focus settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e926db8a16ef3c4c",
+            "08c24dca537551c1",
+            "86bfc5bdd751649f",
+            "f405fa42fd171cbd",
+            "77ee58b918b5527d",
+            "2c135bb6d012aaaa"
+        ],
+        "x": 554,
+        "y": 99,
+        "w": 252,
+        "h": 302
+    },
+    {
+        "id": "3892b0add8471a24",
+        "type": "group",
+        "z": "db2c2b41874b30f6",
+        "name": "Pump settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5ac944bdb8eb039d",
+            "74fb39bb1a5c565d",
+            "dd9377032dfc89a7",
+            "d08006ccf5581bf2"
+        ],
+        "x": 554,
+        "y": 419,
+        "w": 232,
+        "h": 222
+    },
+    {
+        "id": "a4154bd16c7f5c05",
+        "type": "group",
+        "z": "db2c2b41874b30f6",
+        "name": "Navigation",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "13f2540b966270bf",
+            "042804cfba4a211c"
+        ],
+        "x": 554,
+        "y": 779,
+        "w": 222,
+        "h": 82
+    },
+    {
         "id": "1eeac55ba6b9065f",
         "type": "ui-base",
         "name": "PlanktoScope Dashboard",
@@ -1073,7 +1229,7 @@
         "icon": "camera",
         "layout": "grid",
         "theme": "c0ea559892f9bd33",
-        "order": 5,
+        "order": 6,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -1087,7 +1243,7 @@
         "icon": "puzzle",
         "layout": "grid",
         "theme": "c0ea559892f9bd33",
-        "order": 6,
+        "order": 7,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -1098,7 +1254,7 @@
         "name": "Preview",
         "page": "3720bdc972d93bca",
         "width": "9",
-        "height": "11",
+        "height": "12",
         "order": 1,
         "showTitle": false,
         "className": "preview-group",
@@ -1236,7 +1392,7 @@
         "icon": "power",
         "layout": "grid",
         "theme": "c0ea559892f9bd33",
-        "order": 7,
+        "order": 8,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -1669,7 +1825,7 @@
         "icon": "comment-quote",
         "layout": "notebook",
         "theme": "c0ea559892f9bd33",
-        "order": 8,
+        "order": 9,
         "className": "",
         "visible": "false",
         "disabled": "false"
@@ -1765,6 +1921,59 @@
         "order": 3,
         "showTitle": false,
         "className": "settings-preview",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "06eaa5d9303a2b45",
+        "type": "ui-page",
+        "name": "Preview 2",
+        "ui": "1eeac55ba6b9065f",
+        "path": "/preview2",
+        "icon": "eye-outline",
+        "layout": "notebook",
+        "theme": "c0ea559892f9bd33",
+        "order": 5,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "68b919499dff4c4b",
+        "type": "ui-group",
+        "name": "Preview",
+        "page": "06eaa5d9303a2b45",
+        "width": "12",
+        "height": "12",
+        "order": -1,
+        "showTitle": false,
+        "className": "preview-group",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "683d10ddab24dd50",
+        "type": "ui-group",
+        "name": "settings",
+        "page": "06eaa5d9303a2b45",
+        "width": "4",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "de26a3c45e5fa398",
+        "type": "ui-group",
+        "name": "section-navigation",
+        "page": "06eaa5d9303a2b45",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
         "visible": "true",
         "disabled": "false"
     },
@@ -6303,7 +6512,7 @@
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 940,
+        "y": 1100,
         "wires": [
             [
                 "4c954a4151e90460"
@@ -6321,7 +6530,7 @@
             "fceeacd118ec8668"
         ],
         "x": 695,
-        "y": 940,
+        "y": 1100,
         "wires": []
     },
     {
@@ -6357,6 +6566,7 @@
         "id": "073765a7790a4a92",
         "type": "inject",
         "z": "856e96fc4678e0ab",
+        "g": "e2a3c9a8513b2d3a",
         "name": "Pump adjustement",
         "props": [
             {
@@ -6382,6 +6592,7 @@
         "id": "44e3592616e0dc4b",
         "type": "ui-text",
         "z": "856e96fc4678e0ab",
+        "g": "e2a3c9a8513b2d3a",
         "group": "4804a468432b97e1",
         "order": 1,
         "width": "3",
@@ -6403,6 +6614,7 @@
         "id": "6c823ff1329935a7",
         "type": "ui-slider",
         "z": "856e96fc4678e0ab",
+        "g": "e2a3c9a8513b2d3a",
         "group": "4804a468432b97e1",
         "name": "",
         "label": "Flowrate (ml/min)",
@@ -6429,6 +6641,7 @@
         "id": "810b8ed9f174ebda",
         "type": "ui-button-group",
         "z": "856e96fc4678e0ab",
+        "g": "e2a3c9a8513b2d3a",
         "name": "Pump direction",
         "group": "4804a468432b97e1",
         "order": 3,
@@ -6466,6 +6679,7 @@
         "id": "1fd1c35d7ee81888",
         "type": "ui-button-group",
         "z": "856e96fc4678e0ab",
+        "g": "e2a3c9a8513b2d3a",
         "name": "Pump status",
         "group": "4804a468432b97e1",
         "order": 4,
@@ -6503,6 +6717,7 @@
         "id": "aa4d4fe0409f9d96",
         "type": "inject",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "name": "Focus adjustement",
         "props": [
             {
@@ -6517,7 +6732,7 @@
         "payload": "Focus adjustement",
         "payloadType": "str",
         "x": 430,
-        "y": 440,
+        "y": 420,
         "wires": [
             [
                 "4e8a08b71c0f6903"
@@ -6528,6 +6743,7 @@
         "id": "4e8a08b71c0f6903",
         "type": "ui-text",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
         "order": 5,
         "width": "3",
@@ -6542,13 +6758,14 @@
         "color": "#717171",
         "className": "label-title",
         "x": 590,
-        "y": 440,
+        "y": 420,
         "wires": []
     },
     {
         "id": "214d85907aaf081f",
         "type": "ui-slider",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
         "name": "",
         "label": "Distance (μm)",
@@ -6566,7 +6783,7 @@
         "step": 1,
         "className": "range-flowrate",
         "x": 620,
-        "y": 500,
+        "y": 480,
         "wires": [
             [
                 "6e11dda42f3d9717"
@@ -6577,6 +6794,7 @@
         "id": "2090deeb4e94bdd0",
         "type": "ui-button",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
         "name": "chevron-double-up",
         "label": "",
@@ -6595,7 +6813,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 630,
-        "y": 580,
+        "y": 560,
         "wires": [
             []
         ]
@@ -6604,6 +6822,7 @@
         "id": "c7adf6ee87a3f2eb",
         "type": "ui-button",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
         "name": "chevron-double-down",
         "label": "",
@@ -6622,7 +6841,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 640,
-        "y": 620,
+        "y": 600,
         "wires": [
             []
         ]
@@ -6631,6 +6850,7 @@
         "id": "488444e9e5cb1027",
         "type": "ui-button",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
         "name": "chevron-up",
         "label": "",
@@ -6649,7 +6869,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 610,
-        "y": 700,
+        "y": 680,
         "wires": [
             []
         ]
@@ -6658,6 +6878,7 @@
         "id": "fe7be12fec4780c0",
         "type": "ui-button",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
         "name": "chevron-down",
         "label": "",
@@ -6676,7 +6897,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 620,
-        "y": 740,
+        "y": 720,
         "wires": [
             []
         ]
@@ -6685,6 +6906,7 @@
         "id": "6227aaa9a4811216",
         "type": "ui-text",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
         "order": 7,
         "width": "1",
@@ -6699,13 +6921,14 @@
         "color": "#717171",
         "className": "label-title-second",
         "x": 590,
-        "y": 540,
+        "y": 520,
         "wires": []
     },
     {
         "id": "e839a99339b97a59",
         "type": "inject",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "name": "Preset (1μm)",
         "props": [
             {
@@ -6720,7 +6943,7 @@
         "payload": "Preset (1μm)",
         "payloadType": "str",
         "x": 450,
-        "y": 660,
+        "y": 640,
         "wires": [
             [
                 "f15b0ee19eb7b23f"
@@ -6731,6 +6954,7 @@
         "id": "f15b0ee19eb7b23f",
         "type": "ui-text",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
         "order": 10,
         "width": "1",
@@ -6745,13 +6969,14 @@
         "color": "#717171",
         "className": "label-title-second",
         "x": 590,
-        "y": 660,
+        "y": 640,
         "wires": []
     },
     {
         "id": "6e11dda42f3d9717",
         "type": "function",
         "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
         "name": "Format change",
         "func": "msg.payload = msg.payload + \" (μm)\"\n\nreturn msg;",
         "outputs": 1,
@@ -6761,11 +6986,470 @@
         "finalize": "",
         "libs": [],
         "x": 800,
-        "y": 500,
+        "y": 480,
         "wires": [
             [
                 "6227aaa9a4811216"
             ]
+        ]
+    },
+    {
+        "id": "3b360c07247e178b",
+        "type": "ui-text",
+        "z": "856e96fc4678e0ab",
+        "g": "8460f8a75194d389",
+        "group": "4804a468432b97e1",
+        "order": 13,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-title",
+        "x": 590,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "b6848ef4b21798e7",
+        "type": "inject",
+        "z": "856e96fc4678e0ab",
+        "g": "8460f8a75194d389",
+        "name": "Other settings",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Other settings",
+        "payloadType": "str",
+        "x": 420,
+        "y": 820,
+        "wires": [
+            [
+                "3b360c07247e178b"
+            ]
+        ]
+    },
+    {
+        "id": "f16923cd17a51121",
+        "type": "ui-template",
+        "z": "db2c2b41874b30f6",
+        "group": "",
+        "page": "06eaa5d9303a2b45",
+        "ui": "",
+        "name": "Custom CSS",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": ".preview-group * {\n    background-color: black !important;\n    border: 1px solid black !important;\n    border-radius: 10px !important;\n}\n\n.label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 5px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 90% !important;\n}",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 650,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be238ebcf3f36cd7",
+        "type": "ui-control",
+        "z": "db2c2b41874b30f6",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 240,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5111f8c39fabae7",
+        "type": "link in",
+        "z": "db2c2b41874b30f6",
+        "name": "link in 46",
+        "links": [
+            "042804cfba4a211c"
+        ],
+        "x": 135,
+        "y": 40,
+        "wires": [
+            [
+                "be238ebcf3f36cd7"
+            ]
+        ]
+    },
+    {
+        "id": "13f2540b966270bf",
+        "type": "ui-template",
+        "z": "db2c2b41874b30f6",
+        "g": "a4154bd16c7f5c05",
+        "group": "de26a3c45e5fa398",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n    <div class=\"button-block\">\n        <div class=\"button-wrap\">\n            <v-btn class=\"my-button\" @click=\"buttonClicked(1)\">\n                <i class=\"mdi mdi-arrow-left\"></i>\n            </v-btn>\n        </div>\n        <div class=\"button-wrap\">\n            <i class=\"mdi mdi-eye-outline\"></i>\n        </div>\n        <div class=\"button-wrap\">\n            <v-btn class=\"my-button\" @click=\"buttonClicked(2)\">\n                <i class=\"mdi mdi-arrow-right\"></i>\n            </v-btn>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                buttonStates: {\n                    1: false,\n                    2: false,\n                }\n            }\n        },\n        methods: {\n            buttonClicked: function (buttonNumber) {\n                if (buttonNumber == 1) {\n                    this.send({ payload: \"-1\" });\n                } else if (buttonNumber == 2) {\n                    this.send({ payload: \"+1\" });\n                }\n            }\n        }\n    }\n</script>\n\n<style>\n    .button-block {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        border: none;\n    }\n\n    .button-wrap {\n        margin: 10px;\n        text-align: center;\n        font-size: 20px;\n        border: none;\n        color: #0a6eca;\n    }\n\n    .my-button {\n        background-color: white;\n        font-size: 20px;\n        color: #0a6eca;\n        border: none;\n        box-shadow: none;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 640,
+        "y": 820,
+        "wires": [
+            [
+                "042804cfba4a211c"
+            ]
+        ]
+    },
+    {
+        "id": "042804cfba4a211c",
+        "type": "link out",
+        "z": "db2c2b41874b30f6",
+        "g": "a4154bd16c7f5c05",
+        "name": "link out 58",
+        "mode": "link",
+        "links": [
+            "d5111f8c39fabae7"
+        ],
+        "x": 735,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "5ac944bdb8eb039d",
+        "type": "ui-slider",
+        "z": "db2c2b41874b30f6",
+        "g": "3892b0add8471a24",
+        "group": "683d10ddab24dd50",
+        "name": "",
+        "label": "Flowrate (ml/min)",
+        "tooltip": "",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": true,
+        "min": 0,
+        "max": "35",
+        "step": 1,
+        "className": "range-flowrate",
+        "x": 670,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74fb39bb1a5c565d",
+        "type": "ui-button-group",
+        "z": "db2c2b41874b30f6",
+        "g": "3892b0add8471a24",
+        "name": "Pump direction",
+        "group": "683d10ddab24dd50",
+        "order": 9,
+        "width": "4",
+        "height": 1,
+        "label": "Pump orientation",
+        "rounded": false,
+        "useThemeColors": false,
+        "passthru": false,
+        "options": [
+            {
+                "label": "",
+                "icon": "arrow-left-top",
+                "value": "option_0",
+                "valueType": "str",
+                "color": "#0a6eac"
+            },
+            {
+                "label": "",
+                "icon": "arrow-right-top",
+                "value": "option_1",
+                "valueType": "str",
+                "color": "#0a6eac"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 660,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd9377032dfc89a7",
+        "type": "ui-button-group",
+        "z": "db2c2b41874b30f6",
+        "g": "3892b0add8471a24",
+        "name": "Pump status",
+        "group": "683d10ddab24dd50",
+        "order": 10,
+        "width": "4",
+        "height": 1,
+        "label": "Pump status",
+        "rounded": false,
+        "useThemeColors": false,
+        "passthru": false,
+        "options": [
+            {
+                "label": "ON",
+                "icon": "",
+                "value": "option_0",
+                "valueType": "str",
+                "color": "#0a6eac"
+            },
+            {
+                "label": "OFF",
+                "icon": "",
+                "value": "option_1",
+                "valueType": "str",
+                "color": "#0a6eac"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e926db8a16ef3c4c",
+        "type": "ui-slider",
+        "z": "db2c2b41874b30f6",
+        "g": "c9bcd3032bf7e2b2",
+        "group": "683d10ddab24dd50",
+        "name": "",
+        "label": "Distance (μm)",
+        "tooltip": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": true,
+        "min": 0,
+        "max": "1500",
+        "step": 1,
+        "className": "range-flowrate",
+        "x": 660,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08c24dca537551c1",
+        "type": "ui-button",
+        "z": "db2c2b41874b30f6",
+        "g": "c9bcd3032bf7e2b2",
+        "group": "683d10ddab24dd50",
+        "name": "chevron-double-up",
+        "label": "",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "chevron-double-up",
+        "iconPosition": "right",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 670,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86bfc5bdd751649f",
+        "type": "ui-button",
+        "z": "db2c2b41874b30f6",
+        "g": "c9bcd3032bf7e2b2",
+        "group": "683d10ddab24dd50",
+        "name": "chevron-double-down",
+        "label": "",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "chevron-double-down",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 680,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f405fa42fd171cbd",
+        "type": "ui-button",
+        "z": "db2c2b41874b30f6",
+        "g": "c9bcd3032bf7e2b2",
+        "group": "683d10ddab24dd50",
+        "name": "chevron-up",
+        "label": "",
+        "order": 5,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "chevron-up",
+        "iconPosition": "right",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "77ee58b918b5527d",
+        "type": "ui-button",
+        "z": "db2c2b41874b30f6",
+        "g": "c9bcd3032bf7e2b2",
+        "group": "683d10ddab24dd50",
+        "name": "chevron-down",
+        "label": "",
+        "order": 6,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "chevron-down",
+        "iconPosition": "right",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 660,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d08006ccf5581bf2",
+        "type": "ui-template",
+        "z": "db2c2b41874b30f6",
+        "g": "3892b0add8471a24",
+        "group": "683d10ddab24dd50",
+        "page": "",
+        "ui": "",
+        "name": "Pump adjustment",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-starting-point\">\n      <h2>Pump adjustment</h2>\n    </div>\n    <div class=\"right-section-starting-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-starting-point {\n  flex: 2 !important;\n}\n\n.right-section-starting-point {\n  flex: 5 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 670,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c135bb6d012aaaa",
+        "type": "ui-template",
+        "z": "db2c2b41874b30f6",
+        "g": "c9bcd3032bf7e2b2",
+        "group": "683d10ddab24dd50",
+        "page": "",
+        "ui": "",
+        "name": "Focus adjustment",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-starting-point\">\n      <h2>Focus adjustment</h2>\n    </div>\n    <div class=\"right-section-starting-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-starting-point {\n  flex: 2 !important;\n}\n\n.right-section-starting-point {\n  flex: 5 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 670,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92930edd1c4a8b89",
+        "type": "ui-template",
+        "z": "db2c2b41874b30f6",
+        "g": "4d764152bb765691",
+        "group": "683d10ddab24dd50",
+        "page": "",
+        "ui": "",
+        "name": "Other settings",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-starting-point\">\n      <h2>Other settings</h2>\n    </div>\n    <div class=\"right-section-starting-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-starting-point {\n  flex: 2 !important;\n}\n\n.right-section-starting-point {\n  flex: 5 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 700,
+        "wires": [
+            []
         ]
     },
     {
