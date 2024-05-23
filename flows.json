@@ -48,14 +48,6 @@
         "env": []
     },
     {
-        "id": "db2c2b41874b30f6",
-        "type": "tab",
-        "label": "Preview 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "b4a53df95ffe5a7e",
         "type": "tab",
         "label": "Page Acquisition",
@@ -259,7 +251,7 @@
             "4c954a4151e90460"
         ],
         "x": 514,
-        "y": 1059,
+        "y": 839,
         "w": 222,
         "h": 82
     },
@@ -975,12 +967,14 @@
             "44e3592616e0dc4b",
             "6c823ff1329935a7",
             "810b8ed9f174ebda",
-            "1fd1c35d7ee81888"
+            "63cfd43f1d874a10",
+            "613e35ccfb84371a",
+            "51ae67734c74a10c"
         ],
         "x": 294,
-        "y": 139,
+        "y": 99,
         "w": 452,
-        "h": 222
+        "h": 302
     },
     {
         "id": "3026527ce2761c70",
@@ -998,17 +992,12 @@
             "214d85907aaf081f",
             "2090deeb4e94bdd0",
             "c7adf6ee87a3f2eb",
-            "488444e9e5cb1027",
-            "fe7be12fec4780c0",
-            "6227aaa9a4811216",
-            "e839a99339b97a59",
-            "f15b0ee19eb7b23f",
-            "6e11dda42f3d9717"
+            "9f652f713e29c3a3"
         ],
         "x": 294,
-        "y": 379,
-        "w": 612,
-        "h": 382
+        "y": 419,
+        "w": 472,
+        "h": 262
     },
     {
         "id": "8460f8a75194d389",
@@ -1022,91 +1011,13 @@
         },
         "nodes": [
             "3b360c07247e178b",
-            "b6848ef4b21798e7"
+            "b6848ef4b21798e7",
+            "e0a80b52165f4c67"
         ],
         "x": 294,
-        "y": 779,
-        "w": 372,
-        "h": 82
-    },
-    {
-        "id": "4d764152bb765691",
-        "type": "group",
-        "z": "db2c2b41874b30f6",
-        "name": "Other settings",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "92930edd1c4a8b89"
-        ],
-        "x": 554,
-        "y": 659,
-        "w": 212,
-        "h": 82
-    },
-    {
-        "id": "c9bcd3032bf7e2b2",
-        "type": "group",
-        "z": "db2c2b41874b30f6",
-        "name": "Focus settings",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "e926db8a16ef3c4c",
-            "08c24dca537551c1",
-            "86bfc5bdd751649f",
-            "f405fa42fd171cbd",
-            "77ee58b918b5527d",
-            "2c135bb6d012aaaa"
-        ],
-        "x": 554,
-        "y": 99,
-        "w": 252,
-        "h": 302
-    },
-    {
-        "id": "3892b0add8471a24",
-        "type": "group",
-        "z": "db2c2b41874b30f6",
-        "name": "Pump settings",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "5ac944bdb8eb039d",
-            "74fb39bb1a5c565d",
-            "dd9377032dfc89a7",
-            "d08006ccf5581bf2"
-        ],
-        "x": 554,
-        "y": 419,
-        "w": 232,
-        "h": 222
-    },
-    {
-        "id": "a4154bd16c7f5c05",
-        "type": "group",
-        "z": "db2c2b41874b30f6",
-        "name": "Navigation",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "13f2540b966270bf",
-            "042804cfba4a211c"
-        ],
-        "x": 554,
-        "y": 779,
-        "w": 222,
-        "h": 82
+        "y": 699,
+        "w": 412,
+        "h": 122
     },
     {
         "id": "1eeac55ba6b9065f",
@@ -1254,7 +1165,7 @@
         "name": "Preview",
         "page": "3720bdc972d93bca",
         "width": "9",
-        "height": "12",
+        "height": "14",
         "order": 1,
         "showTitle": false,
         "className": "preview-group",
@@ -1960,7 +1871,7 @@
         "height": "1",
         "order": -1,
         "showTitle": false,
-        "className": "",
+        "className": "settings-preview",
         "visible": "true",
         "disabled": "false"
     },
@@ -6480,7 +6391,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".preview-group * {\n    background-color: black !important;\n    border: 1px solid black !important;\n    border-radius: 10px !important;\n}\n\n.label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 0px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 90% !important;\n}",
+        "format": ".preview-group * {\n    background-color: black !important;\n    border: 1px solid black !important;\n    border-radius: 10px !important;\n}\n\n.label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 0px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 90% !important;\n}\n\n.button-preview {\n    margin-left: 5px;\n}\n\n\n.distance-input {\n    margin-right: 5px;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -6512,7 +6423,7 @@
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 1100,
+        "y": 880,
         "wires": [
             [
                 "4c954a4151e90460"
@@ -6530,7 +6441,7 @@
             "fceeacd118ec8668"
         ],
         "x": 695,
-        "y": 1100,
+        "y": 880,
         "wires": []
     },
     {
@@ -6581,7 +6492,7 @@
         "payload": "Pump adjustement",
         "payloadType": "str",
         "x": 430,
-        "y": 180,
+        "y": 140,
         "wires": [
             [
                 "44e3592616e0dc4b"
@@ -6607,7 +6518,7 @@
         "color": "#717171",
         "className": "label-title",
         "x": 590,
-        "y": 180,
+        "y": 140,
         "wires": []
     },
     {
@@ -6628,13 +6539,15 @@
         "topicType": "msg",
         "thumbLabel": true,
         "min": 0,
-        "max": "35",
-        "step": 1,
+        "max": "50",
+        "step": "0.01",
         "className": "range-flowrate",
         "x": 630,
-        "y": 240,
+        "y": 200,
         "wires": [
-            []
+            [
+                "63cfd43f1d874a10"
+            ]
         ]
     },
     {
@@ -6644,10 +6557,10 @@
         "g": "e2a3c9a8513b2d3a",
         "name": "Pump direction",
         "group": "4804a468432b97e1",
-        "order": 3,
-        "width": "3",
-        "height": 1,
-        "label": "Pump orientation",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "label": "",
         "rounded": false,
         "useThemeColors": false,
         "passthru": false,
@@ -6655,14 +6568,14 @@
             {
                 "label": "",
                 "icon": "arrow-left-top",
-                "value": "option_0",
+                "value": "left",
                 "valueType": "str",
                 "color": "#0a6eac"
             },
             {
                 "label": "",
                 "icon": "arrow-right-top",
-                "value": "option_1",
+                "value": "right",
                 "valueType": "str",
                 "color": "#0a6eac"
             }
@@ -6671,44 +6584,6 @@
         "topicType": "msg",
         "x": 620,
         "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1fd1c35d7ee81888",
-        "type": "ui-button-group",
-        "z": "856e96fc4678e0ab",
-        "g": "e2a3c9a8513b2d3a",
-        "name": "Pump status",
-        "group": "4804a468432b97e1",
-        "order": 4,
-        "width": "3",
-        "height": 1,
-        "label": "Pump status",
-        "rounded": false,
-        "useThemeColors": false,
-        "passthru": false,
-        "options": [
-            {
-                "label": "ON",
-                "icon": "",
-                "value": "option_0",
-                "valueType": "str",
-                "color": "#0a6eac"
-            },
-            {
-                "label": "OFF",
-                "icon": "",
-                "value": "option_1",
-                "valueType": "str",
-                "color": "#0a6eac"
-            }
-        ],
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 610,
-        "y": 320,
         "wires": [
             []
         ]
@@ -6732,7 +6607,7 @@
         "payload": "Focus adjustement",
         "payloadType": "str",
         "x": 430,
-        "y": 420,
+        "y": 460,
         "wires": [
             [
                 "4e8a08b71c0f6903"
@@ -6745,7 +6620,7 @@
         "z": "856e96fc4678e0ab",
         "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
-        "order": 5,
+        "order": 7,
         "width": "3",
         "height": "1",
         "name": "",
@@ -6758,7 +6633,7 @@
         "color": "#717171",
         "className": "label-title",
         "x": 590,
-        "y": 420,
+        "y": 460,
         "wires": []
     },
     {
@@ -6770,7 +6645,7 @@
         "name": "",
         "label": "Distance (μm)",
         "tooltip": "",
-        "order": 6,
+        "order": 8,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -6779,14 +6654,14 @@
         "topicType": "msg",
         "thumbLabel": true,
         "min": 0,
-        "max": "1500",
-        "step": 1,
+        "max": "5000",
+        "step": "25",
         "className": "range-flowrate",
         "x": 620,
-        "y": 480,
+        "y": 520,
         "wires": [
             [
-                "6e11dda42f3d9717"
+                "9f652f713e29c3a3"
             ]
         ]
     },
@@ -6798,63 +6673,7 @@
         "group": "4804a468432b97e1",
         "name": "chevron-double-up",
         "label": "",
-        "order": 8,
-        "width": "1",
-        "height": "1",
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "button-preview",
-        "icon": "chevron-double-up",
-        "iconPosition": "right",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 630,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c7adf6ee87a3f2eb",
-        "type": "ui-button",
-        "z": "856e96fc4678e0ab",
-        "g": "3026527ce2761c70",
-        "group": "4804a468432b97e1",
-        "name": "chevron-double-down",
-        "label": "",
-        "order": 9,
-        "width": "1",
-        "height": "1",
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "button-preview",
-        "icon": "chevron-double-down",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 640,
-        "y": 600,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "488444e9e5cb1027",
-        "type": "ui-button",
-        "z": "856e96fc4678e0ab",
-        "g": "3026527ce2761c70",
-        "group": "4804a468432b97e1",
-        "name": "chevron-up",
-        "label": "",
-        "order": 11,
+        "order": 10,
         "width": "1",
         "height": "1",
         "passthru": false,
@@ -6868,21 +6687,21 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 610,
-        "y": 680,
+        "x": 630,
+        "y": 600,
         "wires": [
             []
         ]
     },
     {
-        "id": "fe7be12fec4780c0",
+        "id": "c7adf6ee87a3f2eb",
         "type": "ui-button",
         "z": "856e96fc4678e0ab",
         "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
-        "name": "chevron-down",
+        "name": "chevron-double-down",
         "label": "",
-        "order": 12,
+        "order": 11,
         "width": "1",
         "height": "1",
         "passthru": false,
@@ -6891,106 +6710,15 @@
         "bgcolor": "",
         "className": "button-preview",
         "icon": "chevron-down",
-        "iconPosition": "right",
+        "iconPosition": "left",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 620,
-        "y": 720,
+        "x": 640,
+        "y": 640,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "6227aaa9a4811216",
-        "type": "ui-text",
-        "z": "856e96fc4678e0ab",
-        "g": "3026527ce2761c70",
-        "group": "4804a468432b97e1",
-        "order": 7,
-        "width": "1",
-        "height": "1",
-        "name": "",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "label-title-second",
-        "x": 590,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "e839a99339b97a59",
-        "type": "inject",
-        "z": "856e96fc4678e0ab",
-        "g": "3026527ce2761c70",
-        "name": "Preset (1μm)",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Preset (1μm)",
-        "payloadType": "str",
-        "x": 450,
-        "y": 640,
-        "wires": [
-            [
-                "f15b0ee19eb7b23f"
-            ]
-        ]
-    },
-    {
-        "id": "f15b0ee19eb7b23f",
-        "type": "ui-text",
-        "z": "856e96fc4678e0ab",
-        "g": "3026527ce2761c70",
-        "group": "4804a468432b97e1",
-        "order": 10,
-        "width": "1",
-        "height": "1",
-        "name": "",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "label-title-second",
-        "x": 590,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "6e11dda42f3d9717",
-        "type": "function",
-        "z": "856e96fc4678e0ab",
-        "g": "3026527ce2761c70",
-        "name": "Format change",
-        "func": "msg.payload = msg.payload + \" (μm)\"\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 800,
-        "y": 480,
-        "wires": [
-            [
-                "6227aaa9a4811216"
-            ]
         ]
     },
     {
@@ -6999,7 +6727,7 @@
         "z": "856e96fc4678e0ab",
         "g": "8460f8a75194d389",
         "group": "4804a468432b97e1",
-        "order": 13,
+        "order": 12,
         "width": "3",
         "height": "1",
         "name": "",
@@ -7012,7 +6740,7 @@
         "color": "#717171",
         "className": "label-title",
         "x": 590,
-        "y": 820,
+        "y": 740,
         "wires": []
     },
     {
@@ -7034,7 +6762,7 @@
         "payload": "Other settings",
         "payloadType": "str",
         "x": 420,
-        "y": 820,
+        "y": 740,
         "wires": [
             [
                 "3b360c07247e178b"
@@ -7042,175 +6770,16 @@
         ]
     },
     {
-        "id": "f16923cd17a51121",
-        "type": "ui-template",
-        "z": "db2c2b41874b30f6",
-        "group": "",
-        "page": "06eaa5d9303a2b45",
-        "ui": "",
-        "name": "Custom CSS",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": ".preview-group * {\n    background-color: black !important;\n    border: 1px solid black !important;\n    border-radius: 10px !important;\n}\n\n.label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 5px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 90% !important;\n}",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "page:style",
-        "className": "",
-        "x": 650,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "be238ebcf3f36cd7",
-        "type": "ui-control",
-        "z": "db2c2b41874b30f6",
-        "name": "",
-        "ui": "1eeac55ba6b9065f",
-        "events": "all",
-        "x": 240,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d5111f8c39fabae7",
-        "type": "link in",
-        "z": "db2c2b41874b30f6",
-        "name": "link in 46",
-        "links": [
-            "042804cfba4a211c"
-        ],
-        "x": 135,
-        "y": 40,
-        "wires": [
-            [
-                "be238ebcf3f36cd7"
-            ]
-        ]
-    },
-    {
-        "id": "13f2540b966270bf",
-        "type": "ui-template",
-        "z": "db2c2b41874b30f6",
-        "g": "a4154bd16c7f5c05",
-        "group": "de26a3c45e5fa398",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 1,
-        "width": "12",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n    <div class=\"button-block\">\n        <div class=\"button-wrap\">\n            <v-btn class=\"my-button\" @click=\"buttonClicked(1)\">\n                <i class=\"mdi mdi-arrow-left\"></i>\n            </v-btn>\n        </div>\n        <div class=\"button-wrap\">\n            <i class=\"mdi mdi-eye-outline\"></i>\n        </div>\n        <div class=\"button-wrap\">\n            <v-btn class=\"my-button\" @click=\"buttonClicked(2)\">\n                <i class=\"mdi mdi-arrow-right\"></i>\n            </v-btn>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                buttonStates: {\n                    1: false,\n                    2: false,\n                }\n            }\n        },\n        methods: {\n            buttonClicked: function (buttonNumber) {\n                if (buttonNumber == 1) {\n                    this.send({ payload: \"-1\" });\n                } else if (buttonNumber == 2) {\n                    this.send({ payload: \"+1\" });\n                }\n            }\n        }\n    }\n</script>\n\n<style>\n    .button-block {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        border: none;\n    }\n\n    .button-wrap {\n        margin: 10px;\n        text-align: center;\n        font-size: 20px;\n        border: none;\n        color: #0a6eca;\n    }\n\n    .my-button {\n        background-color: white;\n        font-size: 20px;\n        color: #0a6eca;\n        border: none;\n        box-shadow: none;\n    }\n</style>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 640,
-        "y": 820,
-        "wires": [
-            [
-                "042804cfba4a211c"
-            ]
-        ]
-    },
-    {
-        "id": "042804cfba4a211c",
-        "type": "link out",
-        "z": "db2c2b41874b30f6",
-        "g": "a4154bd16c7f5c05",
-        "name": "link out 58",
-        "mode": "link",
-        "links": [
-            "d5111f8c39fabae7"
-        ],
-        "x": 735,
-        "y": 820,
-        "wires": []
-    },
-    {
-        "id": "5ac944bdb8eb039d",
-        "type": "ui-slider",
-        "z": "db2c2b41874b30f6",
-        "g": "3892b0add8471a24",
-        "group": "683d10ddab24dd50",
-        "name": "",
-        "label": "Flowrate (ml/min)",
-        "tooltip": "",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": true,
-        "min": 0,
-        "max": "35",
-        "step": 1,
-        "className": "range-flowrate",
-        "x": 670,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "74fb39bb1a5c565d",
+        "id": "e0a80b52165f4c67",
         "type": "ui-button-group",
-        "z": "db2c2b41874b30f6",
-        "g": "3892b0add8471a24",
-        "name": "Pump direction",
-        "group": "683d10ddab24dd50",
-        "order": 9,
-        "width": "4",
+        "z": "856e96fc4678e0ab",
+        "g": "8460f8a75194d389",
+        "name": "Led status",
+        "group": "4804a468432b97e1",
+        "order": 13,
+        "width": "3",
         "height": 1,
-        "label": "Pump orientation",
-        "rounded": false,
-        "useThemeColors": false,
-        "passthru": false,
-        "options": [
-            {
-                "label": "",
-                "icon": "arrow-left-top",
-                "value": "option_0",
-                "valueType": "str",
-                "color": "#0a6eac"
-            },
-            {
-                "label": "",
-                "icon": "arrow-right-top",
-                "value": "option_1",
-                "valueType": "str",
-                "color": "#0a6eac"
-            }
-        ],
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 660,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "dd9377032dfc89a7",
-        "type": "ui-button-group",
-        "z": "db2c2b41874b30f6",
-        "g": "3892b0add8471a24",
-        "name": "Pump status",
-        "group": "683d10ddab24dd50",
-        "order": 10,
-        "width": "4",
-        "height": 1,
-        "label": "Pump status",
+        "label": "Led status",
         "rounded": false,
         "useThemeColors": false,
         "passthru": false,
@@ -7232,102 +6801,75 @@
         ],
         "topic": "topic",
         "topicType": "msg",
-        "x": 650,
-        "y": 600,
+        "x": 610,
+        "y": 780,
         "wires": [
             []
         ]
     },
     {
-        "id": "e926db8a16ef3c4c",
-        "type": "ui-slider",
-        "z": "db2c2b41874b30f6",
-        "g": "c9bcd3032bf7e2b2",
-        "group": "683d10ddab24dd50",
-        "name": "",
-        "label": "Distance (μm)",
-        "tooltip": "",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "thumbLabel": true,
-        "min": 0,
-        "max": "1500",
-        "step": 1,
-        "className": "range-flowrate",
-        "x": 660,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "08c24dca537551c1",
-        "type": "ui-button",
-        "z": "db2c2b41874b30f6",
-        "g": "c9bcd3032bf7e2b2",
-        "group": "683d10ddab24dd50",
-        "name": "chevron-double-up",
+        "id": "63cfd43f1d874a10",
+        "type": "ui-text-input",
+        "z": "856e96fc4678e0ab",
+        "g": "e2a3c9a8513b2d3a",
+        "group": "4804a468432b97e1",
+        "name": "Flowrate (ml/min)",
         "label": "",
         "order": 3,
-        "width": "1",
+        "width": "3",
         "height": "1",
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "button-preview",
-        "icon": "chevron-double-up",
-        "iconPosition": "right",
-        "payload": "",
-        "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 670,
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 630,
         "y": 240,
         "wires": [
-            []
+            [
+                "6c823ff1329935a7"
+            ]
         ]
     },
     {
-        "id": "86bfc5bdd751649f",
-        "type": "ui-button",
-        "z": "db2c2b41874b30f6",
-        "g": "c9bcd3032bf7e2b2",
-        "group": "683d10ddab24dd50",
-        "name": "chevron-double-down",
-        "label": "",
-        "order": 4,
+        "id": "9f652f713e29c3a3",
+        "type": "ui-text-input",
+        "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
+        "group": "4804a468432b97e1",
+        "name": "Distance (μm)",
+        "label": "Distance (μm)",
+        "order": 9,
         "width": "1",
         "height": "1",
-        "passthru": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "button-preview",
-        "icon": "chevron-double-down",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 680,
-        "y": 280,
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "distance-input",
+        "x": 620,
+        "y": 560,
         "wires": [
-            []
+            [
+                "214d85907aaf081f"
+            ]
         ]
     },
     {
-        "id": "f405fa42fd171cbd",
+        "id": "613e35ccfb84371a",
         "type": "ui-button",
-        "z": "db2c2b41874b30f6",
-        "g": "c9bcd3032bf7e2b2",
-        "group": "683d10ddab24dd50",
-        "name": "chevron-up",
+        "z": "856e96fc4678e0ab",
+        "g": "e2a3c9a8513b2d3a",
+        "group": "4804a468432b97e1",
+        "name": "water-minus",
         "label": "",
         "order": 5,
         "width": "1",
@@ -7337,25 +6879,25 @@
         "color": "",
         "bgcolor": "",
         "className": "button-preview",
-        "icon": "chevron-up",
+        "icon": "water-minus",
         "iconPosition": "right",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 650,
+        "x": 610,
         "y": 320,
         "wires": [
             []
         ]
     },
     {
-        "id": "77ee58b918b5527d",
+        "id": "51ae67734c74a10c",
         "type": "ui-button",
-        "z": "db2c2b41874b30f6",
-        "g": "c9bcd3032bf7e2b2",
-        "group": "683d10ddab24dd50",
-        "name": "chevron-down",
+        "z": "856e96fc4678e0ab",
+        "g": "e2a3c9a8513b2d3a",
+        "group": "4804a468432b97e1",
+        "name": "stop",
         "label": "",
         "order": 6,
         "width": "1",
@@ -7365,89 +6907,14 @@
         "color": "",
         "bgcolor": "",
         "className": "button-preview",
-        "icon": "chevron-down",
-        "iconPosition": "right",
+        "icon": "stop",
+        "iconPosition": "left",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 660,
+        "x": 590,
         "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d08006ccf5581bf2",
-        "type": "ui-template",
-        "z": "db2c2b41874b30f6",
-        "g": "3892b0add8471a24",
-        "group": "683d10ddab24dd50",
-        "page": "",
-        "ui": "",
-        "name": "Pump adjustment",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-starting-point\">\n      <h2>Pump adjustment</h2>\n    </div>\n    <div class=\"right-section-starting-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-starting-point {\n  flex: 2 !important;\n}\n\n.right-section-starting-point {\n  flex: 5 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 670,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2c135bb6d012aaaa",
-        "type": "ui-template",
-        "z": "db2c2b41874b30f6",
-        "g": "c9bcd3032bf7e2b2",
-        "group": "683d10ddab24dd50",
-        "page": "",
-        "ui": "",
-        "name": "Focus adjustment",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-starting-point\">\n      <h2>Focus adjustment</h2>\n    </div>\n    <div class=\"right-section-starting-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-starting-point {\n  flex: 2 !important;\n}\n\n.right-section-starting-point {\n  flex: 5 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 670,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "92930edd1c4a8b89",
-        "type": "ui-template",
-        "z": "db2c2b41874b30f6",
-        "g": "4d764152bb765691",
-        "group": "683d10ddab24dd50",
-        "page": "",
-        "ui": "",
-        "name": "Other settings",
-        "order": 11,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-starting-point\">\n      <h2>Other settings</h2>\n    </div>\n    <div class=\"right-section-starting-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-starting-point {\n  flex: 2 !important;\n}\n\n.right-section-starting-point {\n  flex: 5 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 660,
-        "y": 700,
         "wires": [
             []
         ]
