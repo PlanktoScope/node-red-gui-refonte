@@ -244,7 +244,9 @@
         "z": "856e96fc4678e0ab",
         "name": "Navigation",
         "style": {
-            "label": true
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
         },
         "nodes": [
             "a1746c9a0c82ab71",
@@ -969,7 +971,8 @@
             "810b8ed9f174ebda",
             "63cfd43f1d874a10",
             "613e35ccfb84371a",
-            "51ae67734c74a10c"
+            "51ae67734c74a10c",
+            "b8f93831a872f12a"
         ],
         "x": 294,
         "y": 99,
@@ -992,11 +995,12 @@
             "214d85907aaf081f",
             "2090deeb4e94bdd0",
             "c7adf6ee87a3f2eb",
-            "9f652f713e29c3a3"
+            "9f652f713e29c3a3",
+            "7fceb093cc5ec6b4"
         ],
         "x": 294,
         "y": 419,
-        "w": 472,
+        "w": 432,
         "h": 262
     },
     {
@@ -1014,9 +1018,9 @@
             "b6848ef4b21798e7",
             "e0a80b52165f4c67"
         ],
-        "x": 294,
+        "x": 314,
         "y": 699,
-        "w": 412,
+        "w": 392,
         "h": 122
     },
     {
@@ -1832,20 +1836,6 @@
         "order": 3,
         "showTitle": false,
         "className": "settings-preview",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "06eaa5d9303a2b45",
-        "type": "ui-page",
-        "name": "Preview 2",
-        "ui": "1eeac55ba6b9065f",
-        "path": "/preview2",
-        "icon": "eye-outline",
-        "layout": "notebook",
-        "theme": "c0ea559892f9bd33",
-        "order": 5,
-        "className": "",
         "visible": "true",
         "disabled": "false"
     },
@@ -6391,7 +6381,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".preview-group * {\n    background-color: black !important;\n    border: 1px solid black !important;\n    border-radius: 10px !important;\n}\n\n.label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 0px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 90% !important;\n}\n\n.button-preview {\n    margin-left: 5px;\n}\n\n\n.distance-input {\n    margin-right: 5px;\n}",
+        "format": ".preview-group * {\n    background-color: black !important;\n    border: 1px solid black !important;\n    border-radius: 10px !important;\n}\n\n.label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 0px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 90% !important;\n    height: 90% !important;\n}\n\n.button-preview {\n    margin-left: 5px;\n    margin-top: 5px;\n}\n\n\n.distance-input {\n    margin-right: 5px;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -6671,8 +6661,8 @@
         "z": "856e96fc4678e0ab",
         "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
-        "name": "chevron-double-up",
-        "label": "",
+        "name": "chevron-up",
+        "label": "Up",
         "order": 10,
         "width": "1",
         "height": "1",
@@ -6687,7 +6677,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
+        "x": 610,
         "y": 600,
         "wires": [
             []
@@ -6699,8 +6689,8 @@
         "z": "856e96fc4678e0ab",
         "g": "3026527ce2761c70",
         "group": "4804a468432b97e1",
-        "name": "chevron-double-down",
-        "label": "",
+        "name": "chevron-down",
+        "label": "Down",
         "order": 11,
         "width": "1",
         "height": "1",
@@ -6715,7 +6705,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 640,
+        "x": 620,
         "y": 640,
         "wires": [
             []
@@ -6761,7 +6751,7 @@
         "topic": "",
         "payload": "Other settings",
         "payloadType": "str",
-        "x": 420,
+        "x": 440,
         "y": 740,
         "wires": [
             [
@@ -6814,7 +6804,7 @@
         "g": "e2a3c9a8513b2d3a",
         "group": "4804a468432b97e1",
         "name": "Flowrate (ml/min)",
-        "label": "",
+        "label": "Flowrate (ml/min)",
         "order": 3,
         "width": "3",
         "height": "1",
@@ -6870,7 +6860,7 @@
         "g": "e2a3c9a8513b2d3a",
         "group": "4804a468432b97e1",
         "name": "water-minus",
-        "label": "",
+        "label": "Flush",
         "order": 5,
         "width": "1",
         "height": "1",
@@ -6898,7 +6888,7 @@
         "g": "e2a3c9a8513b2d3a",
         "group": "4804a468432b97e1",
         "name": "stop",
-        "label": "",
+        "label": "Stop",
         "order": 6,
         "width": "1",
         "height": "1",
@@ -6917,6 +6907,60 @@
         "y": 360,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "b8f93831a872f12a",
+        "type": "inject",
+        "z": "856e96fc4678e0ab",
+        "g": "e2a3c9a8513b2d3a",
+        "name": "Hard data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "6c823ff1329935a7",
+                "63cfd43f1d874a10"
+            ]
+        ]
+    },
+    {
+        "id": "7fceb093cc5ec6b4",
+        "type": "inject",
+        "z": "856e96fc4678e0ab",
+        "g": "3026527ce2761c70",
+        "name": "Hard data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "214d85907aaf081f",
+                "9f652f713e29c3a3"
+            ]
         ]
     },
     {
