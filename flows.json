@@ -159,94 +159,6 @@
         "h": 302
     },
     {
-        "id": "5a0c5f993457e27b",
-        "type": "group",
-        "z": "b4a53df95ffe5a7e",
-        "name": "Section one",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "e290e26a128bc8d7",
-            "87b37603c68f4546",
-            "2c620b07e6b33e96",
-            "140678b970959538",
-            "a19e946860461bbd",
-            "99243c07bf2ed94f",
-            "ac3eeb992dd94baf",
-            "b75fc087e03c7ba1",
-            "b57c34652ca6dc20"
-        ],
-        "x": 534,
-        "y": 219,
-        "w": 402,
-        "h": 162
-    },
-    {
-        "id": "5cac8180c2b74f8d",
-        "type": "group",
-        "z": "b4a53df95ffe5a7e",
-        "name": "Section two metadata",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "937b876f599672be"
-        ],
-        "x": 534,
-        "y": 399,
-        "w": 152,
-        "h": 82
-    },
-    {
-        "id": "f67d766b7a57ac8e",
-        "type": "group",
-        "z": "b4a53df95ffe5a7e",
-        "name": "Section two preview",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "84a1a01663459f10"
-        ],
-        "x": 534,
-        "y": 499,
-        "w": 152,
-        "h": 82
-    },
-    {
-        "id": "8a21a76acd370149",
-        "type": "group",
-        "z": "b4a53df95ffe5a7e",
-        "name": "Section two settings",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5e7b38a402f83ac4"
-        ],
-        "x": 534,
-        "y": 599,
-        "w": 152,
-        "h": 82
-    },
-    {
-        "id": "d2c9101ed2ec362a",
-        "type": "group",
-        "z": "b4a53df95ffe5a7e",
-        "name": "Section three",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "cb65df693a17dfe4"
-        ],
-        "x": 534,
-        "y": 699,
-        "w": 152,
-        "h": 82
-    },
-    {
         "id": "1f5b7433d4de7aae",
         "type": "group",
         "z": "856e96fc4678e0ab",
@@ -262,23 +174,6 @@
         ],
         "x": 514,
         "y": 1419,
-        "w": 222,
-        "h": 82
-    },
-    {
-        "id": "2be6ad508d7c21f1",
-        "type": "group",
-        "z": "b4a53df95ffe5a7e",
-        "name": "Navigation",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1e8ed47df6773a62",
-            "b918e3464255b05e"
-        ],
-        "x": 534,
-        "y": 799,
         "w": 222,
         "h": 82
     },
@@ -916,7 +811,7 @@
         "id": "7ef44b6cf4e5c084",
         "type": "group",
         "z": "856e96fc4678e0ab",
-        "name": "Step bar",
+        "name": "Step bar & Streaming",
         "style": {
             "stroke": "#000000",
             "label": true,
@@ -1064,6 +959,31 @@
         "h": 202
     },
     {
+        "id": "fb32f19d606f8b93",
+        "type": "group",
+        "z": "b4a53df95ffe5a7e",
+        "name": "Step bar & Streaming",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e78ddebf80d061b0",
+            "ba2d1c881daa8eb3",
+            "0ba3d9057eaf4b5e",
+            "31e90cdc99f822cc",
+            "5d02c1e67f3ba2fc",
+            "a9c93d28e6b2a61e",
+            "b3a71ca0a704c6c2",
+            "dca4b08d667bc710"
+        ],
+        "x": 374,
+        "y": 179,
+        "w": 352,
+        "h": 322
+    },
+    {
         "id": "43f40797e7f6bb4b",
         "type": "ui-page",
         "name": "Home",
@@ -1186,72 +1106,15 @@
         "disabled": "false"
     },
     {
-        "id": "7975e05d421a32ba",
-        "type": "ui-group",
-        "d": true,
-        "name": "Section-One",
-        "page": "156c087dabd0538c",
-        "width": "12",
-        "height": "1",
-        "order": -1,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
         "id": "ad54e60c77c4781a",
         "type": "ui-group",
-        "d": true,
-        "name": "Section-Two-Preview",
+        "name": "Streaming",
         "page": "156c087dabd0538c",
-        "width": "9",
-        "height": "1",
-        "order": -1,
+        "width": "8",
+        "height": "14",
+        "order": 2,
         "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "3e3c8912469a2819",
-        "type": "ui-group",
-        "d": true,
-        "name": "Section-Two-Settings",
-        "page": "156c087dabd0538c",
-        "width": "9",
-        "height": "1",
-        "order": -1,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "55e0129ecef67edc",
-        "type": "ui-group",
-        "d": true,
-        "name": "Section-Two-Metadata",
-        "page": "156c087dabd0538c",
-        "width": "9",
-        "height": "1",
-        "order": -1,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "37538d2c695e139b",
-        "type": "ui-group",
-        "d": true,
-        "name": "Section-Three",
-        "page": "156c087dabd0538c",
-        "width": "3",
-        "height": "1",
-        "order": -1,
-        "showTitle": false,
-        "className": "",
+        "className": "preview-group",
         "visible": "true",
         "disabled": "false"
     },
@@ -1264,19 +1127,6 @@
         "width": "12",
         "height": "1",
         "order": 4,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "c29beff51c3024f3",
-        "type": "ui-group",
-        "name": "Section-navigation",
-        "page": "156c087dabd0538c",
-        "width": "12",
-        "height": "1",
-        "order": -1,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1842,21 +1692,8 @@
         "name": "settings-preview",
         "page": "3720bdc972d93bca",
         "width": "4",
-        "height": "11",
+        "height": "12",
         "order": 3,
-        "showTitle": false,
-        "className": "settings-preview",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "683d10ddab24dd50",
-        "type": "ui-group",
-        "name": "settings",
-        "page": "156c087dabd0538c",
-        "width": "4",
-        "height": "1",
-        "order": -1,
         "showTitle": false,
         "className": "settings-preview",
         "visible": "true",
@@ -1933,6 +1770,32 @@
             "groupBorderRadius": "0px",
             "widgetGap": "12px"
         }
+    },
+    {
+        "id": "6529cdb796e9b8db",
+        "type": "ui-group",
+        "name": "step-bar",
+        "page": "156c087dabd0538c",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "71457cfcbceb89ba",
+        "type": "ui-group",
+        "name": "settings-acquisition",
+        "page": "156c087dabd0538c",
+        "width": "4",
+        "height": "12",
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "04b0e2d886b015d5",
@@ -6455,7 +6318,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 0px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 100% !important;\n    height: 100% !important;\n}\n\n.button-preview {\n    margin-left: 5px;\n    margin-top: 5px;\n}\n\n/* new css */\n\n.step-button .v-btn {\n    /* border-radius: 10px !important; */\n    border: 1px solid black !important;\n}\n\n.minus-button .v-btn {\n    color: black !important;\n    background-color: transparent !important;\n}\n\n.template-streaming .v-card-text {\n    padding: 0rem !important;\n}\n\n.preview-group .v-card-text {\n    padding: 0rem !important;\n}",
+        "format": ".label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 0px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 100% !important;\n    height: 100% !important;\n}\n\n.button-preview {\n    margin-left: 5px;\n    margin-top: 5px;\n}\n\n/* new css */\n\n.step-button .v-btn {\n    border: 1px solid black !important;\n}\n\n.template-streaming .v-card-text {\n    padding: 0rem !important;\n}\n\n.preview-group .v-card-text {\n    padding: 0rem !important;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -6679,7 +6542,7 @@
         "topic": "topic",
         "topicType": "msg",
         "thumbLabel": true,
-        "min": 0,
+        "min": "25",
         "max": "5000",
         "step": "25",
         "className": "range-flowrate",
@@ -7445,7 +7308,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "",
+        "format": ".template-streaming .v-card-text {\n    padding: 0rem !important;\n}\n\n.preview-group .v-card-text {\n    padding: 0rem !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 100% !important;\n    height: 100% !important;\n}\n\n.button-preview {\n    margin-left: 5px;\n    margin-top: 5px;\n}\n\n.label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -7556,152 +7419,6 @@
         ]
     },
     {
-        "id": "e290e26a128bc8d7",
-        "type": "ui-button",
-        "z": "b4a53df95ffe5a7e",
-        "g": "5a0c5f993457e27b",
-        "group": "7975e05d421a32ba",
-        "name": "button",
-        "label": "Preview",
-        "order": 0,
-        "width": "1",
-        "height": "1",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 610,
-        "y": 260,
-        "wires": [
-            [
-                "140678b970959538"
-            ]
-        ]
-    },
-    {
-        "id": "87b37603c68f4546",
-        "type": "ui-button",
-        "z": "b4a53df95ffe5a7e",
-        "g": "5a0c5f993457e27b",
-        "group": "7975e05d421a32ba",
-        "name": "button",
-        "label": "Metadata",
-        "order": 0,
-        "width": "1",
-        "height": "1",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 610,
-        "y": 300,
-        "wires": [
-            [
-                "a19e946860461bbd"
-            ]
-        ]
-    },
-    {
-        "id": "937b876f599672be",
-        "type": "ui-text",
-        "z": "b4a53df95ffe5a7e",
-        "g": "5cac8180c2b74f8d",
-        "group": "55e0129ecef67edc",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "text",
-        "label": "Metadata",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 610,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "84a1a01663459f10",
-        "type": "ui-text",
-        "z": "b4a53df95ffe5a7e",
-        "g": "f67d766b7a57ac8e",
-        "group": "ad54e60c77c4781a",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "Text",
-        "label": "Preview",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 610,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "5e7b38a402f83ac4",
-        "type": "ui-text",
-        "z": "b4a53df95ffe5a7e",
-        "g": "8a21a76acd370149",
-        "group": "3e3c8912469a2819",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "Text",
-        "label": "Settings",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 610,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "cb65df693a17dfe4",
-        "type": "ui-text",
-        "z": "b4a53df95ffe5a7e",
-        "g": "d2c9101ed2ec362a",
-        "group": "37538d2c695e139b",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "Text",
-        "label": "A droite",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 610,
-        "y": 740,
-        "wires": []
-    },
-    {
         "id": "d62f0fa8617af0cb",
         "type": "link out",
         "z": "b4a53df95ffe5a7e",
@@ -7737,21 +7454,78 @@
         ]
     },
     {
-        "id": "2c620b07e6b33e96",
+        "id": "e78ddebf80d061b0",
         "type": "ui-button",
         "z": "b4a53df95ffe5a7e",
-        "g": "5a0c5f993457e27b",
-        "group": "7975e05d421a32ba",
-        "name": "button",
-        "label": "Settings",
-        "order": 0,
-        "width": "1",
+        "g": "fb32f19d606f8b93",
+        "group": "6529cdb796e9b8db",
+        "name": "",
+        "label": "Preview",
+        "order": 2,
+        "width": "2",
         "height": "1",
+        "emulateClick": false,
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "className": "",
-        "icon": "",
+        "className": "button-preview",
+        "icon": "eye-outline",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 600,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba2d1c881daa8eb3",
+        "type": "ui-button",
+        "z": "b4a53df95ffe5a7e",
+        "g": "fb32f19d606f8b93",
+        "group": "6529cdb796e9b8db",
+        "name": "",
+        "label": "Sample",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "file",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 600,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ba3d9057eaf4b5e",
+        "type": "ui-button",
+        "z": "b4a53df95ffe5a7e",
+        "g": "fb32f19d606f8b93",
+        "group": "6529cdb796e9b8db",
+        "name": "",
+        "label": "Acquisition",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "camera",
         "iconPosition": "left",
         "payload": "",
         "payloadType": "str",
@@ -7760,180 +7534,679 @@
         "x": 610,
         "y": 340,
         "wires": [
-            [
-                "99243c07bf2ed94f"
-            ]
+            []
         ]
     },
     {
-        "id": "140678b970959538",
-        "type": "change",
+        "id": "31e90cdc99f822cc",
+        "type": "ui-button",
         "z": "b4a53df95ffe5a7e",
-        "g": "5a0c5f993457e27b",
+        "g": "fb32f19d606f8b93",
+        "group": "6529cdb796e9b8db",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-Two-Settings\",\"Section-Two-Metadata\"],\"show\":[\"Section-Two-Preview\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 770,
-        "y": 260,
+        "label": "Segmentation",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "puzzle",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 620,
+        "y": 380,
         "wires": [
-            [
-                "ac3eeb992dd94baf"
-            ]
+            []
         ]
     },
     {
-        "id": "a19e946860461bbd",
-        "type": "change",
+        "id": "5d02c1e67f3ba2fc",
+        "type": "ui-button",
         "z": "b4a53df95ffe5a7e",
-        "g": "5a0c5f993457e27b",
+        "g": "fb32f19d606f8b93",
+        "group": "6529cdb796e9b8db",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-Two-Preview\",\"Section-Two-Settings\"],\"show\":[\"Section-Two-Metadata\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 770,
-        "y": 300,
+        "label": "Visualisation",
+        "order": 10,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "chart-scatter-plot",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 610,
+        "y": 420,
         "wires": [
-            [
-                "b75fc087e03c7ba1"
-            ]
+            []
         ]
     },
     {
-        "id": "99243c07bf2ed94f",
-        "type": "change",
+        "id": "a9c93d28e6b2a61e",
+        "type": "ui-text",
         "z": "b4a53df95ffe5a7e",
-        "g": "5a0c5f993457e27b",
+        "g": "fb32f19d606f8b93",
+        "group": "6529cdb796e9b8db",
+        "order": 1,
+        "width": "2",
+        "height": "1",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Section-Two-Preview\",\"Section-Two-Metadata\"],\"show\":[\"Section-Two-Settings\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 770,
-        "y": 340,
-        "wires": [
-            [
-                "b57c34652ca6dc20"
-            ]
-        ]
+        "label": "Project name :",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 620,
+        "y": 220,
+        "wires": []
     },
     {
-        "id": "1e8ed47df6773a62",
+        "id": "b3a71ca0a704c6c2",
         "type": "ui-template",
         "z": "b4a53df95ffe5a7e",
-        "g": "2be6ad508d7c21f1",
-        "group": "c29beff51c3024f3",
+        "g": "fb32f19d606f8b93",
+        "group": "ad54e60c77c4781a",
         "page": "",
         "ui": "",
         "name": "",
         "order": 0,
-        "width": "12",
-        "height": "1",
+        "width": "8",
+        "height": "14",
         "head": "",
-        "format": "<template>\n    <div class=\"button-block\">\n        <div class=\"button-wrap\">\n            <v-btn class=\"my-button\" @click=\"buttonClicked(1)\">\n                <i class=\"mdi mdi-arrow-left\"></i>\n            </v-btn>\n        </div>\n        <div class=\"button-wrap\">\n            <i class=\"mdi mdi-camera\"></i>\n        </div>\n        <div class=\"button-wrap\">\n            <v-btn class=\"my-button\" @click=\"buttonClicked(2)\">\n                <i class=\"mdi mdi-arrow-right\"></i>\n            </v-btn>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                buttonStates: {\n                    1: false,\n                    2: false,\n                }\n            }\n        },\n        methods: {\n            buttonClicked: function (buttonNumber) {\n                if (buttonNumber == 1) {\n                    this.send({ payload: \"-1\" });\n                } else if (buttonNumber == 2) {\n                    this.send({ payload: \"+1\" });\n                }\n            }\n        }\n    }\n</script>\n\n<style>\n    .button-block {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        border: none;\n    }\n\n    .button-wrap {\n        margin: 10px;\n        text-align: center;\n        font-size: 20px;\n        border: none;\n        color: #0a6eca;\n    }\n\n    .my-button {\n        background-color: white;\n        font-size: 20px;\n        color: #0a6eca;\n        border: none;\n        box-shadow: none;\n    }\n</style>",
+        "format": "<template>\n    <img src=\"https://via.placeholder.com/1024x768/eee?text=4:3\"  height=\"100%\" />\n</template>\n\n<style>\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "className": "",
-        "x": 620,
-        "y": 840,
+        "className": "template-streaming",
+        "x": 600,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dca4b08d667bc710",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "g": "fb32f19d606f8b93",
+        "name": "R&D",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "R&D",
+        "payloadType": "str",
+        "x": 470,
+        "y": 220,
         "wires": [
             [
-                "b918e3464255b05e"
+                "a9c93d28e6b2a61e"
             ]
         ]
     },
     {
-        "id": "b918e3464255b05e",
-        "type": "link out",
+        "id": "17c95c6e58abbe8e",
+        "type": "ui-slider",
         "z": "b4a53df95ffe5a7e",
-        "g": "2be6ad508d7c21f1",
-        "name": "link out 23",
-        "mode": "link",
-        "links": [
-            "16534dd29852c72e"
+        "group": "71457cfcbceb89ba",
+        "name": "",
+        "label": "Number of images",
+        "tooltip": "",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": true,
+        "min": "1",
+        "max": "2000",
+        "step": "1",
+        "className": "range-flowrate",
+        "x": 610,
+        "y": 740,
+        "wires": [
+            [
+                "6b59a0424af4303e"
+            ]
+        ]
+    },
+    {
+        "id": "6b59a0424af4303e",
+        "type": "ui-text-input",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "name": "Number of images",
+        "label": "",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 610,
+        "y": 780,
+        "wires": [
+            [
+                "17c95c6e58abbe8e"
+            ]
+        ]
+    },
+    {
+        "id": "e0183846a34364ea",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "Hard data",
+        "props": [
+            {
+                "p": "payload"
+            }
         ],
-        "x": 715,
-        "y": 840,
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 380,
+        "y": 740,
+        "wires": [
+            [
+                "17c95c6e58abbe8e",
+                "6b59a0424af4303e"
+            ]
+        ]
+    },
+    {
+        "id": "bbbcf77c43ca640c",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "Acquisition adjustement",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Acquisition adjustement",
+        "payloadType": "str",
+        "x": 390,
+        "y": 640,
+        "wires": [
+            [
+                "756f210dcc46e547"
+            ]
+        ]
+    },
+    {
+        "id": "756f210dcc46e547",
+        "type": "ui-text",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-title",
+        "x": 570,
+        "y": 640,
         "wires": []
     },
     {
-        "id": "ac3eeb992dd94baf",
-        "type": "link out",
+        "id": "06272899cc74b8f6",
+        "type": "ui-text",
         "z": "b4a53df95ffe5a7e",
-        "g": "5a0c5f993457e27b",
-        "name": "link out 25",
-        "mode": "link",
-        "links": [
-            "16534dd29852c72e",
-            "77970bbf0f1edb5b"
-        ],
-        "x": 895,
-        "y": 260,
+        "group": "71457cfcbceb89ba",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Acquisition unique ID :",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-title",
+        "x": 620,
+        "y": 680,
         "wires": []
     },
     {
-        "id": "b75fc087e03c7ba1",
-        "type": "link out",
+        "id": "7feaf146fe40590e",
+        "type": "inject",
         "z": "b4a53df95ffe5a7e",
-        "g": "5a0c5f993457e27b",
-        "name": "link out 26",
-        "mode": "link",
-        "links": [
-            "16534dd29852c72e",
-            "77970bbf0f1edb5b"
+        "name": "0",
+        "props": [
+            {
+                "p": "payload"
+            }
         ],
-        "x": 895,
-        "y": 300,
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 450,
+        "y": 680,
+        "wires": [
+            [
+                "06272899cc74b8f6"
+            ]
+        ]
+    },
+    {
+        "id": "c0a157a4f23a86da",
+        "type": "ui-slider",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "name": "",
+        "label": "Pumped volume (mL)",
+        "tooltip": "",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": true,
+        "min": "0.08",
+        "max": "1",
+        "step": "0.01",
+        "className": "range-flowrate",
+        "x": 620,
+        "y": 880,
+        "wires": [
+            [
+                "9f2983da23063e7b"
+            ]
+        ]
+    },
+    {
+        "id": "9f2983da23063e7b",
+        "type": "ui-text-input",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "name": "Pumped volume (mL)",
+        "label": "",
+        "order": 7,
+        "width": "1",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 620,
+        "y": 920,
+        "wires": [
+            [
+                "c0a157a4f23a86da"
+            ]
+        ]
+    },
+    {
+        "id": "9b6ceaaffc23a6b8",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "Hard data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 380,
+        "y": 880,
+        "wires": [
+            [
+                "c0a157a4f23a86da",
+                "9f2983da23063e7b"
+            ]
+        ]
+    },
+    {
+        "id": "a97ee59236853b0c",
+        "type": "ui-text",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Total imaged volume :",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-title",
+        "x": 620,
+        "y": 820,
         "wires": []
     },
     {
-        "id": "b57c34652ca6dc20",
-        "type": "link out",
+        "id": "1ccbf94c7d0a2976",
+        "type": "inject",
         "z": "b4a53df95ffe5a7e",
-        "g": "5a0c5f993457e27b",
-        "name": "link out 27",
-        "mode": "link",
-        "links": [
-            "16534dd29852c72e",
-            "77970bbf0f1edb5b"
+        "name": "0",
+        "props": [
+            {
+                "p": "payload"
+            }
         ],
-        "x": 895,
-        "y": 340,
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 450,
+        "y": 820,
+        "wires": [
+            [
+                "a97ee59236853b0c"
+            ]
+        ]
+    },
+    {
+        "id": "d5bc66f49841f858",
+        "type": "ui-text",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Total pumped volume :",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-title",
+        "x": 620,
+        "y": 960,
         "wires": []
+    },
+    {
+        "id": "f330074cf523b217",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "0",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 450,
+        "y": 960,
+        "wires": [
+            [
+                "d5bc66f49841f858"
+            ]
+        ]
+    },
+    {
+        "id": "3474ca408dedc62c",
+        "type": "ui-button",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "name": "",
+        "label": "Stop acquisition",
+        "order": 9,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "stop",
+        "iconPosition": "left",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 600,
+        "y": 1020,
+        "wires": [
+            [
+                "88023001144ceaf2"
+            ]
+        ]
+    },
+    {
+        "id": "f2e65da8a422d212",
+        "type": "ui-button",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "name": "",
+        "label": "Start acquisition",
+        "order": 10,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button-preview",
+        "icon": "camera-enhance",
+        "iconPosition": "left",
+        "payload": "start",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 600,
+        "y": 1060,
+        "wires": [
+            [
+                "88023001144ceaf2"
+            ]
+        ]
+    },
+    {
+        "id": "82a278a2ea79cc16",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "start",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "x": 450,
+        "y": 1100,
+        "wires": [
+            [
+                "88023001144ceaf2"
+            ]
+        ]
+    },
+    {
+        "id": "88023001144ceaf2",
+        "type": "ui-text",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "order": 11,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Acquisition status :",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-title",
+        "x": 610,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "8654a4ad0f5816ae",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "Acquisition progression",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Acquisition progression",
+        "payloadType": "str",
+        "x": 390,
+        "y": 1160,
+        "wires": [
+            [
+                "b8e9fbe60f1e9304"
+            ]
+        ]
+    },
+    {
+        "id": "b8e9fbe60f1e9304",
+        "type": "ui-text",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "order": 12,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-title",
+        "x": 570,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "9395dd887b79f907",
+        "type": "ui-text",
+        "z": "b4a53df95ffe5a7e",
+        "group": "71457cfcbceb89ba",
+        "order": 13,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Acquisition progression :",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-title",
+        "x": 630,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "6da5907ac0ea038a",
+        "type": "inject",
+        "z": "b4a53df95ffe5a7e",
+        "name": "0%",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0%",
+        "payloadType": "str",
+        "x": 450,
+        "y": 1200,
+        "wires": [
+            [
+                "9395dd887b79f907"
+            ]
+        ]
     },
     {
         "id": "7b3155e3e8f122ab",
