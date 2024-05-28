@@ -354,23 +354,6 @@
         "h": 82
     },
     {
-        "id": "cc55b6514237c318",
-        "type": "group",
-        "z": "d9ea61f169af1fad",
-        "name": "Navigation",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "0f202bc866f52998",
-            "826fa53a3385d66c"
-        ],
-        "x": 514,
-        "y": 5919,
-        "w": 222,
-        "h": 82
-    },
-    {
         "id": "439bfc3dd6263439",
         "type": "group",
         "z": "d9ea61f169af1fad",
@@ -905,41 +888,6 @@
         "h": 362
     },
     {
-        "id": "cb753ad2e8667739",
-        "type": "group",
-        "z": "d9ea61f169af1fad",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "3764e83fd13c3623",
-            "89e65225b098a315",
-            "36c3eb8ff249913e",
-            "c95c101e8324ae8c",
-            "75c1e1b901bc33b7",
-            "47a4332f303cfbf6",
-            "044cbbed751aaad4",
-            "2798023fd2451e45",
-            "12b3ddae1a16993f",
-            "1179121e58248c89",
-            "2d3b4a8df4bdadeb",
-            "04f2becbb7397e4d",
-            "ca5defbc617020a7",
-            "c5a07f2300bb0604",
-            "32ceb33da5f8eb07"
-        ],
-        "x": 314,
-        "y": 939,
-        "w": 782,
-        "h": 242
-    },
-    {
         "id": "d3acc0e8dbfe63de",
         "type": "group",
         "z": "d9ea61f169af1fad",
@@ -1064,6 +1012,35 @@
         "y": 5679,
         "w": 452,
         "h": 202
+    },
+    {
+        "id": "cb753ad2e8667739",
+        "type": "group",
+        "z": "d9ea61f169af1fad",
+        "name": "",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "75c1e1b901bc33b7",
+            "47a4332f303cfbf6",
+            "044cbbed751aaad4",
+            "2798023fd2451e45",
+            "12b3ddae1a16993f",
+            "1179121e58248c89",
+            "2d3b4a8df4bdadeb",
+            "04f2becbb7397e4d",
+            "ca5defbc617020a7",
+            "c5a07f2300bb0604",
+            "1d3d64a1979779c9",
+            "e873bb658472cad7"
+        ],
+        "x": 514,
+        "y": 939,
+        "w": 582,
+        "h": 242
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -1472,19 +1449,6 @@
         "width": "2",
         "height": "1",
         "order": 10,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "f44e6da58094f325",
-        "type": "ui-group",
-        "name": "navigation",
-        "page": "cab77b193831ccdd",
-        "width": "12",
-        "height": "1",
-        "order": 19,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -3953,7 +3917,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "/* Custom CSS - Sample-2 page */\n\n    .title {\n        /* padding: 0% 10% !important; */\n        margin-bottom: 1rem !important;\n    }\n\n/* Début long input */\n\n    .label-project-name {\n        text-align: center !important;\n        align-items: center !important;\n    }\n\n    .label-project-name p {\n        color: #0a6eca !important;\n        font-size: large !important;\n        font-weight: bold !important;\n    }\n\n    .project-name div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n        padding: 0rem 15rem !important;\n    }\n\n/* Fin long input */\n\n/* Début label-drawer */\n\n    .label-drawer {\n        margin-right: 1rem !important;\n    }\n\n    .label-drawer span {\n        color: #0a6eca !important;\n    }\n\n/* Fin label-drawer */\n\n\n/* Début short input */\n\n    .label-short-input span {\n        text-align: right !important;\n        align-items: center !important;\n        max-width: 100% !important;\n        color: #0a6eca !important;\n    }\n\n    .short-input div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n    }\n\n    .short-input-gap div.nrdb-layout-group--grid {\n        grid-gap: 10px  !important;\n    }\n\n/* Fin short input */\n\n    .selection {\n        /* padding: 0rem 20rem !important; */\n        /* margin-bottom: 0rem !important; */\n    }\n\n/* Début starting-point-body */\n\n    .starting-point-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n/* Fin starting-point-body */\n\n/* Début Starting-point-coord-1 */\n\n    .starting-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n/* Fin Starting-point-coord-1 */\n\n/* Début Starting-point-coord-2 */\n\n    .starting-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n/* Fin Starting-point-coord-2 */\n\n/* Début ending-point-body */\n\n    .ending-point-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n/* Fin ending-point-body */\n\n/* Début ending-point-coord-1 */\n\n    .ending-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n/* Fin ending-point-coord-1 */\n\n/* Début ending-point-coord-2 */\n\n    .ending-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .ending-point-coord-2 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin ending-point-coord-2 */\n\n\n/* Fin net-specificity-body */\n\n    .net-spicificity-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .net-spicificity-body {\n        margin-left: 18rem;\n    }\n\n/* Fin net-specificity-body */\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 100% !important;\n    height: 100% !important;\n}\n\n.step-bar .v-card-text {\n    background-color: #8cb3f1;\n}\n\n.step-bar * {\n    border-color: #8cb3f1 !important;\n}\n\n.button-preview-actif .v-btn {\n    background-color: #0a6eca;\n}\n\n.markdown-margin {\n    text-align: right;\n    color: gray;\n    font-size: x-small;\n    margin-left: 30%;\n}\n\n.markdown-2 {\n    text-align: right;\n    color: gray;\n    font-size: x-small;\n}",
+        "format": "/* Custom CSS - Sample-2 page */\n\n    .title {\n        /* padding: 0% 10% !important; */\n        margin-bottom: 1rem !important;\n    }\n\n/* Début long input */\n\n    .label-project-name {\n        text-align: center !important;\n        align-items: center !important;\n    }\n\n    .label-project-name p {\n        color: #0a6eca !important;\n        font-size: large !important;\n        font-weight: bold !important;\n    }\n\n    .project-name div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n        padding: 0rem 15rem !important;\n    }\n\n/* Fin long input */\n\n/* Début label-drawer */\n\n    .label-drawer {\n        margin-right: 1rem !important;\n    }\n\n    .label-drawer span {\n        color: #0a6eca !important;\n    }\n\n/* Fin label-drawer */\n\n\n/* Début short input */\n\n    .label-short-input span {\n        text-align: right !important;\n        align-items: center !important;\n        max-width: 100% !important;\n        color: #0a6eca !important;\n    }\n\n    .short-input div.nrdb-layout-group--grid {\n        grid-gap: 50px  !important;\n    }\n\n    .short-input-gap div.nrdb-layout-group--grid {\n        grid-gap: 10px  !important;\n    }\n\n/* Fin short input */\n\n    .selection {\n        /* padding: 0rem 20rem !important; */\n        /* margin-bottom: 0rem !important; */\n    }\n\n/* Début starting-point-body */\n\n    .starting-point-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n/* Fin starting-point-body */\n\n/* Début Starting-point-coord-1 */\n\n    .starting-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n/* Fin Starting-point-coord-1 */\n\n/* Début Starting-point-coord-2 */\n\n    .starting-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n/* Fin Starting-point-coord-2 */\n\n/* Début ending-point-body */\n\n    .ending-point-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n/* Fin ending-point-body */\n\n/* Début ending-point-coord-1 */\n\n    .ending-point-coord-1 div.nrdb-layout-group--grid {\n        grid-gap: 5px !important;\n    }\n\n/* Fin ending-point-coord-1 */\n\n/* Début ending-point-coord-2 */\n\n    .ending-point-coord-2 div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .ending-point-coord-2 {\n        /* margin-left: 18rem; */\n    }\n\n/* Fin ending-point-coord-2 */\n\n\n/* Fin net-specificity-body */\n\n    .net-spicificity-body div.nrdb-layout-group--grid {\n        grid-gap: 10px !important;\n    }\n\n    .net-spicificity-body {\n        margin-left: 18rem;\n    }\n\n/* Fin net-specificity-body */\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 100% !important;\n    height: 100% !important;\n}\n\n.step-bar .v-card-text {\n    background-color: #8cb3f1;\n}\n\n.step-bar * {\n    border-color: #8cb3f1 !important;\n}\n\n.button-preview-actif .v-btn {\n    background-color: #0a6eca;\n}\n\n.markdown-margin {\n    text-align: right;\n    color: gray;\n    font-size: x-small;\n    margin-left: 30%;\n}\n\n.markdown-2 {\n    text-align: right;\n    color: gray;\n    font-size: x-small;\n}\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -4253,59 +4217,6 @@
         "wires": []
     },
     {
-        "id": "3764e83fd13c3623",
-        "type": "ui-dropdown",
-        "z": "d9ea61f169af1fad",
-        "g": "cb753ad2e8667739",
-        "group": "61b110f2889cf811",
-        "name": "Selection",
-        "label": "",
-        "tooltip": "",
-        "order": 2,
-        "width": "6",
-        "height": "1",
-        "passthru": false,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Horizontal net",
-                "value": "Horizontal net",
-                "type": "str"
-            },
-            {
-                "label": "Vertical net",
-                "value": "Vertical net",
-                "type": "str"
-            },
-            {
-                "label": "Niskin bottle",
-                "value": "Niskin bottle",
-                "type": "str"
-            },
-            {
-                "label": "Lab culture",
-                "value": "Lab culture",
-                "type": "str"
-            },
-            {
-                "label": "Demo / Test",
-                "value": "Demo / Test",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "selection-dropdown",
-        "x": 600,
-        "y": 1060,
-        "wires": [
-            [
-                "c95c101e8324ae8c"
-            ]
-        ]
-    },
-    {
         "id": "8ccd1966a60b7294",
         "type": "ui-template",
         "z": "d9ea61f169af1fad",
@@ -4386,117 +4297,11 @@
         ]
     },
     {
-        "id": "89e65225b098a315",
-        "type": "inject",
-        "z": "d9ea61f169af1fad",
-        "g": "cb753ad2e8667739",
-        "name": "Sampling gear",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Sampling gear",
-        "payloadType": "str",
-        "x": 440,
-        "y": 1020,
-        "wires": [
-            [
-                "36c3eb8ff249913e"
-            ]
-        ]
-    },
-    {
-        "id": "36c3eb8ff249913e",
-        "type": "ui-text",
-        "z": "d9ea61f169af1fad",
-        "g": "cb753ad2e8667739",
-        "group": "61b110f2889cf811",
-        "order": 1,
-        "width": "4",
-        "height": "1",
-        "name": "",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-right",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "label-drawer",
-        "x": 590,
-        "y": 1020,
-        "wires": []
-    },
-    {
-        "id": "c95c101e8324ae8c",
-        "type": "switch",
-        "z": "d9ea61f169af1fad",
-        "g": "cb753ad2e8667739",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Horizontal net",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Vertical net",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Niskin bottle",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Lab culture",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Demo / Test",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 5,
-        "x": 740,
-        "y": 1060,
-        "wires": [
-            [
-                "75c1e1b901bc33b7"
-            ],
-            [
-                "044cbbed751aaad4"
-            ],
-            [
-                "12b3ddae1a16993f"
-            ],
-            [
-                "2d3b4a8df4bdadeb"
-            ],
-            [
-                "ca5defbc617020a7"
-            ]
-        ]
-    },
-    {
         "id": "75c1e1b901bc33b7",
         "type": "change",
         "z": "d9ea61f169af1fad",
         "g": "cb753ad2e8667739",
-        "name": "",
+        "name": "Horizontal net",
         "rules": [
             {
                 "t": "set",
@@ -4539,7 +4344,7 @@
         "type": "change",
         "z": "d9ea61f169af1fad",
         "g": "cb753ad2e8667739",
-        "name": "",
+        "name": "Vertical net",
         "rules": [
             {
                 "t": "set",
@@ -4554,7 +4359,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 940,
+        "x": 930,
         "y": 1020,
         "wires": [
             [
@@ -4573,7 +4378,7 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1055,
+        "x": 1035,
         "y": 1020,
         "wires": []
     },
@@ -4582,7 +4387,7 @@
         "type": "change",
         "z": "d9ea61f169af1fad",
         "g": "cb753ad2e8667739",
-        "name": "",
+        "name": "Niskin bottle",
         "rules": [
             {
                 "t": "set",
@@ -4597,7 +4402,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 940,
+        "x": 930,
         "y": 1060,
         "wires": [
             [
@@ -4616,7 +4421,7 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1055,
+        "x": 1035,
         "y": 1060,
         "wires": []
     },
@@ -4625,7 +4430,7 @@
         "type": "change",
         "z": "d9ea61f169af1fad",
         "g": "cb753ad2e8667739",
-        "name": "",
+        "name": "Lab culture",
         "rules": [
             {
                 "t": "set",
@@ -4640,7 +4445,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 940,
+        "x": 930,
         "y": 1100,
         "wires": [
             [
@@ -4659,7 +4464,7 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1055,
+        "x": 1035,
         "y": 1100,
         "wires": []
     },
@@ -4668,7 +4473,7 @@
         "type": "change",
         "z": "d9ea61f169af1fad",
         "g": "cb753ad2e8667739",
-        "name": "",
+        "name": "Demo / Test",
         "rules": [
             {
                 "t": "set",
@@ -4683,7 +4488,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 940,
+        "x": 930,
         "y": 1140,
         "wires": [
             [
@@ -4702,7 +4507,7 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1055,
+        "x": 1035,
         "y": 1140,
         "wires": []
     },
@@ -4758,32 +4563,6 @@
         "y": 1460,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "32ceb33da5f8eb07",
-        "type": "inject",
-        "z": "d9ea61f169af1fad",
-        "g": "cb753ad2e8667739",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.3",
-        "topic": "",
-        "payload": "[]",
-        "payloadType": "str",
-        "x": 470,
-        "y": 1060,
-        "wires": [
-            [
-                "3764e83fd13c3623"
-            ]
         ]
     },
     {
@@ -5040,47 +4819,6 @@
         "info": "",
         "x": 360,
         "y": 4600,
-        "wires": []
-    },
-    {
-        "id": "0f202bc866f52998",
-        "type": "ui-template",
-        "z": "d9ea61f169af1fad",
-        "g": "cc55b6514237c318",
-        "group": "f44e6da58094f325",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 0,
-        "width": "12",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n    <div class=\"button-block\">\n        <div class=\"button-wrap\">\n            <v-btn disabled class=\"my-button disabled\">\n                <i class=\"mdi mdi-arrow-left\"></i>\n            </v-btn>\n        </div>\n        <div class=\"button-wrap\">\n            <i class=\"mdi mdi-file\"></i>\n        </div>\n        <div class=\"button-wrap\">\n            <v-btn class=\"my-button\" @click=\"buttonClicked()\">\n                <i class=\"mdi mdi-arrow-right\"></i>\n            </v-btn>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                buttonStates: {\n                    1: false,\n                    2: false,\n                }\n            }\n        },\n        methods: {\n            buttonClicked: function (buttonNumber) {\n                this.send({ payload: \"+1\" });\n            }\n        }\n    }\n</script>\n\n<style>\n    .button-block {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        border: none;\n    }\n\n    .button-wrap {\n        margin: 10px;\n        text-align: center;\n        font-size: 20px;\n        border: none;\n        color: #0a6eca;\n    }\n\n    .my-button {\n        font-size: 20px;\n        color: #0a6eca;\n        border: none;\n        box-shadow: none;\n        background-color: rgba(255, 255, 255, 0);\n    }\n\n    .my-button.disabled {\n        color: #ccc;\n        pointer-events: none;\n        background-color: rgba(255, 255, 255, 0);\n    }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 600,
-        "y": 5960,
-        "wires": [
-            [
-                "826fa53a3385d66c"
-            ]
-        ]
-    },
-    {
-        "id": "826fa53a3385d66c",
-        "type": "link out",
-        "z": "d9ea61f169af1fad",
-        "g": "cc55b6514237c318",
-        "name": "link out 45",
-        "mode": "link",
-        "links": [
-            "84fd0d7ef8a9fa4a"
-        ],
-        "x": 695,
-        "y": 5960,
         "wires": []
     },
     {
@@ -7112,6 +6850,91 @@
         "y": 2800,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "e873bb658472cad7",
+        "type": "ui-template",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "group": "61b110f2889cf811",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 0,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n    <div class=\"center-selection\">\n        <v-btn \n            class=\"selection-button\"\n            :class=\"{ 'selected': selectedButton === 'horizontalNet' }\"\n            @click=\"horizontalNet\"\n        >\n            Horizontal net\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'verticalNet' }\"\n            @click=\"verticalNet\"\n        >\n            Vertical net\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'niskinBottle' }\"\n            @click=\"niskinBottle\"\n        >\n            Niskin Bottle\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'labCulture' }\"\n            @click=\"labCulture\"\n        >\n            Lab culture\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'demoTest' }\"\n            @click=\"demoTest\"\n        >\n            Demo / Test\n        </v-btn>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                selectedButton: ''\n            }\n        },\n        methods: {\n            horizontalNet: function () {\n                this.selectedButton = 'horizontalNet';\n                this.send(\"Horizontal net\");\n            },\n            verticalNet: function () {\n                this.selectedButton = 'verticalNet';\n                this.send(\"Vertical net\");\n            },\n            niskinBottle: function () {\n                this.selectedButton = 'niskinBottle';\n                this.send(\"Niskin bottle\");\n            },\n            labCulture: function () {\n                this.selectedButton = 'labCulture';\n                this.send(\"Lab culture\");\n            },\n            demoTest: function () {\n                this.selectedButton = 'demoTest';\n                this.send(\"Demo / Test\");\n            }\n        }\n    }\n</script>\n\n<style>\n    .center-selection {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        flex-wrap: wrap;\n    }\n\n    .selection-button {\n        border-radius: 30px !important;\n        border: 1px solid #0a6eca !important;\n        background-color: #fffffd !important;\n        color: #0a6eca !important;\n        margin: 5px;\n    }\n\n    .selection-button.selected {\n        background-color: #094a8a !important;\n        border-color: #094a8a !important;\n        color: #fffffd !important;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 1060,
+        "wires": [
+            [
+                "1d3d64a1979779c9"
+            ]
+        ]
+    },
+    {
+        "id": "1d3d64a1979779c9",
+        "type": "switch",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Horizontal net",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Vertical net",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Niskin bottle",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Lab culture",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Demo / Test",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 730,
+        "y": 1060,
+        "wires": [
+            [
+                "75c1e1b901bc33b7"
+            ],
+            [
+                "044cbbed751aaad4"
+            ],
+            [
+                "12b3ddae1a16993f"
+            ],
+            [
+                "2d3b4a8df4bdadeb"
+            ],
+            [
+                "ca5defbc617020a7"
+            ]
         ]
     },
     {
