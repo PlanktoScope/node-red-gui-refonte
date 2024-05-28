@@ -230,7 +230,7 @@
         ],
         "x": 364,
         "y": 219,
-        "w": 422,
+        "w": 402,
         "h": 142
     },
     {
@@ -1217,7 +1217,7 @@
         "name": "Section-left",
         "page": "b59606fb98c818ca",
         "width": "8",
-        "height": "11",
+        "height": "1",
         "order": 3,
         "showTitle": false,
         "className": "",
@@ -1230,7 +1230,7 @@
         "name": "Section-right",
         "page": "b59606fb98c818ca",
         "width": "4",
-        "height": "11",
+        "height": "1",
         "order": 4,
         "showTitle": false,
         "className": "section-right",
@@ -6318,7 +6318,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 0px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 100% !important;\n    height: 100% !important;\n}\n\n.button-preview {\n    margin-left: 5px;\n    margin-top: 5px;\n}\n\n/* new css */\n\n.step-button .v-btn {\n    border: 1px solid black !important;\n}\n\n.template-streaming .v-card-text {\n    padding: 0rem !important;\n}\n\n.preview-group .v-card-text {\n    padding: 0rem !important;\n}",
+        "format": ".label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}\n\n.nrdb-ui-button-group-wrapper {\n    color: #0a6eca !important;\n    margin: 5px 0px !important;\n}\n\n.label-title-second span {\n    color: #0a6eca !important;\n    font-weight: lighter !important;\n    align-items: center !important;\n    display: inline-flex !important;\n    font-size: 1rem !important;\n    letter-spacing: .009375em !important;\n    min-width: 0 !important;\n    opacity: var(--v-medium-emphasis-opacity) !important;\n    overflow: hidden !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    margin: 0px 0px 5px 0px !important;\n}\n\n.label-title-second {\n    margin: 0px 0px 5px 0px !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 100% !important;\n    height: 100% !important;\n}\n\n/* .button-preview {\n    margin-left: 5px;\n    margin-top: 5px;\n} */\n\n/* new css */\n\n.step-button .v-btn {\n    border: 1px solid black !important;\n}\n\n.template-streaming .v-card-text {\n    padding: 0rem !important;\n}\n\n.preview-group .v-card-text {\n    padding: 0rem !important;\n}",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -7308,7 +7308,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": ".template-streaming .v-card-text {\n    padding: 0rem !important;\n}\n\n.preview-group .v-card-text {\n    padding: 0rem !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 100% !important;\n    height: 100% !important;\n}\n\n.button-preview {\n    margin-left: 5px;\n    margin-top: 5px;\n}\n\n.label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}",
+        "format": ".template-streaming .v-card-text {\n    padding: 0rem !important;\n}\n\n.preview-group .v-card-text {\n    padding: 0rem !important;\n}\n\n.button-preview .v-btn {\n    background-color: #fdfdfd;\n    color: #0a6eca;\n    border: #0a6eca solid 1px;\n    font-weight: bold;\n    border-radius: 5px;\n    width: 100% !important;\n    height: 100% !important;\n}\n\n/* .button-preview {\n    margin-left: 5px;\n    margin-top: 5px;\n} */\n\n.label-title span {\n    color: #0a6eca !important;\n}\n\n.range-flowrate {\n    color: #0a6eca !important;\n}",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -8306,23 +8306,27 @@
         "label": "text",
         "order": 0,
         "width": "8",
-        "height": "12",
+        "height": "2",
         "maxrows": "10",
         "passthru": false,
         "autocols": false,
+        "showSearch": false,
         "selectionType": "checkbox",
         "columns": [
             {
                 "title": "Acquisition name",
-                "key": "acquisition_name"
+                "key": "acquisition_name",
+                "width": ""
             },
             {
                 "title": "Image",
-                "key": "image"
+                "key": "image",
+                "width": ""
             },
             {
                 "title": "Segmented",
-                "key": "segmented"
+                "key": "segmented",
+                "width": ""
             }
         ],
         "x": 590,
@@ -8370,7 +8374,7 @@
             "0dcc516044f9d1b4",
             "84d91a7efa815441"
         ],
-        "x": 745,
+        "x": 685,
         "y": 320,
         "wires": []
     },
@@ -8405,20 +8409,23 @@
         "name": "",
         "label": "text",
         "order": 1,
-        "width": "4",
-        "height": "12",
-        "maxrows": "9",
+        "width": "0",
+        "height": "0",
+        "maxrows": "8",
         "passthru": false,
         "autocols": false,
-        "selectionType": "checkbox",
+        "showSearch": false,
+        "selectionType": "none",
         "columns": [
             {
                 "title": "Acquisition name",
-                "key": "acquisition_name"
+                "key": "acquisition_name",
+                "width": ""
             },
             {
                 "title": "Remaining time",
-                "key": "remaining_time"
+                "key": "remaining_time",
+                "width": ""
             }
         ],
         "x": 590,
@@ -8559,7 +8566,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"disable\":[\"Section-left\"]}}",
+                "to": "{\"group\":{\"disable\":[\"segmentation:Section-left\"]}}",
                 "tot": "json"
             }
         ],
@@ -8624,50 +8631,6 @@
         ]
     },
     {
-        "id": "1dd42885b314971c",
-        "type": "change",
-        "z": "b7320d7a8092d013",
-        "name": "Reload",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"page\": \"\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 160,
-        "y": 80,
-        "wires": [
-            [
-                "5c2ee28b37289bae"
-            ]
-        ]
-    },
-    {
-        "id": "f6aa1d60edd7af11",
-        "type": "link in",
-        "z": "b7320d7a8092d013",
-        "name": "link in 34",
-        "links": [
-            "6e090003b424942f",
-            "bf3047ecf9efb2c7"
-        ],
-        "x": 55,
-        "y": 80,
-        "wires": [
-            [
-                "1dd42885b314971c"
-            ]
-        ]
-    },
-    {
         "id": "c862350c16ac8039",
         "type": "change",
         "z": "b7320d7a8092d013",
@@ -8678,7 +8641,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"enable\":[\"Section-left\"]}}",
+                "to": "{\"group\":{\"enable\":[\"segmentation:Section-left\"]}}",
                 "tot": "json"
             }
         ],
