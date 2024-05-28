@@ -321,16 +321,26 @@
             "color": "#000000"
         },
         "nodes": [
-            "291e43471ab12a65",
-            "61235f50ba9dd13e",
-            "c42079a319ca8e2d",
-            "4d33f4b04881e042",
-            "8ccd1966a60b7294"
+            "cda90e345adee76c",
+            "f50a8edabfadcdac",
+            "edf2949146a2696a",
+            "3251c266c3560cb9",
+            "b6aade385b3193ae",
+            "d23368df4e50fcdc",
+            "6df93f19212c7480",
+            "f1e6cff63b42a812",
+            "6d21d1a9f20fa757",
+            "3cbadba085eead69",
+            "7418ea6d2dcf0763",
+            "882d9da6ba064ce0",
+            "4446cf3741e8d38c",
+            "cd7d4d1f61f025bc",
+            "abed5617b3dee9c9"
         ],
-        "x": 1214,
-        "y": 1219,
-        "w": 272,
-        "h": 282
+        "x": 734,
+        "y": 1599,
+        "w": 432,
+        "h": 562
     },
     {
         "id": "5bba40dfe5758bb0",
@@ -364,22 +374,32 @@
             "color": "#000000"
         },
         "nodes": [
-            "b08bfac3f7b167ae",
-            "69eb5b5df53cec6b",
-            "a86a3b600fab0936",
-            "b562b613ae0ef8f7",
-            "97341e11390acc0d",
-            "201f34d0369eaa72",
-            "cd26a0b5cfcbb0c7",
-            "038fb6870da8294d",
-            "3649c5ef8e2bd6a5",
-            "ad9c06485d2f7fa5",
-            "54bf05d37485669f"
+            "d560aa5b06d4979b",
+            "5377880c3fa12a8d",
+            "fea5281477a85710",
+            "eb67fd8fd5fb3348",
+            "24de6796bc17e775",
+            "a239921643dcad8e",
+            "698bf38c4d2e4a12",
+            "a6f6b682610f5ddc",
+            "125ab04a7622f12d",
+            "e7272b5f92af64bf",
+            "cd70c47c1dbadf9a",
+            "6ea4608a72983642",
+            "52817c357886c9bd",
+            "985e5e9fd805f9d7",
+            "bb49b00a63f2591b",
+            "2fcae3fd7893189b",
+            "3082bbc90fa26a04",
+            "4e7bec749560281e",
+            "bd1129d6435cc81d",
+            "ee299f82020fd5c7",
+            "416d06be2201d6ee"
         ],
-        "x": 1274,
-        "y": 1519,
-        "w": 212,
-        "h": 602
+        "x": 814,
+        "y": 2419,
+        "w": 372,
+        "h": 782
     },
     {
         "id": "9a30f13e867ea872",
@@ -825,7 +845,7 @@
             "6f976f444b1d27b9"
         ],
         "x": 354,
-        "y": 1199,
+        "y": 1599,
         "w": 352,
         "h": 802
     },
@@ -857,7 +877,7 @@
             "313322fdef45023c"
         ],
         "x": 354,
-        "y": 2019,
+        "y": 2419,
         "w": 432,
         "h": 562
     },
@@ -883,7 +903,7 @@
             "9ac581b373561fe6"
         ],
         "x": 314,
-        "y": 2599,
+        "y": 3279,
         "w": 452,
         "h": 362
     },
@@ -1035,12 +1055,20 @@
             "ca5defbc617020a7",
             "c5a07f2300bb0604",
             "1d3d64a1979779c9",
-            "e873bb658472cad7"
+            "e873bb658472cad7",
+            "443cf63b8e22351c",
+            "3c332937ebccd4a1",
+            "2106e23fbb54d57e",
+            "2b7c0242927838f4",
+            "45900935dfb039a3",
+            "199c7decf740fc20",
+            "22eca7456c6ff492",
+            "7f071b0e47c3dea0"
         ],
         "x": 514,
-        "y": 939,
-        "w": 582,
-        "h": 242
+        "y": 1019,
+        "w": 1002,
+        "h": 322
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -1370,7 +1398,7 @@
         "page": "cab77b193831ccdd",
         "width": "6",
         "height": "1",
-        "order": 17,
+        "order": 19,
         "showTitle": false,
         "className": "title",
         "visible": "false",
@@ -1396,7 +1424,7 @@
         "page": "cab77b193831ccdd",
         "width": "8",
         "height": "1",
-        "order": 18,
+        "order": 20,
         "showTitle": false,
         "className": "starting-point-coord-2",
         "visible": false,
@@ -1409,7 +1437,7 @@
         "page": "cab77b193831ccdd",
         "width": "6",
         "height": "1",
-        "order": 8,
+        "order": 10,
         "showTitle": false,
         "className": "title",
         "visible": "true",
@@ -1422,7 +1450,7 @@
         "page": "cab77b193831ccdd",
         "width": "2",
         "height": "1",
-        "order": 9,
+        "order": 11,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1435,7 +1463,7 @@
         "page": "cab77b193831ccdd",
         "width": "12",
         "height": "1",
-        "order": 11,
+        "order": 13,
         "showTitle": false,
         "className": "title",
         "visible": "true",
@@ -1448,7 +1476,7 @@
         "page": "cab77b193831ccdd",
         "width": "2",
         "height": "1",
-        "order": 10,
+        "order": 12,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1462,7 +1490,7 @@
         "page": "cab77b193831ccdd",
         "width": "6",
         "height": "1",
-        "order": 15,
+        "order": 17,
         "showTitle": false,
         "className": "title",
         "visible": "false",
@@ -1475,7 +1503,7 @@
         "page": "cab77b193831ccdd",
         "width": "6",
         "height": "1",
-        "order": 6,
+        "order": 8,
         "showTitle": false,
         "className": "ending-point-body",
         "visible": "true",
@@ -1488,7 +1516,7 @@
         "page": "cab77b193831ccdd",
         "width": "3",
         "height": "1",
-        "order": 12,
+        "order": 14,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1501,7 +1529,7 @@
         "page": "cab77b193831ccdd",
         "width": "3",
         "height": "1",
-        "order": 13,
+        "order": 15,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1514,7 +1542,7 @@
         "page": "cab77b193831ccdd",
         "width": "3",
         "height": "1",
-        "order": 14,
+        "order": 16,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1527,7 +1555,7 @@
         "page": "cab77b193831ccdd",
         "width": "3",
         "height": "1",
-        "order": 16,
+        "order": 18,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1848,7 +1876,33 @@
         "page": "cab77b193831ccdd",
         "width": "12",
         "height": "1",
+        "order": 9,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "65af266acbedb762",
+        "type": "ui-group",
+        "name": "Starting-point-DD",
+        "page": "cab77b193831ccdd",
+        "width": "6",
+        "height": "1",
         "order": 7,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "1b66170351654d71",
+        "type": "ui-group",
+        "name": "Ending-point-DMS",
+        "page": "cab77b193831ccdd",
+        "width": "6",
+        "height": "1",
+        "order": 6,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -2292,8 +2346,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "selection-dropdown",
-        "x": 620,
-        "y": 240,
+        "x": 360,
+        "y": 260,
         "wires": [
             [
                 "16f21cf602d3f6e9"
@@ -2317,8 +2371,8 @@
         "topic": "",
         "payload": "Coordonate format",
         "payloadType": "str",
-        "x": 450,
-        "y": 200,
+        "x": 190,
+        "y": 220,
         "wires": [
             [
                 "75688a0ce947e177"
@@ -2342,8 +2396,8 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
-        "x": 610,
-        "y": 200,
+        "x": 350,
+        "y": 220,
         "wires": []
     },
     {
@@ -2363,8 +2417,8 @@
         "topic": "",
         "payload": "[]",
         "payloadType": "str",
-        "x": 490,
-        "y": 240,
+        "x": 230,
+        "y": 260,
         "wires": [
             [
                 "78b1314c8c6d5886"
@@ -2395,11 +2449,53 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 820,
-        "y": 240,
+        "x": 560,
+        "y": 260,
         "wires": [
-            [],
+            [
+                "adb0e14d59891a72"
+            ],
             []
+        ]
+    },
+    {
+        "id": "8d8d3a16e12f6f2d",
+        "type": "ui-control",
+        "z": "5047c566973ee3a1",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 900,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "adb0e14d59891a72",
+        "type": "change",
+        "z": "5047c566973ee3a1",
+        "name": "Refresh",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"\"",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 260,
+        "wires": [
+            [
+                "8d8d3a16e12f6f2d"
+            ]
         ]
     },
     {
@@ -3936,7 +4032,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 380,
+        "x": 220,
         "y": 100,
         "wires": [
             []
@@ -3957,7 +4053,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"group\":{\"hide\":[\"sample:starting-point-title\",\"sample:Starting-point-DMS\",\"sample:starting-point-coord-1\",\"sample:starting-point-coord-2\",\"sample:ending-point-title\",\"sample:Ending-point-DD\",\"sample:ending-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:net-specificity-title\",\"sample:other-information-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\",\"sample:mesh-size\",\"sample:mesh-size-input\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"sample:starting-point-title\",\"sample:Starting-point-DMS\",\"sample:Starting-point-DD\",\"sample:Ending-point-DMS\",\"sample:Ending-point-DD\",\"sample:starting-point-coord-1\",\"sample:starting-point-coord-2\",\"sample:ending-point-title\",\"sample:ending-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:net-specificity-title\",\"sample:other-information-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\",\"sample:mesh-size\",\"sample:mesh-size-input\"]}}",
         "payloadType": "json",
         "x": 190,
         "y": 40,
@@ -3986,39 +4082,14 @@
         "z": "d9ea61f169af1fad",
         "name": "link in 31",
         "links": [
-            "51588b2dc4e8b105",
-            "bc7487ac5d0886ba",
-            "8f1385d8c3aaee84",
-            "b5df891429cc0f13",
-            "b156d7b379fd5166",
-            "ba9e2b8ab8b10f00",
-            "74679c26e1f8d3b5",
-            "e7581c9e3372c573",
-            "909861b3674eaa6b",
-            "7169919570a53283",
-            "5db540bcefd17831",
-            "9d14b81c776131f6",
-            "66ad827c8eba5ee1",
-            "e0227a7ae2c1d0d2",
-            "5faf08df09ce7287",
-            "b68ac01e0eafd0e8",
-            "d72bbeb02d973f73",
-            "47a4332f303cfbf6",
-            "c32a78b67ab8a090",
-            "2798023fd2451e45",
-            "1179121e58248c89",
             "04f2becbb7397e4d",
-            "c5a07f2300bb0604",
-            "04f8564be65a2624",
-            "107131e26f957658",
-            "43bcdde28ebf892a",
-            "fca0d969bdd010f3",
-            "2a4d61e62ab7cda0",
-            "77331c9f19361d33",
-            "1e3a808b8950294e",
-            "826fa53a3385d66c",
-            "b6678d228541e49d",
-            "9c556433e3d7f936"
+            "1179121e58248c89",
+            "199c7decf740fc20",
+            "2798023fd2451e45",
+            "3c332937ebccd4a1",
+            "47a4332f303cfbf6",
+            "51588b2dc4e8b105",
+            "c5a07f2300bb0604"
         ],
         "x": 115,
         "y": 100,
@@ -4217,97 +4288,17 @@
         "wires": []
     },
     {
-        "id": "8ccd1966a60b7294",
-        "type": "ui-template",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "bd50abffc6f61dca",
-        "group": "18bc9c27946c2ff2",
-        "page": "",
-        "ui": "",
-        "name": "Starting point",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-starting-point\">\n      <h2>Starting point</h2>\n    </div>\n    <div class=\"right-section-starting-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-starting-point {\n  flex: 1 !important;\n}\n\n.right-section-starting-point {\n  flex: 5 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1310,
-        "y": 1260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "291e43471ab12a65",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "bd50abffc6f61dca",
-        "group": "ce414ca8041160a0",
-        "name": "",
-        "label": "Sampling date",
-        "order": 3,
-        "width": "2",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "date",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "sampling-date",
-        "x": 1320,
-        "y": 1320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "61235f50ba9dd13e",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "bd50abffc6f61dca",
-        "group": "ce414ca8041160a0",
-        "name": "",
-        "label": "Sampling time",
-        "order": 7,
-        "width": "2",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "time",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1320,
-        "y": 1360,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "75c1e1b901bc33b7",
         "type": "change",
         "z": "d9ea61f169af1fad",
         "g": "cb753ad2e8667739",
-        "name": "Horizontal net",
+        "name": "Horizontal net - DD",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\"],\"show\":[\"sample:starting-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:starting-point-title\",\"sample:Starting-point-DMS\",\"sample:ending-point-title\",\"sample:Ending-point-DD\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\",\"sample:other-information-title\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
+                "to": "{\"group\":{\"hide\":[\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\"],\"show\":[\"sample:starting-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:starting-point-title\",\"sample:Starting-point-DD\",\"sample:Ending-point-DD\",\"sample:ending-point-title\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\",\"sample:other-information-title\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
                 "tot": "json"
             }
         ],
@@ -4316,8 +4307,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 940,
-        "y": 980,
+        "x": 1330,
+        "y": 1100,
         "wires": [
             [
                 "47a4332f303cfbf6"
@@ -4335,8 +4326,8 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1055,
-        "y": 980,
+        "x": 1455,
+        "y": 1100,
         "wires": []
     },
     {
@@ -4344,13 +4335,13 @@
         "type": "change",
         "z": "d9ea61f169af1fad",
         "g": "cb753ad2e8667739",
-        "name": "Vertical net",
+        "name": "Vertical net - DMS",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"sample:starting-point-coord-1\",\"sample:starting-point-coord-2\",\"sample:ending-point-title\",\"sample:Ending-point-DD\",\"sample:ending-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\"],\"show\":[\"sample:starting-point-title\",\"sample:Starting-point-DMS\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\",\"sample:other-information-title\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
+                "to": "{\"group\":{\"hide\":[\"sample:starting-point-coord-1\",\"sample:starting-point-coord-2\",\"sample:ending-point-title\",\"sample:ending-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\"],\"show\":[\"sample:starting-point-title\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\",\"sample:other-information-title\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
                 "tot": "json"
             }
         ],
@@ -4359,8 +4350,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 930,
-        "y": 1020,
+        "x": 1330,
+        "y": 1140,
         "wires": [
             [
                 "2798023fd2451e45"
@@ -4378,8 +4369,8 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1035,
-        "y": 1020,
+        "x": 1455,
+        "y": 1140,
         "wires": []
     },
     {
@@ -4393,7 +4384,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"sample:starting-point-coord-1\",\"sample:starting-point-coord-2\",\"sample:ending-point-title\",\"sample:ending-point-title\",\"sample:Ending-point-DD\",\"sample:ending-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\"],\"show\":[\"sample:starting-point-title\",\"sample:other-information-title\",\"sample:Starting-point-DMS\",\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
+                "to": "{\"group\":{\"hide\":[\"sample:starting-point-coord-1\",\"sample:starting-point-coord-2\",\"sample:ending-point-title\",\"sample:ending-point-title\",\"sample:ending-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\"],\"show\":[\"sample:starting-point-title\",\"sample:other-information-title\",\"sample:Starting-point-DMS\",\"sample:Starting-point-DD\",\"sample:Ending-point-DMS\",\"sample:Ending-point-DD\",\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
                 "tot": "json"
             }
         ],
@@ -4403,7 +4394,7 @@
         "to": "",
         "reg": false,
         "x": 930,
-        "y": 1060,
+        "y": 1220,
         "wires": [
             [
                 "1179121e58248c89"
@@ -4422,7 +4413,7 @@
             "84fd0d7ef8a9fa4a"
         ],
         "x": 1035,
-        "y": 1060,
+        "y": 1220,
         "wires": []
     },
     {
@@ -4436,7 +4427,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"sample:starting-point-coord-1\",\"sample:starting-point-coord-2\",\"sample:ending-point-title\",\"sample:Ending-point-DD\",\"sample:ending-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:starting-point-title\",\"sample:Starting-point-DMS\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\",\"sample:other-information-title\",\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
+                "to": "{\"group\":{\"hide\":[\"sample:starting-point-coord-1\",\"sample:starting-point-coord-2\",\"sample:ending-point-title\",\"sample:ending-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:starting-point-title\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\",\"sample:other-information-title\",\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
                 "tot": "json"
             }
         ],
@@ -4446,7 +4437,7 @@
         "to": "",
         "reg": false,
         "x": 930,
-        "y": 1100,
+        "y": 1260,
         "wires": [
             [
                 "04f2becbb7397e4d"
@@ -4465,7 +4456,7 @@
             "84fd0d7ef8a9fa4a"
         ],
         "x": 1035,
-        "y": 1100,
+        "y": 1260,
         "wires": []
     },
     {
@@ -4489,7 +4480,7 @@
         "to": "",
         "reg": false,
         "x": 930,
-        "y": 1140,
+        "y": 1300,
         "wires": [
             [
                 "c5a07f2300bb0604"
@@ -4508,62 +4499,8 @@
             "84fd0d7ef8a9fa4a"
         ],
         "x": 1035,
-        "y": 1140,
+        "y": 1300,
         "wires": []
-    },
-    {
-        "id": "4d33f4b04881e042",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "bd50abffc6f61dca",
-        "group": "b0940f418fe9a1d3",
-        "name": "Latitude (eg: 45.7656)",
-        "label": "Latitude (eg: 45.7656)",
-        "order": 1,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1340,
-        "y": 1420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c42079a319ca8e2d",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "bd50abffc6f61dca",
-        "group": "b0940f418fe9a1d3",
-        "name": "Longitude (eg: -21.5224)",
-        "label": "Longitude (eg: -21.5224)",
-        "order": 2,
-        "width": "4",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1350,
-        "y": 1460,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "b16fc6a4fe610328",
@@ -4822,60 +4759,6 @@
         "wires": []
     },
     {
-        "id": "b08bfac3f7b167ae",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "",
-        "label": "Sampling date",
-        "order": 3,
-        "width": "2",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "date",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1380,
-        "y": 1620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "69eb5b5df53cec6b",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "",
-        "label": "Sampling time",
-        "order": 6,
-        "width": "2",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "time",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1380,
-        "y": 1660,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "6d4f4b75e24a4f47",
         "type": "ui-text-input",
         "z": "d9ea61f169af1fad",
@@ -4896,7 +4779,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 650,
-        "y": 2500,
+        "y": 2900,
         "wires": [
             []
         ]
@@ -4922,33 +4805,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 640,
-        "y": 2400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a86a3b600fab0936",
-        "type": "ui-template",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "e62595a78fe89157",
-        "page": "",
-        "ui": "",
-        "name": "Ending point",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-ending-point\">\n      <h2>Ending point</h2>\n    </div>\n    <div class=\"right-section-ending-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-ending-point {\n  flex: 1 !important;\n}\n\n.right-section-ending-point {\n  flex: 5 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1370,
-        "y": 1560,
+        "y": 2800,
         "wires": [
             []
         ]
@@ -5592,7 +5449,7 @@
         "sendOnEnter": true,
         "className": "sampling-date",
         "x": 600,
-        "y": 1340,
+        "y": 1740,
         "wires": [
             []
         ]
@@ -5618,7 +5475,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 600,
-        "y": 1440,
+        "y": 1840,
         "wires": [
             []
         ]
@@ -5644,7 +5501,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 600,
-        "y": 1880,
+        "y": 2280,
         "wires": [
             []
         ]
@@ -5670,7 +5527,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 600,
-        "y": 1600,
+        "y": 2000,
         "wires": [
             []
         ]
@@ -5696,7 +5553,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 600,
-        "y": 1640,
+        "y": 2040,
         "wires": [
             []
         ]
@@ -5722,7 +5579,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 600,
-        "y": 1680,
+        "y": 2080,
         "wires": [
             []
         ]
@@ -5748,7 +5605,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 600,
-        "y": 1800,
+        "y": 2200,
         "wires": [
             []
         ]
@@ -5774,7 +5631,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 600,
-        "y": 1840,
+        "y": 2240,
         "wires": [
             []
         ]
@@ -5799,7 +5656,7 @@
         "templateScope": "local",
         "className": "",
         "x": 610,
-        "y": 1240,
+        "y": 1640,
         "wires": [
             []
         ]
@@ -5825,7 +5682,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 2160,
+        "y": 2560,
         "wires": [
             []
         ]
@@ -5851,241 +5708,7 @@
         "sendOnEnter": true,
         "className": "",
         "x": 620,
-        "y": 2260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "97341e11390acc0d",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "seconds",
-        "label": "S",
-        "order": 19,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1360,
-        "y": 2080,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b562b613ae0ef8f7",
-        "type": "ui-radio-group",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "N-S",
-        "label": "",
-        "order": 16,
-        "width": "2",
-        "height": "1",
-        "columns": "2",
-        "passthru": false,
-        "options": [
-            {
-                "label": "N",
-                "value": "N",
-                "type": "str"
-            },
-            {
-                "label": "S",
-                "value": "S",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 1350,
-        "y": 1800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "54bf05d37485669f",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "Degrees",
-        "label": "D",
-        "order": 17,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1360,
-        "y": 1840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ad9c06485d2f7fa5",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "minutes",
-        "label": "M",
-        "order": 18,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1360,
-        "y": 1880,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3649c5ef8e2bd6a5",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "seconds",
-        "label": "S",
-        "order": 15,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1360,
-        "y": 1920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "038fb6870da8294d",
-        "type": "ui-radio-group",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "E-W",
-        "label": "",
-        "order": 20,
-        "width": "2",
-        "height": "1",
-        "columns": "2",
-        "passthru": false,
-        "options": [
-            {
-                "label": "E",
-                "value": "E",
-                "type": "str"
-            },
-            {
-                "label": "W",
-                "value": "W",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 1350,
-        "y": 1960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "cd26a0b5cfcbb0c7",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "Degrees",
-        "label": "D",
-        "order": 13,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1360,
-        "y": 2000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "201f34d0369eaa72",
-        "type": "ui-text-input",
-        "z": "d9ea61f169af1fad",
-        "d": true,
-        "g": "439bfc3dd6263439",
-        "group": "6166b2f50a96052e",
-        "name": "minutes",
-        "label": "M",
-        "order": 14,
-        "width": "1",
-        "height": "1",
-        "topic": "topic",
-        "topicType": "msg",
-        "mode": "number",
-        "delay": 300,
-        "passthru": true,
-        "sendOnDelay": false,
-        "sendOnBlur": true,
-        "sendOnEnter": true,
-        "className": "",
-        "x": 1360,
-        "y": 2040,
+        "y": 2660,
         "wires": [
             []
         ]
@@ -6110,7 +5733,7 @@
         "templateScope": "local",
         "className": "",
         "x": 610,
-        "y": 2060,
+        "y": 2460,
         "wires": [
             []
         ]
@@ -6134,7 +5757,7 @@
         "payload": "Date",
         "payloadType": "str",
         "x": 470,
-        "y": 1300,
+        "y": 1700,
         "wires": [
             [
                 "ce5a877bd8703491"
@@ -6153,14 +5776,14 @@
         "name": "Date",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-left",
+        "layout": "row-center",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 590,
-        "y": 1300,
+        "y": 1700,
         "wires": []
     },
     {
@@ -6182,7 +5805,7 @@
         "payload": "Time",
         "payloadType": "str",
         "x": 470,
-        "y": 1400,
+        "y": 1800,
         "wires": [
             [
                 "6995db2ffafea72b"
@@ -6201,14 +5824,14 @@
         "name": "Time",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-right",
+        "layout": "row-center",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 590,
-        "y": 1400,
+        "y": 1800,
         "wires": []
     },
     {
@@ -6224,7 +5847,7 @@
         "content": "_These fields specify the exact date and time, in Coordinated Universal Time (UTC), when the net throw was conducted._",
         "className": "markdown-2",
         "x": 610,
-        "y": 1480,
+        "y": 1880,
         "wires": [
             []
         ]
@@ -6260,7 +5883,7 @@
         "topicType": "msg",
         "className": "",
         "x": 590,
-        "y": 1720,
+        "y": 2120,
         "wires": [
             []
         ]
@@ -6296,7 +5919,7 @@
         "topicType": "msg",
         "className": "",
         "x": 590,
-        "y": 1920,
+        "y": 2320,
         "wires": [
             []
         ]
@@ -6320,7 +5943,7 @@
         "payload": "Latitude",
         "payloadType": "str",
         "x": 460,
-        "y": 1560,
+        "y": 1960,
         "wires": [
             [
                 "c57156d55c6b2a9f"
@@ -6339,14 +5962,14 @@
         "name": "Latitude",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-left",
+        "layout": "row-center",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 600,
-        "y": 1560,
+        "y": 1960,
         "wires": []
     },
     {
@@ -6368,7 +5991,7 @@
         "payload": "Longitude",
         "payloadType": "str",
         "x": 460,
-        "y": 1760,
+        "y": 2160,
         "wires": [
             [
                 "daeea46c99206d59"
@@ -6387,14 +6010,14 @@
         "name": "Longitude",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-left",
+        "layout": "row-center",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 600,
-        "y": 1760,
+        "y": 2160,
         "wires": []
     },
     {
@@ -6416,7 +6039,7 @@
         "payload": "Date",
         "payloadType": "str",
         "x": 470,
-        "y": 2120,
+        "y": 2520,
         "wires": [
             [
                 "68347ad2762147ee"
@@ -6435,14 +6058,14 @@
         "name": "Date",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-left",
+        "layout": "row-center",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 590,
-        "y": 2120,
+        "y": 2520,
         "wires": []
     },
     {
@@ -6458,7 +6081,7 @@
         "content": "_These fields specify the exact date and time, in Coordinated Universal Time (UTC), when the net throw was conducted._",
         "className": "markdown-2",
         "x": 610,
-        "y": 2300,
+        "y": 2700,
         "wires": [
             []
         ]
@@ -6482,7 +6105,7 @@
         "payload": "Time",
         "payloadType": "str",
         "x": 470,
-        "y": 2220,
+        "y": 2620,
         "wires": [
             [
                 "a1d8d797427a8dc7"
@@ -6501,14 +6124,14 @@
         "name": "Time",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-right",
+        "layout": "row-center",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 590,
-        "y": 2220,
+        "y": 2620,
         "wires": []
     },
     {
@@ -6530,7 +6153,7 @@
         "payload": "Latitude",
         "payloadType": "str",
         "x": 460,
-        "y": 2360,
+        "y": 2760,
         "wires": [
             [
                 "dc7ed17a0fd41ae3"
@@ -6549,14 +6172,14 @@
         "name": "Latitude",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-left",
+        "layout": "row-center",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 600,
-        "y": 2360,
+        "y": 2760,
         "wires": []
     },
     {
@@ -6578,7 +6201,7 @@
         "payload": "Longitude",
         "payloadType": "str",
         "x": 460,
-        "y": 2460,
+        "y": 2860,
         "wires": [
             [
                 "8235e1f40416c0f6"
@@ -6597,14 +6220,14 @@
         "name": "Longitude",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-left",
+        "layout": "row-center",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#717171",
         "className": "label-short-input",
         "x": 600,
-        "y": 2460,
+        "y": 2860,
         "wires": []
     },
     {
@@ -6620,7 +6243,7 @@
         "content": "_These fields specify the geographic coordinates where the net throw was conducted in degrees, minutes, and seconds (DMS) format. The DMS format provides a traditional representation of geographic coordinates. Click [here](http://127.0.0.1:1880/dashboard/settings) to change the format._",
         "className": "markdown-2",
         "x": 610,
-        "y": 1960,
+        "y": 2360,
         "wires": [
             []
         ]
@@ -6638,7 +6261,7 @@
         "content": "_These fields specify the geographic coordinates where the net throw was conducted in decimal degrees (DD) format. Decimal degrees provide a straightforward numerical representation of the location. Click [here](http://127.0.0.1:1880/dashboard/settings) to change the format_",
         "className": "markdown-2",
         "x": 610,
-        "y": 2540,
+        "y": 2940,
         "wires": [
             []
         ]
@@ -6663,7 +6286,7 @@
         "templateScope": "local",
         "className": "",
         "x": 620,
-        "y": 2640,
+        "y": 3320,
         "wires": [
             []
         ]
@@ -6687,7 +6310,7 @@
         "payload": "Maximum depth",
         "payloadType": "str",
         "x": 440,
-        "y": 2840,
+        "y": 3520,
         "wires": [
             [
                 "2e4a0b3cbcf5b4f0"
@@ -6713,7 +6336,7 @@
         "color": "#717171",
         "className": "label-short-input",
         "x": 640,
-        "y": 2840,
+        "y": 3520,
         "wires": []
     },
     {
@@ -6737,7 +6360,7 @@
         "sendOnEnter": true,
         "className": "short-input",
         "x": 640,
-        "y": 2880,
+        "y": 3560,
         "wires": [
             []
         ]
@@ -6755,7 +6378,7 @@
         "content": "_The name of the overarching research project during which the sample was collected. This should reflect the main initiative or study under which the sampling activity falls._",
         "className": "markdown-margin",
         "x": 610,
-        "y": 2920,
+        "y": 3600,
         "wires": [
             []
         ]
@@ -6781,7 +6404,7 @@
         "sendOnEnter": true,
         "className": "short-input",
         "x": 640,
-        "y": 2740,
+        "y": 3420,
         "wires": [
             []
         ]
@@ -6805,7 +6428,7 @@
         "payload": "Minimum depth",
         "payloadType": "str",
         "x": 440,
-        "y": 2700,
+        "y": 3380,
         "wires": [
             [
                 "4b5592ea07d265a2"
@@ -6831,7 +6454,7 @@
         "color": "#717171",
         "className": "label-short-input",
         "x": 640,
-        "y": 2700,
+        "y": 3380,
         "wires": []
     },
     {
@@ -6847,7 +6470,7 @@
         "content": "_The name of the overarching research project during which the sample was collected. This should reflect the main initiative or study under which the sampling activity falls._",
         "className": "markdown-margin",
         "x": 610,
-        "y": 2800,
+        "y": 3480,
         "wires": [
             []
         ]
@@ -6865,14 +6488,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-selection\">\n        <v-btn \n            class=\"selection-button\"\n            :class=\"{ 'selected': selectedButton === 'horizontalNet' }\"\n            @click=\"horizontalNet\"\n        >\n            Horizontal net\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'verticalNet' }\"\n            @click=\"verticalNet\"\n        >\n            Vertical net\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'niskinBottle' }\"\n            @click=\"niskinBottle\"\n        >\n            Niskin Bottle\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'labCulture' }\"\n            @click=\"labCulture\"\n        >\n            Lab culture\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'demoTest' }\"\n            @click=\"demoTest\"\n        >\n            Demo / Test\n        </v-btn>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                selectedButton: ''\n            }\n        },\n        methods: {\n            horizontalNet: function () {\n                this.selectedButton = 'horizontalNet';\n                this.send(\"Horizontal net\");\n            },\n            verticalNet: function () {\n                this.selectedButton = 'verticalNet';\n                this.send(\"Vertical net\");\n            },\n            niskinBottle: function () {\n                this.selectedButton = 'niskinBottle';\n                this.send(\"Niskin bottle\");\n            },\n            labCulture: function () {\n                this.selectedButton = 'labCulture';\n                this.send(\"Lab culture\");\n            },\n            demoTest: function () {\n                this.selectedButton = 'demoTest';\n                this.send(\"Demo / Test\");\n            }\n        }\n    }\n</script>\n\n<style>\n    .center-selection {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        flex-wrap: wrap;\n    }\n\n    .selection-button {\n        border-radius: 30px !important;\n        border: 1px solid #0a6eca !important;\n        background-color: #fffffd !important;\n        color: #0a6eca !important;\n        margin: 5px;\n    }\n\n    .selection-button.selected {\n        background-color: #094a8a !important;\n        border-color: #094a8a !important;\n        color: #fffffd !important;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-selection\">\n        <v-btn \n            class=\"selection-button\"\n            :class=\"{ 'selected': selectedButton === 'horizontalNet' }\"\n            @click=\"horizontalNet\"\n        >\n            Horizontal net\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'verticalNet' }\"\n            @click=\"verticalNet\"\n        >\n            Vertical net\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'niskinBottle' }\"\n            @click=\"niskinBottle\"\n        >\n            Niskin Bottle\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'labCulture' }\"\n            @click=\"labCulture\"\n        >\n            Lab culture\n        </v-btn>\n        <v-btn \n            class=\"selection-button\" \n            :class=\"{ 'selected': selectedButton === 'demoTest' }\"\n            @click=\"demoTest\"\n        >\n            Demo / Test\n        </v-btn>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                selectedButton: ''\n            }\n        },\n        methods: {\n            horizontalNet: function () {\n                this.selectedButton = 'horizontalNet';\n                this.send(\"Horizontal net\");\n            },\n            verticalNet: function () {\n                this.selectedButton = 'verticalNet';\n                this.send(\"Vertical net\");\n            },\n            niskinBottle: function () {\n                this.selectedButton = 'niskinBottle';\n                this.send(\"Niskin bottle\");\n            },\n            labCulture: function () {\n                this.selectedButton = 'labCulture';\n                this.send(\"Lab culture\");\n            },\n            demoTest: function () {\n                this.selectedButton = 'demoTest';\n                this.send(\"Demo / Test\");\n            }\n        }\n    }\n</script>\n\n<style>\n    .center-selection {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        flex-wrap: wrap;\n    }\n\n    .selection-button {\n        border-radius: 30px !important;\n        border: 1px solid #8cb3f1 !important;\n        background-color: #fffffd !important;\n        color: #8cb3f1 !important;\n        margin: 5px;\n        padding: 15px 30px;\n        font-size: 18px;\n    }\n\n    .selection-button.selected {\n        background-color: #0a6eca !important;\n        border-color: #0a6eca !important;\n        color: #fffffd !important;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 1060,
+        "y": 1220,
         "wires": [
             [
                 "1d3d64a1979779c9"
@@ -6918,13 +6541,13 @@
         "repair": false,
         "outputs": 5,
         "x": 730,
-        "y": 1060,
+        "y": 1220,
         "wires": [
             [
-                "75c1e1b901bc33b7"
+                "2106e23fbb54d57e"
             ],
             [
-                "044cbbed751aaad4"
+                "7f071b0e47c3dea0"
             ],
             [
                 "12b3ddae1a16993f"
@@ -6935,6 +6558,1118 @@
             [
                 "ca5defbc617020a7"
             ]
+        ]
+    },
+    {
+        "id": "443cf63b8e22351c",
+        "type": "change",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "name": "Horizontal net - DMS",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\",\"sample:Starting-point-DD\",\"sample:Ending-point-DD\"],\"show\":[\"sample:starting-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:starting-point-title\",\"sample:Starting-point-DMS\",\"sample:Ending-point-DMS\",\"sample:ending-point-title\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\",\"sample:other-information-title\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1340,
+        "y": 1060,
+        "wires": [
+            [
+                "3c332937ebccd4a1"
+            ]
+        ]
+    },
+    {
+        "id": "3c332937ebccd4a1",
+        "type": "link out",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "name": "link out 58",
+        "mode": "link",
+        "links": [
+            "d19c4717d81085f6",
+            "84fd0d7ef8a9fa4a"
+        ],
+        "x": 1475,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "2106e23fbb54d57e",
+        "type": "persistent value",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 980,
+        "y": 1080,
+        "wires": [
+            [
+                "2b7c0242927838f4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2b7c0242927838f4",
+        "type": "switch",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Degrees, minutes and seconds (DMS)",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Decimal degrees (DD)",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1170,
+        "y": 1080,
+        "wires": [
+            [
+                "443cf63b8e22351c"
+            ],
+            [
+                "75c1e1b901bc33b7"
+            ]
+        ]
+    },
+    {
+        "id": "45900935dfb039a3",
+        "type": "change",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "name": "Vertical net - DD",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"sample:starting-point-coord-1\",\"sample:starting-point-coord-2\",\"sample:ending-point-title\",\"sample:ending-point-coord-1\",\"sample:ending-point-coord-2\",\"sample:bottle-volume\",\"sample:bottle-volume-input\",\"sample:sampling-volume\",\"sample:sampling-volume-input\"],\"show\":[\"sample:starting-point-title\",\"sample:Starting-point-DMS\",\"sample:net-specificity-title\",\"sample:net-mouth-opening\",\"sample:net-mouth-opening-input\",\"sample:mesh-size\",\"sample:mesh-size-input\",\"sample:other-information-title\",\"sample:sieve-size\",\"sample:sieve-size-input\",\"sample:dillution-factor\",\"sample:dillution-factor-input\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1320,
+        "y": 1180,
+        "wires": [
+            [
+                "199c7decf740fc20"
+            ]
+        ]
+    },
+    {
+        "id": "199c7decf740fc20",
+        "type": "link out",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "name": "link out 59",
+        "mode": "link",
+        "links": [
+            "d19c4717d81085f6",
+            "84fd0d7ef8a9fa4a"
+        ],
+        "x": 1435,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "22eca7456c6ff492",
+        "type": "switch",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Degrees, minutes and seconds (DMS)",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Decimal degrees (DD)",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1170,
+        "y": 1160,
+        "wires": [
+            [
+                "044cbbed751aaad4"
+            ],
+            [
+                "45900935dfb039a3"
+            ]
+        ]
+    },
+    {
+        "id": "7f071b0e47c3dea0",
+        "type": "persistent value",
+        "z": "d9ea61f169af1fad",
+        "g": "cb753ad2e8667739",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 980,
+        "y": 1160,
+        "wires": [
+            [
+                "22eca7456c6ff492"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "cda90e345adee76c",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "name": "",
+        "label": "",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "date",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "sampling-date",
+        "x": 980,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f50a8edabfadcdac",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "name": "",
+        "label": "",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "time",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 980,
+        "y": 1840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "edf2949146a2696a",
+        "type": "ui-template",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "page": "",
+        "ui": "",
+        "name": "Starting point",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-starting-point\">\n      <h2>Starting point</h2>\n    </div>\n    <div class=\"right-section-starting-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-starting-point {\n  flex: 2 !important;\n}\n\n.right-section-starting-point {\n  flex: 4 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3251c266c3560cb9",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "name": "Date",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Date",
+        "payloadType": "str",
+        "x": 850,
+        "y": 1700,
+        "wires": [
+            [
+                "b6aade385b3193ae"
+            ]
+        ]
+    },
+    {
+        "id": "b6aade385b3193ae",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "name": "Date",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 970,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "d23368df4e50fcdc",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "name": "Time",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Time",
+        "payloadType": "str",
+        "x": 850,
+        "y": 1800,
+        "wires": [
+            [
+                "6df93f19212c7480"
+            ]
+        ]
+    },
+    {
+        "id": "6df93f19212c7480",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "order": 5,
+        "width": "1",
+        "height": "1",
+        "name": "Time",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 970,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "f1e6cff63b42a812",
+        "type": "ui-markdown",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "name": "",
+        "order": 8,
+        "width": "6",
+        "height": "1",
+        "content": "_These fields specify the exact date and time, in Coordinated Universal Time (UTC), when the net throw was conducted._",
+        "className": "markdown-2",
+        "x": 990,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d21d1a9f20fa757",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "name": "Longitude (eg: -21.5224)",
+        "label": "(eg: -21.5224)",
+        "order": 10,
+        "width": "4",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1030,
+        "y": 2080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3cbadba085eead69",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "name": "Latitude (eg: 45.7656)",
+        "label": "(eg: 45.7656)",
+        "order": 12,
+        "width": "4",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1020,
+        "y": 1980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7418ea6d2dcf0763",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "name": "Latitude",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Latitude",
+        "payloadType": "str",
+        "x": 840,
+        "y": 1940,
+        "wires": [
+            [
+                "882d9da6ba064ce0"
+            ]
+        ]
+    },
+    {
+        "id": "882d9da6ba064ce0",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "order": 11,
+        "width": "2",
+        "height": "1",
+        "name": "Latitude",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 980,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "4446cf3741e8d38c",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "name": "Longitude",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Longitude",
+        "payloadType": "str",
+        "x": 840,
+        "y": 2040,
+        "wires": [
+            [
+                "cd7d4d1f61f025bc"
+            ]
+        ]
+    },
+    {
+        "id": "cd7d4d1f61f025bc",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "order": 9,
+        "width": "2",
+        "height": "1",
+        "name": "Longitude",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 980,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "abed5617b3dee9c9",
+        "type": "ui-markdown",
+        "z": "d9ea61f169af1fad",
+        "g": "bd50abffc6f61dca",
+        "group": "65af266acbedb762",
+        "name": "",
+        "order": 19,
+        "width": "6",
+        "height": "1",
+        "content": "_These fields specify the geographic coordinates where the net throw was conducted in decimal degrees (DD) format. Decimal degrees provide a straightforward numerical representation of the location. Click [here](http://127.0.0.1:1880/dashboard/settings) to change the format_",
+        "className": "markdown-2",
+        "x": 990,
+        "y": 2120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d560aa5b06d4979b",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "",
+        "label": "Sampling date",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "date",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1080,
+        "y": 2560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5377880c3fa12a8d",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "",
+        "label": "Sampling time",
+        "order": 7,
+        "width": "2",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "time",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1080,
+        "y": 2660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fea5281477a85710",
+        "type": "ui-template",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "page": "",
+        "ui": "",
+        "name": "Ending point",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <div class=\"left-section-ending-point\">\n      <h2>Ending point</h2>\n    </div>\n    <div class=\"right-section-ending-point\">\n      <hr class=\"horizontal-line\">\n    </div>\n  </div>\n</template>\n\n<style>\n.container {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.left-section-ending-point {\n  flex: 2 !important;\n}\n\n.right-section-ending-point {\n  flex: 4 !important;\n  text-align: center !important;\n}\n\nh2 {\n  color: #0a6eca\n}\n\n.horizontal-line {\n  border: 0 !important;\n  border-top: 1px solid #ccc !important;\n  margin: 20px 0 !important;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1070,
+        "y": 2460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb67fd8fd5fb3348",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "name": "Date",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Date",
+        "payloadType": "str",
+        "x": 930,
+        "y": 2520,
+        "wires": [
+            [
+                "24de6796bc17e775"
+            ]
+        ]
+    },
+    {
+        "id": "24de6796bc17e775",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "name": "Date",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 1050,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "a239921643dcad8e",
+        "type": "ui-markdown",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "",
+        "order": 8,
+        "width": "6",
+        "height": "1",
+        "content": "_These fields specify the exact date and time, in Coordinated Universal Time (UTC), when the net throw was conducted._",
+        "className": "markdown-2",
+        "x": 1070,
+        "y": 2700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "698bf38c4d2e4a12",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "name": "Time",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Time",
+        "payloadType": "str",
+        "x": 930,
+        "y": 2620,
+        "wires": [
+            [
+                "a6f6b682610f5ddc"
+            ]
+        ]
+    },
+    {
+        "id": "a6f6b682610f5ddc",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "order": 5,
+        "width": "1",
+        "height": "1",
+        "name": "Time",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 1050,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "125ab04a7622f12d",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "seconds",
+        "label": "S",
+        "order": 12,
+        "width": "1",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1060,
+        "y": 3080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7272b5f92af64bf",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "Degrees",
+        "label": "D",
+        "order": 15,
+        "width": "1",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1060,
+        "y": 2800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd70c47c1dbadf9a",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "minutes",
+        "label": "M",
+        "order": 16,
+        "width": "1",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1060,
+        "y": 2840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ea4608a72983642",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "seconds",
+        "label": "S",
+        "order": 17,
+        "width": "1",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1060,
+        "y": 2880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52817c357886c9bd",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "Degrees",
+        "label": "D",
+        "order": 10,
+        "width": "1",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1060,
+        "y": 3000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "985e5e9fd805f9d7",
+        "type": "ui-text-input",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "minutes",
+        "label": "M",
+        "order": 11,
+        "width": "1",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 1060,
+        "y": 3040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb49b00a63f2591b",
+        "type": "ui-dropdown",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "N / S",
+        "label": "",
+        "tooltip": "",
+        "order": 13,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "N",
+                "value": "N",
+                "type": "str"
+            },
+            {
+                "label": "S",
+                "value": "S",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1050,
+        "y": 2920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2fcae3fd7893189b",
+        "type": "ui-dropdown",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "E / S",
+        "label": "",
+        "tooltip": "",
+        "order": 18,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "E",
+                "value": "E",
+                "type": "str"
+            },
+            {
+                "label": "W",
+                "value": "W",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1050,
+        "y": 3120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3082bbc90fa26a04",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "name": "Latitude",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Latitude",
+        "payloadType": "str",
+        "x": 920,
+        "y": 2760,
+        "wires": [
+            [
+                "4e7bec749560281e"
+            ]
+        ]
+    },
+    {
+        "id": "4e7bec749560281e",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "order": 9,
+        "width": "2",
+        "height": "1",
+        "name": "Latitude",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 1060,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "bd1129d6435cc81d",
+        "type": "inject",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "name": "Longitude",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Longitude",
+        "payloadType": "str",
+        "x": 920,
+        "y": 2960,
+        "wires": [
+            [
+                "ee299f82020fd5c7"
+            ]
+        ]
+    },
+    {
+        "id": "ee299f82020fd5c7",
+        "type": "ui-text",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "order": 14,
+        "width": "2",
+        "height": "1",
+        "name": "Longitude",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 1060,
+        "y": 2960,
+        "wires": []
+    },
+    {
+        "id": "416d06be2201d6ee",
+        "type": "ui-markdown",
+        "z": "d9ea61f169af1fad",
+        "g": "439bfc3dd6263439",
+        "group": "1b66170351654d71",
+        "name": "",
+        "order": 19,
+        "width": "6",
+        "height": "1",
+        "content": "_These fields specify the geographic coordinates where the net throw was conducted in degrees, minutes, and seconds (DMS) format. The DMS format provides a traditional representation of geographic coordinates. Click [here](http://127.0.0.1:1880/dashboard/settings) to change the format._",
+        "className": "markdown-2",
+        "x": 1070,
+        "y": 3160,
+        "wires": [
+            []
         ]
     },
     {
