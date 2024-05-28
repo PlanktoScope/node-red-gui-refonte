@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "5047c566973ee3a1",
+        "type": "tab",
+        "label": "Page settings",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "54343cf33bf0a216",
         "type": "tab",
         "label": "Global",
@@ -83,14 +91,6 @@
         "id": "8480f672239bc1d5",
         "type": "tab",
         "label": "Page Feedback",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "5047c566973ee3a1",
-        "type": "tab",
-        "label": "Page settings",
         "disabled": false,
         "info": "",
         "env": []
@@ -331,41 +331,6 @@
         "y": 1219,
         "w": 272,
         "h": 282
-    },
-    {
-        "id": "cb753ad2e8667739",
-        "type": "group",
-        "z": "d9ea61f169af1fad",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "3764e83fd13c3623",
-            "89e65225b098a315",
-            "36c3eb8ff249913e",
-            "c95c101e8324ae8c",
-            "75c1e1b901bc33b7",
-            "47a4332f303cfbf6",
-            "044cbbed751aaad4",
-            "2798023fd2451e45",
-            "12b3ddae1a16993f",
-            "1179121e58248c89",
-            "2d3b4a8df4bdadeb",
-            "04f2becbb7397e4d",
-            "ca5defbc617020a7",
-            "c5a07f2300bb0604",
-            "32ceb33da5f8eb07"
-        ],
-        "x": 314,
-        "y": 939,
-        "w": 812,
-        "h": 242
     },
     {
         "id": "5bba40dfe5758bb0",
@@ -660,12 +625,15 @@
             "9d5c5f31e49c7414",
             "d130bfaef3e31cc2",
             "26ef12e53ec2958f",
-            "85d18d7f5d8af6b8"
+            "85d18d7f5d8af6b8",
+            "931e4aba3ed98eab",
+            "2dc8d24abaf780c7",
+            "cef686ed8e156c03"
         ],
         "x": 284,
         "y": 159,
-        "w": 742,
-        "h": 82
+        "w": 802,
+        "h": 162
     },
     {
         "id": "8542f90dc5f7a87c",
@@ -841,6 +809,137 @@
         "h": 322
     },
     {
+        "id": "6b0b1b35f7d657c3",
+        "type": "group",
+        "z": "d9ea61f169af1fad",
+        "name": "Starting point - DMS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4c864348efe00e03",
+            "d086a3299b21c159",
+            "939b4d4c3a29ced7",
+            "7454febcc8cd0380",
+            "a514e93139387320",
+            "76912bc973a87422",
+            "5fb4a91b2ce8f585",
+            "f03a3f5aacc224dc",
+            "3d2e18ba27699a5e",
+            "40e5058d46a17d46",
+            "ce5a877bd8703491",
+            "e79410a7245fe052",
+            "6995db2ffafea72b",
+            "d5a5a2dfb08813dd",
+            "eb992ffc6050e755",
+            "530b10143c4d379f",
+            "1f16e328987812dc",
+            "c57156d55c6b2a9f",
+            "816c31482ac31660",
+            "daeea46c99206d59",
+            "6f976f444b1d27b9"
+        ],
+        "x": 354,
+        "y": 1199,
+        "w": 352,
+        "h": 802
+    },
+    {
+        "id": "3c46ef38b5579edd",
+        "type": "group",
+        "z": "d9ea61f169af1fad",
+        "name": "Ending point - DD",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "97067625342ffd4b",
+            "177328b029e47a03",
+            "eabcac9fab4e0993",
+            "eae0ab1b57104511",
+            "6d4f4b75e24a4f47",
+            "d4fb8c014d54f0eb",
+            "68347ad2762147ee",
+            "21ff1217509340b7",
+            "292e75b503029e21",
+            "a1d8d797427a8dc7",
+            "a43789b0e3c11119",
+            "dc7ed17a0fd41ae3",
+            "d9b4530bfea8223c",
+            "8235e1f40416c0f6",
+            "313322fdef45023c"
+        ],
+        "x": 354,
+        "y": 2019,
+        "w": 432,
+        "h": 562
+    },
+    {
+        "id": "2a2dc260e2a7449d",
+        "type": "group",
+        "z": "d9ea61f169af1fad",
+        "name": "Sampling depth",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b244698fd89bfda5",
+            "14f05e02bcdbe047",
+            "2e4a0b3cbcf5b4f0",
+            "7451c88beecc0b32",
+            "b8a171e3da6ee29a",
+            "601a2db9676d9b88",
+            "fea0c43d91311bd8",
+            "4b5592ea07d265a2",
+            "9ac581b373561fe6"
+        ],
+        "x": 314,
+        "y": 2599,
+        "w": 452,
+        "h": 362
+    },
+    {
+        "id": "cb753ad2e8667739",
+        "type": "group",
+        "z": "d9ea61f169af1fad",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3764e83fd13c3623",
+            "89e65225b098a315",
+            "36c3eb8ff249913e",
+            "c95c101e8324ae8c",
+            "75c1e1b901bc33b7",
+            "47a4332f303cfbf6",
+            "044cbbed751aaad4",
+            "2798023fd2451e45",
+            "12b3ddae1a16993f",
+            "1179121e58248c89",
+            "2d3b4a8df4bdadeb",
+            "04f2becbb7397e4d",
+            "ca5defbc617020a7",
+            "c5a07f2300bb0604",
+            "32ceb33da5f8eb07"
+        ],
+        "x": 314,
+        "y": 939,
+        "w": 782,
+        "h": 242
+    },
+    {
         "id": "d3acc0e8dbfe63de",
         "type": "group",
         "z": "d9ea61f169af1fad",
@@ -965,102 +1064,6 @@
         "y": 5679,
         "w": 452,
         "h": 202
-    },
-    {
-        "id": "6b0b1b35f7d657c3",
-        "type": "group",
-        "z": "d9ea61f169af1fad",
-        "name": "Starting point - DMS",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "4c864348efe00e03",
-            "d086a3299b21c159",
-            "939b4d4c3a29ced7",
-            "7454febcc8cd0380",
-            "a514e93139387320",
-            "76912bc973a87422",
-            "5fb4a91b2ce8f585",
-            "f03a3f5aacc224dc",
-            "3d2e18ba27699a5e",
-            "40e5058d46a17d46",
-            "ce5a877bd8703491",
-            "e79410a7245fe052",
-            "6995db2ffafea72b",
-            "d5a5a2dfb08813dd",
-            "eb992ffc6050e755",
-            "530b10143c4d379f",
-            "1f16e328987812dc",
-            "c57156d55c6b2a9f",
-            "816c31482ac31660",
-            "daeea46c99206d59",
-            "6f976f444b1d27b9"
-        ],
-        "x": 354,
-        "y": 1199,
-        "w": 352,
-        "h": 802
-    },
-    {
-        "id": "3c46ef38b5579edd",
-        "type": "group",
-        "z": "d9ea61f169af1fad",
-        "name": "Ending point - DD",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "97067625342ffd4b",
-            "177328b029e47a03",
-            "eabcac9fab4e0993",
-            "eae0ab1b57104511",
-            "6d4f4b75e24a4f47",
-            "d4fb8c014d54f0eb",
-            "68347ad2762147ee",
-            "21ff1217509340b7",
-            "292e75b503029e21",
-            "a1d8d797427a8dc7",
-            "a43789b0e3c11119",
-            "dc7ed17a0fd41ae3",
-            "d9b4530bfea8223c",
-            "8235e1f40416c0f6",
-            "313322fdef45023c"
-        ],
-        "x": 354,
-        "y": 2019,
-        "w": 432,
-        "h": 562
-    },
-    {
-        "id": "2a2dc260e2a7449d",
-        "type": "group",
-        "z": "d9ea61f169af1fad",
-        "name": "Sampling depth",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "b244698fd89bfda5",
-            "14f05e02bcdbe047",
-            "2e4a0b3cbcf5b4f0",
-            "7451c88beecc0b32",
-            "b8a171e3da6ee29a",
-            "601a2db9676d9b88",
-            "fea0c43d91311bd8",
-            "4b5592ea07d265a2",
-            "9ac581b373561fe6"
-        ],
-        "x": 314,
-        "y": 2599,
-        "w": 452,
-        "h": 362
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -1701,7 +1704,7 @@
     {
         "id": "3da386409fa03189",
         "type": "persistent values config",
-        "name": "Config 0",
+        "name": "DATA",
         "values": [
             {
                 "id": "a820b210-1122-11ef-859a-e74349e74cab",
@@ -1709,6 +1712,15 @@
                 "datatype": "bool",
                 "default": true,
                 "description": "First visit of the user on the PlanktoScope",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "1e747130-1d0e-11ef-8a67-d1728875f042",
+                "name": "coord-format",
+                "datatype": "str",
+                "default": "Decimal degrees (DD)",
+                "description": "Format of coordonates",
                 "scope": "global",
                 "storage": "default"
             }
@@ -1997,7 +2009,8 @@
             "be8a3a5edab2a6a2",
             "82f782054187a6a8",
             "a25d7b80746001e3",
-            "d130bfaef3e31cc2"
+            "d130bfaef3e31cc2",
+            "bf749fe8fc0c69e3"
         ],
         "x": 175,
         "y": 100,
@@ -2040,7 +2053,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
+        "x": 440,
         "y": 200,
         "wires": [
             [
@@ -2058,10 +2071,11 @@
             "97790217bf3c2c85"
         ],
         "x": 325,
-        "y": 200,
+        "y": 240,
         "wires": [
             [
-                "9d5c5f31e49c7414"
+                "9d5c5f31e49c7414",
+                "2dc8d24abaf780c7"
             ]
         ]
     },
@@ -2104,7 +2118,7 @@
         "type": "debug",
         "z": "2d41a8ed5aea3449",
         "g": "96bb330907da5bdb",
-        "name": "Read first visit state",
+        "name": "Read first-visit state",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -2169,8 +2183,259 @@
         "y": 420,
         "wires": [
             [
-                "6a5d78b1bdbbd9da"
+                "6a5d78b1bdbbd9da",
+                "4469155952188120"
             ]
+        ]
+    },
+    {
+        "id": "931e4aba3ed98eab",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 680,
+        "y": 280,
+        "wires": [
+            [
+                "cef686ed8e156c03"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2dc8d24abaf780c7",
+        "type": "change",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 280,
+        "wires": [
+            [
+                "931e4aba3ed98eab"
+            ]
+        ]
+    },
+    {
+        "id": "cef686ed8e156c03",
+        "type": "debug",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "Read coord-format state",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4469155952188120",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 280,
+        "y": 460,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "78b1314c8c6d5886",
+        "type": "ui-dropdown",
+        "z": "5047c566973ee3a1",
+        "group": "8832bb035686ade4",
+        "name": "Selection",
+        "label": "",
+        "tooltip": "",
+        "order": 4,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Decimal degrees (DD)",
+                "value": "Decimal degrees (DD)",
+                "type": "str"
+            },
+            {
+                "label": "Degrees, minutes and seconds (DMS)",
+                "value": "Degrees, minutes and seconds (DMS)",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "selection-dropdown",
+        "x": 620,
+        "y": 240,
+        "wires": [
+            [
+                "16f21cf602d3f6e9"
+            ]
+        ]
+    },
+    {
+        "id": "7ffb1d85bd5cf0f1",
+        "type": "inject",
+        "z": "5047c566973ee3a1",
+        "name": "Coordonate format",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Coordonate format",
+        "payloadType": "str",
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "75688a0ce947e177"
+            ]
+        ]
+    },
+    {
+        "id": "75688a0ce947e177",
+        "type": "ui-text",
+        "z": "5047c566973ee3a1",
+        "group": "8832bb035686ade4",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 610,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8c89d08731415b5b",
+        "type": "inject",
+        "z": "5047c566973ee3a1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "str",
+        "x": 490,
+        "y": 240,
+        "wires": [
+            [
+                "78b1314c8c6d5886"
+            ]
+        ]
+    },
+    {
+        "id": "16f21cf602d3f6e9",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [],
+            []
         ]
     },
     {
@@ -4246,7 +4511,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
+        "x": 940,
         "y": 980,
         "wires": [
             [
@@ -4265,7 +4530,7 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1085,
+        "x": 1055,
         "y": 980,
         "wires": []
     },
@@ -4289,7 +4554,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
+        "x": 940,
         "y": 1020,
         "wires": [
             [
@@ -4308,7 +4573,7 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1085,
+        "x": 1055,
         "y": 1020,
         "wires": []
     },
@@ -4332,7 +4597,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
+        "x": 940,
         "y": 1060,
         "wires": [
             [
@@ -4351,7 +4616,7 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1085,
+        "x": 1055,
         "y": 1060,
         "wires": []
     },
@@ -4375,7 +4640,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
+        "x": 940,
         "y": 1100,
         "wires": [
             [
@@ -4394,7 +4659,7 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1085,
+        "x": 1055,
         "y": 1100,
         "wires": []
     },
@@ -4418,7 +4683,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
+        "x": 940,
         "y": 1140,
         "wires": [
             [
@@ -4437,7 +4702,7 @@
             "d19c4717d81085f6",
             "84fd0d7ef8a9fa4a"
         ],
-        "x": 1085,
+        "x": 1055,
         "y": 1140,
         "wires": []
     },
@@ -4513,7 +4778,7 @@
         "topic": "",
         "payload": "[]",
         "payloadType": "str",
-        "x": 410,
+        "x": 470,
         "y": 1060,
         "wires": [
             [
@@ -9993,112 +10258,6 @@
         "y": 360,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "78b1314c8c6d5886",
-        "type": "ui-dropdown",
-        "z": "5047c566973ee3a1",
-        "group": "8832bb035686ade4",
-        "name": "Selection",
-        "label": "",
-        "tooltip": "",
-        "order": 4,
-        "width": "6",
-        "height": "1",
-        "passthru": false,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Decimal degrees (DD)",
-                "value": "Decimal degrees (DD)",
-                "type": "str"
-            },
-            {
-                "label": "Degrees, minutes and seconds (DMS)",
-                "value": "Degrees, minutes and seconds (DMS)",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "selection-dropdown",
-        "x": 620,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7ffb1d85bd5cf0f1",
-        "type": "inject",
-        "z": "5047c566973ee3a1",
-        "name": "Coordonate format",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Coordonate format",
-        "payloadType": "str",
-        "x": 450,
-        "y": 200,
-        "wires": [
-            [
-                "75688a0ce947e177"
-            ]
-        ]
-    },
-    {
-        "id": "75688a0ce947e177",
-        "type": "ui-text",
-        "z": "5047c566973ee3a1",
-        "group": "8832bb035686ade4",
-        "order": 3,
-        "width": "4",
-        "height": "1",
-        "name": "",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "label-short-input",
-        "x": 610,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "8c89d08731415b5b",
-        "type": "inject",
-        "z": "5047c566973ee3a1",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[]",
-        "payloadType": "str",
-        "x": 490,
-        "y": 240,
-        "wires": [
-            [
-                "78b1314c8c6d5886"
-            ]
         ]
     }
 ]
