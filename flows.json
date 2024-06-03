@@ -104,6 +104,14 @@
         "env": []
     },
     {
+        "id": "70f558eb9d60b6fc",
+        "type": "tab",
+        "label": "Acquisition 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "9e50b5b27cc27750",
         "type": "group",
         "z": "a707f17e5367291d",
@@ -985,7 +993,7 @@
         ],
         "x": 214,
         "y": 239,
-        "w": 172,
+        "w": 192,
         "h": 82
     },
     {
@@ -1009,6 +1017,64 @@
         "y": 339,
         "w": 212,
         "h": 242
+    },
+    {
+        "id": "c285048823f34bc0",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "Header",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7bcdca966429e51e",
+            "25b3ad405bfa567a",
+            "ddeb123d50f0953b",
+            "c7e80bc0431e15d7",
+            "bf4e6ca4f9cb03d0"
+        ],
+        "x": 214,
+        "y": 59,
+        "w": 612,
+        "h": 162
+    },
+    {
+        "id": "5f803d43d3f15b83",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "Streaming",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "2ef2375e2641e206"
+        ],
+        "x": 214,
+        "y": 239,
+        "w": 192,
+        "h": 82
+    },
+    {
+        "id": "3b32c3c9506eb933",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "Settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "dc1b246968e8333a"
+        ],
+        "x": 214,
+        "y": 339,
+        "w": 232,
+        "h": 82
     },
     {
         "id": "d3acc0e8dbfe63de",
@@ -1228,7 +1294,7 @@
         "theme": "c0ea559892f9bd33",
         "order": 5,
         "className": "",
-        "visible": true,
+        "visible": false,
         "disabled": "false"
     },
     {
@@ -1873,7 +1939,7 @@
             "primary": "#000000",
             "bgPage": "#ffffff",
             "groupBg": "#ffffff",
-            "groupOutline": "#000000"
+            "groupOutline": "#ffffff"
         },
         "sizes": {
             "pagePadding": "0px",
@@ -2019,6 +2085,59 @@
         "type": "ui-group",
         "name": "settings-preview-2",
         "page": "c37f9bbd954cb6ec",
+        "width": "4",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "37a234524bb1b554",
+        "type": "ui-page",
+        "name": "Acquisition 2",
+        "ui": "1eeac55ba6b9065f",
+        "path": "/acquisition-2",
+        "icon": "camera",
+        "layout": "grid",
+        "theme": "c0ea559892f9bd33",
+        "order": 12,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "87b4aa991f82d46e",
+        "type": "ui-group",
+        "name": "header-acquisition-2",
+        "page": "37a234524bb1b554",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "cba12c582214576b",
+        "type": "ui-group",
+        "name": "streaming-acquisition-2",
+        "page": "37a234524bb1b554",
+        "width": "8",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0e652f1b8a07fae8",
+        "type": "ui-group",
+        "name": "settings-acquisition-2",
+        "page": "37a234524bb1b554",
         "width": "4",
         "height": "1",
         "order": -1,
@@ -10887,7 +11006,7 @@
         "width": "8",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div>\n    <v-stepper non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n</style>",
+        "format": "<template>\n  <div>\n    <v-stepper model-value=\"1\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -10969,7 +11088,7 @@
         "group": "5255f6592469c975",
         "page": "",
         "ui": "",
-        "name": "Streming",
+        "name": "Streaming",
         "order": 0,
         "width": "8",
         "height": "13",
@@ -10980,7 +11099,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 300,
+        "x": 310,
         "y": 280,
         "wires": [
             []
@@ -11110,6 +11229,168 @@
         "topicType": "msg",
         "x": 320,
         "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7bcdca966429e51e",
+        "type": "ui-template",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "group": "87b4aa991f82d46e",
+        "page": "",
+        "ui": "",
+        "name": "Title",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h2>PlanktoScope GUI</h2>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 50px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 290,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25b3ad405bfa567a",
+        "type": "ui-template",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "group": "87b4aa991f82d46e",
+        "page": "",
+        "ui": "",
+        "name": "Step bar",
+        "order": 0,
+        "width": "8",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div>\n    <v-stepper model-value=\"3\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "bf4e6ca4f9cb03d0"
+            ]
+        ]
+    },
+    {
+        "id": "ddeb123d50f0953b",
+        "type": "ui-template",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "group": "87b4aa991f82d46e",
+        "page": "",
+        "ui": "",
+        "name": "Information",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n    <div class=\"center-container\">\n        <span class=\"mdi mdi-earth icon\" @click=\"iconClicked('earth')\"></span>\n        <p id=\"date\"></p>\n        <p id=\"time\"></p>\n        <span class=\"mdi mdi-account-circle-outline icon\" @click=\"iconClicked('account')\"></span>\n    </div>\n</template>\n\n<script>\nexport default {\n    name: 'RealTimeInfo',\n    mounted() {\n        this.updateDateTime();\n        setInterval(this.updateDateTime, 1000);\n    },\n    methods: {\n        updateDateTime() {\n            const now = new Date();\n\n            const dateFormatter = new Intl.DateTimeFormat('en-US', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric'\n            });\n\n            const timeFormatter = new Intl.DateTimeFormat('en-GB', {\n                hour: '2-digit',\n                minute: '2-digit',\n                hour12: false,\n                timeZone: 'UTC'\n            });\n\n            const date = dateFormatter.format(now);\n            const time = timeFormatter.format(now) + \" UTC\";\n\n            document.getElementById('date').innerText = date;\n            document.getElementById('time').innerText = time;\n        },\n        iconClicked(iconName) {\n            console.log(`Icon clicked: ${iconName}`);\n        }\n    }\n}\n</script>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-container > * {\n        margin: 0 5px;\n    }\n\n    p {\n        color: black;\n    }\n\n    .icon {\n        font-size: 28px;\n        cursor: pointer;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 310,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7e80bc0431e15d7",
+        "type": "ui-control",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 740,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf4e6ca4f9cb03d0",
+        "type": "function",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "name": "Format command to change page",
+        "func": "const numberStringMap = {\n  1: \"Preview\",\n  2: \"Sample\",\n  3: \"Acquisition\",\n  4: \"Segmentation\",\n  5: \"Visualisation\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "c7e80bc0431e15d7"
+            ]
+        ]
+    },
+    {
+        "id": "2ef2375e2641e206",
+        "type": "ui-template",
+        "z": "70f558eb9d60b6fc",
+        "g": "5f803d43d3f15b83",
+        "group": "cba12c582214576b",
+        "page": "",
+        "ui": "",
+        "name": "Streaming",
+        "order": 0,
+        "width": "8",
+        "height": "13",
+        "head": "",
+        "format": "",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc1b246968e8333a",
+        "type": "ui-template",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "group": "0e652f1b8a07fae8",
+        "page": "",
+        "ui": "",
+        "name": "Acquisition settings",
+        "order": 0,
+        "width": "4",
+        "height": "2",
+        "head": "",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Acquisition settings</h2>\n        <!-- Acquisition ID -->\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Acquisition ID</label>\n          <v-text-field\n            variant=\"outlined\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog1\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog1\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 1.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <!-- Number of images -->\n        <div class=\"horizontal-alignment\">\n          <v-slider label=\"Number of images\" show-ticks=\"always\" step=\"10\" v-model=\"numberOfImages\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"numberOfImages\"\n            suffix=\"img\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog2\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog2\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 2.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <!-- Pumped volume -->\n        <div class=\"horizontal-alignment\">\n          <v-slider label=\"Pumped volume\" show-ticks=\"always\" step=\"10\" v-model=\"pumpedVolume\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"pumpedVolume\"\n            suffix=\"ml/min\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog3\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog3\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 3.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <!-- Acquisition comment -->\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Acquisition comment</label>\n          <v-textarea variant=\"outlined\"></v-textarea>\n        </div>\n        <!-- Progress -->\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label-2\">Progresion</label>\n          <v-progress-linear\n            v-model=\"knowledge\"\n            height=\"25\"\n            style=\"width: 80%;\"\n          >\n            <strong>{{ Math.ceil(progresion) }}%</strong>\n          </v-progress-linear>\n        </div>\n        <div class=\"horizontal-alignment progress-info\">\n          <label class=\"v-label v-slider__label\">Estimated duration left: </label>\n          <label class=\"v-label v-slider__label my-value-label\">0 minutes</label>\n        </div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle-full-width my-toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-stop</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-triangle</v-icon>Start</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 0,\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(25, 118, 210, 0.5); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .my-label {\n    margin-bottom: 15px;\n  }\n\n  .my-label {\n    margin-bottom: 10px;\n  }\n\n  .my-value-label {\n    color: #0a6eca;\n    font-weight: bold;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle-full-width {\n    width: 100%;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px;\n    border-radius: 5px;\n  }\n\n  .my-toggle {\n    margin-top: 12px;\n  }\n\n  .progress-info {\n    margin-top: 12px;\n  }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 330,
+        "y": 380,
         "wires": [
             []
         ]
