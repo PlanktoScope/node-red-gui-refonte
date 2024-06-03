@@ -361,9 +361,9 @@
             "cd7d4d1f61f025bc",
             "abed5617b3dee9c9"
         ],
-        "x": 724,
+        "x": 734,
         "y": 1599,
-        "w": 442,
+        "w": 432,
         "h": 562
     },
     {
@@ -420,9 +420,9 @@
             "ee299f82020fd5c7",
             "416d06be2201d6ee"
         ],
-        "x": 804,
+        "x": 814,
         "y": 2419,
-        "w": 382,
+        "w": 372,
         "h": 782
     },
     {
@@ -864,9 +864,9 @@
             "daeea46c99206d59",
             "6f976f444b1d27b9"
         ],
-        "x": 344,
+        "x": 354,
         "y": 1599,
-        "w": 372,
+        "w": 352,
         "h": 802
     },
     {
@@ -896,9 +896,9 @@
             "8235e1f40416c0f6",
             "313322fdef45023c"
         ],
-        "x": 344,
+        "x": 354,
         "y": 2419,
-        "w": 442,
+        "w": 432,
         "h": 562
     },
     {
@@ -922,9 +922,9 @@
             "4b5592ea07d265a2",
             "9ac581b373561fe6"
         ],
-        "x": 304,
+        "x": 314,
         "y": 3279,
-        "w": 472,
+        "w": 452,
         "h": 362
     },
     {
@@ -1085,6 +1085,66 @@
         "h": 82
     },
     {
+        "id": "610c7571a6ee5612",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Header",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "c3c3454d430487e0",
+            "83366805126c40c9",
+            "90ce6939f4a56d8e",
+            "62ed056b8dcaa302",
+            "97a70986fa0406ce"
+        ],
+        "x": 214,
+        "y": 59,
+        "w": 612,
+        "h": 162
+    },
+    {
+        "id": "307fb977cf47b651",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Sample general information",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "23a443593bbc53fe",
+            "697ae94309963b9b",
+            "ceccdeb615cdc48b"
+        ],
+        "x": 214,
+        "y": 239,
+        "w": 732,
+        "h": 82
+    },
+    {
+        "id": "45c6a7006373dadb",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Starting point",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "83a6ffa643836e87"
+        ],
+        "x": 214,
+        "y": 339,
+        "w": 192,
+        "h": 82
+    },
+    {
         "id": "d3acc0e8dbfe63de",
         "type": "group",
         "z": "d9ea61f169af1fad",
@@ -1207,30 +1267,8 @@
         ],
         "x": 314,
         "y": 5679,
-        "w": 462,
+        "w": 452,
         "h": 202
-    },
-    {
-        "id": "610c7571a6ee5612",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Header",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "c3c3454d430487e0",
-            "83366805126c40c9",
-            "90ce6939f4a56d8e",
-            "62ed056b8dcaa302",
-            "97a70986fa0406ce"
-        ],
-        "x": 214,
-        "y": 59,
-        "w": 612,
-        "h": 162
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -2194,6 +2232,45 @@
         "id": "0b7f28fdbeca7b10",
         "type": "ui-group",
         "name": "header-sample-2",
+        "page": "c392bc525769b274",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "551ae149f5d39078",
+        "type": "ui-group",
+        "name": "sample-general-information",
+        "page": "c392bc525769b274",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "cc5bd9fa98de3240",
+        "type": "ui-group",
+        "name": "starting-point-sample-2",
+        "page": "c392bc525769b274",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "container-starting-point",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6207a599159ef6eb",
+        "type": "ui-group",
+        "name": "ending-point-sample-2",
         "page": "c392bc525769b274",
         "width": "12",
         "height": "1",
@@ -4138,7 +4215,7 @@
         "z": "fb15c917381dd273",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Config 0",
+        "valuesConfigName": "DATA",
         "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
         "value": "first-visit",
         "command": "read",
@@ -4156,7 +4233,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 310,
+        "x": 300,
         "y": 140,
         "wires": [
             [
@@ -11400,6 +11477,93 @@
             [
                 "62ed056b8dcaa302"
             ]
+        ]
+    },
+    {
+        "id": "23a443593bbc53fe",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "group": "551ae149f5d39078",
+        "page": "",
+        "ui": "",
+        "name": "Sample general information",
+        "order": 0,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Name of the project -->\n      <label class=\"v-label v-slider__label my-label\">Name of the project</label>\n      <v-text-field label=\"ex: Tara Pacifique\" variant=\"outlined\" append-icon=\"mdi-information\"\n        @click:append=\"openDialog1\" class=\"text-spacing\"></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <label class=\"v-label v-slider__label my-label\">Sample ID</label>\n      <v-text-field label=\"ex: S001\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"openDialog2\"\n        class=\"text-spacing\"></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Name of the operator -->\n      <label class=\"v-label v-slider__label my-label\">Name of the operator</label>\n      <v-text-field label=\"ex: Manu Prakash\" variant=\"outlined\" append-icon=\"mdi-information\"\n        @click:append=\"openDialog3\"></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Samplign gear selection -->\n    <div class=\"horizontal-alignment\">\n      <label class=\"text-spacing v-label v-slider__label my-label-2\">Sampling Gear</label>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 0,\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      sendTitle(title) {\n        this.send(title);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    margin-bottom: 12px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(25, 118, 210, 0.5); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .my-label {\n    margin-bottom: 20px;\n  }\n\n  .my-label-2 {\n    margin-top: 12px;\n  }\n\n  .my-value-label {\n    color: #0a6eca;\n    font-weight: bold;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle-full-width {\n    width: 92%;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px;\n    border-radius: 5px;\n  }\n\n  .my-toggle {\n    margin-top: 12px;\n  }\n\n  .progress-info {\n    margin-top: 12px;\n  }\n\n  .text-spacing {\n    margin-right: 12px;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "ceccdeb615cdc48b"
+            ]
+        ]
+    },
+    {
+        "id": "697ae94309963b9b",
+        "type": "ui-control",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 860,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ceccdeb615cdc48b",
+        "type": "function",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "Format command to choose groups",
+        "func": "const gear = msg.payload;\n\nif (gear === \"Horizontal Net\") {\n    msg.payload = {\n        groups: {\n            show: \"\",\n            hide: \"\"\n        }\n    }\n} else if (gear === \"Vertical Net\") {\n    msg.payload = {\n        groups: {\n            show: \"\",\n            hide: \"\"\n        }\n    }\n} else if (gear === \"Niskin bottle\") {\n    msg.payload = {\n        groups: {\n            show: \"\",\n            hide: \"\"\n        }\n    }\n} else if (gear === \"Lab culture\") {\n    msg.payload = {\n        groups: {\n            show: \"\",\n            hide: \"\"\n        }\n    }\n} else if (gear === \"Demo / Test\") {\n    msg.payload = {\n        groups: {\n            show: \"\",\n            hide: \"\"\n        }\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 280,
+        "wires": [
+            [
+                "697ae94309963b9b"
+            ]
+        ]
+    },
+    {
+        "id": "83a6ffa643836e87",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "45c6a7006373dadb",
+        "group": "cc5bd9fa98de3240",
+        "page": "",
+        "ui": "",
+        "name": "Starting point",
+        "order": 6,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <div class=\"horizontal-alignment\">\n      <!-- Date -->\n      <label class=\"v-label my-label\">Date</label>\n      <v-text-field v-model=\"selectedDate\" variant=\"outlined\" label=\"Date\" @click=\"openDateDialog\"></v-text-field>\n      <v-dialog v-model=\"dateDialog\" max-width=\"20%\">\n        <v-card>\n          <v-card-text>\n            <v-date-picker v-model=\"selectedDate\" no-title scrollable></v-date-picker>\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" @click=\"closeDateDialog\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      \n      <!-- Time -->\n      <label class=\"v-label my-label\">Time</label>\n      <v-text-field v-model=\"selectedTime\" variant=\"outlined\" label=\"Time\" @click=\"openTimeDialog\"></v-text-field>\n      <v-dialog v-model=\"timeDialog\" max-width=\"20%\">\n        <v-card>\n          <v-card-text>\n            <v-time-picker v-model=\"selectedTime\" format=\"24hr\" no-title scrollable></v-time-picker>\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" @click=\"closeTimeDialog\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n  data () {\n    return {\n      selectedDate: null,\n      selectedTime: null,\n      dateDialog: false,\n      timeDialog: false\n    }\n  },\n  methods: {\n    openDateDialog() {\n      this.dateDialog = true;\n    },\n    closeDateDialog() {\n      this.dateDialog = false;\n    },\n    openTimeDialog() {\n      this.timeDialog = true;\n    },\n    closeTimeDialog() {\n      this.timeDialog = false;\n    }\n  }\n}\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .my-label {\n    margin-bottom: 20px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    /* Espacement entre les éléments */\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 310,
+        "y": 380,
+        "wires": [
+            []
         ]
     },
     {
