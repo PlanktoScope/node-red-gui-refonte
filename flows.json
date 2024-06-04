@@ -982,7 +982,7 @@
             "b3f67037ca280e20"
         ],
         "x": 214,
-        "y": 59,
+        "y": 99,
         "w": 612,
         "h": 162
     },
@@ -1000,7 +1000,7 @@
             "ae325f7a4e54fd51"
         ],
         "x": 214,
-        "y": 239,
+        "y": 279,
         "w": 192,
         "h": 82
     },
@@ -1022,7 +1022,7 @@
             "7f41b4c29c7b9203"
         ],
         "x": 214,
-        "y": 339,
+        "y": 379,
         "w": 212,
         "h": 242
     },
@@ -11115,14 +11115,14 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h2>PlanktoScope GUI</h2>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 50px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 290,
-        "y": 100,
+        "y": 140,
         "wires": [
             []
         ]
@@ -11140,14 +11140,14 @@
         "width": "8",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div>\n    <v-stepper model-value=\"1\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n</style>",
+        "format": "<template>\n  <div>\n    <v-stepper class=\"my-stepper\" model-value=\"1\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n          class=\"selected-step\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  div.v-stepper.v-sheet {\n    background-color: transparent;\n    box-shadow: none;\n    border-radius: 0px;\n    overflow: hidden;\n  }\n\n  .selected-step div.v-avatar.v-theme--nrdb.v-avatar--density-default.v-avatar--variant-flat.v-stepper-item__avatar {\n    background-color: #0a6eca;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 300,
-        "y": 140,
+        "y": 180,
         "wires": [
             [
                 "b3f67037ca280e20"
@@ -11174,7 +11174,7 @@
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 180,
+        "y": 220,
         "wires": [
             []
         ]
@@ -11188,7 +11188,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 740,
-        "y": 140,
+        "y": 180,
         "wires": [
             []
         ]
@@ -11207,7 +11207,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 140,
+        "y": 180,
         "wires": [
             [
                 "b783644a6a28c422"
@@ -11234,7 +11234,7 @@
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 280,
+        "y": 320,
         "wires": [
             []
         ]
@@ -11248,18 +11248,18 @@
         "page": "",
         "ui": "",
         "name": "Pump settings",
-        "order": 0,
+        "order": 1,
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>Pump</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider label=\"Flowrate\" show-ticks=\"always\" step=\"10\" v-model=\"flowrate\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"flowrate\"\n            suffix=\"ml/min\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle-full-width\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-rotate-left</v-icon>Backward</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-rotate-right</v-icon>Forward</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(25, 118, 210, 0.5); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n   .toggle-full-width {\n    width: 100%;\n  }\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Pump</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider\n            color=\"#0a6eca\"\n            v-model=\"flowrate\"\n            label=\"Flowrate\"\n            show-ticks=\"always\"\n            step=\"10\"\n            class=\"my-slider\"\n          ></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"flowrate\"\n            suffix=\"ml/min\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-rotate-left</v-icon>Backward</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-rotate-right</v-icon>Forward</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-slider {\n    margin-right: 25px;\n  }\n\n  div.v-slider {\n    color: #0a6eca !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    background-color: rgba(10, 110, 202, 0.1);\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 320,
-        "y": 380,
+        "y": 420,
         "wires": [
             []
         ]
@@ -11273,18 +11273,18 @@
         "page": "",
         "ui": "",
         "name": "Focus settings",
-        "order": 0,
+        "order": 2,
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>Focus</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider label=\"Distance\" show-ticks=\"always\" step=\"10\" v-model=\"distance\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"distance\"\n            suffix=\"μm\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle-full-width\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Left</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-arrow-right-thin-circle-outline</v-icon>Right</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        distance: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(25, 118, 210, 0.5); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n   .toggle-full-width {\n    width: 100%;\n  }\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Focus</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider\n            color=\"#0a6eca\"\n            label=\"Distance\"\n            show-ticks=\"always\"\n            step=\"10\"\n            v-model=\"distance\"\n          ></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"distance\"\n            suffix=\"μm\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Left</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-arrow-right-thin-circle-outline</v-icon>Right</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        distance: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(10, 110, 202, 0.1); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 320,
-        "y": 420,
+        "y": 460,
         "wires": [
             []
         ]
@@ -11298,18 +11298,18 @@
         "page": "",
         "ui": "",
         "name": "LED settings",
-        "order": 0,
+        "order": 3,
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>LED</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider label=\"Intensity\" show-ticks=\"always\" step=\"10\" v-model=\"intensity\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"intensity\"\n            suffix=\"cd\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle-full-width\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-led-off</v-icon>OFF</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-led-on</v-icon>ON</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        intensity: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(25, 118, 210, 0.5); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n   .toggle-full-width {\n    width: 100%;\n  }\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>LED</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider color=\"#0a6eca\" label=\"Intensity\" show-ticks=\"always\" step=\"10\" v-model=\"intensity\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"intensity\"\n            suffix=\"cd\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-led-off</v-icon>OFF</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-led-on</v-icon>ON</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        intensity: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(10, 110, 202, 0.1); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 460,
+        "y": 500,
         "wires": [
             []
         ]
@@ -11323,18 +11323,18 @@
         "page": "",
         "ui": "",
         "name": "Air flow settings",
-        "order": 0,
+        "order": 4,
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>Air flows</h2>\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label\">Intensity</label>\n          <v-btn-toggle\n            v-model=\"toggle\"\n            variant=\"outlined\"\n            density=\"confortable\"\n            color=\"#0a6eca\"\n            divided\n            class=\"toggle-width\"\n          >\n            <v-btn style=\"padding: 10px;\" >OFF</v-btn>\n            <v-btn style=\"padding: 10px;\" >1</v-btn>\n            <v-btn style=\"padding: 10px;\" >2</v-btn>\n            <v-btn style=\"padding: 10px;\" >3</v-btn>\n            <v-btn style=\"padding: 10px;\" >4</v-btn>\n          </v-btn-toggle>\n        </div>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    margin-bottom: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(25, 118, 210, 0.5); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle-width {\n    margin-left: 30px;\n    width: 80%;\n  }\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Air flows</h2>\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Intensity</label>\n          <v-btn-toggle\n            v-model=\"toggle\"\n            variant=\"outlined\"\n            density=\"confortable\"\n            color=\"#0a6eca\"\n            divided\n            class=\"toggle-2\"\n          >\n            <v-btn style=\"padding: 10px;\" >OFF</v-btn>\n            <v-btn style=\"padding: 10px;\" >1</v-btn>\n            <v-btn style=\"padding: 10px;\" >2</v-btn>\n            <v-btn style=\"padding: 10px;\" >3</v-btn>\n            <v-btn style=\"padding: 10px;\" >4</v-btn>\n          </v-btn-toggle>\n        </div>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    margin-bottom: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(10, 110, 202, 0.1); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .my-label {\n    flex: 1;\n  }\n\n  .toggle-2 {\n    width: 70%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 320,
-        "y": 500,
+        "y": 540,
         "wires": [
             []
         ]
@@ -11347,14 +11347,14 @@
         "group": "31ed58b19db5ea9a",
         "name": "Picture button",
         "label": "Take a picture / Field-of-View Snapshot",
-        "order": 0,
+        "order": 5,
         "width": 0,
         "height": 0,
         "emulateClick": false,
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "className": "",
+        "className": "picture-button",
         "icon": "",
         "iconPosition": "left",
         "payload": "",
@@ -11362,7 +11362,31 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 320,
-        "y": 540,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e308f805010f64b1",
+        "type": "ui-template",
+        "z": "db1e7a22029cc2a4",
+        "group": "",
+        "page": "c37f9bbd954cb6ec",
+        "ui": "",
+        "name": "Custom CSS - Preview 2",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": ".picture-button .v-btn {\n    background-color: #0a6eca;\n    color: #ffffff;\n    border-radius: 7px;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 350,
+        "y": 60,
         "wires": [
             []
         ]
@@ -11380,7 +11404,7 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h2>PlanktoScope GUI</h2>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 50px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11405,7 +11429,7 @@
         "width": "8",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div>\n    <v-stepper model-value=\"2\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n</style>",
+        "format": "<template>\n  <div>\n    <v-stepper model-value=\"2\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n          class=\"selected-step\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  div.v-stepper.v-sheet {\n    background-color: transparent;\n    box-shadow: none;\n    border-radius: 0px;\n    overflow: hidden;\n  }\n\n  .selected-step div.v-avatar.v-theme--nrdb.v-avatar--density-default.v-avatar--variant-flat.v-stepper-item__avatar {\n    background-color: #0a6eca;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11579,7 +11603,7 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h2>PlanktoScope GUI</h2>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 50px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11604,7 +11628,7 @@
         "width": "8",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div>\n    <v-stepper model-value=\"3\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n</style>",
+        "format": "<template>\n  <div>\n    <v-stepper model-value=\"3\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n          class=\"selected-step\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  div.v-stepper.v-sheet {\n    background-color: transparent;\n    box-shadow: none;\n    border-radius: 0px;\n    overflow: hidden;\n  }\n\n  .selected-step div.v-avatar.v-theme--nrdb.v-avatar--density-default.v-avatar--variant-flat.v-stepper-item__avatar {\n    background-color: #0a6eca;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11716,7 +11740,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>Acquisition settings</h2>\n        <!-- Acquisition ID -->\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Acquisition ID</label>\n          <v-text-field\n            variant=\"outlined\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog1\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog1\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 1.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <!-- Number of images -->\n        <div class=\"horizontal-alignment\">\n          <v-slider label=\"Number of images\" show-ticks=\"always\" step=\"10\" v-model=\"numberOfImages\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"numberOfImages\"\n            suffix=\"img\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog2\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog2\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 2.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <!-- Pumped volume -->\n        <div class=\"horizontal-alignment\">\n          <v-slider label=\"Pumped volume\" show-ticks=\"always\" step=\"10\" v-model=\"pumpedVolume\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"pumpedVolume\"\n            suffix=\"ml/min\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog3\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog3\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 3.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <!-- Acquisition comment -->\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Acquisition comment</label>\n          <v-textarea variant=\"outlined\"></v-textarea>\n        </div>\n        <!-- Progress -->\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label-2\">Progresion</label>\n          <v-progress-linear\n            v-model=\"knowledge\"\n            height=\"25\"\n            style=\"width: 80%;\"\n          >\n            <strong>{{ Math.ceil(progresion) }}%</strong>\n          </v-progress-linear>\n        </div>\n        <div class=\"horizontal-alignment progress-info\">\n          <label class=\"v-label v-slider__label\">Estimated duration left: </label>\n          <label class=\"v-label v-slider__label my-value-label\">0 minutes</label>\n        </div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle-full-width my-toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-stop</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-triangle</v-icon>Start</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 0,\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(25, 118, 210, 0.5); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .my-label {\n    margin-bottom: 15px;\n  }\n\n  .my-label {\n    margin-bottom: 10px;\n  }\n\n  .my-value-label {\n    color: #0a6eca;\n    font-weight: bold;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle-full-width {\n    width: 100%;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px;\n    border-radius: 5px;\n  }\n\n  .my-toggle {\n    margin-top: 12px;\n  }\n\n  .progress-info {\n    margin-top: 12px;\n  }\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Acquisition settings</h2>\n        <!-- Acquisition ID -->\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Acquisition ID</label>\n          <v-text-field\n            variant=\"outlined\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog1\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog1\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 1.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <!-- Number of images -->\n        <div class=\"horizontal-alignment\">\n          <v-slider color=\"#0a6eca\" label=\"Number of images\" show-ticks=\"always\" step=\"10\" v-model=\"numberOfImages\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"numberOfImages\"\n            suffix=\"img\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog2\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog2\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 2.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <!-- Pumped volume -->\n        <div class=\"horizontal-alignment\">\n          <v-slider color=\"#0a6eca\" label=\"Pumped volume\" show-ticks=\"always\" step=\"10\" v-model=\"pumpedVolume\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"pumpedVolume\"\n            suffix=\"ml/min\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog3\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog3\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 3.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <!-- Acquisition comment -->\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Acquisition comment</label>\n          <v-textarea class=\"my-v-textarea\" variant=\"outlined\"></v-textarea>\n        </div>\n        <!-- Progress -->\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label-2\">Progresion</label>\n          <v-progress-linear\n            v-model=\"knowledge\"\n            height=\"25\"\n            style=\"width: 80%;\"\n          >\n            <strong>{{ Math.ceil(progresion) }}%</strong>\n          </v-progress-linear>\n        </div>\n        <div class=\"horizontal-alignment progress-info\">\n          <label class=\"v-label v-slider__label\">Estimated duration left: </label>\n          <label class=\"v-label v-slider__label my-value-label\">0 minutes</label>\n        </div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle-full-width toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-stop</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-triangle</v-icon>Start</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 59,\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca;\n  }\n\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n    background-color: rgba(10, 110, 202, 0.1);\n  }\n\n  .my-label {\n    margin-bottom: 10px;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .my-v-textarea > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .my-value-label {\n    font-weight: bold;\n    color: #0a6eca;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle-full-width {\n    width: 100%;\n    margin-top: 15px;\n  }\n\n  .v-progress-linear {\n    border-radius: 5px;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n\n  .my-label-2 {\n    flex: 1;\n  }\n\n  .progress-info {\n    margin-top: 12px;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
