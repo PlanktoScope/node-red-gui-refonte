@@ -1102,7 +1102,7 @@
             "97a70986fa0406ce"
         ],
         "x": 214,
-        "y": 59,
+        "y": 99,
         "w": 612,
         "h": 162
     },
@@ -1122,7 +1122,7 @@
             "ceccdeb615cdc48b"
         ],
         "x": 214,
-        "y": 239,
+        "y": 279,
         "w": 732,
         "h": 82
     },
@@ -1137,11 +1137,12 @@
             "color": "#000000"
         },
         "nodes": [
-            "83a6ffa643836e87"
+            "83a6ffa643836e87",
+            "cd0ffd27aadc1ff1"
         ],
-        "x": 214,
-        "y": 339,
-        "w": 192,
+        "x": 154,
+        "y": 379,
+        "w": 252,
         "h": 82
     },
     {
@@ -1269,6 +1270,25 @@
         "y": 5679,
         "w": 452,
         "h": 202
+    },
+    {
+        "id": "53646cc82fa5441c",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Ending point",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5acf20b7ca52e6ae",
+            "964efd36d61519e9"
+        ],
+        "x": 154,
+        "y": 479,
+        "w": 252,
+        "h": 82
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -3591,7 +3611,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "\"\"",
+                "to": "{\"page\":\"\"}",
                 "tot": "json"
             }
         ],
@@ -11327,7 +11347,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>Air flows</h2>\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Intensity</label>\n          <v-btn-toggle\n            v-model=\"toggle\"\n            variant=\"outlined\"\n            density=\"confortable\"\n            color=\"#0a6eca\"\n            divided\n            class=\"toggle-2\"\n          >\n            <v-btn style=\"padding: 10px;\" >OFF</v-btn>\n            <v-btn style=\"padding: 10px;\" >1</v-btn>\n            <v-btn style=\"padding: 10px;\" >2</v-btn>\n            <v-btn style=\"padding: 10px;\" >3</v-btn>\n            <v-btn style=\"padding: 10px;\" >4</v-btn>\n          </v-btn-toggle>\n        </div>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    margin-bottom: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(10, 110, 202, 0.1); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .my-label {\n    flex: 1;\n  }\n\n  .toggle-2 {\n    width: 70%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Air flows</h2>\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Intensity</label>\n          <v-btn-toggle\n            v-model=\"toggle\"\n            variant=\"outlined\"\n            density=\"confortable\"\n            color=\"#0a6eca\"\n            divided\n            class=\"toggle-2\"\n          >\n            <v-btn style=\"padding: 10px 0px;\" >OFF</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >1</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >2</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >3</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >4</v-btn>\n          </v-btn-toggle>\n        </div>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    margin-bottom: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .my-label {\n    flex: 1;\n    color: #0a6eca;\n  }\n\n  .toggle-2 {\n    width: 70%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11411,7 +11431,7 @@
         "templateScope": "local",
         "className": "",
         "x": 290,
-        "y": 100,
+        "y": 140,
         "wires": [
             []
         ]
@@ -11436,7 +11456,7 @@
         "templateScope": "local",
         "className": "",
         "x": 300,
-        "y": 140,
+        "y": 180,
         "wires": [
             [
                 "97a70986fa0406ce"
@@ -11456,14 +11476,14 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <span class=\"mdi mdi-earth icon\" @click=\"iconClicked('earth')\"></span>\n        <p id=\"date\"></p>\n        <p id=\"time\"></p>\n        <span class=\"mdi mdi-account-circle-outline icon\" @click=\"iconClicked('account')\"></span>\n    </div>\n</template>\n\n<script>\nexport default {\n    name: 'RealTimeInfo',\n    mounted() {\n        this.updateDateTime();\n        setInterval(this.updateDateTime, 1000);\n    },\n    methods: {\n        updateDateTime() {\n            const now = new Date();\n\n            const dateFormatter = new Intl.DateTimeFormat('en-US', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric'\n            });\n\n            const timeFormatter = new Intl.DateTimeFormat('en-GB', {\n                hour: '2-digit',\n                minute: '2-digit',\n                hour12: false,\n                timeZone: 'UTC'\n            });\n\n            const date = dateFormatter.format(now);\n            const time = timeFormatter.format(now) + \" UTC\";\n\n            document.getElementById('date').innerText = date;\n            document.getElementById('time').innerText = time;\n        },\n        iconClicked(iconName) {\n            console.log(`Icon clicked: ${iconName}`);\n        }\n    }\n}\n</script>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-container > * {\n        margin: 0 5px;\n    }\n\n    p {\n        color: black;\n    }\n\n    .icon {\n        font-size: 28px;\n        cursor: pointer;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\">\n        <span class=\"mdi mdi-earth icon\" @click=\"iconClicked('earth')\"></span>\n        <p id=\"date\"></p>\n        <p id=\"time\"></p>\n        <span class=\"mdi mdi-account-circle-outline icon\" @click=\"iconClicked('account')\"></span>\n    </div>\n</template>\n\n<script>\nexport default {\n    name: 'RealTimeInfo',\n    mounted() {\n        this.updateDateTime();\n        setInterval(this.updateDateTime, 1000);\n    },\n    methods: {\n        updateDateTime() {\n            const now = new Date();\n\n            const dateFormatter = new Intl.DateTimeFormat('en-US', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric'\n            });\n\n            const timeFormatter = new Intl.DateTimeFormat('en-GB', {\n                hour: '2-digit',\n                minute: '2-digit',\n                hour12: false,\n                timeZone: 'UTC'\n            });\n\n            const date = dateFormatter.format(now);\n            const time = timeFormatter.format(now) + \" UTC\";\n\n            document.getElementById('date').innerText = date;\n            document.getElementById('time').innerText = time;\n        },\n        iconClicked(iconName) {\n            console.log(`Icon clicked: ${iconName}`);\n        }\n    }\n}\n</script>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-container > * {\n        margin: 0 5px;\n    }\n\n    p#date {\n        color: black;\n    }\n\n    p#time {\n        color: black;\n    }\n\n    .icon {\n        font-size: 28px;\n        cursor: pointer;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 180,
+        "y": 220,
         "wires": [
             []
         ]
@@ -11477,7 +11497,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 740,
-        "y": 140,
+        "y": 180,
         "wires": [
             []
         ]
@@ -11496,7 +11516,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 140,
+        "y": 180,
         "wires": [
             [
                 "62ed056b8dcaa302"
@@ -11516,14 +11536,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Name of the project -->\n      <label class=\"v-label v-slider__label my-label\">Name of the project</label>\n      <v-text-field label=\"ex: Tara Pacifique\" variant=\"outlined\" append-icon=\"mdi-information\"\n        @click:append=\"openDialog1\" class=\"text-spacing\"></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <label class=\"v-label v-slider__label my-label\">Sample ID</label>\n      <v-text-field label=\"ex: S001\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"openDialog2\"\n        class=\"text-spacing\"></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Name of the operator -->\n      <label class=\"v-label v-slider__label my-label\">Name of the operator</label>\n      <v-text-field label=\"ex: Manu Prakash\" variant=\"outlined\" append-icon=\"mdi-information\"\n        @click:append=\"openDialog3\"></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Samplign gear selection -->\n    <div class=\"horizontal-alignment\">\n      <label class=\"text-spacing v-label v-slider__label my-label-2\">Sampling Gear</label>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 0,\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      sendTitle(title) {\n        this.send(title);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    margin-bottom: 12px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(25, 118, 210, 0.5); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .my-label {\n    margin-bottom: 20px;\n  }\n\n  .my-label-2 {\n    margin-top: 12px;\n  }\n\n  .my-value-label {\n    color: #0a6eca;\n    font-weight: bold;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle-full-width {\n    width: 92%;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px;\n    border-radius: 5px;\n  }\n\n  .my-toggle {\n    margin-top: 12px;\n  }\n\n  .progress-info {\n    margin-top: 12px;\n  }\n\n  .text-spacing {\n    margin-right: 12px;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Name of the project -->\n      <label class=\"v-label v-slider__label my-label-general\">Name of the project</label>\n      <v-text-field \n        label=\"ex: Tara Pacifique\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog1\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <label class=\"v-label v-slider__label my-label-general\">Sample ID</label>\n      <v-text-field \n        label=\"ex: S001\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog2\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Name of the operator -->\n      <label class=\"v-label v-slider__label my-label-general\">Name of the operator</label>\n      <v-text-field\n        label=\"ex: Manu Prakash\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog3\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment\">\n      <label class=\"text-spacing v-label v-slider__label my-label-2\">Sampling Gear</label>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 0,\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      sendTitle(title) {\n        this.send(title);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    margin-bottom: 12px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    background-color: rgba(10, 110, 202, 0.1);\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px;\n  }\n\n  .my-label-2 {\n    margin-top: 12px;\n  }\n\n  .my-value-label {\n    color: #0a6eca;\n    font-weight: bold;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle-full-width {\n    width: 92%;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px;\n    border-radius: 5px;\n  }\n\n  .my-toggle {\n    margin-top: 12px;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n\n  .progress-info {\n    margin-top: 12px;\n  }\n\n  .text-spacing {\n    margin-right: 12px;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  h2 {\n    color: #0a6eca;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 360,
-        "y": 280,
+        "y": 320,
         "wires": [
             [
                 "ceccdeb615cdc48b"
@@ -11539,7 +11559,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 860,
-        "y": 280,
+        "y": 320,
         "wires": [
             []
         ]
@@ -11558,7 +11578,7 @@
         "finalize": "",
         "libs": [],
         "x": 640,
-        "y": 280,
+        "y": 320,
         "wires": [
             [
                 "697ae94309963b9b"
@@ -11578,16 +11598,141 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <div class=\"horizontal-alignment\">\n      <!-- Date -->\n      <label class=\"v-label my-label\">Date</label>\n      <v-text-field v-model=\"selectedDate\" variant=\"outlined\" label=\"Date\" @click=\"openDateDialog\"></v-text-field>\n      <v-dialog v-model=\"dateDialog\" max-width=\"20%\">\n        <v-card>\n          <v-card-text>\n            <v-date-picker v-model=\"selectedDate\" no-title scrollable></v-date-picker>\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" @click=\"closeDateDialog\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      \n      <!-- Time -->\n      <label class=\"v-label my-label\">Time</label>\n      <v-text-field v-model=\"selectedTime\" variant=\"outlined\" label=\"Time\" @click=\"openTimeDialog\"></v-text-field>\n      <v-dialog v-model=\"timeDialog\" max-width=\"20%\">\n        <v-card>\n          <v-card-text>\n            <v-time-picker v-model=\"selectedTime\" format=\"24hr\" no-title scrollable></v-time-picker>\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" @click=\"closeTimeDialog\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n  data () {\n    return {\n      selectedDate: null,\n      selectedTime: null,\n      dateDialog: false,\n      timeDialog: false\n    }\n  },\n  methods: {\n    openDateDialog() {\n      this.dateDialog = true;\n    },\n    closeDateDialog() {\n      this.dateDialog = false;\n    },\n    openTimeDialog() {\n      this.timeDialog = true;\n    },\n    closeTimeDialog() {\n      this.timeDialog = false;\n    }\n  }\n}\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .my-label {\n    margin-bottom: 20px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    /* Espacement entre les éléments */\n  }\n</style>",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Starting point</h2>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label label-date\">Date</label>\n      <v-text-field variant=\"outlined\" type=\"date\" class=\"my-v-text\"></v-text-field>\n      <label class=\"v-label label-time\">Time</label>\n      <v-text-field variant=\"outlined\" type=\"time\" class=\"my-v-text\"></v-text-field>\n    </div>\n    <div v-if=\"msg.payload == 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <label class=\"v-label label-DD\">GPS</label>\n      <v-text-field label=\"Longitude\" variant=\"outlined\" type=\"number\" class=\"my-v-text spacing\"></v-text-field>\n      <v-text-field label=\"Latitude\" variant=\"outlined\" type=\"number\" class=\"my-v-text\"></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <label class=\"v-label my-label\">GPS</label>\n        <v-text-field label=\"XX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field label=\"XX.XXX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format-2\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n\n        <v-select label=\"W-E\" :items=\"['W', 'E']\" variant=\"outlined\" class=\"v-select-compas\"></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n\n        <v-text-field label=\"XX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field label=\"XX.XXX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format-2\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n\n        <v-select label=\"N-S\" :items=\"['N', 'S']\" variant=\"outlined\" class=\"v-select-compas\"></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data () {\n    return {\n      selectedDate: null,\n      selectedTime: null,\n    }\n  },\n}\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca;\n  }\n\n  .spacing {\n    margin-right: 15px;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .container {\n    padding: 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .grid-container {\n    display: grid;\n    height: 5vh;\n  }\n\n  .my-label {\n    font-weight: bold;\n    flex: 2;\n    margin-bottom: 20px;\n  }\n\n  .label-DD {\n    font-weight: bold;\n    margin-bottom: 20px;\n    padding-right: 15px;\n  }\n\n  .label-date {\n    font-weight: bold;\n    margin-bottom: 20px;\n    padding-right: 15px;\n  }\n\n  .label-time {\n    font-weight: bold;\n    margin-bottom: 20px;\n    padding-right: 15px;\n    padding-left: 25px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    flex: 1;\n    align-items: center;\n    justify-content: space-between;\n  }\n\n  .p-container {\n    display: inline-block;\n    height: 100px;\n  }\n\n  p#dms-format {\n    horizontal-align: top;\n    display: inline-block;\n    font-weight: bolder;\n    font-size: 20px;\n  }\n\n  .v-select-compas {\n    min-width: 95px;\n    /* max-width: 100px; */\n  }\n\n  .v-text-format {\n    /* min-width: 10px; */\n    /* max-width: 100px; */\n  }\n\n  .v-text-format-2 {\n    min-width: 90px;\n    /* max-width: 100px; */\n  }\n\n  .dms {\n    display: flex;\n    flex: 1;\n    align-items: center;\n    max-width: 100%;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 380,
+        "y": 420,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "5aaad1aad05b61e1",
+        "type": "inject",
+        "z": "e988301e60e4b458",
+        "name": "Begin",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            [
+                "bf31c62fba21e7bb"
+            ]
+        ]
+    },
+    {
+        "id": "bf31c62fba21e7bb",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "764bf644172419d4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "764bf644172419d4",
+        "type": "link out",
+        "z": "e988301e60e4b458",
+        "name": "link out 60",
+        "mode": "link",
+        "links": [
+            "cd0ffd27aadc1ff1",
+            "964efd36d61519e9"
+        ],
+        "x": 445,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "cd0ffd27aadc1ff1",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "45c6a7006373dadb",
+        "name": "link in 46",
+        "links": [
+            "764bf644172419d4"
+        ],
+        "x": 195,
+        "y": 420,
+        "wires": [
+            [
+                "83a6ffa643836e87"
+            ]
+        ]
+    },
+    {
+        "id": "5acf20b7ca52e6ae",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "53646cc82fa5441c",
+        "group": "cc5bd9fa98de3240",
+        "page": "",
+        "ui": "",
+        "name": "Starting point",
+        "order": 6,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Ending point</h2>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label label-date\">Date</label>\n      <v-text-field variant=\"outlined\" type=\"date\" class=\"my-v-text\"></v-text-field>\n      <label class=\"v-label label-time\">Time</label>\n      <v-text-field variant=\"outlined\" type=\"time\" class=\"my-v-text\"></v-text-field>\n    </div>\n    <div v-if=\"msg.payload == 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <label class=\"v-label label-DD\">GPS</label>\n      <v-text-field label=\"Longitude\" variant=\"outlined\" type=\"number\" class=\"my-v-text spacing\"></v-text-field>\n      <v-text-field label=\"Latitude\" variant=\"outlined\" type=\"number\" class=\"my-v-text\"></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <label class=\"v-label my-label\">GPS</label>\n        <v-text-field label=\"XX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field label=\"XX.XXX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format-2\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n\n        <v-select label=\"W-E\" :items=\"['W', 'E']\" variant=\"outlined\" class=\"v-select-compas\"></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n\n        <v-text-field label=\"XX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field label=\"XX.XXX\" variant=\"outlined\" type=\"number\" class=\"my-v-text v-text-format-2\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n\n        <v-select label=\"N-S\" :items=\"['N', 'S']\" variant=\"outlined\" class=\"v-select-compas\"></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data () {\n    return {\n      selectedDate: null,\n      selectedTime: null,\n    }\n  },\n}\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca;\n  }\n\n  .spacing {\n    margin-right: 15px;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .container {\n    padding: 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .grid-container {\n    display: grid;\n    height: 5vh;\n  }\n\n  .my-label {\n    font-weight: bold;\n    flex: 2;\n    margin-bottom: 20px;\n  }\n\n  .label-DD {\n    font-weight: bold;\n    margin-bottom: 20px;\n    padding-right: 15px;\n  }\n\n  .label-date {\n    font-weight: bold;\n    margin-bottom: 20px;\n    padding-right: 15px;\n  }\n\n  .label-time {\n    font-weight: bold;\n    margin-bottom: 20px;\n    padding-right: 15px;\n    padding-left: 25px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    flex: 1;\n    align-items: center;\n    justify-content: space-between;\n  }\n\n  .p-container {\n    display: inline-block;\n    height: 100px;\n  }\n\n  p#dms-format {\n    horizontal-align: top;\n    display: inline-block;\n    font-weight: bolder;\n    font-size: 20px;\n  }\n\n  .v-select-compas {\n    min-width: 95px;\n    /* max-width: 100px; */\n  }\n\n  .v-text-format {\n    /* min-width: 10px; */\n    /* max-width: 100px; */\n  }\n\n  .v-text-format-2 {\n    min-width: 90px;\n    /* max-width: 100px; */\n  }\n\n  .dms {\n    display: flex;\n    flex: 1;\n    align-items: center;\n    max-width: 100%;\n  }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 310,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "964efd36d61519e9",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "53646cc82fa5441c",
+        "name": "link in 47",
+        "links": [
+            "764bf644172419d4"
+        ],
+        "x": 195,
+        "y": 520,
+        "wires": [
+            [
+                "5acf20b7ca52e6ae"
+            ]
         ]
     },
     {
