@@ -979,7 +979,9 @@
             "f8467f680ae4f627",
             "b2dbc032f8e38df8",
             "b783644a6a28c422",
-            "b3f67037ca280e20"
+            "b3f67037ca280e20",
+            "302ff33ff049c402",
+            "b86113b166fecbb9"
         ],
         "x": 214,
         "y": 99,
@@ -1041,7 +1043,9 @@
             "25b3ad405bfa567a",
             "ddeb123d50f0953b",
             "c7e80bc0431e15d7",
-            "bf4e6ca4f9cb03d0"
+            "bf4e6ca4f9cb03d0",
+            "b6d0e22f33ca686c",
+            "2a5d62263d874923"
         ],
         "x": 214,
         "y": 59,
@@ -1099,7 +1103,9 @@
             "83366805126c40c9",
             "90ce6939f4a56d8e",
             "62ed056b8dcaa302",
-            "97a70986fa0406ce"
+            "97a70986fa0406ce",
+            "86d23d1c6a0ea540",
+            "87f5b98130be3cd8"
         ],
         "x": 214,
         "y": 99,
@@ -11124,7 +11130,7 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\" @click=\"navigateToHome\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        navigateToHome() {\n            this.send(\"Clicked!\");\n        }\n    }\n}\n</script>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11133,7 +11139,9 @@
         "x": 290,
         "y": 140,
         "wires": [
-            []
+            [
+                "b86113b166fecbb9"
+            ]
         ]
     },
     {
@@ -11149,7 +11157,7 @@
         "width": "8",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div>\n    <v-stepper class=\"my-stepper\" model-value=\"1\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n          class=\"selected-step\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  div.v-stepper.v-sheet {\n    background-color: transparent;\n    box-shadow: none;\n    border-radius: 0px;\n    overflow: hidden;\n  }\n\n  .selected-step div.v-avatar.v-theme--nrdb.v-avatar--density-default.v-avatar--variant-flat.v-stepper-item__avatar {\n    background-color: #0a6eca;\n  }\n</style>",
+        "format": "<template>\n  <div>\n    <v-stepper class=\"my-stepper\" model-value=\"1\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n          class=\"selected-step\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  div.v-stepper.v-sheet {\n    background-color: transparent;\n    box-shadow: none;\n    border-radius: 0px;\n    overflow: hidden;\n  }\n\n  .selected-step div.v-avatar.v-theme--nrdb.v-avatar--density-default.v-avatar--variant-flat.v-stepper-item__avatar {\n    background-color: #0a6eca;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11401,6 +11409,41 @@
         ]
     },
     {
+        "id": "302ff33ff049c402",
+        "type": "ui-control",
+        "z": "db1e7a22029cc2a4",
+        "g": "4237eacb62444cc7",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 720,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b86113b166fecbb9",
+        "type": "function",
+        "z": "db1e7a22029cc2a4",
+        "g": "4237eacb62444cc7",
+        "name": "Format command to change page",
+        "func": "if (msg.payload == \"Clicked!\") {\n  msg.payload = { page: \"Home\"}\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "302ff33ff049c402"
+            ]
+        ]
+    },
+    {
         "id": "c3c3454d430487e0",
         "type": "ui-template",
         "z": "e988301e60e4b458",
@@ -11413,7 +11456,7 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\" @click=\"navigateToHome\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        navigateToHome() {\n            this.send(\"Clicked!\");\n        }\n    }\n}\n</script>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11422,7 +11465,9 @@
         "x": 290,
         "y": 140,
         "wires": [
-            []
+            [
+                "86d23d1c6a0ea540"
+            ]
         ]
     },
     {
@@ -11746,6 +11791,41 @@
         ]
     },
     {
+        "id": "86d23d1c6a0ea540",
+        "type": "function",
+        "z": "e988301e60e4b458",
+        "g": "610c7571a6ee5612",
+        "name": "Format command to change page",
+        "func": "if (msg.payload == \"Clicked!\") {\n  msg.payload = { page: \"Home\"}\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "87f5b98130be3cd8"
+            ]
+        ]
+    },
+    {
+        "id": "87f5b98130be3cd8",
+        "type": "ui-control",
+        "z": "e988301e60e4b458",
+        "g": "610c7571a6ee5612",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 720,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "7bcdca966429e51e",
         "type": "ui-template",
         "z": "70f558eb9d60b6fc",
@@ -11758,7 +11838,7 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\" @click=\"navigateToHome\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        navigateToHome() {\n            this.send(\"Clicked!\");\n        }\n    }\n}\n</script>\n\n<style scoped>\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11767,7 +11847,9 @@
         "x": 290,
         "y": 100,
         "wires": [
-            []
+            [
+                "b6d0e22f33ca686c"
+            ]
         ]
     },
     {
@@ -11903,6 +11985,41 @@
         "className": "",
         "x": 330,
         "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b6d0e22f33ca686c",
+        "type": "function",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "name": "Format command to change page",
+        "func": "if (msg.payload == \"Clicked!\") {\n  msg.payload = { page: \"Home\"}\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "2a5d62263d874923"
+            ]
+        ]
+    },
+    {
+        "id": "2a5d62263d874923",
+        "type": "ui-control",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 720,
+        "y": 100,
         "wires": [
             []
         ]
