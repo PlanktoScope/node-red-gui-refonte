@@ -1152,6 +1152,43 @@
         "h": 82
     },
     {
+        "id": "53646cc82fa5441c",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Ending point",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5acf20b7ca52e6ae",
+            "964efd36d61519e9"
+        ],
+        "x": 154,
+        "y": 479,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "3e8b16808b1bfff5",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Net specificity",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "cc28e6514a5a9c99"
+        ],
+        "x": 214,
+        "y": 579,
+        "w": 212,
+        "h": 82
+    },
+    {
         "id": "d3acc0e8dbfe63de",
         "type": "group",
         "z": "d9ea61f169af1fad",
@@ -1278,40 +1315,57 @@
         "h": 202
     },
     {
-        "id": "53646cc82fa5441c",
+        "id": "1f1d0daed5be1d7a",
         "type": "group",
         "z": "e988301e60e4b458",
-        "name": "Ending point",
+        "name": "Other Information - Horizontal Net",
         "style": {
             "stroke": "#000000",
             "label": true,
             "color": "#000000"
         },
         "nodes": [
-            "5acf20b7ca52e6ae",
-            "964efd36d61519e9"
+            "d4041ec6e94072be"
         ],
-        "x": 154,
-        "y": 479,
-        "w": 252,
+        "x": 214,
+        "y": 679,
+        "w": 332,
         "h": 82
     },
     {
-        "id": "3e8b16808b1bfff5",
+        "id": "fcefc59d8d36e714",
         "type": "group",
         "z": "e988301e60e4b458",
-        "name": "Net specificity",
+        "name": "Other Information - Vertical Net",
         "style": {
             "stroke": "#000000",
             "label": true,
             "color": "#000000"
         },
         "nodes": [
-            "cc28e6514a5a9c99"
+            "470cceda379e27fc"
         ],
-        "x": 154,
-        "y": 579,
-        "w": 212,
+        "x": 214,
+        "y": 779,
+        "w": 312,
+        "h": 82
+    },
+    {
+        "id": "fb17654b4a11e0db",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Other Information - Niskin bottle",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "0eec8b84ecf95b07"
+        ],
+        "x": 214,
+        "y": 879,
+        "w": 312,
         "h": 82
     },
     {
@@ -2328,6 +2382,45 @@
         "id": "019885275bda6e73",
         "type": "ui-group",
         "name": "net-specificity-sample-2",
+        "page": "c392bc525769b274",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c55346437d043dfc",
+        "type": "ui-group",
+        "name": "other-information-horizontal-net",
+        "page": "c392bc525769b274",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "391804fc6b034024",
+        "type": "ui-group",
+        "name": "other-information-vertical-net",
+        "page": "c392bc525769b274",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "77017b73f99465f8",
+        "type": "ui-group",
+        "name": "other-information-niskin-bottle",
         "page": "c392bc525769b274",
         "width": "12",
         "height": "1",
@@ -11604,7 +11697,7 @@
         "z": "e988301e60e4b458",
         "g": "307fb977cf47b651",
         "name": "Format command to choose groups",
-        "func": "const gear = msg.payload;\n\n\n\nif (gear === \"Horizontal Net\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n            ],\n            \"hide\": []\n        }\n    }\n} else if (gear === \"Vertical Net\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n            ]\n        }\n    }\n} else if (gear === \"Niskin bottle\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n            ]\n        }\n    }\n} else if (gear === \"Lab culture\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n            ]\n        }\n    }\n} else if (gear === \"Demo / Test\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\"\n            ]\n        }\n    }\n}\n\nreturn msg;\n",
+        "func": "const gear = msg.payload;\n\n\n\nif (gear === \"Horizontal Net\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n            ],\n            \"hide\": [\n                \"Sample-2:other-information-vertical-net\",                \n                \"Sample-2:other-information-niskin-bottle\",\n            ]\n        }\n    }\n} else if (gear === \"Vertical Net\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-vertical-net\",                \n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n            ]\n        }\n    }\n} else if (gear === \"Niskin bottle\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:other-information-niskin-bottle\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-vertical-net\",\n            ]\n        }\n    }\n} else if (gear === \"Lab culture\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n            ]\n        }\n    }\n} else if (gear === \"Demo / Test\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n            ]\n        }\n    }\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -11778,13 +11871,13 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Net specificity</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Mouth Opening Diam. -->\n      <label class=\"v-label v-slider__label my-label-general\">Mouth Opening Diam.</label>\n      <v-text-field \n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog1\"\n        suffix=\"cm\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Length of the Net -->\n      <label class=\"v-label v-slider__label my-label-general\">Length of the Net</label>\n      <v-text-field \n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog2\"\n        suffix=\"cm\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Mesh size -->\n      <label class=\"v-label v-slider__label my-label-general\">Mesh size</label>\n      <v-text-field\n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog3\"\n        suffix=\"μm\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Volume of the collector -->\n      <label class=\"v-label v-slider__label my-label-general\">Volume of the collector</label>\n      <v-text-field variant=\"outlined\" type=\"number\" append-icon=\"mdi-information\" @click:append=\"openDialog4\" suffix=\"mL\"\n        class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 0,\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        dialog4: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      openDialog4() {\n      this.dialog4 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      closeDialog4() {\n      this.dialog4 = false;\n      },\n      sendTitle(title) {\n        this.send(title);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Net specificity</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Mouth Opening Diam. -->\n      <label class=\"v-label v-slider__label my-label-general\">Mouth Opening Diam.</label>\n      <v-text-field \n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog1\"\n        suffix=\"cm\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Length of the Net -->\n      <label class=\"v-label v-slider__label my-label-general\">Length of the Net</label>\n      <v-text-field \n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog2\"\n        suffix=\"cm\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Mesh size -->\n      <label class=\"v-label v-slider__label my-label-general\">Mesh size</label>\n      <v-text-field\n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog3\"\n        suffix=\"μm\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Volume of the collector -->\n      <label class=\"v-label v-slider__label my-label-general\">Volume of the collector</label>\n      <v-text-field variant=\"outlined\" type=\"number\" append-icon=\"mdi-information\" @click:append=\"openDialog4\" suffix=\"mL\"\n        class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        dialog4: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      openDialog4() {\n      this.dialog4 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      closeDialog4() {\n      this.dialog4 = false;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 260,
+        "x": 320,
         "y": 620,
         "wires": [
             []
@@ -11821,6 +11914,81 @@
         "events": "all",
         "x": 720,
         "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4041ec6e94072be",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "1f1d0daed5be1d7a",
+        "group": "c55346437d043dfc",
+        "page": "",
+        "ui": "",
+        "name": "Other Informations - Horizontal Net",
+        "order": 0,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Filtered volume -->\n      <label class=\"v-label v-slider__label my-label-general\">Filtered volume</label>\n      <v-text-field \n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog1\"\n        suffix=\"L\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Fillution factor -->\n      <label class=\"v-label v-slider__label my-label-general\">Fillution factor</label>\n      <v-text-field \n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog2\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sieve mesh size -->\n      <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      <v-text-field\n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog3\"\n        suffix=\"μm\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth of the sample -->\n      <label class=\"v-label v-slider__label my-label-general\">Depth of the sample</label>\n      <v-text-field\n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog4\"\n        suffix=\"m\"\n        class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea class=\"my-v-textarea\" variant=\"outlined\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        dialog4: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      openDialog4() {\n      this.dialog4 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      closeDialog4() {\n      this.dialog4 = false;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .my-label-comment {\n    font-weight: bold;\n    margin-right: 15px;\n    margin-bottom: 20px;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-v-textarea > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 380,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "470cceda379e27fc",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "group": "391804fc6b034024",
+        "page": "",
+        "ui": "",
+        "name": "Other Information - Vertical Net",
+        "order": 0,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Filtered volume -->\n      <label class=\"v-label v-slider__label my-label-general\">Filtered volume</label>\n      <v-text-field \n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog1\"\n        suffix=\"L\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Dillution factor -->\n      <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      <v-text-field \n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog2\"\n        class=\"text-spacing my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sieve mesh size -->\n      <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      <v-text-field\n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog3\"\n        suffix=\"μm\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth Min -->\n      <label class=\"v-label v-slider__label my-label-general\">Depth Min</label>\n      <v-text-field\n        variant=\"outlined\"\n        type=\"number\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog4\"\n        suffix=\"m\"\n        class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog4\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth Max -->\n      <label class=\"v-label v-slider__label my-label-general\">Depth Max</label>\n      <v-text-field variant=\"outlined\" type=\"number\" append-icon=\"mdi-information\" @click:append=\"openDialog5\" suffix=\"m\"\n        class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog5\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 5.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog5\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea class=\"my-v-textarea\" variant=\"outlined\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        dialog4: false,\n        dialog5: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      openDialog4() {\n      this.dialog4 = true;\n      },\n      openDialog5() {\n      this.dialog5 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      closeDialog4() {\n        this.dialog4 = false;\n      },\n      closeDialog5() {\n        this.dialog5 = false;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .my-label-comment {\n    font-weight: bold;\n    margin-right: 15px;\n    margin-bottom: 20px;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-v-textarea > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 370,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0eec8b84ecf95b07",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "group": "77017b73f99465f8",
+        "page": "",
+        "ui": "",
+        "name": "Other Information - Niskin bottle",
+        "order": 0,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Dillution factor -->\n      <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      <v-text-field variant=\"outlined\" type=\"number\" append-icon=\"mdi-information\" @click:append=\"openDialog('dialog1')\"\n        class=\"text-spacing my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sieve mesh size -->\n      <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      <v-text-field variant=\"outlined\" type=\"number\" append-icon=\"mdi-information\" @click:append=\"openDialog('dialog2')\"\n        suffix=\"μm\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog2')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth -->\n      <label class=\"v-label v-slider__label my-label-general\">Depth</label>\n      <v-text-field variant=\"outlined\" type=\"number\" append-icon=\"mdi-information\" @click:append=\"openDialog('dialog3')\"\n        suffix=\"m\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog3')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea class=\"my-v-textarea\" variant=\"outlined\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n      };\n    },\n    methods: {\n      openDialog(dialog) {\n        this[dialog] = true;\n      },\n      closeDialog(dialog) {\n        this[dialog] = false;\n      },\n    },\n  };\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-comment {\n    font-weight: bold;\n    margin-right: 15px;\n    margin-bottom: 20px;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control,\n  .my-v-textarea > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 370,
+        "y": 920,
         "wires": [
             []
         ]
