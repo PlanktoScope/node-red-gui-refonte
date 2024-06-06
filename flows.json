@@ -1405,6 +1405,25 @@
         "h": 82
     },
     {
+        "id": "ed805c7828d607cc",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Custom sample metadata",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "65b05c5cdab1bbcf",
+            "e7fdcbc88dc9b248"
+        ],
+        "x": 214,
+        "y": 1179,
+        "w": 272,
+        "h": 122
+    },
+    {
         "id": "43f40797e7f6bb4b",
         "type": "ui-page",
         "name": "Home",
@@ -2483,6 +2502,19 @@
         "id": "21166fbb24dbe7f0",
         "type": "ui-group",
         "name": "other-information-lab-culture-&-demo",
+        "page": "c392bc525769b274",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "164f1a56da832d3d",
+        "type": "ui-group",
+        "name": "custom-sample-metadata",
         "page": "c392bc525769b274",
         "width": "12",
         "height": "1",
@@ -12101,6 +12133,57 @@
         "className": "",
         "x": 420,
         "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "65b05c5cdab1bbcf",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "d": true,
+        "g": "ed805c7828d607cc",
+        "group": "164f1a56da832d3d",
+        "page": "",
+        "ui": "",
+        "name": "Custom sample metadata",
+        "order": 0,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Custom Sample Metadata</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- To fill -->\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        dialog1: false,\n      };\n    },\n    methods: {\n      openDialog(dialog) {\n        this[dialog] = true;\n      },\n      closeDialog(dialog) {\n        this[dialog] = false;\n      },\n    },\n  };\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 350,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7fdcbc88dc9b248",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "ed805c7828d607cc",
+        "group": "164f1a56da832d3d",
+        "page": "",
+        "ui": "",
+        "name": "Custom sample metadata",
+        "order": 0,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"metadata\" :sort-by=\"[{ key: 'description', order: 'asc' }]\">\n    <template v-slot:top>\n      <v-toolbar flat>\n        <v-toolbar-title>Custom Sample Metadata</v-toolbar-title>\n        <v-divider class=\"mx-2\" inset vertical></v-divider>\n        <v-spacer></v-spacer>\n        <v-dialog v-model=\"dialog\" max-width=\"500px\">\n          <template v-slot:activator=\"{ props }\">\n            <v-btn class=\"mb-2\" color=\"primary\" dark v-bind=\"props\">\n              New Item\n            </v-btn>\n          </template>\n          <v-card>\n            <v-card-title>\n              <span class=\"text-h5\">{{ formTitle }}</span>\n            </v-card-title>\n\n            <v-card-text>\n              <v-container>\n                <v-row>\n                  <v-col cols=\"12\" md=\"4\" sm=\"6\">\n                    <v-text-field v-model=\"editedItem.name\" label=\"Metadata name\"></v-text-field>\n                  </v-col>\n                  <v-col cols=\"12\" md=\"4\" sm=\"6\">\n                    <v-text-field v-model=\"editedItem.description\" label=\"Description\"></v-text-field>\n                  </v-col>\n                </v-row>\n              </v-container>\n            </v-card-text>\n\n            <v-card-actions>\n              <v-spacer></v-spacer>\n              <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"close\">\n                Cancel\n              </v-btn>\n              <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"save\">\n                Save\n              </v-btn>\n            </v-card-actions>\n          </v-card>\n        </v-dialog>\n        <v-dialog v-model=\"dialogDelete\" max-width=\"500px\">\n          <v-card>\n            <v-card-title class=\"text-h5\">\n              Are you sure you want to delete this item?\n            </v-card-title>\n            <v-card-actions>\n              <v-spacer></v-spacer>\n              <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"closeDelete\">\n                Cancel\n              </v-btn>\n              <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"deleteItemConfirm\">\n                OK\n              </v-btn>\n              <v-spacer></v-spacer>\n            </v-card-actions>\n          </v-card>\n        </v-dialog>\n      </v-toolbar>\n    </template>\n    <template v-slot:item.actions=\"{ item }\">\n      <v-icon class=\"me-2\" size=\"small\" @click=\"editItem(item)\">\n        mdi-pencil\n      </v-icon>\n      <v-icon size=\"small\" @click=\"deleteItem(item)\">\n        mdi-delete\n      </v-icon>\n    </template>\n    <template v-slot:no-data>\n      <v-btn color=\"primary\" @click=\"initialize\">\n        Reset\n      </v-btn>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      dialogDelete: false,\n      headers: [\n        { text: 'Your metadata', align: 'start', sortable: false, value: 'name' },\n        { text: 'Description', value: 'description' },\n        { text: 'Actions', value: 'actions', sortable: false },\n      ],\n      metadata: [],\n      editedIndex: -1,\n      editedItem: {\n        name: '',\n        description: '',\n      },\n      defaultItem: {\n        name: '',\n        description: '',\n      },\n    }),\n\n    computed: {\n      formTitle () {\n        return this.editedIndex === -1 ? 'New Item' : 'Edit Item'\n      },\n    },\n\n    watch: {\n      dialog (val) {\n        val || this.close()\n      },\n      dialogDelete (val) {\n        val || this.closeDelete()\n      },\n    },\n\n    created () {\n      this.initialize()\n    },\n\n    methods: {\n      initialize () {\n        this.metadata = []\n      },\n\n      editItem (item) {\n        this.editedIndex = this.metadata.indexOf(item)\n        this.editedItem = Object.assign({}, item)\n        this.dialog = true\n      },\n\n      deleteItem (item) {\n        this.editedIndex = this.metadata.indexOf(item)\n        this.editedItem = Object.assign({}, item)\n        this.dialogDelete = true\n      },\n\n      deleteItemConfirm () {\n        this.metadata.splice(this.editedIndex, 1)\n        this.closeDelete()\n      },\n\n      close () {\n        this.dialog = false\n        this.$nextTick(() => {\n          this.editedItem = Object.assign({}, this.defaultItem)\n          this.editedIndex = -1\n        })\n      },\n\n      closeDelete () {\n        this.dialogDelete = false\n        this.$nextTick(() => {\n          this.editedItem = Object.assign({}, this.defaultItem)\n          this.editedIndex = -1\n        })\n      },\n\n      save () {\n        if (this.editedIndex > -1) {\n          Object.assign(this.metadata[this.editedIndex], this.editedItem)\n        } else {\n          this.metadata.push(this.editedItem)\n        }\n        this.close()\n      },\n    },\n  }\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 350,
+        "y": 1260,
         "wires": [
             []
         ]
