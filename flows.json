@@ -1189,6 +1189,114 @@
         "h": 82
     },
     {
+        "id": "1f1d0daed5be1d7a",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Other Information - Horizontal Net",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "d4041ec6e94072be"
+        ],
+        "x": 214,
+        "y": 779,
+        "w": 332,
+        "h": 82
+    },
+    {
+        "id": "fcefc59d8d36e714",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Other Information - Vertical Net",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "470cceda379e27fc"
+        ],
+        "x": 214,
+        "y": 879,
+        "w": 312,
+        "h": 82
+    },
+    {
+        "id": "fb17654b4a11e0db",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Other Information - Niskin bottle",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "0eec8b84ecf95b07"
+        ],
+        "x": 214,
+        "y": 979,
+        "w": 312,
+        "h": 82
+    },
+    {
+        "id": "8f90fd4103e79371",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Bottle specificity",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4a4db8d5c9ce9226"
+        ],
+        "x": 214,
+        "y": 679,
+        "w": 212,
+        "h": 82
+    },
+    {
+        "id": "b08415909e5dc4da",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Other Information - Lab Culture & Demo / Test",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5b2b9e8bb104b3d7"
+        ],
+        "x": 214,
+        "y": 1079,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "ed805c7828d607cc",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Custom sample metadata",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e7fdcbc88dc9b248"
+        ],
+        "x": 214,
+        "y": 1179,
+        "w": 272,
+        "h": 82
+    },
+    {
         "id": "d3acc0e8dbfe63de",
         "type": "group",
         "z": "d9ea61f169af1fad",
@@ -1313,115 +1421,6 @@
         "y": 5679,
         "w": 452,
         "h": 202
-    },
-    {
-        "id": "1f1d0daed5be1d7a",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Other Information - Horizontal Net",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "d4041ec6e94072be"
-        ],
-        "x": 214,
-        "y": 779,
-        "w": 332,
-        "h": 82
-    },
-    {
-        "id": "fcefc59d8d36e714",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Other Information - Vertical Net",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "470cceda379e27fc"
-        ],
-        "x": 214,
-        "y": 879,
-        "w": 312,
-        "h": 82
-    },
-    {
-        "id": "fb17654b4a11e0db",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Other Information - Niskin bottle",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "0eec8b84ecf95b07"
-        ],
-        "x": 214,
-        "y": 979,
-        "w": 312,
-        "h": 82
-    },
-    {
-        "id": "8f90fd4103e79371",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Bottle specificity",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "4a4db8d5c9ce9226"
-        ],
-        "x": 214,
-        "y": 679,
-        "w": 212,
-        "h": 82
-    },
-    {
-        "id": "b08415909e5dc4da",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Other Information - Lab Culture & Demo / Test",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "5b2b9e8bb104b3d7"
-        ],
-        "x": 214,
-        "y": 1079,
-        "w": 412,
-        "h": 82
-    },
-    {
-        "id": "ed805c7828d607cc",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Custom sample metadata",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "65b05c5cdab1bbcf",
-            "e7fdcbc88dc9b248"
-        ],
-        "x": 214,
-        "y": 1179,
-        "w": 272,
-        "h": 122
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -11456,7 +11455,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>Pump</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider\n            color=\"#0a6eca\"\n            v-model=\"flowrate\"\n            label=\"Flowrate\"\n            show-ticks=\"always\"\n            step=\"10\"\n            class=\"my-slider\"\n          ></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"flowrate\"\n            suffix=\"ml/min\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-rotate-left</v-icon>Backward</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-rotate-right</v-icon>Forward</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-slider {\n    margin-right: 25px;\n  }\n\n  div.v-slider {\n    color: #0a6eca !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    background-color: rgba(10, 110, 202, 0.1);\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Pump</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider\n            color=\"#0a6eca\"\n            v-model=\"flowrate\"\n            label=\"Flowrate\"\n            show-ticks=\"always\"\n            step=\"10\"\n            class=\"my-slider\"\n          ></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"flowrate\"\n            suffix=\"ml/min\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-rotate-left</v-icon>Backward</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-rotate-right</v-icon>Forward</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-slider {\n    margin-right: 25px;\n  }\n\n  div.v-slider {\n    /* color: #0a6eca !important; */\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    background-color: rgba(10, 110, 202, 0.1);\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11481,7 +11480,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>Focus</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider\n            color=\"#0a6eca\"\n            label=\"Distance\"\n            show-ticks=\"always\"\n            step=\"10\"\n            v-model=\"distance\"\n          ></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"distance\"\n            suffix=\"μm\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Left</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-arrow-right-thin-circle-outline</v-icon>Right</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        distance: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(10, 110, 202, 0.1); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Focus</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider\n            color=\"#0a6eca\"\n            label=\"Distance\"\n            show-ticks=\"always\"\n            step=\"10\"\n            v-model=\"distance\"\n          ></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"distance\"\n            suffix=\"μm\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Left</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon>mdi-arrow-right-thin-circle-outline</v-icon>Right</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        distance: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11506,7 +11505,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>LED</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider color=\"#0a6eca\" label=\"Intensity\" show-ticks=\"always\" step=\"10\" v-model=\"intensity\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"intensity\"\n            suffix=\"cd\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-led-off</v-icon>OFF</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-led-on</v-icon>ON</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        intensity: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    /* background-color: rgba(10, 110, 202, 0.1); */\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>LED</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider color=\"#0a6eca\" label=\"Intensity\" show-ticks=\"always\" step=\"10\" v-model=\"intensity\"></v-slider>\n          <v-text-field\n            variant=\"outlined\"\n            v-model=\"intensity\"\n            suffix=\"cd\"\n            append-icon=\"mdi-information\"\n            @click:append=\"openDialog\"\n            class=\"my-v-text\"\n          ></v-text-field>\n          <v-dialog v-model=\"dialog\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-led-off</v-icon>OFF</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-led-on</v-icon>ON</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        intensity: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -11531,7 +11530,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>Air flows</h2>\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Intensity</label>\n          <v-btn-toggle\n            v-model=\"toggle\"\n            variant=\"outlined\"\n            density=\"confortable\"\n            color=\"#0a6eca\"\n            divided\n            class=\"toggle-2\"\n          >\n            <v-btn style=\"padding: 10px 0px;\" >OFF</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >1</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >2</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >3</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >4</v-btn>\n          </v-btn-toggle>\n        </div>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    margin-bottom: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .my-label {\n    flex: 1;\n    color: #0a6eca;\n  }\n\n  .toggle-2 {\n    width: 70%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Air flows</h2>\n        <div class=\"horizontal-alignment\">\n          <label class=\"v-label v-slider__label my-label\">Intensity</label>\n          <v-btn-toggle\n            v-model=\"toggle\"\n            variant=\"outlined\"\n            density=\"confortable\"\n            color=\"#0a6eca\"\n            divided\n            class=\"toggle-2\"\n          >\n            <v-btn style=\"padding: 10px 0px;\" >OFF</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >1</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >2</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >3</v-btn>\n            <v-btn style=\"padding: 10px 0px;\" >4</v-btn>\n          </v-btn-toggle>\n        </div>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 0,\n        dialog: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    margin-bottom: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 10px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .my-label {\n    flex: 1;\n    /* color: #0a6eca; */\n  }\n\n  .toggle-2 {\n    width: 70%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -12138,32 +12137,6 @@
         ]
     },
     {
-        "id": "65b05c5cdab1bbcf",
-        "type": "ui-template",
-        "z": "e988301e60e4b458",
-        "d": true,
-        "g": "ed805c7828d607cc",
-        "group": "164f1a56da832d3d",
-        "page": "",
-        "ui": "",
-        "name": "Custom sample metadata",
-        "order": 0,
-        "width": "12",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Custom Sample Metadata</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- To fill -->\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        dialog1: false,\n      };\n    },\n    methods: {\n      openDialog(dialog) {\n        this[dialog] = true;\n      },\n      closeDialog(dialog) {\n        this[dialog] = false;\n      },\n    },\n  };\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n</style>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 350,
-        "y": 1220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "e7fdcbc88dc9b248",
         "type": "ui-template",
         "z": "e988301e60e4b458",
@@ -12176,14 +12149,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"metadata\" :sort-by=\"[{ key: 'description', order: 'asc' }]\">\n    <template v-slot:top>\n      <v-toolbar flat>\n        <v-toolbar-title>Custom Sample Metadata</v-toolbar-title>\n        <v-divider class=\"mx-2\" inset vertical></v-divider>\n        <v-spacer></v-spacer>\n        <v-dialog v-model=\"dialog\" max-width=\"500px\">\n          <template v-slot:activator=\"{ props }\">\n            <v-btn class=\"mb-2\" color=\"primary\" dark v-bind=\"props\">\n              New Item\n            </v-btn>\n          </template>\n          <v-card>\n            <v-card-title>\n              <span class=\"text-h5\">{{ formTitle }}</span>\n            </v-card-title>\n\n            <v-card-text>\n              <v-container>\n                <v-row>\n                  <v-col cols=\"12\" md=\"4\" sm=\"6\">\n                    <v-text-field v-model=\"editedItem.name\" label=\"Metadata name\"></v-text-field>\n                  </v-col>\n                  <v-col cols=\"12\" md=\"4\" sm=\"6\">\n                    <v-text-field v-model=\"editedItem.description\" label=\"Description\"></v-text-field>\n                  </v-col>\n                </v-row>\n              </v-container>\n            </v-card-text>\n\n            <v-card-actions>\n              <v-spacer></v-spacer>\n              <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"close\">\n                Cancel\n              </v-btn>\n              <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"save\">\n                Save\n              </v-btn>\n            </v-card-actions>\n          </v-card>\n        </v-dialog>\n        <v-dialog v-model=\"dialogDelete\" max-width=\"500px\">\n          <v-card>\n            <v-card-title class=\"text-h5\">\n              Are you sure you want to delete this item?\n            </v-card-title>\n            <v-card-actions>\n              <v-spacer></v-spacer>\n              <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"closeDelete\">\n                Cancel\n              </v-btn>\n              <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"deleteItemConfirm\">\n                OK\n              </v-btn>\n              <v-spacer></v-spacer>\n            </v-card-actions>\n          </v-card>\n        </v-dialog>\n      </v-toolbar>\n    </template>\n    <template v-slot:item.actions=\"{ item }\">\n      <v-icon class=\"me-2\" size=\"small\" @click=\"editItem(item)\">\n        mdi-pencil\n      </v-icon>\n      <v-icon size=\"small\" @click=\"deleteItem(item)\">\n        mdi-delete\n      </v-icon>\n    </template>\n    <template v-slot:no-data>\n      <v-btn color=\"primary\" @click=\"initialize\">\n        Reset\n      </v-btn>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      dialogDelete: false,\n      headers: [\n        { text: 'Your metadata', align: 'start', sortable: false, value: 'name' },\n        { text: 'Description', value: 'description' },\n        { text: 'Actions', value: 'actions', sortable: false },\n      ],\n      metadata: [],\n      editedIndex: -1,\n      editedItem: {\n        name: '',\n        description: '',\n      },\n      defaultItem: {\n        name: '',\n        description: '',\n      },\n    }),\n\n    computed: {\n      formTitle () {\n        return this.editedIndex === -1 ? 'New Item' : 'Edit Item'\n      },\n    },\n\n    watch: {\n      dialog (val) {\n        val || this.close()\n      },\n      dialogDelete (val) {\n        val || this.closeDelete()\n      },\n    },\n\n    created () {\n      this.initialize()\n    },\n\n    methods: {\n      initialize () {\n        this.metadata = []\n      },\n\n      editItem (item) {\n        this.editedIndex = this.metadata.indexOf(item)\n        this.editedItem = Object.assign({}, item)\n        this.dialog = true\n      },\n\n      deleteItem (item) {\n        this.editedIndex = this.metadata.indexOf(item)\n        this.editedItem = Object.assign({}, item)\n        this.dialogDelete = true\n      },\n\n      deleteItemConfirm () {\n        this.metadata.splice(this.editedIndex, 1)\n        this.closeDelete()\n      },\n\n      close () {\n        this.dialog = false\n        this.$nextTick(() => {\n          this.editedItem = Object.assign({}, this.defaultItem)\n          this.editedIndex = -1\n        })\n      },\n\n      closeDelete () {\n        this.dialogDelete = false\n        this.$nextTick(() => {\n          this.editedItem = Object.assign({}, this.defaultItem)\n          this.editedIndex = -1\n        })\n      },\n\n      save () {\n        if (this.editedIndex > -1) {\n          Object.assign(this.metadata[this.editedIndex], this.editedItem)\n        } else {\n          this.metadata.push(this.editedItem)\n        }\n        this.close()\n      },\n    },\n  }\n</script>",
+        "format": "<template>\n  <div class=\"container\">\n    <v-data-table :headers=\"headers\" :items=\"metadata\" :sort-by=\"[{ key: 'description', order: 'asc' }]\">\n      <template v-slot:top>\n        <v-toolbar flat>\n          <v-toolbar-title>Custom Sample Metadata</v-toolbar-title>\n          <v-divider class=\"mx-2\" inset vertical></v-divider>\n          <v-spacer></v-spacer>\n          <v-dialog v-model=\"dialog\" max-width=\"500px\">\n            <template v-slot:activator=\"{ props }\">\n              <v-btn class=\"v-btn-new-item\" color=\"#0a6eac\" dark v-bind=\"props\">\n                New Item\n              </v-btn>\n            </template>\n            <v-card>\n              <v-card-title>\n                <span class=\"text-h5\">{{ formTitle }}</span>\n              </v-card-title>\n\n              <v-card-text>\n                <v-container>\n                  <v-row>\n                    <v-col cols=\"12\" md=\"6\" sm=\"6\">\n                      <v-text-field v-model=\"editedItem.name\" label=\"Metadata name\"></v-text-field>\n                    </v-col>\n                    <v-col cols=\"12\" md=\"6\" sm=\"6\">\n                      <v-text-field v-model=\"editedItem.description\" label=\"Description\"></v-text-field>\n                    </v-col>\n                  </v-row>\n                </v-container>\n              </v-card-text>\n\n              <v-card-actions>\n                <v-spacer></v-spacer>\n                <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"close\">\n                  Cancel\n                </v-btn>\n                <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"save\">\n                  Save\n                </v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n          <v-dialog v-model=\"dialogDelete\" max-width=\"500px\">\n            <v-card>\n              <v-card-title class=\"text-h5\">\n                Are you sure you want to delete this item?\n              </v-card-title>\n              <v-card-actions>\n                <v-spacer></v-spacer>\n                <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"closeDelete\">\n                  Cancel\n                </v-btn>\n                <v-btn color=\"blue-darken-1\" variant=\"text\" @click=\"deleteItemConfirm\">\n                  OK\n                </v-btn>\n                <v-spacer></v-spacer>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </v-toolbar>\n      </template>\n      <template v-slot:item.actions=\"{ item }\">\n        <v-icon class=\"me-2\" size=\"small\" @click=\"editItem(item)\">\n          mdi-pencil\n        </v-icon>\n        <v-icon size=\"small\" @click=\"deleteItem(item)\">\n          mdi-delete\n        </v-icon>\n      </template>\n      <template v-slot:no-data>\n        <v-btn color=\"#0a6eac\" @click=\"initialize\">\n          Reset\n        </v-btn>\n      </template>\n    </v-data-table>\n  </div>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      dialog: false,\n      dialogDelete: false,\n      headers: [\n        { text: 'Your metadata', align: 'start', sortable: false, value: 'name' },\n        { text: 'Description', value: 'description' },\n        { text: 'Actions', value: 'actions', sortable: false },\n      ],\n      metadata: [],\n      editedIndex: -1,\n      editedItem: {\n        name: '',\n        description: '',\n      },\n      defaultItem: {\n        name: '',\n        description: '',\n      },\n    }),\n\n    computed: {\n      formTitle () {\n        return this.editedIndex === -1 ? 'New Item' : 'Edit Item'\n      },\n    },\n\n    watch: {\n      dialog (val) {\n        val || this.close()\n      },\n      dialogDelete (val) {\n        val || this.closeDelete()\n      },\n    },\n\n    created () {\n      this.initialize()\n    },\n\n    methods: {\n      initialize () {\n        this.metadata = []\n      },\n\n      editItem (item) {\n        this.editedIndex = this.metadata.indexOf(item)\n        this.editedItem = Object.assign({}, item)\n        this.dialog = true\n      },\n\n      deleteItem (item) {\n        this.editedIndex = this.metadata.indexOf(item)\n        this.editedItem = Object.assign({}, item)\n        this.dialogDelete = true\n      },\n\n      deleteItemConfirm () {\n        this.metadata.splice(this.editedIndex, 1)\n        this.closeDelete()\n      },\n\n      close () {\n        this.dialog = false\n        this.$nextTick(() => {\n          this.editedItem = Object.assign({}, this.defaultItem)\n          this.editedIndex = -1\n        })\n      },\n\n      closeDelete () {\n        this.dialogDelete = false\n        this.$nextTick(() => {\n          this.editedItem = Object.assign({}, this.defaultItem)\n          this.editedIndex = -1\n        })\n      },\n\n      save () {\n        if (this.editedIndex > -1) {\n          Object.assign(this.metadata[this.editedIndex], this.editedItem)\n        } else {\n          this.metadata.push(this.editedItem)\n        }\n        this.close()\n      },\n    },\n  }\n</script>\n\n<style>\n  .v-toolbar-title__placeholder {\n    color: #0a6eca !important;\n    font-weight: bolder;\n  }\n\n  .v-btn-new-item .v-btn__content {\n    font-weight: bold;\n  }\n\n  .v-toolbar {\n    background-color: rgba(10, 110, 202, 0.2) !important;\n    border-radius: 10px;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 350,
-        "y": 1260,
+        "y": 1220,
         "wires": [
             []
         ]
