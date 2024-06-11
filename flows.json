@@ -1329,6 +1329,44 @@
         "h": 162
     },
     {
+        "id": "cd7cd2c05c7f55bf",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Acquisition list",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "d417adf0e2e7759b",
+            "497c23923e025108"
+        ],
+        "x": 214,
+        "y": 239,
+        "w": 352,
+        "h": 82
+    },
+    {
+        "id": "d3d7be8ef5f940c4",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Acquisition queue",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "af3cbcd9f5f35be3",
+            "cf4fbc0932d87cc7"
+        ],
+        "x": 214,
+        "y": 339,
+        "w": 172,
+        "h": 122
+    },
+    {
         "id": "d3acc0e8dbfe63de",
         "type": "group",
         "z": "d9ea61f169af1fad",
@@ -1453,44 +1491,6 @@
         "y": 5679,
         "w": 452,
         "h": 202
-    },
-    {
-        "id": "cd7cd2c05c7f55bf",
-        "type": "group",
-        "z": "00a14f98244d252e",
-        "name": "Acquisition list",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "d417adf0e2e7759b",
-            "497c23923e025108"
-        ],
-        "x": 214,
-        "y": 239,
-        "w": 352,
-        "h": 82
-    },
-    {
-        "id": "d3d7be8ef5f940c4",
-        "type": "group",
-        "z": "00a14f98244d252e",
-        "name": "Acquisition queue",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "af3cbcd9f5f35be3",
-            "cf4fbc0932d87cc7"
-        ],
-        "x": 214,
-        "y": 339,
-        "w": 172,
-        "h": 122
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -11879,7 +11879,7 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          label=\"ex: S001\"\n          variant=\"outlined\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Name of the operator -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Name of the operator</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          label=\"ex: Manu Prakash\"\n          variant=\"outlined\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-2\">\n        <label class=\"v-label v-slider__label my-label-2\">Sampling Gear</label>\n      </div>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 0,\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      sendTitle(title) {\n        this.send(title);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc {\n    display: flex;\n    flex: 0.2;\n    justify-content: center !important;\n    align-items: center;\n  }\n\n  .label-bloc-2 {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .toggle-full-width {\n    width: 92% !important;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    color: #0a6eca !important;\n  }\n\n  .progress-info {\n    margin-top: 12px !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment-sgi\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          label=\"ex: S001\"\n          variant=\"outlined\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Name of the operator -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the operator</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field\n          label=\"ex: Manu Prakash\"\n          variant=\"outlined\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment-sgi\">\n      <div class=\"label-bloc-sgi-2\">\n        <label class=\"v-label v-slider__label my-label-sgi-2\">Sampling Gear</label>\n      </div>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 0,\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      sendTitle(title) {\n        this.send(title);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 10px !important;\n  }\n\n  .my-label-general-sgi {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-sgi-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-sgi {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-sgi {\n    display: flex;\n    flex: 0.2;\n    justify-content: center !important;\n    align-items: center;\n  }\n\n  .label-bloc-sgi-2 {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .toggle-full-width {\n    width: 92% !important;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    color: #0a6eca !important;\n  }\n\n  .progress-info {\n    margin-top: 12px !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
