@@ -758,6 +758,24 @@
         "h": 82
     },
     {
+        "id": "2fd91bc9dc07bac4",
+        "type": "group",
+        "z": "a707f17e5367291d",
+        "name": "footer-home",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "d70860b76ad6c00f"
+        ],
+        "x": 254,
+        "y": 539,
+        "w": 192,
+        "h": 82
+    },
+    {
         "id": "43f40797e7f6bb4b",
         "type": "ui-page",
         "name": "Home",
@@ -1391,6 +1409,19 @@
         "width": "12",
         "height": "1",
         "order": 4,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a952a54e574cb538",
+        "type": "ui-group",
+        "name": "footer-home",
+        "page": "43f40797e7f6bb4b",
+        "width": "12",
+        "height": "1",
+        "order": 5,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -2699,6 +2730,31 @@
         "className": "",
         "x": 360,
         "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d70860b76ad6c00f",
+        "type": "ui-template",
+        "z": "a707f17e5367291d",
+        "g": "2fd91bc9dc07bac4",
+        "group": "a952a54e574cb538",
+        "page": "",
+        "ui": "",
+        "name": "footer-home",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"footer-home-container\">\n        <div class=\"footer-home-information-container\">\n            <img src=\"https://upload.wikimedia.org/wikipedia/fr/7/7e/Slack_logo.svg\" alt=\"Logo slack\">\n            <img src=\"https://pngimg.com/uploads/github/github_PNG23.png\" alt=\"Logo github\">\n            <section class=\"section-info-footer\">\n                <img src=\"https://www.fairscope.com/web/image/website/1/logo?unique=cacdc8d\" alt=\"Logo fairscope\">\n            </section>\n            <section class=\"section-info-footer\">\n                <img class=\"purple-filter\" src=\"https://www.fairscope.com/web/image/website/1/logo?unique=cacdc8d\" alt=\"Logo planktoscope\">\n            </section>\n        </div>\n    </div>\n</template>\n\n<style>\n    .footer-home-container {\n        position: fixed;\n        bottom: 0;\n        width: 100%;\n        padding-right: 1rem;\n        border-top: 1px solid black;\n    }\n\n    .footer-home-information-container {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    .footer-home-information-container img {\n        height: auto;\n        width: 5vw;\n        margin: 0 30px;\n    }\n\n    .section-info-footer {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    .section-info-footer img {\n        height: auto;\n        width: 5vw;\n        margin: 0 30px;\n    }\n\n    .purple-filter {\n        filter: sepia(1) saturate(4) hue-rotate(270deg) brightness(0.7);\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 350,
+        "y": 580,
         "wires": [
             []
         ]
