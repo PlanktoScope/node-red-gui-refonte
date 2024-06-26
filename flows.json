@@ -722,6 +722,24 @@
         "h": 82
     },
     {
+        "id": "d6362eced379ae80",
+        "type": "group",
+        "z": "a707f17e5367291d",
+        "name": "first-line-home",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "1e5f2afc41a16b02"
+        ],
+        "x": 254,
+        "y": 339,
+        "w": 212,
+        "h": 82
+    },
+    {
         "id": "43f40797e7f6bb4b",
         "type": "ui-page",
         "name": "Home",
@@ -1329,6 +1347,19 @@
         "width": "12",
         "height": "1",
         "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "01c285b5c14e108c",
+        "type": "ui-group",
+        "name": "first-line-home",
+        "page": "43f40797e7f6bb4b",
+        "width": "12",
+        "height": "1",
+        "order": 3,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -2504,7 +2535,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"header-home-container\">\n        <div class=\"header-home-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"header-home-message-container\">\n            <p>Welcome on the <span id=\"planktoscope\">PlanktoScope GUI -</span> <span id=\"version\">{{msg.payload}}</span></p>\n        </div>\n    </div>\n</template>\n\n<style>\n    .header-home-container {\n        // Maybe\n    }\n\n    .header-home-image-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        margin: 20px 0px 50px 0px;\n    }\n\n    .header-home-image-container img {\n        height: 8vw;\n        width: 8vw;\n    }\n\n    .header-home-message-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-message-container p {\n        font-size: 2vw;\n        font-weight: 100;\n        color: black;\n    }\n\n    .header-home-message-container span#version {\n        color: #076eac;\n    }\n\n    .header-home-message-container span#planktoscope {\n        font-weight: bold;\n    }\n\n</style>",
+        "format": "<template>\n    <div class=\"header-home-container\">\n        <div class=\"header-home-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"header-home-message-container\">\n            <p>Welcome on the <span id=\"planktoscope\">PlanktoScope GUI -</span> <span id=\"version\">{{msg.payload}}</span></p>\n        </div>\n    </div>\n</template>\n\n<style>\n    .header-home-container {\n        // Maybe\n    }\n\n    .header-home-image-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        margin: 20px 0px 50px 0px;\n    }\n\n    .header-home-image-container img {\n        height: 8vw;\n        width: 8vw;\n    }\n\n    .header-home-message-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-message-container p {\n        font-size: 2vw;\n        font-weight: 100;\n        color: black;\n        margin-bottom: 35px;\n    }\n\n    .header-home-message-container span#version {\n        color: #076eac;\n    }\n\n    .header-home-message-container span#planktoscope {\n        font-weight: bold;\n    }\n\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -2563,6 +2594,31 @@
         "className": "",
         "x": 370,
         "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e5f2afc41a16b02",
+        "type": "ui-template",
+        "z": "a707f17e5367291d",
+        "g": "d6362eced379ae80",
+        "group": "01c285b5c14e108c",
+        "page": "",
+        "ui": "",
+        "name": "first-line-home",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image-multiple\"></span>\n                <p id=\"first-p\">Explore your data</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div class=\"item3\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item4\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 15%;\n        grid-template-columns: 2fr 2fr 2.10fr; \n        grid-template-rows: auto;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 0px 5px 33px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 0px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);\n    }\n\n    .first-line-container div#size {\n        height: 15vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 4;\n        grid-row: 1 / 2;\n    }\n\n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 0.8vw;\n        margin-bottom: 10px\n    }\n\n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 3 / 4;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.8vw;\n        margin-bottom: 10px\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n    }\n\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 360,
+        "y": 380,
         "wires": [
             []
         ]
