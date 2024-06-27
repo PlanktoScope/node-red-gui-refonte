@@ -640,29 +640,9 @@
             "1e4493ea93992368"
         ],
         "x": 214,
-        "y": 59,
+        "y": 139,
         "w": 612,
         "h": 162
-    },
-    {
-        "id": "d3d7be8ef5f940c4",
-        "type": "group",
-        "z": "00a14f98244d252e",
-        "name": "Acquisition queue",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "af3cbcd9f5f35be3",
-            "cf4fbc0932d87cc7",
-            "02668d63bce7fabc"
-        ],
-        "x": 74,
-        "y": 339,
-        "w": 312,
-        "h": 122
     },
     {
         "id": "cd7cd2c05c7f55bf",
@@ -677,11 +657,13 @@
         "nodes": [
             "d417adf0e2e7759b",
             "63215f7bbc727dcb",
-            "d9b9912844918a98"
+            "d39a23df09b43d2b",
+            "4b6824e2ecaa9016",
+            "343ad9e58c44f9d9"
         ],
-        "x": 74,
-        "y": 239,
-        "w": 472,
+        "x": 34,
+        "y": 319,
+        "w": 542,
         "h": 82
     },
     {
@@ -776,6 +758,30 @@
         "y": 339,
         "w": 522,
         "h": 82
+    },
+    {
+        "id": "d3d7be8ef5f940c4",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Acquisition queue",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "af3cbcd9f5f35be3",
+            "cf4fbc0932d87cc7",
+            "42fc3d43830febaa",
+            "c18005dcbaf22026",
+            "9529b63ced697421",
+            "a0368732ccfa08d8",
+            "49ea401a0745e446"
+        ],
+        "x": 164,
+        "y": 419,
+        "w": 532,
+        "h": 162
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -3869,14 +3875,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n          { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n          { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n          { title: 'Status', align: 'start', key: 'status' },\n      ],\n      tableData: [],\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    }\n  },\n  watch: {\n    selected: function() {\n      this.send({payload: this.selected});\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n          }\n        });\n      },\n      deep: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>\n\n\n<!-- <template>\n  <v-data-table :headers=\"headers\" :items=\"data\" item-key=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n            <v-icon v-if=\"column.removable\" icon=\"$close\" @click=\"() => remove(column.key)\"></v-icon>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        headers: [\n          { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n          { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n          { title: 'Status', align: 'start', key: 'status' },\n        ],\n        data: [],\n      }\n    },\n    methods: {\n      remove(key) {\n        this.headers = this.headers.filter(header => header.key !== key);\n      }\n    },\n    watch: {\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload && Array.isArray(msg.payload)) {\n              this.data = msg.payload;\n            }\n          });\n        },\n        deep: true\n      },\n    },\n  }\n</script>\n\n<style>\n  .custom-table {\n    background-color: white;\n    border-radius: 10px;\n    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n    padding: 16px 0;\n  }\n</style> -->",
+        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n          { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n          { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n          { title: 'Status', align: 'start', key: 'status' },\n      ],\n      tableData: [],\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    }\n  },\n  watch: {\n    selected: function() {\n      this.send({payload: this.selected});\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload == \"clear\") {\n            this.tableData = [];\n          } else if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>\n\n\n<!-- <template>\n  <v-data-table :headers=\"headers\" :items=\"data\" item-key=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n            <v-icon v-if=\"column.removable\" icon=\"$close\" @click=\"() => remove(column.key)\"></v-icon>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        headers: [\n          { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n          { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n          { title: 'Status', align: 'start', key: 'status' },\n        ],\n        data: [],\n      }\n    },\n    methods: {\n      remove(key) {\n        this.headers = this.headers.filter(header => header.key !== key);\n      }\n    },\n    watch: {\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload && Array.isArray(msg.payload)) {\n              this.data = msg.payload;\n            }\n          });\n        },\n        deep: true\n      },\n    },\n  }\n</script>\n\n<style>\n  .custom-table {\n    background-color: white;\n    border-radius: 10px;\n    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n    padding: 16px 0;\n  }\n</style> -->",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 300,
-        "y": 380,
+        "y": 460,
         "wires": [
             []
         ]
@@ -3894,16 +3900,18 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn style=\"padding: 10px;\">\n                <v-icon left>mdi-stop</v-icon>Stop\n            </v-btn>\n            <v-btn style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn style=\"padding: 10px;\">\n                <v-icon right>mdi-triangle</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n    data() {\n      return {\n        toggle: null\n      };\n    },\n  }\n</script>\n\n<style scoped>\n    div .v-btn-toggle {\n        background-color: #ffffff;\n    }\n\n    .toggle-full-width {\n        width: 100%;\n        margin-top: 15px;\n    }\n\n    .toggle {\n        width: 100%;\n        border-color: #0a6eca;\n        color: #0a6eca;\n    }\n\n    .toggle .v-btn--active {\n        background-color: #0a6eca !important;\n        color: white !important;\n    }\n</style>",
+        "format": "<template>\n    <div class=\"container\">\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn @click=\"handleToggleClick('stop')\" style=\"padding: 10px;\">\n                <v-icon left>mdi-stop</v-icon>Stop\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('clear')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('start')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-triangle</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                toggle: null\n            };\n        },\n        methods: {\n            handleToggleClick(action) {\n                this.send({payload: action});\n            }\n        }\n    }\n</script>\n\n<style scoped>\n    div .v-btn-toggle {\n        background-color: #ffffff;\n    }\n\n    .toggle-full-width {\n        width: 100%;\n        margin-top: 15px;\n    }\n\n    .toggle {\n        width: 100%;\n        border-color: #0a6eca;\n        color: #0a6eca;\n    }\n\n    .toggle .v-btn--active {\n        background-color: #0a6eca !important;\n        color: white !important;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 300,
-        "y": 420,
+        "y": 520,
         "wires": [
-            []
+            [
+                "c18005dcbaf22026"
+            ]
         ]
     },
     {
@@ -3926,7 +3934,7 @@
         "templateScope": "local",
         "className": "",
         "x": 290,
-        "y": 100,
+        "y": 180,
         "wires": [
             [
                 "b1eacad4b3bf6e97"
@@ -3953,7 +3961,7 @@
         "templateScope": "local",
         "className": "",
         "x": 300,
-        "y": 140,
+        "y": 220,
         "wires": [
             [
                 "d68c231c98bf92e0"
@@ -3980,7 +3988,7 @@
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 180,
+        "y": 260,
         "wires": [
             []
         ]
@@ -3994,7 +4002,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 740,
-        "y": 140,
+        "y": 220,
         "wires": [
             []
         ]
@@ -4013,7 +4021,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 140,
+        "y": 220,
         "wires": [
             [
                 "8cf785fffe790177"
@@ -4034,7 +4042,7 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 100,
+        "y": 180,
         "wires": [
             [
                 "1e4493ea93992368"
@@ -4050,7 +4058,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 720,
-        "y": 100,
+        "y": 180,
         "wires": [
             []
         ]
@@ -4068,17 +4076,17 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" v-model=\"selected\" show-select class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n            <v-icon v-if=\"column.removable\" icon=\"$close\" @click=\"() => remove(column.key)\"></v-icon>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Project name', align: 'start', sortable: false, key: 'projectName', removable: false },\n        { title: 'Sample ID', align: 'start', key: 'sampleID', removable: true, sortable: true },\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID', removable: true, sortable: true },\n        { title: 'Operator', align: 'start', key: 'operator', removable: true, sortable: true },\n        { title: 'Image', align: 'start', key: 'image', removable: true, sortable: true },\n        { title: 'Segmented', align: 'start', key: 'segmented', removable: true, sortable: true },\n      ],\n      tableData: [], // Initialiser avec un tableau vide\n      selected: [],\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    },\n    customAction() {\n      // Définition d'une action personnalisée\n      console.log('Action personnalisée exécutée');\n    }\n  },\n  watch: {\n    selected: function() {\n      this.send({payload: this.selected});\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        // Écouter les changements sur msg-input\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload; // Mettre à jour les données du tableau\n          }\n        });\n      },\n      deep: true\n    }\n  },\n  mounted() {\n    // Récupérer les données initiales depuis msg.payload\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload; // Mettre à jour les données du tableau avec celles reçues\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>\n",
+        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" v-model=\"selected\" show-select class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n            <v-icon v-if=\"column.removable\" icon=\"$close\" @click=\"() => remove(column.key)\"></v-icon>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Project name', align: 'start', sortable: false, key: 'projectName', removable: false },\n        { title: 'Sample ID', align: 'start', key: 'sampleID', removable: true, sortable: true },\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID', removable: true, sortable: true },\n        { title: 'Operator', align: 'start', key: 'operator', removable: true, sortable: true },\n        { title: 'Image', align: 'start', key: 'image', removable: true, sortable: true },\n        { title: 'Segmented', align: 'start', key: 'segmented', removable: true, sortable: true },\n      ],\n      tableData: [], // Initialiser avec un tableau vide\n      selected: [],\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key);\n    },\n  },\n  watch: {\n    selected: {\n      handler(newVal) {\n        // Envoyer les données mises à jour via WebSocket\n        this.send({ payload: newVal });\n      },\n      deep: true\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload === \"clear\") {\n            this.selected = []; // Vider les lignes sélectionnées\n          } else if (Array.isArray(msg.payload)) {\n            this.tableData = msg.payload; // Mettre à jour les données du tableau avec celles reçues\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    // Récupérer les données initiales depuis msg.payload\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (Array.isArray(msg.payload)) {\n          this.tableData = msg.payload; // Mettre à jour les données du tableau avec celles reçues\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 300,
-        "y": 280,
+        "y": 360,
         "wires": [
             [
-                "d9b9912844918a98"
+                "d39a23df09b43d2b"
             ]
         ]
     },
@@ -4100,8 +4108,8 @@
         "topic": "",
         "payload": "[{\"projectName\":\"OSM2024\",\"sampleID\":\"S001\",\"acquisitionID\":\"A01\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S002\",\"acquisitionID\":\"A02\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S001\",\"acquisitionID\":\"A03\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S002\",\"acquisitionID\":\"A04\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S001\",\"acquisitionID\":\"A05\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S002\",\"acquisitionID\":\"A06\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"}]",
         "payloadType": "json",
-        "x": 170,
-        "y": 280,
+        "x": 130,
+        "y": 360,
         "wires": [
             [
                 "d417adf0e2e7759b"
@@ -4109,47 +4117,183 @@
         ]
     },
     {
-        "id": "d9b9912844918a98",
-        "type": "debug",
+        "id": "d39a23df09b43d2b",
+        "type": "function",
         "z": "00a14f98244d252e",
         "g": "cd7cd2c05c7f55bf",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
+        "name": "function 1",
+        "func": "if (!Array.isArray(msg.payload)) {\n    msg.payload = \"\";\n    return msg;\n}\n\nfor (let element of msg.payload) {\n    if (typeof element !== 'string') {\n        msg.payload = \"\";\n        return msg;\n    }\n}\n\nvar resultat = []\n\nresultat = msg.payload.map(element => ({\n    acquisitionID: element,\n    estimatedTime: \"2h\",\n    status: \"To Do\"\n}));\n\nmsg.payload = resultat;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 440,
-        "y": 280,
-        "wires": []
+        "y": 360,
+        "wires": [
+            [
+                "343ad9e58c44f9d9"
+            ]
+        ]
     },
     {
-        "id": "02668d63bce7fabc",
-        "type": "inject",
+        "id": "42fc3d43830febaa",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "function 2",
+        "func": "if (msg.payload == \"start\") {\n    msg.payload = {\n        groups: {\n            enable: [],\n            disable: [\"Segmentation-2:acquisition-table-segmentation-2\"]\n        }\n    }\n} else if (msg.payload == \"stop\") {\n    msg.payload = {\n        groups: {\n            enable: [\"Segmentation-2:acquisition-table-segmentation-2\"],\n            disable: []\n        }\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 540,
+        "wires": [
+            [
+                "9529b63ced697421"
+            ]
+        ]
+    },
+    {
+        "id": "025e18267bc7995a",
+        "type": "ui-control",
+        "z": "00a14f98244d252e",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 180,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da2a5658f65d64a4",
+        "type": "link in",
+        "z": "00a14f98244d252e",
+        "name": "link in 48",
+        "links": [],
+        "x": 85,
+        "y": 40,
+        "wires": [
+            [
+                "025e18267bc7995a"
+            ]
+        ]
+    },
+    {
+        "id": "c18005dcbaf22026",
+        "type": "switch",
         "z": "00a14f98244d252e",
         "g": "d3d7be8ef5f940c4",
         "name": "",
-        "props": [
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
             {
-                "p": "payload"
+                "t": "eq",
+                "v": "clear",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "clear",
+                "vt": "str"
             }
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[{\"acquisitionID\":\"A01\",\"estimatedTime\":\"2h\",\"status\":\"To Do\"},{\"acquisitionID\":\"A02\",\"estimatedTime\":\"2h\",\"status\":\"To Do\"},{\"acquisitionID\":\"A03\",\"estimatedTime\":\"2h\",\"status\":\"To Do\"},{\"acquisitionID\":\"A04\",\"estimatedTime\":\"2h\",\"status\":\"To Do\"},{\"acquisitionID\":\"A05\",\"estimatedTime\":\"2h\",\"status\":\"To Do\"},{\"acquisitionID\":\"A06\",\"estimatedTime\":\"2h\",\"status\":\"To Do\"}]",
-        "payloadType": "json",
-        "x": 170,
-        "y": 380,
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 520,
+        "wires": [
+            [
+                "a0368732ccfa08d8"
+            ],
+            [
+                "42fc3d43830febaa"
+            ]
+        ]
+    },
+    {
+        "id": "9529b63ced697421",
+        "type": "link out",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "link out 62",
+        "mode": "link",
+        "links": [],
+        "x": 655,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "a0368732ccfa08d8",
+        "type": "link out",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "link out 63",
+        "mode": "link",
+        "links": [
+            "49ea401a0745e446",
+            "4b6824e2ecaa9016"
+        ],
+        "x": 515,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "49ea401a0745e446",
+        "type": "link in",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "link in 49",
+        "links": [
+            "a0368732ccfa08d8",
+            "343ad9e58c44f9d9"
+        ],
+        "x": 205,
+        "y": 460,
         "wires": [
             [
                 "af3cbcd9f5f35be3"
             ]
         ]
+    },
+    {
+        "id": "4b6824e2ecaa9016",
+        "type": "link in",
+        "z": "00a14f98244d252e",
+        "g": "cd7cd2c05c7f55bf",
+        "name": "link in 50",
+        "links": [
+            "a0368732ccfa08d8"
+        ],
+        "x": 205,
+        "y": 360,
+        "wires": [
+            [
+                "d417adf0e2e7759b"
+            ]
+        ]
+    },
+    {
+        "id": "343ad9e58c44f9d9",
+        "type": "link out",
+        "z": "00a14f98244d252e",
+        "g": "cd7cd2c05c7f55bf",
+        "name": "link out 64",
+        "mode": "link",
+        "links": [
+            "49ea401a0745e446"
+        ],
+        "x": 535,
+        "y": 360,
+        "wires": []
     },
     {
         "id": "efadddfd0db47335",
