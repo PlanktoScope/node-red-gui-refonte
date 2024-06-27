@@ -735,7 +735,7 @@
             "6d32866022cd0317"
         ],
         "x": 254,
-        "y": 479,
+        "y": 439,
         "w": 232,
         "h": 82
     },
@@ -753,7 +753,7 @@
             "d70860b76ad6c00f"
         ],
         "x": 254,
-        "y": 579,
+        "y": 539,
         "w": 192,
         "h": 82
     },
@@ -773,7 +773,7 @@
             "0e78c20a20947374"
         ],
         "x": 254,
-        "y": 359,
+        "y": 339,
         "w": 522,
         "h": 82
     },
@@ -2676,14 +2676,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image-multiple\"></span>\n                <p id=\"first-p\">Explore your data</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        handleClick(itemNumber) {\n            this.send({payload: itemNumber});\n        }\n    }\n};\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 3% 12%;\n        grid-template-columns: 2fr 2fr 2.10fr; \n        grid-template-rows: auto;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 0px 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 0px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);\n        transition: transform 0.3s, box-shadow 0.3s;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        transform: translateY(-5px);\n        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);\n    }\n\n    .first-line-container div#size {\n        height: 13vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 4;\n        grid-row: 1 / 2;\n    }\n\n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 3 / 4;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image-multiple\"></span>\n                <p id=\"first-p\">Explore your data</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                this.send({payload: itemNumber});\n            }\n        }\n    };\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 3% 12%;\n        grid-template-columns: 2fr 2fr 2.10fr; \n        grid-template-rows: auto;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 0px 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 0px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);\n        transition: transform 0.3s, box-shadow 0.3s;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        transform: translateY(-5px);\n        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);\n    }\n\n    .first-line-container div#size {\n        height: 13vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 4;\n        grid-row: 1 / 2;\n    }\n\n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 3 / 4;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 360,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "77b032808eca46e4"
@@ -2710,7 +2710,7 @@
         "templateScope": "local",
         "className": "",
         "x": 370,
-        "y": 520,
+        "y": 480,
         "wires": [
             []
         ]
@@ -2752,14 +2752,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"footer-home-container\">\n        <div class=\"footer-home-information-container\">\n            <img src=\"https://upload.wikimedia.org/wikipedia/fr/7/7e/Slack_logo.svg\" alt=\"Logo slack\">\n            <img src=\"https://pngimg.com/uploads/github/github_PNG23.png\" alt=\"Logo github\">\n            <section class=\"section-info-footer\">\n                <img src=\"https://www.fairscope.com/web/image/website/1/logo?unique=cacdc8d\" alt=\"Logo fairscope\">\n            </section>\n            <section class=\"section-info-footer\">\n                <img class=\"purple-filter\" src=\"https://www.fairscope.com/web/image/website/1/logo?unique=cacdc8d\" alt=\"Logo planktoscope\">\n            </section>\n        </div>\n    </div>\n</template>\n\n<style>\n    .footer-home-container {\n        position: fixed;\n        bottom: 0;\n        width: 100%;\n        border-top: 1px solid black;\n    }\n\n    .footer-home-information-container {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    .footer-home-information-container img {\n        height: auto;\n        width: 5vw;\n        margin: 2.5px 30px;\n    }\n\n    .section-info-footer {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    .section-info-footer img {\n        height: auto;\n        width: 5vw;\n        margin: 0 30px;\n    }\n\n    .purple-filter {\n        filter: sepia(1) saturate(4) hue-rotate(270deg) brightness(0.7);\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"footer-home-container\">\n        <div class=\"footer-home-information-container\">\n            <img @click=\"handleClick(1)\" src=\"https://upload.wikimedia.org/wikipedia/fr/7/7e/Slack_logo.svg\" alt=\"Logo slack\">\n            <img @click=\"handleClick(2)\" src=\"https://pngimg.com/uploads/github/github_PNG23.png\" alt=\"Logo github\">\n            <section class=\"section-info-footer\">\n                <img @click=\"handleClick(3)\" src=\"https://www.fairscope.com/web/image/website/1/logo?unique=cacdc8d\" alt=\"Logo fairscope\">\n            </section>\n            <section class=\"section-info-footer\">\n                <img @click=\"handleClick(4)\" class=\"purple-filter\" src=\"https://www.fairscope.com/web/image/website/1/logo?unique=cacdc8d\" alt=\"Logo planktoscope\">\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                if (itemNumber == 1) {\n                    window.open(\n                        \"https://planktoscope.slack.com\",\n                        \"popup\",\n                    );\n                } else if (itemNumber == 2) {\n                    window.open(\n                        \"https://github.com/PlanktoScope\",\n                        \"popup\",\n                    );\n                } else if (itemNumber == 3) {\n                    window.open(\n                        \"https://www.fairscope.com\",\n                        \"popup\",\n                    );\n                } else if (itemNumber == 4) {\n                    window.open(\n                        \"https://www.planktoscope.org\",\n                        \"popup\",\n                    );\n                }\n            }\n        }\n    };\n</script>\n\n<style>\n    .footer-home-container {\n        position: fixed;\n        bottom: 0;\n        width: 100%;\n        border-top: 1px solid black;\n    }\n\n    .footer-home-information-container {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    .footer-home-information-container img {\n        height: auto;\n        width: 5vw;\n        margin: 2.5px 30px;\n    }\n\n    .section-info-footer {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    .section-info-footer img {\n        height: auto;\n        width: 5vw;\n        margin: 0 30px;\n    }\n\n    .purple-filter {\n        filter: sepia(1) saturate(4) hue-rotate(270deg) brightness(0.7);\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 350,
-        "y": 620,
+        "y": 580,
         "wires": [
             []
         ]
@@ -2778,7 +2778,7 @@
         "finalize": "",
         "libs": [],
         "x": 580,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "0e78c20a20947374"
@@ -2796,7 +2796,7 @@
             "2cc4d8075a852a14"
         ],
         "x": 735,
-        "y": 400,
+        "y": 380,
         "wires": []
     },
     {
