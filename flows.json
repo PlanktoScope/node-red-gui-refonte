@@ -96,14 +96,6 @@
         "env": []
     },
     {
-        "id": "baa32993a85e12ca",
-        "type": "tab",
-        "label": "Plot Page",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "78cb5158be62cbf7",
         "type": "group",
         "z": "fb15c917381dd273",
@@ -281,7 +273,7 @@
         "x": 284,
         "y": 159,
         "w": 802,
-        "h": 162
+        "h": 222
     },
     {
         "id": "8542f90dc5f7a87c",
@@ -1673,7 +1665,9 @@
             "82f782054187a6a8",
             "a25d7b80746001e3",
             "d130bfaef3e31cc2",
-            "bf749fe8fc0c69e3"
+            "bf749fe8fc0c69e3",
+            "900bcbc7a7ea8e8d",
+            "18557cb938c26901"
         ],
         "x": 175,
         "y": 100,
@@ -1716,7 +1710,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
+        "x": 450,
         "y": 200,
         "wires": [
             [
@@ -1790,7 +1784,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 890,
+        "x": 870,
         "y": 200,
         "wires": []
     },
@@ -1819,7 +1813,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 260,
-        "y": 420,
+        "y": 540,
         "wires": [
             [],
             []
@@ -1843,7 +1837,7 @@
         "payload": "",
         "payloadType": "str",
         "x": 90,
-        "y": 420,
+        "y": 540,
         "wires": [
             [
                 "6a5d78b1bdbbd9da",
@@ -1877,7 +1871,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 680,
-        "y": 280,
+        "y": 340,
         "wires": [
             [
                 "cef686ed8e156c03"
@@ -1905,8 +1899,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 280,
+        "x": 450,
+        "y": 340,
         "wires": [
             [
                 "931e4aba3ed98eab"
@@ -1928,7 +1922,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 930,
-        "y": 280,
+        "y": 340,
         "wires": []
     },
     {
@@ -1956,11 +1950,106 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 280,
-        "y": 460,
+        "y": 580,
         "wires": [
             [],
             []
         ]
+    },
+    {
+        "id": "ba2c8b29b89da0f2",
+        "type": "exec",
+        "z": "2d41a8ed5aea3449",
+        "command": "pip install -r /home/pi/Visualization-plot/requirements.txt",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 400,
+        "y": 720,
+        "wires": [
+            [
+                "adba3d76093b90b5",
+                "d1b174f3a21fd9cc"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "adba3d76093b90b5",
+        "type": "debug",
+        "z": "2d41a8ed5aea3449",
+        "name": "debug 28",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "d1b174f3a21fd9cc",
+        "type": "exec",
+        "z": "2d41a8ed5aea3449",
+        "command": "python /home/pi/Visualization-plot/controller.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 820,
+        "y": 720,
+        "wires": [
+            [
+                "6bade76e305b0cc7"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "18557cb938c26901",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "name": "link in 52",
+        "links": [
+            "97790217bf3c2c85"
+        ],
+        "x": 165,
+        "y": 720,
+        "wires": [
+            [
+                "ba2c8b29b89da0f2"
+            ]
+        ]
+    },
+    {
+        "id": "6bade76e305b0cc7",
+        "type": "debug",
+        "z": "2d41a8ed5aea3449",
+        "name": "Controller.py OUTPUT",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 660,
+        "wires": []
     },
     {
         "id": "db628ba400a981fc",
@@ -5540,7 +5629,7 @@
     {
         "id": "019af3477dfde6a9",
         "type": "ui-template",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "group": "3e24a8d86ead8f60",
         "page": "",
         "ui": "",
@@ -5555,8 +5644,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 500,
-        "y": 140,
+        "x": 460,
+        "y": 440,
         "wires": [
             [
                 "4a6f58753de8e37a",
@@ -5567,7 +5656,7 @@
     {
         "id": "746eaecb865b41db",
         "type": "inject",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "inject text",
         "props": [
             {
@@ -5581,8 +5670,8 @@
         "topic": "",
         "payload": "[{\"type\":\"text\",\"content\":\"inject\"}]",
         "payloadType": "json",
-        "x": 160,
-        "y": 60,
+        "x": 120,
+        "y": 360,
         "wires": [
             [
                 "019af3477dfde6a9"
@@ -5592,7 +5681,7 @@
     {
         "id": "7fa2bcc98f3d3fe3",
         "type": "inject",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "inject iframe",
         "props": [
             {
@@ -5606,8 +5695,8 @@
         "topic": "",
         "payload": "{\"command\":\"add iframe\",\"src\":\"https://www.example.com\"}",
         "payloadType": "json",
-        "x": 170,
-        "y": 120,
+        "x": 130,
+        "y": 420,
         "wires": [
             [
                 "019af3477dfde6a9"
@@ -5617,7 +5706,7 @@
     {
         "id": "55fceabb714eaaef",
         "type": "inject",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "remove iframe",
         "props": [
             {
@@ -5631,8 +5720,8 @@
         "topic": "",
         "payload": "{\"command\":\"removeIframe\",\"src\": \"https://www.example.com\"}",
         "payloadType": "json",
-        "x": 170,
-        "y": 200,
+        "x": 130,
+        "y": 500,
         "wires": [
             [
                 "019af3477dfde6a9"
@@ -5642,7 +5731,7 @@
     {
         "id": "8eab2951a36237e4",
         "type": "inject",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "metadata",
         "props": [
             {
@@ -5656,8 +5745,8 @@
         "topic": "",
         "payload": "{\"command\":\"add metadata\",\"metadata\":[\"X\",\"Y\"]}",
         "payloadType": "json",
-        "x": 160,
-        "y": 260,
+        "x": 120,
+        "y": 560,
         "wires": [
             [
                 "019af3477dfde6a9"
@@ -5667,7 +5756,7 @@
     {
         "id": "4a6f58753de8e37a",
         "type": "debug",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "vizualisation/commands",
         "active": true,
         "tosidebar": true,
@@ -5677,14 +5766,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
-        "y": 120,
+        "x": 730,
+        "y": 420,
         "wires": []
     },
     {
         "id": "4f7542d8f7329158",
         "type": "mqtt in",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "",
         "topic": "visualization/chartPage",
         "qos": "2",
@@ -5694,8 +5783,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 320,
+        "x": 140,
+        "y": 620,
         "wires": [
             [
                 "019af3477dfde6a9",
@@ -5706,7 +5795,7 @@
     {
         "id": "5fe96956d7f339e3",
         "type": "mqtt out",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "",
         "topic": "visualization/commands",
         "qos": "",
@@ -5717,14 +5806,14 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 770,
-        "y": 160,
+        "x": 730,
+        "y": 460,
         "wires": []
     },
     {
         "id": "5dcb0d923705c9c8",
         "type": "debug",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "vizualisation/chartPage",
         "active": true,
         "tosidebar": true,
@@ -5734,14 +5823,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 300,
+        "x": 470,
+        "y": 600,
         "wires": []
     },
     {
         "id": "b53fa58bab471031",
         "type": "inject",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "run at start and repeat",
         "props": [],
         "repeat": "5",
@@ -5749,8 +5838,8 @@
         "once": true,
         "onceDelay": "0.5",
         "topic": "",
-        "x": 190,
-        "y": 460,
+        "x": 150,
+        "y": 760,
         "wires": [
             [
                 "c3bad434668c251d"
@@ -5760,7 +5849,7 @@
     {
         "id": "7d3e19376f4b262e",
         "type": "debug",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "debug 11",
         "active": false,
         "tosidebar": true,
@@ -5770,14 +5859,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 400,
+        "x": 520,
+        "y": 700,
         "wires": []
     },
     {
         "id": "e4c5ac606ec6a5db",
         "type": "ui-dropdown",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "group": "8a90010318b784c1",
         "name": "Data Selection",
         "label": "Data Selection",
@@ -5794,8 +5883,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 580,
-        "y": 460,
+        "x": 540,
+        "y": 760,
         "wires": [
             [
                 "31c64932cdfdfdbc",
@@ -5806,7 +5895,7 @@
     {
         "id": "31c64932cdfdfdbc",
         "type": "debug",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "debug 14",
         "active": false,
         "tosidebar": true,
@@ -5816,14 +5905,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 920,
-        "y": 380,
+        "x": 880,
+        "y": 680,
         "wires": []
     },
     {
         "id": "19dbf1af317825a6",
         "type": "change",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "",
         "rules": [
             {
@@ -5839,8 +5928,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
-        "y": 500,
+        "x": 910,
+        "y": 800,
         "wires": [
             [
                 "00cbf4bcc851b630",
@@ -5851,7 +5940,7 @@
     {
         "id": "00cbf4bcc851b630",
         "type": "mqtt out",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "",
         "topic": "visualization/commands",
         "qos": "",
@@ -5862,14 +5951,14 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1190,
-        "y": 500,
+        "x": 1150,
+        "y": 800,
         "wires": []
     },
     {
         "id": "ab7b3fe8779c3f70",
         "type": "join",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "",
         "mode": "custom",
         "build": "string",
@@ -5886,8 +5975,8 @@
         "reduceInit": "",
         "reduceInitType": "num",
         "reduceFixup": "",
-        "x": 770,
-        "y": 500,
+        "x": 730,
+        "y": 800,
         "wires": [
             [
                 "19dbf1af317825a6"
@@ -5897,7 +5986,7 @@
     {
         "id": "7eb37a75f138d6c6",
         "type": "ui-button",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "group": "8a90010318b784c1",
         "name": "",
         "label": "Depploy dataframe",
@@ -5915,8 +6004,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 290,
-        "y": 540,
+        "x": 250,
+        "y": 840,
         "wires": [
             [
                 "c57055b8cd4e52fd"
@@ -5926,7 +6015,7 @@
     {
         "id": "c57055b8cd4e52fd",
         "type": "change",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "",
         "rules": [
             {
@@ -5947,8 +6036,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
-        "y": 540,
+        "x": 520,
+        "y": 840,
         "wires": [
             [
                 "ab7b3fe8779c3f70"
@@ -5958,7 +6047,7 @@
     {
         "id": "3306e8caa0e2da47",
         "type": "debug",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "debug 27",
         "active": true,
         "tosidebar": true,
@@ -5967,14 +6056,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1140,
-        "y": 440,
+        "x": 1100,
+        "y": 740,
         "wires": []
     },
     {
         "id": "f2d1842e885a21bb",
         "type": "ui-text",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "group": "8a90010318b784c1",
         "order": 2,
         "width": "4",
@@ -5988,14 +6077,14 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 550,
-        "y": 700,
+        "x": 510,
+        "y": 1000,
         "wires": []
     },
     {
         "id": "ccebd34141f2cdc9",
         "type": "mqtt in",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "",
         "topic": "visualization/numberOfObject",
         "qos": "2",
@@ -6005,8 +6094,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 220,
-        "y": 700,
+        "x": 180,
+        "y": 1000,
         "wires": [
             [
                 "f2d1842e885a21bb",
@@ -6017,7 +6106,7 @@
     {
         "id": "73f7adc9de7be54d",
         "type": "debug",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "number of object",
         "active": true,
         "tosidebar": true,
@@ -6027,14 +6116,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
-        "y": 660,
+        "x": 510,
+        "y": 960,
         "wires": []
     },
     {
         "id": "a6214240165a32e6",
         "type": "inject",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "",
         "props": [
             {
@@ -6048,8 +6137,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "str",
-        "x": 370,
-        "y": 760,
+        "x": 330,
+        "y": 1060,
         "wires": [
             [
                 "f2d1842e885a21bb"
@@ -6059,9 +6148,9 @@
     {
         "id": "c3bad434668c251d",
         "type": "function",
-        "z": "baa32993a85e12ca",
+        "z": "f260ed9417849607",
         "name": "Find .tsv file",
-        "func": "\nconst directory = \"C:/Users/loicv/.node-red/data\";\n\nfs.readdir(directory, (err, files) => {\n    if (err) {\n        node.error('Unable to scan directory: ' + err);\n        return;\n    }\n\n    msg.options = [];\n    \n    files.forEach(filename => {\n        if (filename.endsWith(\".tsv\")) {\n            msg.options.push({\n                value: path.join(directory, filename),\n                label: filename\n            });\n        }\n    });\n\n    node.send(msg);\n});\n",
+        "func": "\nconst directory = \"/home/pi/data/objects/2024-06-20/Tf-°mfe_1/Tf-°mfe_1_1/\";\n\nfs.readdir(directory, (err, files) => {\n    if (err) {\n        node.error('Unable to scan directory: ' + err);\n        return;\n    }\n\n    msg.options = [];\n    \n    files.forEach(filename => {\n        if (filename.endsWith(\".tsv\")) {\n            msg.options.push({\n                value: path.join(directory, filename),\n                label: filename\n            });\n        }\n    });\n\n    node.send(msg);\n});\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6077,8 +6166,8 @@
                 "module": "path"
             }
         ],
-        "x": 410,
-        "y": 460,
+        "x": 370,
+        "y": 760,
         "wires": [
             [
                 "7d3e19376f4b262e",
