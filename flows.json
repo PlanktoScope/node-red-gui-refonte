@@ -96,6 +96,14 @@
         "env": []
     },
     {
+        "id": "baa32993a85e12ca",
+        "type": "tab",
+        "label": "Plot Page",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "78cb5158be62cbf7",
         "type": "group",
         "z": "fb15c917381dd273",
@@ -1489,6 +1497,81 @@
         "width": "12",
         "height": "1",
         "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a973d821cae4ecce",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e9df991e202040bd",
+        "type": "ui-theme",
+        "name": "Default",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "8a90010318b784c1",
+        "type": "ui-group",
+        "name": "prepare-bare",
+        "page": "662357e16a28be28",
+        "width": "12",
+        "height": "1",
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "3e24a8d86ead8f60",
+        "type": "ui-group",
+        "name": "chart-section",
+        "page": "662357e16a28be28",
+        "width": "12",
+        "height": "1",
+        "order": 3,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -5452,6 +5535,555 @@
         "y": 180,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "019af3477dfde6a9",
+        "type": "ui-template",
+        "z": "baa32993a85e12ca",
+        "group": "3e24a8d86ead8f60",
+        "page": "",
+        "ui": "",
+        "name": "Chart Section",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div>\n        <div class=\"grid-container\">\n            <div v-for=\"(row, rowIndex) in gridDataWithAddButton\" :key=\"rowIndex\" class=\"grid-row\">\n                <div v-for=\"(cell, colIndex) in row\" :key=\"colIndex\" class=\"grid-cell\">\n                    <template v-if=\"cell.type === 'text'\">\n                        {{ cell.content }}\n                    </template>\n                    <template v-else-if=\"cell.type === 'iframe'\">\n                        <iframe :src=\"cell.src\" width=\"100%\" height=\"300\" frameborder=\"0\"></iframe>\n                    </template>\n                    <template v-else-if=\"cell.type === 'chartForm'\">\n                        <div class=\"addChartForm\">\n                            <v-list class=\"chartTypeList\">\n                                <v-list-item\n                                    v-for=\"item in items\"\n                                    :key=\"item.value\"\n                                    @click=\"selectChartType(item)\"\n                                    :class=\"{'selected': selectedItemType === item.value}\"\n                                >\n                                    <v-list-item-title>{{ item.title }}</v-list-item-title>\n                                </v-list-item>\n                            </v-list>\n                            <div class=\"selectXY\" v-show=\"selectedItemType === 'scatter'\">\n                                <v-combobox v-model=\"selectedX\" label=\"Select X\" :items=\"selectedMetaData\"></v-combobox>\n                                <v-combobox v-model=\"selectedY\" label=\"Select Y\" :items=\"selectedMetaData\"></v-combobox>\n                            </div>\n                            <div class=\"selectXY\" v-show=\"selectedItemType === 'hist'\">\n                                <v-combobox v-model=\"selectedX\" label=\"Select X\" :items=\"selectedMetaData\"></v-combobox>\n                            </div>\n                            <v-btn class=\"validateButton\" text @click=\"addChart\" :disabled=\"!isFormComplete\">Ok</v-btn>\n                        </div>\n                    </template>\n                </div>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            gridData: [],\n            items: [\n                { title: 'Scatter Plot', value: 'scatter' },\n                { title: 'Hist Plot', value: 'hist' },\n            ],\n            selectedMetaData: [],\n            selectedX: null,\n            selectedY: null,\n            selectedItemType: null,\n        };\n    },\n    mounted() {\n        // Écoute des mises à jour du message entrant depuis Node-RED\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n                if (msg.payload.command === 'add iframe' && msg.payload.src) {\n                    // Ajout d'une iframe\n                    this.addIframe(msg.payload.src);\n                } else if (msg.payload.command === 'remove iframe' && msg.payload.src) {\n                    // Suppression de l'iframe avec la source spécifiée\n                    this.removeIframe(msg.payload.src);\n                } else if(msg.payload.command==='add metadata'&& msg.payload.metadata){\n                    this.selectedMetaData=msg.payload.metadata;\n                }\n            }\n        });\n    },\n    computed: {\n        gridDataWithAddButton() {\n            // Retourner les données de la grille avec une cellule supplémentaire pour le formulaire d'ajout de graphique\n            let dataWithButton = JSON.parse(JSON.stringify(this.gridData));\n            let lastRow = dataWithButton[dataWithButton.length - 1];\n            if (!lastRow || lastRow.length === 3) {\n                dataWithButton.push([{ type: 'chartForm' }]);\n            } else {\n                lastRow.push({ type: 'chartForm' });\n            }\n            return dataWithButton;\n        },\n        isFormComplete() {\n            if (this.selectedItemType === 'scatter') {\n                return this.selectedX && this.selectedY;\n            }\n            if (this.selectedItemType === 'hist') {\n                return this.selectedX;\n            }\n            return false;\n        }\n    },\n    methods: {\n        addRow() {\n            // Ajouter une nouvelle ligne vide\n            this.gridData.push([]);\n        },\n        addChart() {\n            // Ajouter un nouveau graphique dans la dernière ligne\n            let selectedTitle = '';\n            let newChart={};\n            if (this.selectedItemType === 'scatter') {\n                selectedTitle = 'Scatter Plot';\n                newChart = {\n                    command: 'create ' + this.selectedItemType + ' plot',\n                    args:[\n                        this.selectedX,\n                        this.selectedY\n                    ]\n                };\n            } else if (this.selectedItemType === 'hist') {\n                selectedTitle = 'Hist Plot';\n                newChart = {\n                    command: 'create ' + this.selectedItemType + ' plot',\n                    args:[\n                        this.selectedX,\n                    ]\n                };\n            }\n\n            this.send({ payload: newChart });\n\n            // Réinitialiser le formulaire\n            this.selectedItemType = null;\n            this.selectedX = null;\n            this.selectedY = null;\n        },\n        addIframe(src) {\n            // Ajouter une iframe à la grille\n            const newIframe = {\n                type: 'iframe',\n                src: src\n            };\n\n            let lastRow = this.gridData[this.gridData.length - 1];\n            if (!lastRow || lastRow.length === 3) {\n                // Ajouter une nouvelle ligne si la ligne courante est pleine ou n'existe pas\n                this.gridData.push([newIframe]);\n            } else {\n                // Ajouter l'iframe à la ligne courante\n                lastRow.push(newIframe);\n            }\n        },\n        removeIframe(src) {\n            // Recherche et suppression de la cellule contenant l'iframe avec la source spécifiée\n            this.gridData = this.gridData.map(row =>\n                row.filter(cell => !(cell.type === 'iframe' && cell.src === src))\n            ).filter(row => row.length > 0);\n        },\n        selectChartType(item) {\n            this.selectedItemType = item.value;\n        },\n    }\n};\n</script>\n\n<style scoped>\n    .grid-container {\n        display: grid;\n        grid-template-columns: repeat(3, 1fr);\n        gap: 10px;\n    }\n\n    .grid-row {\n        display: contents;\n    }\n\n    .grid-cell {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        height: 500px;\n        padding: 10px;\n        background-color: #f0f0f0;\n        border-radius: 10px;\n        text-align: center;\n    }\n\n    .addChartForm {\n        width: 100%;\n    }\n\n    .chartTypeList {\n        width: 100%;\n        padding: 10px;\n    }\n\n    .selected {\n        background-color: #0077ff;\n        border-radius: 8px;\n        color: white;\n    }\n\n    .selectXY {\n        width: 100%;\n        padding: 10px;\n    }\n\n    .validateButton {\n        margin-top: 10px;\n    }\n\n    iframe {\n        width: 100%;\n        height: 100%;\n        border: none;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "4a6f58753de8e37a",
+                "5fe96956d7f339e3"
+            ]
+        ]
+    },
+    {
+        "id": "746eaecb865b41db",
+        "type": "inject",
+        "z": "baa32993a85e12ca",
+        "name": "inject text",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"type\":\"text\",\"content\":\"inject\"}]",
+        "payloadType": "json",
+        "x": 160,
+        "y": 60,
+        "wires": [
+            [
+                "019af3477dfde6a9"
+            ]
+        ]
+    },
+    {
+        "id": "7fa2bcc98f3d3fe3",
+        "type": "inject",
+        "z": "baa32993a85e12ca",
+        "name": "inject iframe",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"command\":\"add iframe\",\"src\":\"https://www.example.com\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "019af3477dfde6a9"
+            ]
+        ]
+    },
+    {
+        "id": "55fceabb714eaaef",
+        "type": "inject",
+        "z": "baa32993a85e12ca",
+        "name": "remove iframe",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"command\":\"removeIframe\",\"src\": \"https://www.example.com\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "019af3477dfde6a9"
+            ]
+        ]
+    },
+    {
+        "id": "8eab2951a36237e4",
+        "type": "inject",
+        "z": "baa32993a85e12ca",
+        "name": "metadata",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"command\":\"add metadata\",\"metadata\":[\"X\",\"Y\"]}",
+        "payloadType": "json",
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "019af3477dfde6a9"
+            ]
+        ]
+    },
+    {
+        "id": "4a6f58753de8e37a",
+        "type": "debug",
+        "z": "baa32993a85e12ca",
+        "name": "vizualisation/commands",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4f7542d8f7329158",
+        "type": "mqtt in",
+        "z": "baa32993a85e12ca",
+        "name": "",
+        "topic": "visualization/chartPage",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 320,
+        "wires": [
+            [
+                "019af3477dfde6a9",
+                "5dcb0d923705c9c8"
+            ]
+        ]
+    },
+    {
+        "id": "5fe96956d7f339e3",
+        "type": "mqtt out",
+        "z": "baa32993a85e12ca",
+        "name": "",
+        "topic": "visualization/commands",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 770,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5dcb0d923705c9c8",
+        "type": "debug",
+        "z": "baa32993a85e12ca",
+        "name": "vizualisation/chartPage",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b53fa58bab471031",
+        "type": "inject",
+        "z": "baa32993a85e12ca",
+        "name": "run at start and repeat",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "x": 190,
+        "y": 460,
+        "wires": [
+            [
+                "c3bad434668c251d"
+            ]
+        ]
+    },
+    {
+        "id": "7d3e19376f4b262e",
+        "type": "debug",
+        "z": "baa32993a85e12ca",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "e4c5ac606ec6a5db",
+        "type": "ui-dropdown",
+        "z": "baa32993a85e12ca",
+        "group": "8a90010318b784c1",
+        "name": "Data Selection",
+        "label": "Data Selection",
+        "tooltip": "",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 580,
+        "y": 460,
+        "wires": [
+            [
+                "31c64932cdfdfdbc",
+                "ab7b3fe8779c3f70"
+            ]
+        ]
+    },
+    {
+        "id": "31c64932cdfdfdbc",
+        "type": "debug",
+        "z": "baa32993a85e12ca",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "19dbf1af317825a6",
+        "type": "change",
+        "z": "baa32993a85e12ca",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"command\":\"load dataframe\",\"args\": [msg.payload]}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 500,
+        "wires": [
+            [
+                "00cbf4bcc851b630",
+                "3306e8caa0e2da47"
+            ]
+        ]
+    },
+    {
+        "id": "00cbf4bcc851b630",
+        "type": "mqtt out",
+        "z": "baa32993a85e12ca",
+        "name": "",
+        "topic": "visualization/commands",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 1190,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "ab7b3fe8779c3f70",
+        "type": "join",
+        "z": "baa32993a85e12ca",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": " ",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 770,
+        "y": 500,
+        "wires": [
+            [
+                "19dbf1af317825a6"
+            ]
+        ]
+    },
+    {
+        "id": "7eb37a75f138d6c6",
+        "type": "ui-button",
+        "z": "baa32993a85e12ca",
+        "group": "8a90010318b784c1",
+        "name": "",
+        "label": "Depploy dataframe",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "c57055b8cd4e52fd"
+            ]
+        ]
+    },
+    {
+        "id": "c57055b8cd4e52fd",
+        "type": "change",
+        "z": "baa32993a85e12ca",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 540,
+        "wires": [
+            [
+                "ab7b3fe8779c3f70"
+            ]
+        ]
+    },
+    {
+        "id": "3306e8caa0e2da47",
+        "type": "debug",
+        "z": "baa32993a85e12ca",
+        "name": "debug 27",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f2d1842e885a21bb",
+        "type": "ui-text",
+        "z": "baa32993a85e12ca",
+        "group": "8a90010318b784c1",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "name": "Number of object",
+        "label": "Number of object : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 550,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ccebd34141f2cdc9",
+        "type": "mqtt in",
+        "z": "baa32993a85e12ca",
+        "name": "",
+        "topic": "visualization/numberOfObject",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 700,
+        "wires": [
+            [
+                "f2d1842e885a21bb",
+                "73f7adc9de7be54d"
+            ]
+        ]
+    },
+    {
+        "id": "73f7adc9de7be54d",
+        "type": "debug",
+        "z": "baa32993a85e12ca",
+        "name": "number of object",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "a6214240165a32e6",
+        "type": "inject",
+        "z": "baa32993a85e12ca",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 370,
+        "y": 760,
+        "wires": [
+            [
+                "f2d1842e885a21bb"
+            ]
+        ]
+    },
+    {
+        "id": "c3bad434668c251d",
+        "type": "function",
+        "z": "baa32993a85e12ca",
+        "name": "Find .tsv file",
+        "func": "\nconst directory = \"C:/Users/loicv/.node-red/data\";\n\nfs.readdir(directory, (err, files) => {\n    if (err) {\n        node.error('Unable to scan directory: ' + err);\n        return;\n    }\n\n    msg.options = [];\n    \n    files.forEach(filename => {\n        if (filename.endsWith(\".tsv\")) {\n            msg.options.push({\n                value: path.join(directory, filename),\n                label: filename\n            });\n        }\n    });\n\n    node.send(msg);\n});\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "path",
+                "module": "path"
+            }
+        ],
+        "x": 410,
+        "y": 460,
+        "wires": [
+            [
+                "7d3e19376f4b262e",
+                "e4c5ac606ec6a5db"
+            ]
         ]
     }
 ]
