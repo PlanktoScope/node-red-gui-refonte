@@ -810,10 +810,110 @@
             "d59f4d5d0eee9d10",
             "fb75e319685b7992"
         ],
-        "x": 274,
+        "x": 54,
         "y": 139,
         "w": 612,
         "h": 162
+    },
+    {
+        "id": "1ed0d4a04eb675ba",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "g": "0d384e544ffce204",
+        "name": "Select DataSet Dropdown",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b53fa58bab471031",
+            "7d3e19376f4b262e",
+            "e4c5ac606ec6a5db",
+            "31c64932cdfdfdbc",
+            "19dbf1af317825a6",
+            "00cbf4bcc851b630",
+            "ab7b3fe8779c3f70",
+            "7eb37a75f138d6c6",
+            "c57055b8cd4e52fd",
+            "3306e8caa0e2da47",
+            "c3bad434668c251d"
+        ],
+        "x": 54,
+        "y": 359,
+        "w": 1292,
+        "h": 222
+    },
+    {
+        "id": "856d9c3d6ae49cc6",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "name": "Chart Section",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000",
+            "fill": "#ffefbf",
+            "fill-opacity": "0.43"
+        },
+        "nodes": [
+            "019af3477dfde6a9",
+            "746eaecb865b41db",
+            "7fa2bcc98f3d3fe3",
+            "55fceabb714eaaef",
+            "8eab2951a36237e4",
+            "4a6f58753de8e37a",
+            "4f7542d8f7329158",
+            "5fe96956d7f339e3",
+            "5dcb0d923705c9c8"
+        ],
+        "x": 34,
+        "y": 879,
+        "w": 872,
+        "h": 342
+    },
+    {
+        "id": "0ae7386dfdd66509",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "g": "0d384e544ffce204",
+        "name": "Number Of Objects",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f2d1842e885a21bb",
+            "ccebd34141f2cdc9",
+            "73f7adc9de7be54d",
+            "a6214240165a32e6"
+        ],
+        "x": 54,
+        "y": 619,
+        "w": 612,
+        "h": 182
+    },
+    {
+        "id": "0d384e544ffce204",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "name": "Top Page",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "label": true,
+            "color": "#000000",
+            "fill-opacity": "0.45"
+        },
+        "nodes": [
+            "1ed0d4a04eb675ba",
+            "0ae7386dfdd66509"
+        ],
+        "x": 28,
+        "y": 333,
+        "w": 1344,
+        "h": 494
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -1012,7 +1112,6 @@
             "ui-control"
         ],
         "showPathInSidebar": false,
-        "showPageTitle": true,
         "navigationStyle": "none",
         "titleBarStyle": "hidden"
     },
@@ -1378,31 +1477,6 @@
         "disabled": "false"
     },
     {
-        "id": "3da386409fa03189",
-        "type": "persistent values config",
-        "name": "DATA",
-        "values": [
-            {
-                "id": "a820b210-1122-11ef-859a-e74349e74cab",
-                "name": "first-visit",
-                "datatype": "bool",
-                "default": true,
-                "description": "First visit of the user on the PlanktoScope",
-                "scope": "global",
-                "storage": "default"
-            },
-            {
-                "id": "1e747130-1d0e-11ef-8a67-d1728875f042",
-                "name": "coord-format",
-                "datatype": "str",
-                "default": "Decimal degrees (DD)",
-                "description": "Format of coordonates",
-                "scope": "global",
-                "storage": "default"
-            }
-        ]
-    },
-    {
         "id": "fe5ac81b9b90bbe8",
         "type": "ui-group",
         "name": "header-home",
@@ -1568,6 +1642,31 @@
         "className": "",
         "visible": "true",
         "disabled": "false"
+    },
+    {
+        "id": "3da386409fa03189",
+        "type": "persistent values config",
+        "name": "DATA",
+        "values": [
+            {
+                "id": "a820b210-1122-11ef-859a-e74349e74cab",
+                "name": "first-visit",
+                "datatype": "bool",
+                "default": true,
+                "description": "First visit of the user on the PlanktoScope",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "1e747130-1d0e-11ef-8a67-d1728875f042",
+                "name": "coord-format",
+                "datatype": "str",
+                "default": "Decimal degrees (DD)",
+                "description": "Format of coordonates",
+                "scope": "global",
+                "storage": "default"
+            }
+        ]
     },
     {
         "id": "ab7abe42214339fd",
@@ -1737,40 +1836,6 @@
         ]
     },
     {
-        "id": "26ef12e53ec2958f",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "96bb330907da5bdb",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
-        "value": "first-visit",
-        "command": "read",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 660,
-        "y": 200,
-        "wires": [
-            [
-                "85d18d7f5d8af6b8"
-            ],
-            []
-        ]
-    },
-    {
         "id": "85d18d7f5d8af6b8",
         "type": "debug",
         "z": "2d41a8ed5aea3449",
@@ -1787,37 +1852,6 @@
         "x": 870,
         "y": 200,
         "wires": []
-    },
-    {
-        "id": "6a5d78b1bdbbd9da",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
-        "value": "first-visit",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 260,
-        "y": 540,
-        "wires": [
-            [],
-            []
-        ]
     },
     {
         "id": "9a59e8d02ffe1f9b",
@@ -1843,40 +1877,6 @@
                 "6a5d78b1bdbbd9da",
                 "4469155952188120"
             ]
-        ]
-    },
-    {
-        "id": "931e4aba3ed98eab",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "96bb330907da5bdb",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
-        "command": "read",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 680,
-        "y": 340,
-        "wires": [
-            [
-                "cef686ed8e156c03"
-            ],
-            []
         ]
     },
     {
@@ -1926,40 +1926,10 @@
         "wires": []
     },
     {
-        "id": "4469155952188120",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 280,
-        "y": 580,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
         "id": "ba2c8b29b89da0f2",
         "type": "exec",
         "z": "2d41a8ed5aea3449",
+        "d": true,
         "command": "pip install -r /home/pi/Visualization-plot/requirements.txt",
         "addpay": "",
         "append": "",
@@ -2000,6 +1970,7 @@
         "id": "d1b174f3a21fd9cc",
         "type": "exec",
         "z": "2d41a8ed5aea3449",
+        "d": true,
         "command": "python /home/pi/Visualization-plot/controller.py",
         "addpay": "",
         "append": "",
@@ -2050,6 +2021,136 @@
         "x": 980,
         "y": 660,
         "wires": []
+    },
+    {
+        "id": "26ef12e53ec2958f",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 660,
+        "y": 200,
+        "wires": [
+            [
+                "85d18d7f5d8af6b8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6a5d78b1bdbbd9da",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 280,
+        "y": 520,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "931e4aba3ed98eab",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 680,
+        "y": 340,
+        "wires": [
+            [
+                "cef686ed8e156c03"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4469155952188120",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 300,
+        "y": 580,
+        "wires": [
+            [],
+            []
+        ]
     },
     {
         "id": "db628ba400a981fc",
@@ -2595,39 +2696,6 @@
         ]
     },
     {
-        "id": "360917da5f1a9e18",
-        "type": "persistent value",
-        "z": "fb15c917381dd273",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
-        "value": "first-visit",
-        "command": "read",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 300,
-        "y": 140,
-        "wires": [
-            [
-                "638b0a62601acf8b"
-            ],
-            []
-        ]
-    },
-    {
         "id": "638b0a62601acf8b",
         "type": "switch",
         "z": "fb15c917381dd273",
@@ -2689,40 +2757,6 @@
         "x": 795,
         "y": 140,
         "wires": []
-    },
-    {
-        "id": "06d866cd016cb6eb",
-        "type": "persistent value",
-        "z": "fb15c917381dd273",
-        "g": "b49d5419b808ad28",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Config 0",
-        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
-        "value": "first-visit",
-        "command": "write",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 680,
-        "wires": [
-            [
-                "07e57705d69196a0"
-            ],
-            []
-        ]
     },
     {
         "id": "07e57705d69196a0",
@@ -2789,6 +2823,73 @@
             [
                 "360917da5f1a9e18"
             ]
+        ]
+    },
+    {
+        "id": "360917da5f1a9e18",
+        "type": "persistent value",
+        "z": "fb15c917381dd273",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "638b0a62601acf8b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "06d866cd016cb6eb",
+        "type": "persistent value",
+        "z": "fb15c917381dd273",
+        "g": "b49d5419b808ad28",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Config 0",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 790,
+        "y": 680,
+        "wires": [
+            [
+                "07e57705d69196a0"
+            ],
+            []
         ]
     },
     {
@@ -3564,39 +3665,6 @@
         ]
     },
     {
-        "id": "bf31c62fba21e7bb",
-        "type": "persistent value",
-        "z": "e988301e60e4b458",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
-        "command": "read",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 280,
-        "y": 40,
-        "wires": [
-            [
-                "764bf644172419d4"
-            ],
-            []
-        ]
-    },
-    {
         "id": "764bf644172419d4",
         "type": "link out",
         "z": "e988301e60e4b458",
@@ -3891,6 +3959,39 @@
         "x": 350,
         "y": 1220,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf31c62fba21e7bb",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "764bf644172419d4"
+            ],
             []
         ]
     },
@@ -5362,6 +5463,31 @@
         "wires": []
     },
     {
+        "id": "26678c92f2cd2bb3",
+        "type": "inject",
+        "z": "5047c566973ee3a1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "8aa722392db95966"
+            ]
+        ]
+    },
+    {
         "id": "16f21cf602d3f6e9",
         "type": "persistent value",
         "z": "5047c566973ee3a1",
@@ -5426,31 +5552,6 @@
         ]
     },
     {
-        "id": "26678c92f2cd2bb3",
-        "type": "inject",
-        "z": "5047c566973ee3a1",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 110,
-        "y": 260,
-        "wires": [
-            [
-                "8aa722392db95966"
-            ]
-        ]
-    },
-    {
         "id": "107c602539a8cf19",
         "type": "ui-control",
         "z": "f260ed9417849607",
@@ -5496,7 +5597,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 350,
+        "x": 130,
         "y": 180,
         "wires": [
             [
@@ -5523,7 +5624,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 360,
+        "x": 140,
         "y": 220,
         "wires": [
             [
@@ -5550,7 +5651,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 370,
+        "x": 150,
         "y": 260,
         "wires": [
             []
@@ -5564,7 +5665,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 800,
+        "x": 580,
         "y": 220,
         "wires": [
             []
@@ -5583,7 +5684,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
+        "x": 360,
         "y": 220,
         "wires": [
             [
@@ -5604,7 +5705,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
+        "x": 340,
         "y": 180,
         "wires": [
             [
@@ -5620,7 +5721,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 780,
+        "x": 560,
         "y": 180,
         "wires": [
             []
@@ -5630,6 +5731,7 @@
         "id": "019af3477dfde6a9",
         "type": "ui-template",
         "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
         "group": "3e24a8d86ead8f60",
         "page": "",
         "ui": "",
@@ -5638,14 +5740,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div>\n        <div class=\"grid-container\">\n            <div v-for=\"(row, rowIndex) in gridDataWithAddButton\" :key=\"rowIndex\" class=\"grid-row\">\n                <div v-for=\"(cell, colIndex) in row\" :key=\"colIndex\" class=\"grid-cell\">\n                    <template v-if=\"cell.type === 'text'\">\n                        {{ cell.content }}\n                    </template>\n                    <template v-else-if=\"cell.type === 'iframe'\">\n                        <iframe :src=\"cell.src\" width=\"100%\" height=\"300\" frameborder=\"0\"></iframe>\n                    </template>\n                    <template v-else-if=\"cell.type === 'chartForm'\">\n                        <div class=\"addChartForm\">\n                            <v-list class=\"chartTypeList\">\n                                <v-list-item\n                                    v-for=\"item in items\"\n                                    :key=\"item.value\"\n                                    @click=\"selectChartType(item)\"\n                                    :class=\"{'selected': selectedItemType === item.value}\"\n                                >\n                                    <v-list-item-title>{{ item.title }}</v-list-item-title>\n                                </v-list-item>\n                            </v-list>\n                            <div class=\"selectXY\" v-show=\"selectedItemType === 'scatter'\">\n                                <v-combobox v-model=\"selectedX\" label=\"Select X\" :items=\"selectedMetaData\"></v-combobox>\n                                <v-combobox v-model=\"selectedY\" label=\"Select Y\" :items=\"selectedMetaData\"></v-combobox>\n                            </div>\n                            <div class=\"selectXY\" v-show=\"selectedItemType === 'hist'\">\n                                <v-combobox v-model=\"selectedX\" label=\"Select X\" :items=\"selectedMetaData\"></v-combobox>\n                            </div>\n                            <v-btn class=\"validateButton\" text @click=\"addChart\" :disabled=\"!isFormComplete\">Ok</v-btn>\n                        </div>\n                    </template>\n                </div>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            gridData: [],\n            items: [\n                { title: 'Scatter Plot', value: 'scatter' },\n                { title: 'Hist Plot', value: 'hist' },\n            ],\n            selectedMetaData: [],\n            selectedX: null,\n            selectedY: null,\n            selectedItemType: null,\n        };\n    },\n    mounted() {\n        // Écoute des mises à jour du message entrant depuis Node-RED\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n                if (msg.payload.command === 'add iframe' && msg.payload.src) {\n                    // Ajout d'une iframe\n                    this.addIframe(msg.payload.src);\n                } else if (msg.payload.command === 'remove iframe' && msg.payload.src) {\n                    // Suppression de l'iframe avec la source spécifiée\n                    this.removeIframe(msg.payload.src);\n                } else if(msg.payload.command==='add metadata'&& msg.payload.metadata){\n                    this.selectedMetaData=msg.payload.metadata;\n                }\n            }\n        });\n    },\n    computed: {\n        gridDataWithAddButton() {\n            // Retourner les données de la grille avec une cellule supplémentaire pour le formulaire d'ajout de graphique\n            let dataWithButton = JSON.parse(JSON.stringify(this.gridData));\n            let lastRow = dataWithButton[dataWithButton.length - 1];\n            if (!lastRow || lastRow.length === 3) {\n                dataWithButton.push([{ type: 'chartForm' }]);\n            } else {\n                lastRow.push({ type: 'chartForm' });\n            }\n            return dataWithButton;\n        },\n        isFormComplete() {\n            if (this.selectedItemType === 'scatter') {\n                return this.selectedX && this.selectedY;\n            }\n            if (this.selectedItemType === 'hist') {\n                return this.selectedX;\n            }\n            return false;\n        }\n    },\n    methods: {\n        addRow() {\n            // Ajouter une nouvelle ligne vide\n            this.gridData.push([]);\n        },\n        addChart() {\n            // Ajouter un nouveau graphique dans la dernière ligne\n            let selectedTitle = '';\n            let newChart={};\n            if (this.selectedItemType === 'scatter') {\n                selectedTitle = 'Scatter Plot';\n                newChart = {\n                    command: 'create ' + this.selectedItemType + ' plot',\n                    args:[\n                        this.selectedX,\n                        this.selectedY\n                    ]\n                };\n            } else if (this.selectedItemType === 'hist') {\n                selectedTitle = 'Hist Plot';\n                newChart = {\n                    command: 'create ' + this.selectedItemType + ' plot',\n                    args:[\n                        this.selectedX,\n                    ]\n                };\n            }\n\n            this.send({ payload: newChart });\n\n            // Réinitialiser le formulaire\n            this.selectedItemType = null;\n            this.selectedX = null;\n            this.selectedY = null;\n        },\n        addIframe(src) {\n            // Ajouter une iframe à la grille\n            const newIframe = {\n                type: 'iframe',\n                src: src\n            };\n\n            let lastRow = this.gridData[this.gridData.length - 1];\n            if (!lastRow || lastRow.length === 3) {\n                // Ajouter une nouvelle ligne si la ligne courante est pleine ou n'existe pas\n                this.gridData.push([newIframe]);\n            } else {\n                // Ajouter l'iframe à la ligne courante\n                lastRow.push(newIframe);\n            }\n        },\n        removeIframe(src) {\n            // Recherche et suppression de la cellule contenant l'iframe avec la source spécifiée\n            this.gridData = this.gridData.map(row =>\n                row.filter(cell => !(cell.type === 'iframe' && cell.src === src))\n            ).filter(row => row.length > 0);\n        },\n        selectChartType(item) {\n            this.selectedItemType = item.value;\n        },\n    }\n};\n</script>\n\n<style scoped>\n    .grid-container {\n        display: grid;\n        grid-template-columns: repeat(3, 1fr);\n        gap: 10px;\n    }\n\n    .grid-row {\n        display: contents;\n    }\n\n    .grid-cell {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        height: 500px;\n        padding: 10px;\n        background-color: #f0f0f0;\n        border-radius: 10px;\n        text-align: center;\n    }\n\n    .addChartForm {\n        width: 100%;\n    }\n\n    .chartTypeList {\n        width: 100%;\n        padding: 10px;\n    }\n\n    .selected {\n        background-color: #0077ff;\n        border-radius: 8px;\n        color: white;\n    }\n\n    .selectXY {\n        width: 100%;\n        padding: 10px;\n    }\n\n    .validateButton {\n        margin-top: 10px;\n    }\n\n    iframe {\n        width: 100%;\n        height: 100%;\n        border: none;\n    }\n</style>\n",
+        "format": "<template>\n    <div>\n        <div class=\"grid-container\">\n            <div v-for=\"(row, rowIndex) in gridDataWithAddButton\" :key=\"rowIndex\" class=\"grid-row\">\n                <div v-for=\"(cell, colIndex) in row\" :key=\"colIndex\" class=\"grid-cell\">\n                    <template v-if=\"cell.type === 'text'\">\n                        {{ cell.content }}\n                    </template>\n                    <template v-else-if=\"cell.type === 'iframe'\">\n                        <iframe :src=\"cell.src\" width=\"100%\" height=\"300\" frameborder=\"0\"></iframe>\n                    </template>\n                    <template v-else-if=\"cell.type === 'chartForm'\">\n                        <div class=\"addChartForm\">\n                            <v-list class=\"chartTypeList\">\n                                <v-list-item\n                                    v-for=\"item in items\"\n                                    :key=\"item.value\"\n                                    @click=\"selectChartType(item)\"\n                                    :class=\"{'selected': selectedItemType === item.value}\"\n                                >\n                                    <v-list-item-title>{{ item.title }}</v-list-item-title>\n                                </v-list-item>\n                            </v-list>\n                            <div class=\"selectXY\" v-show=\"selectedItemType === 'scatter'\">\n                                <v-combobox v-model=\"selectedX\" label=\"Select X\" :items=\"selectedMetaData\"></v-combobox>\n                                <v-combobox v-model=\"selectedY\" label=\"Select Y\" :items=\"selectedMetaData\"></v-combobox>\n                            </div>\n                            <div class=\"selectXY\" v-show=\"selectedItemType === 'hist'\">\n                                <v-combobox v-model=\"selectedX\" label=\"Select X\" :items=\"selectedMetaData\"></v-combobox>\n                            </div>\n                            <v-btn class=\"validateButton\" text @click=\"addChart\" :disabled=\"!isFormComplete\">Ok</v-btn>\n                        </div>\n                    </template>\n                </div>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            gridData: [],\n            items: [\n                { title: 'Scatter Plot', value: 'scatter' },\n                { title: 'Hist Plot', value: 'hist' },\n                { title: 'Data Table', value: 'datatable'}\n            ],\n            selectedMetaData: [],\n            selectedX: null,\n            selectedY: null,\n            selectedItemType: null,\n        };\n    },\n    mounted() {\n        // Écoute des mises à jour du message entrant depuis Node-RED\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n                if (msg.payload.command === 'add iframe' && msg.payload.src) {\n                    // Ajout d'une iframe\n                    this.addIframe(msg.payload.src);\n                } else if (msg.payload.command === 'remove iframe' && msg.payload.src) {\n                    // Suppression de l'iframe avec la source spécifiée\n                    this.removeIframe(msg.payload.src);\n                } else if(msg.payload.command==='add metadata'&& msg.payload.metadata){\n                    this.selectedMetaData=msg.payload.metadata;\n                }\n            }\n        });\n    },\n    computed: {\n        gridDataWithAddButton() {\n            // Retourner les données de la grille avec une cellule supplémentaire pour le formulaire d'ajout de graphique\n            let dataWithButton = JSON.parse(JSON.stringify(this.gridData));\n            let lastRow = dataWithButton[dataWithButton.length - 1];\n            if (!lastRow || lastRow.length === 3) {\n                dataWithButton.push([{ type: 'chartForm' }]);\n            } else {\n                lastRow.push({ type: 'chartForm' });\n            }\n            return dataWithButton;\n        },\n        isFormComplete() {\n            if (this.selectedItemType === 'scatter') {\n                return this.selectedX && this.selectedY;\n            }\n            if (this.selectedItemType === 'hist') {\n                return this.selectedX && true;\n            }\n            if (this.selectedItemType==='datatable'){\n                return true\n            }\n            return false;\n        }\n    },\n    methods: {\n        addRow() {\n            // Ajouter une nouvelle ligne vide\n            this.gridData.push([]);\n        },\n        addChart() {\n            // Ajouter un nouveau graphique dans la dernière ligne\n            let selectedTitle = '';\n            let newChart={};\n            if (this.selectedItemType === 'scatter') {\n                selectedTitle = 'Scatter Plot';\n                newChart = {\n                    command: 'create ' + this.selectedItemType + ' plot',\n                    args:[\n                        this.selectedX,\n                        this.selectedY\n                    ]\n                };\n            } else if (this.selectedItemType === 'hist') {\n                selectedTitle = 'Hist Plot';\n                newChart = {\n                    command: 'create ' + this.selectedItemType + ' plot',\n                    args:[\n                        this.selectedX,\n                    ]\n                };\n            } else if (this.selectedItemType === 'datatable') {\n                selectedTitle = 'DataTable';\n                newChart = {\n                command: 'create ' + this.selectedItemType + ' plot',\n                args:[]\n            };\n            }\n\n            this.send({ payload: newChart });\n\n            // Réinitialiser le formulaire\n            this.selectedItemType = null;\n            this.selectedX = null;\n            this.selectedY = null;\n        },\n        addIframe(src) {\n            // Ajouter une iframe à la grille\n            const newIframe = {\n                type: 'iframe',\n                src: src\n            };\n\n            let lastRow = this.gridData[this.gridData.length - 1];\n            if (!lastRow || lastRow.length === 3) {\n                // Ajouter une nouvelle ligne si la ligne courante est pleine ou n'existe pas\n                this.gridData.push([newIframe]);\n            } else {\n                // Ajouter l'iframe à la ligne courante\n                lastRow.push(newIframe);\n            }\n        },\n        removeIframe(src) {\n            // Recherche et suppression de la cellule contenant l'iframe avec la source spécifiée\n            this.gridData = this.gridData.map(row =>\n                row.filter(cell => !(cell.type === 'iframe' && cell.src === src))\n            ).filter(row => row.length > 0);\n        },\n        selectChartType(item) {\n            this.selectedItemType = item.value;\n        },\n    }\n};\n</script>\n\n<style scoped>\n    .grid-container {\n        display: grid;\n        grid-template-columns: repeat(3, 1fr);\n        gap: 10px;\n    }\n\n    .grid-row {\n        display: contents;\n    }\n\n    .grid-cell {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        height: 500px;\n        padding: 10px;\n        background-color: #f0f0f0;\n        border-radius: 10px;\n        text-align: center;\n    }\n\n    .addChartForm {\n        width: 100%;\n    }\n\n    .chartTypeList {\n        width: 100%;\n        padding: 10px;\n    }\n\n    .selected {\n        background-color: #0077ff;\n        border-radius: 8px;\n        color: white;\n    }\n\n    .selectXY {\n        width: 100%;\n        padding: 10px;\n    }\n\n    .validateButton {\n        margin-top: 10px;\n    }\n\n    iframe {\n        width: 100%;\n        height: 100%;\n        border: none;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 460,
-        "y": 440,
+        "x": 440,
+        "y": 1000,
         "wires": [
             [
                 "4a6f58753de8e37a",
@@ -5657,6 +5759,7 @@
         "id": "746eaecb865b41db",
         "type": "inject",
         "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
         "name": "inject text",
         "props": [
             {
@@ -5670,8 +5773,8 @@
         "topic": "",
         "payload": "[{\"type\":\"text\",\"content\":\"inject\"}]",
         "payloadType": "json",
-        "x": 120,
-        "y": 360,
+        "x": 140,
+        "y": 920,
         "wires": [
             [
                 "019af3477dfde6a9"
@@ -5682,6 +5785,7 @@
         "id": "7fa2bcc98f3d3fe3",
         "type": "inject",
         "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
         "name": "inject iframe",
         "props": [
             {
@@ -5695,8 +5799,8 @@
         "topic": "",
         "payload": "{\"command\":\"add iframe\",\"src\":\"https://www.example.com\"}",
         "payloadType": "json",
-        "x": 130,
-        "y": 420,
+        "x": 150,
+        "y": 980,
         "wires": [
             [
                 "019af3477dfde6a9"
@@ -5707,6 +5811,7 @@
         "id": "55fceabb714eaaef",
         "type": "inject",
         "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
         "name": "remove iframe",
         "props": [
             {
@@ -5720,8 +5825,8 @@
         "topic": "",
         "payload": "{\"command\":\"removeIframe\",\"src\": \"https://www.example.com\"}",
         "payloadType": "json",
-        "x": 130,
-        "y": 500,
+        "x": 150,
+        "y": 1060,
         "wires": [
             [
                 "019af3477dfde6a9"
@@ -5732,6 +5837,7 @@
         "id": "8eab2951a36237e4",
         "type": "inject",
         "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
         "name": "metadata",
         "props": [
             {
@@ -5745,8 +5851,8 @@
         "topic": "",
         "payload": "{\"command\":\"add metadata\",\"metadata\":[\"X\",\"Y\"]}",
         "payloadType": "json",
-        "x": 120,
-        "y": 560,
+        "x": 140,
+        "y": 1120,
         "wires": [
             [
                 "019af3477dfde6a9"
@@ -5757,6 +5863,7 @@
         "id": "4a6f58753de8e37a",
         "type": "debug",
         "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
         "name": "vizualisation/commands",
         "active": true,
         "tosidebar": true,
@@ -5766,14 +5873,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 730,
-        "y": 420,
+        "x": 750,
+        "y": 980,
         "wires": []
     },
     {
         "id": "4f7542d8f7329158",
         "type": "mqtt in",
         "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
         "name": "",
         "topic": "visualization/chartPage",
         "qos": "2",
@@ -5783,8 +5891,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 140,
-        "y": 620,
+        "x": 160,
+        "y": 1180,
         "wires": [
             [
                 "019af3477dfde6a9",
@@ -5796,6 +5904,7 @@
         "id": "5fe96956d7f339e3",
         "type": "mqtt out",
         "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
         "name": "",
         "topic": "visualization/commands",
         "qos": "",
@@ -5806,14 +5915,15 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 730,
-        "y": 460,
+        "x": 750,
+        "y": 1020,
         "wires": []
     },
     {
         "id": "5dcb0d923705c9c8",
         "type": "debug",
         "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
         "name": "vizualisation/chartPage",
         "active": true,
         "tosidebar": true,
@@ -5823,14 +5933,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 470,
-        "y": 600,
+        "x": 490,
+        "y": 1160,
         "wires": []
     },
     {
         "id": "b53fa58bab471031",
         "type": "inject",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "name": "run at start and repeat",
         "props": [],
         "repeat": "5",
@@ -5838,8 +5949,8 @@
         "once": true,
         "onceDelay": "0.5",
         "topic": "",
-        "x": 150,
-        "y": 760,
+        "x": 210,
+        "y": 460,
         "wires": [
             [
                 "c3bad434668c251d"
@@ -5850,6 +5961,7 @@
         "id": "7d3e19376f4b262e",
         "type": "debug",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "name": "debug 11",
         "active": false,
         "tosidebar": true,
@@ -5859,14 +5971,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 520,
-        "y": 700,
+        "x": 580,
+        "y": 400,
         "wires": []
     },
     {
         "id": "e4c5ac606ec6a5db",
         "type": "ui-dropdown",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "group": "8a90010318b784c1",
         "name": "Data Selection",
         "label": "Data Selection",
@@ -5876,15 +5989,13 @@
         "height": "1",
         "passthru": false,
         "multiple": false,
-        "chips": false,
-        "clearable": false,
         "options": [],
         "payload": "",
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 540,
-        "y": 760,
+        "x": 600,
+        "y": 460,
         "wires": [
             [
                 "31c64932cdfdfdbc",
@@ -5896,8 +6007,9 @@
         "id": "31c64932cdfdfdbc",
         "type": "debug",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "name": "debug 14",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5905,14 +6017,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
-        "y": 680,
+        "x": 780,
+        "y": 420,
         "wires": []
     },
     {
         "id": "19dbf1af317825a6",
         "type": "change",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "name": "",
         "rules": [
             {
@@ -5928,8 +6041,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 910,
-        "y": 800,
+        "x": 970,
+        "y": 480,
         "wires": [
             [
                 "00cbf4bcc851b630",
@@ -5941,6 +6054,7 @@
         "id": "00cbf4bcc851b630",
         "type": "mqtt out",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "name": "",
         "topic": "visualization/commands",
         "qos": "",
@@ -5951,14 +6065,15 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1150,
-        "y": 800,
+        "x": 1210,
+        "y": 480,
         "wires": []
     },
     {
         "id": "ab7b3fe8779c3f70",
         "type": "join",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "name": "",
         "mode": "custom",
         "build": "string",
@@ -5975,8 +6090,8 @@
         "reduceInit": "",
         "reduceInitType": "num",
         "reduceFixup": "",
-        "x": 730,
-        "y": 800,
+        "x": 790,
+        "y": 480,
         "wires": [
             [
                 "19dbf1af317825a6"
@@ -5987,6 +6102,7 @@
         "id": "7eb37a75f138d6c6",
         "type": "ui-button",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "group": "8a90010318b784c1",
         "name": "",
         "label": "Depploy dataframe",
@@ -6004,8 +6120,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 250,
-        "y": 840,
+        "x": 310,
+        "y": 540,
         "wires": [
             [
                 "c57055b8cd4e52fd"
@@ -6016,6 +6132,7 @@
         "id": "c57055b8cd4e52fd",
         "type": "change",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "name": "",
         "rules": [
             {
@@ -6036,8 +6153,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 840,
+        "x": 580,
+        "y": 540,
         "wires": [
             [
                 "ab7b3fe8779c3f70"
@@ -6048,6 +6165,7 @@
         "id": "3306e8caa0e2da47",
         "type": "debug",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "name": "debug 27",
         "active": true,
         "tosidebar": true,
@@ -6056,14 +6174,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1100,
-        "y": 740,
+        "x": 1180,
+        "y": 440,
         "wires": []
     },
     {
         "id": "f2d1842e885a21bb",
         "type": "ui-text",
         "z": "f260ed9417849607",
+        "g": "0ae7386dfdd66509",
         "group": "8a90010318b784c1",
         "order": 2,
         "width": "4",
@@ -6077,14 +6196,15 @@
         "fontSize": 16,
         "color": "#717171",
         "className": "",
-        "x": 510,
-        "y": 1000,
+        "x": 530,
+        "y": 700,
         "wires": []
     },
     {
         "id": "ccebd34141f2cdc9",
         "type": "mqtt in",
         "z": "f260ed9417849607",
+        "g": "0ae7386dfdd66509",
         "name": "",
         "topic": "visualization/numberOfObject",
         "qos": "2",
@@ -6094,8 +6214,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 1000,
+        "x": 200,
+        "y": 700,
         "wires": [
             [
                 "f2d1842e885a21bb",
@@ -6107,6 +6227,7 @@
         "id": "73f7adc9de7be54d",
         "type": "debug",
         "z": "f260ed9417849607",
+        "g": "0ae7386dfdd66509",
         "name": "number of object",
         "active": true,
         "tosidebar": true,
@@ -6116,14 +6237,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 960,
+        "x": 530,
+        "y": 660,
         "wires": []
     },
     {
         "id": "a6214240165a32e6",
         "type": "inject",
         "z": "f260ed9417849607",
+        "g": "0ae7386dfdd66509",
         "name": "",
         "props": [
             {
@@ -6137,8 +6259,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "str",
-        "x": 330,
-        "y": 1060,
+        "x": 350,
+        "y": 760,
         "wires": [
             [
                 "f2d1842e885a21bb"
@@ -6149,8 +6271,9 @@
         "id": "c3bad434668c251d",
         "type": "function",
         "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
         "name": "Find .tsv file",
-        "func": "\nconst directory = \"/home/pi/data/objects/2024-06-20/Tf-°mfe_1/Tf-°mfe_1_1/\";\n\nfs.readdir(directory, (err, files) => {\n    if (err) {\n        node.error('Unable to scan directory: ' + err);\n        return;\n    }\n\n    msg.options = [];\n    \n    files.forEach(filename => {\n        if (filename.endsWith(\".tsv\")) {\n            msg.options.push({\n                value: path.join(directory, filename),\n                label: filename\n            });\n        }\n    });\n\n    node.send(msg);\n});\n",
+        "func": "const directory = \"C:/Users/luffy/.node-red/data\";\n\nasync function getTsvFiles(dir) {\n    let results = [];\n    try {\n        const files = await fs.readdir(dir, { withFileTypes: true });\n        for (const file of files) {\n            const filePath = path.join(dir, file.name);\n            if (file.isDirectory()) {\n                const nestedFiles = await getTsvFiles(filePath);\n                results = results.concat(nestedFiles);\n            } else if (file.name.endsWith(\".tsv\")) {\n                results.push({\n                    value: filePath,\n                    label: file.name\n                });\n            }\n        }\n    } catch (err) {\n        node.error(`Error reading directory ${dir}: ${err}`);\n    }\n    return results;\n}\n\ngetTsvFiles(directory)\n    .then(files => {\n        msg.options = files;\n        node.send(msg);\n    })\n    .catch(err => {\n        node.error('Unable to scan directory: ' + err);\n    });\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6158,16 +6281,16 @@
         "finalize": "",
         "libs": [
             {
-                "var": "fs",
-                "module": "fs"
-            },
-            {
                 "var": "path",
                 "module": "path"
+            },
+            {
+                "var": "fs",
+                "module": "fs.promises"
             }
         ],
-        "x": 370,
-        "y": 760,
+        "x": 410,
+        "y": 460,
         "wires": [
             [
                 "7d3e19376f4b262e",
