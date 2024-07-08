@@ -291,9 +291,9 @@
             "3190006e8b3ec66d",
             "e13149faae126209"
         ],
-        "x": 134,
+        "x": 124,
         "y": 239,
-        "w": 632,
+        "w": 642,
         "h": 162
     },
     {
@@ -480,7 +480,7 @@
         ],
         "x": 154,
         "y": 379,
-        "w": 252,
+        "w": 262,
         "h": 82
     },
     {
@@ -669,9 +669,9 @@
             "4b6824e2ecaa9016",
             "343ad9e58c44f9d9"
         ],
-        "x": 34,
+        "x": 24,
         "y": 319,
-        "w": 542,
+        "w": 552,
         "h": 82
     },
     {
@@ -690,7 +690,7 @@
         ],
         "x": 34,
         "y": 239,
-        "w": 412,
+        "w": 422,
         "h": 82
     },
     {
@@ -816,35 +816,6 @@
         "h": 162
     },
     {
-        "id": "1ed0d4a04eb675ba",
-        "type": "group",
-        "z": "f260ed9417849607",
-        "g": "0d384e544ffce204",
-        "name": "Select DataSet Dropdown",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "b53fa58bab471031",
-            "7d3e19376f4b262e",
-            "e4c5ac606ec6a5db",
-            "31c64932cdfdfdbc",
-            "19dbf1af317825a6",
-            "00cbf4bcc851b630",
-            "ab7b3fe8779c3f70",
-            "7eb37a75f138d6c6",
-            "c57055b8cd4e52fd",
-            "3306e8caa0e2da47",
-            "c3bad434668c251d"
-        ],
-        "x": 54,
-        "y": 359,
-        "w": 1292,
-        "h": 222
-    },
-    {
         "id": "856d9c3d6ae49cc6",
         "type": "group",
         "z": "f260ed9417849607",
@@ -873,6 +844,58 @@
         "h": 342
     },
     {
+        "id": "0d384e544ffce204",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "name": "Top Page",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "label": true,
+            "color": "#000000",
+            "fill-opacity": "0.45"
+        },
+        "nodes": [
+            "1ed0d4a04eb675ba",
+            "0ae7386dfdd66509"
+        ],
+        "x": 28,
+        "y": 333,
+        "w": 1624,
+        "h": 494
+    },
+    {
+        "id": "1ed0d4a04eb675ba",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "g": "0d384e544ffce204",
+        "name": "Select DataSet Dropdown",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b53fa58bab471031",
+            "7d3e19376f4b262e",
+            "e4c5ac606ec6a5db",
+            "19dbf1af317825a6",
+            "00cbf4bcc851b630",
+            "7eb37a75f138d6c6",
+            "c57055b8cd4e52fd",
+            "3306e8caa0e2da47",
+            "c3bad434668c251d",
+            "0b764a61b2abcea4",
+            "5299cd86668a8449",
+            "730cbd2b78f5828b",
+            "b1fa8c8ff65cd076"
+        ],
+        "x": 54,
+        "y": 359,
+        "w": 1572,
+        "h": 222
+    },
+    {
         "id": "0ae7386dfdd66509",
         "type": "group",
         "z": "f260ed9417849607",
@@ -893,27 +916,6 @@
         "y": 619,
         "w": 612,
         "h": 182
-    },
-    {
-        "id": "0d384e544ffce204",
-        "type": "group",
-        "z": "f260ed9417849607",
-        "name": "Top Page",
-        "style": {
-            "stroke": "#000000",
-            "fill": "#bfdbef",
-            "label": true,
-            "color": "#000000",
-            "fill-opacity": "0.45"
-        },
-        "nodes": [
-            "1ed0d4a04eb675ba",
-            "0ae7386dfdd66509"
-        ],
-        "x": 28,
-        "y": 333,
-        "w": 1344,
-        "h": 494
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -5998,28 +6000,9 @@
         "y": 460,
         "wires": [
             [
-                "31c64932cdfdfdbc",
-                "ab7b3fe8779c3f70"
+                "5299cd86668a8449"
             ]
         ]
-    },
-    {
-        "id": "31c64932cdfdfdbc",
-        "type": "debug",
-        "z": "f260ed9417849607",
-        "g": "1ed0d4a04eb675ba",
-        "name": "debug 14",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 780,
-        "y": 420,
-        "wires": []
     },
     {
         "id": "19dbf1af317825a6",
@@ -6041,7 +6024,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
+        "x": 1170,
         "y": 480,
         "wires": [
             [
@@ -6065,38 +6048,9 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1210,
+        "x": 1490,
         "y": 480,
         "wires": []
-    },
-    {
-        "id": "ab7b3fe8779c3f70",
-        "type": "join",
-        "z": "f260ed9417849607",
-        "g": "1ed0d4a04eb675ba",
-        "name": "",
-        "mode": "custom",
-        "build": "string",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": " ",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "num",
-        "reduceFixup": "",
-        "x": 790,
-        "y": 480,
-        "wires": [
-            [
-                "19dbf1af317825a6"
-            ]
-        ]
     },
     {
         "id": "7eb37a75f138d6c6",
@@ -6157,7 +6111,7 @@
         "y": 540,
         "wires": [
             [
-                "ab7b3fe8779c3f70"
+                "5299cd86668a8449"
             ]
         ]
     },
@@ -6174,7 +6128,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1180,
+        "x": 1460,
         "y": 440,
         "wires": []
     },
@@ -6297,5 +6251,93 @@
                 "e4c5ac606ec6a5db"
             ]
         ]
+    },
+    {
+        "id": "0b764a61b2abcea4",
+        "type": "debug",
+        "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
+        "name": "debug 29",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5299cd86668a8449",
+        "type": "join",
+        "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 810,
+        "y": 480,
+        "wires": [
+            [
+                "730cbd2b78f5828b",
+                "b1fa8c8ff65cd076"
+            ]
+        ]
+    },
+    {
+        "id": "730cbd2b78f5828b",
+        "type": "function",
+        "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
+        "name": "Lastest selected",
+        "func": "msg.payload=msg.payload[msg.payload.length-1]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 480,
+        "wires": [
+            [
+                "19dbf1af317825a6",
+                "0b764a61b2abcea4"
+            ]
+        ]
+    },
+    {
+        "id": "b1fa8c8ff65cd076",
+        "type": "debug",
+        "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
+        "name": "debug 30",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 420,
+        "wires": []
     }
 ]
