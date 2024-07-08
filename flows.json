@@ -521,12 +521,11 @@
             "color": "#000000"
         },
         "nodes": [
-            "c356e55229da7519",
-            "43faf6a9184225a3"
+            "c356e55229da7519"
         ],
-        "x": 34,
+        "x": 254,
         "y": 239,
-        "w": 412,
+        "w": 192,
         "h": 82
     },
     {
@@ -558,11 +557,12 @@
             "color": "#000000"
         },
         "nodes": [
-            "6d32866022cd0317"
+            "6d32866022cd0317",
+            "77c2eece35acdabc"
         ],
-        "x": 254,
+        "x": 114,
         "y": 439,
-        "w": 232,
+        "w": 372,
         "h": 82
     },
     {
@@ -698,12 +698,17 @@
             "color": "#000000"
         },
         "nodes": [
-            "43f2c97055fc26be"
+            "43f2c97055fc26be",
+            "0565dc25419690e3",
+            "90d9c21321164d49",
+            "37fdca294eb2d1bb",
+            "dcc0c648c7c57223",
+            "8b05263aee3303bf"
         ],
         "x": 514,
         "y": 459,
-        "w": 212,
-        "h": 82
+        "w": 662,
+        "h": 122
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -1934,7 +1939,8 @@
         "name": "link in 37",
         "links": [
             "5a6d4529c23e5762",
-            "284e47ae04575ac7"
+            "284e47ae04575ac7",
+            "dcc0c648c7c57223"
         ],
         "x": 95,
         "y": 200,
@@ -2160,6 +2166,7 @@
         "id": "90d9c21321164d49",
         "type": "persistent value",
         "z": "fb15c917381dd273",
+        "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -2180,7 +2187,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 860,
+        "x": 820,
         "y": 540,
         "wires": [
             [
@@ -2193,6 +2200,7 @@
         "id": "0565dc25419690e3",
         "type": "switch",
         "z": "fb15c917381dd273",
+        "g": "5c8dc5f5e1904bf8",
         "name": "If \"validate\"",
         "property": "payload.firstVisit",
         "propertyType": "msg",
@@ -2204,7 +2212,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 830,
+        "x": 790,
         "y": 500,
         "wires": [
             [
@@ -2216,6 +2224,7 @@
         "id": "37fdca294eb2d1bb",
         "type": "change",
         "z": "fb15c917381dd273",
+        "g": "5c8dc5f5e1904bf8",
         "name": "",
         "rules": [
             {
@@ -2231,7 +2240,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1000,
+        "x": 960,
         "y": 500,
         "wires": [
             [
@@ -2243,10 +2252,13 @@
         "id": "dcc0c648c7c57223",
         "type": "link out",
         "z": "fb15c917381dd273",
+        "g": "5c8dc5f5e1904bf8",
         "name": "link out 65",
         "mode": "link",
-        "links": [],
-        "x": 1175,
+        "links": [
+            "f2332fa1b7e6397e"
+        ],
+        "x": 1135,
         "y": 540,
         "wires": []
     },
@@ -2254,6 +2266,7 @@
         "id": "8b05263aee3303bf",
         "type": "change",
         "z": "fb15c917381dd273",
+        "g": "5c8dc5f5e1904bf8",
         "name": "",
         "rules": [
             {
@@ -2269,7 +2282,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1060,
+        "x": 1020,
         "y": 540,
         "wires": [
             [
@@ -2323,7 +2336,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"header-home-container\">\n        <div class=\"header-home-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"header-home-message-container\">\n            <!-- <p>Welcome on the <span id=\"planktoscope\">PlanktoScope GUI -</span> <span id=\"version\">{{msg.payload}}</span></p> -->\n            <p>Welcome on the <span id=\"planktoscope\">PlanktoScope GUI</span></p>\n        </div>\n    </div>\n</template>\n\n<style>\n    .header-home-container {\n        /* margin-bottom: 62px; */\n        display: flex;\n        flex-direction: row;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        /* margin: 20px 0px 35px 0px; */\n        margin: 0px 20px 15px 0px;\n    }\n\n    .header-home-image-container img {\n        /* height: 8vw;\n        width: 8vw; */\n        height: 5vw;\n        width: 5vw;\n    }\n\n    .header-home-message-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-message-container p {\n        /* font-size: 2.5vw; */\n        font-size: 1.5vw;\n        font-weight: 100;\n        color: black;\n    }\n\n    .header-home-message-container span#version {\n        color: #076eac;\n    }\n\n    .header-home-message-container span#planktoscope {\n        font-weight: bold;\n    }\n\n</style>",
+        "format": "<template>\n    <div class=\"header-home-container\">\n        <div class=\"header-home-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"header-home-message-container\">\n            <p>Welcome on the <span id=\"planktoscope\">PlanktoScope GUI</span></p>\n        </div>\n    </div>\n</template>\n\n<style>\n    .header-home-container {\n        display: flex;\n        flex-direction: row;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container img {\n        height: 5.5vw;\n        width: 5.5vw;\n        margin-right: 20px;\n    }\n\n    .header-home-message-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-message-container p {\n        font-size: 2.5vw;\n        font-weight: 100;\n        color: black;\n    }\n\n    .header-home-message-container span#version {\n        color: #076eac;\n    }\n\n    .header-home-message-container span#planktoscope {\n        font-weight: bold;\n        color: #076eac;\n    }\n\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -2333,32 +2346,6 @@
         "y": 280,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "43faf6a9184225a3",
-        "type": "inject",
-        "z": "a707f17e5367291d",
-        "g": "3bb6cedcc43ce23c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "v2024.0.0-aplha.0",
-        "payloadType": "str",
-        "x": 170,
-        "y": 280,
-        "wires": [
-            [
-                "c356e55229da7519"
-            ]
         ]
     },
     {
@@ -2374,7 +2361,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"top-header-home-container\">\n        <div class=\"top-header-home-information-container\">\n            <p id=\"date\"></p>\n            <p>-</p>\n            <p id=\"time\"></p>\n            <span class=\"mdi mdi-account-settings\" color=\"gray\" @click=\"menu = true\"></span>\n        </div>\n    </div>\n    <v-menu class=\"my-menu\" v-model=\"menu\">\n        <v-list>\n            <v-list-item v-for=\"item in menuItems\" :key=\"item.title\" @click=\"menuItemClicked(item)\">\n                <v-list-item-title>{{ item.title }}</v-list-item-title>\n            </v-list-item>\n        </v-list>\n    </v-menu>\n</template>\n\n<script>\n    export default {\n        name: 'RealTimeInfo',\n        data() {\n            return {\n                menu: false,\n                menuItems: [\n                    { title: 'Settings' },\n                    { title: 'Calibration' },\n                    { title: 'Hardware' },\n                    { title: 'Explore your data' },\n                    { title: 'Administration' },\n                    { title: 'Monitoring' },\n                    { title: 'Reboot' },\n                    { title: 'Shutdown' }\n                ]\n            }\n        },\n        mounted() {\n            this.updateDateTime();\n            setInterval(this.updateDateTime, 1000);\n        },\n        methods: {\n            updateDateTime() {\n                const now = new Date();\n\n                const dateFormatter = new Intl.DateTimeFormat('en-US', {\n                    year: 'numeric',\n                    month: 'long',\n                    day: 'numeric'\n                });\n\n                const timeFormatter = new Intl.DateTimeFormat('en-GB', {\n                    hour: '2-digit',\n                    minute: '2-digit',\n                    hour12: false,\n                    timeZone: 'UTC'\n                });\n\n                const date = dateFormatter.format(now);\n                const time = timeFormatter.format(now) + \" UTC\";\n\n                document.getElementById('date').innerText = date;\n                document.getElementById('time').innerText = time;\n            },\n            iconClicked(iconName) {\n                console.log(`Icon clicked: ${iconName}`);\n            },\n            menuItemClicked(item) {\n                console.log(`Menu item clicked: ${item.title}`);\n            }\n        }\n    }\n</script>\n\n<style>\n    .my-menu {\n        display: flex;\n        align-items: right;\n        justify-content: right;\n    }\n\n    .top-header-home-container {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 100%;\n        border-bottom: 1px solid black;\n        display: flex;\n        justify-content: flex-end;\n        align-items: center;\n    }\n\n    .top-header-home-information-container {\n        display: flex;\n        align-items: center;\n        margin-right: 1rem;\n    }\n\n    .top-header-home-information-container p {\n        margin: 0 5px;\n        font-size: 1vw;\n        color: gray;\n    }\n\n    .top-header-home-information-container span {\n        color: gray;\n        font-size: 40px;\n    }\n</style>",
+        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n        <v-menu class=\"my-menu\" v-model=\"menu\">\n          <v-list>\n            <v-list-item\n              v-for=\"item in menuItems\"\n              :key=\"item.title\"\n              @click=\"menuItemClicked(item)\"\n            >\n              <v-list-item-title>{{ item.title }}</v-list-item-title>\n            </v-list-item>\n          </v-list>\n        </v-menu>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItems: [\n        { title: \"Settings\" },\n        { title: \"Calibration\" },\n        { title: \"Hardware\" },\n        { title: \"Explore your data\" },\n        { title: \"Administration\" },\n        { title: \"Monitoring\" },\n        { title: \"Reboot\" },\n        { title: \"Shutdown\" },\n      ],\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    iconClicked(iconName) {\n      console.log(`Icon clicked: ${iconName}`);\n    },\n    menuItemClicked(item) {\n      console.log(`Menu item clicked: ${item.title}`);\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-end;\n    justify-content: flex-end;\n  }\n\n  .header-top-home-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n    padding-right: 1rem;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -2399,7 +2386,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image-multiple\"></span>\n                <p id=\"first-p\">Explore your data</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-bullseye\"></span>\n                <p id=\"first-p\">Calibration</p>\n                <p id=\"second-p\">Adjust your settings to ensure accurate measurements.</p>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item5\" @click=\"handleClick(5)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-chart-areaspline-variant\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Monitoring</p>\n                    <p id=\"second-p\">Keep track of system performance.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item6\" @click=\"handleClick(6)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                this.send({payload: itemNumber});\n            }\n        }\n    };\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 1% 12%;\n        grid-template-columns: 2fr 2fr 2fr; \n        grid-template-rows: 2fr 1fr;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        position: absolute;\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 2vw 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 1.5vw 10px 25px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n        margin: 1.5vw 0 0 0;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);\n        transition: transform 0.3s, box-shadow 0.3s;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        transform: translateY(-5px);\n        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);\n    }\n\n    .first-line-container div#size {\n        height: 12vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 3;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 3;\n        grid-row: 1 / span 2;\n    }\n    \n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n    \n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 1 / 2;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item5 {\n        grid-column: 2 / 3; \n        grid-row: 2 / 3;\n    }\n\n    .item5 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item5 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item6 {\n        grid-column: 3 / 4; \n        grid-row: 2 / 3;\n    }\n    \n    .item6 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n    \n    .item6 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image\"></span>\n                <p id=\"first-p\">Explore your data</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-bullseye\"></span>\n                <p id=\"first-p\">Calibration</p>\n                <p id=\"second-p\">Adjust your settings to ensure accurate measurements.</p>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item5\" @click=\"handleClick(5)\">\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-chart-areaspline-variant\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Monitoring</p>\n                    <p id=\"second-p\">Keep track of system performance.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item6\" @click=\"handleClick(6)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                this.send({payload: itemNumber});\n            }\n        }\n    };\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 1% 12%;\n        grid-template-columns: 2fr 2fr 2fr; \n        grid-template-rows: 2fr 1fr;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        position: absolute;\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 2vw 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 1.5vw 10px 25px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n        margin: 1.5vw 0 0 0;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);\n        transition: transform 0.3s, box-shadow 0.3s;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        transform: translateY(-5px);\n        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);\n    }\n\n    .first-line-container div#size {\n        height: 12vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 3;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 3;\n        grid-row: 1 / span 2;\n    }\n    \n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n    \n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 1 / 2;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item5 {\n        grid-column: 2 / 3; \n        grid-row: 2 / 3;\n    }\n\n    .item5 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item5 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item6 {\n        grid-column: 3 / 4; \n        grid-row: 2 / 3;\n    }\n    \n    .item6 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n    \n    .item6 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -2426,7 +2413,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"second-line-container\">\n        <div class=\"second-line-item1\">\n            <section class=\"second-line-top\">\n                <span class=\"mdi mdi-cog-counterclockwise\"></span>\n                <p>Hardware model of yout machine</p>\n            </section>\n            <section class=\"second-line-bottom\">\n                <p>PlanktoScope v2.6</p>\n            </section>\n        </div>\n        <div class=\"second-line-item2\">\n            <section class=\"second-line-top\">\n                <span class=\"mdi mdi-sd\"></span>\n                <p>. . .</p>\n            </section>\n            <section class=\"second-line-bottom\">\n                <p>? ? ?</p>\n            </section>\n        </div>\n        <div class=\"second-line-item3\">\n            <section class=\"second-line-top\">\n                <span class=\"mdi mdi-sd\"></span>\n                <p>. . .</p>\n            </section>\n            <section class=\"second-line-bottom\">\n                <p>? ? ?</p>\n            </section>\n        </div>\n        <div class=\"second-line-item4\">\n            <section class=\"second-line-top\">\n                <span class=\"mdi mdi-folder-multiple-image\"></span>\n                <p>Name of your machine</p>\n            </section>\n            <section class=\"second-line-bottom\">\n                <p>complete-wind-49753</p>\n            </section>\n        </div>\n        <div class=\"second-line-item5\">\n            <section class=\"second-line-top\">\n                <span class=\"mdi mdi-select-all\"></span>\n                <p>Serial number of your machine</p>\n            </section>\n            <section class=\"second-line-bottom\">\n                <p>U178</p>\n            </section>\n        </div>\n        <div class=\"second-line-item6\">\n            <section class=\"second-line-top\">\n                <span class=\"mdi mdi-select-all\"></span>\n                <p>Software version on your machine</p>\n            </section>\n            <section class=\"second-line-bottom\">\n                <p>PlanktoScope OS V2024.1.0</p>\n            </section>\n        </div>\n\n        <!-- <div class=\"second-line-item7\">\n            <section class=\"second-line-top\">\n                <span class=\"mdi mdi-select-all\"></span>\n                <p>Stockage</p>\n            </section>\n            <section class=\"second-line-bottom\">\n                <p>122 Gb / 128 Gb</p>\n            </section>\n        </div>\n\n        <div class=\"second-line-item8\">\n            <section class=\"second-line-top\">\n                <span class=\"mdi mdi-select-all\"></span>\n                <p>Number of images acquired</p>\n            </section>\n            <section class=\"second-line-bottom\">\n                <p>12 580</p>\n            </section>\n        </div>\n\n        <div class=\"second-line-item9\">\n            <section class=\"second-line-top\">\n                <span class=\"mdi mdi-select-all\"></span>\n                <p>Number of objects</p>\n            </section>\n            <section class=\"second-line-bottom\">\n                <p>329 000</p>\n            </section>\n        </div> -->\n\n    </div>\n</template>\n\n\n<style>\n    .second-line-container {\n        display: grid;\n        margin: 0% 12%;\n        grid-template-columns: repeat(3, 1fr); \n        /* grid-template-rows: repeat(3, 1fr);  */\n        grid-template-rows: repeat(2, 1fr); \n        gap: 25px;\n    }\n\n    .second-line-container div {\n        border: 1px solid rgba(10, 110, 202, 0.1);\n        border-radius: 5px;\n        background-color: rgba(10, 110, 202, 0.1);\n    }\n\n    .second-line-container div {\n        height: 5vw;\n    }\n\n    .second-line-top {\n        display: flex;\n        align-items: center;\n    }\n\n    .second-line-top span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .second-line-top p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .second-line-bottom p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .second-line-item1 {\n        grid-column: 1 / 2;\n        grid-row: 1;\n    }\n\n    .second-line-item2 {\n        grid-column: 2 / 3;\n        grid-row: 1;\n    }\n\n    .second-line-item3 {\n        grid-column: 3 / 3;\n        grid-row: 1;\n    }\n\n    .second-line-item4 {\n        grid-column: 1 / 2;\n        grid-row: 2;\n    }\n\n    .second-line-item5 {\n        grid-column: 2 / 3;\n        grid-row: 2;\n    }\n\n    .second-line-item6 {\n        grid-column: 3 / 3;\n        grid-row: 2;\n    }\n\n    .second-line-item7 {\n        grid-column: 1 / 2;\n        grid-row: 3;\n    }\n\n    .second-line-item8 {\n        grid-column: 2 / 3;\n        grid-row: 3;\n    }\n\n    .second-line-item9 {\n        grid-column: 3 / 3;\n        grid-row: 3;\n    }\n\n</style>",
+        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{msg.payload.model}}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{msg.payload.serialNumber}}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{msg.payload.machineName}}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{msg.payload.version}}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Stockage</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>TO DO</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{msg.payload.acquiredImage}}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{msg.payload.segmentedObjects}}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -2498,6 +2485,32 @@
         "x": 735,
         "y": 380,
         "wires": []
+    },
+    {
+        "id": "77c2eece35acdabc",
+        "type": "inject",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"model\":\"PlanktoScope v2.6\",\"serialNumber\":\"U178\",\"machineName\":\"complete-wind-49753\",\"version\":\"PlanktoScope OS v2024.1.0\",\"acquiredImage\":\"12 580\",\"segmentedObjects\":\"329 000\"}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 480,
+        "wires": [
+            [
+                "6d32866022cd0317"
+            ]
+        ]
     },
     {
         "id": "7c15a6aca3b44d2e",
