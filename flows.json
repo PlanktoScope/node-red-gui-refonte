@@ -2142,7 +2142,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label>Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label>Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label>Model</label>\n        <v-text-field\n          v-model=\"hardware.model\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator: {\n        name: '',\n        email: '',\n      },\n      hardware: {\n        model: '',\n      }\n    };\n  },\n  methods: {\n    validateForm() {\n      const { name, email } = this.operator;\n      const { model } = this.hardware;\n\n      if (!name || !email || !model) {\n        // alert\n        return;\n      }\n\n      const formData = {\n        operator: this.operator,\n        hardware: this.hardware,\n      };\n\n      // Envoyer les données\n    }\n  }\n}\n</script>\n\n<style>\n\n  .first-visit-custom-button {\n    border-radius: 8px;\n    font-size: 1vw;\n    padding-top: 12px;\n    padding-bottom: 12px;\n  }\n\n  .form-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n  }\n\n  .first-visit-form-block-one, .first-visit-form-block-two {\n    width: 80%;\n    max-width: 600px;\n    padding: 1rem;\n    border: 1px solid black;\n    border-radius: 5px;\n    margin-bottom: 1rem;\n  }\n\n  p#first-visit-block-one-title, p#first-visit-block-two-title {\n    font-size: 1.5vw;\n    margin-bottom: 1rem;\n  }\n\n  .first-visit-input-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0rem 0rem 1rem 1.4rem;\n  }\n\n  .first-visit-input-container label {\n    font-size: 1.2vw;\n    min-width: 10rem;\n  }\n\n  .button-container {\n    display: flex;\n    justify-content: flex-end;\n    width: 80%;\n    max-width: 600px;\n  }\n\n  .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label>Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label>Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label>Model</label>\n        <v-text-field\n          v-model=\"hardware.model\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator: {\n        name: '',\n        email: '',\n      },\n      hardware: {\n        model: '',\n      }\n    };\n  },\n  methods: {\n    validateForm() {\n      const { name, email } = this.operator;\n      const { model } = this.hardware;\n\n      if (!name || !email || !model) {\n        // alert\n        return;\n      }\n\n      const formData = {\n        operator: this.operator,\n        hardware: this.hardware,\n      };\n\n      // Envoyer les données\n      this.send({\n        payload: {\n          operator: this.operator,\n          hardware: this.hardware,\n          firstVisit: false\n        }\n      })\n    }\n  }\n}\n</script>\n\n<style>\n\n  .first-visit-custom-button {\n    border-radius: 8px;\n    font-size: 1vw;\n    padding-top: 12px;\n    padding-bottom: 12px;\n  }\n\n  .form-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n  }\n\n  .first-visit-form-block-one, .first-visit-form-block-two {\n    width: 80%;\n    max-width: 600px;\n    padding: 1rem;\n    border: 1px solid black;\n    border-radius: 5px;\n    margin-bottom: 1rem;\n  }\n\n  p#first-visit-block-one-title, p#first-visit-block-two-title {\n    font-size: 1.5vw;\n    margin-bottom: 1rem;\n  }\n\n  .first-visit-input-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0rem 0rem 1rem 1.4rem;\n  }\n\n  .first-visit-input-container label {\n    font-size: 1.2vw;\n    min-width: 10rem;\n  }\n\n  .button-container {\n    display: flex;\n    justify-content: flex-end;\n    width: 80%;\n    max-width: 600px;\n  }\n\n  .v-input__details {\n    display: none;\n  }\n\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -2151,7 +2151,130 @@
         "x": 620,
         "y": 500,
         "wires": [
+            [
+                "0565dc25419690e3"
+            ]
+        ]
+    },
+    {
+        "id": "90d9c21321164d49",
+        "type": "persistent value",
+        "z": "fb15c917381dd273",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 860,
+        "y": 540,
+        "wires": [
+            [
+                "8b05263aee3303bf"
+            ],
             []
+        ]
+    },
+    {
+        "id": "0565dc25419690e3",
+        "type": "switch",
+        "z": "fb15c917381dd273",
+        "name": "If \"validate\"",
+        "property": "payload.firstVisit",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 500,
+        "wires": [
+            [
+                "37fdca294eb2d1bb"
+            ]
+        ]
+    },
+    {
+        "id": "37fdca294eb2d1bb",
+        "type": "change",
+        "z": "fb15c917381dd273",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 500,
+        "wires": [
+            [
+                "90d9c21321164d49"
+            ]
+        ]
+    },
+    {
+        "id": "dcc0c648c7c57223",
+        "type": "link out",
+        "z": "fb15c917381dd273",
+        "name": "link out 65",
+        "mode": "link",
+        "links": [],
+        "x": 1175,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "8b05263aee3303bf",
+        "type": "change",
+        "z": "fb15c917381dd273",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\": \"Home\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 540,
+        "wires": [
+            [
+                "dcc0c648c7c57223"
+            ]
         ]
     },
     {
