@@ -509,9 +509,9 @@
             "4b6824e2ecaa9016",
             "343ad9e58c44f9d9"
         ],
-        "x": 34,
+        "x": 14,
         "y": 319,
-        "w": 542,
+        "w": 562,
         "h": 82
     },
     {
@@ -620,16 +620,19 @@
         "nodes": [
             "af3cbcd9f5f35be3",
             "cf4fbc0932d87cc7",
-            "42fc3d43830febaa",
             "c18005dcbaf22026",
             "9529b63ced697421",
             "a0368732ccfa08d8",
-            "49ea401a0745e446"
+            "49ea401a0745e446",
+            "10993eef6dc87fe5",
+            "42fc3d43830febaa",
+            "e3b705ae1aa1b878",
+            "b0c9b9896fec03cd"
         ],
-        "x": 164,
-        "y": 419,
-        "w": 532,
-        "h": 162
+        "x": 144,
+        "y": 439,
+        "w": 592,
+        "h": 222
     },
     {
         "id": "490dfe89220d57c8",
@@ -3680,18 +3683,18 @@
         "page": "",
         "ui": "",
         "name": "",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n          { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n          { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n          { title: 'Status', align: 'start', key: 'status' },\n      ],\n      tableData: [],\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    }\n  },\n  watch: {\n    selected: function() {\n      this.send({payload: this.selected});\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload == \"clear\") {\n            this.tableData = [];\n          } else if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>\n\n\n<!-- <template>\n  <v-data-table :headers=\"headers\" :items=\"data\" item-key=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n            <v-icon v-if=\"column.removable\" icon=\"$close\" @click=\"() => remove(column.key)\"></v-icon>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        headers: [\n          { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n          { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n          { title: 'Status', align: 'start', key: 'status' },\n        ],\n        data: [],\n      }\n    },\n    methods: {\n      remove(key) {\n        this.headers = this.headers.filter(header => header.key !== key);\n      }\n    },\n    watch: {\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload && Array.isArray(msg.payload)) {\n              this.data = msg.payload;\n            }\n          });\n        },\n        deep: true\n      },\n    },\n  }\n</script>\n\n<style>\n  .custom-table {\n    background-color: white;\n    border-radius: 10px;\n    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n    padding: 16px 0;\n  }\n</style> -->",
+        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      headers: [\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n        { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n        { title: 'Status', align: 'start', key: 'status' },\n      ],\n      tableData: [],\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    }\n  },\n  watch: {\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload == \"clear\") {\n            this.tableData = [];\n          } else if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n          } else if (msg.payload && msg.payload.smts) {\n            this.smts = msg.payload.smts;\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n  .custom-table {\n    background-color: white;\n    border-radius: 10px;\n    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n    padding: 16px 0;\n  }\n\n  .custom-header {\n    font-weight: bold;\n    text-transform: uppercase;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 300,
-        "y": 460,
+        "y": 540,
         "wires": [
             []
         ]
@@ -3705,7 +3708,7 @@
         "page": "",
         "ui": "",
         "name": "",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "head": "",
@@ -3716,7 +3719,7 @@
         "templateScope": "local",
         "className": "",
         "x": 300,
-        "y": 520,
+        "y": 600,
         "wires": [
             [
                 "c18005dcbaf22026"
@@ -3917,7 +3920,7 @@
         "topic": "",
         "payload": "[{\"projectName\":\"OSM2024\",\"sampleID\":\"S001\",\"acquisitionID\":\"A01\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S002\",\"acquisitionID\":\"A02\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S001\",\"acquisitionID\":\"A03\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S002\",\"acquisitionID\":\"A04\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S001\",\"acquisitionID\":\"A05\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"},{\"projectName\":\"OSM2024\",\"sampleID\":\"S002\",\"acquisitionID\":\"A06\",\"operator\":\"Paul\",\"image\":262,\"segmented\":\"Yes\"}]",
         "payloadType": "json",
-        "x": 130,
+        "x": 110,
         "y": 360,
         "wires": [
             [
@@ -3947,27 +3950,6 @@
         ]
     },
     {
-        "id": "42fc3d43830febaa",
-        "type": "function",
-        "z": "00a14f98244d252e",
-        "g": "d3d7be8ef5f940c4",
-        "name": "function 2",
-        "func": "if (msg.payload == \"start\") {\n    msg.payload = {\n        groups: {\n            enable: [],\n            disable: [\"Segmentation-2:acquisition-table-segmentation-2\"]\n        }\n    }\n} else if (msg.payload == \"stop\") {\n    msg.payload = {\n        groups: {\n            enable: [\"Segmentation-2:acquisition-table-segmentation-2\"],\n            disable: []\n        }\n    }\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 540,
-        "wires": [
-            [
-                "9529b63ced697421"
-            ]
-        ]
-    },
-    {
         "id": "025e18267bc7995a",
         "type": "ui-control",
         "z": "00a14f98244d252e",
@@ -3985,7 +3967,9 @@
         "type": "link in",
         "z": "00a14f98244d252e",
         "name": "link in 48",
-        "links": [],
+        "links": [
+            "9529b63ced697421"
+        ],
         "x": 85,
         "y": 40,
         "wires": [
@@ -4018,13 +4002,14 @@
         "repair": false,
         "outputs": 2,
         "x": 430,
-        "y": 520,
+        "y": 600,
         "wires": [
             [
                 "a0368732ccfa08d8"
             ],
             [
-                "42fc3d43830febaa"
+                "42fc3d43830febaa",
+                "b0c9b9896fec03cd"
             ]
         ]
     },
@@ -4035,9 +4020,11 @@
         "g": "d3d7be8ef5f940c4",
         "name": "link out 62",
         "mode": "link",
-        "links": [],
-        "x": 655,
-        "y": 540,
+        "links": [
+            "da2a5658f65d64a4"
+        ],
+        "x": 695,
+        "y": 620,
         "wires": []
     },
     {
@@ -4052,7 +4039,7 @@
             "4b6824e2ecaa9016"
         ],
         "x": 515,
-        "y": 500,
+        "y": 580,
         "wires": []
     },
     {
@@ -4065,8 +4052,8 @@
             "a0368732ccfa08d8",
             "343ad9e58c44f9d9"
         ],
-        "x": 205,
-        "y": 460,
+        "x": 185,
+        "y": 540,
         "wires": [
             [
                 "af3cbcd9f5f35be3"
@@ -4102,6 +4089,85 @@
         ],
         "x": 535,
         "y": 360,
+        "wires": []
+    },
+    {
+        "id": "10993eef6dc87fe5",
+        "type": "ui-template",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "group": "8c5ef97069f3c9a4",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"segmentation-smts-alignment\">\n    <label class=\"v-label v-slider__label segmentation-my-label\">Minimal size to segment (MSTS)</label>\n    <v-text-field \n      variant=\"outlined\" \n      type=\"number\" \n      density=\"compact\" \n      v-model=\"msts\" \n      :disabled=\"isDisabled\" \n      append-inner-icon=\"mdi-information\" \n      @click:append-inner=\"switchDialog\">\n    </v-text-field>\n    <v-dialog v-model=\"dialog\" max-width=\"500\">\n      <v-card>\n        <v-card-title>Information</v-card-title>\n        <v-card-text>\n          This is an information dialog.\n        </v-card-text>\n        <v-card-actions>\n          <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n        </v-card-actions>\n      </v-card>\n    </v-dialog>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      msts: null,\n      dialog: false,\n      isDisabled: false // Propriété pour suivre l'état d'activation/désactivation\n    };\n  },\n  methods: {\n    switchDialog() {\n      this.dialog = !this.dialog;\n    },\n    handleMessage(msg) {\n      if (msg.payload === \"start\") {\n        this.isDisabled = true;\n      } else if (msg.payload === \"stop\") {\n        this.isDisabled = false;\n      }\n    }\n  },\n  watch: {\n    msts(newVal) {\n      this.send({ payload: { msts: newVal } });\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          this.handleMessage(msg);\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  }\n};\n</script>\n\n<style>\n.segmentation-smts-alignment {\n  display: flex !important;\n  align-items: center !important;\n}\n\n.segmentation-my-label {\n  font-size: 0.9vw !important;\n  font-weight: bolder !important;\n}\n\n.v-input__details {\n  display: none;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 300,
+        "y": 480,
+        "wires": [
+            [
+                "af3cbcd9f5f35be3"
+            ]
+        ]
+    },
+    {
+        "id": "42fc3d43830febaa",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "function 2",
+        "func": "if (msg.payload == \"start\") {\n    msg.payload = {\n        groups: {\n            enable: [],\n            disable: [\"Segmentation-2:acquisition-table-segmentation-2\"]\n        }\n    }\n} else if (msg.payload == \"stop\") {\n    msg.payload = {\n        groups: {\n            enable: [\"Segmentation-2:acquisition-table-segmentation-2\"],\n            disable: []\n        }\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 620,
+        "wires": [
+            [
+                "9529b63ced697421"
+            ]
+        ]
+    },
+    {
+        "id": "e3b705ae1aa1b878",
+        "type": "link in",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "link in 53",
+        "links": [
+            "b0c9b9896fec03cd"
+        ],
+        "x": 195,
+        "y": 480,
+        "wires": [
+            [
+                "10993eef6dc87fe5"
+            ]
+        ]
+    },
+    {
+        "id": "b0c9b9896fec03cd",
+        "type": "link out",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "link out 66",
+        "mode": "link",
+        "links": [
+            "e3b705ae1aa1b878"
+        ],
+        "x": 515,
+        "y": 620,
         "wires": []
     },
     {
