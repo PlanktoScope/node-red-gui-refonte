@@ -64,6 +64,14 @@
         "env": []
     },
     {
+        "id": "f260ed9417849607",
+        "type": "tab",
+        "label": "Page visualization",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "a975acfdbcf8fbf1",
         "type": "tab",
         "label": "Page Shutdown",
@@ -75,14 +83,6 @@
         "id": "5047c566973ee3a1",
         "type": "tab",
         "label": "Page settings",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "f260ed9417849607",
-        "type": "tab",
-        "label": "Page visualization",
         "disabled": false,
         "info": "",
         "env": []
@@ -149,11 +149,14 @@
             "b783644a6a28c422",
             "b3f67037ca280e20",
             "302ff33ff049c402",
-            "b86113b166fecbb9"
+            "b86113b166fecbb9",
+            "1f233eca492ddb72",
+            "3d3c573b4db88c99",
+            "33dd7a8f946de69a"
         ],
-        "x": 214,
+        "x": 74,
         "y": 99,
-        "w": 612,
+        "w": 752,
         "h": 162
     },
     {
@@ -211,15 +214,18 @@
         "nodes": [
             "7bcdca966429e51e",
             "25b3ad405bfa567a",
-            "ddeb123d50f0953b",
             "c7e80bc0431e15d7",
             "bf4e6ca4f9cb03d0",
             "b6d0e22f33ca686c",
-            "2a5d62263d874923"
+            "2a5d62263d874923",
+            "c46dc09dcaa89b8c",
+            "a483acb6d997bb54",
+            "13b9d4e3ee422e36",
+            "6be809475a69864d"
         ],
-        "x": 214,
+        "x": 74,
         "y": 59,
-        "w": 612,
+        "w": 752,
         "h": 162
     },
     {
@@ -273,15 +279,18 @@
         "nodes": [
             "c3c3454d430487e0",
             "83366805126c40c9",
-            "90ce6939f4a56d8e",
             "62ed056b8dcaa302",
             "97a70986fa0406ce",
             "86d23d1c6a0ea540",
-            "87f5b98130be3cd8"
+            "87f5b98130be3cd8",
+            "7e6b0fe8d3df5f29",
+            "fcd3c5ed2eb00ff6",
+            "85ae464a86f572ec",
+            "4f6f3f7fb89124a1"
         ],
-        "x": 214,
+        "x": 74,
         "y": 199,
-        "w": 612,
+        "w": 752,
         "h": 162
     },
     {
@@ -482,15 +491,18 @@
         "nodes": [
             "3e8b5c7dc322501d",
             "eec02edaf7da6b2e",
-            "994d1c8ea5b6b855",
             "8cf785fffe790177",
             "d68c231c98bf92e0",
             "b1eacad4b3bf6e97",
-            "1e4493ea93992368"
+            "1e4493ea93992368",
+            "a004902c262b883a",
+            "5c74446dd36aea48",
+            "a3daf0ba8f6c40b2",
+            "45231e159665930a"
         ],
-        "x": 214,
+        "x": 74,
         "y": 139,
-        "w": 612,
+        "w": 752,
         "h": 162
     },
     {
@@ -636,15 +648,18 @@
         "nodes": [
             "4d86c733bf64b966",
             "4e72a7308ee22e01",
-            "1d222446ef31ad1f",
             "6f6cce3a5af545a4",
             "7f0eed3e70085a04",
             "d59f4d5d0eee9d10",
-            "fb75e319685b7992"
+            "fb75e319685b7992",
+            "b4b8a2b6c5179ad4",
+            "4d9f44edfc258244",
+            "9dcc078c686a89b8",
+            "5a2fd5aa883e6a41"
         ],
-        "x": 274,
+        "x": 134,
         "y": 139,
-        "w": 612,
+        "w": 752,
         "h": 162
     },
     {
@@ -2671,7 +2686,7 @@
         "width": "3",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <v-list-item\n        v-for=\"item in menuItems\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-title>{{ item.title }}</v-list-item-title>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItems: [\n        { title: \"Settings\" },\n        { title: \"Calibration\" },\n        { title: \"Hardware\" },\n        { title: \"Explore your data\" },\n        { title: \"Administration\" },\n        { title: \"Monitoring\" },\n        { title: \"Reboot\" },\n        { title: \"Shutdown\" },\n      ],\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    iconClicked(iconName) {\n      console.log(`Icon clicked: ${iconName}`);\n    },\n    menuItemClicked(item) {\n      console.log(`Menu item clicked: ${item.title}`);\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n      this.send({payload: item.title});\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -2680,7 +2695,9 @@
         "x": 310,
         "y": 220,
         "wires": [
-            []
+            [
+                "1f233eca492ddb72"
+            ]
         ]
     },
     {
@@ -2977,6 +2994,67 @@
         ]
     },
     {
+        "id": "1f233eca492ddb72",
+        "type": "function",
+        "z": "db1e7a22029cc2a4",
+        "g": "4237eacb62444cc7",
+        "name": "Prepare payload to navigate",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Manage your data\") {\n    msg.payload = {\"page\":\"ManageYourData\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Documentation\") {\n    msg.payload = { url: 'https://url.goes.here' }\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "3d3c573b4db88c99"
+            ]
+        ]
+    },
+    {
+        "id": "3d3c573b4db88c99",
+        "type": "ui-control",
+        "z": "db1e7a22029cc2a4",
+        "g": "4237eacb62444cc7",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 720,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33dd7a8f946de69a",
+        "type": "inject",
+        "z": "db1e7a22029cc2a4",
+        "g": "4237eacb62444cc7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"profilName\":\"Loïc VASSAUX--ARTUR\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "b2dbc032f8e38df8"
+            ]
+        ]
+    },
+    {
         "id": "c3c3454d430487e0",
         "type": "ui-template",
         "z": "e988301e60e4b458",
@@ -3028,31 +3106,6 @@
             [
                 "97a70986fa0406ce"
             ]
-        ]
-    },
-    {
-        "id": "90ce6939f4a56d8e",
-        "type": "ui-template",
-        "z": "e988301e60e4b458",
-        "g": "610c7571a6ee5612",
-        "group": "0b7f28fdbeca7b10",
-        "page": "",
-        "ui": "",
-        "name": "Information",
-        "order": 3,
-        "width": "3",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <v-list-item\n        v-for=\"item in menuItems\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-title>{{ item.title }}</v-list-item-title>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItems: [\n        { title: \"Settings\" },\n        { title: \"Calibration\" },\n        { title: \"Hardware\" },\n        { title: \"Explore your data\" },\n        { title: \"Administration\" },\n        { title: \"Monitoring\" },\n        { title: \"Reboot\" },\n        { title: \"Shutdown\" },\n      ],\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    iconClicked(iconName) {\n      console.log(`Icon clicked: ${iconName}`);\n    },\n    menuItemClicked(item) {\n      console.log(`Menu item clicked: ${item.title}`);\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 310,
-        "y": 320,
-        "wires": [
-            []
         ]
     },
     {
@@ -3571,6 +3624,94 @@
         ]
     },
     {
+        "id": "7e6b0fe8d3df5f29",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "610c7571a6ee5612",
+        "group": "0b7f28fdbeca7b10",
+        "page": "",
+        "ui": "",
+        "name": "Information",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n      this.send({payload: item.title});\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 310,
+        "y": 320,
+        "wires": [
+            [
+                "fcd3c5ed2eb00ff6"
+            ]
+        ]
+    },
+    {
+        "id": "fcd3c5ed2eb00ff6",
+        "type": "function",
+        "z": "e988301e60e4b458",
+        "g": "610c7571a6ee5612",
+        "name": "Prepare payload to navigate",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Manage your data\") {\n    msg.payload = {\"page\":\"ManageYourData\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Documentation\") {\n    msg.payload = { url: 'https://url.goes.here' }\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 320,
+        "wires": [
+            [
+                "85ae464a86f572ec"
+            ]
+        ]
+    },
+    {
+        "id": "85ae464a86f572ec",
+        "type": "ui-control",
+        "z": "e988301e60e4b458",
+        "g": "610c7571a6ee5612",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 720,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f6f3f7fb89124a1",
+        "type": "inject",
+        "z": "e988301e60e4b458",
+        "g": "610c7571a6ee5612",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"profilName\":\"Loïc VASSAUX--ARTUR\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "7e6b0fe8d3df5f29"
+            ]
+        ]
+    },
+    {
         "id": "7bcdca966429e51e",
         "type": "ui-template",
         "z": "70f558eb9d60b6fc",
@@ -3622,31 +3763,6 @@
             [
                 "bf4e6ca4f9cb03d0"
             ]
-        ]
-    },
-    {
-        "id": "ddeb123d50f0953b",
-        "type": "ui-template",
-        "z": "70f558eb9d60b6fc",
-        "g": "c285048823f34bc0",
-        "group": "87b4aa991f82d46e",
-        "page": "",
-        "ui": "",
-        "name": "Information",
-        "order": 3,
-        "width": "3",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <v-list-item\n        v-for=\"item in menuItems\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-title>{{ item.title }}</v-list-item-title>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItems: [\n        { title: \"Settings\" },\n        { title: \"Calibration\" },\n        { title: \"Hardware\" },\n        { title: \"Explore your data\" },\n        { title: \"Administration\" },\n        { title: \"Monitoring\" },\n        { title: \"Reboot\" },\n        { title: \"Shutdown\" },\n      ],\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    iconClicked(iconName) {\n      console.log(`Icon clicked: ${iconName}`);\n    },\n    menuItemClicked(item) {\n      console.log(`Menu item clicked: ${item.title}`);\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 310,
-        "y": 180,
-        "wires": [
-            []
         ]
     },
     {
@@ -3822,6 +3938,94 @@
         ]
     },
     {
+        "id": "c46dc09dcaa89b8c",
+        "type": "ui-template",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "group": "87b4aa991f82d46e",
+        "page": "",
+        "ui": "",
+        "name": "Information",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n      this.send({payload: item.title});\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "a483acb6d997bb54"
+            ]
+        ]
+    },
+    {
+        "id": "a483acb6d997bb54",
+        "type": "function",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "name": "Prepare payload to navigate",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Manage your data\") {\n    msg.payload = {\"page\":\"ManageYourData\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Documentation\") {\n    msg.payload = { url: 'https://url.goes.here' }\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 180,
+        "wires": [
+            [
+                "13b9d4e3ee422e36"
+            ]
+        ]
+    },
+    {
+        "id": "13b9d4e3ee422e36",
+        "type": "ui-control",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 720,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6be809475a69864d",
+        "type": "inject",
+        "z": "70f558eb9d60b6fc",
+        "g": "c285048823f34bc0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"profilName\":\"Loïc VASSAUX--ARTUR\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "c46dc09dcaa89b8c"
+            ]
+        ]
+    },
+    {
         "id": "af3cbcd9f5f35be3",
         "type": "ui-template",
         "z": "00a14f98244d252e",
@@ -3886,7 +4090,7 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\" @click=\"navigateToHome\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        navigateToHome() {\n            this.send(\"Clicked!\");\n        }\n    }\n}\n</script>\n\n<style scoped>\n    h3 {\n        font-size: 1vw;\n    }\n    .center-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n    }\n\n    .center-image {\n        margin-right: 25px;\n        max-width: 40px;\n    }\n\n    h2 {\n        color: black;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\" @click=\"navigateToHome\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image-1\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        navigateToHome() {\n            this.send(\"Clicked!\");\n        }\n    }\n}\n</script>\n\n<style scoped>\n    h3 {\n        font-size: 1vw;\n    }\n\n    .center-container {\n        display: flex;\n        justify-content: flex-start;\n        align-items: center;\n        cursor: pointer;\n    }\n\n    .center-image-1 {\n        margin-right: 25px;\n        max-width: 40px;\n        line-height: 0px;\n    }\n\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -3925,31 +4129,6 @@
             [
                 "d68c231c98bf92e0"
             ]
-        ]
-    },
-    {
-        "id": "994d1c8ea5b6b855",
-        "type": "ui-template",
-        "z": "00a14f98244d252e",
-        "g": "99e9870d6e66aeaf",
-        "group": "c877701142780a50",
-        "page": "",
-        "ui": "",
-        "name": "Information",
-        "order": 3,
-        "width": "3",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n    <div class=\"center-container-information\">\n        <div class=\"center-container-information\">\n            <p id=\"time\"></p>\n            <p id=\"date\"></p>\n        </div>\n        <div class=\"center-container-information\">\n            <span class=\"mdi mdi-earth icon\" @click=\"iconClicked('earth')\"></span>\n            <span class=\"mdi mdi-account-circle-outline icon\" @click=\"iconClicked('account')\"></span>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    name: 'RealTimeInfo',\n    mounted() {\n        this.updateDateTime();\n        setInterval(this.updateDateTime, 1000);\n    },\n    methods: {\n        updateDateTime() {\n            const now = new Date();\n\n            const dateFormatter = new Intl.DateTimeFormat('en-US', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric'\n            });\n\n            const timeFormatter = new Intl.DateTimeFormat('en-GB', {\n                hour: '2-digit',\n                minute: '2-digit',\n                hour12: false,\n                timeZone: 'UTC'\n            });\n\n            const date = dateFormatter.format(now);\n            const time = timeFormatter.format(now) + \" UTC\";\n\n            document.getElementById('date').innerText = date;\n            document.getElementById('time').innerText = time;\n        },\n        iconClicked(iconName) {\n            console.log(`Icon clicked: ${iconName}`);\n        }\n    }\n}\n</script>\n\n<style scoped>\n    .center-container-information {\n        display: flex;\n        justify-content: space-evenly;\n        align-items: center;\n    }\n\n    .center-container-information > * {\n        margin: 0 5px;\n    }\n\n    p {\n        font-size: 0.9vw;\n        color: black;\n    }\n\n    .icon {\n        font-size: 28px;\n        cursor: pointer;\n    }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 310,
-        "y": 260,
-        "wires": [
-            []
         ]
     },
     {
@@ -4318,301 +4497,72 @@
         "wires": []
     },
     {
-        "id": "835e4cc018194bf5",
+        "id": "a004902c262b883a",
         "type": "ui-template",
-        "z": "a975acfdbcf8fbf1",
-        "group": "ae9894da80aed523",
+        "z": "00a14f98244d252e",
+        "g": "99e9870d6e66aeaf",
+        "group": "c877701142780a50",
         "page": "",
         "ui": "",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
+        "name": "Information",
+        "order": 3,
+        "width": "3",
+        "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <h2 class=\"title\">Machine Shutdown Confirmation</h2>\n        <p class=\"message\">Are you sure you want to shut down the machine?</p>\n        <v-btn class=\"confirm-btn\" color=\"error\" dark @click=\"turnOff()\">Confirm</v-btn>\n        <v-btn class=\"cancel-btn\" dark @click=\"cancel()\">Cancel</v-btn>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            turnOff() {\n                this.send({ payload: `Shutdown` });\n            },\n            cancel() {\n                this.send({ payload: `Return` });\n            }\n        }\n    }\n</script>\n\n<style>\n    .center-container {\n        position: absolute;\n        padding: 5rem 5rem;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        text-align: center;\n        background-color: #f5f5f5; /* Légèrement moins blanc */\n        border-radius: 10px;\n        border: solid 1px #ccc;\n    }\n\n    .title {\n        font-size: 28px;\n        font-weight: bold;\n        margin-bottom: 1rem;\n    }\n\n    .message {\n        font-size: 16px;\n        margin-bottom: 3rem;\n    }\n\n    .confirm-btn, .cancel-btn {\n        margin-top: 20px; \n        padding: 15px 30px; \n        font-size: 18px;\n    }\n\n    .confirm-btn {\n        margin-right: 10px;\n    }\n\n    .cancel-btn {\n        margin-left: 10px;\n    }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n      this.send({payload: item.title});\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 600,
-        "y": 40,
+        "x": 310,
+        "y": 260,
         "wires": [
             [
-                "ef9a2869e384edf8"
+                "5c74446dd36aea48"
             ]
         ]
     },
     {
-        "id": "5b7e92dd119a9ab4",
+        "id": "5c74446dd36aea48",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "g": "99e9870d6e66aeaf",
+        "name": "Prepare payload to navigate",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Manage your data\") {\n    msg.payload = {\"page\":\"ManageYourData\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Documentation\") {\n    msg.payload = { url: 'https://url.goes.here' }\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "a3daf0ba8f6c40b2"
+            ]
+        ]
+    },
+    {
+        "id": "a3daf0ba8f6c40b2",
         "type": "ui-control",
-        "z": "a975acfdbcf8fbf1",
+        "z": "00a14f98244d252e",
+        "g": "99e9870d6e66aeaf",
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 200,
-        "y": 40,
+        "x": 720,
+        "y": 260,
         "wires": [
             []
         ]
     },
     {
-        "id": "63d7611842b9ada1",
-        "type": "link in",
-        "z": "a975acfdbcf8fbf1",
-        "name": "link in 29",
-        "links": [
-            "fe665c51e023e21e"
-        ],
-        "x": 75,
-        "y": 40,
-        "wires": [
-            [
-                "5b7e92dd119a9ab4"
-            ]
-        ]
-    },
-    {
-        "id": "ef9a2869e384edf8",
-        "type": "switch",
-        "z": "a975acfdbcf8fbf1",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Shutdown",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Return",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 600,
-        "y": 100,
-        "wires": [
-            [
-                "7b065a04d1c822f5"
-            ],
-            [
-                "bc2e46824eb150bc"
-            ]
-        ]
-    },
-    {
-        "id": "bc2e46824eb150bc",
-        "type": "change",
-        "z": "a975acfdbcf8fbf1",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"page\":\"Home\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 790,
-        "y": 120,
-        "wires": [
-            [
-                "fe665c51e023e21e"
-            ]
-        ]
-    },
-    {
-        "id": "fe665c51e023e21e",
-        "type": "link out",
-        "z": "a975acfdbcf8fbf1",
-        "name": "link out 28",
-        "mode": "link",
-        "links": [
-            "63d7611842b9ada1"
-        ],
-        "x": 915,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "7b065a04d1c822f5",
-        "type": "debug",
-        "z": "a975acfdbcf8fbf1",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "78b1314c8c6d5886",
-        "type": "ui-dropdown",
-        "z": "5047c566973ee3a1",
-        "group": "8832bb035686ade4",
-        "name": "Selection",
-        "label": "",
-        "tooltip": "",
-        "order": 2,
-        "width": "6",
-        "height": "1",
-        "passthru": false,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Decimal degrees (DD)",
-                "value": "Decimal degrees (DD)",
-                "type": "str"
-            },
-            {
-                "label": "Degrees, minutes and seconds (DMS)",
-                "value": "Degrees, minutes and seconds (DMS)",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "selection-dropdown",
-        "x": 500,
-        "y": 260,
-        "wires": [
-            [
-                "16f21cf602d3f6e9"
-            ]
-        ]
-    },
-    {
-        "id": "7ffb1d85bd5cf0f1",
+        "id": "45231e159665930a",
         "type": "inject",
-        "z": "5047c566973ee3a1",
-        "name": "Coordonate format",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Coordonate format",
-        "payloadType": "str",
-        "x": 330,
-        "y": 220,
-        "wires": [
-            [
-                "75688a0ce947e177"
-            ]
-        ]
-    },
-    {
-        "id": "75688a0ce947e177",
-        "type": "ui-text",
-        "z": "5047c566973ee3a1",
-        "group": "8832bb035686ade4",
-        "order": 1,
-        "width": "4",
-        "height": "1",
-        "name": "",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "label-short-input",
-        "x": 490,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "16f21cf602d3f6e9",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
-        "command": "write",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 700,
-        "y": 260,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "8aa722392db95966",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
-        "command": "read",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 300,
-        "y": 260,
-        "wires": [
-            [
-                "78b1314c8c6d5886"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "26678c92f2cd2bb3",
-        "type": "inject",
-        "z": "5047c566973ee3a1",
+        "z": "00a14f98244d252e",
+        "g": "99e9870d6e66aeaf",
         "name": "",
         "props": [
             {
@@ -4624,13 +4574,13 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 110,
+        "payload": "{\"profilName\":\"Loïc VASSAUX--ARTUR\"}",
+        "payloadType": "json",
+        "x": 170,
         "y": 260,
         "wires": [
             [
-                "8aa722392db95966"
+                "a004902c262b883a"
             ]
         ]
     },
@@ -4713,31 +4663,6 @@
             [
                 "7f0eed3e70085a04"
             ]
-        ]
-    },
-    {
-        "id": "1d222446ef31ad1f",
-        "type": "ui-template",
-        "z": "f260ed9417849607",
-        "g": "490dfe89220d57c8",
-        "group": "5e45a13758b9c23e",
-        "page": "",
-        "ui": "",
-        "name": "Information",
-        "order": 3,
-        "width": "3",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n    <div class=\"center-container-information\">\n        <div class=\"center-container-information\">\n            <p id=\"time\"></p>\n            <p id=\"date\"></p>\n        </div>\n        <div class=\"center-container-information\">\n            <span class=\"mdi mdi-earth icon\" @click=\"iconClicked('earth')\"></span>\n            <span class=\"mdi mdi-account-circle-outline icon\" @click=\"iconClicked('account')\"></span>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    name: 'RealTimeInfo',\n    mounted() {\n        this.updateDateTime();\n        setInterval(this.updateDateTime, 1000);\n    },\n    methods: {\n        updateDateTime() {\n            const now = new Date();\n\n            const dateFormatter = new Intl.DateTimeFormat('en-US', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric'\n            });\n\n            const timeFormatter = new Intl.DateTimeFormat('en-GB', {\n                hour: '2-digit',\n                minute: '2-digit',\n                hour12: false,\n                timeZone: 'UTC'\n            });\n\n            const date = dateFormatter.format(now);\n            const time = timeFormatter.format(now) + \" UTC\";\n\n            document.getElementById('date').innerText = date;\n            document.getElementById('time').innerText = time;\n        },\n        iconClicked(iconName) {\n            console.log(`Icon clicked: ${iconName}`);\n        }\n    }\n}\n</script>\n\n<style scoped>\n    .center-container-information {\n        display: flex;\n        justify-content: space-evenly;\n        align-items: center;\n    }\n\n    .center-container-information > * {\n        margin: 0 5px;\n    }\n\n    p {\n        font-size: 0.9vw;\n        color: black;\n    }\n\n    .icon {\n        font-size: 28px;\n        cursor: pointer;\n    }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 370,
-        "y": 260,
-        "wires": [
-            []
         ]
     },
     {
@@ -5356,6 +5281,411 @@
             [
                 "7d3e19376f4b262e",
                 "e4c5ac606ec6a5db"
+            ]
+        ]
+    },
+    {
+        "id": "b4b8a2b6c5179ad4",
+        "type": "ui-template",
+        "z": "f260ed9417849607",
+        "g": "490dfe89220d57c8",
+        "group": "5e45a13758b9c23e",
+        "page": "",
+        "ui": "",
+        "name": "Information",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n      this.send({payload: item.title});\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "4d9f44edfc258244"
+            ]
+        ]
+    },
+    {
+        "id": "4d9f44edfc258244",
+        "type": "function",
+        "z": "f260ed9417849607",
+        "g": "490dfe89220d57c8",
+        "name": "Prepare payload to navigate",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Manage your data\") {\n    msg.payload = {\"page\":\"ManageYourData\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Documentation\") {\n    msg.payload = { url: 'https://url.goes.here' }\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 260,
+        "wires": [
+            [
+                "9dcc078c686a89b8"
+            ]
+        ]
+    },
+    {
+        "id": "9dcc078c686a89b8",
+        "type": "ui-control",
+        "z": "f260ed9417849607",
+        "g": "490dfe89220d57c8",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 780,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a2fd5aa883e6a41",
+        "type": "inject",
+        "z": "f260ed9417849607",
+        "g": "490dfe89220d57c8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"profilName\":\"Loïc VASSAUX--ARTUR\"}",
+        "payloadType": "json",
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "b4b8a2b6c5179ad4"
+            ]
+        ]
+    },
+    {
+        "id": "835e4cc018194bf5",
+        "type": "ui-template",
+        "z": "a975acfdbcf8fbf1",
+        "group": "ae9894da80aed523",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"center-container\">\n        <h2 class=\"title\">Machine Shutdown Confirmation</h2>\n        <p class=\"message\">Are you sure you want to shut down the machine?</p>\n        <v-btn class=\"confirm-btn\" color=\"error\" dark @click=\"turnOff()\">Confirm</v-btn>\n        <v-btn class=\"cancel-btn\" dark @click=\"cancel()\">Cancel</v-btn>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            turnOff() {\n                this.send({ payload: `Shutdown` });\n            },\n            cancel() {\n                this.send({ payload: `Return` });\n            }\n        }\n    }\n</script>\n\n<style>\n    .center-container {\n        position: absolute;\n        padding: 5rem 5rem;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        text-align: center;\n        background-color: #f5f5f5; /* Légèrement moins blanc */\n        border-radius: 10px;\n        border: solid 1px #ccc;\n    }\n\n    .title {\n        font-size: 28px;\n        font-weight: bold;\n        margin-bottom: 1rem;\n    }\n\n    .message {\n        font-size: 16px;\n        margin-bottom: 3rem;\n    }\n\n    .confirm-btn, .cancel-btn {\n        margin-top: 20px; \n        padding: 15px 30px; \n        font-size: 18px;\n    }\n\n    .confirm-btn {\n        margin-right: 10px;\n    }\n\n    .cancel-btn {\n        margin-left: 10px;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 40,
+        "wires": [
+            [
+                "ef9a2869e384edf8"
+            ]
+        ]
+    },
+    {
+        "id": "5b7e92dd119a9ab4",
+        "type": "ui-control",
+        "z": "a975acfdbcf8fbf1",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 200,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "63d7611842b9ada1",
+        "type": "link in",
+        "z": "a975acfdbcf8fbf1",
+        "name": "link in 29",
+        "links": [
+            "fe665c51e023e21e"
+        ],
+        "x": 75,
+        "y": 40,
+        "wires": [
+            [
+                "5b7e92dd119a9ab4"
+            ]
+        ]
+    },
+    {
+        "id": "ef9a2869e384edf8",
+        "type": "switch",
+        "z": "a975acfdbcf8fbf1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Shutdown",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Return",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [
+                "7b065a04d1c822f5"
+            ],
+            [
+                "bc2e46824eb150bc"
+            ]
+        ]
+    },
+    {
+        "id": "bc2e46824eb150bc",
+        "type": "change",
+        "z": "a975acfdbcf8fbf1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"page\":\"Home\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 120,
+        "wires": [
+            [
+                "fe665c51e023e21e"
+            ]
+        ]
+    },
+    {
+        "id": "fe665c51e023e21e",
+        "type": "link out",
+        "z": "a975acfdbcf8fbf1",
+        "name": "link out 28",
+        "mode": "link",
+        "links": [
+            "63d7611842b9ada1"
+        ],
+        "x": 915,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7b065a04d1c822f5",
+        "type": "debug",
+        "z": "a975acfdbcf8fbf1",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "78b1314c8c6d5886",
+        "type": "ui-dropdown",
+        "z": "5047c566973ee3a1",
+        "group": "8832bb035686ade4",
+        "name": "Selection",
+        "label": "",
+        "tooltip": "",
+        "order": 2,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Decimal degrees (DD)",
+                "value": "Decimal degrees (DD)",
+                "type": "str"
+            },
+            {
+                "label": "Degrees, minutes and seconds (DMS)",
+                "value": "Degrees, minutes and seconds (DMS)",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "selection-dropdown",
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "16f21cf602d3f6e9"
+            ]
+        ]
+    },
+    {
+        "id": "7ffb1d85bd5cf0f1",
+        "type": "inject",
+        "z": "5047c566973ee3a1",
+        "name": "Coordonate format",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Coordonate format",
+        "payloadType": "str",
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "75688a0ce947e177"
+            ]
+        ]
+    },
+    {
+        "id": "75688a0ce947e177",
+        "type": "ui-text",
+        "z": "5047c566973ee3a1",
+        "group": "8832bb035686ade4",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "label-short-input",
+        "x": 490,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "16f21cf602d3f6e9",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 700,
+        "y": 260,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8aa722392db95966",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "78b1314c8c6d5886"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "26678c92f2cd2bb3",
+        "type": "inject",
+        "z": "5047c566973ee3a1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "8aa722392db95966"
             ]
         ]
     }
