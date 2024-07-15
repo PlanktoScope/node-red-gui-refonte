@@ -130,7 +130,7 @@
         "x": 284,
         "y": 159,
         "w": 802,
-        "h": 142
+        "h": 122
     },
     {
         "id": "4237eacb62444cc7",
@@ -755,13 +755,36 @@
         "nodes": [
             "60b2ecc0d6e457c8",
             "8b6ce849b7c7c43f",
-            "eccc7a7d085bb2eb",
-            "53b390b93b29c5fa"
+            "53b390b93b29c5fa",
+            "4e5baf21e265d811"
         ],
-        "x": 54,
-        "y": 239,
-        "w": 872,
+        "x": 144,
+        "y": 379,
+        "w": 782,
         "h": 82
+    },
+    {
+        "id": "149a607c8eda744a",
+        "type": "group",
+        "z": "5047c566973ee3a1",
+        "name": "Operator settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "33b7801889f49dfe",
+            "c52bf2a4ca8f30e3",
+            "def19b85f4af5b99",
+            "4716e00ccb75257f",
+            "460fb659adbbae17",
+            "7b3e64e2512b4f9f"
+        ],
+        "x": 144,
+        "y": 239,
+        "w": 802,
+        "h": 122
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -872,7 +895,7 @@
         "page": "6a4834caf5af80e2",
         "width": "12",
         "height": "1",
-        "order": 2,
+        "order": 3,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1216,6 +1239,24 @@
                 "description": "Format of coordonates",
                 "scope": "global",
                 "storage": "default"
+            },
+            {
+                "id": "3a134aa0-42a3-11ef-89ad-e57161842148",
+                "name": "operator_name",
+                "datatype": "str",
+                "default": "",
+                "description": "Name of the operator",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "456f9de0-42a3-11ef-89ad-e57161842148",
+                "name": "operator_email",
+                "datatype": "str",
+                "default": "",
+                "description": "Email of the operator",
+                "scope": "global",
+                "storage": "default"
             }
         ]
     },
@@ -1426,6 +1467,19 @@
         "disabled": "false"
     },
     {
+        "id": "0531957b8d4ecb7d",
+        "type": "ui-group",
+        "name": "operator-settings",
+        "page": "6a4834caf5af80e2",
+        "width": "12",
+        "height": "1",
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
         "id": "ab7abe42214339fd",
         "type": "inject",
         "z": "2d41a8ed5aea3449",
@@ -1566,7 +1620,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
+        "x": 460,
         "y": 200,
         "wires": [
             [
@@ -1668,8 +1722,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 260,
-        "y": 500,
+        "x": 300,
+        "y": 480,
         "wires": [
             [],
             []
@@ -1697,7 +1751,9 @@
         "wires": [
             [
                 "6a5d78b1bdbbd9da",
-                "4469155952188120"
+                "4469155952188120",
+                "b45db1e61d1984ce",
+                "caa5d00ff15afc7b"
             ]
         ]
     },
@@ -1727,7 +1783,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 680,
-        "y": 260,
+        "y": 240,
         "wires": [
             [
                 "cef686ed8e156c03"
@@ -1755,8 +1811,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
-        "y": 260,
+        "x": 460,
+        "y": 240,
         "wires": [
             [
                 "931e4aba3ed98eab"
@@ -1778,7 +1834,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 930,
-        "y": 260,
+        "y": 240,
         "wires": []
     },
     {
@@ -1805,8 +1861,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 280,
-        "y": 540,
+        "x": 320,
+        "y": 520,
         "wires": [
             [],
             []
@@ -1906,6 +1962,68 @@
         "x": 980,
         "y": 660,
         "wires": []
+    },
+    {
+        "id": "b45db1e61d1984ce",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 330,
+        "y": 560,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "caa5d00ff15afc7b",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_email",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 320,
+        "y": 600,
+        "wires": [
+            [],
+            []
+        ]
     },
     {
         "id": "db628ba400a981fc",
@@ -5712,7 +5830,7 @@
         "templateScope": "local",
         "className": "",
         "x": 560,
-        "y": 280,
+        "y": 420,
         "wires": [
             [
                 "53b390b93b29c5fa"
@@ -5745,7 +5863,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 280,
+        "y": 420,
         "wires": [
             [
                 "60b2ecc0d6e457c8"
@@ -5757,25 +5875,18 @@
         "id": "eccc7a7d085bb2eb",
         "type": "inject",
         "z": "5047c566973ee3a1",
-        "g": "c8544c656ab24cf4",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "1",
+        "props": [],
+        "repeat": "3",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 150,
-        "y": 280,
+        "x": 130,
+        "y": 100,
         "wires": [
             [
-                "8b6ce849b7c7c43f"
+                "3818cc8b0a5aabed"
             ]
         ]
     },
@@ -5805,7 +5916,216 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 780,
+        "y": 420,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "33b7801889f49dfe",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "group": "0531957b8d4ecb7d",
+        "page": "",
+        "ui": "",
+        "name": "settings-operator",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2 class=\"settings-operator-title\">Operator</h2>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Name</label>\n      <v-text-field v-model=\"operator_name\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Email</label>\n      <v-text-field v-model=\"operator_email\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        operator_name: '',\n        operator_email: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.operator_name) {\n            this.operator_name = msg.operator_name;\n          }\n          if (msg.payload.operator_email) {\n            this.operator_email = msg.operator_email;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      operator_name: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: newVal,\n              operator_email: this.operator_email\n            }});\n          }\n        },\n        deep: true\n      },\n      operator_email: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: this.operator_name,\n              operator_email: newVal\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.operator_email) {\n              this.operator_email = msg.operator_email;\n            }\n            if (msg.operator_name) {\n              this.operator_name = msg.operator_name;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-operator-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .settings-operator-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-operator-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "460fb659adbbae17",
+                "7b3e64e2512b4f9f"
+            ]
+        ]
+    },
+    {
+        "id": "3818cc8b0a5aabed",
+        "type": "link out",
+        "z": "5047c566973ee3a1",
+        "name": "link out 69",
+        "mode": "link",
+        "links": [
+            "4e5baf21e265d811",
+            "c52bf2a4ca8f30e3"
+        ],
+        "x": 215,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4e5baf21e265d811",
+        "type": "link in",
+        "z": "5047c566973ee3a1",
+        "g": "c8544c656ab24cf4",
+        "name": "link in 55",
+        "links": [
+            "3818cc8b0a5aabed"
+        ],
+        "x": 185,
+        "y": 420,
+        "wires": [
+            [
+                "8b6ce849b7c7c43f"
+            ]
+        ]
+    },
+    {
+        "id": "c52bf2a4ca8f30e3",
+        "type": "link in",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "link in 56",
+        "links": [
+            "3818cc8b0a5aabed"
+        ],
+        "x": 185,
+        "y": 300,
+        "wires": [
+            [
+                "def19b85f4af5b99",
+                "4716e00ccb75257f"
+            ]
+        ]
+    },
+    {
+        "id": "def19b85f4af5b99",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "read",
+        "msgProperty": "operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 340,
         "y": 280,
+        "wires": [
+            [
+                "33b7801889f49dfe"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4716e00ccb75257f",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_email",
+        "command": "read",
+        "msgProperty": "operator_email",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "33b7801889f49dfe"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "460fb659adbbae17",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "write",
+        "msgProperty": "payload.operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 800,
+        "y": 280,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7b3e64e2512b4f9f",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_email",
+        "command": "write",
+        "msgProperty": "payload.operator_email",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 800,
+        "y": 320,
         "wires": [
             [],
             []
