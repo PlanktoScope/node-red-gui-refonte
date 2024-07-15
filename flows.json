@@ -279,7 +279,7 @@
             "87f5b98130be3cd8"
         ],
         "x": 214,
-        "y": 99,
+        "y": 199,
         "w": 612,
         "h": 162
     },
@@ -300,7 +300,7 @@
             "5f430f744fd2f18d"
         ],
         "x": 214,
-        "y": 279,
+        "y": 379,
         "w": 732,
         "h": 122
     },
@@ -319,7 +319,7 @@
             "cd0ffd27aadc1ff1"
         ],
         "x": 154,
-        "y": 419,
+        "y": 519,
         "w": 252,
         "h": 82
     },
@@ -338,7 +338,7 @@
             "964efd36d61519e9"
         ],
         "x": 154,
-        "y": 519,
+        "y": 619,
         "w": 252,
         "h": 82
     },
@@ -356,7 +356,7 @@
             "cc28e6514a5a9c99"
         ],
         "x": 214,
-        "y": 619,
+        "y": 719,
         "w": 212,
         "h": 82
     },
@@ -374,7 +374,7 @@
             "d4041ec6e94072be"
         ],
         "x": 214,
-        "y": 819,
+        "y": 919,
         "w": 332,
         "h": 82
     },
@@ -392,7 +392,7 @@
             "470cceda379e27fc"
         ],
         "x": 214,
-        "y": 919,
+        "y": 1019,
         "w": 312,
         "h": 82
     },
@@ -410,7 +410,7 @@
             "0eec8b84ecf95b07"
         ],
         "x": 214,
-        "y": 1019,
+        "y": 1119,
         "w": 312,
         "h": 82
     },
@@ -428,7 +428,7 @@
             "4a4db8d5c9ce9226"
         ],
         "x": 214,
-        "y": 719,
+        "y": 819,
         "w": 212,
         "h": 82
     },
@@ -446,7 +446,7 @@
             "5b2b9e8bb104b3d7"
         ],
         "x": 214,
-        "y": 1119,
+        "y": 1219,
         "w": 412,
         "h": 82
     },
@@ -464,7 +464,7 @@
             "e7fdcbc88dc9b248"
         ],
         "x": 214,
-        "y": 1219,
+        "y": 1319,
         "w": 272,
         "h": 82
     },
@@ -2927,7 +2927,7 @@
         "templateScope": "local",
         "className": "",
         "x": 290,
-        "y": 140,
+        "y": 240,
         "wires": [
             [
                 "86d23d1c6a0ea540"
@@ -2954,7 +2954,7 @@
         "templateScope": "local",
         "className": "",
         "x": 300,
-        "y": 180,
+        "y": 280,
         "wires": [
             [
                 "97a70986fa0406ce"
@@ -2981,7 +2981,7 @@
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 220,
+        "y": 320,
         "wires": [
             []
         ]
@@ -2995,7 +2995,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 740,
-        "y": 180,
+        "y": 280,
         "wires": [
             []
         ]
@@ -3014,7 +3014,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 180,
+        "y": 280,
         "wires": [
             [
                 "62ed056b8dcaa302"
@@ -3041,7 +3041,7 @@
         "templateScope": "local",
         "className": "",
         "x": 360,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "ceccdeb615cdc48b"
@@ -3057,7 +3057,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 860,
-        "y": 360,
+        "y": 460,
         "wires": [
             []
         ]
@@ -3076,7 +3076,7 @@
         "finalize": "",
         "libs": [],
         "x": 640,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "697ae94309963b9b"
@@ -3103,7 +3103,7 @@
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 460,
+        "y": 560,
         "wires": [
             []
         ]
@@ -3166,7 +3166,7 @@
             "764bf644172419d4"
         ],
         "x": 195,
-        "y": 460,
+        "y": 560,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -3193,7 +3193,7 @@
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 560,
+        "y": 660,
         "wires": [
             []
         ]
@@ -3208,7 +3208,7 @@
             "764bf644172419d4"
         ],
         "x": 195,
-        "y": 560,
+        "y": 660,
         "wires": [
             [
                 "5acf20b7ca52e6ae"
@@ -3249,7 +3249,7 @@
         "templateScope": "local",
         "className": "",
         "x": 320,
-        "y": 660,
+        "y": 760,
         "wires": [
             []
         ]
@@ -3268,7 +3268,7 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 140,
+        "y": 240,
         "wires": [
             [
                 "87f5b98130be3cd8"
@@ -3284,7 +3284,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 720,
-        "y": 140,
+        "y": 240,
         "wires": [
             []
         ]
@@ -3309,7 +3309,7 @@
         "templateScope": "local",
         "className": "",
         "x": 380,
-        "y": 860,
+        "y": 960,
         "wires": [
             []
         ]
@@ -3334,7 +3334,7 @@
         "templateScope": "local",
         "className": "",
         "x": 370,
-        "y": 960,
+        "y": 1060,
         "wires": [
             []
         ]
@@ -3359,7 +3359,7 @@
         "templateScope": "local",
         "className": "",
         "x": 370,
-        "y": 1060,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -3384,7 +3384,7 @@
         "templateScope": "local",
         "className": "",
         "x": 320,
-        "y": 760,
+        "y": 860,
         "wires": [
             []
         ]
@@ -3409,7 +3409,7 @@
         "templateScope": "local",
         "className": "",
         "x": 420,
-        "y": 1160,
+        "y": 1260,
         "wires": [
             []
         ]
@@ -3434,7 +3434,7 @@
         "templateScope": "local",
         "className": "",
         "x": 350,
-        "y": 1260,
+        "y": 1360,
         "wires": [
             []
         ]
@@ -3458,10 +3458,48 @@
         "payload": "{\"gear\":\"Horizontal Net\"}",
         "payloadType": "json",
         "x": 430,
-        "y": 320,
+        "y": 420,
         "wires": [
             [
                 "ceccdeb615cdc48b"
+            ]
+        ]
+    },
+    {
+        "id": "a4b88adea83b2353",
+        "type": "ui-control",
+        "z": "e988301e60e4b458",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 300,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1aaebeafaaf941aa",
+        "type": "inject",
+        "z": "e988301e60e4b458",
+        "name": "Placeholder page",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"group\":{\"show\":[\"Sample-2:starting-point-sample-2\",\"Sample-2:ending-point-sample-2\",\"Sample-2:net-specificity-sample-2\",\"Sample-2:other-information-horizontal-net\"],\"hide\":[\"Sample-2:other-information-vertical-net\",\"Sample-2:other-information-niskin-bottle\",\"Sample-2:bottle-specificity-sample-2\",\"Sample-2:other-information-lab-culture-&-demo\"]}}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "a4b88adea83b2353"
             ]
         ]
     },
