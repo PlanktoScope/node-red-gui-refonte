@@ -154,7 +154,7 @@
             "3d3c573b4db88c99",
             "33dd7a8f946de69a"
         ],
-        "x": 74,
+        "x": 274,
         "y": 99,
         "w": 752,
         "h": 162
@@ -172,34 +172,10 @@
         "nodes": [
             "ae325f7a4e54fd51"
         ],
-        "x": 214,
+        "x": 414,
         "y": 279,
         "w": 192,
         "h": 82
-    },
-    {
-        "id": "5387cbd03cda0166",
-        "type": "group",
-        "z": "db1e7a22029cc2a4",
-        "name": "Settings",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "7c2460ce034f4740",
-            "4d881b94510f4523",
-            "e76753ed4e6ec711",
-            "7f41b4c29c7b9203",
-            "055035e49e2c683e",
-            "9410b3f9aac5086a",
-            "0df141654adc0894"
-        ],
-        "x": 74,
-        "y": 379,
-        "w": 512,
-        "h": 202
     },
     {
         "id": "c285048823f34bc0",
@@ -811,6 +787,33 @@
         "y": 439,
         "w": 872,
         "h": 162
+    },
+    {
+        "id": "5387cbd03cda0166",
+        "type": "group",
+        "z": "db1e7a22029cc2a4",
+        "name": "Settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7c2460ce034f4740",
+            "4d881b94510f4523",
+            "e76753ed4e6ec711",
+            "7f41b4c29c7b9203",
+            "b439202bb729a0e3",
+            "f25e0f5152d059c9",
+            "6739b10df9f1d57b",
+            "f1a9c4c1beb3f6db",
+            "30fca39cc406ed23",
+            "b5e0a7a9cb47a50b"
+        ],
+        "x": 64,
+        "y": 379,
+        "w": 562,
+        "h": 222
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -1788,8 +1791,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 300,
-        "y": 480,
+        "x": 400,
+        "y": 340,
         "wires": [
             [],
             []
@@ -1819,7 +1822,10 @@
                 "6a5d78b1bdbbd9da",
                 "4469155952188120",
                 "b45db1e61d1984ce",
-                "caa5d00ff15afc7b"
+                "caa5d00ff15afc7b",
+                "28eb8fb70252bece",
+                "d09d2878c5a4f034",
+                "8777af2465094b01"
             ]
         ]
     },
@@ -1927,8 +1933,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 320,
-        "y": 520,
+        "x": 420,
+        "y": 380,
         "wires": [
             [],
             []
@@ -2053,8 +2059,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 330,
-        "y": 560,
+        "x": 430,
+        "y": 420,
         "wires": [
             [],
             []
@@ -2084,8 +2090,101 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 320,
-        "y": 600,
+        "x": 420,
+        "y": 460,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "28eb8fb70252bece",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
+        "value": "flowrate_preset",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 430,
+        "y": 500,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d09d2878c5a4f034",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
+        "value": "volume_preset",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 540,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8777af2465094b01",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
+        "value": "focus_preset",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 580,
         "wires": [
             [],
             []
@@ -2877,7 +2976,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 290,
+        "x": 490,
         "y": 140,
         "wires": [
             [
@@ -2904,7 +3003,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 300,
+        "x": 500,
         "y": 180,
         "wires": [
             [
@@ -2931,7 +3030,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 310,
+        "x": 510,
         "y": 220,
         "wires": [
             [
@@ -2947,7 +3046,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 740,
+        "x": 940,
         "y": 180,
         "wires": [
             []
@@ -2966,7 +3065,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 720,
         "y": 180,
         "wires": [
             [
@@ -2993,7 +3092,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 310,
+        "x": 510,
         "y": 320,
         "wires": [
             []
@@ -3012,18 +3111,16 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n    <div class=\"container\">\n        <h2>Pump</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider color=\"#0a6eca\" v-model=\"flowrate\" label=\"Flowrate\" step=\"0.01\" max=\"200\" class=\"my-slider custom-slider\"></v-slider>\n          <v-text-field variant=\"outlined\" v-model=\"flowrate\" suffix=\"ml/min\" density=\"compact\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog1\" class=\"my-v-text\"></v-text-field>\n          <v-dialog v-model=\"dialog1\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 1.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog1 = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle v-model=\"selectedFlowratePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n          <v-btn style=\"padding: 10px;\">{{msg.payload.flowratePresets[0]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{msg.payload.flowratePresets[1]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{msg.payload.flowratePresets[2]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{msg.payload.flowratePresets[3]}}</v-btn>\n        </v-btn-toggle>\n\n        <div class=\"horizontal-alignment\">\n          <v-slider color=\"#0a6eca\" v-model=\"volume\" label=\"Volume\" step=\"10\" max=\"200\" class=\"my-slider custom-slider\"></v-slider>\n          <v-text-field variant=\"outlined\" v-model=\"volume\" suffix=\"ml\" density=\"compact\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog2\" class=\"my-v-text\"></v-text-field>\n          <v-dialog v-model=\"dialog2\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 2.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog2 = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle v-model=\"selectedVolumePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n          <v-btn style=\"padding: 10px;\"><span class=\"mdi mdi-infinity\"></span></v-btn>\n          <v-btn style=\"padding: 10px;\">{{msg.payload.volumePresets[1]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{msg.payload.volumePresets[2]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{msg.payload.volumePresets[3]}}</v-btn>\n        </v-btn-toggle>\n\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-rotate-left</v-icon>Backward</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-rotate-right</v-icon>Forward</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: 50,\n        volume: 50,\n        dialog1: false,\n        dialog2: false,\n        toggle: 1,\n        selectedFlowratePreset: 1,\n        selectedVolumePreset: 1,\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      }\n    },\n    watch: {\n      selectedFlowratePreset: function() {\n        if (this.selectedFlowratePreset == 0) {\n          this.flowrate = 20;\n        } else if (this.selectedFlowratePreset == 1) {\n          this.flowrate = 50;\n        } else if (this.selectedFlowratePreset == 2) {\n          this.flowrate = 100;\n        } else if (this.selectedFlowratePreset == 3) {\n          this.flowrate = 200;\n        }\n      },\n      selectedVolumePreset: function() {\n        if (this.selectedVolumePreset == 0) {\n          this.volume = \"Infinity\";\n        } else if (this.selectedVolumePreset == 1) {\n          this.volume = 50;\n        } else if (this.selectedVolumePreset == 2) {\n          this.volume = 100;\n        } else if (this.selectedVolumePreset == 3) {\n          this.volume = 200;\n        }\n      }\n    },\n    mounted() {\n      this.selectedVolumePreset = 1;\n      this.toggle = 1;\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-slider {\n    padding-right: 15px;\n    flex: 1;\n  }\n\n  .my-v-text {\n    flex: 0.5;\n  }\n\n  div.v-slider {\n    font-weight: bolder;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    background-color: rgba(10, 110, 202, 0.1);\n    border: solid black 1px;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n\n  .presetToggle {\n    margin-bottom: 1rem;\n  }\n\n  .toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .custom-slider .v-slider__label {\n    font-size: 0.9vw;\n  }\n</style>",
+        "format": "<template>\n    <div class=\"container\">\n        <h2>Pump</h2>\n        <div class=\"horizontal-alignment\">\n          <v-slider color=\"#0a6eca\" v-model=\"flowrate\" label=\"Flowrate\" step=\"0.01\" max=\"200\" class=\"my-slider custom-slider\"></v-slider>\n          <v-text-field variant=\"outlined\" v-model=\"flowrate\" suffix=\"ml/min\" density=\"compact\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog1\" class=\"my-v-text\"></v-text-field>\n          <v-dialog v-model=\"dialog1\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 1.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog1 = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle v-model=\"selectedFlowratePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n          <v-btn style=\"padding: 10px;\">{{flowrate_preset[0]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{flowrate_preset[1]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{flowrate_preset[2]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{flowrate_preset[3]}}</v-btn>\n        </v-btn-toggle>\n\n        <div class=\"horizontal-alignment\">\n          <v-slider color=\"#0a6eca\" v-model=\"volume\" label=\"Volume\" step=\"10\" max=\"200\" class=\"my-slider custom-slider\"></v-slider>\n          <v-text-field variant=\"outlined\" v-model=\"volume\" suffix=\"ml\" density=\"compact\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog2\" class=\"my-v-text\"></v-text-field>\n          <v-dialog v-model=\"dialog2\" max-width=\"500\">\n            <v-card>\n              <v-card-title>Information</v-card-title>\n              <v-card-text>\n                This is an information dialog 2.\n              </v-card-text>\n              <v-card-actions>\n                <v-btn color=\"primary\" text @click=\"dialog2 = false\">Close</v-btn>\n              </v-card-actions>\n            </v-card>\n          </v-dialog>\n        </div>\n        <v-btn-toggle v-model=\"selectedVolumePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n          <v-btn style=\"padding: 10px;\"><span class=\"mdi mdi-infinity\"></span></v-btn>\n          <v-btn style=\"padding: 10px;\">{{volume_preset[0]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{volume_preset[1]}}</v-btn>\n          <v-btn style=\"padding: 10px;\">{{volume_preset[2]}}</v-btn>\n        </v-btn-toggle>\n\n        <v-btn-toggle\n          v-model=\"toggle\"\n          variant=\"outlined\"\n          density=\"confortable\"\n          color=\"#0a6eca\"\n          divided\n          class=\"toggle\"\n        >\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-rotate-left</v-icon>Backward</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon left>mdi-square</v-icon>Stop</v-btn>\n          <v-btn\n            style=\"padding: 10px;\"\n          ><v-icon right>mdi-rotate-right</v-icon>Forward</v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate: \"50\",\n        volume: \"50\",\n        dialog1: false,\n        dialog2: false,\n        toggle: 1,\n        selectedFlowratePreset: 1,\n        selectedVolumePreset: 1,\n        volume_preset: [],\n        flowrate_preset: []\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      }\n    },\n    watch: {\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.flowrate_preset) {\n              this.flowrate_preset = msg.flowrate_preset;\n            }\n            if (msg.volume_preset) {\n              this.volume_preset = msg.volume_preset;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      },\n      selectedFlowratePreset: function() {\n        if (this.selectedFlowratePreset == 0) {\n          this.flowrate = this.flowrate_preset[0];\n        } else if (this.selectedFlowratePreset == 1) {\n          this.flowrate = this.flowrate_preset[1];\n        } else if (this.selectedFlowratePreset == 2) {\n          this.flowrate = this.flowrate_preset[2];\n        } else if (this.selectedFlowratePreset == 3) {\n          this.flowrate = this.flowrate_preset[3];\n        }\n      },\n      selectedVolumePreset: function() {\n        if (this.selectedVolumePreset == 0) {\n          this.volume = \"Infinity\";\n        } else if (this.selectedVolumePreset == 1) {\n          this.volume = this.volume_preset[0];\n        } else if (this.selectedVolumePreset == 2) {\n          this.volume = this.volume_preset[1];\n        } else if (this.selectedVolumePreset == 3) {\n          this.volume = this.volume_preset[2];\n        }\n      }\n    },\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-slider {\n    padding-right: 15px;\n    flex: 1;\n  }\n\n  .my-v-text {\n    flex: 0.5;\n  }\n\n  div.v-slider {\n    font-weight: bolder;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .container {\n    padding: 10px 10px;\n    background-color: rgba(10, 110, 202, 0.1);\n    border: solid black 1px;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n\n  .presetToggle {\n    margin-bottom: 1rem;\n  }\n\n  .toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .custom-slider .v-slider__label {\n    font-size: 0.9vw;\n  }\n</style>",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 320,
-        "y": 420,
+        "x": 520,
+        "y": 440,
         "wires": [
-            [
-                "9410b3f9aac5086a"
-            ]
+            []
         ]
     },
     {
@@ -3039,14 +3136,14 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Focus</h2>\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" label=\"Distance\" step=\"25\" max=\"5000\" min=\"25\" v-model=\"distance\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"distance\" density=\"compact\" suffix=\"μm\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedDistancePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\">{{ msg.payload.distancePresets[0] }}</v-btn>\n      <v-btn style=\"padding: 10px;\">{{ msg.payload.distancePresets[1] }}</v-btn>\n      <v-btn style=\"padding: 10px;\">{{ msg.payload.distancePresets[2] }}</v-btn>\n      <v-btn style=\"padding: 10px;\">{{ msg.payload.distancePresets[3] }}</v-btn>\n    </v-btn-toggle>\n\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Closer</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-square</v-icon>Stop</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-arrow-right-thin-circle-outline</v-icon>Farther</v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      distance: 50,\n      dialog: false,\n      toggle: 1,\n      selectedDistancePreset: 1,\n    };\n  },\n  methods: {\n    openDialog() {\n      this.dialog = true;\n    }\n  },\n  watch: {\n    selectedDistancePreset: function () {\n      this.distance = this.msg.payload.distancePresets[this.selectedDistancePreset];\n    }\n  },\n  mounted() {\n    this.selectedDistancePreset = 1;\n    this.toggle = 1;\n  }\n};\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 5px;\n  }\n\n  .my-slider {\n    margin-right: 50px;\n    flex: 1;\n    font-weight: bolder;\n  }\n\n  .my-v-text {\n    flex: 0.5;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n\n  .presetToggle {\n    margin-bottom: 1rem;\n  }\n\n  .toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .custom-slider .v-slider__label {\n    font-size: 0.9vw;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Focus</h2>\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" label=\"Distance\" step=\"25\" max=\"5000\" min=\"25\" v-model=\"distance\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"distance\" density=\"compact\" suffix=\"μm\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedDistancePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\">{{focus_preset[0]}}</v-btn>\n      <v-btn style=\"padding: 10px;\">{{focus_preset[1]}}</v-btn>\n      <v-btn style=\"padding: 10px;\">{{focus_preset[2]}}</v-btn>\n      <v-btn style=\"padding: 10px;\">{{focus_preset[3]}}</v-btn>\n    </v-btn-toggle>\n\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Closer</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-square</v-icon>Stop</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-arrow-right-thin-circle-outline</v-icon>Farther</v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      distance: 50,\n      dialog: false,\n      toggle: 1,\n      selectedDistancePreset: 1,\n      focus_preset: [],\n    };\n  },\n  methods: {\n    openDialog() {\n      this.dialog = true;\n    }\n  },\n  watch: {\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.focus_preset) {\n            this.focus_preset = msg.focus_preset;\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    },\n    selectedDistancePreset: function () {\n      this.distance = this.focus_preset[this.selectedDistancePreset];\n    }\n  },\n  mounted() {\n    this.selectedDistancePreset = 1;\n    this.toggle = 1;\n  }\n};\n</script>\n\n<style scoped>\n  .container {\n    padding: 10px 10px;\n    border: solid black 1px;\n    border-radius: 5px;\n  }\n\n  .my-slider {\n    margin-right: 50px;\n    flex: 1;\n    font-weight: bolder;\n  }\n\n  .my-v-text {\n    flex: 0.5;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n\n  .horizontal-alignment {\n    display: flex;\n    align-items: center;\n  }\n\n  .toggle {\n    width: 100%;\n    border-color: #0a6eca;\n    color: #0a6eca;\n  }\n\n  .presetToggle {\n    margin-bottom: 1rem;\n  }\n\n  .toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .custom-slider .v-slider__label {\n    font-size: 0.9vw;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 320,
-        "y": 460,
+        "x": 520,
+        "y": 480,
         "wires": [
             []
         ]
@@ -3070,8 +3167,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 310,
-        "y": 500,
+        "x": 510,
+        "y": 520,
         "wires": [
             []
         ]
@@ -3098,8 +3195,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 320,
-        "y": 540,
+        "x": 520,
+        "y": 560,
         "wires": [
             []
         ]
@@ -3122,7 +3219,7 @@
         "resendOnRefresh": true,
         "templateScope": "page:style",
         "className": "",
-        "x": 350,
+        "x": 550,
         "y": 60,
         "wires": [
             []
@@ -3136,7 +3233,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 720,
+        "x": 920,
         "y": 140,
         "wires": [
             []
@@ -3155,80 +3252,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
+        "x": 700,
         "y": 140,
         "wires": [
             [
                 "302ff33ff049c402"
-            ]
-        ]
-    },
-    {
-        "id": "055035e49e2c683e",
-        "type": "inject",
-        "z": "db1e7a22029cc2a4",
-        "g": "5387cbd03cda0166",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"flowratePresets\":[20,50,100,200],\"volumePresets\":[20,50,100,200]}",
-        "payloadType": "json",
-        "x": 170,
-        "y": 420,
-        "wires": [
-            [
-                "7c2460ce034f4740"
-            ]
-        ]
-    },
-    {
-        "id": "9410b3f9aac5086a",
-        "type": "debug",
-        "z": "db1e7a22029cc2a4",
-        "g": "5387cbd03cda0166",
-        "name": "debug 29",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "0df141654adc0894",
-        "type": "inject",
-        "z": "db1e7a22029cc2a4",
-        "g": "5387cbd03cda0166",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"distancePresets\":[25,50,100,5000]}",
-        "payloadType": "json",
-        "x": 170,
-        "y": 460,
-        "wires": [
-            [
-                "4d881b94510f4523"
             ]
         ]
     },
@@ -3245,7 +3273,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 720,
         "y": 220,
         "wires": [
             [
@@ -3261,7 +3289,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 720,
+        "x": 920,
         "y": 220,
         "wires": [
             []
@@ -3285,11 +3313,198 @@
         "topic": "",
         "payload": "{\"profilName\":\"Loïc VASSAUX--ARTUR\"}",
         "payloadType": "json",
-        "x": 170,
+        "x": 370,
         "y": 220,
         "wires": [
             [
                 "b2dbc032f8e38df8"
+            ]
+        ]
+    },
+    {
+        "id": "b439202bb729a0e3",
+        "type": "persistent value",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
+        "value": "flowrate_preset",
+        "command": "read",
+        "msgProperty": "flowrate_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 280,
+        "y": 420,
+        "wires": [
+            [
+                "7c2460ce034f4740"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "cc4a2374460953a1",
+        "type": "inject",
+        "z": "db1e7a22029cc2a4",
+        "name": "Every Second",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 60,
+        "wires": [
+            [
+                "2f82ccfd843002d9"
+            ]
+        ]
+    },
+    {
+        "id": "f25e0f5152d059c9",
+        "type": "persistent value",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
+        "value": "volume_preset",
+        "command": "read",
+        "msgProperty": "volume_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 280,
+        "y": 460,
+        "wires": [
+            [
+                "7c2460ce034f4740"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6739b10df9f1d57b",
+        "type": "persistent value",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
+        "value": "focus_preset",
+        "command": "read",
+        "msgProperty": "focus_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 280,
+        "y": 520,
+        "wires": [
+            [
+                "4d881b94510f4523"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2f82ccfd843002d9",
+        "type": "link out",
+        "z": "db1e7a22029cc2a4",
+        "name": "link out 70",
+        "mode": "link",
+        "links": [
+            "f1a9c4c1beb3f6db",
+            "30fca39cc406ed23",
+            "b5e0a7a9cb47a50b"
+        ],
+        "x": 275,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f1a9c4c1beb3f6db",
+        "type": "link in",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "link in 59",
+        "links": [
+            "2f82ccfd843002d9"
+        ],
+        "x": 105,
+        "y": 420,
+        "wires": [
+            [
+                "b439202bb729a0e3"
+            ]
+        ]
+    },
+    {
+        "id": "30fca39cc406ed23",
+        "type": "link in",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "link in 60",
+        "links": [
+            "2f82ccfd843002d9"
+        ],
+        "x": 105,
+        "y": 460,
+        "wires": [
+            [
+                "f25e0f5152d059c9"
+            ]
+        ]
+    },
+    {
+        "id": "b5e0a7a9cb47a50b",
+        "type": "link in",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "link in 61",
+        "links": [
+            "2f82ccfd843002d9"
+        ],
+        "x": 105,
+        "y": 520,
+        "wires": [
+            [
+                "6739b10df9f1d57b"
             ]
         ]
     },
@@ -5917,7 +6132,7 @@
         "z": "5047c566973ee3a1",
         "name": "",
         "props": [],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -6245,7 +6460,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 580,
+        "x": 560,
         "y": 520,
         "wires": [
             [
@@ -6284,7 +6499,7 @@
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
         "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
-        "value": "florwrate_preset",
+        "value": "flowrate_preset",
         "command": "read",
         "msgProperty": "flowrate_preset",
         "dynamicControl": false,
@@ -6300,7 +6515,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 330,
+        "x": 320,
         "y": 480,
         "wires": [
             [
