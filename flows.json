@@ -96,6 +96,14 @@
         "env": []
     },
     {
+        "id": "a697ff46c6e7b7fb",
+        "type": "tab",
+        "label": "Monitoring",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "de2b0f7cb4455c9b",
         "type": "group",
         "z": "2d41a8ed5aea3449",
@@ -1030,6 +1038,28 @@
         "h": 82
     },
     {
+        "id": "7cb61834f7876229",
+        "type": "group",
+        "z": "a697ff46c6e7b7fb",
+        "name": "header-monitoring",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "49bf72922f5349fd",
+            "c2be1508adc96095",
+            "7fef2afcd3e1baa7",
+            "078a7c562c7ec691",
+            "7b83d675be7b73a9"
+        ],
+        "x": 304,
+        "y": 199,
+        "w": 872,
+        "h": 82
+    },
+    {
         "id": "43f40797e7f6bb4b",
         "type": "ui-page",
         "name": "Home",
@@ -1811,8 +1841,47 @@
         "path": "/monitoring",
         "icon": "chart-line",
         "layout": "grid",
-        "theme": "e9df991e202040bd",
+        "theme": "c0ea559892f9bd33",
         "order": 11,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "88ffa2caedbdccbb",
+        "type": "ui-group",
+        "name": "header-monitoring",
+        "page": "a5e8ca3745d09cfc",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d80f187d2b6ea2f1",
+        "type": "ui-group",
+        "name": "left-pannel",
+        "page": "a5e8ca3745d09cfc",
+        "width": "4",
+        "height": "1",
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ef751c46741892a3",
+        "type": "ui-group",
+        "name": "right-pannel",
+        "page": "a5e8ca3745d09cfc",
+        "width": "8",
+        "height": "1",
+        "order": 3,
+        "showTitle": false,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -8155,5 +8224,227 @@
         "x": 395,
         "y": 780,
         "wires": []
+    },
+    {
+        "id": "83b6394625e71c0f",
+        "type": "inject",
+        "z": "a697ff46c6e7b7fb",
+        "name": "",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "a3a9370294d86cb2"
+            ]
+        ]
+    },
+    {
+        "id": "a3a9370294d86cb2",
+        "type": "link out",
+        "z": "a697ff46c6e7b7fb",
+        "name": "link out 81",
+        "mode": "link",
+        "links": [
+            "7b83d675be7b73a9"
+        ],
+        "x": 255,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "668595394db47c54",
+        "type": "ui-control",
+        "z": "a697ff46c6e7b7fb",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 200,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d2388378e60b099",
+        "type": "link in",
+        "z": "a697ff46c6e7b7fb",
+        "name": "link in 78",
+        "links": [
+            "078a7c562c7ec691"
+        ],
+        "x": 105,
+        "y": 60,
+        "wires": [
+            [
+                "668595394db47c54"
+            ]
+        ]
+    },
+    {
+        "id": "49bf72922f5349fd",
+        "type": "persistent value",
+        "z": "a697ff46c6e7b7fb",
+        "g": "7cb61834f7876229",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "read",
+        "msgProperty": "operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "c2be1508adc96095"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c2be1508adc96095",
+        "type": "ui-template",
+        "z": "a697ff46c6e7b7fb",
+        "g": "7cb61834f7876229",
+        "group": "88ffa2caedbdccbb",
+        "page": "",
+        "ui": "",
+        "name": "top-header-monitoring",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"header-monitoring-container\">\n    <div class=\"header-monitoring-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-monitoring-container-right\">\n      <div class=\"header-monitoring-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n      this.send({payload: item.title});\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-monitoring-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-monitoring-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-monitoring-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-monitoring-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-monitoring-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-monitoring-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-monitoring-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-monitoring-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 240,
+        "wires": [
+            [
+                "7fef2afcd3e1baa7"
+            ]
+        ]
+    },
+    {
+        "id": "7fef2afcd3e1baa7",
+        "type": "function",
+        "z": "a697ff46c6e7b7fb",
+        "g": "7cb61834f7876229",
+        "name": "Prepare payload to navigate",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Manage your data\") {\n    msg.payload = {\"page\":\"ManageYourData\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Documentation\") {\n    msg.payload = { url: 'https://url.goes.here' }\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 240,
+        "wires": [
+            [
+                "078a7c562c7ec691"
+            ]
+        ]
+    },
+    {
+        "id": "078a7c562c7ec691",
+        "type": "link out",
+        "z": "a697ff46c6e7b7fb",
+        "g": "7cb61834f7876229",
+        "name": "link out 82",
+        "mode": "link",
+        "links": [
+            "9d2388378e60b099"
+        ],
+        "x": 1135,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7b83d675be7b73a9",
+        "type": "link in",
+        "z": "a697ff46c6e7b7fb",
+        "g": "7cb61834f7876229",
+        "name": "link in 79",
+        "links": [
+            "a3a9370294d86cb2"
+        ],
+        "x": 345,
+        "y": 240,
+        "wires": [
+            [
+                "49bf72922f5349fd"
+            ]
+        ]
+    },
+    {
+        "id": "7e44e412732eb023",
+        "type": "ui-template",
+        "z": "a697ff46c6e7b7fb",
+        "group": "d80f187d2b6ea2f1",
+        "page": "",
+        "ui": "",
+        "name": "left-pannel",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"left-pannel-container\">\n    <v-btn color=\"#076eac\" dark @click=\"moreDetails\">More details</v-btn>\n  </div>\n</template>\n\n<script>\nexport default {\n  methods: {\n    moreDetails() {\n      window.open('https://example.com', '_blank');\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .left-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 430,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8fd4c2266066516",
+        "type": "ui-template",
+        "z": "a697ff46c6e7b7fb",
+        "group": "ef751c46741892a3",
+        "page": "",
+        "ui": "",
+        "name": "right-pannel",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"right-pannel-container\">\n    <div class=\"button-div\">\n      <v-btn color=\"red\" dark @click=\"run\">Run</v-btn>\n      <v-btn color=\"red\" dark @click=\"kill\">Kill</v-btn>\n      <v-btn color=\"red\" dark @click=\"restart\">Restart</v-btn>\n    </div>\n  </div>\n  <div class=\"right-pannel-container\">\n    <div class=\"button-div\">\n      <v-btn color=\"#076eac\" dark @click=\"controllersLogs\">Controllers Logs</v-btn>\n      <v-btn color=\"#076eac\" dark @click=\"processLogs\">Process Logs</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  methods: {\n    run() {\n      // TODO\n    },\n    kill() {\n    // TODO\n    },\n    restart() {\n      // TODO\n    },\n    controllersLogs() {\n    // TODO\n    },\n    processLogs() {\n    // TODO\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .right-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    margin-bottom: 2rem;\n  }\n\n  .button-div {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n  }\n\n  .button-div .v-btn {\n    margin: 0.25rem;\n  }\n\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 360,
+        "wires": [
+            []
+        ]
     }
 ]
