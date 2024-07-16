@@ -1804,6 +1804,20 @@
         "disabled": "false"
     },
     {
+        "id": "a5e8ca3745d09cfc",
+        "type": "ui-page",
+        "name": "Monitoring",
+        "ui": "1eeac55ba6b9065f",
+        "path": "/monitoring",
+        "icon": "chart-line",
+        "layout": "grid",
+        "theme": "e9df991e202040bd",
+        "order": 11,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
         "id": "ab7abe42214339fd",
         "type": "inject",
         "z": "2d41a8ed5aea3449",
