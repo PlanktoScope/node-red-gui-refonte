@@ -911,7 +911,7 @@
         "id": "7b2d6bc08c39c813",
         "type": "group",
         "z": "b70df4b6cc88d09a",
-        "name": "Operator settings",
+        "name": "Hardware settings section one",
         "style": {
             "stroke": "#000000",
             "label": true,
@@ -923,6 +923,63 @@
         ],
         "x": 434,
         "y": 299,
+        "w": 452,
+        "h": 82
+    },
+    {
+        "id": "872edfac5cde1d2c",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "Hardware settings section two",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4651884da3cb8f8e",
+            "74e49188881722bf"
+        ],
+        "x": 434,
+        "y": 399,
+        "w": 452,
+        "h": 82
+    },
+    {
+        "id": "e878c471eeb2f3b4",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "Hardware settings section three",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f3feab8365d70286",
+            "371843c1924a3747"
+        ],
+        "x": 434,
+        "y": 499,
+        "w": 452,
+        "h": 82
+    },
+    {
+        "id": "90297191dbca9961",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "Hardware settings section four",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "18082ce944ac9542",
+            "0d01236006fd6ee9"
+        ],
+        "x": 434,
+        "y": 599,
         "w": 452,
         "h": 82
     },
@@ -1720,7 +1777,7 @@
     {
         "id": "a0214d355e87bc40",
         "type": "ui-group",
-        "name": "section-one-hardware-settings",
+        "name": "hardware-settings",
         "page": "1d404f13a8a402cc",
         "width": "12",
         "height": "1",
@@ -7527,7 +7584,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"hardware-settings-container\">\n    <section>\n      <h2>Section One</h2>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Model</label>\n      <v-select\n        v-model=\"selected_hardware_model\"\n        :items=msg.payload.hardware_model\n        variant=\"outlined\"\n        append-icon=\"mdi-information\" \n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>CPU</label>\n      <v-text-field disabled v-model=msg.payload.hardware_cpu density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>RAM</label>\n      <v-text-field disabled v-model=msg.payload.hardware_ram density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>HAT</label>\n      <v-select\n        v-model=\"selected_hardware_hat\"\n        :items=msg.payload.hardware_hat\n        variant=\"outlined\"\n        append-icon=\"mdi-information\" \n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Driver</label>\n      <v-select\n        v-model=\"selected_hardware_driver\"\n        :items=msg.payload.hardware_driver\n        variant=\"outlined\"\n        append-icon=\"mdi-information\" \n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        selected_hardware_model: '',\n        selected_hardware_driver: '',\n        selected_hardware_hat: '',\n        hardware_model: [],\n        hardware_driver: [],\n        hardware_hat: [],\n        dialog: false,\n      }\n    },\n    mounted() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_model) {\n              this.selected_hardware_model = msg.payload.hardware_model[0];\n            }\n            if (msg.payload.hardware_hat) {\n              this.selected_hardware_hat = msg.payload.hardware_hat[0];\n            }\n            if (msg.payload.hardware_driver) {\n              this.selected_hardware_driver = msg.payload.hardware_driver[0];\n            }\n        });\n      }\n    },\n    // methods: {\n    //   switchDialog() {\n    //     this.dialog = !this.dialog;\n    //   },\n    // },\n    watch: {\n    //   operator_name: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: newVal,\n    //           operator_email: this.operator_email\n    //         }});\n    //       }\n    //     },\n    //     deep: true\n    //   },\n    //   operator_email: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: this.operator_name,\n    //           operator_email: newVal\n    //         }});\n    //       }\n    //     },\n    //     deep: true,\n    //     immediate: true\n    //   },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_model) {\n              this.hardware_model = msg.payload.hardware_model;\n            }\n            if (msg.payload.hardware_hat) {\n              this.hardware_hat = msg.payload.hardware_hat;\n            }\n            if (msg.payload.hardware_driver) {\n              this.hardware_driver = msg.payload.hardware_driver;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .hardware-settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .hardware-settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-one-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-one-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .hardware-settings-section-one-container .v-input {\n    max-width: 500px;\n  }\n\n  .hardware-settings-section-one-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"hardware-settings-container\">\n    <section>\n      <h2>Section one</h2>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Model</label>\n      <v-select\n        v-model=\"selected_hardware_model\"\n        :items=msg.payload.hardware_model\n        variant=\"outlined\"\n        append-icon=\"mdi-information\" \n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>CPU</label>\n      <v-text-field disabled v-model=msg.payload.hardware_cpu density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>RAM</label>\n      <v-text-field disabled v-model=msg.payload.hardware_ram density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>HAT</label>\n      <v-select\n        v-model=\"selected_hardware_hat\"\n        :items=msg.payload.hardware_hat\n        variant=\"outlined\"\n        append-icon=\"mdi-information\" \n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Driver</label>\n      <v-select\n        v-model=\"selected_hardware_driver\"\n        :items=msg.payload.hardware_driver\n        variant=\"outlined\"\n        append-icon=\"mdi-information\" \n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        selected_hardware_model: '',\n        selected_hardware_driver: '',\n        selected_hardware_hat: '',\n        hardware_model: [],\n        hardware_driver: [],\n        hardware_hat: [],\n        dialog: false,\n      }\n    },\n    mounted() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_model) {\n              this.selected_hardware_model = msg.payload.hardware_model[0];\n            }\n            if (msg.payload.hardware_hat) {\n              this.selected_hardware_hat = msg.payload.hardware_hat[0];\n            }\n            if (msg.payload.hardware_driver) {\n              this.selected_hardware_driver = msg.payload.hardware_driver[0];\n            }\n        });\n      }\n    },\n    // methods: {\n    //   switchDialog() {\n    //     this.dialog = !this.dialog;\n    //   },\n    // },\n    watch: {\n    //   operator_name: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: newVal,\n    //           operator_email: this.operator_email\n    //         }});\n    //       }\n    //     },\n    //     deep: true\n    //   },\n    //   operator_email: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: this.operator_name,\n    //           operator_email: newVal\n    //         }});\n    //       }\n    //     },\n    //     deep: true,\n    //     immediate: true\n    //   },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_model) {\n              this.hardware_model = msg.payload.hardware_model;\n            }\n            if (msg.payload.hardware_hat) {\n              this.hardware_hat = msg.payload.hardware_hat;\n            }\n            if (msg.payload.hardware_driver) {\n              this.hardware_driver = msg.payload.hardware_driver;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .hardware-settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .hardware-settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-one-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-one-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .hardware-settings-section-one-container .v-input {\n    max-width: 500px;\n  }\n\n  .hardware-settings-section-one-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -7550,7 +7607,7 @@
                 "p": "payload"
             }
         ],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
@@ -7562,6 +7619,159 @@
         "wires": [
             [
                 "c5c51a15b8e79bf3"
+            ]
+        ]
+    },
+    {
+        "id": "4651884da3cb8f8e",
+        "type": "ui-template",
+        "z": "b70df4b6cc88d09a",
+        "g": "872edfac5cde1d2c",
+        "group": "a0214d355e87bc40",
+        "page": "",
+        "ui": "",
+        "name": "hardware-settings-section-two",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"hardware-settings-container\">\n    <section>\n      <h2>Section two</h2>\n    </section>\n    <section class=\"hardware-settings-section-two-container\">\n      <label>Camera</label>\n      <v-text-field disabled v-model=msg.payload.hardware_camera density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-two-container\">\n      <label>Tube Lens</label>\n      <v-text-field v-model=msg.payload.hardware_tube_lens density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-two-container\">\n      <label>Objective Lens</label>\n      <v-text-field v-model=msg.payload.hardware_objective_lens density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        selected_hardware_camera: '',\n        selected_hardware_tube_lens: '',\n        selected_hardware_objective_lens: '',\n        hardware_camera: [],\n        hardware_tube_lens: [],\n        hardware_objective_lens: [],\n        dialog: false,\n      }\n    },\n    mounted() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_camera) {\n              this.selected_hardware_camera = msg.payload.hardware_camera;\n            }\n            if (msg.payload.hardware_objective_lens) {\n              this.selected_hardware_objective_lens = msg.payload.hardware_objective_lens;\n            }\n            if (msg.payload.hardware_tube_lens) {\n              this.selected_hardware_tube_lens = msg.payload.hardware_tube_lens;\n            }\n        });\n      }\n    },\n    // methods: {\n    //   switchDialog() {\n    //     this.dialog = !this.dialog;\n    //   },\n    // },\n    watch: {\n    //   operator_name: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: newVal,\n    //           operator_email: this.operator_email\n    //         }});\n    //       }\n    //     },\n    //     deep: true\n    //   },\n    //   operator_email: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: this.operator_name,\n    //           operator_email: newVal\n    //         }});\n    //       }\n    //     },\n    //     deep: true,\n    //     immediate: true\n    //   },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_camera) {\n              this.hardware_camera = msg.payload.hardware_camera;\n            }\n            if (msg.payload.hardware_objective_lens) {\n              this.hardware_objective_lens = msg.payload.hardware_objective_lens;\n            }\n            if (msg.payload.hardware_tube_lens) {\n              this.hardware_tube_lens = msg.payload.hardware_tube_lens;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .hardware-settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .hardware-settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-two-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-two-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .hardware-settings-section-two-container .v-input {\n    max-width: 500px;\n  }\n\n  .hardware-settings-section-two-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74e49188881722bf",
+        "type": "inject",
+        "z": "b70df4b6cc88d09a",
+        "g": "872edfac5cde1d2c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "{\"hardware_camera\":\"Camera\",\"hardware_tube_lens\":\"tube lens\",\"hardware_objective_lens\":\"objective lens\"}",
+        "payloadType": "json",
+        "x": 530,
+        "y": 440,
+        "wires": [
+            [
+                "4651884da3cb8f8e"
+            ]
+        ]
+    },
+    {
+        "id": "f3feab8365d70286",
+        "type": "ui-template",
+        "z": "b70df4b6cc88d09a",
+        "g": "e878c471eeb2f3b4",
+        "group": "a0214d355e87bc40",
+        "page": "",
+        "ui": "",
+        "name": "hardware-settings-section-three",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"hardware-settings-container\">\n    <section>\n      <h2>Section three</h2>\n    </section>\n    <section class=\"hardware-settings-section-three-container\">\n      <label>Flowcell internal thickness</label>\n      <v-text-field suffix=\"um\" type=\"number\" v-model=msg.payload.hardware_flowcell_internal_thickness density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        selected_hardware_flowcell_internal_thickness: '',\n        hardware_flowcell_internal_thickness: [],\n        dialog: false,\n      }\n    },\n    mounted() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_flowcell_internal_thickness) {\n              this.selected_hardware_flowcell_internal_thickness = msg.payload.hardware_flowcell_internal_thickness;\n            }\n        });\n      }\n    },\n    // methods: {\n    //   switchDialog() {\n    //     this.dialog = !this.dialog;\n    //   },\n    // },\n    watch: {\n    //   operator_name: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: newVal,\n    //           operator_email: this.operator_email\n    //         }});\n    //       }\n    //     },\n    //     deep: true\n    //   },\n    //   operator_email: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: this.operator_name,\n    //           operator_email: newVal\n    //         }});\n    //       }\n    //     },\n    //     deep: true,\n    //     immediate: true\n    //   },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_flowcell_internal_thickness) {\n              this.hardware_flowcell_internal_thickness = msg.payload.hardware_flowcell_internal_thickness;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .hardware-settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .hardware-settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-three-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-three-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .hardware-settings-section-three-container .v-input {\n    max-width: 170px;\n  }\n\n  .hardware-settings-section-three-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "371843c1924a3747",
+        "type": "inject",
+        "z": "b70df4b6cc88d09a",
+        "g": "e878c471eeb2f3b4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "{\"hardware_flowcell_internal_thickness\":\"300\"}",
+        "payloadType": "json",
+        "x": 530,
+        "y": 540,
+        "wires": [
+            [
+                "f3feab8365d70286"
+            ]
+        ]
+    },
+    {
+        "id": "18082ce944ac9542",
+        "type": "ui-template",
+        "z": "b70df4b6cc88d09a",
+        "g": "90297191dbca9961",
+        "group": "a0214d355e87bc40",
+        "page": "",
+        "ui": "",
+        "name": "hardware-settings-section-four",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"hardware-settings-container\">\n    <section>\n      <h2>Section four</h2>\n    </section>\n    <section class=\"hardware-settings-section-four-container\">\n      <label>LED</label>\n      <v-text-field v-led=msg.payload.hardware_led density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-four-container\">\n      <label>Pump</label>\n      <v-text-field v-led=msg.payload.hardware_pump density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-led=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-led=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        selected_hardware_led: '',\n        selected_hardware_pump: '',\n        hardware_led: [],\n        hardware_pump: [],\n        dialog: false,\n      }\n    },\n    mounted() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_led) {\n              this.selected_hardware_led = msg.payload.hardware_led;\n            }\n            if (msg.payload.hardware_pump) {\n              this.selected_hardware_pump = msg.payload.hardware_pump;\n            }\n        });\n      }\n    },\n    // methods: {\n    //   switchDialog() {\n    //     this.dialog = !this.dialog;\n    //   },\n    // },\n    watch: {\n    //   operator_name: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: newVal,\n    //           operator_email: this.operator_email\n    //         }});\n    //       }\n    //     },\n    //     deep: true\n    //   },\n    //   operator_email: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: this.operator_name,\n    //           operator_email: newVal\n    //         }});\n    //       }\n    //     },\n    //     deep: true,\n    //     immediate: true\n    //   },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_led) {\n              this.hardware_led = msg.payload.hardware_led;\n            }\n            if (msg.payload.hardware_pump) {\n              this.hardware_pump = msg.payload.hardware_pump;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .hardware-settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .hardware-settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-four-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-four-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .hardware-settings-section-four-container .v-input {\n    max-width: 500px;\n  }\n\n  .hardware-settings-section-four-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0d01236006fd6ee9",
+        "type": "inject",
+        "z": "b70df4b6cc88d09a",
+        "g": "90297191dbca9961",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "{\"hardware_led\":\"led\",\"hardware_pump\":\"pump\"}",
+        "payloadType": "json",
+        "x": 530,
+        "y": 640,
+        "wires": [
+            [
+                "18082ce944ac9542"
             ]
         ]
     }
