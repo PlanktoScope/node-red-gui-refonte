@@ -88,6 +88,14 @@
         "env": []
     },
     {
+        "id": "b70df4b6cc88d09a",
+        "type": "tab",
+        "label": "Hardware settings",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "de2b0f7cb4455c9b",
         "type": "group",
         "z": "2d41a8ed5aea3449",
@@ -146,17 +154,17 @@
             "7c15a6aca3b44d2e",
             "f8467f680ae4f627",
             "b2dbc032f8e38df8",
-            "b783644a6a28c422",
             "b3f67037ca280e20",
-            "302ff33ff049c402",
             "b86113b166fecbb9",
             "1f233eca492ddb72",
-            "3d3c573b4db88c99",
-            "33dd7a8f946de69a"
+            "33dd7a8f946de69a",
+            "774a6b171946cda1",
+            "ee0252f79ad5e696",
+            "932204814a8df00f"
         ],
         "x": 274,
         "y": 99,
-        "w": 752,
+        "w": 662,
         "h": 162
     },
     {
@@ -715,7 +723,7 @@
             "b1e3240bad8585c3"
         ],
         "x": 144,
-        "y": 199,
+        "y": 239,
         "w": 852,
         "h": 82
     },
@@ -736,7 +744,7 @@
             "4e5baf21e265d811"
         ],
         "x": 144,
-        "y": 619,
+        "y": 659,
         "w": 782,
         "h": 82
     },
@@ -759,7 +767,7 @@
             "7b3e64e2512b4f9f"
         ],
         "x": 144,
-        "y": 299,
+        "y": 339,
         "w": 802,
         "h": 122
     },
@@ -784,7 +792,7 @@
             "b07c9313574e2c5e"
         ],
         "x": 114,
-        "y": 439,
+        "y": 479,
         "w": 872,
         "h": 162
     },
@@ -808,11 +816,12 @@
             "6739b10df9f1d57b",
             "f1a9c4c1beb3f6db",
             "30fca39cc406ed23",
-            "b5e0a7a9cb47a50b"
+            "b5e0a7a9cb47a50b",
+            "e59fec7a28f6d723"
         ],
         "x": 64,
         "y": 379,
-        "w": 562,
+        "w": 612,
         "h": 222
     },
     {
@@ -834,9 +843,88 @@
             "fb3284d43226bc67"
         ],
         "x": 104,
-        "y": 719,
+        "y": 759,
         "w": 882,
         "h": 122
+    },
+    {
+        "id": "6720ea496a9e645e",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Data restoration - WARNING",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ff7f7f",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "6a5d78b1bdbbd9da",
+            "9a59e8d02ffe1f9b",
+            "4469155952188120",
+            "b45db1e61d1984ce",
+            "caa5d00ff15afc7b",
+            "28eb8fb70252bece",
+            "d09d2878c5a4f034",
+            "8777af2465094b01",
+            "71229c84c971a227",
+            "50beb12661979952",
+            "401bfc3969550dac",
+            "c3daa12c86987eb9",
+            "c5ca778e3eda6a52",
+            "569d67a3e424fbfc",
+            "70bdda69151a2d51",
+            "6cc482054923eb78",
+            "59fb45c7686d6613",
+            "be3b221fc2df4911",
+            "47793af3c5948f4c",
+            "ea3ed4500ce285e0"
+        ],
+        "x": 54,
+        "y": 299,
+        "w": 1012,
+        "h": 322
+    },
+    {
+        "id": "da310b26268026a0",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "header-hardware-settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "55974a9928ce597e",
+            "68dcdfd23b3a33a9",
+            "7f525e492c3af7da",
+            "1e8f3d0638de936c",
+            "49a5004745cdf3c3"
+        ],
+        "x": 264,
+        "y": 179,
+        "w": 852,
+        "h": 82
+    },
+    {
+        "id": "7b2d6bc08c39c813",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "Operator settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "c5c51a15b8e79bf3",
+            "d464e63989a12510"
+        ],
+        "x": 434,
+        "y": 299,
+        "w": 452,
+        "h": 82
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -861,7 +949,7 @@
         "icon": "power",
         "layout": "grid",
         "theme": "c0ea559892f9bd33",
-        "order": 8,
+        "order": 10,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -935,7 +1023,7 @@
         "icon": "cog",
         "layout": "grid",
         "theme": "c0ea559892f9bd33",
-        "order": 7,
+        "order": 8,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -1418,7 +1506,7 @@
         "icon": "chart-line",
         "layout": "grid",
         "theme": "c0ea559892f9bd33",
-        "order": 9,
+        "order": 7,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -1597,6 +1685,46 @@
         "width": "12",
         "height": "1",
         "order": 5,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "1d404f13a8a402cc",
+        "type": "ui-page",
+        "name": "Hardware",
+        "ui": "1eeac55ba6b9065f",
+        "path": "/hardware",
+        "icon": "cog-box",
+        "layout": "grid",
+        "theme": "c0ea559892f9bd33",
+        "order": 9,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "66feb1d92e90139e",
+        "type": "ui-group",
+        "name": "header-hardware-settings",
+        "page": "1d404f13a8a402cc",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a0214d355e87bc40",
+        "type": "ui-group",
+        "name": "section-one-hardware-settings",
+        "page": "1d404f13a8a402cc",
+        "width": "12",
+        "height": "1",
+        "order": 2,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1825,6 +1953,7 @@
         "id": "6a5d78b1bdbbd9da",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -1845,7 +1974,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 400,
+        "x": 460,
         "y": 340,
         "wires": [
             [],
@@ -1856,6 +1985,7 @@
         "id": "9a59e8d02ffe1f9b",
         "type": "inject",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "Reset",
         "props": [
             {
@@ -1869,7 +1999,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "x": 90,
+        "x": 150,
         "y": 540,
         "wires": [
             [
@@ -1961,6 +2091,7 @@
         "id": "4469155952188120",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -1981,7 +2112,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
+        "x": 480,
         "y": 380,
         "wires": [
             [],
@@ -2087,6 +2218,7 @@
         "id": "b45db1e61d1984ce",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -2107,7 +2239,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 430,
+        "x": 490,
         "y": 420,
         "wires": [
             [],
@@ -2118,6 +2250,7 @@
         "id": "caa5d00ff15afc7b",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -2138,7 +2271,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
+        "x": 480,
         "y": 460,
         "wires": [
             [],
@@ -2149,6 +2282,7 @@
         "id": "28eb8fb70252bece",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -2169,7 +2303,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 430,
+        "x": 490,
         "y": 500,
         "wires": [
             [],
@@ -2180,6 +2314,7 @@
         "id": "d09d2878c5a4f034",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -2200,7 +2335,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
+        "x": 480,
         "y": 540,
         "wires": [
             [],
@@ -2211,6 +2346,7 @@
         "id": "8777af2465094b01",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -2231,7 +2367,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
+        "x": 480,
         "y": 580,
         "wires": [
             [],
@@ -2242,6 +2378,7 @@
         "id": "71229c84c971a227",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -2262,7 +2399,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 840,
+        "x": 900,
         "y": 340,
         "wires": [
             [],
@@ -2273,6 +2410,7 @@
         "id": "50beb12661979952",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "DATA",
@@ -2293,7 +2431,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 840,
+        "x": 900,
         "y": 380,
         "wires": [
             [],
@@ -2304,6 +2442,7 @@
         "id": "401bfc3969550dac",
         "type": "link out",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link out 71",
         "mode": "link",
         "links": [
@@ -2317,7 +2456,7 @@
             "47793af3c5948f4c",
             "ea3ed4500ce285e0"
         ],
-        "x": 175,
+        "x": 235,
         "y": 540,
         "wires": []
     },
@@ -2325,11 +2464,12 @@
         "id": "c3daa12c86987eb9",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link in 63",
         "links": [
             "401bfc3969550dac"
         ],
-        "x": 265,
+        "x": 325,
         "y": 340,
         "wires": [
             [
@@ -2341,11 +2481,12 @@
         "id": "c5ca778e3eda6a52",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link in 64",
         "links": [
             "401bfc3969550dac"
         ],
-        "x": 265,
+        "x": 325,
         "y": 380,
         "wires": [
             [
@@ -2357,11 +2498,12 @@
         "id": "569d67a3e424fbfc",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link in 65",
         "links": [
             "401bfc3969550dac"
         ],
-        "x": 265,
+        "x": 325,
         "y": 420,
         "wires": [
             [
@@ -2373,11 +2515,12 @@
         "id": "70bdda69151a2d51",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link in 66",
         "links": [
             "401bfc3969550dac"
         ],
-        "x": 265,
+        "x": 325,
         "y": 460,
         "wires": [
             [
@@ -2389,11 +2532,12 @@
         "id": "6cc482054923eb78",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link in 67",
         "links": [
             "401bfc3969550dac"
         ],
-        "x": 265,
+        "x": 325,
         "y": 500,
         "wires": [
             [
@@ -2405,11 +2549,12 @@
         "id": "59fb45c7686d6613",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link in 68",
         "links": [
             "401bfc3969550dac"
         ],
-        "x": 265,
+        "x": 325,
         "y": 540,
         "wires": [
             [
@@ -2421,11 +2566,12 @@
         "id": "be3b221fc2df4911",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link in 69",
         "links": [
             "401bfc3969550dac"
         ],
-        "x": 265,
+        "x": 325,
         "y": 580,
         "wires": [
             [
@@ -2437,11 +2583,12 @@
         "id": "47793af3c5948f4c",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link in 70",
         "links": [
             "401bfc3969550dac"
         ],
-        "x": 665,
+        "x": 725,
         "y": 340,
         "wires": [
             [
@@ -2453,11 +2600,12 @@
         "id": "ea3ed4500ce285e0",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
         "name": "link in 71",
         "links": [
             "401bfc3969550dac"
         ],
-        "x": 665,
+        "x": 725,
         "y": 380,
         "wires": [
             [
@@ -3314,20 +3462,6 @@
         ]
     },
     {
-        "id": "b783644a6a28c422",
-        "type": "ui-control",
-        "z": "db1e7a22029cc2a4",
-        "g": "4237eacb62444cc7",
-        "name": "",
-        "ui": "1eeac55ba6b9065f",
-        "events": "all",
-        "x": 940,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "b3f67037ca280e20",
         "type": "function",
         "z": "db1e7a22029cc2a4",
@@ -3344,7 +3478,7 @@
         "y": 180,
         "wires": [
             [
-                "b783644a6a28c422"
+                "ee0252f79ad5e696"
             ]
         ]
     },
@@ -3466,14 +3600,16 @@
         "className": "calibration-button",
         "icon": "",
         "iconPosition": "left",
-        "payload": "",
+        "payload": "{\"page\":\"Calibration\"}",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
         "x": 520,
         "y": 560,
         "wires": [
-            []
+            [
+                "e59fec7a28f6d723"
+            ]
         ]
     },
     {
@@ -3501,20 +3637,6 @@
         ]
     },
     {
-        "id": "302ff33ff049c402",
-        "type": "ui-control",
-        "z": "db1e7a22029cc2a4",
-        "g": "4237eacb62444cc7",
-        "name": "",
-        "ui": "1eeac55ba6b9065f",
-        "events": "all",
-        "x": 920,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "b86113b166fecbb9",
         "type": "function",
         "z": "db1e7a22029cc2a4",
@@ -3531,7 +3653,7 @@
         "y": 140,
         "wires": [
             [
-                "302ff33ff049c402"
+                "774a6b171946cda1"
             ]
         ]
     },
@@ -3552,22 +3674,8 @@
         "y": 220,
         "wires": [
             [
-                "3d3c573b4db88c99"
+                "932204814a8df00f"
             ]
-        ]
-    },
-    {
-        "id": "3d3c573b4db88c99",
-        "type": "ui-control",
-        "z": "db1e7a22029cc2a4",
-        "g": "4237eacb62444cc7",
-        "name": "",
-        "ui": "1eeac55ba6b9065f",
-        "events": "all",
-        "x": 920,
-        "y": 220,
-        "wires": [
-            []
         ]
     },
     {
@@ -3780,6 +3888,94 @@
         "wires": [
             [
                 "6739b10df9f1d57b"
+            ]
+        ]
+    },
+    {
+        "id": "774a6b171946cda1",
+        "type": "link out",
+        "z": "db1e7a22029cc2a4",
+        "g": "4237eacb62444cc7",
+        "name": "link out 72",
+        "mode": "link",
+        "links": [
+            "825b79ccb5b05a09"
+        ],
+        "x": 875,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ee0252f79ad5e696",
+        "type": "link out",
+        "z": "db1e7a22029cc2a4",
+        "g": "4237eacb62444cc7",
+        "name": "link out 73",
+        "mode": "link",
+        "links": [
+            "825b79ccb5b05a09"
+        ],
+        "x": 895,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "932204814a8df00f",
+        "type": "link out",
+        "z": "db1e7a22029cc2a4",
+        "g": "4237eacb62444cc7",
+        "name": "link out 74",
+        "mode": "link",
+        "links": [
+            "825b79ccb5b05a09"
+        ],
+        "x": 875,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e59fec7a28f6d723",
+        "type": "link out",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "link out 75",
+        "mode": "link",
+        "links": [
+            "825b79ccb5b05a09"
+        ],
+        "x": 635,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a05b7bdb9f9d8d2e",
+        "type": "ui-control",
+        "z": "db1e7a22029cc2a4",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 1280,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "825b79ccb5b05a09",
+        "type": "link in",
+        "z": "db1e7a22029cc2a4",
+        "name": "link in 72",
+        "links": [
+            "774a6b171946cda1",
+            "ee0252f79ad5e696",
+            "932204814a8df00f",
+            "e59fec7a28f6d723"
+        ],
+        "x": 1185,
+        "y": 180,
+        "wires": [
+            [
+                "a05b7bdb9f9d8d2e"
             ]
         ]
     },
@@ -6260,7 +6456,7 @@
             "d1f80e39243d05fb"
         ],
         "x": 955,
-        "y": 240,
+        "y": 280,
         "wires": []
     },
     {
@@ -6277,7 +6473,7 @@
         "finalize": "",
         "libs": [],
         "x": 800,
-        "y": 240,
+        "y": 280,
         "wires": [
             [
                 "fc701c9ad326380a"
@@ -6304,7 +6500,7 @@
         "templateScope": "local",
         "className": "",
         "x": 570,
-        "y": 240,
+        "y": 280,
         "wires": [
             [
                 "440cb90b95e9e2ac"
@@ -6353,14 +6549,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Sample</h2>\n    </section>\n    <section class=\"settings-sample-container\">\n      <label>GPS Format</label>\n      <v-select\n          v-model=\"coordFormat\"\n          :items=\"['Decimal degrees (DD)', 'Degrees, minutes and seconds (DMS)']\"\n          variant=\"outlined\"\n          append-icon=\"mdi-information\" \n          @click:append=\"switchDialog\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        coordFormat: [],\n        dialog: false,\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      coordFormat: {\n        handler(newVal) {\n          this.send({ payload: newVal });\n        },\n        deep: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n              this.coordFormat = msg.payload;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-sample-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .settings-sample-container label {\n    margin-right: 1rem;\n  }\n\n\n  .settings-sample-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-sample-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Sample</h2>\n    </section>\n    <section class=\"settings-sample-container\">\n      <label>GPS Format</label>\n      <v-select\n          v-model=\"coordFormat\"\n          :items=\"['Decimal degrees (DD)', 'Degrees, minutes and seconds (DMS)']\"\n          variant=\"outlined\"\n          append-icon=\"mdi-information\" \n          @click:append=\"switchDialog\"\n          density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        coordFormat: [],\n        dialog: false,\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      coordFormat: {\n        handler(newVal) {\n          this.send({ payload: newVal });\n        },\n        deep: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n              this.coordFormat = msg.payload;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-sample-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .settings-sample-container label {\n    margin-right: 1rem;\n  }\n\n\n  .settings-sample-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-sample-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 560,
-        "y": 660,
+        "y": 700,
         "wires": [
             [
                 "53b390b93b29c5fa"
@@ -6393,7 +6589,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 660,
+        "y": 700,
         "wires": [
             [
                 "60b2ecc0d6e457c8"
@@ -6446,7 +6642,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 780,
-        "y": 660,
+        "y": 700,
         "wires": [
             [],
             []
@@ -6465,14 +6661,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Operator</h2>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Name</label>\n      <v-text-field v-model=\"operator_name\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Email</label>\n      <v-text-field v-model=\"operator_email\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        operator_name: '',\n        operator_email: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.operator_name) {\n            this.operator_name = msg.operator_name;\n          }\n          if (msg.payload.operator_email) {\n            this.operator_email = msg.operator_email;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      operator_name: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: newVal,\n              operator_email: this.operator_email\n            }});\n          }\n        },\n        deep: true\n      },\n      operator_email: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: this.operator_name,\n              operator_email: newVal\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.operator_email) {\n              this.operator_email = msg.operator_email;\n            }\n            if (msg.operator_name) {\n              this.operator_name = msg.operator_name;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-operator-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .settings-operator-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-operator-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Operator</h2>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Name</label>\n      <v-text-field v-model=\"operator_name\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Email</label>\n      <v-text-field v-model=\"operator_email\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        operator_name: '',\n        operator_email: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.operator_name) {\n            this.operator_name = msg.operator_name;\n          }\n          if (msg.payload.operator_email) {\n            this.operator_email = msg.operator_email;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      operator_name: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: newVal,\n              operator_email: this.operator_email\n            }});\n          }\n        },\n        deep: true\n      },\n      operator_email: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: this.operator_name,\n              operator_email: newVal\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.operator_email) {\n              this.operator_email = msg.operator_email;\n            }\n            if (msg.operator_name) {\n              this.operator_name = msg.operator_name;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .settings-operator-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-operator-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 570,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "460fb659adbbae17",
@@ -6491,7 +6687,8 @@
             "c52bf2a4ca8f30e3",
             "b1e3240bad8585c3",
             "323fc05b6b6661cf",
-            "50a812cd9b3daf49"
+            "50a812cd9b3daf49",
+            "f15fabe9a83fbae7"
         ],
         "x": 215,
         "y": 100,
@@ -6508,7 +6705,7 @@
             "5059739dbd1ae510"
         ],
         "x": 185,
-        "y": 660,
+        "y": 700,
         "wires": [
             [
                 "8b6ce849b7c7c43f"
@@ -6526,7 +6723,7 @@
             "5059739dbd1ae510"
         ],
         "x": 185,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "def19b85f4af5b99",
@@ -6560,7 +6757,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 340,
+        "y": 380,
         "wires": [
             [
                 "33b7801889f49dfe"
@@ -6594,7 +6791,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 380,
+        "y": 420,
         "wires": [
             [
                 "33b7801889f49dfe"
@@ -6628,7 +6825,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 800,
-        "y": 340,
+        "y": 380,
         "wires": [
             [],
             []
@@ -6660,7 +6857,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 800,
-        "y": 380,
+        "y": 420,
         "wires": [
             [],
             []
@@ -6692,7 +6889,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 240,
+        "y": 280,
         "wires": [
             [
                 "679e3c949c5dce47"
@@ -6710,7 +6907,7 @@
             "3818cc8b0a5aabed"
         ],
         "x": 185,
-        "y": 240,
+        "y": 280,
         "wires": [
             [
                 "4a6052524bce45c6"
@@ -6737,7 +6934,7 @@
         "templateScope": "local",
         "className": "",
         "x": 560,
-        "y": 520,
+        "y": 560,
         "wires": [
             [
                 "a0d6e1698fda59ed",
@@ -6757,7 +6954,7 @@
             "5059739dbd1ae510"
         ],
         "x": 155,
-        "y": 520,
+        "y": 560,
         "wires": [
             [
                 "683c6eaea5e163cb",
@@ -6792,7 +6989,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 320,
-        "y": 480,
+        "y": 520,
         "wires": [
             [
                 "4cebedc5cc8a9e7b"
@@ -6826,7 +7023,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 830,
-        "y": 480,
+        "y": 520,
         "wires": [
             [],
             []
@@ -6858,7 +7055,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 320,
-        "y": 520,
+        "y": 560,
         "wires": [
             [
                 "4cebedc5cc8a9e7b"
@@ -6892,7 +7089,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 320,
-        "y": 560,
+        "y": 600,
         "wires": [
             [
                 "4cebedc5cc8a9e7b"
@@ -6926,7 +7123,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 820,
-        "y": 520,
+        "y": 560,
         "wires": [
             [],
             []
@@ -6958,7 +7155,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 820,
-        "y": 560,
+        "y": 600,
         "wires": [
             [],
             []
@@ -6984,7 +7181,7 @@
         "templateScope": "local",
         "className": "",
         "x": 570,
-        "y": 780,
+        "y": 820,
         "wires": [
             [
                 "e17de7cede28b990",
@@ -7003,7 +7200,7 @@
             "5059739dbd1ae510"
         ],
         "x": 145,
-        "y": 780,
+        "y": 820,
         "wires": [
             [
                 "bfc1c9e460621e6b",
@@ -7037,7 +7234,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 320,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "3405fdbeca45c434"
@@ -7071,7 +7268,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 320,
-        "y": 800,
+        "y": 840,
         "wires": [
             [
                 "3405fdbeca45c434"
@@ -7105,7 +7302,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 820,
-        "y": 760,
+        "y": 800,
         "wires": [
             [],
             []
@@ -7137,10 +7334,235 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 820,
-        "y": 800,
+        "y": 840,
         "wires": [
             [],
             []
+        ]
+    },
+    {
+        "id": "55974a9928ce597e",
+        "type": "persistent value",
+        "z": "b70df4b6cc88d09a",
+        "g": "da310b26268026a0",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "read",
+        "msgProperty": "operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 460,
+        "y": 220,
+        "wires": [
+            [
+                "68dcdfd23b3a33a9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "68dcdfd23b3a33a9",
+        "type": "ui-template",
+        "z": "b70df4b6cc88d09a",
+        "g": "da310b26268026a0",
+        "group": "66feb1d92e90139e",
+        "page": "",
+        "ui": "",
+        "name": "top-header-home",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"header-hardware-settings-container\">\n    <div class=\"header-hardware-settings-container-left\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-hardware-settings-container-right\">\n      <div class=\"header-hardware-settings-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n      this.send({payload: item.title});\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-hardware-settings-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-hardware-settings-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .header-hardware-settings-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-hardware-settings-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-hardware-settings-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-hardware-settings-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-hardware-settings-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-hardware-settings-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "7f525e492c3af7da"
+            ]
+        ]
+    },
+    {
+        "id": "7f525e492c3af7da",
+        "type": "function",
+        "z": "b70df4b6cc88d09a",
+        "g": "da310b26268026a0",
+        "name": "Prepare payload to navigate",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Manage your data\") {\n    msg.payload = {\"page\":\"ManageYourData\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Documentation\") {\n    msg.payload = { url: 'https://url.goes.here' }\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 220,
+        "wires": [
+            [
+                "1e8f3d0638de936c"
+            ]
+        ]
+    },
+    {
+        "id": "05f3de085aa30475",
+        "type": "link out",
+        "z": "b70df4b6cc88d09a",
+        "name": "link out 76",
+        "mode": "link",
+        "links": [
+            "49a5004745cdf3c3"
+        ],
+        "x": 215,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6d68ea3906e8592a",
+        "type": "inject",
+        "z": "b70df4b6cc88d09a",
+        "name": "",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "05f3de085aa30475"
+            ]
+        ]
+    },
+    {
+        "id": "fda6a38f1b44263a",
+        "type": "ui-control",
+        "z": "b70df4b6cc88d09a",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 160,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f473766a11c3784",
+        "type": "link in",
+        "z": "b70df4b6cc88d09a",
+        "name": "link in 73",
+        "links": [
+            "1e8f3d0638de936c"
+        ],
+        "x": 65,
+        "y": 40,
+        "wires": [
+            [
+                "fda6a38f1b44263a"
+            ]
+        ]
+    },
+    {
+        "id": "1e8f3d0638de936c",
+        "type": "link out",
+        "z": "b70df4b6cc88d09a",
+        "g": "da310b26268026a0",
+        "name": "link out 77",
+        "mode": "link",
+        "links": [
+            "3f473766a11c3784"
+        ],
+        "x": 1075,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "49a5004745cdf3c3",
+        "type": "link in",
+        "z": "b70df4b6cc88d09a",
+        "g": "da310b26268026a0",
+        "name": "link in 74",
+        "links": [
+            "05f3de085aa30475"
+        ],
+        "x": 305,
+        "y": 220,
+        "wires": [
+            [
+                "55974a9928ce597e"
+            ]
+        ]
+    },
+    {
+        "id": "c5c51a15b8e79bf3",
+        "type": "ui-template",
+        "z": "b70df4b6cc88d09a",
+        "g": "7b2d6bc08c39c813",
+        "group": "a0214d355e87bc40",
+        "page": "",
+        "ui": "",
+        "name": "hardware-settings-section-one",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"hardware-settings-container\">\n    <section>\n      <h2>Section One</h2>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Model</label>\n      <v-select\n        v-model=\"selected_hardware_model\"\n        :items=msg.payload.hardware_model\n        variant=\"outlined\"\n        append-icon=\"mdi-information\" \n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>CPU</label>\n      <v-text-field disabled v-model=msg.payload.hardware_cpu density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>RAM</label>\n      <v-text-field disabled v-model=msg.payload.hardware_ram density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>HAT</label>\n      <v-select\n        v-model=\"selected_hardware_hat\"\n        :items=msg.payload.hardware_hat\n        variant=\"outlined\"\n        append-icon=\"mdi-information\" \n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Driver</label>\n      <v-select\n        v-model=\"selected_hardware_driver\"\n        :items=msg.payload.hardware_driver\n        variant=\"outlined\"\n        append-icon=\"mdi-information\" \n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        selected_hardware_model: '',\n        selected_hardware_driver: '',\n        selected_hardware_hat: '',\n        hardware_model: [],\n        hardware_driver: [],\n        hardware_hat: [],\n        dialog: false,\n      }\n    },\n    mounted() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_model) {\n              this.selected_hardware_model = msg.payload.hardware_model[0];\n            }\n            if (msg.payload.hardware_hat) {\n              this.selected_hardware_hat = msg.payload.hardware_hat[0];\n            }\n            if (msg.payload.hardware_driver) {\n              this.selected_hardware_driver = msg.payload.hardware_driver[0];\n            }\n        });\n      }\n    },\n    // methods: {\n    //   switchDialog() {\n    //     this.dialog = !this.dialog;\n    //   },\n    // },\n    watch: {\n    //   operator_name: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: newVal,\n    //           operator_email: this.operator_email\n    //         }});\n    //       }\n    //     },\n    //     deep: true\n    //   },\n    //   operator_email: {\n    //     handler(newVal) {\n    //       if (newVal != \"\" && newVal != null) {\n    //         this.send({ payload: {\n    //           operator_name: this.operator_name,\n    //           operator_email: newVal\n    //         }});\n    //       }\n    //     },\n    //     deep: true,\n    //     immediate: true\n    //   },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.hardware_model) {\n              this.hardware_model = msg.payload.hardware_model;\n            }\n            if (msg.payload.hardware_hat) {\n              this.hardware_hat = msg.payload.hardware_hat;\n            }\n            if (msg.payload.hardware_driver) {\n              this.hardware_driver = msg.payload.hardware_driver;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .hardware-settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .hardware-settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-one-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .hardware-settings-section-one-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .hardware-settings-section-one-container .v-input {\n    max-width: 500px;\n  }\n\n  .hardware-settings-section-one-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d464e63989a12510",
+        "type": "inject",
+        "z": "b70df4b6cc88d09a",
+        "g": "7b2d6bc08c39c813",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "{\"hardware_model\":[\"1\",\"2\",\"3\"],\"hardware_hat\":[\"1\",\"2\",\"3\"],\"hardware_driver\":[\"1\",\"2\",\"3\"],\"hardware_cpu\":12,\"hardware_ram\":23}",
+        "payloadType": "json",
+        "x": 530,
+        "y": 340,
+        "wires": [
+            [
+                "c5c51a15b8e79bf3"
+            ]
         ]
     }
 ]
