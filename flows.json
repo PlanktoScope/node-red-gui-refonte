@@ -7530,7 +7530,8 @@
         "z": "b70df4b6cc88d09a",
         "name": "link in 73",
         "links": [
-            "1e8f3d0638de936c"
+            "1e8f3d0638de936c",
+            "350acdaf74ad1e92"
         ],
         "x": 65,
         "y": 40,
@@ -7774,5 +7775,69 @@
                 "18082ce944ac9542"
             ]
         ]
+    },
+    {
+        "id": "59a118377d0b7b47",
+        "type": "inject",
+        "z": "b70df4b6cc88d09a",
+        "name": "Call pop-pup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"show\":true}",
+        "payloadType": "json",
+        "x": 150,
+        "y": 780,
+        "wires": [
+            [
+                "2256e9c9ee162c6a"
+            ]
+        ]
+    },
+    {
+        "id": "2256e9c9ee162c6a",
+        "type": "ui-template",
+        "z": "b70df4b6cc88d09a",
+        "group": "66feb1d92e90139e",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div>\n        <h2>Alert Example</h2>\n        <div v-if=\"showAlert\" class=\"alert\">\n            <span class=\"closebtn\" @click=\"closeAlert\">&times;</span> \n            You just modified the data, redo the <a class=\"goTo\" @click=\"navigateToCalibration\"><strong>calibration</strong></a>.\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                showAlert: false,\n                alertVariable: null\n            }\n        },\n        watch: {\n            '$socket': {\n                handler(newVal, oldVal) {\n                    this.$socket.on('msg-input:' + this.id, (msg) => {\n                        if (msg.payload && msg.payload.show) {\n                            this.showAlert = true;\n                            setTimeout(() => {\n                                this.showAlert = false;\n                            }, 5000);\n                        }\n                    });\n                },\n                deep: true,\n                immediate: true\n            },\n        },\n        methods: {\n            closeAlert: function () {\n                this.showAlert = false;\n            },\n            navigateToCalibration: function () {\n                this.send({payload: {\"page\":\"Calibration\"}})\n            }\n        },\n    }\n</script>\n\n<style>\n    .alert {\n        padding: 20px;\n        background-color: #f44336; /* Red */\n        color: white;\n        margin-bottom: 15px;\n        position: fixed;\n        top: 20px;\n        left: 50%;\n        transform: translateX(-50%);\n        z-index: 1000;\n        width: auto;\n        max-width: 80%;\n        text-align: center;\n    }\n\n    .closebtn {\n        margin-left: 15px;\n        color: white;\n        font-weight: bold;\n        float: right;\n        font-size: 22px;\n        line-height: 20px;\n        cursor: pointer;\n        transition: 0.3s;\n    }\n\n    .closebtn:hover {\n        color: black;\n    }\n\n    .goTo {\n        cursor: pointer;\n        text-decoration: underline;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 300,
+        "y": 780,
+        "wires": [
+            [
+                "350acdaf74ad1e92"
+            ]
+        ]
+    },
+    {
+        "id": "350acdaf74ad1e92",
+        "type": "link out",
+        "z": "b70df4b6cc88d09a",
+        "name": "link out 78",
+        "mode": "link",
+        "links": [
+            "3f473766a11c3784"
+        ],
+        "x": 395,
+        "y": 780,
+        "wires": []
     }
 ]
