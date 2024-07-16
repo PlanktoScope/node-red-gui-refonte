@@ -1002,12 +1002,32 @@
             "47793af3c5948f4c",
             "ea3ed4500ce285e0",
             "74edaec95cafb2d9",
-            "752f586529da1398"
+            "752f586529da1398",
+            "f67384bd93fa9723"
         ],
         "x": 54,
         "y": 299,
         "w": 1012,
         "h": 322
+    },
+    {
+        "id": "925817a4bacd25ee",
+        "type": "group",
+        "z": "5047c566973ee3a1",
+        "name": "reset button",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "23ffd2c116cbdf71",
+            "250fac5d08b457a3"
+        ],
+        "x": 454,
+        "y": 919,
+        "w": 302,
+        "h": 82
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -1107,19 +1127,6 @@
         "layout": "grid",
         "theme": "c0ea559892f9bd33",
         "order": 8,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "8832bb035686ade4",
-        "type": "ui-group",
-        "name": "settings-Sample",
-        "page": "6a4834caf5af80e2",
-        "width": "12",
-        "height": "1",
-        "order": 4,
-        "showTitle": false,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -1746,37 +1753,11 @@
     {
         "id": "0531957b8d4ecb7d",
         "type": "ui-group",
-        "name": "operator-settings",
+        "name": "settings",
         "page": "6a4834caf5af80e2",
         "width": "12",
         "height": "1",
         "order": 2,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "60c596107f1b8418",
-        "type": "ui-group",
-        "name": "preview-settings",
-        "page": "6a4834caf5af80e2",
-        "width": "12",
-        "height": "1",
-        "order": 3,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "edf608584c176d40",
-        "type": "ui-group",
-        "name": "acquisition-settings",
-        "page": "6a4834caf5af80e2",
-        "width": "12",
-        "height": "1",
-        "order": 5,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -1817,19 +1798,6 @@
         "width": "12",
         "height": "1",
         "order": 2,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "eb6540f7963cb624",
-        "type": "ui-group",
-        "name": "segmentation-settings",
-        "page": "6a4834caf5af80e2",
-        "width": "12",
-        "height": "1",
-        "order": 6,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -2548,19 +2516,19 @@
         "type": "link out",
         "z": "2d41a8ed5aea3449",
         "g": "6720ea496a9e645e",
-        "name": "link out 71",
+        "name": "",
         "mode": "link",
         "links": [
+            "47793af3c5948f4c",
+            "569d67a3e424fbfc",
+            "59fb45c7686d6613",
+            "6cc482054923eb78",
+            "70bdda69151a2d51",
+            "752f586529da1398",
+            "be3b221fc2df4911",
             "c3daa12c86987eb9",
             "c5ca778e3eda6a52",
-            "569d67a3e424fbfc",
-            "70bdda69151a2d51",
-            "6cc482054923eb78",
-            "59fb45c7686d6613",
-            "be3b221fc2df4911",
-            "47793af3c5948f4c",
-            "ea3ed4500ce285e0",
-            "752f586529da1398"
+            "ea3ed4500ce285e0"
         ],
         "x": 235,
         "y": 540,
@@ -2765,6 +2733,23 @@
         "wires": [
             [
                 "74edaec95cafb2d9"
+            ]
+        ]
+    },
+    {
+        "id": "f67384bd93fa9723",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
+        "name": "reset",
+        "links": [
+            "250fac5d08b457a3"
+        ],
+        "x": 195,
+        "y": 500,
+        "wires": [
+            [
+                "401bfc3969550dac"
             ]
         ]
     },
@@ -6761,11 +6746,11 @@
         "type": "ui-template",
         "z": "5047c566973ee3a1",
         "g": "c8544c656ab24cf4",
-        "group": "8832bb035686ade4",
+        "group": "0531957b8d4ecb7d",
         "page": "",
         "ui": "",
         "name": "settings-sample",
-        "order": 1,
+        "order": 3,
         "width": 0,
         "height": 0,
         "head": "",
@@ -7141,11 +7126,11 @@
         "type": "ui-template",
         "z": "5047c566973ee3a1",
         "g": "8832a7e3b9ea8c13",
-        "group": "60c596107f1b8418",
+        "group": "0531957b8d4ecb7d",
         "page": "",
         "ui": "",
         "name": "settings-preview",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "head": "",
@@ -7388,11 +7373,11 @@
         "type": "ui-template",
         "z": "5047c566973ee3a1",
         "g": "5518fb6d8287c2dc",
-        "group": "edf608584c176d40",
+        "group": "0531957b8d4ecb7d",
         "page": "",
         "ui": "",
         "name": "settings-acquisition",
-        "order": 1,
+        "order": 4,
         "width": 0,
         "height": 0,
         "head": "",
@@ -7567,11 +7552,11 @@
         "type": "ui-template",
         "z": "5047c566973ee3a1",
         "g": "290796618b24955f",
-        "group": "eb6540f7963cb624",
+        "group": "0531957b8d4ecb7d",
         "page": "",
         "ui": "",
         "name": "settings-segmentation",
-        "order": 1,
+        "order": 5,
         "width": 0,
         "height": 0,
         "head": "",
@@ -7672,6 +7657,47 @@
                 "7bfa8347d6717246"
             ]
         ]
+    },
+    {
+        "id": "23ffd2c116cbdf71",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "925817a4bacd25ee",
+        "group": "0531957b8d4ecb7d",
+        "page": "",
+        "ui": "",
+        "name": "settings-segmentation",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"default-button-container\">\n    <v-btn color=\"orange darken-2\" class=\"default-settings-btn\" @click=\"confirmRestore\">Default settings</v-btn>\n  </div>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      msts: '',\n    };\n  },\n  methods: {\n    confirmRestore() {\n      if (confirm(\"Are you sure you want to reset default settings?\")) {\n        this.send({ payload: \"reset\" });\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .default-button-container {\n    position: relative;\n  }\n\n  .default-settings-btn {\n    position: absolute;\n    bottom: 1rem;\n    right: 0rem;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 960,
+        "wires": [
+            [
+                "250fac5d08b457a3"
+            ]
+        ]
+    },
+    {
+        "id": "250fac5d08b457a3",
+        "type": "link out",
+        "z": "5047c566973ee3a1",
+        "g": "925817a4bacd25ee",
+        "name": "link out 80",
+        "mode": "link",
+        "links": [
+            "f67384bd93fa9723"
+        ],
+        "x": 715,
+        "y": 960,
+        "wires": []
     },
     {
         "id": "55974a9928ce597e",
