@@ -1011,11 +1011,12 @@
             "ea3ed4500ce285e0",
             "74edaec95cafb2d9",
             "752f586529da1398",
-            "f67384bd93fa9723"
+            "f67384bd93fa9723",
+            "d67a089534fb33a1"
         ],
-        "x": 54,
+        "x": 44,
         "y": 299,
-        "w": 1012,
+        "w": 1022,
         "h": 322
     },
     {
@@ -1057,6 +1058,44 @@
         "x": 304,
         "y": 199,
         "w": 872,
+        "h": 82
+    },
+    {
+        "id": "6dabc68acbd23974",
+        "type": "group",
+        "z": "a697ff46c6e7b7fb",
+        "name": "Right pannel",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f8fd4c2266066516",
+            "0395251fd0d40dfe",
+            "cffad800b5d6e504"
+        ],
+        "x": 474,
+        "y": 399,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "cec7b5c348ba4e10",
+        "type": "group",
+        "z": "a697ff46c6e7b7fb",
+        "name": "Left pannel",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7e44e412732eb023"
+        ],
+        "x": 614,
+        "y": 299,
+        "w": 192,
         "h": 82
     },
     {
@@ -2658,7 +2697,8 @@
         "g": "6720ea496a9e645e",
         "name": "link in 65",
         "links": [
-            "401bfc3969550dac"
+            "401bfc3969550dac",
+            "d67a089534fb33a1"
         ],
         "x": 325,
         "y": 420,
@@ -2675,7 +2715,8 @@
         "g": "6720ea496a9e645e",
         "name": "link in 66",
         "links": [
-            "401bfc3969550dac"
+            "401bfc3969550dac",
+            "d67a089534fb33a1"
         ],
         "x": 325,
         "y": 460,
@@ -2692,7 +2733,8 @@
         "g": "6720ea496a9e645e",
         "name": "link in 67",
         "links": [
-            "401bfc3969550dac"
+            "401bfc3969550dac",
+            "d67a089534fb33a1"
         ],
         "x": 325,
         "y": 500,
@@ -2709,7 +2751,8 @@
         "g": "6720ea496a9e645e",
         "name": "link in 68",
         "links": [
-            "401bfc3969550dac"
+            "401bfc3969550dac",
+            "d67a089534fb33a1"
         ],
         "x": 325,
         "y": 540,
@@ -2726,7 +2769,8 @@
         "g": "6720ea496a9e645e",
         "name": "link in 69",
         "links": [
-            "401bfc3969550dac"
+            "401bfc3969550dac",
+            "d67a089534fb33a1"
         ],
         "x": 325,
         "y": 580,
@@ -2743,7 +2787,8 @@
         "g": "6720ea496a9e645e",
         "name": "link in 70",
         "links": [
-            "401bfc3969550dac"
+            "401bfc3969550dac",
+            "d67a089534fb33a1"
         ],
         "x": 725,
         "y": 340,
@@ -2760,7 +2805,8 @@
         "g": "6720ea496a9e645e",
         "name": "link in 71",
         "links": [
-            "401bfc3969550dac"
+            "401bfc3969550dac",
+            "d67a089534fb33a1"
         ],
         "x": 725,
         "y": 380,
@@ -2809,7 +2855,8 @@
         "g": "6720ea496a9e645e",
         "name": "link in 76",
         "links": [
-            "401bfc3969550dac"
+            "401bfc3969550dac",
+            "d67a089534fb33a1"
         ],
         "x": 725,
         "y": 420,
@@ -2828,13 +2875,34 @@
         "links": [
             "250fac5d08b457a3"
         ],
-        "x": 195,
-        "y": 500,
+        "x": 85,
+        "y": 340,
         "wires": [
             [
-                "401bfc3969550dac"
+                "d67a089534fb33a1"
             ]
         ]
+    },
+    {
+        "id": "d67a089534fb33a1",
+        "type": "link out",
+        "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "569d67a3e424fbfc",
+            "70bdda69151a2d51",
+            "6cc482054923eb78",
+            "59fb45c7686d6613",
+            "be3b221fc2df4911",
+            "47793af3c5948f4c",
+            "ea3ed4500ce285e0",
+            "752f586529da1398"
+        ],
+        "x": 235,
+        "y": 340,
+        "wires": []
     },
     {
         "id": "db628ba400a981fc",
@@ -8403,6 +8471,7 @@
         "id": "7e44e412732eb023",
         "type": "ui-template",
         "z": "a697ff46c6e7b7fb",
+        "g": "cec7b5c348ba4e10",
         "group": "d80f187d2b6ea2f1",
         "page": "",
         "ui": "",
@@ -8417,8 +8486,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 430,
-        "y": 360,
+        "x": 710,
+        "y": 340,
         "wires": [
             []
         ]
@@ -8427,6 +8496,7 @@
         "id": "f8fd4c2266066516",
         "type": "ui-template",
         "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
         "group": "ef751c46741892a3",
         "page": "",
         "ui": "",
@@ -8435,16 +8505,61 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"right-pannel-container\">\n    <div class=\"button-div\">\n      <v-btn color=\"red\" dark @click=\"run\">Run</v-btn>\n      <v-btn color=\"red\" dark @click=\"kill\">Kill</v-btn>\n      <v-btn color=\"red\" dark @click=\"restart\">Restart</v-btn>\n    </div>\n  </div>\n  <div class=\"right-pannel-container\">\n    <div class=\"button-div\">\n      <v-btn color=\"#076eac\" dark @click=\"controllersLogs\">Controllers Logs</v-btn>\n      <v-btn color=\"#076eac\" dark @click=\"processLogs\">Process Logs</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  methods: {\n    run() {\n      // TODO\n    },\n    kill() {\n    // TODO\n    },\n    restart() {\n      // TODO\n    },\n    controllersLogs() {\n    // TODO\n    },\n    processLogs() {\n    // TODO\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .right-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    margin-bottom: 2rem;\n  }\n\n  .button-div {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n  }\n\n  .button-div .v-btn {\n    margin: 0.25rem;\n  }\n\n</style>",
+        "format": "<template>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Restarting Processes</h3>\n      <p>\n        Please be aware that managing the following processes: Pump, Focus, Light, Camera, Segmenter, may cause temporary\n        disruptions in system operations and data processing.\n      </p>\n    </div>\n\n    <div class=\"right-pannel-process\">\n      <section id=\"segmenter-process\" class=\"process-section\" @click=\"toggleCheckbox('segmenter')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Segmenter\" v-model=\"selectedProcesses.segmenter\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime: </span><span id=\"light\">12 hours, 34 minutes</span></p>\n          <p><span id=\"bold\"> Restart Time: </span><span id=\"light\">2024-07-05 14:30:00</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.segmenterStatus }}</span></p>\n        </div>\n      </section>\n      <section id=\"hardware-process\" class=\"process-section\" @click=\"toggleCheckbox('hardware')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Hardware\" v-model=\"selectedProcesses.hardware\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime:</span><span id=\"light\"> 12 hours, 34 minutes</span></p>\n          <p><span id=\"bold\">Last Restart Time:</span><span id=\"light\"> 2024-07-05 14:30:00</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.hardwareStatus }}</span></p>\n        </div>\n      </section>\n    </div>\n\n    <div class=\"button-div\">\n      <v-btn color=\"red\" dark @click=\"run\">Run</v-btn>\n      <v-btn color=\"red\" dark @click=\"kill\">Kill</v-btn>\n      <v-btn color=\"red\" dark @click=\"restart\">Restart</v-btn>\n    </div>\n  </div>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Accessing Backend Logs</h3>\n      <p>Please be aware that accessing backend logs requires proper understanding.</p>\n    </div>\n    <div class=\"button-div\">\n      <v-btn color=\"#076eac\" dark @click=\"controllersLogs\">Controllers Logs</v-btn>\n      <v-btn color=\"#076eac\" dark @click=\"processLogs\">Process Logs</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      selectedProcesses: {\n        segmenter: false,\n        hardware: false\n      },\n    };\n  },\n  methods: {\n    run() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'run'\n      }})\n    },\n    kill() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'kill'\n      }})\n    },\n    restart() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'restart'\n      }})\n    },\n    controllersLogs() {\n      this.send({payload: \"Controllers Logs button clicked\"});\n    },\n    processLogs() {\n      this.send({payload: \"Process Logs button clicked\"});\n    },\n    toggleCheckbox(process) {\n      this.selectedProcesses[process] = !this.selectedProcesses[process];\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .right-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    margin-bottom: 2rem;\n    color: white;\n  }\n\n  .right-pannel-text {\n    margin-bottom: 1rem;\n  }\n\n  .right-pannel-process {\n    display: flex;\n    align-items: center;\n  }\n\n  .process-section {\n    background-color: #161616;\n    padding: 0rem 1rem;\n    padding-bottom: 0.7rem;\n    border-radius: 4px;\n    margin-bottom: 1rem;\n    margin-right: 1rem;\n    width: 300px;\n    color: #ffffff;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    cursor: pointer;\n  }\n\n  .process-section:hover {\n    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);\n  }\n\n  .process-header {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    font-weight: bold;\n  }\n\n  .process-details span#bold {\n    font-weight: bold;\n  }\n\n  .process-details span#light {\n    font-weight: light;\n  }\n\n  .status {\n    line-height: 0px;\n    font-size: 2.5rem;\n  }\n\n  .status.ko {\n    color: red;\n  }\n\n  .status.working {\n    color: green;\n  }\n\n  .button-div {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n  }\n\n  .button-div .v-btn {\n    margin: 0.25rem;\n  }\n\n  .v-selection-control__wrapper {\n    margin-right: 10px;\n  }\n  \n  .v-label {\n    opacity: unset;\n  }\n\n  .v-selection-control--density-default {\n    --v-selection-control-size: 20px\n  }\n\n  .v-input__details {\n    display: none;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 590,
-        "y": 360,
+        "x": 710,
+        "y": 440,
         "wires": [
-            []
+            [
+                "cffad800b5d6e504"
+            ]
         ]
+    },
+    {
+        "id": "0395251fd0d40dfe",
+        "type": "inject",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "{\"segmenterStatus\":\"Working\",\"hardwareStatus\":\"KO\"}",
+        "payloadType": "json",
+        "x": 570,
+        "y": 440,
+        "wires": [
+            [
+                "f8fd4c2266066516"
+            ]
+        ]
+    },
+    {
+        "id": "cffad800b5d6e504",
+        "type": "debug",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "debug 31",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 440,
+        "wires": []
     }
 ]
