@@ -1059,12 +1059,14 @@
             "4782940c3eb11f57",
             "0cee35de3e61c695",
             "bfce8bcf0432af22",
-            "f51f31818cb618a7"
+            "dedd2f376269d92d",
+            "89246bd4b7b399ea",
+            "ef1abfee73208836"
         ],
         "x": 44,
         "y": 359,
         "w": 1022,
-        "h": 562
+        "h": 642
     },
     {
         "id": "925817a4bacd25ee",
@@ -1120,12 +1122,23 @@
         "nodes": [
             "f8fd4c2266066516",
             "0395251fd0d40dfe",
-            "cffad800b5d6e504"
+            "ee91ce21184552fa",
+            "ab09fc7b9f3e8189",
+            "04b077947f323ffb",
+            "4bd4ed61fe231982",
+            "07b89d6d2f243410",
+            "ac21946563059ca9",
+            "6d6cc270dacfa20e",
+            "0c05e0937c13a28d",
+            "1a8330a03101a150",
+            "cba7a0cba93534cc",
+            "7fd6408cf7e06683",
+            "d015e87016b2d964"
         ],
-        "x": 464,
+        "x": 454,
         "y": 399,
-        "w": 502,
-        "h": 82
+        "w": 1272,
+        "h": 222
     },
     {
         "id": "cec7b5c348ba4e10",
@@ -2882,7 +2895,8 @@
             "c5ca778e3eda6a52",
             "ea3ed4500ce285e0",
             "0cee35de3e61c695",
-            "f51f31818cb618a7"
+            "f51f31818cb618a7",
+            "ef1abfee73208836"
         ],
         "x": 235,
         "y": 600,
@@ -3132,7 +3146,8 @@
             "ea3ed4500ce285e0",
             "752f586529da1398",
             "0cee35de3e61c695",
-            "f51f31818cb618a7"
+            "f51f31818cb618a7",
+            "ef1abfee73208836"
         ],
         "x": 235,
         "y": 400,
@@ -3198,8 +3213,8 @@
         "valuesConfigName": "DATA",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.acq_instrument",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -3213,28 +3228,70 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 490,
-        "y": 880,
+        "x": 570,
+        "y": 960,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "f51f31818cb618a7",
+        "id": "dedd2f376269d92d",
+        "type": "file in",
+        "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
+        "name": "Get Model",
+        "filename": "/home/pi/PlanktoScope/config.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 190,
+        "y": 960,
+        "wires": [
+            [
+                "89246bd4b7b399ea"
+            ]
+        ]
+    },
+    {
+        "id": "89246bd4b7b399ea",
+        "type": "function",
+        "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
+        "name": "function 11",
+        "func": "const parsedData = JSON.parse(msg.payload);\nconst cellType = parsedData.acq_instrument;\n\nmsg.payload = {\n    acq_instrument: cellType\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 960,
+        "wires": [
+            [
+                "bfce8bcf0432af22"
+            ]
+        ]
+    },
+    {
+        "id": "ef1abfee73208836",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
         "g": "6720ea496a9e645e",
-        "name": "link in 83",
+        "name": "link in 87",
         "links": [
             "401bfc3969550dac",
             "d67a089534fb33a1"
         ],
-        "x": 325,
-        "y": 880,
+        "x": 85,
+        "y": 960,
         "wires": [
             [
-                "bfce8bcf0432af22"
+                "dedd2f376269d92d"
             ]
         ]
     },
@@ -9767,7 +9824,7 @@
         "z": "b70df4b6cc88d09a",
         "g": "a193634e73cb129b",
         "name": "debug ram",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9825,7 +9882,7 @@
         "z": "b70df4b6cc88d09a",
         "g": "a193634e73cb129b",
         "name": "function 6",
-        "func": "var filename = \"/home/pi/device-backend/default-configs/\";\n\nif (msg.model_selected == \"PlanktoScope v1\") {\n    filename += \"v2.1.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v3\") {\n    filename += \"v2.3.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v5\") {\n    filename += \"v2.3.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v6\") {\n    filename += \"v2.3.hardware.json\"\n}\n\nmsg.payload = {\n    filename: filename\n}\n\nreturn msg;",
+        "func": "var filename = \"/home/pi/device-backend/default-configs/\";\n\nif (msg.model_selected == \"PlanktoScope v2.1\") {\n    filename += \"v2.1.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.3\") {\n    filename += \"v2.3.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.5\") {\n    filename += \"v2.5.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.6\") {\n    filename += \"v2.6.hardware.json\"\n}\n\nmsg.payload = {\n    filename: filename\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -10013,7 +10070,9 @@
         "x": 200,
         "y": 60,
         "wires": [
-            []
+            [
+                "71e6c09920f85552"
+            ]
         ]
     },
     {
@@ -10022,7 +10081,10 @@
         "z": "a697ff46c6e7b7fb",
         "name": "link in 78",
         "links": [
-            "078a7c562c7ec691"
+            "078a7c562c7ec691",
+            "1a8330a03101a150",
+            "cba7a0cba93534cc",
+            "d015e87016b2d964"
         ],
         "x": 105,
         "y": 60,
@@ -10158,7 +10220,7 @@
         "width": "3",
         "height": "7",
         "head": "",
-        "format": "<template>\n  <div class=\"left-pannel-container\">\n    <v-btn color=\"#076eac\" dark @click=\"moreDetails\">More details</v-btn>\n  </div>\n</template>\n\n<script>\nexport default {\n  methods: {\n    moreDetails() {\n      window.open('https://example.com', '_blank');\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .left-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n</style>",
+        "format": "<template>\n  <div class=\"left-pannel-container\">\n    <v-btn color=\"#076eac\" dark @click=\"moreDetails\">More details</v-btn>\n  </div>\n</template>\n\n<script>\nexport default {\n  methods: {\n    moreDetails() {\n      window.open('/admin/grafana/d/host-summary/host-summary?orgId=1&refresh=5s&kiosk', '_blank');\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .left-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n</style>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -10193,7 +10255,7 @@
         "y": 440,
         "wires": [
             [
-                "cffad800b5d6e504"
+                "ee91ce21184552fa"
             ]
         ]
     },
@@ -10215,7 +10277,7 @@
         "topic": "",
         "payload": "{\"segmenterStatus\":\"Working\",\"hardwareStatus\":\"KO\"}",
         "payloadType": "json",
-        "x": 570,
+        "x": 560,
         "y": 440,
         "wires": [
             [
@@ -10224,20 +10286,307 @@
         ]
     },
     {
-        "id": "cffad800b5d6e504",
-        "type": "debug",
+        "id": "04b077947f323ffb",
+        "type": "persistent value",
         "z": "a697ff46c6e7b7fb",
         "g": "6dabc68acbd23974",
-        "name": "debug 31",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
+        "value": "model_selected",
+        "command": "read",
+        "msgProperty": "model_selected",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1070,
+        "y": 440,
+        "wires": [
+            [
+                "4bd4ed61fe231982"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4bd4ed61fe231982",
+        "type": "function",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "function 9",
+        "func": "var filename = \"/home/pi/device-backend/default-configs/\";\n\nif (msg.model_selected == \"PlanktoScope v2.1\") {\n    filename += \"v2.1.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.3\") {\n    filename += \"v2.3.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.5\") {\n    filename += \"v2.5.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.6\") {\n    filename += \"v2.6.hardware.json\"\n}\n\nmsg.payload = {\n    filename: filename\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 440,
+        "wires": [
+            [
+                "07b89d6d2f243410"
+            ]
+        ]
+    },
+    {
+        "id": "07b89d6d2f243410",
+        "type": "file in",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "Get CPU name",
+        "filename": "payload.filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1300,
+        "y": 480,
+        "wires": [
+            [
+                "ac21946563059ca9"
+            ]
+        ]
+    },
+    {
+        "id": "ac21946563059ca9",
+        "type": "function",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "function 10",
+        "func": "const parsedData = JSON.parse(msg.payload);\nconst hat = parsedData.stepper_type;\n\nmsg.payload = {\n    selected_hat: hat\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 520,
+        "wires": [
+            [
+                "ab09fc7b9f3e8189"
+            ]
+        ]
+    },
+    {
+        "id": "71e6c09920f85552",
+        "type": "link out",
+        "z": "a697ff46c6e7b7fb",
+        "name": "link out 85",
+        "mode": "link",
+        "links": [
+            "4e702497cc2722ce"
+        ],
+        "x": 295,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ab09fc7b9f3e8189",
+        "type": "switch",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "property": "payload.selected_hat",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "adafruithat",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "pscope_hat",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1360,
+        "y": 560,
+        "wires": [
+            [
+                "6d6cc270dacfa20e"
+            ],
+            [
+                "0c05e0937c13a28d"
+            ]
+        ]
+    },
+    {
+        "id": "6d6cc270dacfa20e",
+        "type": "change",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"url\":\"/admin/cockpit/system/logs#/?prio=debug&service=planktoscope-org.device-backend.controller-adafruithat.service\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1550,
+        "y": 540,
+        "wires": [
+            [
+                "1a8330a03101a150"
+            ]
+        ]
+    },
+    {
+        "id": "0c05e0937c13a28d",
+        "type": "change",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"url\":\"/admin/cockpit/system/logs#/?prio=debug&service=planktoscope-org.device-backend.controller-planktoscopehat.service\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1550,
+        "y": 580,
+        "wires": [
+            [
+                "cba7a0cba93534cc"
+            ]
+        ]
+    },
+    {
+        "id": "ee91ce21184552fa",
+        "type": "switch",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Controllers Logs button clicked",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Process Logs button clicked",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
         "x": 860,
         "y": 440,
+        "wires": [
+            [
+                "04b077947f323ffb"
+            ],
+            [
+                "7fd6408cf7e06683"
+            ]
+        ]
+    },
+    {
+        "id": "1a8330a03101a150",
+        "type": "link out",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "link out 86",
+        "mode": "link",
+        "links": [
+            "9d2388378e60b099"
+        ],
+        "x": 1685,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "cba7a0cba93534cc",
+        "type": "link out",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "link out 87",
+        "mode": "link",
+        "links": [
+            "9d2388378e60b099"
+        ],
+        "x": 1685,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "7fd6408cf7e06683",
+        "type": "change",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"url\":\"/admin/dozzle/show?name=apps_ps_backend_proc-segmenter-server-1\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 500,
+        "wires": [
+            [
+                "d015e87016b2d964"
+            ]
+        ]
+    },
+    {
+        "id": "d015e87016b2d964",
+        "type": "link out",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "link out 88",
+        "mode": "link",
+        "links": [
+            "9d2388378e60b099"
+        ],
+        "x": 1155,
+        "y": 500,
         "wires": []
     },
     {
