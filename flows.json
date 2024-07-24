@@ -149,12 +149,13 @@
             "85d18d7f5d8af6b8",
             "931e4aba3ed98eab",
             "2dc8d24abaf780c7",
-            "cef686ed8e156c03"
+            "cef686ed8e156c03",
+            "4782940c3eb11f57"
         ],
         "x": 284,
         "y": 159,
-        "w": 802,
-        "h": 122
+        "w": 822,
+        "h": 162
     },
     {
         "id": "4237eacb62444cc7",
@@ -590,9 +591,9 @@
             "7150e1ace23a0ffe",
             "a194350af72b5af9"
         ],
-        "x": 114,
+        "x": 104,
         "y": 139,
-        "w": 682,
+        "w": 692,
         "h": 82
     },
     {
@@ -612,9 +613,9 @@
             "b0cf7eb48763f77c",
             "e63f5e9582bff018"
         ],
-        "x": 94,
+        "x": 84,
         "y": 439,
-        "w": 552,
+        "w": 562,
         "h": 162
     },
     {
@@ -799,7 +800,7 @@
         ],
         "x": 514,
         "y": 459,
-        "w": 662,
+        "w": 682,
         "h": 122
     },
     {
@@ -1073,9 +1074,9 @@
             "d67a089534fb33a1"
         ],
         "x": 44,
-        "y": 299,
+        "y": 359,
         "w": 1022,
-        "h": 322
+        "h": 442
     },
     {
         "id": "925817a4bacd25ee",
@@ -2108,6 +2109,22 @@
         "disabled": "false"
     },
     {
+        "id": "176d84b611842be2",
+        "type": "persistent values config",
+        "name": "Hard-coded value",
+        "values": [
+            {
+                "id": "120f5c10-49a6-11ef-9331-19c39f8156d0",
+                "name": "model_list",
+                "datatype": "json",
+                "default": "[\"Model 1\",\"Model 2\",\"Model 3\"]",
+                "description": "List of the available models",
+                "scope": "global",
+                "storage": "default"
+            }
+        ]
+    },
+    {
         "id": "ab7abe42214339fd",
         "type": "inject",
         "z": "2d41a8ed5aea3449",
@@ -2248,7 +2265,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
+        "x": 470,
         "y": 200,
         "wires": [
             [
@@ -2270,7 +2287,8 @@
         "wires": [
             [
                 "9d5c5f31e49c7414",
-                "2dc8d24abaf780c7"
+                "2dc8d24abaf780c7",
+                "4782940c3eb11f57"
             ]
         ]
     },
@@ -2288,7 +2306,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 870,
+        "x": 890,
         "y": 200,
         "wires": []
     },
@@ -2311,7 +2329,7 @@
         "payload": "",
         "payloadType": "str",
         "x": 150,
-        "y": 540,
+        "y": 600,
         "wires": [
             [
                 "401bfc3969550dac"
@@ -2338,7 +2356,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
+        "x": 470,
         "y": 240,
         "wires": [
             [
@@ -2360,7 +2378,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 930,
+        "x": 950,
         "y": 240,
         "wires": []
     },
@@ -2377,8 +2395,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 400,
-        "y": 720,
+        "x": 1280,
+        "y": 100,
         "wires": [
             [
                 "adba3d76093b90b5",
@@ -2401,8 +2419,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 660,
+        "x": 1420,
+        "y": 40,
         "wires": []
     },
     {
@@ -2418,8 +2436,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 820,
-        "y": 720,
+        "x": 1700,
+        "y": 100,
         "wires": [
             [
                 "6bade76e305b0cc7"
@@ -2436,8 +2454,8 @@
         "links": [
             "97790217bf3c2c85"
         ],
-        "x": 165,
-        "y": 720,
+        "x": 1045,
+        "y": 100,
         "wires": [
             [
                 "ba2c8b29b89da0f2"
@@ -2457,8 +2475,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 980,
-        "y": 660,
+        "x": 1860,
+        "y": 40,
         "wires": []
     },
     {
@@ -2486,7 +2504,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 660,
+        "x": 680,
         "y": 200,
         "wires": [
             [
@@ -2521,7 +2539,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 460,
-        "y": 340,
+        "y": 400,
         "wires": [
             [],
             []
@@ -2552,7 +2570,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 680,
+        "x": 700,
         "y": 240,
         "wires": [
             [
@@ -2587,7 +2605,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 480,
-        "y": 380,
+        "y": 460,
         "wires": [
             [],
             []
@@ -2619,7 +2637,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 490,
-        "y": 420,
+        "y": 520,
         "wires": [
             [],
             []
@@ -2651,7 +2669,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 480,
-        "y": 460,
+        "y": 580,
         "wires": [
             [],
             []
@@ -2683,7 +2701,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 490,
-        "y": 500,
+        "y": 640,
         "wires": [
             [],
             []
@@ -2715,7 +2733,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 480,
-        "y": 540,
+        "y": 700,
         "wires": [
             [],
             []
@@ -2747,7 +2765,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 480,
-        "y": 580,
+        "y": 760,
         "wires": [
             [],
             []
@@ -2779,7 +2797,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 900,
-        "y": 340,
+        "y": 400,
         "wires": [
             [],
             []
@@ -2811,7 +2829,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 900,
-        "y": 380,
+        "y": 460,
         "wires": [
             [],
             []
@@ -2837,7 +2855,7 @@
             "ea3ed4500ce285e0"
         ],
         "x": 235,
-        "y": 540,
+        "y": 600,
         "wires": []
     },
     {
@@ -2850,7 +2868,7 @@
             "401bfc3969550dac"
         ],
         "x": 325,
-        "y": 340,
+        "y": 400,
         "wires": [
             [
                 "6a5d78b1bdbbd9da"
@@ -2867,7 +2885,7 @@
             "401bfc3969550dac"
         ],
         "x": 325,
-        "y": 380,
+        "y": 460,
         "wires": [
             [
                 "4469155952188120"
@@ -2885,7 +2903,7 @@
             "d67a089534fb33a1"
         ],
         "x": 325,
-        "y": 420,
+        "y": 520,
         "wires": [
             [
                 "b45db1e61d1984ce"
@@ -2903,7 +2921,7 @@
             "d67a089534fb33a1"
         ],
         "x": 325,
-        "y": 460,
+        "y": 580,
         "wires": [
             [
                 "caa5d00ff15afc7b"
@@ -2921,7 +2939,7 @@
             "d67a089534fb33a1"
         ],
         "x": 325,
-        "y": 500,
+        "y": 640,
         "wires": [
             [
                 "28eb8fb70252bece"
@@ -2939,7 +2957,7 @@
             "d67a089534fb33a1"
         ],
         "x": 325,
-        "y": 540,
+        "y": 700,
         "wires": [
             [
                 "d09d2878c5a4f034"
@@ -2957,7 +2975,7 @@
             "d67a089534fb33a1"
         ],
         "x": 325,
-        "y": 580,
+        "y": 760,
         "wires": [
             [
                 "8777af2465094b01"
@@ -2975,7 +2993,7 @@
             "d67a089534fb33a1"
         ],
         "x": 725,
-        "y": 340,
+        "y": 400,
         "wires": [
             [
                 "71229c84c971a227"
@@ -2993,7 +3011,7 @@
             "d67a089534fb33a1"
         ],
         "x": 725,
-        "y": 380,
+        "y": 460,
         "wires": [
             [
                 "50beb12661979952"
@@ -3026,7 +3044,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 860,
-        "y": 420,
+        "y": 520,
         "wires": [
             [],
             []
@@ -3043,7 +3061,7 @@
             "d67a089534fb33a1"
         ],
         "x": 725,
-        "y": 420,
+        "y": 520,
         "wires": [
             [
                 "74edaec95cafb2d9"
@@ -3060,7 +3078,7 @@
             "250fac5d08b457a3"
         ],
         "x": 85,
-        "y": 340,
+        "y": 400,
         "wires": [
             [
                 "d67a089534fb33a1"
@@ -3085,8 +3103,40 @@
             "752f586529da1398"
         ],
         "x": 235,
-        "y": 340,
+        "y": 400,
         "wires": []
+    },
+    {
+        "id": "4782940c3eb11f57",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "96bb330907da5bdb",
+        "name": "",
+        "valuesConfig": "176d84b611842be2",
+        "valuesConfigName": "Hard-coded value",
+        "valueId": "120f5c10-49a6-11ef-9331-19c39f8156d0",
+        "value": "model_list",
+        "command": "reset",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 530,
+        "y": 280,
+        "wires": [
+            [],
+            []
+        ]
     },
     {
         "id": "db628ba400a981fc",
@@ -3123,12 +3173,12 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "2",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 130,
+        "x": 140,
         "y": 40,
         "wires": [
             [
@@ -3146,9 +3196,10 @@
             "3c65f10b5789b40f",
             "1204489b4eaf1bfe",
             "57fd38433196163e",
-            "5144a6f881adaa91"
+            "5144a6f881adaa91",
+            "469d021252c5af93"
         ],
-        "x": 215,
+        "x": 235,
         "y": 40,
         "wires": []
     },
@@ -3381,9 +3432,9 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label>Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label>Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label>Model</label>\n        <v-text-field\n          v-model=\"hardware.model\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator: {\n        name: '',\n        email: '',\n      },\n      hardware: {\n        model: '',\n      }\n    };\n  },\n  methods: {\n    validateForm() {\n      const { name, email } = this.operator;\n      const { model } = this.hardware;\n\n      if (!name || !email || !model) {\n        // alert\n        return;\n      }\n\n      const formData = {\n        operator: this.operator,\n        hardware: this.hardware,\n      };\n\n      // Envoyer les données\n      this.send({\n        payload: {\n          operator: this.operator,\n          hardware: this.hardware,\n          firstVisit: false\n        }\n      })\n    }\n  }\n}\n</script>\n\n<style>\n\n  .first-visit-custom-button {\n    border-radius: 8px;\n    font-size: 1vw;\n    padding-top: 12px;\n    padding-bottom: 12px;\n  }\n\n  .form-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n  }\n\n  .first-visit-form-block-one, .first-visit-form-block-two {\n    width: 80%;\n    max-width: 600px;\n    padding: 1rem;\n    border: 1px solid black;\n    border-radius: 5px;\n    margin-bottom: 1rem;\n  }\n\n  p#first-visit-block-one-title, p#first-visit-block-two-title {\n    font-size: 1.5vw;\n    margin-bottom: 1rem;\n  }\n\n  .first-visit-input-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0rem 0rem 1rem 1.4rem;\n  }\n\n  .first-visit-input-container label {\n    font-size: 1.2vw;\n    min-width: 10rem;\n  }\n\n  .button-container {\n    display: flex;\n    justify-content: flex-end;\n    width: 80%;\n    max-width: 600px;\n  }\n\n  .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Model</label>\n        <v-select\n          label=\"Select your model\"\n          v-model=\"hardware.model\"\n          :items=msg.model_list\n          variant=\"outlined\"\n          density=\"compact\"\n        ></v-select>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator: {\n        name: '',\n        email: '',\n      },\n      hardware: {\n        model: '',\n      }\n    };\n  },\n  methods: {\n    validateForm() {\n      const { name, email } = this.operator;\n      const { model } = this.hardware;\n\n      if (!name || !email || !model) {\n        // alert\n        return;\n      }\n\n      const formData = {\n        operator: this.operator,\n        hardware: this.hardware,\n      };\n\n      this.send({\n        payload: {\n          operator: this.operator,\n          hardware: this.hardware,\n          firstVisit: false\n        }\n      })\n    }\n  },\n//   watch: {\n    //   model_list: {\n    //     handler(newVal) {\n    //         // do something ?\n    //     },\n    //     deep: true\n    //   },\n    //   '$socket': {\n    //     handler(newVal, oldVal) {\n    //       this.$socket.on('msg-input:' + this.id, (msg) => {\n    //         if (msg.model_list) {\n    //           this.model_list = msg.model_list;\n    //         }\n    //       });\n    //     },\n    //     deep: true,\n    //     immediate: true\n    //   }\n    // }\n}\n</script>\n\n<style>\n\n  .first-visit-custom-button {\n    border-radius: 8px;\n    font-size: 1vw;\n    padding-top: 12px;\n    padding-bottom: 12px;\n  }\n\n  .form-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n  }\n\n  .first-visit-form-block-one, .first-visit-form-block-two {\n    width: 80%;\n    max-width: 600px;\n    padding: 1rem;\n    border: 1px solid black;\n    border-radius: 5px;\n    margin-bottom: 1rem;\n  }\n\n  p#first-visit-block-one-title, p#first-visit-block-two-title {\n    font-size: 1.5vw;\n    margin-bottom: 1rem;\n  }\n\n  .first-visit-input-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0rem 0rem 1rem 1.4rem;\n  }\n\n  .my-first-visit-label {\n    font-size: 1.2vw;\n    min-width: 10rem;\n  }\n\n  .button-container {\n    display: flex;\n    justify-content: flex-end;\n    width: 80%;\n    max-width: 600px;\n  }\n\n  .v-input__details {\n    display: none;\n  }\n\n</style>\n",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
@@ -3473,7 +3524,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 960,
+        "x": 970,
         "y": 500,
         "wires": [
             [
@@ -3491,7 +3542,7 @@
         "links": [
             "f2332fa1b7e6397e"
         ],
-        "x": 1135,
+        "x": 1155,
         "y": 540,
         "wires": []
     },
@@ -3515,11 +3566,60 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
+        "x": 1030,
         "y": 540,
         "wires": [
             [
                 "dcc0c648c7c57223"
+            ]
+        ]
+    },
+    {
+        "id": "eac22c776f85072b",
+        "type": "persistent value",
+        "z": "fb15c917381dd273",
+        "name": "",
+        "valuesConfig": "176d84b611842be2",
+        "valuesConfigName": "Hard-coded value",
+        "valueId": "120f5c10-49a6-11ef-9331-19c39f8156d0",
+        "value": "model_list",
+        "command": "read",
+        "msgProperty": "model_list",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 500,
+        "wires": [
+            [
+                "43f2c97055fc26be"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "469d021252c5af93",
+        "type": "link in",
+        "z": "fb15c917381dd273",
+        "name": "link in 80",
+        "links": [
+            "c24d1751dd739fe4"
+        ],
+        "x": 165,
+        "y": 500,
+        "wires": [
+            [
+                "eac22c776f85072b"
             ]
         ]
     },
