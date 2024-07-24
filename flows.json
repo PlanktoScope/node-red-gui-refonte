@@ -591,9 +591,9 @@
             "7150e1ace23a0ffe",
             "a194350af72b5af9"
         ],
-        "x": 104,
+        "x": 94,
         "y": 139,
-        "w": 692,
+        "w": 702,
         "h": 82
     },
     {
@@ -3770,7 +3770,7 @@
         "z": "a707f17e5367291d",
         "g": "d6362eced379ae80",
         "name": "Prepare payload to navigate",
-        "func": "var itemNumber = msg.payload;\n\nif (itemNumber == 1) {\n    msg.payload = {\"page\":\"Preview-2\"}\n} else if (itemNumber == 2) {\n    msg.payload = {\"page\":\"Gallery\"}\n} else if (itemNumber == 3) {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (itemNumber == 4) {\n    msg.payload = {\"page\":\"Documentation\"}\n} else if (itemNumber == 5) {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (itemNumber == 6) {\n    msg.payload = { url: 'https://url.goes.here' }\n}\n\nreturn msg;",
+        "func": "var itemNumber = msg.payload;\n\nif (itemNumber == 1) {\n    msg.payload = {\"page\":\"Preview-2\"}\n} else if (itemNumber == 2) {\n    msg.payload = { url: '/ps/data/browse/files/' }\n} else if (itemNumber == 3) {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (itemNumber == 4) {\n    msg.payload = {\"page\":\"Documentation\"}\n} else if (itemNumber == 5) {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (itemNumber == 6) {\n    msg.payload = { url: 'https://url.goes.here' }\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3912,7 +3912,7 @@
         "topic": "",
         "payload": "{\"profilName\":\"Loïc VASSAUX--ARTUR\"}",
         "payloadType": "json",
-        "x": 210,
+        "x": 200,
         "y": 180,
         "wires": [
             [
@@ -3926,7 +3926,7 @@
         "z": "a707f17e5367291d",
         "g": "1daf5cfc8e29e5ad",
         "name": "Prepare payload to navigate",
-        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Manage your data\") {\n    msg.payload = { \"page\":\"Gallery\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Documentation\") {\n    msg.payload = { url: 'https://url.goes.here' }\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Gallery\") {\n    msg.payload = { url: '/ps/data/browse/files/' }\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Documentation\") {\n    msg.payload = { url: 'https://url.goes.here' }\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3953,6 +3953,187 @@
         ],
         "x": 755,
         "y": 180,
+        "wires": []
+    },
+    {
+        "id": "603a844dea8314bb",
+        "type": "file in",
+        "z": "a707f17e5367291d",
+        "name": "",
+        "filename": "/usr/share/planktoscope/installer-config.yml",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 450,
+        "y": 720,
+        "wires": [
+            [
+                "85c39c697fb4bd8d"
+            ]
+        ]
+    },
+    {
+        "id": "85c39c697fb4bd8d",
+        "type": "debug",
+        "z": "a707f17e5367291d",
+        "name": "debug 43",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "991b3a2859ccd1c3",
+        "type": "inject",
+        "z": "a707f17e5367291d",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 190,
+        "y": 720,
+        "wires": [
+            [
+                "603a844dea8314bb",
+                "35ea264db9f15f9b",
+                "82e51bd8165585cd",
+                "8ded6e7b8d7f625d"
+            ]
+        ]
+    },
+    {
+        "id": "35ea264db9f15f9b",
+        "type": "http request",
+        "z": "a707f17e5367291d",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost/admin/prometheus/api/v1/query?query=100%20-%20((node_filesystem_avail_bytes%7Bmountpoint%3D%22%2F%22%2Cfstype!%3D%22rootfs%22%7D%20*%20100)%20%2F%20node_filesystem_size_bytes%7Bmountpoint%3D%22%2F%22%2Cfstype!%3D%22rootfs%22%7D)",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 760,
+        "wires": [
+            [
+                "508e6151126ca449"
+            ]
+        ]
+    },
+    {
+        "id": "508e6151126ca449",
+        "type": "debug",
+        "z": "a707f17e5367291d",
+        "name": "debug storage percentage",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "82e51bd8165585cd",
+        "type": "http request",
+        "z": "a707f17e5367291d",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost/admin/prometheus/graph?g0.expr=node_filesystem_size_bytes%7Bmountpoint%3D%22%2F%22%2Cfstype!%3D%22rootfs%22%7D",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 800,
+        "wires": [
+            [
+                "f046343a19b4eb0c"
+            ]
+        ]
+    },
+    {
+        "id": "f046343a19b4eb0c",
+        "type": "debug",
+        "z": "a707f17e5367291d",
+        "name": "debug storage capacity",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "8ded6e7b8d7f625d",
+        "type": "http request",
+        "z": "a707f17e5367291d",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost/admin/prometheus/graph?g0.expr=node_filesystem_size_bytes%7Bmountpoint%3D%22%2F%22%2Cfstype!%3D%22rootfs%22%7D",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 840,
+        "wires": [
+            [
+                "ac76b0950e809e78"
+            ]
+        ]
+    },
+    {
+        "id": "ac76b0950e809e78",
+        "type": "debug",
+        "z": "a707f17e5367291d",
+        "name": "debug storage free",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 840,
         "wires": []
     },
     {
