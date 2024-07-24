@@ -92,7 +92,7 @@
         "type": "tab",
         "label": "Hardware settings",
         "disabled": false,
-        "info": "",
+        "info": "> ",
         "env": []
     },
     {
@@ -252,9 +252,9 @@
             "13b9d4e3ee422e36",
             "6be809475a69864d"
         ],
-        "x": 74,
+        "x": 64,
         "y": 59,
-        "w": 752,
+        "w": 762,
         "h": 162
     },
     {
@@ -290,9 +290,9 @@
             "2efa775925b01a42",
             "a1aa80bf2f2ebbeb"
         ],
-        "x": 74,
+        "x": 64,
         "y": 339,
-        "w": 372,
+        "w": 382,
         "h": 122
     },
     {
@@ -941,29 +941,6 @@
         "h": 82
     },
     {
-        "id": "7b2d6bc08c39c813",
-        "type": "group",
-        "z": "b70df4b6cc88d09a",
-        "name": "Hardware settings section one",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "c5c51a15b8e79bf3",
-            "d464e63989a12510",
-            "2b02520ad1df73ae",
-            "b0f02965c34beb87",
-            "303805b28bef8dbe",
-            "0aead36053762ea4"
-        ],
-        "x": 134,
-        "y": 279,
-        "w": 1052,
-        "h": 182
-    },
-    {
         "id": "872edfac5cde1d2c",
         "type": "group",
         "z": "b70df4b6cc88d09a",
@@ -1277,10 +1254,35 @@
             "0d159c22ef7345c9",
             "9317b92afaa7669e"
         ],
-        "x": 264,
+        "x": 254,
         "y": 1399,
-        "w": 682,
+        "w": 692,
         "h": 202
+    },
+    {
+        "id": "7b2d6bc08c39c813",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "Hardware settings section one",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "c5c51a15b8e79bf3",
+            "d464e63989a12510",
+            "2b02520ad1df73ae",
+            "b0f02965c34beb87",
+            "303805b28bef8dbe",
+            "0aead36053762ea4",
+            "7d5d703c8feb5408",
+            "e9b7b351f0e36cb9"
+        ],
+        "x": 134,
+        "y": 279,
+        "w": 1052,
+        "h": 182
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -9240,7 +9242,7 @@
             "174cdd81869831b4",
             "b0f02965c34beb87"
         ],
-        "x": 225,
+        "x": 235,
         "y": 100,
         "wires": []
     },
@@ -9255,7 +9257,7 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "x": 130,
+        "x": 140,
         "y": 100,
         "wires": [
             [
@@ -9594,7 +9596,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 370,
-        "y": 380,
+        "y": 360,
         "wires": [
             [
                 "c5c51a15b8e79bf3"
@@ -9618,14 +9620,12 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "payload": "{\"hardware_hat\":[\"1\",\"2\",\"3\"],\"hardware_driver\":[\"1\",\"2\",\"3\"],\"hardware_cpu\":12,\"hardware_ram\":23}",
+        "payload": "{\"hardware_hat\":[\"1\",\"2\",\"3\"],\"hardware_driver\":[\"1\",\"2\",\"3\"],\"hardware_ram\":23}",
         "payloadType": "json",
-        "x": 460,
-        "y": 420,
+        "x": 680,
+        "y": 360,
         "wires": [
-            [
-                "c5c51a15b8e79bf3"
-            ]
+            []
         ]
     },
     {
@@ -9638,7 +9638,7 @@
             "05f3de085aa30475"
         ],
         "x": 175,
-        "y": 340,
+        "y": 360,
         "wires": [
             [
                 "2b02520ad1df73ae",
@@ -9710,6 +9710,96 @@
         "wires": [
             [],
             []
+        ]
+    },
+    {
+        "id": "7d5d703c8feb5408",
+        "type": "file in",
+        "z": "b70df4b6cc88d09a",
+        "g": "7b2d6bc08c39c813",
+        "name": "Get CPU name",
+        "filename": "/sys/firmware/devicetree/base/model",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 300,
+        "y": 420,
+        "wires": [
+            [
+                "e9b7b351f0e36cb9"
+            ]
+        ]
+    },
+    {
+        "id": "e9b7b351f0e36cb9",
+        "type": "function",
+        "z": "b70df4b6cc88d09a",
+        "g": "7b2d6bc08c39c813",
+        "name": "function 4",
+        "func": "const hardware_cpu = msg.payload;\n\nmsg = {\n    payload: {\n        hardware_cpu: hardware_cpu\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 420,
+        "wires": [
+            [
+                "c5c51a15b8e79bf3"
+            ]
+        ]
+    },
+    {
+        "id": "ec7d742b799080a9",
+        "type": "inject",
+        "z": "b70df4b6cc88d09a",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "442836e3b197e456"
+            ]
+        ]
+    },
+    {
+        "id": "442836e3b197e456",
+        "type": "link out",
+        "z": "b70df4b6cc88d09a",
+        "name": "link out 83",
+        "mode": "link",
+        "links": [
+            "a75b44618440a9c0"
+        ],
+        "x": 235,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a75b44618440a9c0",
+        "type": "link in",
+        "z": "b70df4b6cc88d09a",
+        "name": "link in 84",
+        "links": [
+            "442836e3b197e456"
+        ],
+        "x": 185,
+        "y": 420,
+        "wires": [
+            [
+                "7d5d703c8feb5408"
+            ]
         ]
     },
     {
