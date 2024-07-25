@@ -1301,7 +1301,9 @@
             "e59fec7a28f6d723",
             "ff6a9f74b20d4443",
             "13dc7e99c3b3cafc",
-            "bffac6466a2ad434"
+            "bffac6466a2ad434",
+            "7a6313a038e7fb05",
+            "47034d988f734643"
         ],
         "x": 64,
         "y": 379,
@@ -4516,14 +4518,14 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Focus</h2>\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" label=\"Distance\" step=\"0.10\" max=\"45\" min=\"0\" v-model=\"distance\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"distance\" density=\"compact\" suffix=\"μm\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedDistancePreset\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\" v-for=\"(preset, index) in focus_preset\" :key=\"index\">{{ preset }}</v-btn>\n    </v-btn-toggle>\n\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Closer</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-square</v-icon>Stop</v-btn>\n      <v-btn style=\"padding: 10px;\">Further<v-icon>mdi-arrow-right-thin-circle-outline</v-icon></v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\n    export default {\n      data() {\n        return {\n          distance: 0,\n          dialog: false,\n          toggle: 1,\n          selectedDistancePreset: null,\n          focus_preset: [],\n        };\n      },\n      methods: {\n        openDialog() {\n          this.dialog = true;\n        },\n        checkDistancePreset() {\n          const index = this.focus_preset.indexOf(this.distance);\n          this.selectedDistancePreset = index !== -1 ? index : null;\n        },\n      },\n      watch: {\n        toggle(newVal) {\n            let action = 'move';\n            let payload = {};\n\n            switch (this.toggle) {\n                case 0: \n                    payload = {\n                        \"action\": action,\n                        \"direction\": 'DOWN',\n                        \"distance\": this.distance,\n                        \"speed\": 1\n                    };\n                    break;\n                case 1:\n                    payload = {\n                        \"action\": 'stop',\n                    };\n                    break;\n                case 2:\n                    payload = {\n                        \"action\": action,\n                        \"direction\": 'UP',\n                        \"distance\": this.distance,\n                        \"speed\": 1\n                    };\n                    break;\n            }\n            this.send({\n                payload: payload,\n                topic: 'actuator/focus'\n            });\n        },\n        distance(newVal) {\n          this.checkDistancePreset();\n        },\n        selectedDistancePreset(newVal) {\n          if (newVal !== null) {\n            this.distance = this.focus_preset[newVal];\n          }\n        },\n        '$socket': {\n          handler(newVal, oldVal) {\n            this.$socket.on('msg-input:' + this.id, (msg) => {\n              if (msg.focus_preset) {\n                this.focus_preset = msg.focus_preset;\n              }\n            });\n          },\n          deep: true,\n          immediate: true\n        }\n      }\n    };\n</script>\n\n<style scoped>\n    .container {\n      padding: 10px 10px;\n      border: solid black 1px;\n      border-radius: 5px;\n    }\n    \n    .my-slider {\n      margin-right: 50px;\n      flex: 1;\n      font-weight: bolder;\n    }\n    \n    .my-v-text {\n      flex: 0.5;\n    }\n    \n    div .v-btn-toggle {\n      background-color: #ffffff;\n    }\n    \n    .my-v-text > .v-input__control {\n      background-color: #ffffff;\n      border-radius: 5px;\n    }\n    \n    .horizontal-alignment {\n      display: flex;\n      align-items: center;\n    }\n    \n    .toggle {\n      width: 100%;\n      border-color: #0a6eca;\n      color: #0a6eca;\n    }\n    \n    .presetToggle {\n      margin-bottom: 1rem;\n    }\n    \n    .toggle .v-btn--active {\n      background-color: #0a6eca !important;\n      color: white !important;\n    }\n    \n    .custom-slider .v-slider__label {\n      font-size: 0.9vw;\n    }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Focus</h2>\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" label=\"Distance\" step=\"0.10\" max=\"45\" min=\"0\" v-model=\"distance\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"distance\" density=\"compact\" suffix=\"μm\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedDistancePreset\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\" v-for=\"(preset, index) in focus_preset\" :key=\"index\">{{ preset }}</v-btn>\n    </v-btn-toggle>\n\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Closer</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-square</v-icon>Stop</v-btn>\n      <v-btn style=\"padding: 10px;\">Further<v-icon>mdi-arrow-right-thin-circle-outline</v-icon></v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\n    export default {\n      data() {\n        return {\n          distance: 0,\n          dialog: false,\n          toggle: 1,\n          selectedDistancePreset: null,\n          focus_preset: [],\n        };\n      },\n      methods: {\n        openDialog() {\n          this.dialog = true;\n        },\n        checkDistancePreset() {\n          const index = this.focus_preset.indexOf(this.distance);\n          this.selectedDistancePreset = index !== -1 ? index : null;\n        },\n      },\n      watch: {\n        toggle(newVal) {\n            let action = 'move';\n            let payload = {};\n\n            switch (this.toggle) {\n                case 0: \n                    payload = {\n                        \"action\": action,\n                        \"direction\": 'DOWN',\n                        \"distance\": this.distance,\n                        \"speed\": 1\n                    };\n                    break;\n                case 1:\n                    payload = {\n                        \"action\": 'stop',\n                    };\n                    break;\n                case 2:\n                    payload = {\n                        \"action\": action,\n                        \"direction\": 'UP',\n                        \"distance\": this.distance,\n                        \"speed\": 1\n                    };\n                    break;\n            }\n            this.send({\n                payload: payload,\n                topic: 'actuator/focus'\n            });\n        },\n        distance(newVal) {\n          this.checkDistancePreset();\n        },\n        selectedDistancePreset(newVal) {\n          if (newVal !== null) {\n            this.distance = this.focus_preset[newVal];\n          }\n        },\n        '$socket': {\n          handler(newVal, oldVal) {\n            this.$socket.on('msg-input:' + this.id, (msg) => {\n              if (msg.focus_preset) {\n                this.focus_preset = msg.focus_preset;\n              }\n              if (msg.payload.status && msg.payload.status == \"Done\") {\n                this.toggle = 1;\n              }\n            });\n          },\n          deep: true,\n          immediate: true\n        }\n      }\n    };\n</script>\n\n<style scoped>\n    .container {\n      padding: 10px 10px;\n      border: solid black 1px;\n      border-radius: 5px;\n    }\n    \n    .my-slider {\n      margin-right: 50px;\n      flex: 1;\n      font-weight: bolder;\n    }\n    \n    .my-v-text {\n      flex: 0.5;\n    }\n    \n    div .v-btn-toggle {\n      background-color: #ffffff;\n    }\n    \n    .my-v-text > .v-input__control {\n      background-color: #ffffff;\n      border-radius: 5px;\n    }\n    \n    .horizontal-alignment {\n      display: flex;\n      align-items: center;\n    }\n    \n    .toggle {\n      width: 100%;\n      border-color: #0a6eca;\n      color: #0a6eca;\n    }\n    \n    .presetToggle {\n      margin-bottom: 1rem;\n    }\n    \n    .toggle .v-btn--active {\n      background-color: #0a6eca !important;\n      color: white !important;\n    }\n    \n    .custom-slider .v-slider__label {\n      font-size: 0.9vw;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 520,
-        "y": 480,
+        "y": 540,
         "wires": [
             [
                 "bffac6466a2ad434"
@@ -4550,7 +4552,7 @@
         "templateScope": "local",
         "className": "",
         "x": 510,
-        "y": 520,
+        "y": 620,
         "wires": [
             [
                 "bffac6466a2ad434"
@@ -4792,7 +4794,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 280,
-        "y": 520,
+        "y": 560,
         "wires": [
             [
                 "4d881b94510f4523"
@@ -4859,7 +4861,7 @@
             "2f82ccfd843002d9"
         ],
         "x": 105,
-        "y": 520,
+        "y": 560,
         "wires": [
             [
                 "6739b10df9f1d57b"
@@ -4992,7 +4994,7 @@
         "expiry": "",
         "broker": "a973d821cae4ecce",
         "x": 830,
-        "y": 480,
+        "y": 540,
         "wires": []
     },
     {
@@ -5021,7 +5023,7 @@
         "type": "debug",
         "z": "db1e7a22029cc2a4",
         "name": "debug 44",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5144,10 +5146,32 @@
         "repair": false,
         "outputs": 1,
         "x": 700,
-        "y": 480,
+        "y": 540,
         "wires": [
             [
                 "13dc7e99c3b3cafc"
+            ]
+        ]
+    },
+    {
+        "id": "7a6313a038e7fb05",
+        "type": "mqtt in",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "Listen focus status",
+        "topic": "status/focus",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 520,
+        "wires": [
+            [
+                "4d881b94510f4523"
             ]
         ]
     },
