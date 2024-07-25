@@ -178,9 +178,9 @@
             "ee0252f79ad5e696",
             "932204814a8df00f"
         ],
-        "x": 264,
+        "x": 254,
         "y": 99,
-        "w": 672,
+        "w": 682,
         "h": 162
     },
     {
@@ -975,9 +975,9 @@
             "3a156da7c106e28d",
             "4c0ac6db11a8f2c3"
         ],
-        "x": 204,
+        "x": 84,
         "y": 659,
-        "w": 682,
+        "w": 802,
         "h": 82
     },
     {
@@ -1159,6 +1159,38 @@
         "h": 82
     },
     {
+        "id": "a193634e73cb129b",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "hardware settings section one",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "c5c51a15b8e79bf3",
+            "2b02520ad1df73ae",
+            "b0f02965c34beb87",
+            "303805b28bef8dbe",
+            "0aead36053762ea4",
+            "7d5d703c8feb5408",
+            "e9b7b351f0e36cb9",
+            "a75b44618440a9c0",
+            "7d7c8138a237f36d",
+            "29128d55899287f3",
+            "e8694a78adb3d88a",
+            "aa3278b2aa7f86b0",
+            "102834d0d6eb6a38",
+            "d3a5f61d61a11b45",
+            "6ca3f7475a1bb35d"
+        ],
+        "x": 134,
+        "y": 279,
+        "w": 1032,
+        "h": 262
+    },
+    {
         "id": "0ae7386dfdd66509",
         "type": "group",
         "z": "f260ed9417849607",
@@ -1275,38 +1307,6 @@
         "h": 202
     },
     {
-        "id": "a193634e73cb129b",
-        "type": "group",
-        "z": "b70df4b6cc88d09a",
-        "name": "hardware settings section one",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "c5c51a15b8e79bf3",
-            "2b02520ad1df73ae",
-            "b0f02965c34beb87",
-            "303805b28bef8dbe",
-            "0aead36053762ea4",
-            "7d5d703c8feb5408",
-            "e9b7b351f0e36cb9",
-            "a75b44618440a9c0",
-            "7d7c8138a237f36d",
-            "29128d55899287f3",
-            "e8694a78adb3d88a",
-            "aa3278b2aa7f86b0",
-            "102834d0d6eb6a38",
-            "d3a5f61d61a11b45",
-            "6ca3f7475a1bb35d"
-        ],
-        "x": 134,
-        "y": 279,
-        "w": 1032,
-        "h": 262
-    },
-    {
         "id": "43f40797e7f6bb4b",
         "type": "ui-page",
         "name": "Home",
@@ -1372,6 +1372,7 @@
             "ui-control"
         ],
         "showPathInSidebar": false,
+        "showPageTitle": true,
         "navigationStyle": "none",
         "titleBarStyle": "hidden"
     },
@@ -2159,7 +2160,7 @@
                 "id": "120f5c10-49a6-11ef-9331-19c39f8156d0",
                 "name": "model_list",
                 "datatype": "json",
-                "default": "[\"PlanktoScope v1\",\"PlanktoScope v3\",\"PlanktoScope v5\",\"PlanktoScope v6\"]",
+                "default": "[\"PlanktoScope v2.1\",\"PlanktoScope v2.3\",\"PlanktoScope v2.5\",\"PlanktoScope v2.6\"]",
                 "description": "List of the available models",
                 "scope": "global",
                 "storage": "default"
@@ -4195,7 +4196,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 700,
@@ -4462,7 +4464,7 @@
         "width": "8",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n      <!-- <img src=\"https://via.placeholder.com/1024x768/eee?text=4:3\" ref=\"image\" /> -->\n      <img src=\"https://planktonplanet.org/wp-content/uploads/2020/02/rect870-1024x738.png\" ref=\"image\" />\n    </div>\n    <div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n    };\n  },\n  methods: {\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;    },\n  },\n};\n</script>\n\n<style scoped>\n.image-zoom-container {\n  cursor: none;\n  border: 1px solid black;\n  border-radius: 5px;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper {\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper img {\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: transform 0.2s ease-out;\n}\n\n.zoomed-image {\n  position: absolute;\n  top: 50%; /* Centre vertical */\n  left: 50%; /* Centre horizontal */\n  transform: translate(-50%, -50%); /* Centrer l'image zoomée */\n  width: 150px; /* Taille réduite de l'image zoomée */\n  height: 300px; /* Taille réduite de l'image zoomée */\n  pointer-events: none;\n  z-index: 1000;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n      <img src=\"http://92.167.184.163/ps/hal/camera/streams/preview.mjpg\">      \n    </div>\n    <div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n    };\n  },\n  methods: {\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;    },\n  },\n};\n</script>\n\n<style scoped>\n.image-zoom-container {\n  cursor: none;\n  border: 1px solid black;\n  border-radius: 5px;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper {\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper img {\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: transform 0.2s ease-out;\n}\n\n.zoomed-image {\n  position: absolute;\n  top: 50%; /* Centre vertical */\n  left: 50%; /* Centre horizontal */\n  transform: translate(-50%, -50%); /* Centrer l'image zoomée */\n  width: 150px; /* Taille réduite de l'image zoomée */\n  height: 300px; /* Taille réduite de l'image zoomée */\n  pointer-events: none;\n  z-index: 1000;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -4663,7 +4665,7 @@
         "topic": "",
         "payload": "{\"profilName\":\"Loïc VASSAUX--ARTUR\"}",
         "payloadType": "json",
-        "x": 370,
+        "x": 360,
         "y": 220,
         "wires": [
             [
@@ -4921,7 +4923,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1280,
+        "x": 1140,
         "y": 180,
         "wires": [
             []
@@ -4938,7 +4940,7 @@
             "932204814a8df00f",
             "e59fec7a28f6d723"
         ],
-        "x": 1185,
+        "x": 1045,
         "y": 180,
         "wires": [
             [
@@ -4966,6 +4968,86 @@
         "className": "",
         "x": 300,
         "y": 600,
+        "wires": []
+    },
+    {
+        "id": "13dc7e99c3b3cafc",
+        "type": "mqtt out",
+        "z": "db1e7a22029cc2a4",
+        "name": "",
+        "topic": "actuator/light",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 490,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "3625b34274d18cb4",
+        "type": "inject",
+        "z": "db1e7a22029cc2a4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"action\":\"on\",\"led\":\"1\"}",
+        "payloadType": "json",
+        "x": 350,
+        "y": 760,
+        "wires": [
+            [
+                "13dc7e99c3b3cafc"
+            ]
+        ]
+    },
+    {
+        "id": "0142d099d2d90e5f",
+        "type": "mqtt in",
+        "z": "db1e7a22029cc2a4",
+        "name": "",
+        "topic": "status/light",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 360,
+        "y": 700,
+        "wires": [
+            [
+                "2bf9d54f976d4458"
+            ]
+        ]
+    },
+    {
+        "id": "2bf9d54f976d4458",
+        "type": "debug",
+        "z": "db1e7a22029cc2a4",
+        "name": "debug 44",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 700,
         "wires": []
     },
     {
@@ -9386,7 +9468,8 @@
         "g": "da310b26268026a0",
         "name": "link in 74",
         "links": [
-            "05f3de085aa30475"
+            "05f3de085aa30475",
+            "dbecc464b33d6070"
         ],
         "x": 305,
         "y": 220,
@@ -9655,7 +9738,8 @@
         "g": "a193634e73cb129b",
         "name": "link in 81",
         "links": [
-            "05f3de085aa30475"
+            "05f3de085aa30475",
+            "dbecc464b33d6070"
         ],
         "x": 175,
         "y": 360,
@@ -9758,7 +9842,7 @@
         "type": "function",
         "z": "b70df4b6cc88d09a",
         "g": "a193634e73cb129b",
-        "name": "function 4",
+        "name": "createHardwareCpuPayload",
         "func": "const hardware_cpu = msg.payload;\n\nmsg = {\n    payload: {\n        hardware_cpu: hardware_cpu\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -9766,7 +9850,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
+        "x": 520,
         "y": 420,
         "wires": [
             [
@@ -9782,7 +9866,8 @@
         "name": "link in 84",
         "links": [
             "442836e3b197e456",
-            "f276c3d37dec61eb"
+            "f276c3d37dec61eb",
+            "d8996acac981501a"
         ],
         "x": 175,
         "y": 440,
@@ -9849,7 +9934,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 720,
+        "x": 800,
         "y": 500,
         "wires": [
             [
@@ -9866,7 +9951,8 @@
         "links": [
             "8fc7fbbfd63d3707",
             "442836e3b197e456",
-            "f276c3d37dec61eb"
+            "f276c3d37dec61eb",
+            "d8996acac981501a"
         ],
         "x": 175,
         "y": 500,
@@ -9881,7 +9967,7 @@
         "type": "function",
         "z": "b70df4b6cc88d09a",
         "g": "a193634e73cb129b",
-        "name": "function 6",
+        "name": "getFilenameForModel",
         "func": "var filename = \"/home/pi/device-backend/default-configs/\";\n\nif (msg.model_selected == \"PlanktoScope v2.1\") {\n    filename += \"v2.1.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.3\") {\n    filename += \"v2.3.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.5\") {\n    filename += \"v2.5.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.6\") {\n    filename += \"v2.6.hardware.json\"\n}\n\nmsg.payload = {\n    filename: filename\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -9889,7 +9975,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
+        "x": 600,
         "y": 500,
         "wires": [
             [
@@ -9936,7 +10022,7 @@
         "type": "function",
         "z": "b70df4b6cc88d09a",
         "g": "a193634e73cb129b",
-        "name": "function 7",
+        "name": "extractStepperType",
         "func": "const parsedData = JSON.parse(msg.payload);\nconst hat = parsedData.stepper_type;\n\nmsg.payload = {\n    selected_hat: hat\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -9944,7 +10030,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 990,
         "y": 500,
         "wires": [
             [
@@ -9980,7 +10066,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 360,
+        "x": 240,
         "y": 700,
         "wires": [
             [
@@ -9993,7 +10079,7 @@
         "type": "function",
         "z": "b70df4b6cc88d09a",
         "g": "e878c471eeb2f3b4",
-        "name": "function 8",
+        "name": "createHardwareCpuPayload",
         "func": "const parsedData = JSON.parse(msg.payload);\nconst cellType = parsedData.acq_celltype;\n\nmsg.payload = {\n    hardware_flowcell_internal_thickness: cellType\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -10001,7 +10087,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 460,
         "y": 700,
         "wires": [
             [
@@ -10018,15 +10104,51 @@
         "links": [
             "8fc7fbbfd63d3707",
             "442836e3b197e456",
-            "f276c3d37dec61eb"
+            "f276c3d37dec61eb",
+            "d8996acac981501a"
         ],
-        "x": 245,
+        "x": 125,
         "y": 700,
         "wires": [
             [
                 "944fd4bbbb946194"
             ]
         ]
+    },
+    {
+        "id": "bf084b0ff1670e68",
+        "type": "inject",
+        "z": "b70df4b6cc88d09a",
+        "d": true,
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "d8996acac981501a"
+            ]
+        ]
+    },
+    {
+        "id": "d8996acac981501a",
+        "type": "link out",
+        "z": "b70df4b6cc88d09a",
+        "name": "link out 89",
+        "mode": "link",
+        "links": [
+            "a75b44618440a9c0",
+            "aa3278b2aa7f86b0",
+            "4c0ac6db11a8f2c3"
+        ],
+        "x": 235,
+        "y": 140,
+        "wires": []
     },
     {
         "id": "83b6394625e71c0f",
