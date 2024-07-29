@@ -333,11 +333,12 @@
         },
         "nodes": [
             "83a6ffa643836e87",
-            "cd0ffd27aadc1ff1"
+            "cd0ffd27aadc1ff1",
+            "64e2947efd9244a4"
         ],
         "x": 294,
         "y": 479,
-        "w": 252,
+        "w": 412,
         "h": 82
     },
     {
@@ -1203,12 +1204,15 @@
             "05a7e133906e9ca9",
             "d4c9cf552809b2e8",
             "1163a00d165fb437",
-            "77c2eece35acdabc"
+            "77c2eece35acdabc",
+            "8ded6e7b8d7f625d",
+            "7116c7bc43621124",
+            "f66af7340c87d7de"
         ],
         "x": 254,
         "y": 439,
         "w": 812,
-        "h": 242
+        "h": 322
     },
     {
         "id": "0ae7386dfdd66509",
@@ -1943,7 +1947,7 @@
                 "id": "ceeda8d0-42aa-11ef-89ad-e57161842148",
                 "name": "flowrate_preset",
                 "datatype": "json",
-                "default": "[\"10\",\"20\",\"30\",\"45\"]",
+                "default": "[\"0.01\",\"0.1\",\"1\",\"45\"]",
                 "description": "Operator/default preset for the floware",
                 "scope": "global",
                 "storage": "default"
@@ -1952,7 +1956,7 @@
                 "id": "4552e290-42ad-11ef-89ad-e57161842148",
                 "name": "volume_preset",
                 "datatype": "json",
-                "default": "[\"50\",\"100\",\"200\"]",
+                "default": "[\"0.01\",\"0.1\",\"1\"]",
                 "description": "Operator/default preset for the volume",
                 "scope": "global",
                 "storage": "default"
@@ -3993,7 +3997,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ serialNumber }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ softwareVersion }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-on:change=\"updateProgressColor\"\n                        v-model=msg.payload.storage\n                        height=\"20\"\n                        max=\"200\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{storage}} Gb / 200 Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfImage }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfObject }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            model: null,\n            serialNumber: null,\n            machineName: null,\n            softwareVersion: null,\n            storage: 0,\n            numberOfImage: null,\n            numberOfObject: null,\n        };\n    },\n    watch: {\n        msg: {\n            handler(newVal) {\n                if (newVal.payload) {\n                    const { payload } = newVal;\n                    if (payload.model_selected !== undefined) {\n                        this.model = payload.model_selected;\n                    }\n                    if (payload.serialNumber !== undefined) {\n                        this.serialNumber = payload.serialNumber;\n                    }\n                    if (payload.machineName !== undefined) {\n                        this.machineName = payload.machineName;\n                    }\n                    if (payload.version !== undefined) {\n                        this.softwareVersion = payload.version;\n                    }\n                    if (payload.storage !== undefined) {\n                        this.storage = payload.storage;\n                        this.updateProgressColor(payload.storage);\n                    }\n                    if (payload.acquiredImage !== undefined) {\n                        this.numberOfImage = payload.acquiredImage;\n                    }\n                    if (payload.segmentedObjects !== undefined) {\n                        this.numberOfObject = payload.segmentedObjects;\n                    }\n                }\n            },\n            deep: true,\n            immediate: true\n        }\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$el.querySelector('.v-progress-linear__determinate');\n            let color = 'green';\n\n            if (value <= 50) {\n                color = 'green';\n            } else if (value <= 100) {\n                color = 'yellow';\n            } else if (value <= 150) {\n                color = 'orange';\n            } else if (value > 150) {\n                color = 'red';\n            }\n\n            if (progressBar) {\n                progressBar.style.backgroundColor = color;\n            }\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n\n    .bottom-section-slider .v-progress-linear__determinate bg-progressColor {\n        background-color: red;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ serialNumber }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ softwareVersion }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-model=\"storage\"\n                        height=\"20\"\n                        max=\"200\"\n                        ref=\"progressBar\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{ storage }} Gb / {{ maxStorage }} Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfImage }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfObject }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            model: null,\n            serialNumber: null,\n            machineName: null,\n            softwareVersion: null,\n            storage: 0,\n            maxStorage: 0,\n            numberOfImage: null,\n            numberOfObject: null,\n        };\n    },\n    watch: {\n        msg: {\n            handler(newVal) {\n                if (newVal.payload) {\n                    const { payload } = newVal;\n                    if (payload.model_selected !== undefined) {\n                        this.model = payload.model_selected;\n                    }\n                    if (payload.serialNumber !== undefined) {\n                        this.serialNumber = payload.serialNumber;\n                    }\n                    if (payload.machineName !== undefined) {\n                        this.machineName = payload.machineName;\n                    }\n                    if (payload.version !== undefined) {\n                        this.softwareVersion = payload.version;\n                    }\n                    if (payload.storage !== undefined) {\n                        this.storage = payload.storage;\n                        this.updateProgressColor(payload.storage);\n                    }\n                    if (payload.maxStorage !== undefined) {\n                        this.maxStorage = payload.maxStorage;\n                    }\n                    if (payload.acquiredImage !== undefined) {\n                        this.numberOfImage = payload.acquiredImage;\n                    }\n                    if (payload.segmentedObjects !== undefined) {\n                        this.numberOfObject = payload.segmentedObjects;\n                    }\n                }\n            },\n            deep: true,\n            immediate: true\n        }\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$refs.progressBar.$el.querySelector('.v-progress-linear__determinate');\n            \n            if (progressBar) {\n                const greenThreshold = this.maxStorage * 0.25;  // 25% de maxStorage\n                const yellowThreshold = this.maxStorage * 0.50; // 50% de maxStorage\n                const orangeThreshold = this.maxStorage * 0.75; // 75% de maxStorage\n                \n                let color = 'green';\n\n                if (value <= greenThreshold) {\n                    color = 'green';\n                } else if (value <= yellowThreshold) {\n                    color = 'yellow';\n                } else if (value <= orangeThreshold) {\n                    color = 'orange';\n                } else if (value > orangeThreshold) {\n                    color = 'red';\n                }\n\n                progressBar.style.backgroundColor = color;\n            }\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -4157,8 +4161,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 470,
-        "y": 840,
+        "x": 550,
+        "y": 940,
         "wires": [
             [
                 "85c39c697fb4bd8d"
@@ -4178,8 +4182,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
-        "y": 840,
+        "x": 830,
+        "y": 940,
         "wires": []
     },
     {
@@ -4193,8 +4197,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 210,
-        "y": 840,
+        "x": 290,
+        "y": 940,
         "wires": [
             [
                 "603a844dea8314bb"
@@ -4227,55 +4231,15 @@
         ]
     },
     {
-        "id": "82e51bd8165585cd",
-        "type": "http request",
-        "z": "a707f17e5367291d",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://localhost/admin/prometheus/graph?g0.expr=node_filesystem_size_bytes%7Bmountpoint%3D%22%2F%22%2Cfstype!%3D%22rootfs%22%7D",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1130,
-        "y": 840,
-        "wires": [
-            [
-                "f046343a19b4eb0c"
-            ]
-        ]
-    },
-    {
-        "id": "f046343a19b4eb0c",
-        "type": "debug",
-        "z": "a707f17e5367291d",
-        "name": "debug storage capacity",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1330,
-        "y": 840,
-        "wires": []
-    },
-    {
         "id": "8ded6e7b8d7f625d",
         "type": "http request",
         "z": "a707f17e5367291d",
-        "name": "",
+        "g": "0ba7fbaa34399b50",
+        "name": "Get MaxSpace",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://localhost/admin/prometheus/graph?g0.expr=node_filesystem_size_bytes%7Bmountpoint%3D%22%2F%22%2Cfstype!%3D%22rootfs%22%7D",
+        "url": "http://92.167.184.163/admin/prometheus/api/v1/query?query=node_filesystem_size_bytes%7Bmountpoint%3D%22%2F%22%2Cfstype!%3D%22rootfs%22%7D",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -4283,30 +4247,13 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1130,
-        "y": 880,
+        "x": 520,
+        "y": 680,
         "wires": [
             [
-                "ac76b0950e809e78"
+                "7116c7bc43621124"
             ]
         ]
-    },
-    {
-        "id": "ac76b0950e809e78",
-        "type": "debug",
-        "z": "a707f17e5367291d",
-        "name": "debug storage free",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1310,
-        "y": 880,
-        "wires": []
     },
     {
         "id": "776a66175a11c854",
@@ -4347,44 +4294,6 @@
         "wires": [
             [
                 "6d32866022cd0317"
-            ]
-        ]
-    },
-    {
-        "id": "6b4233d0f8ecb0e5",
-        "type": "inject",
-        "z": "a707f17e5367291d",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 970,
-        "y": 840,
-        "wires": [
-            [
-                "82e51bd8165585cd"
-            ]
-        ]
-    },
-    {
-        "id": "498efdcc4b7e96dc",
-        "type": "inject",
-        "z": "a707f17e5367291d",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 970,
-        "y": 880,
-        "wires": [
-            [
-                "8ded6e7b8d7f625d"
             ]
         ]
     },
@@ -4526,11 +4435,54 @@
         "links": [
             "05a7e133906e9ca9",
             "d4c9cf552809b2e8",
-            "1163a00d165fb437"
+            "1163a00d165fb437",
+            "f6f9ae031743a71a",
+            "f66af7340c87d7de"
         ],
         "x": 255,
         "y": 100,
         "wires": []
+    },
+    {
+        "id": "7116c7bc43621124",
+        "type": "function",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "Set payload.maxStorage",
+        "func": "// Parse the JSON payload\nconst parsedData = JSON.parse(msg.payload);\n\n// Extract the desired value (in bytes)\nconst valueInBytes = parsedData.data.result[0].value[1];\n\n// Convert the value to a float\nconst numericValueInBytes = parseFloat(valueInBytes);\n\n// Convert bytes to gigabytes\nconst valueInGB = numericValueInBytes / (1024 * 1024 * 1024);\n\n// Round the value to one decimal place\nconst roundedValueInGB = Math.round(valueInGB * 10) / 10;\n\n// Create a new payload with the rounded value in GB\nmsg.payload = {\n    maxStorage: roundedValueInGB\n};\n\n// Return the updated msg object\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 720,
+        "wires": [
+            [
+                "6d32866022cd0317"
+            ]
+        ]
+    },
+    {
+        "id": "f66af7340c87d7de",
+        "type": "link in",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "link in 97",
+        "links": [
+            "913867d97ba2a2ca",
+            "2b081acaeb1f304d",
+            "cfa47830686d6be3",
+            "064155ee1c670211"
+        ],
+        "x": 295,
+        "y": 680,
+        "wires": [
+            [
+                "8ded6e7b8d7f625d"
+            ]
+        ]
     },
     {
         "id": "7c15a6aca3b44d2e",
@@ -4672,7 +4624,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Pump</h2>\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" v-model=\"flowrate\" label=\"Flowrate\" step=\"0.1\" max=\"45\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"flowrate\" suffix=\"ml/min\" density=\"compact\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog1\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog1 = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedFlowratePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\" v-for=\"(preset, index) in flowrate_preset\" :key=\"index\">{{ preset }}</v-btn>\n    </v-btn-toggle>\n\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" v-model=\"volume\" label=\"Volume\" step=\"5\" max=\"200\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"volume\" suffix=\"ml\" density=\"compact\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog2\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog2 = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedVolumePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\"><span class=\"mdi mdi-infinity\"></span></v-btn>\n      <v-btn style=\"padding: 10px;\" v-for=\"(preset, index) in volume_preset\" :key=\"index\">{{ preset }}</v-btn>\n    </v-btn-toggle>\n\n    <v-btn-toggle\n      v-model=\"toggle\"\n      variant=\"outlined\"\n      density=\"confortable\"\n      color=\"#0a6eca\"\n      divided\n      class=\"toggle\"\n    >\n      <v-btn style=\"padding: 10px;\"><v-icon left>mdi-rotate-left</v-icon>Backward</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon left>mdi-square</v-icon>Stop</v-btn>\n      <v-btn style=\"padding: 10px;\">Forward<v-icon right>mdi-rotate-right</v-icon></v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      toggle: 1,\n      selectedFlowratePreset: null,\n      selectedVolumePreset: null,\n      volume_preset: [],\n      flowrate_preset: [],\n      flowrate: 0,\n      volume: 0,\n    };\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    checkFlowratePreset() {\n      const index = this.flowrate_preset.indexOf(this.flowrate);\n      this.selectedFlowratePreset = index !== -1 ? index : null;\n    },\n    checkVolumePreset() {\n      if (this.selectedVolumePreset === 0) {\n        this.volume = \"Infinity\";\n      } else {\n        const index = this.volume_preset.indexOf(this.volume);\n        this.selectedVolumePreset = index !== -1 ? index + 1 : null;\n      }\n    }\n  },\n  watch: {\n    flowrate(newVal) {\n      this.checkFlowratePreset();\n    },\n    volume(newVal) {\n      this.checkVolumePreset();\n    },\n    selectedFlowratePreset(newVal) {\n      if (newVal !== null) {\n        this.flowrate = this.flowrate_preset[newVal];\n      }\n    },\n    selectedVolumePreset(newVal) {\n      if (newVal === 0) {\n        this.volume = \"Infinity\";\n      } else if (newVal !== null) {\n        this.volume = this.volume_preset[newVal - 1];\n      }\n    },\n    toggle(newVal) {\n        let action = 'move';\n        let payload = {};\n\n        switch (this.toggle) {\n            case 0: \n                payload = {\n                    \"action\": action,\n                    \"direction\": 'BACKWARD',\n                    \"volume\": this.volume,\n                    \"flowrate\": this.flowrate\n                };\n                break;\n            case 1:\n                payload = {\n                    \"action\": 'stop',\n                };\n                break;\n            case 2:\n                payload = {\n                    \"action\": action,\n                    \"direction\": 'FORWARD',\n                    \"volume\": this.volume,\n                    \"flowrate\": this.flowrate\n                };\n                break;\n        }\n        this.send({\n            payload: payload,\n            topic: 'actuator/pump'\n        });\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.flowrate_preset) {\n            this.flowrate_preset = msg.flowrate_preset;\n          }\n          if (msg.volume_preset) {\n            this.volume_preset = msg.volume_preset;\n          }\n          if (msg.payload.status && msg.payload.status == \"Done\") {\n            this.toggle = 1;\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n};\n</script>\n\n<style scoped>\nh2 {\n  color: #0a6eca !important;\n}\n\n.my-slider {\n  padding-right: 15px;\n  flex: 1;\n}\n\n.my-v-text {\n  flex: 0.5;\n}\n\ndiv.v-slider {\n  font-weight: bolder;\n}\n\ndiv .v-btn-toggle {\n  background-color: #ffffff;\n}\n\n.my-v-text > .v-input__control {\n  background-color: #ffffff;\n  border-radius: 5px;\n}\n\n.container {\n  padding: 10px 10px;\n  background-color: rgba(10, 110, 202, 0.1);\n  border: solid black 1px;\n  border-radius: 5px;\n}\n\n.horizontal-alignment {\n  display: flex;\n  align-items: center;\n}\n\n.toggle {\n  width: 100%;\n  border-color: #0a6eca;\n  color: #0a6eca;\n}\n\n.presetToggle {\n  margin-bottom: 1rem;\n}\n\n.toggle .v-btn--active {\n  background-color: #0a6eca !important;\n  color: white !important;\n}\n\n.custom-slider .v-slider__label {\n  font-size: 0.9vw;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Pump</h2>\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" v-model=\"flowrate\" label=\"Flowrate\" step=\"0.1\" max=\"45\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"flowrate\" suffix=\"ml/min\" density=\"compact\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog1\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog1 = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedFlowratePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\" v-for=\"(preset, index) in flowrate_preset\" :key=\"index\">{{ preset }}</v-btn>\n    </v-btn-toggle>\n\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" v-model=\"volume\" label=\"Volume\" step=\"0.05\" max=\"1\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"volume\" suffix=\"ml\" density=\"compact\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog2\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog2 = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedVolumePreset\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\"><span class=\"mdi mdi-infinity\"></span></v-btn>\n      <v-btn style=\"padding: 10px;\" v-for=\"(preset, index) in volume_preset\" :key=\"index\">{{ preset }}</v-btn>\n    </v-btn-toggle>\n\n    <v-btn-toggle\n      v-model=\"toggle\"\n      variant=\"outlined\"\n      density=\"confortable\"\n      color=\"#0a6eca\"\n      divided\n      class=\"toggle\"\n    >\n      <v-btn style=\"padding: 10px;\"><v-icon left>mdi-rotate-left</v-icon>Backward</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon left>mdi-square</v-icon>Stop</v-btn>\n      <v-btn style=\"padding: 10px;\">Forward<v-icon right>mdi-rotate-right</v-icon></v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      toggle: 1,\n      selectedFlowratePreset: null,\n      selectedVolumePreset: null,\n      volume_preset: [],\n      flowrate_preset: [],\n      flowrate: 0,\n      volume: 0,\n    };\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    checkFlowratePreset() {\n      const index = this.flowrate_preset.indexOf(this.flowrate);\n      this.selectedFlowratePreset = index !== -1 ? index : null;\n    },\n    checkVolumePreset() {\n      if (this.selectedVolumePreset === 0) {\n        this.volume = \"Infinity\";\n      } else {\n        const index = this.volume_preset.indexOf(this.volume);\n        this.selectedVolumePreset = index !== -1 ? index + 1 : null;\n      }\n    }\n  },\n  watch: {\n    flowrate(newVal) {\n      this.checkFlowratePreset();\n    },\n    volume(newVal) {\n      this.checkVolumePreset();\n    },\n    selectedFlowratePreset(newVal) {\n      if (newVal !== null) {\n        this.flowrate = this.flowrate_preset[newVal];\n      }\n    },\n    selectedVolumePreset(newVal) {\n      if (newVal === 0) {\n        this.volume = \"Infinity\";\n      } else if (newVal !== null) {\n        this.volume = this.volume_preset[newVal - 1];\n      }\n    },\n    toggle(newVal) {\n        let action = 'move';\n        let payload = {};\n\n        switch (this.toggle) {\n            case 0: \n                payload = {\n                    \"action\": action,\n                    \"direction\": 'BACKWARD',\n                    \"volume\": this.volume,\n                    \"flowrate\": this.flowrate\n                };\n                break;\n            case 1:\n                payload = {\n                    \"action\": 'stop',\n                };\n                break;\n            case 2:\n                payload = {\n                    \"action\": action,\n                    \"direction\": 'FORWARD',\n                    \"volume\": this.volume,\n                    \"flowrate\": this.flowrate\n                };\n                break;\n        }\n        this.send({\n            payload: payload,\n            topic: 'actuator/pump'\n        });\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.flowrate_preset) {\n            this.flowrate_preset = msg.flowrate_preset;\n          }\n          if (msg.volume_preset) {\n            this.volume_preset = msg.volume_preset;\n          }\n          if (msg.payload.status && msg.payload.status == \"Done\") {\n            this.toggle = 1;\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n};\n</script>\n\n<style scoped>\nh2 {\n  color: #0a6eca !important;\n}\n\n.my-slider {\n  padding-right: 15px;\n  flex: 1;\n}\n\n.my-v-text {\n  flex: 0.5;\n}\n\ndiv.v-slider {\n  font-weight: bolder;\n}\n\ndiv .v-btn-toggle {\n  background-color: #ffffff;\n}\n\n.my-v-text > .v-input__control {\n  background-color: #ffffff;\n  border-radius: 5px;\n}\n\n.container {\n  padding: 10px 10px;\n  background-color: rgba(10, 110, 202, 0.1);\n  border: solid black 1px;\n  border-radius: 5px;\n}\n\n.horizontal-alignment {\n  display: flex;\n  align-items: center;\n}\n\n.toggle {\n  width: 100%;\n  border-color: #0a6eca;\n  color: #0a6eca;\n}\n\n.presetToggle {\n  margin-bottom: 1rem;\n}\n\n.toggle .v-btn--active {\n  background-color: #0a6eca !important;\n  color: white !important;\n}\n\n.custom-slider .v-slider__label {\n  font-size: 0.9vw;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -4699,7 +4651,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Focus</h2>\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" label=\"Distance\" step=\"0.10\" max=\"45\" min=\"0\" v-model=\"distance\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"distance\" density=\"compact\" suffix=\"μm\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedDistancePreset\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\" v-for=\"(preset, index) in focus_preset\" :key=\"index\">{{ preset }}</v-btn>\n    </v-btn-toggle>\n\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Closer</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-square</v-icon>Stop</v-btn>\n      <v-btn style=\"padding: 10px;\">Further<v-icon>mdi-arrow-right-thin-circle-outline</v-icon></v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\n    export default {\n      data() {\n        return {\n          distance: 0,\n          dialog: false,\n          toggle: 1,\n          selectedDistancePreset: null,\n          focus_preset: [],\n        };\n      },\n      methods: {\n        openDialog() {\n          this.dialog = true;\n        },\n        checkDistancePreset() {\n          const index = this.focus_preset.indexOf(this.distance);\n          this.selectedDistancePreset = index !== -1 ? index : null;\n        },\n      },\n      watch: {\n        toggle(newVal) {\n            let action = 'move';\n            let payload = {};\n\n            switch (this.toggle) {\n                case 0: \n                    payload = {\n                        \"action\": action,\n                        \"direction\": 'DOWN',\n                        \"distance\": this.distance,\n                        \"speed\": 1\n                    };\n                    break;\n                case 1:\n                    payload = {\n                        \"action\": 'stop',\n                    };\n                    break;\n                case 2:\n                    payload = {\n                        \"action\": action,\n                        \"direction\": 'UP',\n                        \"distance\": this.distance,\n                        \"speed\": 1\n                    };\n                    break;\n            }\n            this.send({\n                payload: payload,\n                topic: 'actuator/focus'\n            });\n        },\n        distance(newVal) {\n          this.checkDistancePreset();\n        },\n        selectedDistancePreset(newVal) {\n          if (newVal !== null) {\n            this.distance = this.focus_preset[newVal];\n          }\n        },\n        '$socket': {\n          handler(newVal, oldVal) {\n            this.$socket.on('msg-input:' + this.id, (msg) => {\n              if (msg.focus_preset) {\n                this.focus_preset = msg.focus_preset;\n              }\n              if (msg.payload.status && msg.payload.status == \"Done\") {\n                this.toggle = 1;\n              }\n            });\n          },\n          deep: true,\n          immediate: true\n        }\n      }\n    };\n</script>\n\n<style scoped>\n    .container {\n      padding: 10px 10px;\n      border: solid black 1px;\n      border-radius: 5px;\n    }\n    \n    .my-slider {\n      margin-right: 50px;\n      flex: 1;\n      font-weight: bolder;\n    }\n    \n    .my-v-text {\n      flex: 0.5;\n    }\n    \n    div .v-btn-toggle {\n      background-color: #ffffff;\n    }\n    \n    .my-v-text > .v-input__control {\n      background-color: #ffffff;\n      border-radius: 5px;\n    }\n    \n    .horizontal-alignment {\n      display: flex;\n      align-items: center;\n    }\n    \n    .toggle {\n      width: 100%;\n      border-color: #0a6eca;\n      color: #0a6eca;\n    }\n    \n    .presetToggle {\n      margin-bottom: 1rem;\n    }\n    \n    .toggle .v-btn--active {\n      background-color: #0a6eca !important;\n      color: white !important;\n    }\n    \n    .custom-slider .v-slider__label {\n      font-size: 0.9vw;\n    }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Focus</h2>\n    <div class=\"horizontal-alignment\">\n      <v-slider color=\"#0a6eca\" label=\"Distance\" step=\"0.10\" max=\"45\" min=\"0\" v-model=\"distance\" class=\"my-slider custom-slider\"></v-slider>\n      <v-text-field variant=\"outlined\" v-model=\"distance\" density=\"compact\" suffix=\"mm\" append-inner-icon=\"mdi-information\" @click:append-inner=\"openDialog\" class=\"my-v-text\"></v-text-field>\n      <v-dialog v-model=\"dialog\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"dialog = false\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <v-btn-toggle v-model=\"selectedDistancePreset\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle presetToggle\">\n      <v-btn style=\"padding: 10px;\" v-for=\"(preset, index) in focus_preset\" :key=\"index\">{{ preset }}</v-btn>\n    </v-btn-toggle>\n\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-arrow-left-thin-circle-outline</v-icon>Closer</v-btn>\n      <v-btn style=\"padding: 10px;\"><v-icon>mdi-square</v-icon>Stop</v-btn>\n      <v-btn style=\"padding: 10px;\">Further<v-icon>mdi-arrow-right-thin-circle-outline</v-icon></v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\n    export default {\n      data() {\n        return {\n          distance: 0,\n          dialog: false,\n          toggle: 1,\n          selectedDistancePreset: null,\n          focus_preset: [],\n        };\n      },\n      methods: {\n        openDialog() {\n          this.dialog = true;\n        },\n        checkDistancePreset() {\n          const index = this.focus_preset.indexOf(this.distance);\n          this.selectedDistancePreset = index !== -1 ? index : null;\n        },\n      },\n      watch: {\n        toggle(newVal) {\n            let action = 'move';\n            let payload = {};\n\n            switch (this.toggle) {\n                case 0: \n                    payload = {\n                        \"action\": action,\n                        \"direction\": 'DOWN',\n                        \"distance\": this.distance,\n                    };\n                    break;\n                case 1:\n                    payload = {\n                        \"action\": 'stop',\n                    };\n                    break;\n                case 2:\n                    payload = {\n                        \"action\": action,\n                        \"direction\": 'UP',\n                        \"distance\": this.distance,\n                    };\n                    break;\n            }\n            this.send({\n                payload: payload,\n                topic: 'actuator/focus'\n            });\n        },\n        distance(newVal) {\n          this.checkDistancePreset();\n        },\n        selectedDistancePreset(newVal) {\n          if (newVal !== null) {\n            this.distance = this.focus_preset[newVal];\n          }\n        },\n        '$socket': {\n          handler(newVal, oldVal) {\n            this.$socket.on('msg-input:' + this.id, (msg) => {\n              if (msg.focus_preset) {\n                this.focus_preset = msg.focus_preset;\n              }\n              if (msg.payload.status && msg.payload.status == \"Done\") {\n                this.toggle = 1;\n              }\n            });\n          },\n          deep: true,\n          immediate: true\n        }\n      }\n    };\n</script>\n\n<style scoped>\n    .container {\n      padding: 10px 10px;\n      border: solid black 1px;\n      border-radius: 5px;\n    }\n    \n    .my-slider {\n      margin-right: 50px;\n      flex: 1;\n      font-weight: bolder;\n    }\n    \n    .my-v-text {\n      flex: 0.5;\n    }\n    \n    div .v-btn-toggle {\n      background-color: #ffffff;\n    }\n    \n    .my-v-text > .v-input__control {\n      background-color: #ffffff;\n      border-radius: 5px;\n    }\n    \n    .horizontal-alignment {\n      display: flex;\n      align-items: center;\n    }\n    \n    .toggle {\n      width: 100%;\n      border-color: #0a6eca;\n      color: #0a6eca;\n    }\n    \n    .presetToggle {\n      margin-bottom: 1rem;\n    }\n    \n    .toggle .v-btn--active {\n      background-color: #0a6eca !important;\n      color: white !important;\n    }\n    \n    .custom-slider .v-slider__label {\n      font-size: 0.9vw;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -4726,7 +4678,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>LED</h2>\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\">\n        <v-icon left>mdi-led-off</v-icon>OFF\n      </v-btn>\n      <v-btn style=\"padding: 10px;\">\n        <v-icon right>mdi-led-on</v-icon>ON\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      toggle: 0\n    };\n  },\n  watch: {\n    toggle(newVal) {\n      if (newVal === 0) {\n        this.send({\n          payload: {\n            action: \"off\",\n            led: 1\n          },\n          topic: 'light'\n        });\n      } else if (newVal === 1) {\n        this.send({\n          payload: {\n            action: \"on\",\n            led: 1\n          },\n          topic: 'light'\n        });\n      }\n    }\n  }\n};\n</script>\n\n<style scoped>\n.container {\n  padding: 10px 10px;\n  border: solid black 1px;\n  border-radius: 5px;\n}\n\n.my-slider {\n  margin-right: 50px; \n  flex: 1; \n}\n\n.my-v-text {\n  flex: 0.5; \n}\n\ndiv .v-btn-toggle {\n  background-color: #ffffff;\n}\n\n.my-v-text > .v-input__control {\n  background-color: #ffffff;\n  border-radius: 5px;\n}\n\n.horizontal-alignment {\n  display: flex;\n  align-items: center;\n}\n\n.toggle {\n  width: 100%;\n  border-color: #0a6eca;\n  color: #0a6eca;\n}\n\n.toggle .v-btn--active {\n  background-color: #0a6eca !important;\n  color: white !important;\n}\n\n.custom-slider .v-slider__label {\n  font-size: 0.9vw;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>LED</h2>\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\">\n        <v-icon left>mdi-led-off</v-icon>OFF\n      </v-btn>\n      <v-btn style=\"padding: 10px;\">\n        <v-icon right>mdi-led-on</v-icon>ON\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      toggle: null\n    };\n  },\n  watch: {\n    toggle(newVal) {\n      if (newVal === 0) {\n        this.send({\n          payload: {\n            action: \"off\",\n            led: 1\n          },\n          topic: 'light'\n        });\n      } else if (newVal === 1) {\n        this.send({\n          payload: {\n            action: \"on\",\n            led: 1\n          },\n          topic: 'light'\n        });\n      }\n    }\n  }\n};\n</script>\n\n<style scoped>\n.container {\n  padding: 10px 10px;\n  border: solid black 1px;\n  border-radius: 5px;\n}\n\n.my-slider {\n  margin-right: 50px; \n  flex: 1; \n}\n\n.my-v-text {\n  flex: 0.5; \n}\n\ndiv .v-btn-toggle {\n  background-color: #ffffff;\n}\n\n.my-v-text > .v-input__control {\n  background-color: #ffffff;\n  border-radius: 5px;\n}\n\n.horizontal-alignment {\n  display: flex;\n  align-items: center;\n}\n\n.toggle {\n  width: 100%;\n  border-color: #0a6eca;\n  color: #0a6eca;\n}\n\n.toggle .v-btn--active {\n  background-color: #0a6eca !important;\n  color: white !important;\n}\n\n.custom-slider .v-slider__label {\n  font-size: 0.9vw;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -5515,16 +5467,18 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Starting point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field variant=\"outlined\" density=\"compact\" type=\"date\" class=\"my-v-text\"></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field variant=\"outlined\" density=\"compact\" type=\"time\" class=\"my-v-text\"></v-text-field>\n    </div>\n    <div v-if=\"msg.payload == 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field label=\"Longitude\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text spacing\"></v-text-field>\n      <v-text-field label=\"Latitude\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text\"></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field label=\"XX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field label=\"XX.XXX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format-2\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select label=\"W-E\" :items=\"['W', 'E']\" variant=\"outlined\" density=\"compact\" class=\"v-select-compas\"></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field label=\"XX.XXX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format-2\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select label=\"N-S\" :items=\"['N', 'S']\" variant=\"outlined\" density=\"compact\" class=\"v-select-compas\"></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      selectedDate: null,\n      selectedTime: null,\n    };\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .spacing {\n    margin-right: 15px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .container {\n    padding: 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .grid-container {\n    display: grid !important;\n    height: 5vh !important;\n  }\n\n  .my-label-gps {\n    font-weight: bold !important;\n    flex: 2 !important;\n    margin-bottom: 20px !important;\n    font-size: 1vw !important;\n  }\n\n  .label-DD {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-date {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-time {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    padding-left: 25px !important;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    justify-content: space-between !important;\n  }\n\n  .label-bloc-3 {\n    flex: 0.1;\n    display: flex;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .p-container {\n    display: inline-block !important;\n    height: 100px !important;\n  }\n\n  p#dms-format {\n    horizontal-align: top !important;\n    display: inline-block !important;\n    font-weight: bolder !important;\n    font-size: 20px !important\n  }\n\n  .v-select-compas {\n    min-width: 95px !important;\n  }\n\n  .v-text-format {\n  }\n\n  .v-text-format-2 {\n    min-width: 90px !important;\n  }\n\n  .dms {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    max-width: 100% !important;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Starting point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"msg.payload === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model.number=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model.number=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      selectedDate: null,\n      selectedTime: null,\n      longitude: null,\n      latitude: null,\n      dmsLongitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.longitude !== undefined) {\n            this.longitude = payload.longitude;\n          }\n          if (payload.latitude !== undefined) {\n            this.latitude = payload.latitude;\n          }\n          if (payload.dmsLongitude !== undefined) {\n            this.dmsLongitude = payload.dmsLongitude;\n          }\n          if (payload.dmsLatitude !== undefined) {\n            this.dmsLatitude = payload.dmsLatitude;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.msg.payload === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload: {\n            payload\n      }});\n    },\n  },\n};\n</script>",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 450,
         "y": 520,
         "wires": [
-            []
+            [
+                "64e2947efd9244a4"
+            ]
         ]
     },
     {
@@ -6044,6 +5998,24 @@
         ],
         "x": 375,
         "y": 120,
+        "wires": []
+    },
+    {
+        "id": "64e2947efd9244a4",
+        "type": "debug",
+        "z": "e988301e60e4b458",
+        "g": "45c6a7006373dadb",
+        "name": "debug 46",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 520,
         "wires": []
     },
     {
