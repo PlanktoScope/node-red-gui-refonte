@@ -749,7 +749,7 @@
             "9ed31adfa207532c"
         ],
         "x": 514,
-        "y": 459,
+        "y": 479,
         "w": 1042,
         "h": 142
     },
@@ -1172,31 +1172,6 @@
         "h": 442
     },
     {
-        "id": "0ba7fbaa34399b50",
-        "type": "group",
-        "z": "a707f17e5367291d",
-        "name": "second-line-home",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "6d32866022cd0317",
-            "77c2eece35acdabc",
-            "9c55db6c6db0bda3",
-            "776a66175a11c854",
-            "c12b20cf2c1520ae",
-            "cb909be4e2dc582b",
-            "35ea264db9f15f9b",
-            "0e0b3ccea673a1ba"
-        ],
-        "x": 114,
-        "y": 519,
-        "w": 1252,
-        "h": 202
-    },
-    {
         "id": "0ae7386dfdd66509",
         "type": "group",
         "z": "f260ed9417849607",
@@ -1311,6 +1286,36 @@
         "y": 1399,
         "w": 682,
         "h": 202
+    },
+    {
+        "id": "0ba7fbaa34399b50",
+        "type": "group",
+        "z": "a707f17e5367291d",
+        "name": "second-line-home",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "6d32866022cd0317",
+            "9c55db6c6db0bda3",
+            "776a66175a11c854",
+            "c12b20cf2c1520ae",
+            "cb909be4e2dc582b",
+            "35ea264db9f15f9b",
+            "0e0b3ccea673a1ba",
+            "98944d374580fe02",
+            "913867d97ba2a2ca",
+            "05a7e133906e9ca9",
+            "d4c9cf552809b2e8",
+            "1163a00d165fb437",
+            "77c2eece35acdabc"
+        ],
+        "x": 34,
+        "y": 439,
+        "w": 1032,
+        "h": 242
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -3235,7 +3240,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 570,
+        "x": 610,
         "y": 960,
         "wires": [
             [],
@@ -3268,7 +3273,7 @@
         "type": "function",
         "z": "2d41a8ed5aea3449",
         "g": "6720ea496a9e645e",
-        "name": "function 11",
+        "name": "Get model variable",
         "func": "const parsedData = JSON.parse(msg.payload);\nconst cellType = parsedData.acq_instrument;\n\nmsg.payload = {\n    acq_instrument: cellType\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -3276,7 +3281,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
+        "x": 370,
         "y": 960,
         "wires": [
             [
@@ -3596,14 +3601,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Model</label>\n        <v-select\n          label=\"Select your model\"\n          v-model=\"hardware.model\"\n          :items=msg.model_list\n          variant=\"outlined\"\n          density=\"compact\"\n        ></v-select>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator: {\n        name: '',\n        email: '',\n      },\n      hardware: {\n        model: '',\n      }\n    };\n  },\n  methods: {\n    validateForm() {\n      const { name, email } = this.operator;\n      const { model } = this.hardware;\n\n      if (!name || !email || !model) {\n        // alert\n        return;\n      }\n\n      const formData = {\n        operator: this.operator,\n        hardware: this.hardware,\n      };\n\n      this.send({\n        payload: {\n          operator: this.operator,\n          hardware: this.hardware,\n          firstVisit: false\n        }\n      })\n    }\n  },\n//   watch: {\n    //   model_list: {\n    //     handler(newVal) {\n    //         // do something ?\n    //     },\n    //     deep: true\n    //   },\n    //   '$socket': {\n    //     handler(newVal, oldVal) {\n    //       this.$socket.on('msg-input:' + this.id, (msg) => {\n    //         if (msg.model_list) {\n    //           this.model_list = msg.model_list;\n    //         }\n    //       });\n    //     },\n    //     deep: true,\n    //     immediate: true\n    //   }\n    // }\n}\n</script>\n\n<style>\n\n  .first-visit-custom-button {\n    border-radius: 8px;\n    font-size: 1vw;\n    padding-top: 12px;\n    padding-bottom: 12px;\n  }\n\n  .form-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n  }\n\n  .first-visit-form-block-one, .first-visit-form-block-two {\n    width: 80%;\n    max-width: 600px;\n    padding: 1rem;\n    border: 1px solid black;\n    border-radius: 5px;\n    margin-bottom: 1rem;\n  }\n\n  p#first-visit-block-one-title, p#first-visit-block-two-title {\n    font-size: 1.5vw;\n    margin-bottom: 1rem;\n  }\n\n  .first-visit-input-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0rem 0rem 1rem 1.4rem;\n  }\n\n  .my-first-visit-label {\n    font-size: 1.2vw;\n    min-width: 10rem;\n  }\n\n  .button-container {\n    display: flex;\n    justify-content: flex-end;\n    width: 80%;\n    max-width: 600px;\n  }\n\n  .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Model</label>\n        <v-select\n          label=\"Select your model\"\n          v-model=\"hardware.model\"\n          :items=msg.model_list\n          variant=\"outlined\"\n          density=\"compact\"\n        ></v-select>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator: {\n        name: '',\n        email: '',\n      },\n      hardware: {\n        model: '',\n      }\n    };\n  },\n  methods: {\n    validateForm() {\n      const { name, email } = this.operator;\n      const { model } = this.hardware;\n\n      if (!name || !email || !model) {\n        // alert\n        return;\n      }\n\n      const formData = {\n        operator: this.operator,\n        hardware: this.hardware,\n      };\n\n      this.send({\n        payload: {\n          operator: this.operator,\n          hardware: this.hardware,\n          firstVisit: false\n        }\n      })\n    }\n  },\n  watch: {\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.model_selected) {\n              this.hardware.model = msg.payload.model_selected;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n}\n</script>\n\n<style>\n\n  .first-visit-custom-button {\n    border-radius: 8px;\n    font-size: 1vw;\n    padding-top: 12px;\n    padding-bottom: 12px;\n  }\n\n  .form-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n  }\n\n  .first-visit-form-block-one, .first-visit-form-block-two {\n    width: 80%;\n    max-width: 600px;\n    padding: 1rem;\n    border: 1px solid black;\n    border-radius: 5px;\n    margin-bottom: 1rem;\n  }\n\n  p#first-visit-block-one-title, p#first-visit-block-two-title {\n    font-size: 1.5vw;\n    margin-bottom: 1rem;\n  }\n\n  .first-visit-input-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0rem 0rem 1rem 1.4rem;\n  }\n\n  .my-first-visit-label {\n    font-size: 1.2vw;\n    min-width: 10rem;\n  }\n\n  .button-container {\n    display: flex;\n    justify-content: flex-end;\n    width: 80%;\n    max-width: 600px;\n  }\n\n  .v-input__details {\n    display: none;\n  }\n\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 620,
-        "y": 520,
+        "y": 540,
         "wires": [
             [
                 "0565dc25419690e3"
@@ -3636,7 +3641,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1180,
-        "y": 500,
+        "y": 520,
         "wires": [
             [
                 "8b05263aee3303bf"
@@ -3661,7 +3666,7 @@
         "repair": false,
         "outputs": 1,
         "x": 790,
-        "y": 520,
+        "y": 540,
         "wires": [
             [
                 "37fdca294eb2d1bb",
@@ -3690,7 +3695,7 @@
         "to": "",
         "reg": false,
         "x": 970,
-        "y": 500,
+        "y": 520,
         "wires": [
             [
                 "90d9c21321164d49"
@@ -3708,7 +3713,7 @@
             "f2332fa1b7e6397e"
         ],
         "x": 1515,
-        "y": 500,
+        "y": 520,
         "wires": []
     },
     {
@@ -3732,7 +3737,7 @@
         "to": "",
         "reg": false,
         "x": 1390,
-        "y": 500,
+        "y": 520,
         "wires": [
             [
                 "dcc0c648c7c57223"
@@ -3781,10 +3786,11 @@
             "c24d1751dd739fe4"
         ],
         "x": 165,
-        "y": 520,
+        "y": 540,
         "wires": [
             [
-                "eac22c776f85072b"
+                "eac22c776f85072b",
+                "840870e225e30144"
             ]
         ]
     },
@@ -3814,7 +3820,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1150,
-        "y": 560,
+        "y": 580,
         "wires": [
             [],
             []
@@ -3834,11 +3840,44 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 560,
+        "y": 580,
         "wires": [
             [
                 "2cba5a92e292ae0f"
             ]
+        ]
+    },
+    {
+        "id": "840870e225e30144",
+        "type": "persistent value",
+        "z": "fb15c917381dd273",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
+        "value": "model_selected",
+        "command": "read",
+        "msgProperty": "payload.model_selected",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 330,
+        "y": 560,
+        "wires": [
+            [
+                "43f2c97055fc26be"
+            ],
+            []
         ]
     },
     {
@@ -3968,14 +4007,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.serialNumber }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.version }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-on:change=\"updateProgressColor\"\n                        v-model=msg.payload.storage\n                        height=\"20\"\n                        max=\"200\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{msg.payload.storage}} Gb / 200 Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.acquiredImage }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.segmentedObjects }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            storageValue: 0,\n        };\n    },\n    watch: {\n        '$socket': {\n        handler(newVal, oldVal) {\n            this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload && msg.payload.storage) {\n                this.storageValue = msg.payload.storage;\n                this.updateProgressColor(msg.payload.storage);\n            }\n            });\n        },\n        deep: true,\n        immediate: true\n        }\n    },\n    mounted() {\n        this.updateProgressColor(this.storageValue);\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$el.querySelector('.v-progress-linear__determinate');\n            let color = 'green';\n\n            if (this.msg.payload.storage <= 50) {\n                color = 'green';\n            } else if (this.msg.payload.storage <= 100) {\n                color = 'yellow';\n            } else if (this.msg.payload.storage <= 150) {\n                color = 'orange';\n            } else if (this.msg.payload.storage > 150) {\n                color = 'red';\n            }\n\n            progressBar.style.backgroundColor = color;\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n\n    .bottom-section-slider .v-progress-linear__determinate bg-progressColor {\n        background-color: red;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ serialNumber }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ softwareVersion }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-on:change=\"updateProgressColor\"\n                        v-model=msg.payload.storage\n                        height=\"20\"\n                        max=\"200\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{storage}} Gb / 200 Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfImage }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfObject }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            model: null,\n            serialNumber: null,\n            machineName: null,\n            softwareVersion: null,\n            storage: 0,\n            numberOfImage: null,\n            numberOfObject: null,\n        };\n    },\n    watch: {\n        msg: {\n            handler(newVal) {\n                if (newVal.payload) {\n                    const { payload } = newVal;\n                    if (payload.model_selected !== undefined) {\n                        this.model = payload.model_selected;\n                    }\n                    if (payload.serialNumber !== undefined) {\n                        this.serialNumber = payload.serialNumber;\n                    }\n                    if (payload.machineName !== undefined) {\n                        this.machineName = payload.machineName;\n                    }\n                    if (payload.version !== undefined) {\n                        this.softwareVersion = payload.version;\n                    }\n                    if (payload.storage !== undefined) {\n                        this.storage = payload.storage;\n                        this.updateProgressColor(payload.storage);\n                    }\n                    if (payload.acquiredImage !== undefined) {\n                        this.numberOfImage = payload.acquiredImage;\n                    }\n                    if (payload.segmentedObjects !== undefined) {\n                        this.numberOfObject = payload.segmentedObjects;\n                    }\n                }\n            },\n            deep: true,\n            immediate: true\n        }\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$el.querySelector('.v-progress-linear__determinate');\n            let color = 'green';\n\n            if (value <= 50) {\n                color = 'green';\n            } else if (value <= 100) {\n                color = 'yellow';\n            } else if (value <= 150) {\n                color = 'orange';\n            } else if (value > 150) {\n                color = 'red';\n            }\n\n            if (progressBar) {\n                progressBar.style.backgroundColor = color;\n            }\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n\n    .bottom-section-slider .v-progress-linear__determinate bg-progressColor {\n        background-color: red;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 790,
-        "y": 640,
+        "y": 560,
         "wires": [
             [
                 "9c55db6c6db0bda3"
@@ -4021,6 +4060,7 @@
         "id": "77c2eece35acdabc",
         "type": "inject",
         "z": "a707f17e5367291d",
+        "d": true,
         "g": "0ba7fbaa34399b50",
         "name": "",
         "props": [
@@ -4035,8 +4075,8 @@
         "topic": "",
         "payload": "{\"model\":\"PlanktoScope v2.6\",\"serialNumber\":\"U178\",\"version\":\"PlanktoScope OS v2024.1.0\",\"acquiredImage\":\"12 580\",\"segmentedObjects\":\"329 000\",\"storage\":45}",
         "payloadType": "json",
-        "x": 1290,
-        "y": 580,
+        "x": 950,
+        "y": 480,
         "wires": [
             []
         ]
@@ -4055,7 +4095,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 960,
-        "y": 640,
+        "y": 560,
         "wires": []
     },
     {
@@ -4192,8 +4232,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 490,
-        "y": 640,
+        "x": 510,
+        "y": 600,
         "wires": [
             [
                 "0e0b3ccea673a1ba"
@@ -4295,8 +4335,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 470,
-        "y": 560,
+        "x": 490,
+        "y": 520,
         "wires": [
             [
                 "c12b20cf2c1520ae"
@@ -4316,8 +4356,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 600,
+        "x": 520,
+        "y": 560,
         "wires": [
             [
                 "6d32866022cd0317"
@@ -4329,19 +4369,18 @@
         "type": "inject",
         "z": "a707f17e5367291d",
         "g": "0ba7fbaa34399b50",
-        "name": "Page start",
+        "name": "Inject",
         "props": [],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 230,
-        "y": 640,
+        "x": 130,
+        "y": 480,
         "wires": [
             [
-                "776a66175a11c854",
-                "35ea264db9f15f9b"
+                "913867d97ba2a2ca"
             ]
         ]
     },
@@ -4396,11 +4435,112 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
-        "y": 680,
+        "x": 540,
+        "y": 640,
         "wires": [
             [
                 "6d32866022cd0317"
+            ]
+        ]
+    },
+    {
+        "id": "98944d374580fe02",
+        "type": "persistent value",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
+        "value": "model_selected",
+        "command": "read",
+        "msgProperty": "payload.model_selected",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 510,
+        "y": 480,
+        "wires": [
+            [
+                "6d32866022cd0317"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "913867d97ba2a2ca",
+        "type": "link out",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "link out 90",
+        "mode": "link",
+        "links": [
+            "05a7e133906e9ca9",
+            "d4c9cf552809b2e8",
+            "1163a00d165fb437"
+        ],
+        "x": 215,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "05a7e133906e9ca9",
+        "type": "link in",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "link in 88",
+        "links": [
+            "913867d97ba2a2ca"
+        ],
+        "x": 295,
+        "y": 480,
+        "wires": [
+            [
+                "98944d374580fe02"
+            ]
+        ]
+    },
+    {
+        "id": "d4c9cf552809b2e8",
+        "type": "link in",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "link in 89",
+        "links": [
+            "913867d97ba2a2ca"
+        ],
+        "x": 295,
+        "y": 520,
+        "wires": [
+            [
+                "776a66175a11c854"
+            ]
+        ]
+    },
+    {
+        "id": "1163a00d165fb437",
+        "type": "link in",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "link in 90",
+        "links": [
+            "913867d97ba2a2ca"
+        ],
+        "x": 295,
+        "y": 600,
+        "wires": [
+            [
+                "35ea264db9f15f9b"
             ]
         ]
     },
@@ -5077,7 +5217,7 @@
         "type": "debug",
         "z": "db1e7a22029cc2a4",
         "name": "debug 44",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9582,7 +9722,7 @@
         "repeat": "3",
         "crontab": "",
         "once": true,
-        "onceDelay": "1",
+        "onceDelay": "0.1",
         "topic": "",
         "x": 140,
         "y": 100,
@@ -10298,13 +10438,12 @@
         "id": "bf084b0ff1670e68",
         "type": "inject",
         "z": "b70df4b6cc88d09a",
-        "d": true,
         "name": "",
         "props": [],
-        "repeat": "",
+        "repeat": "2",
         "crontab": "",
         "once": true,
-        "onceDelay": "1",
+        "onceDelay": "0.1",
         "topic": "",
         "x": 140,
         "y": 140,
