@@ -540,7 +540,7 @@
         "nodes": [
             "c356e55229da7519"
         ],
-        "x": 254,
+        "x": 674,
         "y": 239,
         "w": 192,
         "h": 82
@@ -561,32 +561,10 @@
             "7150e1ace23a0ffe",
             "a194350af72b5af9"
         ],
-        "x": 94,
+        "x": 514,
         "y": 139,
         "w": 702,
         "h": 82
-    },
-    {
-        "id": "0ba7fbaa34399b50",
-        "type": "group",
-        "z": "a707f17e5367291d",
-        "name": "second-line-home",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "6d32866022cd0317",
-            "77c2eece35acdabc",
-            "9c55db6c6db0bda3",
-            "b0cf7eb48763f77c",
-            "e63f5e9582bff018"
-        ],
-        "x": 84,
-        "y": 439,
-        "w": 562,
-        "h": 162
     },
     {
         "id": "d6362eced379ae80",
@@ -603,7 +581,7 @@
             "77b032808eca46e4",
             "0e78c20a20947374"
         ],
-        "x": 254,
+        "x": 674,
         "y": 339,
         "w": 522,
         "h": 82
@@ -1162,6 +1140,38 @@
         "h": 262
     },
     {
+        "id": "5387cbd03cda0166",
+        "type": "group",
+        "z": "db1e7a22029cc2a4",
+        "name": "Settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7c2460ce034f4740",
+            "4d881b94510f4523",
+            "e76753ed4e6ec711",
+            "7f41b4c29c7b9203",
+            "b439202bb729a0e3",
+            "f25e0f5152d059c9",
+            "6739b10df9f1d57b",
+            "f1a9c4c1beb3f6db",
+            "30fca39cc406ed23",
+            "b5e0a7a9cb47a50b",
+            "e59fec7a28f6d723",
+            "ff6a9f74b20d4443",
+            "13dc7e99c3b3cafc",
+            "bffac6466a2ad434",
+            "7a6313a038e7fb05"
+        ],
+        "x": 64,
+        "y": 379,
+        "w": 842,
+        "h": 442
+    },
+    {
         "id": "0ae7386dfdd66509",
         "type": "group",
         "z": "f260ed9417849607",
@@ -1278,37 +1288,27 @@
         "h": 202
     },
     {
-        "id": "5387cbd03cda0166",
+        "id": "0ba7fbaa34399b50",
         "type": "group",
-        "z": "db1e7a22029cc2a4",
-        "name": "Settings",
+        "z": "a707f17e5367291d",
+        "name": "second-line-home",
         "style": {
             "stroke": "#000000",
             "label": true,
             "color": "#000000"
         },
         "nodes": [
-            "7c2460ce034f4740",
-            "4d881b94510f4523",
-            "e76753ed4e6ec711",
-            "7f41b4c29c7b9203",
-            "b439202bb729a0e3",
-            "f25e0f5152d059c9",
-            "6739b10df9f1d57b",
-            "f1a9c4c1beb3f6db",
-            "30fca39cc406ed23",
-            "b5e0a7a9cb47a50b",
-            "e59fec7a28f6d723",
-            "ff6a9f74b20d4443",
-            "13dc7e99c3b3cafc",
-            "bffac6466a2ad434",
-            "7a6313a038e7fb05",
-            "47034d988f734643"
+            "6d32866022cd0317",
+            "77c2eece35acdabc",
+            "9c55db6c6db0bda3",
+            "776a66175a11c854",
+            "c12b20cf2c1520ae",
+            "cb909be4e2dc582b"
         ],
-        "x": 64,
-        "y": 379,
-        "w": 842,
-        "h": 442
+        "x": 114,
+        "y": 439,
+        "w": 952,
+        "h": 142
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -3893,7 +3893,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 350,
+        "x": 770,
         "y": 280,
         "wires": [
             []
@@ -3912,13 +3912,13 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Gallery', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n      this.send({payload: item.title});\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list-item>\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Gallery', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n      this.send({payload: item.title});\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-container {\n    position: absolute !important;\n    top: 0 !important;\n    left: 0 !important;\n    width: 100% !important;\n    border-bottom: 1px solid black !important;\n    display: flex !important;\n  }\n\n  .header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 370,
+        "x": 790,
         "y": 180,
         "wires": [
             [
@@ -3945,7 +3945,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 360,
+        "x": 780,
         "y": 380,
         "wires": [
             [
@@ -3972,7 +3972,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 370,
+        "x": 790,
         "y": 480,
         "wires": [
             [
@@ -3993,7 +3993,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
+        "x": 1000,
         "y": 380,
         "wires": [
             [
@@ -4011,7 +4011,7 @@
         "links": [
             "2cc4d8075a852a14"
         ],
-        "x": 735,
+        "x": 1155,
         "y": 380,
         "wires": []
     },
@@ -4031,14 +4031,12 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"model\":\"PlanktoScope v2.6\",\"serialNumber\":\"U178\",\"machineName\":\"complete-wind-49753\",\"version\":\"PlanktoScope OS v2024.1.0\",\"acquiredImage\":\"12 580\",\"segmentedObjects\":\"329 000\",\"storage\":45}",
+        "payload": "{\"model\":\"PlanktoScope v2.6\",\"serialNumber\":\"U178\",\"version\":\"PlanktoScope OS v2024.1.0\",\"acquiredImage\":\"12 580\",\"segmentedObjects\":\"329 000\",\"storage\":45}",
         "payloadType": "json",
-        "x": 190,
-        "y": 480,
+        "x": 750,
+        "y": 540,
         "wires": [
-            [
-                "6d32866022cd0317"
-            ]
+            []
         ]
     },
     {
@@ -4054,61 +4052,9 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
+        "x": 960,
         "y": 480,
         "wires": []
-    },
-    {
-        "id": "b0cf7eb48763f77c",
-        "type": "inject",
-        "z": "a707f17e5367291d",
-        "g": "0ba7fbaa34399b50",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"model\":\"PlanktoScope v2.6\",\"serialNumber\":\"U178\",\"machineName\":\"complete-wind-49753\",\"version\":\"PlanktoScope OS v2024.1.0\",\"acquiredImage\":\"12 580\",\"segmentedObjects\":\"329 000\",\"storage\":185}",
-        "payloadType": "json",
-        "x": 190,
-        "y": 520,
-        "wires": [
-            [
-                "6d32866022cd0317"
-            ]
-        ]
-    },
-    {
-        "id": "e63f5e9582bff018",
-        "type": "inject",
-        "z": "a707f17e5367291d",
-        "g": "0ba7fbaa34399b50",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"model\":\"PlanktoScope v2.6\",\"serialNumber\":\"U178\",\"machineName\":\"complete-wind-49753\",\"version\":\"PlanktoScope OS v2024.1.0\",\"acquiredImage\":\"12 580\",\"segmentedObjects\":\"329 000\",\"storage\":123}",
-        "payloadType": "json",
-        "x": 190,
-        "y": 560,
-        "wires": [
-            [
-                "6d32866022cd0317"
-            ]
-        ]
     },
     {
         "id": "a194350af72b5af9",
@@ -4128,7 +4074,7 @@
         "topic": "",
         "payload": "{\"profilName\":\"Loïc VASSAUX--ARTUR\"}",
         "payloadType": "json",
-        "x": 200,
+        "x": 620,
         "y": 180,
         "wires": [
             [
@@ -4149,7 +4095,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
+        "x": 1020,
         "y": 180,
         "wires": [
             [
@@ -4167,7 +4113,7 @@
         "links": [
             "2cc4d8075a852a14"
         ],
-        "x": 755,
+        "x": 1175,
         "y": 180,
         "wires": []
     },
@@ -4183,7 +4129,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 450,
+        "x": 870,
         "y": 720,
         "wires": [
             [
@@ -4195,7 +4141,7 @@
         "id": "85c39c697fb4bd8d",
         "type": "debug",
         "z": "a707f17e5367291d",
-        "name": "debug 43",
+        "name": "Software version",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -4204,7 +4150,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
+        "x": 1150,
         "y": 720,
         "wires": []
     },
@@ -4219,7 +4165,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 190,
+        "x": 610,
         "y": 720,
         "wires": [
             [
@@ -4246,7 +4192,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 350,
+        "x": 770,
         "y": 760,
         "wires": [
             [
@@ -4263,11 +4209,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
+        "x": 970,
         "y": 760,
         "wires": []
     },
@@ -4287,7 +4233,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 350,
+        "x": 770,
         "y": 800,
         "wires": [
             [
@@ -4304,11 +4250,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
+        "x": 970,
         "y": 800,
         "wires": []
     },
@@ -4328,7 +4274,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 350,
+        "x": 770,
         "y": 840,
         "wires": [
             [
@@ -4345,13 +4291,75 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 530,
+        "x": 950,
         "y": 840,
         "wires": []
+    },
+    {
+        "id": "776a66175a11c854",
+        "type": "file in",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "",
+        "filename": "/var/lib/planktoscope/machine-name",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 470,
+        "y": 480,
+        "wires": [
+            [
+                "c12b20cf2c1520ae"
+            ]
+        ]
+    },
+    {
+        "id": "c12b20cf2c1520ae",
+        "type": "function",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "Set payload.machineName",
+        "func": "const machineName = msg.payload;\n\nmsg.payload = {\n    machineName: machineName\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 520,
+        "wires": [
+            [
+                "6d32866022cd0317"
+            ]
+        ]
+    },
+    {
+        "id": "cb909be4e2dc582b",
+        "type": "inject",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "Page start",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 480,
+        "wires": [
+            [
+                "776a66175a11c854"
+            ]
+        ]
     },
     {
         "id": "7c15a6aca3b44d2e",
@@ -4468,7 +4476,7 @@
         "width": "8",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n      <img src=\"http://92.167.184.163/ps/hal/camera/streams/preview.mjpg\">      \n    </div>\n    <div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n    };\n  },\n  methods: {\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;    },\n  },\n};\n</script>\n\n<style scoped>\n.image-zoom-container {\n  cursor: none;\n  border: 1px solid black;\n  border-radius: 5px;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper {\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper img {\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: transform 0.2s ease-out;\n}\n\n.zoomed-image {\n  position: absolute;\n  top: 50%; /* Centre vertical */\n  left: 50%; /* Centre horizontal */\n  transform: translate(-50%, -50%); /* Centrer l'image zoomée */\n  width: 150px; /* Taille réduite de l'image zoomée */\n  height: 300px; /* Taille réduite de l'image zoomée */\n  pointer-events: none;\n  z-index: 1000;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n        <img src=\"http://92.167.184.163/ps/hal/camera/streams/preview.mjpg\">\n        <!--<img src=\"/ps/hal/camera/streams/preview.mjpg\">-->\n    </div>\n    <!--<div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>-->\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n    };\n  },\n  methods: {\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;    },\n  },\n};\n</script>\n\n<style scoped>\n.image-zoom-container {\n  /*cursor: none;*/\n  border: 1px solid black;\n  border-radius: 5px;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper {\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper img {\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: transform 0.2s ease-out;\n}\n\n.zoomed-image {\n  position: absolute;\n  top: 50%; /* Centre vertical */\n  left: 50%; /* Centre horizontal */\n  transform: translate(-50%, -50%); /* Centrer l'image zoomée */\n  width: 150px; /* Taille réduite de l'image zoomée */\n  height: 300px; /* Taille réduite de l'image zoomée */\n  pointer-events: none;\n  z-index: 1000;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -4578,9 +4586,12 @@
         "icon": "",
         "iconPosition": "left",
         "payload": "{\"page\":\"Calibration\"}",
-        "payloadType": "str",
+        "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
         "x": 520,
         "y": 780,
         "wires": [
@@ -5023,7 +5034,7 @@
         "type": "debug",
         "z": "db1e7a22029cc2a4",
         "name": "debug 44",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
