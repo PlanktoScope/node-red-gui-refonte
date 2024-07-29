@@ -178,9 +178,9 @@
             "ee0252f79ad5e696",
             "932204814a8df00f"
         ],
-        "x": 254,
+        "x": 264,
         "y": 99,
-        "w": 682,
+        "w": 672,
         "h": 162
     },
     {
@@ -500,9 +500,9 @@
             "a3daf0ba8f6c40b2",
             "45231e159665930a"
         ],
-        "x": 224,
+        "x": 234,
         "y": 139,
-        "w": 762,
+        "w": 752,
         "h": 162
     },
     {
@@ -522,9 +522,9 @@
             "4b6824e2ecaa9016",
             "343ad9e58c44f9d9"
         ],
-        "x": 184,
+        "x": 194,
         "y": 319,
-        "w": 552,
+        "w": 542,
         "h": 102
     },
     {
@@ -561,9 +561,9 @@
             "7150e1ace23a0ffe",
             "a194350af72b5af9"
         ],
-        "x": 514,
+        "x": 524,
         "y": 139,
-        "w": 702,
+        "w": 692,
         "h": 82
     },
     {
@@ -903,9 +903,9 @@
             "4651884da3cb8f8e",
             "74e49188881722bf"
         ],
-        "x": 414,
+        "x": 424,
         "y": 559,
-        "w": 472,
+        "w": 462,
         "h": 82
     },
     {
@@ -943,9 +943,9 @@
             "18082ce944ac9542",
             "0d01236006fd6ee9"
         ],
-        "x": 414,
+        "x": 424,
         "y": 919,
-        "w": 472,
+        "w": 462,
         "h": 82
     },
     {
@@ -1172,6 +1172,31 @@
         "h": 442
     },
     {
+        "id": "0ba7fbaa34399b50",
+        "type": "group",
+        "z": "a707f17e5367291d",
+        "name": "second-line-home",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "6d32866022cd0317",
+            "77c2eece35acdabc",
+            "9c55db6c6db0bda3",
+            "776a66175a11c854",
+            "c12b20cf2c1520ae",
+            "cb909be4e2dc582b",
+            "35ea264db9f15f9b",
+            "0e0b3ccea673a1ba"
+        ],
+        "x": 114,
+        "y": 519,
+        "w": 1252,
+        "h": 202
+    },
+    {
         "id": "0ae7386dfdd66509",
         "type": "group",
         "z": "f260ed9417849607",
@@ -1282,33 +1307,10 @@
             "0d159c22ef7345c9",
             "9317b92afaa7669e"
         ],
-        "x": 254,
+        "x": 264,
         "y": 1399,
-        "w": 692,
+        "w": 682,
         "h": 202
-    },
-    {
-        "id": "0ba7fbaa34399b50",
-        "type": "group",
-        "z": "a707f17e5367291d",
-        "name": "second-line-home",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "6d32866022cd0317",
-            "77c2eece35acdabc",
-            "9c55db6c6db0bda3",
-            "776a66175a11c854",
-            "c12b20cf2c1520ae",
-            "cb909be4e2dc582b"
-        ],
-        "x": 114,
-        "y": 439,
-        "w": 952,
-        "h": 142
     },
     {
         "id": "43f40797e7f6bb4b",
@@ -3939,7 +3941,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image\"></span>\n                <p id=\"first-p\">Gallery</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-bullseye\"></span>\n                <p id=\"first-p\">Calibration</p>\n                <p id=\"second-p\">Adjust your settings to ensure accurate measurements.</p>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item5\" @click=\"handleClick(5)\">\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-chart-line\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Monitoring</p>\n                    <p id=\"second-p\">Keep track of system performance.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item6\" @click=\"handleClick(6)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                this.send({payload: itemNumber});\n            }\n        }\n    };\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 1% 12%;\n        grid-template-columns: 2fr 2fr 2fr; \n        grid-template-rows: 2fr 1fr;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        position: absolute;\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 2vw 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 1.5vw 10px 25px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n        margin: 1.5vw 0 0 0;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);\n        transition: transform 0.3s, box-shadow 0.3s;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        transform: translateY(-5px);\n        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);\n    }\n\n    .first-line-container div#size {\n        height: 12vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 3;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 3;\n        grid-row: 1 / span 2;\n    }\n    \n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n    \n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 1 / 2;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item5 {\n        grid-column: 2 / 3; \n        grid-row: 2 / 3;\n    }\n\n    .item5 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item5 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item6 {\n        grid-column: 3 / 4; \n        grid-row: 2 / 3;\n    }\n    \n    .item6 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n    \n    .item6 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image\"></span>\n                <p id=\"first-p\">Gallery</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-bullseye\"></span>\n                <p id=\"first-p\">Calibration</p>\n                <p id=\"second-p\">Adjust your settings to ensure accurate measurements.</p>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item5\" @click=\"handleClick(5)\">\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-chart-line\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Monitoring</p>\n                    <p id=\"second-p\">Keep track of system performance.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item6\" @click=\"handleClick(6)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                const currentUrl = new URL(window.location.href);\n                const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n                if (itemNumber == 2) {\n                    const relativePath = '/ps/data/browse/files/';\n                    const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n                    open(fullUrl.href, '_blank');\n                } else if (itemNumber == 4) {\n                    open(\"https://docs-edge.planktoscope.community\", '_blank');\n                } else if (itemNumber == 6) {\n                    open(\"https://docs-edge.planktoscope.community\", '_blank');\n                } else {\n                    this.send({payload: itemNumber});\n                }\n            }\n        }\n    };\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 1% 12%;\n        grid-template-columns: 2fr 2fr 2fr; \n        grid-template-rows: 2fr 1fr;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        position: absolute;\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 2vw 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 1.5vw 10px 25px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n        margin: 1.5vw 0 0 0;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);\n        transition: transform 0.3s, box-shadow 0.3s;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        transform: translateY(-5px);\n        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);\n    }\n\n    .first-line-container div#size {\n        height: 12vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 3;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 3;\n        grid-row: 1 / span 2;\n    }\n    \n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n    \n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 1 / 2;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item5 {\n        grid-column: 2 / 3; \n        grid-row: 2 / 3;\n    }\n\n    .item5 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item5 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item6 {\n        grid-column: 3 / 4; \n        grid-row: 2 / 3;\n    }\n    \n    .item6 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n    \n    .item6 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -3966,14 +3968,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.serialNumber }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.version }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-on:change=\"updateProgressColor\"\n                        v-model=msg.payload.storage\n                        height=\"20\"\n                        max=\"200\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{msg.payload.storage}} Gb / 200 Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.acquiredImage }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.segmentedObjects }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            storageValue: 0,\n        };\n    },\n    watch: {\n        '$socket': {\n        handler(newVal, oldVal) {\n            this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload && msg.payload.storage) {\n                this.storageValue = msg.payload.storage;\n                this.updateProgressColor(msg.payload.storage);\n            }\n            });\n        },\n        deep: true,\n        immediate: true\n        }\n    },\n    mounted() {\n        this.updateProgressColor(this.storageValue);\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$el.querySelector('.v-progress-linear__determinate');\n            let color = 'green';\n\n            if (this.msg.payload.storage <= 50) {\n                color = 'green';\n            } else if (this.msg.payload.storage <= 100) {\n                color = 'yellow';\n            } else if (this.msg.payload.storage <= 150) {\n                color = 'orange';\n            } else {\n                color = 'red';\n            }\n\n            progressBar.style.backgroundColor = color;\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n\n    .bottom-section-slider .v-progress-linear__determinate bg-progressColor {\n        background-color: red;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.serialNumber }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.version }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-on:change=\"updateProgressColor\"\n                        v-model=msg.payload.storage\n                        height=\"20\"\n                        max=\"200\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{msg.payload.storage}} Gb / 200 Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.acquiredImage }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ msg.payload.segmentedObjects }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            storageValue: 0,\n        };\n    },\n    watch: {\n        '$socket': {\n        handler(newVal, oldVal) {\n            this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload && msg.payload.storage) {\n                this.storageValue = msg.payload.storage;\n                this.updateProgressColor(msg.payload.storage);\n            }\n            });\n        },\n        deep: true,\n        immediate: true\n        }\n    },\n    mounted() {\n        this.updateProgressColor(this.storageValue);\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$el.querySelector('.v-progress-linear__determinate');\n            let color = 'green';\n\n            if (this.msg.payload.storage <= 50) {\n                color = 'green';\n            } else if (this.msg.payload.storage <= 100) {\n                color = 'yellow';\n            } else if (this.msg.payload.storage <= 150) {\n                color = 'orange';\n            } else if (this.msg.payload.storage > 150) {\n                color = 'red';\n            }\n\n            progressBar.style.backgroundColor = color;\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n\n    .bottom-section-slider .v-progress-linear__determinate bg-progressColor {\n        background-color: red;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 790,
-        "y": 480,
+        "y": 640,
         "wires": [
             [
                 "9c55db6c6db0bda3"
@@ -3986,7 +3988,7 @@
         "z": "a707f17e5367291d",
         "g": "d6362eced379ae80",
         "name": "Prepare payload to navigate",
-        "func": "var itemNumber = msg.payload;\n\nif (itemNumber == 1) {\n    msg.payload = {\"page\":\"Preview-2\"}\n} else if (itemNumber == 2) {\n    msg.payload = { url: '/ps/data/browse/files/' }\n} else if (itemNumber == 3) {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (itemNumber == 4) {\n    msg.payload = {\"page\":\"Documentation\"}\n} else if (itemNumber == 5) {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (itemNumber == 6) {\n    msg.payload = { url: 'https://url.goes.here' }\n}\n\nreturn msg;",
+        "func": "var itemNumber = msg.payload;\n\nif (itemNumber == 1) {\n    msg.payload = {\"page\":\"Preview-2\"}\n} else if (itemNumber == 3) {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (itemNumber == 5) {\n    msg.payload = {\"page\":\"Monitoring\"}\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4033,8 +4035,8 @@
         "topic": "",
         "payload": "{\"model\":\"PlanktoScope v2.6\",\"serialNumber\":\"U178\",\"version\":\"PlanktoScope OS v2024.1.0\",\"acquiredImage\":\"12 580\",\"segmentedObjects\":\"329 000\",\"storage\":45}",
         "payloadType": "json",
-        "x": 750,
-        "y": 540,
+        "x": 1290,
+        "y": 580,
         "wires": [
             []
         ]
@@ -4053,7 +4055,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 960,
-        "y": 480,
+        "y": 640,
         "wires": []
     },
     {
@@ -4129,8 +4131,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 870,
-        "y": 720,
+        "x": 470,
+        "y": 840,
         "wires": [
             [
                 "85c39c697fb4bd8d"
@@ -4150,8 +4152,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1150,
-        "y": 720,
+        "x": 750,
+        "y": 840,
         "wires": []
     },
     {
@@ -4165,14 +4167,11 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 610,
-        "y": 720,
+        "x": 210,
+        "y": 840,
         "wires": [
             [
-                "603a844dea8314bb",
-                "35ea264db9f15f9b",
-                "82e51bd8165585cd",
-                "8ded6e7b8d7f625d"
+                "603a844dea8314bb"
             ]
         ]
     },
@@ -4180,7 +4179,8 @@
         "id": "35ea264db9f15f9b",
         "type": "http request",
         "z": "a707f17e5367291d",
-        "name": "",
+        "g": "0ba7fbaa34399b50",
+        "name": "Get storage",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
@@ -4192,30 +4192,13 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 770,
-        "y": 760,
+        "x": 490,
+        "y": 640,
         "wires": [
             [
-                "508e6151126ca449"
+                "0e0b3ccea673a1ba"
             ]
         ]
-    },
-    {
-        "id": "508e6151126ca449",
-        "type": "debug",
-        "z": "a707f17e5367291d",
-        "name": "debug storage percentage",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 970,
-        "y": 760,
-        "wires": []
     },
     {
         "id": "82e51bd8165585cd",
@@ -4233,8 +4216,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 770,
-        "y": 800,
+        "x": 1130,
+        "y": 840,
         "wires": [
             [
                 "f046343a19b4eb0c"
@@ -4254,8 +4237,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 800,
+        "x": 1330,
+        "y": 840,
         "wires": []
     },
     {
@@ -4274,8 +4257,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 770,
-        "y": 840,
+        "x": 1130,
+        "y": 880,
         "wires": [
             [
                 "ac76b0950e809e78"
@@ -4295,8 +4278,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 950,
-        "y": 840,
+        "x": 1310,
+        "y": 880,
         "wires": []
     },
     {
@@ -4313,7 +4296,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 470,
-        "y": 480,
+        "y": 560,
         "wires": [
             [
                 "c12b20cf2c1520ae"
@@ -4334,7 +4317,7 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 520,
+        "y": 600,
         "wires": [
             [
                 "6d32866022cd0317"
@@ -4354,10 +4337,70 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 230,
-        "y": 480,
+        "y": 640,
         "wires": [
             [
-                "776a66175a11c854"
+                "776a66175a11c854",
+                "35ea264db9f15f9b"
+            ]
+        ]
+    },
+    {
+        "id": "6b4233d0f8ecb0e5",
+        "type": "inject",
+        "z": "a707f17e5367291d",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 970,
+        "y": 840,
+        "wires": [
+            [
+                "82e51bd8165585cd"
+            ]
+        ]
+    },
+    {
+        "id": "498efdcc4b7e96dc",
+        "type": "inject",
+        "z": "a707f17e5367291d",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 970,
+        "y": 880,
+        "wires": [
+            [
+                "8ded6e7b8d7f625d"
+            ]
+        ]
+    },
+    {
+        "id": "0e0b3ccea673a1ba",
+        "type": "function",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "Set payload.storage",
+        "func": "const parsedData = JSON.parse(msg.payload);\n\n// Extraire la valeur souhaitée\nconst value = parsedData.data.result[0].value[1];\n\n// Arrondir la valeur à une décimale\nconst roundedValue = Math.round(value * 10) / 10;\n\n// Créer un nouveau payload avec la valeur arrondie\nmsg.payload = {\n    storage: roundedValue\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 680,
+        "wires": [
+            [
+                "6d32866022cd0317"
             ]
         ]
     },
