@@ -322,55 +322,6 @@
         "h": 122
     },
     {
-        "id": "45c6a7006373dadb",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Starting point",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "83a6ffa643836e87",
-            "cd0ffd27aadc1ff1",
-            "64e2947efd9244a4",
-            "525d190603249cae",
-            "72b7984ea35d8a21",
-            "458b64fddb9c05d6",
-            "96ab8a6338e4fcfc",
-            "0f42da474afce82c",
-            "3370481fa03529d1",
-            "e401e74e5001fd4e",
-            "f1cd6cda6811df0d",
-            "86625c5739968525",
-            "801c7b0baeabcd93"
-        ],
-        "x": 84,
-        "y": 479,
-        "w": 1182,
-        "h": 162
-    },
-    {
-        "id": "53646cc82fa5441c",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Ending point",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "5acf20b7ca52e6ae",
-            "964efd36d61519e9"
-        ],
-        "x": 554,
-        "y": 959,
-        "w": 252,
-        "h": 82
-    },
-    {
         "id": "3e8b16808b1bfff5",
         "type": "group",
         "z": "e988301e60e4b458",
@@ -1343,6 +1294,62 @@
         "y": 1399,
         "w": 682,
         "h": 202
+    },
+    {
+        "id": "45c6a7006373dadb",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Starting point",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "83a6ffa643836e87",
+            "cd0ffd27aadc1ff1",
+            "525d190603249cae",
+            "72b7984ea35d8a21",
+            "458b64fddb9c05d6",
+            "96ab8a6338e4fcfc",
+            "0f42da474afce82c",
+            "3370481fa03529d1",
+            "e401e74e5001fd4e",
+            "f1cd6cda6811df0d",
+            "86625c5739968525"
+        ],
+        "x": 84,
+        "y": 559,
+        "w": 1162,
+        "h": 162
+    },
+    {
+        "id": "95c11e857d45c6ae",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Ending point",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7749d4dc3f8e7fa5",
+            "2bb3a49785cacf3b",
+            "fc386a9e16260470",
+            "44f2e8c09ba525bd",
+            "e1496d26ab368e0a",
+            "0d4af74dc3740347",
+            "ac3ec79e3b41827f",
+            "fb2959a5122f4779",
+            "6a44d416b4b28ead",
+            "d8c320a906f03e95",
+            "30d76989325c8687"
+        ],
+        "x": 84,
+        "y": 739,
+        "w": 1162,
+        "h": 162
     },
     {
         "id": "cae0178a8a69f787",
@@ -5634,17 +5641,16 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Starting point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"coordFormat === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model.number=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model.number=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      coordFormat: \"\",\n      selectedDate: \"\",\n      selectedTime: \"\",\n      longitude: 0,\n      latitude: 0,\n      dmsLongitude: {\n        degrees: 0,\n        minutes: 0,\n        seconds: 0,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: 0,\n        minutes: 0,\n        seconds: 0,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.coordFormat !== undefined) {\n            this.coordFormat = payload.coordFormat;\n          }\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.gps) {\n            if (payload.coordFormat === 'Decimal degrees (DD)') {\n              this.longitude = payload.gps.longitude || 0;\n              this.latitude = payload.gps.latitude || 0;\n            } else {\n              this.dmsLongitude = payload.gps.longitude || {\n                degrees: 0,\n                minutes: 0,\n                seconds: 0,\n                direction: 'E'\n              };\n              this.dmsLatitude = payload.gps.latitude || {\n                degrees: 0,\n                minutes: 0,\n                seconds: 0,\n                direction: 'N'\n              };\n            }\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.coordFormat === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload });\n    },\n  },\n};\n</script>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Starting point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"coordFormat === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      coordFormat: \"\",\n      selectedDate: \"\",\n      selectedTime: \"\",\n      longitude: null,\n      latitude: null,\n      dmsLongitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.coordFormat !== undefined) {\n            this.coordFormat = payload.coordFormat;\n          }\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.gps) {\n            if (this.coordFormat === 'Decimal degrees (DD)') {\n              if (payload.gps.longitude !== undefined) {\n                this.longitude = payload.gps.longitude;\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.latitude = payload.gps.latitude;\n              }\n            } else {\n              if (payload.gps.longitude !== undefined) {\n                this.dmsLongitude = {\n                  ...this.dmsLongitude,\n                  ...payload.gps.longitude\n                };\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.dmsLatitude = {\n                  ...this.dmsLatitude,\n                  ...payload.gps.latitude\n                };\n              }\n            }\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.coordFormat === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload });\n    }\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .spacing {\n    margin-right: 15px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .container {\n    padding: 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .grid-container {\n    display: grid !important;\n    height: 5vh !important;\n  }\n\n  .my-label-gps {\n    font-weight: bold !important;\n    flex: 2 !important;\n    margin-bottom: 20px !important;\n    font-size: 1vw !important;\n  }\n\n  .label-DD {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-date {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-time {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    padding-left: 25px !important;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    justify-content: space-between !important;\n  }\n\n  .label-bloc-3 {\n    flex: 0.1;\n    display: flex;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .p-container {\n    display: inline-block !important;\n    height: 100px !important;\n  }\n\n  p#dms-format {\n    horizontal-align: top !important;\n    display: inline-block !important;\n    font-weight: bolder !important;\n    font-size: 20px !important\n  }\n\n  .v-select-compas {\n    min-width: 95px !important;\n  }\n\n  .v-text-format {\n  }\n\n  .v-text-format-2 {\n    min-width: 90px !important;\n  }\n\n  .dms {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    max-width: 100% !important;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 710,
-        "y": 560,
+        "y": 640,
         "wires": [
             [
-                "64e2947efd9244a4",
                 "72b7984ea35d8a21",
                 "525d190603249cae",
                 "458b64fddb9c05d6"
@@ -5660,10 +5666,11 @@
         "links": [
             "cd0ffd27aadc1ff1",
             "964efd36d61519e9",
-            "d0f0965ace2cdaaf"
+            "d0f0965ace2cdaaf",
+            "2bb3a49785cacf3b"
         ],
-        "x": 1055,
-        "y": 80,
+        "x": 595,
+        "y": 520,
         "wires": []
     },
     {
@@ -5677,54 +5684,10 @@
             "32e3989018637909"
         ],
         "x": 655,
-        "y": 520,
+        "y": 600,
         "wires": [
             [
-                "83a6ffa643836e87",
-                "801c7b0baeabcd93"
-            ]
-        ]
-    },
-    {
-        "id": "5acf20b7ca52e6ae",
-        "type": "ui-template",
-        "z": "e988301e60e4b458",
-        "g": "53646cc82fa5441c",
-        "group": "6207a599159ef6eb",
-        "page": "",
-        "ui": "",
-        "name": "Ending point",
-        "order": 1,
-        "width": "12",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Ending point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field variant=\"outlined\" density=\"compact\" type=\"date\" class=\"my-v-text\"></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field variant=\"outlined\" density=\"compact\" type=\"time\" class=\"my-v-text\"></v-text-field>\n    </div>\n    <div v-if=\"msg.payload == 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field label=\"Longitude\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text spacing\"></v-text-field>\n      <v-text-field label=\"Latitude\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text\"></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field label=\"XX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field label=\"XX.XXX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format-2\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select label=\"W-E\" :items=\"['W', 'E']\" variant=\"outlined\" density=\"compact\" class=\"v-select-compas\"></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field label=\"XX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field label=\"XX.XXX\" variant=\"outlined\" density=\"compact\" type=\"number\" class=\"my-v-text v-text-format-2\"></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select label=\"N-S\" :items=\"['N', 'S']\" variant=\"outlined\" density=\"compact\" class=\"v-select-compas\"></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      selectedDate: null,\n      selectedTime: null,\n    };\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .spacing {\n    margin-right: 15px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .container {\n    padding: 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .grid-container {\n    display: grid !important;\n    height: 5vh !important;\n  }\n\n  .my-label-gps {\n    font-weight: bold !important;\n    flex: 2 !important;\n    margin-bottom: 20px !important;\n    font-size: 1vw !important;\n  }\n\n  .label-DD {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-date {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-time {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    padding-left: 25px !important;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    justify-content: space-between !important;\n  }\n\n  .label-bloc-3 {\n    flex: 0.1;\n    display: flex;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .p-container {\n    display: inline-block !important;\n    height: 100px !important;\n  }\n\n  p#dms-format {\n    horizontal-align: top !important;\n    display: inline-block !important;\n    font-weight: bolder !important;\n    font-size: 20px !important\n  }\n\n  .v-select-compas {\n    min-width: 95px !important;\n  }\n\n  .v-text-format {\n  }\n\n  .v-text-format-2 {\n    min-width: 90px !important;\n  }\n\n  .dms {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    max-width: 100% !important;\n  }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 710,
-        "y": 1000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "964efd36d61519e9",
-        "type": "link in",
-        "z": "e988301e60e4b458",
-        "g": "53646cc82fa5441c",
-        "name": "link in 47",
-        "links": [
-            "764bf644172419d4",
-            "32e3989018637909"
-        ],
-        "x": 595,
-        "y": 1000,
-        "wires": [
-            [
-                "5acf20b7ca52e6ae"
+                "83a6ffa643836e87"
             ]
         ]
     },
@@ -5962,8 +5925,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 740,
-        "y": 80,
+        "x": 280,
+        "y": 520,
         "wires": [
             [
                 "e5239cb6eb875cd1"
@@ -6002,8 +5965,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 920,
-        "y": 40,
+        "x": 980,
+        "y": 60,
         "wires": [
             []
         ]
@@ -6076,11 +6039,10 @@
         "z": "e988301e60e4b458",
         "ui": "1eeac55ba6b9065f",
         "name": "",
-        "x": 530,
+        "x": 590,
         "y": 80,
         "wires": [
             [
-                "bf31c62fba21e7bb",
                 "08324bbd83565d26",
                 "df824b3eae9a8d40"
             ]
@@ -6098,8 +6060,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 40,
+        "x": 790,
+        "y": 60,
         "wires": [
             [
                 "a4b88adea83b2353"
@@ -6159,40 +6121,6 @@
         ]
     },
     {
-        "id": "df824b3eae9a8d40",
-        "type": "link out",
-        "z": "e988301e60e4b458",
-        "name": "link out 95",
-        "mode": "link",
-        "links": [
-            "ebc182ac620954af",
-            "e401e74e5001fd4e",
-            "f1cd6cda6811df0d",
-            "86625c5739968525"
-        ],
-        "x": 635,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "64e2947efd9244a4",
-        "type": "debug",
-        "z": "e988301e60e4b458",
-        "g": "45c6a7006373dadb",
-        "name": "debug 46",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "72b7984ea35d8a21",
         "type": "persistent value",
         "z": "e988301e60e4b458",
@@ -6217,8 +6145,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1070,
-        "y": 520,
+        "x": 1050,
+        "y": 600,
         "wires": [
             [],
             []
@@ -6249,8 +6177,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1070,
-        "y": 560,
+        "x": 1050,
+        "y": 640,
         "wires": [
             [],
             []
@@ -6281,8 +6209,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1070,
-        "y": 600,
+        "x": 1050,
+        "y": 680,
         "wires": [
             [],
             []
@@ -6314,7 +6242,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 520,
+        "y": 600,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -6348,7 +6276,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 560,
+        "y": 640,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -6382,7 +6310,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 600,
+        "y": 680,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -6398,10 +6326,11 @@
         "name": "link in 98",
         "links": [
             "32e3989018637909",
-            "df824b3eae9a8d40"
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 520,
+        "y": 600,
         "wires": [
             [
                 "96ab8a6338e4fcfc"
@@ -6416,10 +6345,11 @@
         "name": "link in 99",
         "links": [
             "32e3989018637909",
-            "df824b3eae9a8d40"
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 560,
+        "y": 640,
         "wires": [
             [
                 "0f42da474afce82c"
@@ -6434,32 +6364,16 @@
         "name": "link in 100",
         "links": [
             "32e3989018637909",
-            "df824b3eae9a8d40"
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 600,
+        "y": 680,
         "wires": [
             [
                 "3370481fa03529d1"
             ]
         ]
-    },
-    {
-        "id": "801c7b0baeabcd93",
-        "type": "debug",
-        "z": "e988301e60e4b458",
-        "g": "45c6a7006373dadb",
-        "name": "debug 47",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 520,
-        "wires": []
     },
     {
         "id": "e5239cb6eb875cd1",
@@ -6473,11 +6387,385 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 80,
+        "x": 490,
+        "y": 520,
         "wires": [
             [
                 "764bf644172419d4"
+            ]
+        ]
+    },
+    {
+        "id": "df824b3eae9a8d40",
+        "type": "link out",
+        "z": "e988301e60e4b458",
+        "name": "link out 95",
+        "mode": "link",
+        "links": [
+            "ebc182ac620954af"
+        ],
+        "x": 695,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "10db78f4fa94db24",
+        "type": "inject",
+        "z": "e988301e60e4b458",
+        "name": "",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "d82f912c99fe109a"
+            ]
+        ]
+    },
+    {
+        "id": "d82f912c99fe109a",
+        "type": "link out",
+        "z": "e988301e60e4b458",
+        "name": "link out 97",
+        "mode": "link",
+        "links": [
+            "e401e74e5001fd4e",
+            "f1cd6cda6811df0d",
+            "86625c5739968525",
+            "e4e5f2ac69be59ad",
+            "afb75295088447a9",
+            "a7c6dcbeac498a50",
+            "ee299c19ad77b417",
+            "6a44d416b4b28ead",
+            "d8c320a906f03e95",
+            "30d76989325c8687"
+        ],
+        "x": 495,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "e4e5f2ac69be59ad",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "name": "link in 101",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 520,
+        "wires": [
+            [
+                "bf31c62fba21e7bb"
+            ]
+        ]
+    },
+    {
+        "id": "7749d4dc3f8e7fa5",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "group": "6207a599159ef6eb",
+        "page": "",
+        "ui": "",
+        "name": "Ending point",
+        "order": 2,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Ending point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"coordFormat === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      coordFormat: \"\",\n      selectedDate: \"\",\n      selectedTime: \"\",\n      longitude: null,\n      latitude: null,\n      dmsLongitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.coordFormat !== undefined) {\n            this.coordFormat = payload.coordFormat;\n          }\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.gps) {\n            if (this.coordFormat === 'Decimal degrees (DD)') {\n              if (payload.gps.longitude !== undefined) {\n                this.longitude = payload.gps.longitude;\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.latitude = payload.gps.latitude;\n              }\n            } else {\n              if (payload.gps.longitude !== undefined) {\n                this.dmsLongitude = {\n                  ...this.dmsLongitude,\n                  ...payload.gps.longitude\n                };\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.dmsLatitude = {\n                  ...this.dmsLatitude,\n                  ...payload.gps.latitude\n                };\n              }\n            }\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.coordFormat === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload });\n    }\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .spacing {\n    margin-right: 15px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .container {\n    padding: 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .grid-container {\n    display: grid !important;\n    height: 5vh !important;\n  }\n\n  .my-label-gps {\n    font-weight: bold !important;\n    flex: 2 !important;\n    margin-bottom: 20px !important;\n    font-size: 1vw !important;\n  }\n\n  .label-DD {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-date {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-time {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    padding-left: 25px !important;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    justify-content: space-between !important;\n  }\n\n  .label-bloc-3 {\n    flex: 0.1;\n    display: flex;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .p-container {\n    display: inline-block !important;\n    height: 100px !important;\n  }\n\n  p#dms-format {\n    horizontal-align: top !important;\n    display: inline-block !important;\n    font-weight: bolder !important;\n    font-size: 20px !important\n  }\n\n  .v-select-compas {\n    min-width: 95px !important;\n  }\n\n  .v-text-format {\n  }\n\n  .v-text-format-2 {\n    min-width: 90px !important;\n  }\n\n  .dms {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    max-width: 100% !important;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 710,
+        "y": 820,
+        "wires": [
+            [
+                "fc386a9e16260470",
+                "44f2e8c09ba525bd",
+                "e1496d26ab368e0a"
+            ]
+        ]
+    },
+    {
+        "id": "2bb3a49785cacf3b",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "link in 102",
+        "links": [
+            "764bf644172419d4",
+            "32e3989018637909"
+        ],
+        "x": 655,
+        "y": 780,
+        "wires": [
+            [
+                "7749d4dc3f8e7fa5"
+            ]
+        ]
+    },
+    {
+        "id": "fc386a9e16260470",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "d66c06a0-4dc3-11ef-86a5-e9c7b2057935",
+        "value": "ending_point_date",
+        "command": "write",
+        "msgProperty": "payload.date",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1050,
+        "y": 780,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "44f2e8c09ba525bd",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "d6b592c0-4dc3-11ef-86a5-e9c7b2057935",
+        "value": "ending_point_time",
+        "command": "write",
+        "msgProperty": "payload.time",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1050,
+        "y": 820,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e1496d26ab368e0a",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "d6e55550-4dc3-11ef-86a5-e9c7b2057935",
+        "value": "ending_point_gps",
+        "command": "write",
+        "msgProperty": "payload.gps",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1050,
+        "y": 860,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0d4af74dc3740347",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "d66c06a0-4dc3-11ef-86a5-e9c7b2057935",
+        "value": "ending_point_date",
+        "command": "read",
+        "msgProperty": "payload.selectedDate",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 780,
+        "wires": [
+            [
+                "7749d4dc3f8e7fa5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ac3ec79e3b41827f",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "d6b592c0-4dc3-11ef-86a5-e9c7b2057935",
+        "value": "ending_point_time",
+        "command": "read",
+        "msgProperty": "payload.selectedTime",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 820,
+        "wires": [
+            [
+                "7749d4dc3f8e7fa5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fb2959a5122f4779",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "d6e55550-4dc3-11ef-86a5-e9c7b2057935",
+        "value": "ending_point_gps",
+        "command": "read",
+        "msgProperty": "payload.gps",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 860,
+        "wires": [
+            [
+                "7749d4dc3f8e7fa5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6a44d416b4b28ead",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "link in 103",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 780,
+        "wires": [
+            [
+                "0d4af74dc3740347"
+            ]
+        ]
+    },
+    {
+        "id": "d8c320a906f03e95",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "link in 104",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 820,
+        "wires": [
+            [
+                "ac3ec79e3b41827f"
+            ]
+        ]
+    },
+    {
+        "id": "30d76989325c8687",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "95c11e857d45c6ae",
+        "name": "link in 105",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 860,
+        "wires": [
+            [
+                "fb2959a5122f4779"
             ]
         ]
     },
