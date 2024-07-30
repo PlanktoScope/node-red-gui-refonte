@@ -1145,12 +1145,15 @@
             "77c2eece35acdabc",
             "8ded6e7b8d7f625d",
             "7116c7bc43621124",
-            "f66af7340c87d7de"
+            "f66af7340c87d7de",
+            "df09cb6825581861",
+            "603a844dea8314bb",
+            "434fc82c807acbb4"
         ],
-        "x": 254,
+        "x": 164,
         "y": 439,
-        "w": 812,
-        "h": 322
+        "w": 902,
+        "h": 402
     },
     {
         "id": "45c6a7006373dadb",
@@ -1507,7 +1510,7 @@
         "type": "junction",
         "z": "fb15c917381dd273",
         "g": "5c8dc5f5e1904bf8",
-        "x": 740,
+        "x": 800,
         "y": 660,
         "wires": [
             [
@@ -5543,7 +5546,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ serialNumber || \"Work in progress - Wainting back\" }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ softwareVersion || \"Work in progress\" }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-model=\"storage\"\n                        height=\"20\"\n                        max=\"200\"\n                        ref=\"progressBar\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{ storage }} Gb / {{ maxStorage }} Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfImage || \"Work in progress - Wainting back\" }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfObject || \"Work in progress - Wainting back\" }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            model: null,\n            serialNumber: null,\n            machineName: null,\n            softwareVersion: null,\n            storage: 0,\n            maxStorage: 0,\n            numberOfImage: null,\n            numberOfObject: null,\n        };\n    },\n    watch: {\n        msg: {\n            handler(newVal) {\n                if (newVal.payload) {\n                    const { payload } = newVal;\n                    if (payload.model_selected !== undefined) {\n                        this.model = payload.model_selected;\n                    }\n                    if (payload.serialNumber !== undefined) {\n                        this.serialNumber = payload.serialNumber;\n                    }\n                    if (payload.machineName !== undefined) {\n                        this.machineName = payload.machineName;\n                    }\n                    if (payload.version !== undefined) {\n                        this.softwareVersion = payload.version;\n                    }\n                    if (payload.storage !== undefined) {\n                        this.storage = payload.storage;\n                        this.updateProgressColor(payload.storage);\n                    }\n                    if (payload.maxStorage !== undefined) {\n                        this.maxStorage = payload.maxStorage;\n                    }\n                    if (payload.acquiredImage !== undefined) {\n                        this.numberOfImage = payload.acquiredImage;\n                    }\n                    if (payload.segmentedObjects !== undefined) {\n                        this.numberOfObject = payload.segmentedObjects;\n                    }\n                }\n            },\n            deep: true,\n            immediate: true\n        }\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$refs.progressBar.$el.querySelector('.v-progress-linear__determinate');\n            \n            if (progressBar) {\n                const greenThreshold = this.maxStorage * 0.25;  // 25% de maxStorage\n                const yellowThreshold = this.maxStorage * 0.50; // 50% de maxStorage\n                const orangeThreshold = this.maxStorage * 0.75; // 75% de maxStorage\n                \n                let color = 'green';\n\n                if (value <= greenThreshold) {\n                    color = 'green';\n                } else if (value <= yellowThreshold) {\n                    color = 'yellow';\n                } else if (value <= orangeThreshold) {\n                    color = 'orange';\n                } else if (value > orangeThreshold) {\n                    color = 'red';\n                }\n\n                progressBar.style.backgroundColor = color;\n            }\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ serialNumber || \"Work in progress - Wainting back\" }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ softwareVersion }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-model=\"storage\"\n                        height=\"20\"\n                        max=\"200\"\n                        ref=\"progressBar\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{ storage }} Gb / {{ maxStorage }} Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfImage || \"Work in progress - Wainting back\" }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfObject || \"Work in progress - Wainting back\" }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            model: null,\n            serialNumber: null,\n            machineName: null,\n            softwareVersion: null,\n            storage: 0,\n            maxStorage: 0,\n            numberOfImage: null,\n            numberOfObject: null,\n        };\n    },\n    watch: {\n        msg: {\n            handler(newVal) {\n                if (newVal.payload) {\n                    const { payload } = newVal;\n                    if (payload.model_selected !== undefined) {\n                        this.model = payload.model_selected;\n                    }\n                    if (payload.serialNumber !== undefined) {\n                        this.serialNumber = payload.serialNumber;\n                    }\n                    if (payload.machineName !== undefined) {\n                        this.machineName = payload.machineName;\n                    }\n                    if (payload.version !== undefined) {\n                        this.softwareVersion = payload.version;\n                    }\n                    if (payload.storage !== undefined) {\n                        this.storage = payload.storage;\n                        this.updateProgressColor(payload.storage);\n                    }\n                    if (payload.maxStorage !== undefined) {\n                        this.maxStorage = payload.maxStorage;\n                    }\n                    if (payload.acquiredImage !== undefined) {\n                        this.numberOfImage = payload.acquiredImage;\n                    }\n                    if (payload.segmentedObjects !== undefined) {\n                        this.numberOfObject = payload.segmentedObjects;\n                    }\n                }\n            },\n            deep: true,\n            immediate: true\n        }\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$refs.progressBar.$el.querySelector('.v-progress-linear__determinate');\n            \n            if (progressBar) {\n                const greenThreshold = this.maxStorage * 0.25;  // 25% de maxStorage\n                const yellowThreshold = this.maxStorage * 0.50; // 50% de maxStorage\n                const orangeThreshold = this.maxStorage * 0.75; // 75% de maxStorage\n                \n                let color = 'green';\n\n                if (value <= greenThreshold) {\n                    color = 'green';\n                } else if (value <= yellowThreshold) {\n                    color = 'yellow';\n                } else if (value <= orangeThreshold) {\n                    color = 'orange';\n                } else if (value > orangeThreshold) {\n                    color = 'red';\n                }\n\n                progressBar.style.backgroundColor = color;\n            }\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -5699,55 +5702,20 @@
         "id": "603a844dea8314bb",
         "type": "file in",
         "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
         "name": "",
-        "filename": "/usr/share/planktoscope/installer-config.yml",
+        "filename": "/usr/share/planktoscope/installer-versioning.yml",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 550,
-        "y": 940,
+        "x": 420,
+        "y": 760,
         "wires": [
             [
-                "85c39c697fb4bd8d"
-            ]
-        ]
-    },
-    {
-        "id": "85c39c697fb4bd8d",
-        "type": "debug",
-        "z": "a707f17e5367291d",
-        "name": "Software version",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 830,
-        "y": 940,
-        "wires": []
-    },
-    {
-        "id": "991b3a2859ccd1c3",
-        "type": "inject",
-        "z": "a707f17e5367291d",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 290,
-        "y": 940,
-        "wires": [
-            [
-                "603a844dea8314bb"
+                "df09cb6825581861"
             ]
         ]
     },
@@ -5768,7 +5736,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 510,
+        "x": 450,
         "y": 600,
         "wires": [
             [
@@ -5793,7 +5761,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 520,
+        "x": 460,
         "y": 680,
         "wires": [
             [
@@ -5814,7 +5782,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 490,
+        "x": 430,
         "y": 520,
         "wires": [
             [
@@ -5835,7 +5803,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 460,
         "y": 560,
         "wires": [
             [
@@ -5856,7 +5824,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
+        "x": 480,
         "y": 640,
         "wires": [
             [
@@ -5889,7 +5857,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 500,
+        "x": 440,
         "y": 480,
         "wires": [
             [
@@ -5910,7 +5878,7 @@
             "cfa47830686d6be3",
             "064155ee1c670211"
         ],
-        "x": 295,
+        "x": 235,
         "y": 480,
         "wires": [
             [
@@ -5930,7 +5898,7 @@
             "cfa47830686d6be3",
             "064155ee1c670211"
         ],
-        "x": 295,
+        "x": 235,
         "y": 520,
         "wires": [
             [
@@ -5950,7 +5918,7 @@
             "cfa47830686d6be3",
             "064155ee1c670211"
         ],
-        "x": 295,
+        "x": 235,
         "y": 600,
         "wires": [
             [
@@ -5983,7 +5951,8 @@
             "d4c9cf552809b2e8",
             "1163a00d165fb437",
             "f6f9ae031743a71a",
-            "f66af7340c87d7de"
+            "f66af7340c87d7de",
+            "434fc82c807acbb4"
         ],
         "x": 255,
         "y": 100,
@@ -6002,7 +5971,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
+        "x": 490,
         "y": 720,
         "wires": [
             [
@@ -6022,11 +5991,52 @@
             "cfa47830686d6be3",
             "064155ee1c670211"
         ],
-        "x": 295,
+        "x": 235,
         "y": 680,
         "wires": [
             [
                 "8ded6e7b8d7f625d"
+            ]
+        ]
+    },
+    {
+        "id": "df09cb6825581861",
+        "type": "function",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "Set payload.version",
+        "func": "// Exemple de msg.payload tel qu'il est reçu\nconst rawPayload = msg.payload;\n\n// Diviser le texte en lignes\nconst lines = rawPayload.split('\\n');\n\n// Initialiser une variable pour stocker la version\nlet version = null;\n\n// Parcourir chaque ligne pour trouver celle avec la clé 'version'\nfor (const line of lines) {\n    // Vérifier si la ligne contient la clé 'version'\n    if (line.trim().startsWith('version:')) {\n        // Extraire la valeur après 'version:'\n        version = line.split(':')[1].trim().replace(/\"/g, ''); // Supprimer les guillemets éventuels\n        break;\n    }\n}\n\n// Créer le payload avec la version extraite\nmsg.payload = {\n    version: version\n};\n\n// Retourner le message avec le nouveau payload\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 800,
+        "wires": [
+            [
+                "6d32866022cd0317"
+            ]
+        ]
+    },
+    {
+        "id": "434fc82c807acbb4",
+        "type": "link in",
+        "z": "a707f17e5367291d",
+        "g": "0ba7fbaa34399b50",
+        "name": "link in 148",
+        "links": [
+            "913867d97ba2a2ca",
+            "2b081acaeb1f304d",
+            "cfa47830686d6be3",
+            "064155ee1c670211"
+        ],
+        "x": 205,
+        "y": 760,
+        "wires": [
+            [
+                "603a844dea8314bb"
             ]
         ]
     },
