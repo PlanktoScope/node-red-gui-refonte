@@ -341,12 +341,27 @@
             "color": "#000000"
         },
         "nodes": [
-            "470cceda379e27fc"
+            "470cceda379e27fc",
+            "f31535161df5937b",
+            "ba086b5748dc75a9",
+            "ebabbfe97e25d57a",
+            "be6eeee0eb1be6d8",
+            "b8678d0aef18a2b8",
+            "52c9cc5d25da1cd7",
+            "38b39c419f51dc17",
+            "dfed6cc941515453",
+            "3ccab9026a638be4",
+            "b33763b35fe6bed5",
+            "5ff224fdd65af7b4",
+            "1c5a11c4281aa967",
+            "ffcf9902cdd41ad1",
+            "0c3837abf17b6e69",
+            "c727fe7b031df253"
         ],
-        "x": 614,
-        "y": 1899,
-        "w": 312,
-        "h": 82
+        "x": 84,
+        "y": 1519,
+        "w": 1262,
+        "h": 242
     },
     {
         "id": "fb17654b4a11e0db",
@@ -362,7 +377,7 @@
             "0eec8b84ecf95b07"
         ],
         "x": 614,
-        "y": 1999,
+        "y": 1859,
         "w": 312,
         "h": 82
     },
@@ -383,7 +398,7 @@
             "b708f61bae3b3542"
         ],
         "x": 84,
-        "y": 1199,
+        "y": 1159,
         "w": 1202,
         "h": 82
     },
@@ -419,7 +434,7 @@
             "e7fdcbc88dc9b248"
         ],
         "x": 614,
-        "y": 2199,
+        "y": 2359,
         "w": 272,
         "h": 82
     },
@@ -1383,7 +1398,7 @@
             "2fe68d76dd3ae605"
         ],
         "x": 84,
-        "y": 1479,
+        "y": 1259,
         "w": 1302,
         "h": 242
     },
@@ -2435,6 +2450,24 @@
             {
                 "id": "21548210-4e63-11ef-86a5-e9c7b2057935",
                 "name": "volume_of_the_bottle",
+                "datatype": "str",
+                "default": "0",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "92ae25b0-4e63-11ef-86a5-e9c7b2057935",
+                "name": "depth_min",
+                "datatype": "str",
+                "default": "0",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "978fb080-4e63-11ef-86a5-e9c7b2057935",
+                "name": "depth_max",
                 "datatype": "str",
                 "default": "0",
                 "description": "TO DO",
@@ -5914,16 +5947,22 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment-vertical-net\">\n      <!-- Filtered volume -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Filtered volume</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          variant=\"outlined\"\n          v-model=\"filteredVolume\"\n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          suffix=\"L\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Dillution factor -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"dillutionFactor\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"sieveMeshSize\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\"\n          suffix=\"μm\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n\n    <div class=\"horizontal-alignment-vertical-net second-line\">\n      <!-- Depth Min -->\n      <div class=\"label-bloc-second-line\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth Min</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"depthMin\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog4\"\n          suffix=\"m\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog4\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Depth Max -->\n      <div class=\"label-bloc-second-line-max\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth Max</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"depthMax\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog5\"\n          suffix=\"m\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog5\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 5.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog5\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n\n    <div class=\"horizontal-alignment-vertical-net textarea-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea class=\"my-v-textarea\" variant=\"outlined\" \n      density=\"compact\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dialog4: false,\n      dialog5: false,\n      filteredVolume: 0,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depthMin: 0,\n      depthMax: 0,\n    };\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    openDialog4() {\n      this.dialog4 = true;\n    },\n    openDialog5() {\n      this.dialog5 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    closeDialog4() {\n      this.dialog4 = false;\n    },\n    closeDialog5() {\n      this.dialog5 = false;\n    },\n  },\n};\n</script>\n\n<style scoped>\nh2 {\n  color: #0a6eca !important;\n  margin-bottom: 12px !important;\n}\n\n.container {\n  padding: 10px 10px !important;\n  background-color: rgba(10, 110, 202, 0.1) !important;\n  border: solid black 1px !important;\n  border-radius: 5px !important;\n}\n\n.label-bloc {\n  display: flex;\n  flex: 0.3;\n  justify-content: left !important;\n  align-items: center;\n  padding-right: 10px;\n}\n\n.label-bloc-second-line {\n  display: flex;\n  flex: 0.18;\n  justify-content: left !important;\n  align-items: center;\n}\n\n.label-bloc-second-line-max {\n  display: flex;\n  flex: 0.18;\n  justify-content: center !important;\n  align-items: center;\n}\n\n.input-bloc {\n  flex: 0.7;\n  margin-right: 10px;\n}\n\n.my-label-general {\n  margin-bottom: 20px !important;\n  font-weight: bolder;\n}\n\n.my-label-comment {\n  font-weight: bold;\n  margin-right: 15px;\n  margin-bottom: 20px;\n  font-size: 1vw;\n}\n\n.horizontal-alignment-vertical-net {\n  display: flex !important;\n  flex-wrap: wrap;\n  align-items: center !important;\n  justify-content: space-between; \n}\n\n.horizontal-alignment-vertical-net.second-line {\n  justify-content: flex-start !important;\n}\n\n.textarea-alignment {\n  margin-top: 20px;\n}\n\n.text-spacing {\n  margin-right: 12px !important;\n}\n\n.my-v-text > .v-input__control {\n  background-color: #ffffff !important;\n  border-radius: 5px !important;\n}\n\n.my-v-textarea > .v-input__control {\n  background-color: #ffffff;\n  border-radius: 5px;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment-vertical-net\">\n      <!-- Filtered volume -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Filtered volume</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          variant=\"outlined\"\n          v-model=\"filteredVolume\"\n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog1')\"\n          suffix=\"L\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Dillution factor -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"dillutionFactor\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog2')\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog2')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"sieveMeshSize\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog3')\"\n          suffix=\"μm\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog3')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n\n    <div class=\"horizontal-alignment-vertical-net second-line\">\n      <!-- Depth Min -->\n      <div class=\"label-bloc-second-line\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth Min</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"depthMin\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog4')\"\n          suffix=\"m\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog4')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Depth Max -->\n      <div class=\"label-bloc-second-line-max\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth Max</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"depthMax\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog5')\"\n          suffix=\"m\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog5\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 5.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog5')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n\n    <div class=\"horizontal-alignment-vertical-net textarea-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea class=\"my-v-textarea\" variant=\"outlined\" \n      density=\"compact\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dialog4: false,\n      dialog5: false,\n      filteredVolume: 0,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depthMin: 0,\n      depthMax: 0,\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          if (newVal.payload.filtered_volume !== undefined) {\n            this.filteredVolume = newVal.payload.filtered_volume;\n          }\n          if (newVal.payload.dillution_factor !== undefined) {\n            this.dillutionFactor = newVal.payload.dillution_factor;\n          }\n          if (newVal.payload.sieve_mesh_size !== undefined) {\n            this.sieveMeshSize = newVal.payload.sieve_mesh_size;\n          }\n          if (newVal.payload.depth_min !== undefined) {\n            this.depthMin = newVal.payload.depth_min;\n          }\n          if (newVal.payload.depth_max !== undefined) {\n            this.depthMax = newVal.payload.depth_max;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog(dialog) {\n      this[dialog] = true;\n    },\n    closeDialog(dialog) {\n      this[dialog] = false;\n    },\n    updatePayload() {\n      const payload = {\n        filtered_volume: this.filteredVolume,\n        dillution_factor: this.dillutionFactor,\n        sieve_mesh_size: this.sieveMeshSize,\n        depth_min: this.depthMin,\n        depth_max: this.depthMax,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\nh2 {\n  color: #0a6eca !important;\n  margin-bottom: 12px !important;\n}\n\n.container {\n  padding: 10px 10px !important;\n  background-color: rgba(10, 110, 202, 0.1) !important;\n  border: solid black 1px !important;\n  border-radius: 5px !important;\n}\n\n.label-bloc {\n  display: flex;\n  flex: 0.3;\n  justify-content: left !important;\n  align-items: center;\n  padding-right: 10px;\n}\n\n.label-bloc-second-line {\n  display: flex;\n  flex: 0.18;\n  justify-content: left !important;\n  align-items: center;\n}\n\n.label-bloc-second-line-max {\n  display: flex;\n  flex: 0.18;\n  justify-content: center !important;\n  align-items: center;\n}\n\n.input-bloc {\n  flex: 0.7;\n  margin-right: 10px;\n}\n\n.my-label-general {\n  margin-bottom: 20px !important;\n  font-weight: bolder;\n}\n\n.my-label-comment {\n  font-weight: bold;\n  margin-right: 15px;\n  margin-bottom: 20px;\n  font-size: 1vw;\n}\n\n.horizontal-alignment-vertical-net {\n  display: flex !important;\n  flex-wrap: wrap;\n  align-items: center !important;\n  justify-content: space-between; \n}\n\n.horizontal-alignment-vertical-net.second-line {\n  justify-content: flex-start !important;\n}\n\n.textarea-alignment {\n  margin-top: 20px;\n}\n\n.text-spacing {\n  margin-right: 12px !important;\n}\n\n.my-v-text > .v-input__control {\n  background-color: #ffffff !important;\n  border-radius: 5px !important;\n}\n\n.my-v-textarea > .v-input__control {\n  background-color: #ffffff;\n  border-radius: 5px;\n}\n</style>\n",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 770,
-        "y": 1940,
+        "y": 1640,
         "wires": [
-            []
+            [
+                "38b39c419f51dc17",
+                "dfed6cc941515453",
+                "3ccab9026a638be4",
+                "1c5a11c4281aa967",
+                "ffcf9902cdd41ad1"
+            ]
         ]
     },
     {
@@ -5946,7 +5985,7 @@
         "templateScope": "local",
         "className": "",
         "x": 770,
-        "y": 2040,
+        "y": 1900,
         "wires": [
             []
         ]
@@ -5971,7 +6010,7 @@
         "templateScope": "local",
         "className": "",
         "x": 720,
-        "y": 1240,
+        "y": 1200,
         "wires": [
             [
                 "b708f61bae3b3542"
@@ -6023,7 +6062,7 @@
         "templateScope": "local",
         "className": "",
         "x": 750,
-        "y": 2240,
+        "y": 2400,
         "wires": [
             []
         ]
@@ -6563,7 +6602,12 @@
             "2ea39cad69e2deed",
             "ccc99ab3b0fae92f",
             "df2075943eba1d2d",
-            "5de1187ebfd8bc79"
+            "5de1187ebfd8bc79",
+            "be6eeee0eb1be6d8",
+            "b8678d0aef18a2b8",
+            "52c9cc5d25da1cd7",
+            "0c3837abf17b6e69",
+            "c727fe7b031df253"
         ],
         "x": 495,
         "y": 80,
@@ -7442,7 +7486,7 @@
         "templateScope": "local",
         "className": "",
         "x": 780,
-        "y": 1600,
+        "y": 1380,
         "wires": [
             [
                 "b8e827b49ed71ded",
@@ -7479,7 +7523,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 1680,
+        "y": 1460,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7513,7 +7557,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 1520,
+        "y": 1300,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7547,7 +7591,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 1560,
+        "y": 1340,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7581,7 +7625,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 1600,
+        "y": 1380,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7615,7 +7659,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 360,
-        "y": 1640,
+        "y": 1420,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7635,7 +7679,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1520,
+        "y": 1300,
         "wires": [
             [
                 "11d0f008572b1816"
@@ -7654,7 +7698,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1560,
+        "y": 1340,
         "wires": [
             [
                 "88988d2b5efe7a55"
@@ -7673,7 +7717,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1600,
+        "y": 1380,
         "wires": [
             [
                 "aab491fd4d8d370e"
@@ -7692,7 +7736,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1640,
+        "y": 1420,
         "wires": [
             [
                 "b59379492732a989"
@@ -7711,7 +7755,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1680,
+        "y": 1460,
         "wires": [
             [
                 "d2e3027e09f33d42"
@@ -7744,7 +7788,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1170,
-        "y": 1680,
+        "y": 1460,
         "wires": [
             [],
             []
@@ -7776,7 +7820,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1160,
-        "y": 1520,
+        "y": 1300,
         "wires": [
             [],
             []
@@ -7808,7 +7852,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1160,
-        "y": 1560,
+        "y": 1340,
         "wires": [
             [],
             []
@@ -7840,7 +7884,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1170,
-        "y": 1600,
+        "y": 1380,
         "wires": [
             [],
             []
@@ -7872,7 +7916,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1180,
-        "y": 1640,
+        "y": 1420,
         "wires": [
             [],
             []
@@ -7904,7 +7948,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 370,
-        "y": 1240,
+        "y": 1200,
         "wires": [
             [
                 "4a4db8d5c9ce9226"
@@ -7924,7 +7968,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1240,
+        "y": 1200,
         "wires": [
             [
                 "8602fcc44b294bfc"
@@ -7957,10 +8001,435 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1070,
-        "y": 1240,
+        "y": 1200,
         "wires": [
             [],
             []
+        ]
+    },
+    {
+        "id": "f31535161df5937b",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "40e9b2f0-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "filtered_volume",
+        "command": "read",
+        "msgProperty": "payload.filtered_volume",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 340,
+        "y": 1560,
+        "wires": [
+            [
+                "470cceda379e27fc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ba086b5748dc75a9",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "412c8850-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "dillution_factor",
+        "command": "read",
+        "msgProperty": "payload.dillution_factor",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 340,
+        "y": 1600,
+        "wires": [
+            [
+                "470cceda379e27fc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ebabbfe97e25d57a",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "sieve_mesh_size",
+        "command": "read",
+        "msgProperty": "payload.sieve_mesh_size",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 1640,
+        "wires": [
+            [
+                "470cceda379e27fc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "be6eeee0eb1be6d8",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "link in 118",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1640,
+        "wires": [
+            [
+                "ebabbfe97e25d57a"
+            ]
+        ]
+    },
+    {
+        "id": "b8678d0aef18a2b8",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "link in 119",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1600,
+        "wires": [
+            [
+                "ba086b5748dc75a9"
+            ]
+        ]
+    },
+    {
+        "id": "52c9cc5d25da1cd7",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "link in 120",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1560,
+        "wires": [
+            [
+                "f31535161df5937b"
+            ]
+        ]
+    },
+    {
+        "id": "38b39c419f51dc17",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "40e9b2f0-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "filtered_volume",
+        "command": "write",
+        "msgProperty": "payload.filtered_volume",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1140,
+        "y": 1560,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dfed6cc941515453",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "412c8850-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "dillution_factor",
+        "command": "write",
+        "msgProperty": "payload.dillution_factor",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1140,
+        "y": 1600,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3ccab9026a638be4",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "sieve_mesh_size",
+        "command": "write",
+        "msgProperty": "payload.sieve_mesh_size",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1150,
+        "y": 1640,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b33763b35fe6bed5",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "978fb080-4e63-11ef-86a5-e9c7b2057935",
+        "value": "depth_max",
+        "command": "read",
+        "msgProperty": "payload.depth_max",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 330,
+        "y": 1680,
+        "wires": [
+            [
+                "470cceda379e27fc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5ff224fdd65af7b4",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "92ae25b0-4e63-11ef-86a5-e9c7b2057935",
+        "value": "depth_min",
+        "command": "read",
+        "msgProperty": "payload.depth_min",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 330,
+        "y": 1720,
+        "wires": [
+            [
+                "470cceda379e27fc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1c5a11c4281aa967",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "978fb080-4e63-11ef-86a5-e9c7b2057935",
+        "value": "depth_max",
+        "command": "write",
+        "msgProperty": "payload.depth_max",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1130,
+        "y": 1680,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ffcf9902cdd41ad1",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "92ae25b0-4e63-11ef-86a5-e9c7b2057935",
+        "value": "depth_min",
+        "command": "write",
+        "msgProperty": "payload.depth_min",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1130,
+        "y": 1720,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0c3837abf17b6e69",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "link in 121",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1680,
+        "wires": [
+            [
+                "b33763b35fe6bed5"
+            ]
+        ]
+    },
+    {
+        "id": "c727fe7b031df253",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "fcefc59d8d36e714",
+        "name": "link in 122",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1720,
+        "wires": [
+            [
+                "5ff224fdd65af7b4"
+            ]
         ]
     },
     {
