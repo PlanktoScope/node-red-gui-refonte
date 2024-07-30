@@ -301,27 +301,6 @@
         "h": 162
     },
     {
-        "id": "307fb977cf47b651",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Sample general information",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "23a443593bbc53fe",
-            "697ae94309963b9b",
-            "ceccdeb615cdc48b",
-            "5f430f744fd2f18d"
-        ],
-        "x": 614,
-        "y": 339,
-        "w": 732,
-        "h": 122
-    },
-    {
         "id": "3e8b16808b1bfff5",
         "type": "group",
         "z": "e988301e60e4b458",
@@ -1319,7 +1298,7 @@
             "86625c5739968525"
         ],
         "x": 84,
-        "y": 559,
+        "y": 579,
         "w": 1162,
         "h": 162
     },
@@ -1347,8 +1326,35 @@
             "30d76989325c8687"
         ],
         "x": 84,
-        "y": 739,
+        "y": 759,
         "w": 1162,
+        "h": 162
+    },
+    {
+        "id": "307fb977cf47b651",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Sample general information",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "23a443593bbc53fe",
+            "697ae94309963b9b",
+            "ceccdeb615cdc48b",
+            "35bf8991beb7e84d",
+            "6836b771497a13ae",
+            "bac194ac08ecd558",
+            "ab8f773ee48978da",
+            "0caf8dc53c166886",
+            "a1f5a28590776828",
+            "26384e9142c6e77d"
+        ],
+        "x": 174,
+        "y": 339,
+        "w": 1272,
         "h": 162
     },
     {
@@ -2243,6 +2249,24 @@
         "type": "persistent values config",
         "name": "Sample Metadata",
         "values": [
+            {
+                "id": "8dad4db0-4e50-11ef-86a5-e9c7b2057935",
+                "name": "project_name",
+                "datatype": "str",
+                "default": "default project name",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "90285fd0-4e50-11ef-86a5-e9c7b2057935",
+                "name": "sample_id",
+                "datatype": "str",
+                "default": "default id",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
             {
                 "id": "907912f0-4dc3-11ef-86a5-e9c7b2057935",
                 "name": "starting_point_date",
@@ -5579,9 +5603,9 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment-sgi\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field\n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          label=\"ex: S001\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n  </div>\n  <!-- Sampling gear selection -->\n  <div class=\"horizontal-alignment-sgi\">\n    <div class=\"label-bloc-sgi-2\">\n      <label class=\"v-label v-slider__label my-label-sgi-2\">Sampling Gear</label>\n    </div>\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n      class=\"toggle-full-width my-toggle\">\n      <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n      <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n      <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n      <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n      <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        numberOfImages: 0,\n        pumpedVolume: 0,\n        progresion: 0,\n        dialog1: false,\n        dialog2: false,\n        toggle: null\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      sendTitle(title) {\n        this.send(title);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .gear-selection {\n    width: 100%;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general-sgi {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-sgi-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-sgi {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-sgi {\n    display: flex;\n    flex: 0.2;\n    justify-content: center !important;\n    align-items: center;\n  }\n\n  .label-bloc-sgi-2 {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .toggle-full-width {\n    width: 92% !important;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    background-color: #ffffff !important;\n    color: #0a6eca !important;\n  }\n\n  .my-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .progress-info {\n    margin-top: 12px !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment-sgi\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field\n          v-model=\"projectName\"\n          @input=\"updatePayload\"\n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          v-model=\"sampleId\"\n          @input=\"updatePayload\"\n          label=\"ex: S001\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment-sgi\">\n      <div class=\"label-bloc-sgi-2\">\n        <label class=\"v-label v-slider__label my-label-sgi-2\">Sampling Gear</label>\n      </div>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      toggle: null,\n      projectName: '',\n      sampleId: ''\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.project_name !== undefined) {\n            this.projectName = payload.project_name;\n          }\n          if (payload.sample_id !== undefined) {\n            this.sampleId = payload.sample_id;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    sendTitle(title) {\n      this.send({payload : {\n          gear: title\n      }});\n    },\n    updatePayload() {\n      const payload = {\n        project_name: this.projectName,\n        sample_id: this.sampleId\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .gear-selection {\n    width: 100%;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general-sgi {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-sgi-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-sgi {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-sgi {\n    display: flex;\n    flex: 0.2;\n    justify-content: center !important;\n    align-items: center;\n  }\n\n  .label-bloc-sgi-2 {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .toggle-full-width {\n    width: 92% !important;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    background-color: #ffffff !important;\n    color: #0a6eca !important;\n  }\n\n  .my-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .progress-info {\n    margin-top: 12px !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>\n",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
@@ -5589,7 +5613,8 @@
         "y": 420,
         "wires": [
             [
-                "ceccdeb615cdc48b"
+                "ceccdeb615cdc48b",
+                "26384e9142c6e77d"
             ]
         ]
     },
@@ -5601,8 +5626,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1260,
-        "y": 420,
+        "x": 1360,
+        "y": 380,
         "wires": [
             []
         ]
@@ -5613,15 +5638,15 @@
         "z": "e988301e60e4b458",
         "g": "307fb977cf47b651",
         "name": "Format command to choose groups",
-        "func": "const gear = msg.payload;\n\nif (gear === \"Horizontal Net\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n            ],\n            \"hide\": [\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n                \"Sample-2:bottle-specificity-sample-2\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ]\n        }\n    }\n} else if (gear === \"Vertical Net\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-vertical-net\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n                \"Sample-2:bottle-specificity-sample-2\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ]\n        }\n    }\n} else if (gear === \"Niskin bottle\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:bottle-specificity-sample-2\",\n                \"Sample-2:other-information-niskin-bottle\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ]\n        }\n    }\n} else if (gear === \"Lab culture\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n                \"Sample-2:bottle-specificity-sample-2\",\n            ]\n        }\n    }\n} else if (gear === \"Demo / Test\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n                \"Sample-2:bottle-specificity-sample-2\",\n            ]\n        }\n    }\n}\n\nreturn msg;\n",
+        "func": "const gear = msg.payload.gear;\n\nif (gear === \"Horizontal Net\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n            ],\n            \"hide\": [\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n                \"Sample-2:bottle-specificity-sample-2\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ]\n        }\n    }\n} else if (gear === \"Vertical Net\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-vertical-net\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n                \"Sample-2:bottle-specificity-sample-2\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ]\n        }\n    }\n} else if (gear === \"Niskin bottle\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:bottle-specificity-sample-2\",\n                \"Sample-2:other-information-niskin-bottle\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ]\n        }\n    }\n} else if (gear === \"Lab culture\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n                \"Sample-2:bottle-specificity-sample-2\",\n            ]\n        }\n    }\n} else if (gear === \"Demo / Test\") {\n    msg.payload = {\n        \"group\": {\n            \"show\": [\n                \"Sample-2:starting-point-sample-2\",\n                \"Sample-2:other-information-lab-culture-&-demo\",\n            ],\n            \"hide\": [\n                \"Sample-2:ending-point-sample-2\",\n                \"Sample-2:net-specificity-sample-2\",\n                \"Sample-2:other-information-horizontal-net\",\n                \"Sample-2:other-information-vertical-net\",\n                \"Sample-2:other-information-niskin-bottle\",\n                \"Sample-2:bottle-specificity-sample-2\",\n            ]\n        }\n    }\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1040,
-        "y": 420,
+        "x": 1140,
+        "y": 380,
         "wires": [
             [
                 "697ae94309963b9b"
@@ -5648,7 +5673,7 @@
         "templateScope": "local",
         "className": "",
         "x": 710,
-        "y": 640,
+        "y": 660,
         "wires": [
             [
                 "72b7984ea35d8a21",
@@ -5670,7 +5695,7 @@
             "2bb3a49785cacf3b"
         ],
         "x": 595,
-        "y": 520,
+        "y": 540,
         "wires": []
     },
     {
@@ -5684,7 +5709,7 @@
             "32e3989018637909"
         ],
         "x": 655,
-        "y": 600,
+        "y": 620,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -5926,35 +5951,11 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 280,
-        "y": 520,
+        "y": 540,
         "wires": [
             [
                 "e5239cb6eb875cd1"
             ],
-            []
-        ]
-    },
-    {
-        "id": "5f430f744fd2f18d",
-        "type": "inject",
-        "z": "e988301e60e4b458",
-        "g": "307fb977cf47b651",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"gear\":\"Horizontal Net\"}",
-        "payloadType": "json",
-        "x": 830,
-        "y": 380,
-        "wires": [
             []
         ]
     },
@@ -6146,7 +6147,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1050,
-        "y": 600,
+        "y": 620,
         "wires": [
             [],
             []
@@ -6178,7 +6179,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1050,
-        "y": 640,
+        "y": 660,
         "wires": [
             [],
             []
@@ -6210,7 +6211,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1050,
-        "y": 680,
+        "y": 700,
         "wires": [
             [],
             []
@@ -6242,7 +6243,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 600,
+        "y": 620,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -6276,7 +6277,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 640,
+        "y": 660,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -6310,7 +6311,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 680,
+        "y": 700,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -6330,7 +6331,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 600,
+        "y": 620,
         "wires": [
             [
                 "96ab8a6338e4fcfc"
@@ -6349,7 +6350,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 640,
+        "y": 660,
         "wires": [
             [
                 "0f42da474afce82c"
@@ -6368,7 +6369,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 680,
+        "y": 700,
         "wires": [
             [
                 "3370481fa03529d1"
@@ -6388,7 +6389,7 @@
         "finalize": "",
         "libs": [],
         "x": 490,
-        "y": 520,
+        "y": 540,
         "wires": [
             [
                 "764bf644172419d4"
@@ -6402,7 +6403,9 @@
         "name": "link out 95",
         "mode": "link",
         "links": [
-            "ebc182ac620954af"
+            "ebc182ac620954af",
+            "bac194ac08ecd558",
+            "ab8f773ee48978da"
         ],
         "x": 695,
         "y": 100,
@@ -6460,7 +6463,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 520,
+        "y": 540,
         "wires": [
             [
                 "bf31c62fba21e7bb"
@@ -6476,7 +6479,7 @@
         "page": "",
         "ui": "",
         "name": "Ending point",
-        "order": 2,
+        "order": 1,
         "width": "12",
         "height": "1",
         "head": "",
@@ -6487,7 +6490,7 @@
         "templateScope": "local",
         "className": "",
         "x": 710,
-        "y": 820,
+        "y": 840,
         "wires": [
             [
                 "fc386a9e16260470",
@@ -6507,7 +6510,7 @@
             "32e3989018637909"
         ],
         "x": 655,
-        "y": 780,
+        "y": 800,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -6540,7 +6543,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1050,
-        "y": 780,
+        "y": 800,
         "wires": [
             [],
             []
@@ -6572,7 +6575,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1050,
-        "y": 820,
+        "y": 840,
         "wires": [
             [],
             []
@@ -6604,7 +6607,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1050,
-        "y": 860,
+        "y": 880,
         "wires": [
             [],
             []
@@ -6636,7 +6639,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 780,
+        "y": 800,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -6670,7 +6673,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 820,
+        "y": 840,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -6704,7 +6707,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 860,
+        "y": 880,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -6724,7 +6727,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 780,
+        "y": 800,
         "wires": [
             [
                 "0d4af74dc3740347"
@@ -6743,7 +6746,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 820,
+        "y": 840,
         "wires": [
             [
                 "ac3ec79e3b41827f"
@@ -6762,10 +6765,203 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 860,
+        "y": 880,
         "wires": [
             [
                 "fb2959a5122f4779"
+            ]
+        ]
+    },
+    {
+        "id": "35bf8991beb7e84d",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "8dad4db0-4e50-11ef-86a5-e9c7b2057935",
+        "value": "project_name",
+        "command": "read",
+        "msgProperty": "payload.project_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "23a443593bbc53fe"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6836b771497a13ae",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "90285fd0-4e50-11ef-86a5-e9c7b2057935",
+        "value": "sample_id",
+        "command": "read",
+        "msgProperty": "payload.sample_id",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "23a443593bbc53fe"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bac194ac08ecd558",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "link in 106",
+        "links": [
+            "32e3989018637909",
+            "df824b3eae9a8d40"
+        ],
+        "x": 215,
+        "y": 400,
+        "wires": [
+            [
+                "35bf8991beb7e84d"
+            ]
+        ]
+    },
+    {
+        "id": "ab8f773ee48978da",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "link in 107",
+        "links": [
+            "32e3989018637909",
+            "df824b3eae9a8d40"
+        ],
+        "x": 215,
+        "y": 440,
+        "wires": [
+            [
+                "6836b771497a13ae"
+            ]
+        ]
+    },
+    {
+        "id": "0caf8dc53c166886",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "8dad4db0-4e50-11ef-86a5-e9c7b2057935",
+        "value": "project_name",
+        "command": "write",
+        "msgProperty": "payload.project_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1240,
+        "y": 420,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a1f5a28590776828",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "90285fd0-4e50-11ef-86a5-e9c7b2057935",
+        "value": "sample_id",
+        "command": "write",
+        "msgProperty": "payload.sample_id",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1230,
+        "y": 460,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "26384e9142c6e77d",
+        "type": "switch",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "",
+        "property": "payload.gear",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 970,
+        "y": 440,
+        "wires": [
+            [
+                "a1f5a28590776828",
+                "0caf8dc53c166886"
             ]
         ]
     },
