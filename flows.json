@@ -179,9 +179,9 @@
             "c866246764dec8a6",
             "e6eaab7bd19e4bfd"
         ],
-        "x": 104,
+        "x": 24,
         "y": 99,
-        "w": 832,
+        "w": 912,
         "h": 162
     },
     {
@@ -225,9 +225,9 @@
             "478e79c6f72c6a53",
             "b2e678c70a46968c"
         ],
-        "x": 264,
+        "x": 184,
         "y": 79,
-        "w": 922,
+        "w": 1002,
         "h": 162
     },
     {
@@ -295,9 +295,9 @@
             "c0aa6894fa9aaf74",
             "ebc182ac620954af"
         ],
-        "x": 304,
+        "x": 224,
         "y": 159,
-        "w": 922,
+        "w": 1002,
         "h": 162
     },
     {
@@ -477,7 +477,7 @@
         ],
         "x": 64,
         "y": 139,
-        "w": 922,
+        "w": 1002,
         "h": 162
     },
     {
@@ -587,7 +587,7 @@
         ],
         "x": 84,
         "y": 439,
-        "w": 942,
+        "w": 992,
         "h": 162
     },
     {
@@ -725,11 +725,14 @@
             "d3a5a70db54745f0",
             "f6c532036b5081b0",
             "cae0178a8a69f787",
-            "db90716e8f85a03f"
+            "db90716e8f85a03f",
+            "eac22c776f85072b",
+            "469d021252c5af93",
+            "840870e225e30144"
         ],
-        "x": 514,
+        "x": 104,
         "y": 479,
-        "w": 1042,
+        "w": 1512,
         "h": 222
     },
     {
@@ -751,7 +754,7 @@
         ],
         "x": 144,
         "y": 159,
-        "w": 852,
+        "w": 952,
         "h": 82
     },
     {
@@ -772,7 +775,7 @@
         ],
         "x": 144,
         "y": 579,
-        "w": 782,
+        "w": 942,
         "h": 82
     },
     {
@@ -795,7 +798,7 @@
         ],
         "x": 144,
         "y": 259,
-        "w": 802,
+        "w": 982,
         "h": 122
     },
     {
@@ -820,7 +823,7 @@
         ],
         "x": 114,
         "y": 399,
-        "w": 872,
+        "w": 1032,
         "h": 162
     },
     {
@@ -843,7 +846,7 @@
         ],
         "x": 104,
         "y": 679,
-        "w": 882,
+        "w": 1062,
         "h": 122
     },
     {
@@ -945,7 +948,7 @@
         ],
         "x": 184,
         "y": 819,
-        "w": 742,
+        "w": 902,
         "h": 82
     },
     {
@@ -1118,7 +1121,7 @@
         ],
         "x": 164,
         "y": 279,
-        "w": 1112,
+        "w": 1182,
         "h": 262
     },
     {
@@ -1153,7 +1156,7 @@
         ],
         "x": 64,
         "y": 379,
-        "w": 842,
+        "w": 912,
         "h": 482
     },
     {
@@ -2100,7 +2103,7 @@
     {
         "id": "3da386409fa03189",
         "type": "persistent values config",
-        "name": "DATA",
+        "name": "Setting metadata",
         "values": [
             {
                 "id": "a820b210-1122-11ef-859a-e74349e74cab",
@@ -4975,7 +4978,7 @@
         "z": "fb15c917381dd273",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
         "value": "first-visit",
         "command": "read",
@@ -4993,7 +4996,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 300,
+        "x": 280,
         "y": 140,
         "wires": [
             [
@@ -5088,7 +5091,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
         "value": "first-visit",
         "command": "write",
@@ -5106,7 +5109,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1180,
+        "x": 1220,
         "y": 520,
         "wires": [
             [
@@ -5178,7 +5181,7 @@
         "links": [
             "f2332fa1b7e6397e"
         ],
-        "x": 1515,
+        "x": 1575,
         "y": 520,
         "wires": []
     },
@@ -5202,7 +5205,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1390,
+        "x": 1460,
         "y": 520,
         "wires": [
             [
@@ -5214,6 +5217,7 @@
         "id": "eac22c776f85072b",
         "type": "persistent value",
         "z": "fb15c917381dd273",
+        "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "176d84b611842be2",
         "valuesConfigName": "Hard-coded value",
@@ -5234,7 +5238,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
+        "x": 330,
         "y": 520,
         "wires": [
             [
@@ -5247,11 +5251,12 @@
         "id": "469d021252c5af93",
         "type": "link in",
         "z": "fb15c917381dd273",
+        "g": "5c8dc5f5e1904bf8",
         "name": "link in 80",
         "links": [
             "c24d1751dd739fe4"
         ],
-        "x": 165,
+        "x": 145,
         "y": 540,
         "wires": [
             [
@@ -5267,7 +5272,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "write",
@@ -5285,7 +5290,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1250,
+        "x": 1280,
         "y": 560,
         "wires": [
             [],
@@ -5317,9 +5322,10 @@
         "id": "840870e225e30144",
         "type": "persistent value",
         "z": "fb15c917381dd273",
+        "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "read",
@@ -5337,7 +5343,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 330,
+        "x": 340,
         "y": 560,
         "wires": [
             [
@@ -5353,7 +5359,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "write",
@@ -5371,7 +5377,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1240,
+        "x": 1280,
         "y": 620,
         "wires": [
             [],
@@ -5385,7 +5391,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
         "value": "operator_email",
         "command": "write",
@@ -5403,7 +5409,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1240,
+        "x": 1280,
         "y": 660,
         "wires": [
             [],
@@ -5537,7 +5543,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ serialNumber }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ softwareVersion }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-model=\"storage\"\n                        height=\"20\"\n                        max=\"200\"\n                        ref=\"progressBar\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{ storage }} Gb / {{ maxStorage }} Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfImage }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfObject }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            model: null,\n            serialNumber: null,\n            machineName: null,\n            softwareVersion: null,\n            storage: 0,\n            maxStorage: 0,\n            numberOfImage: null,\n            numberOfObject: null,\n        };\n    },\n    watch: {\n        msg: {\n            handler(newVal) {\n                if (newVal.payload) {\n                    const { payload } = newVal;\n                    if (payload.model_selected !== undefined) {\n                        this.model = payload.model_selected;\n                    }\n                    if (payload.serialNumber !== undefined) {\n                        this.serialNumber = payload.serialNumber;\n                    }\n                    if (payload.machineName !== undefined) {\n                        this.machineName = payload.machineName;\n                    }\n                    if (payload.version !== undefined) {\n                        this.softwareVersion = payload.version;\n                    }\n                    if (payload.storage !== undefined) {\n                        this.storage = payload.storage;\n                        this.updateProgressColor(payload.storage);\n                    }\n                    if (payload.maxStorage !== undefined) {\n                        this.maxStorage = payload.maxStorage;\n                    }\n                    if (payload.acquiredImage !== undefined) {\n                        this.numberOfImage = payload.acquiredImage;\n                    }\n                    if (payload.segmentedObjects !== undefined) {\n                        this.numberOfObject = payload.segmentedObjects;\n                    }\n                }\n            },\n            deep: true,\n            immediate: true\n        }\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$refs.progressBar.$el.querySelector('.v-progress-linear__determinate');\n            \n            if (progressBar) {\n                const greenThreshold = this.maxStorage * 0.25;  // 25% de maxStorage\n                const yellowThreshold = this.maxStorage * 0.50; // 50% de maxStorage\n                const orangeThreshold = this.maxStorage * 0.75; // 75% de maxStorage\n                \n                let color = 'green';\n\n                if (value <= greenThreshold) {\n                    color = 'green';\n                } else if (value <= yellowThreshold) {\n                    color = 'yellow';\n                } else if (value <= orangeThreshold) {\n                    color = 'orange';\n                } else if (value > orangeThreshold) {\n                    color = 'red';\n                }\n\n                progressBar.style.backgroundColor = color;\n            }\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"grid-container\">\n        <div class=\"first-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-desktop-classic\"></span>\n                    <p>Model of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ model }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-numeric\"></span>\n                    <p>Serial number</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ serialNumber || \"Work in progress - Wainting back\" }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-robot\"></span>\n                    <p>Name of your machine</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ machineName }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-code-tags-check\"></span>\n                    <p>Software version</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ softwareVersion || \"Work in progress\" }}</p>\n                </section>\n            </div>\n        </div>\n        <div class=\"second-line-container-2\">\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-database\"></span>\n                    <p>Storage</p>\n                </section>\n                <section class=\"bottom-section bottom-section-slider\">\n                    <v-progress-linear\n                        v-model=\"storage\"\n                        height=\"20\"\n                        max=\"200\"\n                        ref=\"progressBar\"\n                    >\n                        <template v-slot:default=\"{ value }\">\n                            <strong>{{ storage }} Gb / {{ maxStorage }} Gb </strong>\n                        </template>\n                    </v-progress-linear>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-file-image\"></span>\n                    <p>Number of image acquired</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfImage || \"Work in progress - Wainting back\" }}</p>\n                </section>\n            </div>\n            <div class=\"grid-item\">\n                <section class=\"top-section\">\n                    <span class=\"mdi mdi-select-all\"></span>\n                    <p>Number of objects segmented</p>\n                </section>\n                <section class=\"bottom-section\">\n                    <p>{{ numberOfObject || \"Work in progress - Wainting back\" }}</p>\n                </section>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    props: ['msg'],\n    data() {\n        return {\n            model: null,\n            serialNumber: null,\n            machineName: null,\n            softwareVersion: null,\n            storage: 0,\n            maxStorage: 0,\n            numberOfImage: null,\n            numberOfObject: null,\n        };\n    },\n    watch: {\n        msg: {\n            handler(newVal) {\n                if (newVal.payload) {\n                    const { payload } = newVal;\n                    if (payload.model_selected !== undefined) {\n                        this.model = payload.model_selected;\n                    }\n                    if (payload.serialNumber !== undefined) {\n                        this.serialNumber = payload.serialNumber;\n                    }\n                    if (payload.machineName !== undefined) {\n                        this.machineName = payload.machineName;\n                    }\n                    if (payload.version !== undefined) {\n                        this.softwareVersion = payload.version;\n                    }\n                    if (payload.storage !== undefined) {\n                        this.storage = payload.storage;\n                        this.updateProgressColor(payload.storage);\n                    }\n                    if (payload.maxStorage !== undefined) {\n                        this.maxStorage = payload.maxStorage;\n                    }\n                    if (payload.acquiredImage !== undefined) {\n                        this.numberOfImage = payload.acquiredImage;\n                    }\n                    if (payload.segmentedObjects !== undefined) {\n                        this.numberOfObject = payload.segmentedObjects;\n                    }\n                }\n            },\n            deep: true,\n            immediate: true\n        }\n    },\n    methods: {\n        updateProgressColor(value) {\n            const progressBar = this.$refs.progressBar.$el.querySelector('.v-progress-linear__determinate');\n            \n            if (progressBar) {\n                const greenThreshold = this.maxStorage * 0.25;  // 25% de maxStorage\n                const yellowThreshold = this.maxStorage * 0.50; // 50% de maxStorage\n                const orangeThreshold = this.maxStorage * 0.75; // 75% de maxStorage\n                \n                let color = 'green';\n\n                if (value <= greenThreshold) {\n                    color = 'green';\n                } else if (value <= yellowThreshold) {\n                    color = 'yellow';\n                } else if (value <= orangeThreshold) {\n                    color = 'orange';\n                } else if (value > orangeThreshold) {\n                    color = 'red';\n                }\n\n                progressBar.style.backgroundColor = color;\n            }\n        }\n    }\n};\n</script>\n\n<style>\n    .grid-container {\n        display: flex;\n        flex-direction: column;\n        gap: 25px;\n        margin: 0% 12%;\n    }\n\n    .first-line-container-2,\n    .second-line-container-2 {\n        display: grid;\n        gap: 25px;\n    }\n\n    .first-line-container-2 {\n        grid-template-columns: repeat(4, 1fr);\n    }\n\n    .second-line-container-2 {\n        grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid-item {\n        border: 1px solid rgba(10, 110, 202, 0.3);\n        border-radius: 5px;\n        background-color: rgba(48, 164, 220, 0.1);\n        height: 5vw;\n    }\n\n    .top-section {\n        display: flex;\n        align-items: center;\n    }\n\n    .top-section span {\n        color: #076eac;\n        font-size: 2vw;\n        margin: 0 15px 0 7px;\n    }\n\n    .top-section p {\n        font-size: 0.9vw;\n        font-weight: bold;\n    }\n\n    .bottom-section p {\n        font-size: 0.9vw;\n        margin-left: 7px;\n    }\n\n    .bottom-section-slider {\n        padding: 0rem 1rem;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -5865,7 +5871,7 @@
         "g": "0ba7fbaa34399b50",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "read",
@@ -5883,7 +5889,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 510,
+        "x": 500,
         "y": 480,
         "wires": [
             [
@@ -6170,7 +6176,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 520,
+        "x": 590,
         "y": 480,
         "wires": [
             [
@@ -6197,7 +6203,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 520,
+        "x": 590,
         "y": 580,
         "wires": [
             [
@@ -6224,7 +6230,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 510,
+        "x": 580,
         "y": 660,
         "wires": [
             [
@@ -6338,7 +6344,7 @@
         "g": "5387cbd03cda0166",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
         "value": "flowrate_preset",
         "command": "read",
@@ -6356,7 +6362,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 280,
+        "x": 320,
         "y": 460,
         "wires": [
             [
@@ -6372,7 +6378,7 @@
         "g": "5387cbd03cda0166",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
         "value": "volume_preset",
         "command": "read",
@@ -6390,7 +6396,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 280,
+        "x": 320,
         "y": 500,
         "wires": [
             [
@@ -6406,7 +6412,7 @@
         "g": "5387cbd03cda0166",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
         "value": "focus_preset",
         "command": "read",
@@ -6424,7 +6430,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 280,
+        "x": 310,
         "y": 600,
         "wires": [
             [
@@ -6636,7 +6642,7 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 830,
+        "x": 900,
         "y": 580,
         "wires": []
     },
@@ -6694,7 +6700,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 700,
+        "x": 770,
         "y": 580,
         "wires": [
             [
@@ -6716,7 +6722,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 310,
+        "x": 370,
         "y": 560,
         "wires": [
             [
@@ -6739,7 +6745,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 310,
+        "x": 390,
         "y": 420,
         "wires": [
             [
@@ -6762,7 +6768,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
+        "x": 580,
         "y": 420,
         "wires": []
     },
@@ -6780,7 +6786,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
+        "x": 580,
         "y": 540,
         "wires": []
     },
@@ -6805,7 +6811,7 @@
         "g": "4237eacb62444cc7",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -6823,7 +6829,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 300,
+        "x": 260,
         "y": 220,
         "wires": [
             [
@@ -6843,7 +6849,7 @@
             "b55889accd88ab53",
             "01f2bfc021ad0daf"
         ],
-        "x": 145,
+        "x": 65,
         "y": 220,
         "wires": [
             [
@@ -7083,7 +7089,7 @@
             "d0f0965ace2cdaaf",
             "2bb3a49785cacf3b"
         ],
-        "x": 595,
+        "x": 655,
         "y": 540,
         "wires": []
     },
@@ -7314,7 +7320,7 @@
         "z": "e988301e60e4b458",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
         "value": "coord-format",
         "command": "read",
@@ -7332,7 +7338,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 280,
+        "x": 310,
         "y": 540,
         "wires": [
             [
@@ -7458,7 +7464,7 @@
         "g": "610c7571a6ee5612",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -7476,7 +7482,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 500,
+        "x": 460,
         "y": 280,
         "wires": [
             [
@@ -7496,7 +7502,7 @@
             "df824b3eae9a8d40",
             "35280c47dcb8588f"
         ],
-        "x": 345,
+        "x": 265,
         "y": 280,
         "wires": [
             [
@@ -7771,7 +7777,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 550,
         "y": 540,
         "wires": [
             [
@@ -10500,7 +10506,7 @@
         "g": "c285048823f34bc0",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -10518,7 +10524,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 460,
+        "x": 420,
         "y": 200,
         "wires": [
             [
@@ -10536,7 +10542,7 @@
         "links": [
             "8228453d1c618570"
         ],
-        "x": 305,
+        "x": 225,
         "y": 200,
         "wires": [
             [
@@ -10563,7 +10569,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 460,
+        "x": 510,
         "y": 500,
         "wires": [
             [
@@ -10590,7 +10596,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 460,
+        "x": 510,
         "y": 540,
         "wires": [
             [
@@ -10618,7 +10624,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 450,
+        "x": 530,
         "y": 180,
         "wires": [
             [
@@ -10645,7 +10651,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 460,
+        "x": 540,
         "y": 220,
         "wires": [
             [
@@ -10661,7 +10667,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 900,
+        "x": 980,
         "y": 220,
         "wires": [
             []
@@ -10680,7 +10686,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
+        "x": 760,
         "y": 220,
         "wires": [
             [
@@ -10701,7 +10707,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 740,
         "y": 180,
         "wires": [
             [
@@ -10717,7 +10723,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 880,
+        "x": 960,
         "y": 180,
         "wires": [
             []
@@ -10810,7 +10816,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 890,
+        "x": 940,
         "y": 560,
         "wires": [
             [
@@ -10870,7 +10876,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 710,
+        "x": 760,
         "y": 540,
         "wires": [
             [
@@ -10892,7 +10898,7 @@
         "links": [
             "da2a5658f65d64a4"
         ],
-        "x": 985,
+        "x": 1035,
         "y": 560,
         "wires": []
     },
@@ -10906,7 +10912,7 @@
         "links": [
             "4b6824e2ecaa9016"
         ],
-        "x": 795,
+        "x": 845,
         "y": 520,
         "wires": []
     },
@@ -10921,7 +10927,7 @@
             "e0327fbe42203370",
             "62d2042e91fbe197"
         ],
-        "x": 345,
+        "x": 395,
         "y": 560,
         "wires": [
             [
@@ -10971,7 +10977,7 @@
         "links": [
             "e3b705ae1aa1b878"
         ],
-        "x": 795,
+        "x": 845,
         "y": 560,
         "wires": []
     },
@@ -10994,7 +11000,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 470,
+        "x": 550,
         "y": 260,
         "wires": [
             [
@@ -11015,7 +11021,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
+        "x": 760,
         "y": 260,
         "wires": [
             [
@@ -11031,7 +11037,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 880,
+        "x": 960,
         "y": 260,
         "wires": [
             []
@@ -11044,7 +11050,7 @@
         "g": "d3d7be8ef5f940c4",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "54330ee0-437d-11ef-946b-75401899c243",
         "value": "MSTS",
         "command": "read",
@@ -11062,7 +11068,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 260,
+        "x": 290,
         "y": 500,
         "wires": [
             [
@@ -11102,7 +11108,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
+        "x": 710,
         "y": 480,
         "wires": []
     },
@@ -11116,7 +11122,7 @@
         "links": [
             "49ea401a0745e446"
         ],
-        "x": 575,
+        "x": 625,
         "y": 560,
         "wires": []
     },
@@ -11127,7 +11133,7 @@
         "g": "99e9870d6e66aeaf",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -11145,7 +11151,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 260,
+        "x": 300,
         "y": 260,
         "wires": [
             [
@@ -11353,7 +11359,7 @@
         "links": [
             "d1f80e39243d05fb"
         ],
-        "x": 955,
+        "x": 1055,
         "y": 200,
         "wires": []
     },
@@ -11370,7 +11376,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
+        "x": 900,
         "y": 200,
         "wires": [
             [
@@ -11397,7 +11403,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 570,
+        "x": 670,
         "y": 200,
         "wires": [
             [
@@ -11453,7 +11459,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 560,
+        "x": 660,
         "y": 620,
         "wires": [
             [
@@ -11468,7 +11474,7 @@
         "g": "c8544c656ab24cf4",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
         "value": "coord-format",
         "command": "read",
@@ -11486,7 +11492,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 340,
+        "x": 370,
         "y": 620,
         "wires": [
             [
@@ -11502,7 +11508,7 @@
         "g": "c8544c656ab24cf4",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
         "value": "coord-format",
         "command": "write",
@@ -11520,7 +11526,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 780,
+        "x": 910,
         "y": 620,
         "wires": [
             [],
@@ -11546,7 +11552,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 570,
+        "x": 670,
         "y": 320,
         "wires": [
             [
@@ -11623,7 +11629,7 @@
         "g": "149a607c8eda744a",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -11641,7 +11647,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 340,
+        "x": 380,
         "y": 300,
         "wires": [
             [
@@ -11657,7 +11663,7 @@
         "g": "149a607c8eda744a",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
         "value": "operator_email",
         "command": "read",
@@ -11675,7 +11681,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 340,
+        "x": 380,
         "y": 340,
         "wires": [
             [
@@ -11691,7 +11697,7 @@
         "g": "149a607c8eda744a",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "write",
@@ -11709,7 +11715,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 800,
+        "x": 940,
         "y": 300,
         "wires": [
             [],
@@ -11723,7 +11729,7 @@
         "g": "149a607c8eda744a",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
         "value": "operator_email",
         "command": "write",
@@ -11741,7 +11747,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 800,
+        "x": 940,
         "y": 340,
         "wires": [
             [],
@@ -11755,7 +11761,7 @@
         "g": "1001f50c9610fbab",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -11773,7 +11779,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 340,
+        "x": 380,
         "y": 200,
         "wires": [
             [
@@ -11820,7 +11826,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 560,
+        "x": 660,
         "y": 480,
         "wires": [
             [
@@ -11859,7 +11865,7 @@
         "g": "8832a7e3b9ea8c13",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
         "value": "flowrate_preset",
         "command": "read",
@@ -11877,7 +11883,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 320,
+        "x": 360,
         "y": 440,
         "wires": [
             [
@@ -11893,9 +11899,9 @@
         "g": "8832a7e3b9ea8c13",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
-        "value": "florwrate_preset",
+        "value": "flowrate_preset",
         "command": "write",
         "msgProperty": "payload.flowrate_preset",
         "dynamicControl": false,
@@ -11911,7 +11917,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 830,
+        "x": 960,
         "y": 440,
         "wires": [
             [],
@@ -11925,7 +11931,7 @@
         "g": "8832a7e3b9ea8c13",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
         "value": "volume_preset",
         "command": "read",
@@ -11943,7 +11949,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 320,
+        "x": 360,
         "y": 480,
         "wires": [
             [
@@ -11959,7 +11965,7 @@
         "g": "8832a7e3b9ea8c13",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
         "value": "focus_preset",
         "command": "read",
@@ -11977,7 +11983,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 320,
+        "x": 350,
         "y": 520,
         "wires": [
             [
@@ -11993,7 +11999,7 @@
         "g": "8832a7e3b9ea8c13",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
         "value": "volume_preset",
         "command": "write",
@@ -12011,7 +12017,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 820,
+        "x": 960,
         "y": 480,
         "wires": [
             [],
@@ -12025,7 +12031,7 @@
         "g": "8832a7e3b9ea8c13",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
         "value": "focus_preset",
         "command": "write",
@@ -12043,7 +12049,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 820,
+        "x": 950,
         "y": 520,
         "wires": [
             [],
@@ -12069,7 +12075,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 570,
+        "x": 670,
         "y": 740,
         "wires": [
             [
@@ -12106,7 +12112,7 @@
         "g": "5518fb6d8287c2dc",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
         "value": "delay_to_stabilized",
         "command": "read",
@@ -12124,7 +12130,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 320,
+        "x": 350,
         "y": 720,
         "wires": [
             [
@@ -12140,7 +12146,7 @@
         "g": "5518fb6d8287c2dc",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "16042860-42c0-11ef-89ad-e57161842148",
         "value": "flowrate_in_between",
         "command": "read",
@@ -12158,7 +12164,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 320,
+        "x": 360,
         "y": 760,
         "wires": [
             [
@@ -12174,7 +12180,7 @@
         "g": "5518fb6d8287c2dc",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
         "value": "delay_to_stabilized",
         "command": "write",
@@ -12192,7 +12198,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 820,
+        "x": 950,
         "y": 720,
         "wires": [
             [],
@@ -12206,7 +12212,7 @@
         "g": "5518fb6d8287c2dc",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "16042860-42c0-11ef-89ad-e57161842148",
         "value": "flowrate_in_between",
         "command": "write",
@@ -12224,7 +12230,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 820,
+        "x": 960,
         "y": 760,
         "wires": [
             [],
@@ -12250,7 +12256,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 580,
+        "x": 680,
         "y": 860,
         "wires": [
             [
@@ -12265,7 +12271,7 @@
         "g": "290796618b24955f",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "54330ee0-437d-11ef-946b-75401899c243",
         "value": "MSTS",
         "command": "read",
@@ -12283,7 +12289,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 360,
+        "x": 390,
         "y": 860,
         "wires": [
             [
@@ -12299,7 +12305,7 @@
         "g": "290796618b24955f",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "54330ee0-437d-11ef-946b-75401899c243",
         "value": "MSTS",
         "command": "write",
@@ -12317,7 +12323,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 800,
+        "x": 930,
         "y": 860,
         "wires": [
             [],
@@ -14091,7 +14097,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"hardware-settings-container\">\n    <section>\n      <h2>Section one</h2>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Model</label>\n      <v-select\n        v-model=\"selected_hardware_model\"\n        :items=\"model_list\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>CPU</label>\n      <v-text-field\n        disabled\n        v-model=\"hardware_cpu\"\n        density=\"compact\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n      ></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>RAM</label>\n      <v-text-field\n        disabled\n        v-model=\"hardware_ram\"\n        density=\"compact\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n      ></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>HAT</label>\n      <v-select\n        v-model=\"selected_hardware_hat\"\n        :items=\"['adafruit', 'pscope_hat']\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Driver</label>\n      <v-select\n        v-model=\"selected_hardware_driver\"\n        :items=\"hardware_driver\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      selected_hardware_model: '',\n      selected_hardware_driver: '',\n      selected_hardware_hat: '',\n      model_list: [],\n      hardware_driver: [],\n      hardware_hat: [],\n      hardware_cpu: '',\n      hardware_ram: '',\n      dialog: false,\n    };\n  },\n  watch: {\n    selected_hardware_model: {\n        handler(newVal) {\n            this.send({ new_model_selected : newVal })\n        }\n    },\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n          if (payload.model_selected !== undefined) {\n            this.selected_hardware_model = payload.model_selected;\n          }\n          if (payload.selected_hat !== undefined) {\n            this.selected_hardware_hat = payload.selected_hat;\n          }\n          if (payload.hardware_driver !== undefined) {\n            this.selected_hardware_driver = payload.hardware_driver[0];\n            this.hardware_driver = payload.hardware_driver;\n          }\n          if (payload.hardware_cpu !== undefined) {\n            this.hardware_cpu = payload.hardware_cpu;\n          }\n          if (payload.hardware_ram !== undefined) {\n            this.hardware_ram = payload.hardware_ram;\n          }\n          if (payload.model_list !== undefined) {\n            this.model_list = payload.model_list;\n          }\n          if (payload.hardware_hat !== undefined) {\n            this.hardware_hat = payload.hardware_hat;\n          }\n        }\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  methods: {\n    switchDialog() {\n      this.dialog = !this.dialog;\n    },\n  }\n};\n</script>\n\n<style>\n.hardware-settings-container {\n  border: black 1px solid;\n  border-radius: 5px;\n  padding: 1rem;\n}\n\n.hardware-settings-container h2 {\n  margin-bottom: 1rem;\n}\n\n.hardware-settings-section-one-container {\n  display: flex;\n  align-items: center;\n  padding-left: 1rem;\n  margin-bottom: 1rem;\n}\n\n.hardware-settings-section-one-container label {\n  margin-right: 1rem;\n  min-width: 100px;\n}\n\n.hardware-settings-section-one-container .v-input {\n  max-width: 500px;\n}\n\n.hardware-settings-section-one-container .v-input__details {\n  display: none;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"hardware-settings-container\">\n    <section>\n      <h2>Section one</h2>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Model</label>\n      <v-select\n        v-model=\"selected_hardware_model\"\n        :items=\"model_list\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>CPU</label>\n      <v-text-field\n        disabled\n        v-model=\"hardware_cpu\"\n        density=\"compact\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n      ></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>RAM</label>\n      <v-text-field\n        disabled\n        v-model=\"hardware_ram\"\n        density=\"compact\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n      ></v-text-field>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>HAT</label>\n      <v-select\n        v-model=\"selected_hardware_hat\"\n        :items=\"['Adafruit Hat', 'PlanktoScope Hat']\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n    <section class=\"hardware-settings-section-one-container\">\n      <label>Driver</label>\n      <v-select\n        v-model=\"selected_hardware_driver\"\n        :items=\"hardware_driver\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"switchDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      selected_hardware_model: '',\n      selected_hardware_driver: '',\n      selected_hardware_hat: '',\n      model_list: [],\n      hardware_driver: [],\n      hardware_hat: [],\n      hardware_cpu: '',\n      hardware_ram: '',\n      dialog: false,\n    };\n  },\n  watch: {\n    selected_hardware_model: {\n        handler(newVal) {\n            this.send({ new_model_selected : newVal })\n        }\n    },\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n          if (payload.model_selected !== undefined) {\n            this.selected_hardware_model = payload.model_selected;\n          }\n          if (payload.selected_hat !== undefined) {\n            this.selected_hardware_hat = payload.selected_hat;\n          }\n          if (payload.hardware_driver !== undefined) {\n            this.selected_hardware_driver = payload.hardware_driver[0];\n            this.hardware_driver = payload.hardware_driver;\n          }\n          if (payload.hardware_cpu !== undefined) {\n            this.hardware_cpu = payload.hardware_cpu;\n          }\n          if (payload.hardware_ram !== undefined) {\n            this.hardware_ram = payload.hardware_ram;\n          }\n          if (payload.model_list !== undefined) {\n            this.model_list = payload.model_list;\n          }\n          if (payload.hardware_hat !== undefined) {\n            this.hardware_hat = payload.hardware_hat;\n          }\n        }\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  methods: {\n    switchDialog() {\n      this.dialog = !this.dialog;\n    },\n  }\n};\n</script>\n\n<style>\n.hardware-settings-container {\n  border: black 1px solid;\n  border-radius: 5px;\n  padding: 1rem;\n}\n\n.hardware-settings-container h2 {\n  margin-bottom: 1rem;\n}\n\n.hardware-settings-section-one-container {\n  display: flex;\n  align-items: center;\n  padding-left: 1rem;\n  margin-bottom: 1rem;\n}\n\n.hardware-settings-section-one-container label {\n  margin-right: 1rem;\n  min-width: 100px;\n}\n\n.hardware-settings-section-one-container .v-input {\n  max-width: 500px;\n}\n\n.hardware-settings-section-one-container .v-input__details {\n  display: none;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -14362,7 +14368,7 @@
         "g": "a193634e73cb129b",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "read",
@@ -14380,7 +14386,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 410,
+        "x": 440,
         "y": 320,
         "wires": [
             [
@@ -14396,7 +14402,7 @@
         "g": "a193634e73cb129b",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "write",
@@ -14414,7 +14420,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1070,
+        "x": 1100,
         "y": 320,
         "wires": [
             [
@@ -14503,7 +14509,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 860,
+        "x": 920,
         "y": 500,
         "wires": [
             [
@@ -14524,7 +14530,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 720,
         "y": 500,
         "wires": [
             [
@@ -14539,7 +14545,7 @@
         "g": "a193634e73cb129b",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "read",
@@ -14557,7 +14563,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 410,
+        "x": 440,
         "y": 500,
         "wires": [
             [
@@ -14572,14 +14578,14 @@
         "z": "b70df4b6cc88d09a",
         "g": "a193634e73cb129b",
         "name": "extractStepperType (HAT)",
-        "func": "const parsedData = JSON.parse(msg.payload);\nconst hat = parsedData.stepper_type;\n\nmsg.payload = {\n    selected_hat: hat\n};\n\nreturn msg;",
+        "func": "const parsedData = JSON.parse(msg.payload);\nconst hat = parsedData.stepper_type;\n\nif (hat == \"pscope_hat\") {\n    msg.payload = {\n        selected_hat: \"PlanktoScope Hat\"\n    };\n} else if (hat == \"adafruit\") {\n    msg.payload = {\n        selected_hat: \"Adafruit Hat\"\n    };\n} else {\n    msg.payload = {\n        selected_hat: hat\n    };\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
+        "x": 1130,
         "y": 500,
         "wires": [
             [
@@ -14674,7 +14680,7 @@
         "z": "b70df4b6cc88d09a",
         "g": "a193634e73cb129b",
         "name": "Set payload.ram",
-        "func": "const parsedData = JSON.parse(msg.payload);\n\n// Fonction pour convertir des octets en gigaoctets (GB)\nfunction bytesToGB(bytes) {\n    return bytes / 1e9; // 1 GB = 10^9 bytes\n}\n\n// Fonction pour convertir des octets en gibioctets (GiB)\nfunction bytesToGiB(bytes) {\n    return bytes / (1024 ** 3); // 1 GiB = 1024^3 bytes\n}\n\n// Extraire la valeur souhaitée\nconst value = parseInt(parsedData.data.result[0].value[1], 10);\n\n// Convertir en GB et GiB\nconst totalRAMGB = bytesToGB(value).toFixed(2); // Convertir et arrondir à 2 décimales\nconst totalRAMGiB = bytesToGiB(value).toFixed(2); // Convertir et arrondir à 2 décimales\n\n// Créer un nouveau payload avec la valeur arrondie\nmsg.payload = {\n    hardware_ram: totalRAMGB\n};\n\nreturn msg;",
+        "func": "const parsedData = JSON.parse(msg.payload);\n\n// Fonction pour convertir des octets en gigaoctets (GB)\nfunction bytesToGB(bytes) {\n    return bytes / 1e9; // 1 GB = 10^9 bytes\n}\n\n// Fonction pour convertir des octets en gibioctets (GiB)\nfunction bytesToGiB(bytes) {\n    return bytes / (1024 ** 3); // 1 GiB = 1024^3 bytes\n}\n\n// Extraire la valeur souhaitée\nconst value = parseInt(parsedData.data.result[0].value[1], 10);\n\n// Convertir en GB et GiB\nconst totalRAMGB = bytesToGB(value).toFixed(2); // Convertir et arrondir à 2 décimales\nconst totalRAMGiB = bytesToGiB(value).toFixed(2); // Convertir et arrondir à 2 décimales\n\n// Créer un nouveau payload avec la valeur arrondie\nmsg.payload = {\n    hardware_ram: totalRAMGB + \" GB\"\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14717,7 +14723,7 @@
         "links": [
             "f8e5f6cb539b3f29"
         ],
-        "x": 1235,
+        "x": 1305,
         "y": 320,
         "wires": []
     },
