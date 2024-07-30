@@ -377,11 +377,14 @@
             "color": "#000000"
         },
         "nodes": [
-            "4a4db8d5c9ce9226"
+            "4a4db8d5c9ce9226",
+            "8602fcc44b294bfc",
+            "5de1187ebfd8bc79",
+            "b708f61bae3b3542"
         ],
-        "x": 614,
-        "y": 1799,
-        "w": 212,
+        "x": 84,
+        "y": 1199,
+        "w": 1202,
         "h": 82
     },
     {
@@ -1380,7 +1383,7 @@
             "2fe68d76dd3ae605"
         ],
         "x": 84,
-        "y": 1159,
+        "y": 1479,
         "w": 1302,
         "h": 242
     },
@@ -2425,6 +2428,15 @@
                 "name": "sample_comment",
                 "datatype": "str",
                 "default": "",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "21548210-4e63-11ef-86a5-e9c7b2057935",
+                "name": "volume_of_the_bottle",
+                "datatype": "str",
+                "default": "0",
                 "description": "TO DO",
                 "scope": "global",
                 "storage": "default"
@@ -5952,16 +5964,18 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Bottle Specificity</h2>\n    <div class=\"horizontal-alignment-bottle-specificity\">\n      <!-- Volume of the bottle -->\n      <div class=\"label-bloc-bottle-specificity\">\n        <label class=\"v-label v-slider__label my-label-general\">Volume of the bottle</label>\n      </div>\n      <v-text-field \n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\" \n        v-model=\"volumeOfTheBottle\"\n        append-inner-icon=\"mdi-information\" \n        @click:append-inner=\"openDialog('dialog1')\" \n        suffix=\"L\"\n        class=\"text-spacing my-v-text-bottle\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        dialog1: false,\n        volumeOfTheBottle: 0,\n      };\n    },\n    methods: {\n      openDialog(dialog) {\n        this[dialog] = true;\n      },\n      closeDialog(dialog) {\n        this[dialog] = false;\n      },\n    },\n  };\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-bottle-specificity {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-bottle-specificity {\n    display: flex;\n    flex: 0.1;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text-bottle > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .my-v-text-bottle {\n    max-width: 150px !important;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Bottle Specificity</h2>\n    <div class=\"horizontal-alignment-bottle-specificity\">\n      <!-- Volume of the bottle -->\n      <div class=\"label-bloc-bottle-specificity\">\n        <label class=\"v-label v-slider__label my-label-general\">Volume of the bottle</label>\n      </div>\n      <v-text-field \n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\" \n        v-model=\"volumeOfTheBottle\"\n        @input=\"updatePayload\"\n        append-inner-icon=\"mdi-information\" \n        @click:append-inner=\"openDialog('dialog1')\" \n        suffix=\"L\"\n        class=\"text-spacing my-v-text-bottle\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      volumeOfTheBottle: 0,\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload && newVal.payload.volume_of_the_bottle !== undefined) {\n          this.volumeOfTheBottle = newVal.payload.volume_of_the_bottle;\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog(dialog) {\n      this[dialog] = true;\n    },\n    closeDialog(dialog) {\n      this[dialog] = false;\n    },\n    updatePayload() {\n      const payload = {\n        volume_of_the_bottle: this.volumeOfTheBottle,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-bottle-specificity {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-bottle-specificity {\n    display: flex;\n    flex: 0.1;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text-bottle > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .my-v-text-bottle {\n    max-width: 150px !important;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 720,
-        "y": 1840,
+        "y": 1240,
         "wires": [
-            []
+            [
+                "b708f61bae3b3542"
+            ]
         ]
     },
     {
@@ -6548,7 +6562,8 @@
             "aafeb9eb3283012d",
             "2ea39cad69e2deed",
             "ccc99ab3b0fae92f",
-            "df2075943eba1d2d"
+            "df2075943eba1d2d",
+            "5de1187ebfd8bc79"
         ],
         "x": 495,
         "y": 80,
@@ -7427,7 +7442,7 @@
         "templateScope": "local",
         "className": "",
         "x": 780,
-        "y": 1280,
+        "y": 1600,
         "wires": [
             [
                 "b8e827b49ed71ded",
@@ -7464,7 +7479,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 1360,
+        "y": 1680,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7498,7 +7513,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 1200,
+        "y": 1520,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7532,7 +7547,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 1240,
+        "y": 1560,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7566,7 +7581,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 1280,
+        "y": 1600,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7600,7 +7615,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 360,
-        "y": 1320,
+        "y": 1640,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -7620,7 +7635,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1200,
+        "y": 1520,
         "wires": [
             [
                 "11d0f008572b1816"
@@ -7639,7 +7654,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1240,
+        "y": 1560,
         "wires": [
             [
                 "88988d2b5efe7a55"
@@ -7658,7 +7673,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1280,
+        "y": 1600,
         "wires": [
             [
                 "aab491fd4d8d370e"
@@ -7677,7 +7692,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1320,
+        "y": 1640,
         "wires": [
             [
                 "b59379492732a989"
@@ -7696,7 +7711,7 @@
             "d82f912c99fe109a"
         ],
         "x": 125,
-        "y": 1360,
+        "y": 1680,
         "wires": [
             [
                 "d2e3027e09f33d42"
@@ -7729,7 +7744,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1170,
-        "y": 1360,
+        "y": 1680,
         "wires": [
             [],
             []
@@ -7761,7 +7776,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1160,
-        "y": 1200,
+        "y": 1520,
         "wires": [
             [],
             []
@@ -7793,7 +7808,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1160,
-        "y": 1240,
+        "y": 1560,
         "wires": [
             [],
             []
@@ -7825,7 +7840,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1170,
-        "y": 1280,
+        "y": 1600,
         "wires": [
             [],
             []
@@ -7857,7 +7872,92 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1180,
-        "y": 1320,
+        "y": 1640,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8602fcc44b294bfc",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "8f90fd4103e79371",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "836ae400-4e52-11ef-86a5-e9c7b2057935",
+        "value": "volume_of_the_collector",
+        "command": "read",
+        "msgProperty": "payload.volume_of_the_bottle",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 370,
+        "y": 1240,
+        "wires": [
+            [
+                "4a4db8d5c9ce9226"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5de1187ebfd8bc79",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "8f90fd4103e79371",
+        "name": "link in 117",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1240,
+        "wires": [
+            [
+                "8602fcc44b294bfc"
+            ]
+        ]
+    },
+    {
+        "id": "b708f61bae3b3542",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "8f90fd4103e79371",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "836ae400-4e52-11ef-86a5-e9c7b2057935",
+        "value": "volume_of_the_collector",
+        "command": "write",
+        "msgProperty": "payload.volume_of_the_bottle",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1070,
+        "y": 1240,
         "wires": [
             [],
             []
