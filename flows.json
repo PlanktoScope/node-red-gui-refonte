@@ -311,12 +311,24 @@
             "color": "#000000"
         },
         "nodes": [
-            "cc28e6514a5a9c99"
+            "cc28e6514a5a9c99",
+            "f92c7e06d2ed0d87",
+            "73f91661b6841190",
+            "7d0319cde5add08f",
+            "27c7bd9710ac7319",
+            "2cb31920428a948a",
+            "76c578ddabf2971c",
+            "71664d572a015628",
+            "9b5ddb73e366a41d",
+            "6109a08395735bbd",
+            "7bee2ea08d6b9f54",
+            "22424630f98f525f",
+            "a514467c6bc076c0"
         ],
-        "x": 614,
-        "y": 1059,
-        "w": 212,
-        "h": 82
+        "x": 84,
+        "y": 939,
+        "w": 1202,
+        "h": 202
     },
     {
         "id": "1f1d0daed5be1d7a",
@@ -332,7 +344,7 @@
             "d4041ec6e94072be"
         ],
         "x": 614,
-        "y": 1259,
+        "y": 1599,
         "w": 332,
         "h": 82
     },
@@ -350,7 +362,7 @@
             "470cceda379e27fc"
         ],
         "x": 614,
-        "y": 1359,
+        "y": 1699,
         "w": 312,
         "h": 82
     },
@@ -368,7 +380,7 @@
             "0eec8b84ecf95b07"
         ],
         "x": 614,
-        "y": 1459,
+        "y": 1799,
         "w": 312,
         "h": 82
     },
@@ -386,7 +398,7 @@
             "4a4db8d5c9ce9226"
         ],
         "x": 614,
-        "y": 1159,
+        "y": 1499,
         "w": 212,
         "h": 82
     },
@@ -404,7 +416,7 @@
             "5b2b9e8bb104b3d7"
         ],
         "x": 614,
-        "y": 1559,
+        "y": 1899,
         "w": 412,
         "h": 82
     },
@@ -422,7 +434,7 @@
             "e7fdcbc88dc9b248"
         ],
         "x": 614,
-        "y": 1659,
+        "y": 1999,
         "w": 272,
         "h": 82
     },
@@ -1159,6 +1171,89 @@
         "h": 322
     },
     {
+        "id": "45c6a7006373dadb",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Starting point",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "83a6ffa643836e87",
+            "cd0ffd27aadc1ff1",
+            "525d190603249cae",
+            "72b7984ea35d8a21",
+            "458b64fddb9c05d6",
+            "96ab8a6338e4fcfc",
+            "0f42da474afce82c",
+            "3370481fa03529d1",
+            "e401e74e5001fd4e",
+            "f1cd6cda6811df0d",
+            "86625c5739968525"
+        ],
+        "x": 84,
+        "y": 579,
+        "w": 1162,
+        "h": 162
+    },
+    {
+        "id": "95c11e857d45c6ae",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Ending point",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7749d4dc3f8e7fa5",
+            "2bb3a49785cacf3b",
+            "fc386a9e16260470",
+            "44f2e8c09ba525bd",
+            "e1496d26ab368e0a",
+            "0d4af74dc3740347",
+            "ac3ec79e3b41827f",
+            "fb2959a5122f4779",
+            "6a44d416b4b28ead",
+            "d8c320a906f03e95",
+            "30d76989325c8687"
+        ],
+        "x": 84,
+        "y": 759,
+        "w": 1162,
+        "h": 162
+    },
+    {
+        "id": "307fb977cf47b651",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Sample general information",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "23a443593bbc53fe",
+            "697ae94309963b9b",
+            "ceccdeb615cdc48b",
+            "35bf8991beb7e84d",
+            "6836b771497a13ae",
+            "bac194ac08ecd558",
+            "ab8f773ee48978da",
+            "0caf8dc53c166886",
+            "a1f5a28590776828",
+            "26384e9142c6e77d"
+        ],
+        "x": 174,
+        "y": 339,
+        "w": 1272,
+        "h": 162
+    },
+    {
         "id": "0ae7386dfdd66509",
         "type": "group",
         "z": "f260ed9417849607",
@@ -1273,89 +1368,6 @@
         "y": 1399,
         "w": 682,
         "h": 202
-    },
-    {
-        "id": "45c6a7006373dadb",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Starting point",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "83a6ffa643836e87",
-            "cd0ffd27aadc1ff1",
-            "525d190603249cae",
-            "72b7984ea35d8a21",
-            "458b64fddb9c05d6",
-            "96ab8a6338e4fcfc",
-            "0f42da474afce82c",
-            "3370481fa03529d1",
-            "e401e74e5001fd4e",
-            "f1cd6cda6811df0d",
-            "86625c5739968525"
-        ],
-        "x": 84,
-        "y": 579,
-        "w": 1162,
-        "h": 162
-    },
-    {
-        "id": "95c11e857d45c6ae",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Ending point",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "7749d4dc3f8e7fa5",
-            "2bb3a49785cacf3b",
-            "fc386a9e16260470",
-            "44f2e8c09ba525bd",
-            "e1496d26ab368e0a",
-            "0d4af74dc3740347",
-            "ac3ec79e3b41827f",
-            "fb2959a5122f4779",
-            "6a44d416b4b28ead",
-            "d8c320a906f03e95",
-            "30d76989325c8687"
-        ],
-        "x": 84,
-        "y": 759,
-        "w": 1162,
-        "h": 162
-    },
-    {
-        "id": "307fb977cf47b651",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Sample general information",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "23a443593bbc53fe",
-            "697ae94309963b9b",
-            "ceccdeb615cdc48b",
-            "35bf8991beb7e84d",
-            "6836b771497a13ae",
-            "bac194ac08ecd558",
-            "ab8f773ee48978da",
-            "0caf8dc53c166886",
-            "a1f5a28590776828",
-            "26384e9142c6e77d"
-        ],
-        "x": 174,
-        "y": 339,
-        "w": 1272,
-        "h": 162
     },
     {
         "id": "cae0178a8a69f787",
@@ -2317,6 +2329,42 @@
                 "name": "ending_point_gps",
                 "datatype": "json",
                 "default": "{}",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "80f7c120-4e52-11ef-86a5-e9c7b2057935",
+                "name": "mouth_opening_diam",
+                "datatype": "str",
+                "default": "0",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "82b15800-4e52-11ef-86a5-e9c7b2057935",
+                "name": "length_of_the_net",
+                "datatype": "str",
+                "default": "0",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "8330e840-4e52-11ef-86a5-e9c7b2057935",
+                "name": "mesh_size",
+                "datatype": "str",
+                "default": "0",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "836ae400-4e52-11ef-86a5-e9c7b2057935",
+                "name": "volume_of_the_collector",
+                "datatype": "str",
+                "default": "0",
                 "description": "TO DO",
                 "scope": "global",
                 "storage": "default"
@@ -5729,16 +5777,21 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Net specificity</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Mouth Opening Diam. -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Mouth Opening Diam.</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          variant=\"outlined\"\n          density=\"compact\"\n          v-model=\"mouthOpeningDiam\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          suffix=\"cm\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-btn>\n        </v-card>\n      </v-dialog>\n      <!-- Length of the Net -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Length of the Net</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"lengthOfTheNet\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          suffix=\"cm\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"meshSize\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\"\n          suffix=\"μm\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Volume of the collector -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Volume of the collector</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"volumeOfTheCollector\"\n          variant=\"outlined\"\n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\" \n          @click:append-inner=\"openDialog4\" \n          suffix=\"mL\" \n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog4\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        dialog1: false,\n        dialog2: false,\n        dialog3: false,\n        dialog4: false,\n        mouthOpeningDiam: 0,\n        lengthOfTheNet: 0,\n        meshSize: 0,\n        volumeOfTheCollector: 0,\n      };\n    },\n    methods: {\n      openDialog1() {\n        this.dialog1 = true;\n      },\n      openDialog2() {\n        this.dialog2 = true;\n      },\n      openDialog3() {\n        this.dialog3 = true;\n      },\n      openDialog4() {\n        this.dialog4 = true;\n      },\n      closeDialog1() {\n        this.dialog1 = false;\n      },\n      closeDialog2() {\n        this.dialog2 = false;\n      },\n      closeDialog3() {\n        this.dialog3 = false;\n      },\n      closeDialog4() {\n        this.dialog4 = false;\n      },\n    },\n  };\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .label-bloc {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  /* Adjust font size for smaller screens */\n  @media (max-width: 1180px) {\n    .my-label-general {\n      font-size: 1.1vw;\n    }\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .v-field__suffix {\n    background-color: rgba(10, 110, 202, 1);\n    padding: 0 5px;\n    border-radius: 5px;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Net specificity</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Mouth Opening Diam. -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Mouth Opening Diam.</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          variant=\"outlined\"\n          density=\"compact\"\n          v-model=\"mouthOpeningDiam\"\n          @input=\"updatePayload\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          suffix=\"cm\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Length of the Net -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Length of the Net</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"lengthOfTheNet\"\n          @input=\"updatePayload\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          suffix=\"cm\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"meshSize\"\n          @input=\"updatePayload\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\"\n          suffix=\"μm\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Volume of the collector -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Volume of the collector</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"volumeOfTheCollector\"\n          @input=\"updatePayload\"\n          variant=\"outlined\"\n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\" \n          @click:append-inner=\"openDialog4\" \n          suffix=\"mL\" \n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog4\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dialog4: false,\n      mouthOpeningDiam: 0,\n      lengthOfTheNet: 0,\n      meshSize: 0,\n      volumeOfTheCollector: 0,\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.mouth_opening_diam !== undefined) {\n            this.mouthOpeningDiam = payload.mouth_opening_diam;\n          }\n          if (payload.length_of_the_net !== undefined) {\n            this.lengthOfTheNet = payload.length_of_the_net;\n          }\n          if (payload.mesh_size !== undefined) {\n            this.meshSize = payload.mesh_size;\n          }\n          if (payload.volume_of_the_collector !== undefined) {\n            this.volumeOfTheCollector = payload.volume_of_the_collector;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    openDialog4() {\n      this.dialog4 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    closeDialog4() {\n      this.dialog4 = false;\n    },\n    updatePayload() {\n      const payload = {\n        mouth_opening_diam: this.mouthOpeningDiam,\n        length_of_the_net: this.lengthOfTheNet,\n        mesh_size: this.meshSize,\n        volume_of_the_collector: this.volumeOfTheCollector,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .label-bloc {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  /* Adjust font size for smaller screens */\n  @media (max-width: 1180px) {\n    .my-label-general {\n      font-size: 1.1vw;\n    }\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .v-field__suffix {\n    background-color: rgba(10, 110, 202, 1);\n    padding: 0 5px;\n    border-radius: 5px;\n  }\n</style>\n",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 720,
-        "y": 1100,
+        "y": 1040,
         "wires": [
-            []
+            [
+                "6109a08395735bbd",
+                "7bee2ea08d6b9f54",
+                "22424630f98f525f",
+                "a514467c6bc076c0"
+            ]
         ]
     },
     {
@@ -5796,7 +5849,7 @@
         "templateScope": "local",
         "className": "",
         "x": 780,
-        "y": 1300,
+        "y": 1640,
         "wires": [
             []
         ]
@@ -5821,7 +5874,7 @@
         "templateScope": "local",
         "className": "",
         "x": 770,
-        "y": 1400,
+        "y": 1740,
         "wires": [
             []
         ]
@@ -5846,7 +5899,7 @@
         "templateScope": "local",
         "className": "",
         "x": 770,
-        "y": 1500,
+        "y": 1840,
         "wires": [
             []
         ]
@@ -5871,7 +5924,7 @@
         "templateScope": "local",
         "className": "",
         "x": 720,
-        "y": 1200,
+        "y": 1540,
         "wires": [
             []
         ]
@@ -5896,7 +5949,7 @@
         "templateScope": "local",
         "className": "",
         "x": 820,
-        "y": 1600,
+        "y": 1940,
         "wires": [
             []
         ]
@@ -5921,7 +5974,7 @@
         "templateScope": "local",
         "className": "",
         "x": 750,
-        "y": 1700,
+        "y": 2040,
         "wires": [
             []
         ]
@@ -6446,7 +6499,11 @@
             "ee299c19ad77b417",
             "6a44d416b4b28ead",
             "d8c320a906f03e95",
-            "30d76989325c8687"
+            "30d76989325c8687",
+            "7d0319cde5add08f",
+            "2cb31920428a948a",
+            "71664d572a015628",
+            "9b5ddb73e366a41d"
         ],
         "x": 495,
         "y": 80,
@@ -6945,7 +7002,7 @@
         "type": "switch",
         "z": "e988301e60e4b458",
         "g": "307fb977cf47b651",
-        "name": "",
+        "name": "If no gear",
         "property": "payload.gear",
         "propertyType": "msg",
         "rules": [
@@ -6956,13 +7013,353 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 970,
+        "x": 980,
         "y": 440,
         "wires": [
             [
                 "a1f5a28590776828",
                 "0caf8dc53c166886"
             ]
+        ]
+    },
+    {
+        "id": "73f91661b6841190",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "80f7c120-4e52-11ef-86a5-e9c7b2057935",
+        "value": "mouth_opening_diam",
+        "command": "read",
+        "msgProperty": "payload.mouth_opening_diam",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 360,
+        "y": 980,
+        "wires": [
+            [
+                "cc28e6514a5a9c99"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7d0319cde5add08f",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "link in 108",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 980,
+        "wires": [
+            [
+                "73f91661b6841190"
+            ]
+        ]
+    },
+    {
+        "id": "27c7bd9710ac7319",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "82b15800-4e52-11ef-86a5-e9c7b2057935",
+        "value": "length_of_the_net",
+        "command": "read",
+        "msgProperty": "payload.length_of_the_net",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 1020,
+        "wires": [
+            [
+                "cc28e6514a5a9c99"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2cb31920428a948a",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "link in 109",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1020,
+        "wires": [
+            [
+                "27c7bd9710ac7319"
+            ]
+        ]
+    },
+    {
+        "id": "76c578ddabf2971c",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "8330e840-4e52-11ef-86a5-e9c7b2057935",
+        "value": "mesh_size",
+        "command": "read",
+        "msgProperty": "payload.mesh_size",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 330,
+        "y": 1060,
+        "wires": [
+            [
+                "cc28e6514a5a9c99"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "71664d572a015628",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "link in 110",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1060,
+        "wires": [
+            [
+                "76c578ddabf2971c"
+            ]
+        ]
+    },
+    {
+        "id": "f92c7e06d2ed0d87",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "836ae400-4e52-11ef-86a5-e9c7b2057935",
+        "value": "volume_of_the_collector",
+        "command": "read",
+        "msgProperty": "payload.volume_of_the_collector",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 370,
+        "y": 1100,
+        "wires": [
+            [
+                "cc28e6514a5a9c99"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9b5ddb73e366a41d",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "link in 111",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1100,
+        "wires": [
+            [
+                "f92c7e06d2ed0d87"
+            ]
+        ]
+    },
+    {
+        "id": "6109a08395735bbd",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "80f7c120-4e52-11ef-86a5-e9c7b2057935",
+        "value": "mouth_opening_diam",
+        "command": "write",
+        "msgProperty": "payload.mouth_opening_diam",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1060,
+        "y": 980,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7bee2ea08d6b9f54",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "82b15800-4e52-11ef-86a5-e9c7b2057935",
+        "value": "length_of_the_net",
+        "command": "write",
+        "msgProperty": "payload.length_of_the_net",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1050,
+        "y": 1020,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "22424630f98f525f",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "8330e840-4e52-11ef-86a5-e9c7b2057935",
+        "value": "mesh_size",
+        "command": "write",
+        "msgProperty": "payload.mesh_size",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1030,
+        "y": 1060,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a514467c6bc076c0",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "3e8b16808b1bfff5",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "836ae400-4e52-11ef-86a5-e9c7b2057935",
+        "value": "volume_of_the_collector",
+        "command": "write",
+        "msgProperty": "payload.volume_of_the_collector",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1070,
+        "y": 1100,
+        "wires": [
+            [],
+            []
         ]
     },
     {
