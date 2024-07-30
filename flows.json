@@ -374,12 +374,24 @@
             "color": "#000000"
         },
         "nodes": [
-            "0eec8b84ecf95b07"
+            "0eec8b84ecf95b07",
+            "5ac56b2b093b7f88",
+            "b5126cbae5244cd0",
+            "d691c85dafa9e96e",
+            "e1a92eec5d78dfc2",
+            "78ed3523acf4aa56",
+            "c50cd75b1ff8b242",
+            "d87add2bc6bd4ca6",
+            "8e84a78cf2bc0972",
+            "6863a516472cae2d",
+            "05ce26a33861a872",
+            "31086f2f8fadc1a9",
+            "a64633dc848b180d"
         ],
-        "x": 614,
-        "y": 1859,
-        "w": 312,
-        "h": 82
+        "x": 84,
+        "y": 1779,
+        "w": 1282,
+        "h": 202
     },
     {
         "id": "8f90fd4103e79371",
@@ -406,6 +418,7 @@
         "id": "b08415909e5dc4da",
         "type": "group",
         "z": "e988301e60e4b458",
+        "g": "2bcb4919f141230f",
         "name": "Other Information - Lab Culture & Demo / Test",
         "style": {
             "stroke": "#000000",
@@ -424,6 +437,7 @@
         "id": "ed805c7828d607cc",
         "type": "group",
         "z": "e988301e60e4b458",
+        "g": "2bcb4919f141230f",
         "name": "Custom sample metadata",
         "style": {
             "stroke": "#000000",
@@ -434,7 +448,7 @@
             "e7fdcbc88dc9b248"
         ],
         "x": 614,
-        "y": 2359,
+        "y": 2199,
         "w": 272,
         "h": 82
     },
@@ -1401,6 +1415,26 @@
         "y": 1259,
         "w": 1302,
         "h": 242
+    },
+    {
+        "id": "2bcb4919f141230f",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "TO DO",
+        "style": {
+            "stroke": "#ffC000",
+            "fill": "#ffcf3f",
+            "fill-opacity": "0.71",
+            "label": true
+        },
+        "nodes": [
+            "b08415909e5dc4da",
+            "ed805c7828d607cc"
+        ],
+        "x": 588,
+        "y": 2073,
+        "w": 464,
+        "h": 234
     },
     {
         "id": "cae0178a8a69f787",
@@ -2468,6 +2502,15 @@
             {
                 "id": "978fb080-4e63-11ef-86a5-e9c7b2057935",
                 "name": "depth_max",
+                "datatype": "str",
+                "default": "0",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "c0901960-4e64-11ef-86a5-e9c7b2057935",
+                "name": "depth",
                 "datatype": "str",
                 "default": "0",
                 "description": "TO DO",
@@ -5978,16 +6021,21 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Dillution factor -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field v-model=\"dillutionFactor\" variant=\"outlined\" density=\"compact\" type=\"number\" append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\" class=\"text-spacing my-v-text\"></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field v-model=\"sieveMeshSize\" variant=\"outlined\" density=\"compact\" type=\"number\" append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\" class=\"text-spacing my-v-text\"></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field v-model=\"depth\" variant=\"outlined\" density=\"compact\" type=\"number\" append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\" suffix=\"μm\" class=\"my-v-text\"></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea class=\"my-v-textarea\" variant=\"outlined\" density=\"compact\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depth: 0,\n    };\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .label-bloc-niskin-bottle {\n    display: flex;\n    flex: 0.1;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .my-label-comment {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  /* Adjust font size for smaller screens */\n  @media (max-width: 1180px) {\n    .my-label-general {\n      font-size: 1.1vw;\n    }\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-v-textarea>.v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Dillution factor -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"dillutionFactor\" \n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog1')\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"sieveMeshSize\" \n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog2')\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog2')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"depth\" \n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog3')\" \n          suffix=\"m\" \n          class=\"my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog3')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea v-model=\"sample_comment\" class=\"my-v-textarea\" variant=\"outlined\" density=\"compact\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depth: 0,\n      sample_comment: \"\"\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          if (newVal.payload.dillution_factor !== undefined) {\n            this.dillutionFactor = newVal.payload.dillution_factor;\n          }\n          if (newVal.payload.sieve_mesh_size !== undefined) {\n            this.sieveMeshSize = newVal.payload.sieve_mesh_size;\n          }\n          if (newVal.payload.depth !== undefined) {\n            this.depth = newVal.payload.depth;\n          }\n          if (newVal.payload.sample_comment !== undefined) {\n            this.sample_comment = newVal.payload.sample_comment;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog(dialog) {\n      this[dialog] = true;\n    },\n    closeDialog(dialog) {\n      this[dialog] = false;\n    },\n    updatePayload() {\n      const payload = {\n        dillution_factor: this.dillutionFactor,\n        sieve_mesh_size: this.sieveMeshSize,\n        depth: this.depth,\n        sample_comment: this.sample_comment,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .label-bloc-niskin-bottle {\n    display: flex;\n    flex: 0.1;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .my-label-comment {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  /* Adjust font size for smaller screens */\n  @media (max-width: 1180px) {\n    .my-label-general {\n      font-size: 1.1vw;\n    }\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-v-textarea>.v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n</style>\n",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 770,
-        "y": 1900,
+        "y": 1880,
         "wires": [
-            []
+            [
+                "78ed3523acf4aa56",
+                "c50cd75b1ff8b242",
+                "6863a516472cae2d",
+                "31086f2f8fadc1a9"
+            ]
         ]
     },
     {
@@ -6062,7 +6110,7 @@
         "templateScope": "local",
         "className": "",
         "x": 750,
-        "y": 2400,
+        "y": 2240,
         "wires": [
             []
         ]
@@ -6607,7 +6655,11 @@
             "b8678d0aef18a2b8",
             "52c9cc5d25da1cd7",
             "0c3837abf17b6e69",
-            "c727fe7b031df253"
+            "c727fe7b031df253",
+            "d691c85dafa9e96e",
+            "e1a92eec5d78dfc2",
+            "8e84a78cf2bc0972",
+            "a64633dc848b180d"
         ],
         "x": 495,
         "y": 80,
@@ -8429,6 +8481,346 @@
         "wires": [
             [
                 "5ff224fdd65af7b4"
+            ]
+        ]
+    },
+    {
+        "id": "5ac56b2b093b7f88",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "sieve_mesh_size",
+        "command": "read",
+        "msgProperty": "payload.sieve_mesh_size",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 1860,
+        "wires": [
+            [
+                "0eec8b84ecf95b07"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b5126cbae5244cd0",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "412c8850-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "dillution_factor",
+        "command": "read",
+        "msgProperty": "payload.dillution_factor",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 340,
+        "y": 1820,
+        "wires": [
+            [
+                "0eec8b84ecf95b07"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d691c85dafa9e96e",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "link in 123",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1860,
+        "wires": [
+            [
+                "5ac56b2b093b7f88"
+            ]
+        ]
+    },
+    {
+        "id": "e1a92eec5d78dfc2",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "link in 124",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1820,
+        "wires": [
+            [
+                "b5126cbae5244cd0"
+            ]
+        ]
+    },
+    {
+        "id": "78ed3523acf4aa56",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "412c8850-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "dillution_factor",
+        "command": "write",
+        "msgProperty": "payload.dillution_factor",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1160,
+        "y": 1820,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c50cd75b1ff8b242",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "sieve_mesh_size",
+        "command": "write",
+        "msgProperty": "payload.sieve_mesh_size",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1170,
+        "y": 1860,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d87add2bc6bd4ca6",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "sieve_mesh_size",
+        "command": "read",
+        "msgProperty": "payload.depth",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 1900,
+        "wires": [
+            [
+                "0eec8b84ecf95b07"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8e84a78cf2bc0972",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "link in 125",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1900,
+        "wires": [
+            [
+                "d87add2bc6bd4ca6"
+            ]
+        ]
+    },
+    {
+        "id": "6863a516472cae2d",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "sieve_mesh_size",
+        "command": "write",
+        "msgProperty": "payload.depth",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1170,
+        "y": 1900,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "05ce26a33861a872",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "69ca7b50-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "sample_comment",
+        "command": "read",
+        "msgProperty": "payload.sample_comment",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 1940,
+        "wires": [
+            [
+                "0eec8b84ecf95b07"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "31086f2f8fadc1a9",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "69ca7b50-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "sample_comment",
+        "command": "write",
+        "msgProperty": "payload.sample_comment",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1170,
+        "y": 1940,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a64633dc848b180d",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "fb17654b4a11e0db",
+        "name": "link in 126",
+        "links": [
+            "32e3989018637909",
+            "399010b7aa9cafb2",
+            "d82f912c99fe109a"
+        ],
+        "x": 125,
+        "y": 1940,
+        "wires": [
+            [
+                "05ce26a33861a872"
             ]
         ]
     },
