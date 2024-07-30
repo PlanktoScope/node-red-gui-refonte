@@ -415,44 +415,6 @@
         "h": 82
     },
     {
-        "id": "b08415909e5dc4da",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "g": "2bcb4919f141230f",
-        "name": "Other Information - Lab Culture & Demo / Test",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "5b2b9e8bb104b3d7"
-        ],
-        "x": 614,
-        "y": 2099,
-        "w": 412,
-        "h": 82
-    },
-    {
-        "id": "ed805c7828d607cc",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "g": "2bcb4919f141230f",
-        "name": "Custom sample metadata",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "e7fdcbc88dc9b248"
-        ],
-        "x": 614,
-        "y": 2199,
-        "w": 272,
-        "h": 82
-    },
-    {
         "id": "99e9870d6e66aeaf",
         "type": "group",
         "z": "00a14f98244d252e",
@@ -1038,7 +1000,7 @@
             "078a7c562c7ec691",
             "7b83d675be7b73a9"
         ],
-        "x": 304,
+        "x": 104,
         "y": 199,
         "w": 872,
         "h": 82
@@ -1062,17 +1024,17 @@
             "4bd4ed61fe231982",
             "07b89d6d2f243410",
             "ac21946563059ca9",
-            "6d6cc270dacfa20e",
-            "0c05e0937c13a28d",
             "1a8330a03101a150",
             "cba7a0cba93534cc",
             "7fd6408cf7e06683",
-            "d015e87016b2d964"
+            "d015e87016b2d964",
+            "7ba43cf89d3a06cd",
+            "b96b929fdeaef889"
         ],
-        "x": 454,
+        "x": 264,
         "y": 399,
-        "w": 1272,
-        "h": 222
+        "w": 1392,
+        "h": 182
     },
     {
         "id": "cec7b5c348ba4e10",
@@ -1087,7 +1049,7 @@
         "nodes": [
             "7e44e412732eb023"
         ],
-        "x": 614,
+        "x": 414,
         "y": 299,
         "w": 192,
         "h": 82
@@ -1274,6 +1236,97 @@
         "h": 162
     },
     {
+        "id": "b41373330b156c48",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Other Information - Horizontal Net",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "de68f6faec1d0aec",
+            "d2e3027e09f33d42",
+            "11d0f008572b1816",
+            "88988d2b5efe7a55",
+            "aab491fd4d8d370e",
+            "b59379492732a989",
+            "b4ae98a7ea25b34c",
+            "aafeb9eb3283012d",
+            "2ea39cad69e2deed",
+            "ccc99ab3b0fae92f",
+            "df2075943eba1d2d",
+            "d066cad88c9c9fd0",
+            "b8e827b49ed71ded",
+            "86ae07e38e28ca04",
+            "06f62ec6bb72808a",
+            "2fe68d76dd3ae605"
+        ],
+        "x": 84,
+        "y": 1259,
+        "w": 1302,
+        "h": 242
+    },
+    {
+        "id": "2bcb4919f141230f",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "TO DO",
+        "style": {
+            "stroke": "#ffC000",
+            "fill": "#ffcf3f",
+            "fill-opacity": "0.71",
+            "label": true
+        },
+        "nodes": [
+            "b08415909e5dc4da",
+            "ed805c7828d607cc"
+        ],
+        "x": 588,
+        "y": 2073,
+        "w": 464,
+        "h": 234
+    },
+    {
+        "id": "b08415909e5dc4da",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "g": "2bcb4919f141230f",
+        "name": "Other Information - Lab Culture & Demo / Test",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5b2b9e8bb104b3d7"
+        ],
+        "x": 614,
+        "y": 2099,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "ed805c7828d607cc",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "g": "2bcb4919f141230f",
+        "name": "Custom sample metadata",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e7fdcbc88dc9b248"
+        ],
+        "x": 614,
+        "y": 2199,
+        "w": 272,
+        "h": 82
+    },
+    {
         "id": "0ae7386dfdd66509",
         "type": "group",
         "z": "f260ed9417849607",
@@ -1366,83 +1419,6 @@
         "h": 1008
     },
     {
-        "id": "51eac7d7db06e919",
-        "type": "group",
-        "z": "f260ed9417849607",
-        "g": "1ed0d4a04eb675ba",
-        "name": "DataTable",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "f9ea49beed099d6f",
-            "20f133774f79275e",
-            "1d8bc6ea7056cbdd",
-            "4d0362defd7a3b29",
-            "0d159c22ef7345c9",
-            "9317b92afaa7669e"
-        ],
-        "x": 264,
-        "y": 1399,
-        "w": 682,
-        "h": 202
-    },
-    {
-        "id": "b41373330b156c48",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Other Information - Horizontal Net",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "de68f6faec1d0aec",
-            "d2e3027e09f33d42",
-            "11d0f008572b1816",
-            "88988d2b5efe7a55",
-            "aab491fd4d8d370e",
-            "b59379492732a989",
-            "b4ae98a7ea25b34c",
-            "aafeb9eb3283012d",
-            "2ea39cad69e2deed",
-            "ccc99ab3b0fae92f",
-            "df2075943eba1d2d",
-            "d066cad88c9c9fd0",
-            "b8e827b49ed71ded",
-            "86ae07e38e28ca04",
-            "06f62ec6bb72808a",
-            "2fe68d76dd3ae605"
-        ],
-        "x": 84,
-        "y": 1259,
-        "w": 1302,
-        "h": 242
-    },
-    {
-        "id": "2bcb4919f141230f",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "TO DO",
-        "style": {
-            "stroke": "#ffC000",
-            "fill": "#ffcf3f",
-            "fill-opacity": "0.71",
-            "label": true
-        },
-        "nodes": [
-            "b08415909e5dc4da",
-            "ed805c7828d607cc"
-        ],
-        "x": 588,
-        "y": 2073,
-        "w": 464,
-        "h": 234
-    },
-    {
         "id": "13cdc4d42826fa8f",
         "type": "group",
         "z": "2d41a8ed5aea3449",
@@ -1501,6 +1477,30 @@
         "y": 379,
         "w": 492,
         "h": 882
+    },
+    {
+        "id": "51eac7d7db06e919",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "g": "1ed0d4a04eb675ba",
+        "name": "DataTable",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f9ea49beed099d6f",
+            "20f133774f79275e",
+            "1d8bc6ea7056cbdd",
+            "4d0362defd7a3b29",
+            "0d159c22ef7345c9",
+            "9317b92afaa7669e"
+        ],
+        "x": 264,
+        "y": 1399,
+        "w": 682,
+        "h": 202
     },
     {
         "id": "cae0178a8a69f787",
@@ -14787,7 +14787,8 @@
         "name": "link out 81",
         "mode": "link",
         "links": [
-            "7b83d675be7b73a9"
+            "7b83d675be7b73a9",
+            "01ba7a39a6150e16"
         ],
         "x": 255,
         "y": 120,
@@ -14852,7 +14853,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 500,
+        "x": 300,
         "y": 240,
         "wires": [
             [
@@ -14880,7 +14881,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 740,
+        "x": 540,
         "y": 240,
         "wires": [
             [
@@ -14901,7 +14902,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
+        "x": 780,
         "y": 240,
         "wires": [
             [
@@ -14919,7 +14920,7 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 1135,
+        "x": 935,
         "y": 240,
         "wires": []
     },
@@ -14932,7 +14933,7 @@
         "links": [
             "a3a9370294d86cb2"
         ],
-        "x": 345,
+        "x": 145,
         "y": 240,
         "wires": [
             [
@@ -14953,13 +14954,13 @@
         "width": "3",
         "height": "7",
         "head": "",
-        "format": "<template>\n  <div class=\"left-pannel-container\">\n    <v-btn color=\"#076eac\" dark @click=\"moreDetails\">More details</v-btn>\n  </div>\n</template>\n\n<script>\nexport default {\n  methods: {\n    moreDetails() {\n      window.open('/admin/grafana/d/host-summary/host-summary?orgId=1&refresh=5s&kiosk', '_blank');\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .left-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n</style>",
+        "format": "<template>\n  <div class=\"left-panel-container\">\n    <iframe src=\"http://92.167.184.163/admin/grafana/d-solo/host-summary/host-summary?orgId=1&refresh=5s&kiosk=&from=1722345929943&to=1722346229943&theme=dark&panelId=266\" width=\"450\" height=\"200\" frameborder=\"0\"></iframe>\n    <iframe src=\"http://92.167.184.163/admin/grafana/d-solo/host-summary/host-summary?orgId=1&refresh=5s&kiosk=&from=1722345959872&to=1722346259872&theme=dark&panelId=16\" width=\"450\" height=\"200\" frameborder=\"0\"></iframe>\n    <iframe src=\"http://92.167.184.163/admin/grafana/d-solo/host-summary/host-summary?orgId=1&refresh=5s&kiosk=&from=1722345972787&to=1722346272787&theme=dark&panelId=154\" width=\"450\" height=\"200\" frameborder=\"0\"></iframe>\n    <v-btn color=\"#076eac\" dark @click=\"moreDetails\">More details</v-btn>\n  </div>\n</template>\n\n<script>\nexport default {\n  methods: {\n    moreDetails() {\n      // URL relative à ouvrir\n      const relativeUrl = '/admin/grafana/d/host-summary/host-summary?orgId=1&refresh=5s&kiosk';\n      \n      // Fonction pour enlever le port d'une URL\n      function removePortFromUrl(url) {\n        return url.replace(/:\\d+/, ''); // Enlève les ports (comme :8080)\n      }\n      \n      // Récupérer dynamiquement la base URL\n      const baseUrl = `${window.location.protocol}//${window.location.hostname}`;\n      \n      // Construire l'URL complète\n      const fullUrl = `${removePortFromUrl(baseUrl)}${relativeUrl}`;\n      \n      // Ouvrir la nouvelle fenêtre\n      window.open(fullUrl, '_blank');\n    },\n  },\n};\n</script>\n\n<style scoped>\n.left-panel-container {\n  background-color: rgb(24, 27, 31);\n  border-radius: 4px;\n  padding: 1rem;\n  display: flex;\n  flex-direction: column; \n  align-items: center;\n  justify-content: center;\n}\n\niframe {\n  margin-bottom: 1rem;\n  width: 75%;\n}\n\niframe .grafana-app {\n  background-color: transparent !important;\n  border: none !important;\n}\n\nv-btn {\n  margin-top: 1rem;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 710,
+        "x": 510,
         "y": 340,
         "wires": [
             []
@@ -14984,7 +14985,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 710,
+        "x": 510,
         "y": 440,
         "wires": [
             [
@@ -15010,7 +15011,7 @@
         "topic": "",
         "payload": "{\"segmenterStatus\":\"Working\",\"hardwareStatus\":\"KO\"}",
         "payloadType": "json",
-        "x": 560,
+        "x": 360,
         "y": 440,
         "wires": [
             [
@@ -15025,7 +15026,7 @@
         "g": "6dabc68acbd23974",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "read",
@@ -15043,7 +15044,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1070,
+        "x": 900,
         "y": 440,
         "wires": [
             [
@@ -15065,7 +15066,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1280,
+        "x": 1140,
         "y": 440,
         "wires": [
             [
@@ -15087,7 +15088,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 1300,
-        "y": 480,
+        "y": 440,
         "wires": [
             [
                 "ac21946563059ca9"
@@ -15107,8 +15108,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1330,
-        "y": 520,
+        "x": 1310,
+        "y": 480,
         "wires": [
             [
                 "ab09fc7b9f3e8189"
@@ -15151,70 +15152,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1360,
-        "y": 560,
+        "x": 1330,
+        "y": 520,
         "wires": [
             [
-                "6d6cc270dacfa20e"
+                "7ba43cf89d3a06cd"
             ],
             [
-                "0c05e0937c13a28d"
-            ]
-        ]
-    },
-    {
-        "id": "6d6cc270dacfa20e",
-        "type": "change",
-        "z": "a697ff46c6e7b7fb",
-        "g": "6dabc68acbd23974",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"url\":\"/admin/cockpit/system/logs#/?prio=debug&service=planktoscope-org.device-backend.controller-adafruithat.service\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1550,
-        "y": 540,
-        "wires": [
-            [
-                "1a8330a03101a150"
-            ]
-        ]
-    },
-    {
-        "id": "0c05e0937c13a28d",
-        "type": "change",
-        "z": "a697ff46c6e7b7fb",
-        "g": "6dabc68acbd23974",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"url\":\"/admin/cockpit/system/logs#/?prio=debug&service=planktoscope-org.device-backend.controller-planktoscopehat.service\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1550,
-        "y": 580,
-        "wires": [
-            [
-                "cba7a0cba93534cc"
+                "b96b929fdeaef889"
             ]
         ]
     },
@@ -15241,7 +15186,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 860,
+        "x": 660,
         "y": 440,
         "wires": [
             [
@@ -15262,8 +15207,8 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 1685,
-        "y": 540,
+        "x": 1615,
+        "y": 500,
         "wires": []
     },
     {
@@ -15276,8 +15221,8 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 1685,
-        "y": 580,
+        "x": 1615,
+        "y": 540,
         "wires": []
     },
     {
@@ -15300,8 +15245,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1030,
-        "y": 500,
+        "x": 820,
+        "y": 480,
         "wires": [
             [
                 "d015e87016b2d964"
@@ -15318,9 +15263,65 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 1155,
-        "y": 500,
+        "x": 935,
+        "y": 480,
         "wires": []
+    },
+    {
+        "id": "7ba43cf89d3a06cd",
+        "type": "change",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"url\":\"/admin/cockpit/system/logs#/?prio=debug&service=planktoscope-org.device-backend.controller-adafruithat.service\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1500,
+        "y": 500,
+        "wires": [
+            [
+                "1a8330a03101a150"
+            ]
+        ]
+    },
+    {
+        "id": "b96b929fdeaef889",
+        "type": "change",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"url\":\"/admin/cockpit/system/logs#/?prio=debug&service=planktoscope-org.device-backend.controller-planktoscopehat.service\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1500,
+        "y": 540,
+        "wires": [
+            [
+                "cba7a0cba93534cc"
+            ]
+        ]
     },
     {
         "id": "bbc0bc87e0f09f5b",
