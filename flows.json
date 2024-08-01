@@ -261,16 +261,16 @@
         "nodes": [
             "dc1b246968e8333a",
             "2efa775925b01a42",
-            "a1aa80bf2f2ebbeb",
             "9f562d703ae1ccbf",
             "a8b40501e4c53fed",
             "d9eb89c9df2fc684",
-            "997c71e9dcf596e8"
+            "997c71e9dcf596e8",
+            "195c9cd3562460a3"
         ],
-        "x": 374,
+        "x": 354,
         "y": 359,
-        "w": 712,
-        "h": 222
+        "w": 692,
+        "h": 142
     },
     {
         "id": "610c7571a6ee5612",
@@ -540,7 +540,6 @@
             "9529b63ced697421",
             "49ea401a0745e446",
             "42fc3d43830febaa",
-            "b0c9b9896fec03cd",
             "aa582b7c4e2ce8c7",
             "67b91503eb38afe7",
             "033732c765f1c939",
@@ -1029,7 +1028,8 @@
             "7fd6408cf7e06683",
             "d015e87016b2d964",
             "7ba43cf89d3a06cd",
-            "b96b929fdeaef889"
+            "b96b929fdeaef889",
+            "31e5b0e4d97debdb"
         ],
         "x": 264,
         "y": 399,
@@ -1504,6 +1504,54 @@
         "y": 1399,
         "w": 682,
         "h": 202
+    },
+    {
+        "id": "b383604c2ffb0c81",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "update_config",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000",
+            "fill": "#ffffff"
+        },
+        "nodes": [
+            "fb9d64e1d38df424",
+            "d40e81478f29c1fd",
+            "5c846bbe8d829d09",
+            "f7c549d688a82217",
+            "c156111030f8a27d",
+            "789fba5e1d1d171a",
+            "66b5dbde2d2c4978",
+            "ef1499f9032e38e2",
+            "9fafb0cdbf808e08",
+            "ac6013d701d061e8",
+            "e85a9d29696e99ff",
+            "fe9d0a3dfde010c9",
+            "9297c1303d0ee9c3",
+            "c3aceb9c96df8b7f",
+            "c60830e67ed5eb74",
+            "4d6b8ff374ab04e3",
+            "654adf3b10120e05",
+            "c208d5a251de3101",
+            "dab3f2c5661aa8cb",
+            "777e1a6e9359d931",
+            "a8339dd574181c71",
+            "472821529981cf6d",
+            "0769aafda6e1b0e7",
+            "99c17632bfa31f50",
+            "07f475bc9d5e2b12",
+            "fe00896803b982bf",
+            "9cdb5df1dba5e667",
+            "5b086554d036cbde",
+            "c2ad4cea7159a08e",
+            "cea09d01c3bacaa7"
+        ],
+        "x": 234,
+        "y": 999,
+        "w": 672,
+        "h": 1202
     },
     {
         "id": "cae0178a8a69f787",
@@ -10257,41 +10305,15 @@
                 "p": "payload"
             }
         ],
-        "repeat": "",
+        "repeat": "3",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "{\"imageVolume\":\"xx mL\",\"totalVolume\":\"xx mL\",\"progression\":0}",
         "payloadType": "json",
-        "x": 730,
-        "y": 500,
-        "wires": [
-            [
-                "dc1b246968e8333a"
-            ]
-        ]
-    },
-    {
-        "id": "a1aa80bf2f2ebbeb",
-        "type": "inject",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"imageVolume\":\"xx mL\",\"totalVolume\":\"xx mL\",\"progression\":45}",
-        "payloadType": "json",
-        "x": 730,
-        "y": 540,
+        "x": 450,
+        "y": 460,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -10374,7 +10396,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 1410,
-        "y": 260,
+        "y": 300,
         "wires": [
             [
                 "b3e666d4e675a451"
@@ -10395,7 +10417,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1580,
-        "y": 260,
+        "y": 300,
         "wires": []
     },
     {
@@ -10403,7 +10425,7 @@
         "type": "mqtt in",
         "z": "70f558eb9d60b6fc",
         "g": "3b32c3c9506eb933",
-        "name": "Listen pump status",
+        "name": "Listen imager status",
         "topic": "status/imager",
         "qos": "2",
         "datatype": "auto-detect",
@@ -10455,11 +10477,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 890,
+        "x": 850,
         "y": 440,
         "wires": [
             [
-                "997c71e9dcf596e8"
+                "997c71e9dcf596e8",
+                "195c9cd3562460a3"
             ]
         ]
     },
@@ -10478,7 +10501,7 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1010,
+        "x": 970,
         "y": 440,
         "wires": []
     },
@@ -10561,6 +10584,963 @@
         ]
     },
     {
+        "id": "38eb86dbbfc19d0c",
+        "type": "mqtt in",
+        "z": "70f558eb9d60b6fc",
+        "name": "Listen imager status",
+        "topic": "status/imager",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 870,
+        "y": 620,
+        "wires": [
+            [
+                "c29ee03826c0e56f"
+            ]
+        ]
+    },
+    {
+        "id": "918aba2d582e4a12",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "name": "Set camera settings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"action\":\"settings\",\"settings\":{\"iso\":100,\"shutter_speed\":40,\"white_balance_gain\":{\"red\":100,\"blue\":100},\"white_balance\":\"auto\"}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 620,
+        "wires": [
+            [
+                "e9702e2afce40391"
+            ]
+        ]
+    },
+    {
+        "id": "20a346b078ede9c7",
+        "type": "inject",
+        "z": "70f558eb9d60b6fc",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 620,
+        "wires": [
+            [
+                "918aba2d582e4a12"
+            ]
+        ]
+    },
+    {
+        "id": "493a955bf1c201df",
+        "type": "mqtt out",
+        "z": "70f558eb9d60b6fc",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 970,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "1f0db78d4becd99d",
+        "type": "mqtt out",
+        "z": "70f558eb9d60b6fc",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 650,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "e9702e2afce40391",
+        "type": "debug",
+        "z": "70f558eb9d60b6fc",
+        "name": "debug 47",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "c29ee03826c0e56f",
+        "type": "debug",
+        "z": "70f558eb9d60b6fc",
+        "name": "debug 48",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3d34655784229e7d",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "name": "Set metadata",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"action\":\"update_config\",\"config\":{\"sample_project\":\"fairscope bzh\",\"sample_id\":\"fairscope_bzh_estacade\",\"sample_uuid\":\"uuid-1234\",\"sample_ship\":\"Fairscope\",\"sample_operator\":\"jeremy\",\"sample_sampling_gear\":\"net\",\"sample_concentrated_sample_volume\":70,\"sample_total_volume\":100,\"sample_dilution_factor\":10,\"sample_speed_through_water\":\"5 knots\",\"sample_instrument\":\"PlanktoScope v2.6\",\"sample_bottom_depth\":\"N/A\",\"sample_depth_min\":0.1,\"sample_depth_max\":0.5,\"sample_temperature\":\"N/A\",\"sample_salinity\":\"N/A\",\"sample_date\":\"2024-05-15\",\"acq_id\":\"fairscope_bzh_estacade_2\",\"acq_instrument\":\"PlanktoScope v2.6\",\"acq_magnification\":\"1.2\",\"acq_camera_id\":\"deep-point-8125\",\"acq_camera_lens\":\"N/A\",\"acq_software\":\"PlanktoScope v2024.0.0-alpha.1\",\"acq_atlas_id\":\"N/A\",\"acq_resolution\":\"1080p\",\"acq_stacks_count\":\"N/A\",\"acq_time_between_frames\":0.3,\"acq_brightness\":\"N/A\",\"acq_contrast\":\"N/A\",\"acq_sharpness\":\"N/A\",\"acq_saturation\":\"N/A\",\"acq_gamma\":\"N/A\",\"acq_uuid\":\"acq-uuid-5678\",\"acq_volume\":2.5,\"acq_imaged_volume\":1.04,\"acq_minimum_mesh\":300,\"acq_maximum_mesh\":300,\"acq_min_esd\":300,\"acq_max_esd\":300,\"acq_camera_name\":\"HQ Camera\",\"acq_nb_frame\":500,\"acq_local_datetime\":\"2024-05-15T09:00:00Z\",\"acq_caamera_iso\":400,\"acq_camera_shutter_speed\":500,\"object_date\":\"2024-05-15\",\"object_time\":\"09:00:00Z\",\"object_lat\":48.7273,\"object_lon\":-3.9814,\"object_depth_min\":0.1,\"object_depth_max\":0.5,\"process_pixel\":0.75,\"process_datetime\":\"2024-05-15T09:00:00Z\",\"process_id\":\"Process01\",\"process_uuid\":\"proc-uuid-7890\",\"process_source\":\"https://www.github.com/PlanktonPlanet/PlanktoScope\",\"process_commit\":\"CommitHash\",\"sample_gear_net_opening\":300,\"object_date_end\":\"2024-05-15\",\"object_time_end\":\"10:00:00Z\",\"object_lat_end\":48.7274,\"object_lon_end\":-3.9815}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 720,
+        "wires": [
+            [
+                "91874c54064c8346"
+            ]
+        ]
+    },
+    {
+        "id": "c78e34509b3c6c91",
+        "type": "inject",
+        "z": "70f558eb9d60b6fc",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 720,
+        "wires": [
+            [
+                "3d34655784229e7d"
+            ]
+        ]
+    },
+    {
+        "id": "b4a6261d50d0a9c3",
+        "type": "mqtt out",
+        "z": "70f558eb9d60b6fc",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 650,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "91874c54064c8346",
+        "type": "debug",
+        "z": "70f558eb9d60b6fc",
+        "name": "debug 49",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "8c07a793d77cd58e",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "name": "Start acquisition",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{   \"action\": \"image\",   \"pump_direction\": \"FORWARD\",   \"volume\": 1,   \"nb_frame\": 200,   \"sleep\": 0.1 }",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 820,
+        "wires": [
+            [
+                "f54085261962250a"
+            ]
+        ]
+    },
+    {
+        "id": "0bb6795edc294976",
+        "type": "inject",
+        "z": "70f558eb9d60b6fc",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 820,
+        "wires": [
+            [
+                "8c07a793d77cd58e"
+            ]
+        ]
+    },
+    {
+        "id": "de08d6420ef15c2f",
+        "type": "mqtt out",
+        "z": "70f558eb9d60b6fc",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 650,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "f54085261962250a",
+        "type": "debug",
+        "z": "70f558eb9d60b6fc",
+        "name": "debug 50",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "99e0caf3dade264c",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "name": "Stop acquisition",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{   \"action\": \"stop\" }",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 920,
+        "wires": [
+            [
+                "498234fe993c8497"
+            ]
+        ]
+    },
+    {
+        "id": "2c19f6e21b437be6",
+        "type": "inject",
+        "z": "70f558eb9d60b6fc",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 920,
+        "wires": [
+            [
+                "99e0caf3dade264c"
+            ]
+        ]
+    },
+    {
+        "id": "6548be4f715dbe50",
+        "type": "mqtt out",
+        "z": "70f558eb9d60b6fc",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 650,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "498234fe993c8497",
+        "type": "debug",
+        "z": "70f558eb9d60b6fc",
+        "name": "debug 51",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "195c9cd3562460a3",
+        "type": "debug",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "name": "debug 52",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "fb9d64e1d38df424",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "8dad4db0-4e50-11ef-86a5-e9c7b2057935",
+        "value": "project_name",
+        "command": "read",
+        "msgProperty": "payload.project_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 1040,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d40e81478f29c1fd",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "90285fd0-4e50-11ef-86a5-e9c7b2057935",
+        "value": "sample_id",
+        "command": "read",
+        "msgProperty": "payload.project_id",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 410,
+        "y": 1080,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5c846bbe8d829d09",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_uuid\": \"uuid-1234\",",
+        "info": "",
+        "x": 380,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "f7c549d688a82217",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_ship\": \"Fairscope\",",
+        "info": "",
+        "x": 380,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "c156111030f8a27d",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "read",
+        "msgProperty": "payload.operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 1200,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "789fba5e1d1d171a",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_sampling_gear\": \"net\",",
+        "info": "",
+        "x": 390,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "66b5dbde2d2c4978",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_concentrated_sample_volume\": 70,",
+        "info": "",
+        "x": 430,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "ef1499f9032e38e2",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_total_volume\": 100,",
+        "info": "",
+        "x": 380,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "9fafb0cdbf808e08",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "412c8850-4e5c-11ef-86a5-e9c7b2057935",
+        "value": "dillution_factor",
+        "command": "read",
+        "msgProperty": "payload.dillution_factor",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 1360,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ac6013d701d061e8",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_speed_through_water\": \"5 knots\",",
+        "info": "",
+        "x": 420,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "e85a9d29696e99ff",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
+        "value": "model_selected",
+        "command": "read",
+        "msgProperty": "payload.model_selected",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 1440,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fe9d0a3dfde010c9",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_speed_through_water\": \"5 knots\",",
+        "info": "",
+        "x": 420,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "9297c1303d0ee9c3",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "92ae25b0-4e63-11ef-86a5-e9c7b2057935",
+        "value": "depth_min",
+        "command": "read",
+        "msgProperty": "payload.depth_min",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 410,
+        "y": 1520,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c3aceb9c96df8b7f",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "978fb080-4e63-11ef-86a5-e9c7b2057935",
+        "value": "depth_max",
+        "command": "read",
+        "msgProperty": "payload.depth_max",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 410,
+        "y": 1560,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c60830e67ed5eb74",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_temperature\": \"N/A\"",
+        "info": "",
+        "x": 380,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "4d6b8ff374ab04e3",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_salinity\": \"N/A\",",
+        "info": "",
+        "x": 370,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "654adf3b10120e05",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "907912f0-4dc3-11ef-86a5-e9c7b2057935",
+        "value": "starting_point_date",
+        "command": "read",
+        "msgProperty": "payload.depth_max",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 430,
+        "y": 1680,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c208d5a251de3101",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "d66c06a0-4dc3-11ef-86a5-e9c7b2057935",
+        "value": "ending_point_date",
+        "command": "read",
+        "msgProperty": "payload.depth_max",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 430,
+        "y": 1720,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dab3f2c5661aa8cb",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"sample_date\": \"2024-05-15\",",
+        "info": "",
+        "x": 760,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "777e1a6e9359d931",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"acq_id\": \"fairscope_bzh_estacade_2\",",
+        "info": "",
+        "x": 410,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "a8339dd574181c71",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
+        "value": "model_selected",
+        "command": "read",
+        "msgProperty": "payload.model_selected",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 1800,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "472821529981cf6d",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"acq_magnification\": \"1.2\",",
+        "info": "",
+        "x": 370,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "0769aafda6e1b0e7",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"acq_camera_id\": \"deep-point-8125\",",
+        "info": "",
+        "x": 400,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "99c17632bfa31f50",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": " \"acq_camera_lens\": \"N/A\",",
+        "info": "",
+        "x": 370,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "07f475bc9d5e2b12",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"acq_software\": \"PlanktoScope v2024.0.0-alpha.1\",",
+        "info": "",
+        "x": 450,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "fe00896803b982bf",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"acq_atlas_id\": \"N/A\",     ",
+        "info": "",
+        "x": 360,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "9cdb5df1dba5e667",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"acq_resolution\": \"1080p\",     ",
+        "info": "",
+        "x": 370,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "5b086554d036cbde",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "\"acq_stacks_count\": \"N/A\",",
+        "info": "",
+        "x": 370,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "c2ad4cea7159a08e",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
+        "value": "delay_to_stabilized",
+        "command": "read",
+        "msgProperty": "payload.delay_to_stabilize",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 430,
+        "y": 2120,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "cea09d01c3bacaa7",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "info": "\"acq_brightness\": \"N/A\",\n\"acq_contrast\": \"N/A\",\n\"acq_sharpness\": \"N/A\",\n\"acq_saturation\": \"N/A\",\n\"acq_gamma\": \"N/A\",\n\"acq_uuid\": \"acq-uuid-5678\",\n\"acq_volume\": 2.50,\n\"acq_imaged_volume\": 1.04,\n\"acq_minimum_mesh\": 300,\n\"acq_maximum_mesh\": 300,\n\"acq_min_esd\": 300,\n\"acq_max_esd\": 300,\n\"acq_camera_name\": \"HQ Camera\",\n\"acq_nb_frame\": 500,\n\"acq_local_datetime\": \"2024-05-15T09:00:00Z\",\n\"acq_caamera_iso\": 400,\n\"acq_camera_shutter_speed\": 500,\n\n\"object_date\": \"2024-05-15\",\n\"object_time\": \"09:00:00Z\",\n\"object_lat\": 48.7273,\n\"object_lon\": -3.9814,\n\"object_depth_min\": 0.1,\n\"object_depth_max\": 0.5,\n\n\"process_pixel\": 0.75,\n\"process_datetime\": \"2024-05-15T09:00:00Z\",\n\"process_id\": \"Process01\",\n\"process_uuid\": \"proc-uuid-7890\",\n\"process_source\": \"https://www.github.com/PlanktonPlanet/PlanktoScope\",\n\"process_commit\": \"CommitHash\",\n\n\"sample_gear_net_opening\": 300,\n\"object_date_end\": \"2024-05-15\",\n\"object_time_end\": \"10:00:00Z\",\n\"object_lat_end\": 48.7274,\n\"object_lon_end\": -3.9815",
+        "x": 320,
+        "y": 2160,
+        "wires": []
+    },
+    {
         "id": "af3cbcd9f5f35be3",
         "type": "ui-template",
         "z": "00a14f98244d252e",
@@ -10600,7 +11580,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn @click=\"handleToggleClick('pause')\" style=\"padding: 10px;\">\n                <v-icon left>mdi-pause</v-icon>Stop\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('clear')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('start')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-triangle</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                toggle: null\n            };\n        },\n        methods: {\n            handleToggleClick(action) {\n                this.send({payload: action});\n            }\n        }\n    }\n</script>\n\n<style scoped>\n    div .v-btn-toggle {\n        background-color: #ffffff;\n    }\n\n    .toggle-full-width {\n        width: 100%;\n        margin-top: 15px;\n    }\n\n    .toggle {\n        width: 100%;\n        border-color: #0a6eca;\n        color: #0a6eca;\n    }\n\n    .toggle .v-btn--active {\n        background-color: #0a6eca !important;\n        color: white !important;\n    }\n</style>\n",
+        "format": "<template>\n    <div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn @click=\"handleToggleClick('pause')\" style=\"padding: 10px;\">\n                <v-icon left>mdi-pause</v-icon>Pause\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('clear')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('start')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-triangle</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                toggle: null\n            };\n        },\n        methods: {\n            handleToggleClick(action) {\n                this.send({payload: action});\n            }\n        }\n    }\n</script>\n\n<style scoped>\n    div .v-btn-toggle {\n        background-color: #ffffff;\n    }\n\n    .toggle-full-width {\n        width: 100%;\n        margin-top: 15px;\n    }\n\n    .toggle {\n        width: 100%;\n        border-color: #0a6eca;\n        color: #0a6eca;\n    }\n\n    .toggle .v-btn--active {\n        background-color: #0a6eca !important;\n        color: white !important;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -10798,7 +11778,7 @@
         "z": "00a14f98244d252e",
         "g": "cd7cd2c05c7f55bf",
         "name": "function 1",
-        "func": "if (!Array.isArray(msg.payload)) {\n    msg.payload = \"\";\n    return msg;\n}\n\nfor (let element of msg.payload) {\n    if (typeof element !== 'string') {\n        msg.payload = \"\";\n        return msg;\n    }\n}\n\nvar resultat = []\n\nresultat = msg.payload.map(element => ({\n    acquisitionID: element,\n    estimatedTime: \"2h\",\n    status: \"In Progress\"\n}));\n\nmsg.payload = resultat;\n\nreturn msg;",
+        "func": "if (!Array.isArray(msg.payload)) {\n    msg.payload = \"\";\n    return msg;\n}\n\nfor (let element of msg.payload) {\n    if (typeof element !== 'string') {\n        msg.payload = \"\";\n        return msg;\n    }\n}\n\nvar resultat = []\n\nresultat = msg.payload.map(element => ({\n    acquisitionID: element,\n    estimatedTime: \"2h\",\n    status: \"To do\"\n}));\n\nmsg.payload = resultat;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -10893,8 +11873,7 @@
                 "a0368732ccfa08d8"
             ],
             [
-                "42fc3d43830febaa",
-                "b0c9b9896fec03cd"
+                "42fc3d43830febaa"
             ]
         ]
     },
@@ -10975,20 +11954,6 @@
         ],
         "x": 695,
         "y": 360,
-        "wires": []
-    },
-    {
-        "id": "b0c9b9896fec03cd",
-        "type": "link out",
-        "z": "00a14f98244d252e",
-        "g": "d3d7be8ef5f940c4",
-        "name": "link out 66",
-        "mode": "link",
-        "links": [
-            "e3b705ae1aa1b878"
-        ],
-        "x": 845,
-        "y": 560,
         "wires": []
     },
     {
@@ -14999,7 +15964,8 @@
         "y": 440,
         "wires": [
             [
-                "ee91ce21184552fa"
+                "ee91ce21184552fa",
+                "31e5b0e4d97debdb"
             ]
         ]
     },
@@ -15332,6 +16298,23 @@
                 "cba7a0cba93534cc"
             ]
         ]
+    },
+    {
+        "id": "31e5b0e4d97debdb",
+        "type": "debug",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "debug 46",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 520,
+        "wires": []
     },
     {
         "id": "bbc0bc87e0f09f5b",
