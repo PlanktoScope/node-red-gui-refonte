@@ -1330,10 +1330,10 @@
             "1fe601d84a9f0d02",
             "0f2434a1cc556b60"
         ],
-        "x": 134,
-        "y": 659,
-        "w": 1842,
-        "h": 1562
+        "x": 114,
+        "y": 779,
+        "w": 1862,
+        "h": 922
     },
     {
         "id": "3b32c3c9506eb933",
@@ -10819,8 +10819,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 680,
-        "y": 700,
+        "x": 760,
+        "y": 820,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -10853,8 +10853,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 670,
-        "y": 740,
+        "x": 750,
+        "y": 860,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -10869,8 +10869,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_uuid\": \"uuid-1234\",",
         "info": "",
-        "x": 640,
-        "y": 780,
+        "x": 260,
+        "y": 820,
         "wires": []
     },
     {
@@ -10880,8 +10880,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_ship\": \"Fairscope\",",
         "info": "",
-        "x": 640,
-        "y": 820,
+        "x": 260,
+        "y": 860,
         "wires": []
     },
     {
@@ -10909,8 +10909,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 680,
-        "y": 860,
+        "x": 760,
+        "y": 900,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -10925,8 +10925,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_concentrated_sample_volume\": 70,",
         "info": "",
-        "x": 690,
-        "y": 940,
+        "x": 310,
+        "y": 900,
         "wires": []
     },
     {
@@ -10936,8 +10936,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_total_volume\": 100,",
         "info": "",
-        "x": 640,
-        "y": 980,
+        "x": 260,
+        "y": 940,
         "wires": []
     },
     {
@@ -10965,8 +10965,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 680,
-        "y": 1020,
+        "x": 760,
+        "y": 980,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -10981,8 +10981,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_speed_through_water\": \"5 knots\",",
         "info": "",
-        "x": 680,
-        "y": 1060,
+        "x": 300,
+        "y": 980,
         "wires": []
     },
     {
@@ -11010,8 +11010,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 680,
-        "y": 1100,
+        "x": 760,
+        "y": 1020,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11026,8 +11026,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_bottom_depth\": \"N/A\",",
         "info": "",
-        "x": 650,
-        "y": 1140,
+        "x": 270,
+        "y": 1020,
         "wires": []
     },
     {
@@ -11055,8 +11055,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 670,
-        "y": 1180,
+        "x": 750,
+        "y": 1060,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11089,8 +11089,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 670,
-        "y": 1220,
+        "x": 750,
+        "y": 1100,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11105,8 +11105,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_temperature\": \"N/A\"",
         "info": "",
-        "x": 640,
-        "y": 1260,
+        "x": 260,
+        "y": 1060,
         "wires": []
     },
     {
@@ -11116,8 +11116,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_salinity\": \"N/A\",",
         "info": "",
-        "x": 630,
-        "y": 1300,
+        "x": 250,
+        "y": 1100,
         "wires": []
     },
     {
@@ -11127,8 +11127,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_date\": \"2024-05-15\",",
         "info": "",
-        "x": 640,
-        "y": 1340,
+        "x": 260,
+        "y": 1140,
         "wires": []
     },
     {
@@ -11156,8 +11156,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 680,
-        "y": 1420,
+        "x": 760,
+        "y": 1180,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11172,8 +11172,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_magnification\": \"1.2\",",
         "info": "",
-        "x": 630,
-        "y": 1460,
+        "x": 250,
+        "y": 1180,
         "wires": []
     },
     {
@@ -11183,8 +11183,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_camera_id\": \"deep-point-8125\",",
         "info": "",
-        "x": 660,
-        "y": 1500,
+        "x": 280,
+        "y": 1220,
         "wires": []
     },
     {
@@ -11194,8 +11194,8 @@
         "g": "b383604c2ffb0c81",
         "name": " \"acq_camera_lens\": \"N/A\",",
         "info": "",
-        "x": 630,
-        "y": 1540,
+        "x": 250,
+        "y": 1260,
         "wires": []
     },
     {
@@ -11205,8 +11205,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_atlas_id\": \"N/A\",     ",
         "info": "",
-        "x": 620,
-        "y": 1620,
+        "x": 240,
+        "y": 1300,
         "wires": []
     },
     {
@@ -11216,8 +11216,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_resolution\": \"1080p\",     ",
         "info": "",
-        "x": 630,
-        "y": 1660,
+        "x": 250,
+        "y": 1340,
         "wires": []
     },
     {
@@ -11227,8 +11227,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_stacks_count\": \"N/A\",",
         "info": "",
-        "x": 630,
-        "y": 1700,
+        "x": 250,
+        "y": 1380,
         "wires": []
     },
     {
@@ -11256,8 +11256,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 690,
-        "y": 1740,
+        "x": 770,
+        "y": 1260,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11272,8 +11272,8 @@
         "g": "b383604c2ffb0c81",
         "name": "",
         "info": "\"acq_brightness\": \"N/A\",\n\"acq_contrast\": \"N/A\",\n\"acq_sharpness\": \"N/A\",\n\"acq_saturation\": \"N/A\",\n\"acq_gamma\": \"N/A\",\n\"acq_uuid\": \"acq-uuid-5678\",\n\"acq_volume\": 2.50,\n\"acq_imaged_volume\": 1.04,\n\"acq_minimum_mesh\": 300,\n\"acq_maximum_mesh\": 300,\n\"acq_min_esd\": 300,\n\"acq_max_esd\": 300,\n\"acq_camera_name\": \"HQ Camera\",\n\"acq_nb_frame\": 500,\n\"acq_local_datetime\": \"2024-05-15T09:00:00Z\",\n\"acq_caamera_iso\": 400,\n\"acq_camera_shutter_speed\": 500,\n\n\"process_pixel\": 0.75,\n\"process_datetime\": \"2024-05-15T09:00:00Z\",\n\"process_id\": \"Process01\",\n\"process_uuid\": \"proc-uuid-7890\",\n\"process_source\": \"https://www.github.com/PlanktonPlanet/PlanktoScope\",\n\"process_commit\": \"CommitHash\",\n\n",
-        "x": 580,
-        "y": 1780,
+        "x": 200,
+        "y": 1420,
         "wires": []
     },
     {
@@ -11301,8 +11301,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 680,
-        "y": 900,
+        "x": 760,
+        "y": 940,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11335,8 +11335,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 690,
-        "y": 1940,
+        "x": 770,
+        "y": 1420,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11369,8 +11369,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 690,
-        "y": 1820,
+        "x": 770,
+        "y": 1300,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11403,8 +11403,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 690,
-        "y": 1860,
+        "x": 770,
+        "y": 1340,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11437,8 +11437,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 690,
-        "y": 1900,
+        "x": 770,
+        "y": 1380,
         "wires": [
             [
                 "12d2c8b03fc1f242"
@@ -11471,8 +11471,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 690,
-        "y": 1980,
+        "x": 770,
+        "y": 1460,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11505,8 +11505,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 690,
-        "y": 2020,
+        "x": 770,
+        "y": 1500,
         "wires": [
             [
                 "6d5bce164621a153"
@@ -11539,8 +11539,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 670,
-        "y": 2060,
+        "x": 750,
+        "y": 1540,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11573,8 +11573,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 670,
-        "y": 2100,
+        "x": 750,
+        "y": 1580,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11607,8 +11607,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 690,
-        "y": 2140,
+        "x": 770,
+        "y": 1620,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11638,8 +11638,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1250,
-        "y": 1580,
+        "x": 1290,
+        "y": 1220,
         "wires": [
             [
                 "0f2434a1cc556b60"
@@ -11659,8 +11659,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 1580,
+        "x": 1070,
+        "y": 1220,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11680,8 +11680,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 700,
-        "y": 1580,
+        "x": 780,
+        "y": 1220,
         "wires": [
             [
                 "5b71ea0212473d82"
@@ -11812,8 +11812,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 690,
-        "y": 1380,
+        "x": 770,
+        "y": 1140,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -11948,7 +11948,8 @@
         "y": 520,
         "wires": [
             [
-                "60bc270ddfa20f0b"
+                "60bc270ddfa20f0b",
+                "997c71e9dcf596e8"
             ]
         ]
     },
@@ -12206,7 +12207,8 @@
         "y": 560,
         "wires": [
             [
-                "749f53cf1cdc61f9"
+                "749f53cf1cdc61f9",
+                "b4a6261d50d0a9c3"
             ]
         ]
     },
@@ -12299,8 +12301,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 2020,
+        "x": 1030,
+        "y": 1500,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -12320,8 +12322,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 1900,
+        "x": 1030,
+        "y": 1380,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -12348,8 +12350,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
-        "y": 2180,
+        "x": 720,
+        "y": 1660,
         "wires": [
             [
                 "2406c0a2f5784c72"
@@ -12369,8 +12371,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1370,
-        "y": 1580,
+        "x": 1420,
+        "y": 1220,
         "wires": []
     },
     {
