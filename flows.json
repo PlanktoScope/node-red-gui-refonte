@@ -64,17 +64,17 @@
         "env": []
     },
     {
-        "id": "5047c566973ee3a1",
+        "id": "f260ed9417849607",
         "type": "tab",
-        "label": "Page settings",
+        "label": "Page visualization",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "f260ed9417849607",
+        "id": "5047c566973ee3a1",
         "type": "tab",
-        "label": "Page visualization",
+        "label": "Page settings",
         "disabled": false,
         "info": "",
         "env": []
@@ -5137,7 +5137,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"header-first-visit-container\">\n    <div class=\"header-first-visit-container-left\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-first-visit-container-right\">\n      <div class=\"header-first-visit-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n        ></span>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n  },\n};\n</script>\n\n<style>\n  .header-first-visit-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-first-visit-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .header-first-visit-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-first-visit-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-first-visit-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-first-visit-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-first-visit-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-first-visit-information-container span {\n    color: black;\n    font-size: 35px;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-first-visit-container\">\n    <div class=\"header-first-visit-container-left\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-first-visit-container-right\">\n      <div class=\"header-first-visit-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n        ></span>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n  },\n};\n</script>\n\n<style>\n  .header-first-visit-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-first-visit-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .header-first-visit-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-first-visit-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-first-visit-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-first-visit-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-first-visit-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-first-visit-information-container span {\n    color: black;\n    font-size: 35px;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -13022,1101 +13022,6 @@
         "wires": []
     },
     {
-        "id": "fc701c9ad326380a",
-        "type": "link out",
-        "z": "5047c566973ee3a1",
-        "g": "1001f50c9610fbab",
-        "name": "link out 68",
-        "mode": "link",
-        "links": [
-            "d1f80e39243d05fb"
-        ],
-        "x": 1055,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "440cb90b95e9e2ac",
-        "type": "function",
-        "z": "5047c566973ee3a1",
-        "g": "1001f50c9610fbab",
-        "name": "Prepare payload to navigate",
-        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 900,
-        "y": 200,
-        "wires": [
-            [
-                "fc701c9ad326380a"
-            ]
-        ]
-    },
-    {
-        "id": "679e3c949c5dce47",
-        "type": "ui-template",
-        "z": "5047c566973ee3a1",
-        "g": "1001f50c9610fbab",
-        "group": "1cdfa74c2156e48f",
-        "page": "",
-        "ui": "",
-        "name": "top-header-home",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 670,
-        "y": 200,
-        "wires": [
-            [
-                "440cb90b95e9e2ac"
-            ]
-        ]
-    },
-    {
-        "id": "38b9b989ed435680",
-        "type": "ui-control",
-        "z": "5047c566973ee3a1",
-        "name": "",
-        "ui": "1eeac55ba6b9065f",
-        "events": "all",
-        "x": 160,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d1f80e39243d05fb",
-        "type": "link in",
-        "z": "5047c566973ee3a1",
-        "name": "link in 54",
-        "links": [
-            "fc701c9ad326380a"
-        ],
-        "x": 65,
-        "y": 40,
-        "wires": [
-            [
-                "38b9b989ed435680"
-            ]
-        ]
-    },
-    {
-        "id": "60b2ecc0d6e457c8",
-        "type": "ui-template",
-        "z": "5047c566973ee3a1",
-        "g": "c8544c656ab24cf4",
-        "group": "0531957b8d4ecb7d",
-        "page": "",
-        "ui": "",
-        "name": "settings-sample",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Sample</h2>\n    </section>\n    <section class=\"settings-sample-container\">\n      <label>GPS Format</label>\n      <v-select\n          v-model=\"coordFormat\"\n          :items=\"['Decimal degrees (DD)', 'Degrees, minutes and seconds (DMS)']\"\n          variant=\"outlined\"\n          append-icon=\"mdi-information\" \n          @click:append=\"switchDialog\"\n          density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        coordFormat: [],\n        dialog: false,\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      coordFormat: {\n        handler(newVal) {\n          this.send({ payload: newVal });\n        },\n        deep: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n              this.coordFormat = msg.payload;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-sample-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .settings-sample-container label {\n    margin-right: 1rem;\n  }\n\n\n  .settings-sample-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-sample-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 660,
-        "y": 620,
-        "wires": [
-            [
-                "53b390b93b29c5fa"
-            ]
-        ]
-    },
-    {
-        "id": "8b6ce849b7c7c43f",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "c8544c656ab24cf4",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
-        "command": "read",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 370,
-        "y": 620,
-        "wires": [
-            [
-                "60b2ecc0d6e457c8"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "53b390b93b29c5fa",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "c8544c656ab24cf4",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
-        "command": "write",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 910,
-        "y": 620,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "33b7801889f49dfe",
-        "type": "ui-template",
-        "z": "5047c566973ee3a1",
-        "g": "149a607c8eda744a",
-        "group": "0531957b8d4ecb7d",
-        "page": "",
-        "ui": "",
-        "name": "settings-operator",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Operator</h2>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Name</label>\n      <v-text-field v-model=\"operator_name\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Email</label>\n      <v-text-field v-model=\"operator_email\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        operator_name: '',\n        operator_email: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.operator_name) {\n            this.operator_name = msg.operator_name;\n          }\n          if (msg.payload.operator_email) {\n            this.operator_email = msg.operator_email;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      operator_name: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: newVal,\n              operator_email: this.operator_email\n            }});\n          }\n        },\n        deep: true\n      },\n      operator_email: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: this.operator_name,\n              operator_email: newVal\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.operator_email) {\n              this.operator_email = msg.operator_email;\n            }\n            if (msg.operator_name) {\n              this.operator_name = msg.operator_name;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .settings-operator-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-operator-container .v-input__details {\n    display: none;\n  }\n\n</style>",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 670,
-        "y": 320,
-        "wires": [
-            [
-                "460fb659adbbae17",
-                "7b3e64e2512b4f9f"
-            ]
-        ]
-    },
-    {
-        "id": "3818cc8b0a5aabed",
-        "type": "link out",
-        "z": "5047c566973ee3a1",
-        "name": "link out 69",
-        "mode": "link",
-        "links": [
-            "4e5baf21e265d811",
-            "c52bf2a4ca8f30e3",
-            "b1e3240bad8585c3",
-            "323fc05b6b6661cf",
-            "50a812cd9b3daf49",
-            "f15fabe9a83fbae7",
-            "ce9a58a38a8120dc",
-            "ea3288b5bc6bc136"
-        ],
-        "x": 215,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "4e5baf21e265d811",
-        "type": "link in",
-        "z": "5047c566973ee3a1",
-        "g": "c8544c656ab24cf4",
-        "name": "link in 55",
-        "links": [
-            "3818cc8b0a5aabed",
-            "5059739dbd1ae510",
-            "dda766f441681122",
-            "64f12fa191e7d7e0"
-        ],
-        "x": 185,
-        "y": 620,
-        "wires": [
-            [
-                "8b6ce849b7c7c43f"
-            ]
-        ]
-    },
-    {
-        "id": "c52bf2a4ca8f30e3",
-        "type": "link in",
-        "z": "5047c566973ee3a1",
-        "g": "149a607c8eda744a",
-        "name": "link in 56",
-        "links": [
-            "3818cc8b0a5aabed",
-            "5059739dbd1ae510",
-            "dda766f441681122",
-            "64f12fa191e7d7e0"
-        ],
-        "x": 185,
-        "y": 320,
-        "wires": [
-            [
-                "def19b85f4af5b99",
-                "4716e00ccb75257f"
-            ]
-        ]
-    },
-    {
-        "id": "def19b85f4af5b99",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "149a607c8eda744a",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
-        "value": "operator_name",
-        "command": "read",
-        "msgProperty": "operator_name",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 380,
-        "y": 300,
-        "wires": [
-            [
-                "33b7801889f49dfe"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "4716e00ccb75257f",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "149a607c8eda744a",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
-        "value": "operator_email",
-        "command": "read",
-        "msgProperty": "operator_email",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 380,
-        "y": 340,
-        "wires": [
-            [
-                "33b7801889f49dfe"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "460fb659adbbae17",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "149a607c8eda744a",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
-        "value": "operator_name",
-        "command": "write",
-        "msgProperty": "payload.operator_name",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 940,
-        "y": 300,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "7b3e64e2512b4f9f",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "149a607c8eda744a",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
-        "value": "operator_email",
-        "command": "write",
-        "msgProperty": "payload.operator_email",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 940,
-        "y": 340,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "4a6052524bce45c6",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "1001f50c9610fbab",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
-        "value": "operator_name",
-        "command": "read",
-        "msgProperty": "operator_name",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 380,
-        "y": 200,
-        "wires": [
-            [
-                "679e3c949c5dce47"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "b1e3240bad8585c3",
-        "type": "link in",
-        "z": "5047c566973ee3a1",
-        "g": "1001f50c9610fbab",
-        "name": "link in 57",
-        "links": [
-            "3818cc8b0a5aabed",
-            "dda766f441681122",
-            "64f12fa191e7d7e0"
-        ],
-        "x": 185,
-        "y": 200,
-        "wires": [
-            [
-                "4a6052524bce45c6"
-            ]
-        ]
-    },
-    {
-        "id": "4cebedc5cc8a9e7b",
-        "type": "ui-template",
-        "z": "5047c566973ee3a1",
-        "g": "8832a7e3b9ea8c13",
-        "group": "0531957b8d4ecb7d",
-        "page": "",
-        "ui": "",
-        "name": "settings-preview",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Preview</h2>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Flowrate preset</label>\n      <v-text-field v-model=\"flowrate_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[3]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Volume preset</label>\n      <v-text-field type=\"number\" disabled density=\"compact\" variant=\"outlined\">\n        <span class=\"mdi mdi-infinity\">\n      </v-text-field>\n      <v-text-field v-model=\"volume_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"volume_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"volume_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Focus preset</label>\n      <v-text-field v-model=\"focus_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[3]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate_preset: [],\n        volume: \"infini\",\n        volume_preset: [],\n        focus_preset: [],\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.flowrate_preset) {\n            this.flowrate_preset = msg.flowrate_preset;\n          }\n          if (msg.volume_preset) {\n            this.volume_preset = msg.volume_preset;\n          }\n          if (msg.focus_preset) {\n            this.focus_preset = msg.focus_preset;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      flowrate_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: newVal,\n              volume_preset: this.volume_preset,\n              focus_preset: this.focus_preset,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      volume_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: this.flowrate_preset,\n              volume_preset: newVal,\n              focus_preset: this.focus_preset,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      focus_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: this.flowrate_preset,\n              volume_preset: this.volume_preset,\n              focus_preset: newVal,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.flowrate_preset) {\n              this.flowrate_preset = msg.flowrate_preset;\n            }\n            if (msg.volume_preset) {\n              this.volume_preset = msg.volume_preset;\n            }\n            if (msg.focus_preset) {\n              this.focus_preset = msg.focus_preset;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-preview-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-preview-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .settings-preview-container .v-input {\n    max-width: 100px;\n    margin-right: 0.25rem;\n  }\n\n  .settings-preview-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 660,
-        "y": 480,
-        "wires": [
-            [
-                "a0d6e1698fda59ed",
-                "26a14f41d013e47a",
-                "b07c9313574e2c5e"
-            ]
-        ]
-    },
-    {
-        "id": "323fc05b6b6661cf",
-        "type": "link in",
-        "z": "5047c566973ee3a1",
-        "g": "8832a7e3b9ea8c13",
-        "name": "link in 58",
-        "links": [
-            "3818cc8b0a5aabed",
-            "5059739dbd1ae510",
-            "dda766f441681122",
-            "64f12fa191e7d7e0"
-        ],
-        "x": 155,
-        "y": 480,
-        "wires": [
-            [
-                "683c6eaea5e163cb",
-                "8b25d62dcb29d8ee",
-                "82c806b98af85f3b"
-            ]
-        ]
-    },
-    {
-        "id": "683c6eaea5e163cb",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "8832a7e3b9ea8c13",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
-        "value": "flowrate_preset",
-        "command": "read",
-        "msgProperty": "flowrate_preset",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 360,
-        "y": 440,
-        "wires": [
-            [
-                "4cebedc5cc8a9e7b"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "a0d6e1698fda59ed",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "8832a7e3b9ea8c13",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
-        "value": "flowrate_preset",
-        "command": "write",
-        "msgProperty": "payload.flowrate_preset",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 960,
-        "y": 440,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "8b25d62dcb29d8ee",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "8832a7e3b9ea8c13",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
-        "value": "volume_preset",
-        "command": "read",
-        "msgProperty": "volume_preset",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 360,
-        "y": 480,
-        "wires": [
-            [
-                "4cebedc5cc8a9e7b"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "82c806b98af85f3b",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "8832a7e3b9ea8c13",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
-        "value": "focus_preset",
-        "command": "read",
-        "msgProperty": "focus_preset",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 520,
-        "wires": [
-            [
-                "4cebedc5cc8a9e7b"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "26a14f41d013e47a",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "8832a7e3b9ea8c13",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
-        "value": "volume_preset",
-        "command": "write",
-        "msgProperty": "payload.volume_preset",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 960,
-        "y": 480,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "b07c9313574e2c5e",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "8832a7e3b9ea8c13",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
-        "value": "focus_preset",
-        "command": "write",
-        "msgProperty": "payload.focus_preset",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 950,
-        "y": 520,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "3405fdbeca45c434",
-        "type": "ui-template",
-        "z": "5047c566973ee3a1",
-        "g": "5518fb6d8287c2dc",
-        "group": "0531957b8d4ecb7d",
-        "page": "",
-        "ui": "",
-        "name": "settings-acquisition",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Acquisition</h2>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Delay to stabilized</label>\n      <v-text-field v-model=\"delay_to_stabilize\" type=\"number\" density=\"compact\" suffix=\"s\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Flowrate in between each images</label>\n      <v-text-field v-model=\"flowrate_in_between\" type=\"number\" density=\"compact\" suffix=\"ml/min\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        delay_to_stabilize: '',\n        flowrate_in_between: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.delay_to_stabilize) {\n            this.delay_to_stabilize = msg.delay_to_stabilize;\n          }\n          if (msg.payload.flowrate_in_between) {\n            this.flowrate_in_between = msg.flowrate_in_between;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      delay_to_stabilize: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              delay_to_stabilize: newVal,\n              flowrate_in_between: this.flowrate_in_between\n            }});\n          }\n        },\n        deep: true\n      },\n      flowrate_in_between: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              delay_to_stabilize: this.delay_to_stabilize,\n              flowrate_in_between: newVal\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.flowrate_in_between) {\n              this.flowrate_in_between = msg.flowrate_in_between;\n            }\n            if (msg.delay_to_stabilize) {\n              this.delay_to_stabilize = msg.delay_to_stabilize;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-acquisition-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-acquisition-container label {\n    min-width: 230px;\n  }\n\n  .settings-acquisition-container .v-input {\n    max-width: 170px;\n  }\n\n  .settings-acquisition-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 670,
-        "y": 740,
-        "wires": [
-            [
-                "e17de7cede28b990",
-                "fb3284d43226bc67"
-            ]
-        ]
-    },
-    {
-        "id": "50a812cd9b3daf49",
-        "type": "link in",
-        "z": "5047c566973ee3a1",
-        "g": "5518fb6d8287c2dc",
-        "name": "link in 62",
-        "links": [
-            "3818cc8b0a5aabed",
-            "5059739dbd1ae510",
-            "dda766f441681122",
-            "64f12fa191e7d7e0"
-        ],
-        "x": 145,
-        "y": 740,
-        "wires": [
-            [
-                "bfc1c9e460621e6b",
-                "e726426c28381b18"
-            ]
-        ]
-    },
-    {
-        "id": "bfc1c9e460621e6b",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "5518fb6d8287c2dc",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
-        "value": "delay_to_stabilized",
-        "command": "read",
-        "msgProperty": "delay_to_stabilize",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 720,
-        "wires": [
-            [
-                "3405fdbeca45c434"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "e726426c28381b18",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "5518fb6d8287c2dc",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "16042860-42c0-11ef-89ad-e57161842148",
-        "value": "flowrate_in_between",
-        "command": "read",
-        "msgProperty": "flowrate_in_between",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 360,
-        "y": 760,
-        "wires": [
-            [
-                "3405fdbeca45c434"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "e17de7cede28b990",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "5518fb6d8287c2dc",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
-        "value": "delay_to_stabilized",
-        "command": "write",
-        "msgProperty": "payload.delay_to_stabilize",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 950,
-        "y": 720,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "fb3284d43226bc67",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "5518fb6d8287c2dc",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "16042860-42c0-11ef-89ad-e57161842148",
-        "value": "flowrate_in_between",
-        "command": "write",
-        "msgProperty": "payload.flowrate_in_between",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 960,
-        "y": 760,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "5feeca33f3a87c8a",
-        "type": "ui-template",
-        "z": "5047c566973ee3a1",
-        "g": "290796618b24955f",
-        "group": "0531957b8d4ecb7d",
-        "page": "",
-        "ui": "",
-        "name": "settings-segmentation",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Segmentation</h2>\n    </section>\n    <section class=\"settings-segmentation-container\">\n      <label>MSTS (Minimal size to segment)</label>\n      <v-text-field v-model=\"msts\" type=\"number\" density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        msts: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.msts) {\n            this.msts = msg.msts;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      msts: {\n        handler(newVal) {\n          this.send({ payload: newVal });\n        },\n        deep: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.msts) {\n              this.msts = msg.msts;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-segmentation-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .settings-segmentation-container label {\n    margin-right: 1rem;\n  }\n\n\n  .settings-segmentation-container .v-input {\n    max-width: 170px;\n  }\n\n  .settings-segmentation-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 680,
-        "y": 860,
-        "wires": [
-            [
-                "1d6f4ea4e54b0656"
-            ]
-        ]
-    },
-    {
-        "id": "7bfa8347d6717246",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "290796618b24955f",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "54330ee0-437d-11ef-946b-75401899c243",
-        "value": "MSTS",
-        "command": "read",
-        "msgProperty": "msts",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 390,
-        "y": 860,
-        "wires": [
-            [
-                "5feeca33f3a87c8a"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "1d6f4ea4e54b0656",
-        "type": "persistent value",
-        "z": "5047c566973ee3a1",
-        "g": "290796618b24955f",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "54330ee0-437d-11ef-946b-75401899c243",
-        "value": "MSTS",
-        "command": "write",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 930,
-        "y": 860,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "ea3288b5bc6bc136",
-        "type": "link in",
-        "z": "5047c566973ee3a1",
-        "g": "290796618b24955f",
-        "name": "link in 75",
-        "links": [
-            "3818cc8b0a5aabed",
-            "5059739dbd1ae510",
-            "dda766f441681122",
-            "64f12fa191e7d7e0"
-        ],
-        "x": 225,
-        "y": 860,
-        "wires": [
-            [
-                "7bfa8347d6717246"
-            ]
-        ]
-    },
-    {
-        "id": "23ffd2c116cbdf71",
-        "type": "ui-template",
-        "z": "5047c566973ee3a1",
-        "g": "925817a4bacd25ee",
-        "group": "0531957b8d4ecb7d",
-        "page": "",
-        "ui": "",
-        "name": "settings-segmentation",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n  <div class=\"default-button-container\">\n    <v-btn color=\"orange darken-2\" class=\"default-settings-btn\" @click=\"confirmRestore\">Default settings</v-btn>\n  </div>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      msts: '',\n    };\n  },\n  methods: {\n    confirmRestore() {\n      if (confirm(\"Are you sure you want to reset default settings?\")) {\n        this.send({ payload: \"reset\" });\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .default-button-container {\n    position: relative;\n  }\n\n  .default-settings-btn {\n    position: absolute;\n    bottom: 1rem;\n    right: 0rem;\n  }\n</style>",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 580,
-        "y": 960,
-        "wires": [
-            [
-                "250fac5d08b457a3"
-            ]
-        ]
-    },
-    {
-        "id": "250fac5d08b457a3",
-        "type": "link out",
-        "z": "5047c566973ee3a1",
-        "g": "925817a4bacd25ee",
-        "name": "link out 80",
-        "mode": "link",
-        "links": [
-            "f67384bd93fa9723"
-        ],
-        "x": 715,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "90e4abe12845a2df",
-        "type": "ui-event",
-        "z": "5047c566973ee3a1",
-        "ui": "1eeac55ba6b9065f",
-        "name": "",
-        "x": 130,
-        "y": 100,
-        "wires": [
-            [
-                "3818cc8b0a5aabed"
-            ]
-        ]
-    },
-    {
-        "id": "6fa34a1f2515c4cf",
-        "type": "inject",
-        "z": "5047c566973ee3a1",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "2",
-        "topic": "",
-        "x": 350,
-        "y": 100,
-        "wires": [
-            [
-                "dda766f441681122"
-            ]
-        ]
-    },
-    {
-        "id": "dda766f441681122",
-        "type": "link out",
-        "z": "5047c566973ee3a1",
-        "name": "link out 100",
-        "mode": "link",
-        "links": [
-            "4e5baf21e265d811",
-            "c52bf2a4ca8f30e3",
-            "b1e3240bad8585c3",
-            "323fc05b6b6661cf",
-            "50a812cd9b3daf49",
-            "f15fabe9a83fbae7",
-            "ce9a58a38a8120dc",
-            "ea3288b5bc6bc136"
-        ],
-        "x": 445,
-        "y": 100,
-        "wires": []
-    },
-    {
         "id": "107c602539a8cf19",
         "type": "ui-control",
         "z": "f260ed9417849607",
@@ -15592,6 +14497,1101 @@
         "wires": []
     },
     {
+        "id": "fc701c9ad326380a",
+        "type": "link out",
+        "z": "5047c566973ee3a1",
+        "g": "1001f50c9610fbab",
+        "name": "link out 68",
+        "mode": "link",
+        "links": [
+            "d1f80e39243d05fb"
+        ],
+        "x": 1055,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "440cb90b95e9e2ac",
+        "type": "function",
+        "z": "5047c566973ee3a1",
+        "g": "1001f50c9610fbab",
+        "name": "Prepare payload to navigate",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    // TODO\n} else if (title == \"Shutdown\") {\n    // TODO\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 200,
+        "wires": [
+            [
+                "fc701c9ad326380a"
+            ]
+        ]
+    },
+    {
+        "id": "679e3c949c5dce47",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "1001f50c9610fbab",
+        "group": "1cdfa74c2156e48f",
+        "page": "",
+        "ui": "",
+        "name": "top-header-home",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 670,
+        "y": 200,
+        "wires": [
+            [
+                "440cb90b95e9e2ac"
+            ]
+        ]
+    },
+    {
+        "id": "38b9b989ed435680",
+        "type": "ui-control",
+        "z": "5047c566973ee3a1",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 160,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1f80e39243d05fb",
+        "type": "link in",
+        "z": "5047c566973ee3a1",
+        "name": "link in 54",
+        "links": [
+            "fc701c9ad326380a"
+        ],
+        "x": 65,
+        "y": 40,
+        "wires": [
+            [
+                "38b9b989ed435680"
+            ]
+        ]
+    },
+    {
+        "id": "60b2ecc0d6e457c8",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "c8544c656ab24cf4",
+        "group": "0531957b8d4ecb7d",
+        "page": "",
+        "ui": "",
+        "name": "settings-sample",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Sample</h2>\n    </section>\n    <section class=\"settings-sample-container\">\n      <label>GPS Format</label>\n      <v-select\n          v-model=\"coordFormat\"\n          :items=\"['Decimal degrees (DD)', 'Degrees, minutes and seconds (DMS)']\"\n          variant=\"outlined\"\n          append-icon=\"mdi-information\" \n          @click:append=\"switchDialog\"\n          density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        coordFormat: [],\n        dialog: false,\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      coordFormat: {\n        handler(newVal) {\n          this.send({ payload: newVal });\n        },\n        deep: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n              this.coordFormat = msg.payload;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-sample-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .settings-sample-container label {\n    margin-right: 1rem;\n  }\n\n\n  .settings-sample-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-sample-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 620,
+        "wires": [
+            [
+                "53b390b93b29c5fa"
+            ]
+        ]
+    },
+    {
+        "id": "8b6ce849b7c7c43f",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "c8544c656ab24cf4",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "read",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 370,
+        "y": 620,
+        "wires": [
+            [
+                "60b2ecc0d6e457c8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "53b390b93b29c5fa",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "c8544c656ab24cf4",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 910,
+        "y": 620,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "33b7801889f49dfe",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "group": "0531957b8d4ecb7d",
+        "page": "",
+        "ui": "",
+        "name": "settings-operator",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Operator</h2>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Name</label>\n      <v-text-field v-model=\"operator_name\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Email</label>\n      <v-text-field v-model=\"operator_email\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        operator_name: '',\n        operator_email: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.operator_name) {\n            this.operator_name = msg.operator_name;\n          }\n          if (msg.payload.operator_email) {\n            this.operator_email = msg.operator_email;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      operator_name: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: newVal,\n              operator_email: this.operator_email\n            }});\n          }\n        },\n        deep: true\n      },\n      operator_email: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: this.operator_name,\n              operator_email: newVal\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.operator_email) {\n              this.operator_email = msg.operator_email;\n            }\n            if (msg.operator_name) {\n              this.operator_name = msg.operator_name;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .settings-operator-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-operator-container .v-input__details {\n    display: none;\n  }\n\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 670,
+        "y": 320,
+        "wires": [
+            [
+                "460fb659adbbae17",
+                "7b3e64e2512b4f9f"
+            ]
+        ]
+    },
+    {
+        "id": "3818cc8b0a5aabed",
+        "type": "link out",
+        "z": "5047c566973ee3a1",
+        "name": "link out 69",
+        "mode": "link",
+        "links": [
+            "4e5baf21e265d811",
+            "c52bf2a4ca8f30e3",
+            "b1e3240bad8585c3",
+            "323fc05b6b6661cf",
+            "50a812cd9b3daf49",
+            "f15fabe9a83fbae7",
+            "ce9a58a38a8120dc",
+            "ea3288b5bc6bc136"
+        ],
+        "x": 215,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4e5baf21e265d811",
+        "type": "link in",
+        "z": "5047c566973ee3a1",
+        "g": "c8544c656ab24cf4",
+        "name": "link in 55",
+        "links": [
+            "3818cc8b0a5aabed",
+            "5059739dbd1ae510",
+            "dda766f441681122",
+            "64f12fa191e7d7e0"
+        ],
+        "x": 185,
+        "y": 620,
+        "wires": [
+            [
+                "8b6ce849b7c7c43f"
+            ]
+        ]
+    },
+    {
+        "id": "c52bf2a4ca8f30e3",
+        "type": "link in",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "link in 56",
+        "links": [
+            "3818cc8b0a5aabed",
+            "5059739dbd1ae510",
+            "dda766f441681122",
+            "64f12fa191e7d7e0"
+        ],
+        "x": 185,
+        "y": 320,
+        "wires": [
+            [
+                "def19b85f4af5b99",
+                "4716e00ccb75257f"
+            ]
+        ]
+    },
+    {
+        "id": "def19b85f4af5b99",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "read",
+        "msgProperty": "operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 380,
+        "y": 300,
+        "wires": [
+            [
+                "33b7801889f49dfe"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4716e00ccb75257f",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_email",
+        "command": "read",
+        "msgProperty": "operator_email",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "33b7801889f49dfe"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "460fb659adbbae17",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "write",
+        "msgProperty": "payload.operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 940,
+        "y": 300,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7b3e64e2512b4f9f",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "149a607c8eda744a",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_email",
+        "command": "write",
+        "msgProperty": "payload.operator_email",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 940,
+        "y": 340,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4a6052524bce45c6",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "1001f50c9610fbab",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "read",
+        "msgProperty": "operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "679e3c949c5dce47"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b1e3240bad8585c3",
+        "type": "link in",
+        "z": "5047c566973ee3a1",
+        "g": "1001f50c9610fbab",
+        "name": "link in 57",
+        "links": [
+            "3818cc8b0a5aabed",
+            "dda766f441681122",
+            "64f12fa191e7d7e0"
+        ],
+        "x": 185,
+        "y": 200,
+        "wires": [
+            [
+                "4a6052524bce45c6"
+            ]
+        ]
+    },
+    {
+        "id": "4cebedc5cc8a9e7b",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "8832a7e3b9ea8c13",
+        "group": "0531957b8d4ecb7d",
+        "page": "",
+        "ui": "",
+        "name": "settings-preview",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Preview</h2>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Flowrate preset</label>\n      <v-text-field v-model=\"flowrate_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[3]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Volume preset</label>\n      <v-text-field type=\"number\" disabled density=\"compact\" variant=\"outlined\">\n        <span class=\"mdi mdi-infinity\">\n      </v-text-field>\n      <v-text-field v-model=\"volume_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"volume_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"volume_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Focus preset</label>\n      <v-text-field v-model=\"focus_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[3]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate_preset: [],\n        volume: \"infini\",\n        volume_preset: [],\n        focus_preset: [],\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.flowrate_preset) {\n            this.flowrate_preset = msg.flowrate_preset;\n          }\n          if (msg.volume_preset) {\n            this.volume_preset = msg.volume_preset;\n          }\n          if (msg.focus_preset) {\n            this.focus_preset = msg.focus_preset;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      flowrate_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: newVal,\n              volume_preset: this.volume_preset,\n              focus_preset: this.focus_preset,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      volume_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: this.flowrate_preset,\n              volume_preset: newVal,\n              focus_preset: this.focus_preset,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      focus_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: this.flowrate_preset,\n              volume_preset: this.volume_preset,\n              focus_preset: newVal,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.flowrate_preset) {\n              this.flowrate_preset = msg.flowrate_preset;\n            }\n            if (msg.volume_preset) {\n              this.volume_preset = msg.volume_preset;\n            }\n            if (msg.focus_preset) {\n              this.focus_preset = msg.focus_preset;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-preview-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-preview-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .settings-preview-container .v-input {\n    max-width: 100px;\n    margin-right: 0.25rem;\n  }\n\n  .settings-preview-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 480,
+        "wires": [
+            [
+                "a0d6e1698fda59ed",
+                "26a14f41d013e47a",
+                "b07c9313574e2c5e"
+            ]
+        ]
+    },
+    {
+        "id": "323fc05b6b6661cf",
+        "type": "link in",
+        "z": "5047c566973ee3a1",
+        "g": "8832a7e3b9ea8c13",
+        "name": "link in 58",
+        "links": [
+            "3818cc8b0a5aabed",
+            "5059739dbd1ae510",
+            "dda766f441681122",
+            "64f12fa191e7d7e0"
+        ],
+        "x": 155,
+        "y": 480,
+        "wires": [
+            [
+                "683c6eaea5e163cb",
+                "8b25d62dcb29d8ee",
+                "82c806b98af85f3b"
+            ]
+        ]
+    },
+    {
+        "id": "683c6eaea5e163cb",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "8832a7e3b9ea8c13",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
+        "value": "flowrate_preset",
+        "command": "read",
+        "msgProperty": "flowrate_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 360,
+        "y": 440,
+        "wires": [
+            [
+                "4cebedc5cc8a9e7b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a0d6e1698fda59ed",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "8832a7e3b9ea8c13",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
+        "value": "flowrate_preset",
+        "command": "write",
+        "msgProperty": "payload.flowrate_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 960,
+        "y": 440,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8b25d62dcb29d8ee",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "8832a7e3b9ea8c13",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
+        "value": "volume_preset",
+        "command": "read",
+        "msgProperty": "volume_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 360,
+        "y": 480,
+        "wires": [
+            [
+                "4cebedc5cc8a9e7b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "82c806b98af85f3b",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "8832a7e3b9ea8c13",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
+        "value": "focus_preset",
+        "command": "read",
+        "msgProperty": "focus_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "4cebedc5cc8a9e7b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "26a14f41d013e47a",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "8832a7e3b9ea8c13",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
+        "value": "volume_preset",
+        "command": "write",
+        "msgProperty": "payload.volume_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 960,
+        "y": 480,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b07c9313574e2c5e",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "8832a7e3b9ea8c13",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
+        "value": "focus_preset",
+        "command": "write",
+        "msgProperty": "payload.focus_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 950,
+        "y": 520,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3405fdbeca45c434",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "5518fb6d8287c2dc",
+        "group": "0531957b8d4ecb7d",
+        "page": "",
+        "ui": "",
+        "name": "settings-acquisition",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Acquisition</h2>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Delay to stabilized</label>\n      <v-text-field v-model=\"delay_to_stabilize\" type=\"number\" density=\"compact\" suffix=\"s\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Flowrate in between each images</label>\n      <v-text-field v-model=\"flowrate_in_between\" type=\"number\" density=\"compact\" suffix=\"ml/min\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        delay_to_stabilize: '',\n        flowrate_in_between: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.delay_to_stabilize) {\n            this.delay_to_stabilize = msg.delay_to_stabilize;\n          }\n          if (msg.payload.flowrate_in_between) {\n            this.flowrate_in_between = msg.flowrate_in_between;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      delay_to_stabilize: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              delay_to_stabilize: newVal,\n              flowrate_in_between: this.flowrate_in_between\n            }});\n          }\n        },\n        deep: true\n      },\n      flowrate_in_between: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              delay_to_stabilize: this.delay_to_stabilize,\n              flowrate_in_between: newVal\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.flowrate_in_between) {\n              this.flowrate_in_between = msg.flowrate_in_between;\n            }\n            if (msg.delay_to_stabilize) {\n              this.delay_to_stabilize = msg.delay_to_stabilize;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-acquisition-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-acquisition-container label {\n    min-width: 230px;\n  }\n\n  .settings-acquisition-container .v-input {\n    max-width: 170px;\n  }\n\n  .settings-acquisition-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 670,
+        "y": 740,
+        "wires": [
+            [
+                "e17de7cede28b990",
+                "fb3284d43226bc67"
+            ]
+        ]
+    },
+    {
+        "id": "50a812cd9b3daf49",
+        "type": "link in",
+        "z": "5047c566973ee3a1",
+        "g": "5518fb6d8287c2dc",
+        "name": "link in 62",
+        "links": [
+            "3818cc8b0a5aabed",
+            "5059739dbd1ae510",
+            "dda766f441681122",
+            "64f12fa191e7d7e0"
+        ],
+        "x": 145,
+        "y": 740,
+        "wires": [
+            [
+                "bfc1c9e460621e6b",
+                "e726426c28381b18"
+            ]
+        ]
+    },
+    {
+        "id": "bfc1c9e460621e6b",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "5518fb6d8287c2dc",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
+        "value": "delay_to_stabilized",
+        "command": "read",
+        "msgProperty": "delay_to_stabilize",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 350,
+        "y": 720,
+        "wires": [
+            [
+                "3405fdbeca45c434"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e726426c28381b18",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "5518fb6d8287c2dc",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "16042860-42c0-11ef-89ad-e57161842148",
+        "value": "flowrate_in_between",
+        "command": "read",
+        "msgProperty": "flowrate_in_between",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 360,
+        "y": 760,
+        "wires": [
+            [
+                "3405fdbeca45c434"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e17de7cede28b990",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "5518fb6d8287c2dc",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
+        "value": "delay_to_stabilized",
+        "command": "write",
+        "msgProperty": "payload.delay_to_stabilize",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 950,
+        "y": 720,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fb3284d43226bc67",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "5518fb6d8287c2dc",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "16042860-42c0-11ef-89ad-e57161842148",
+        "value": "flowrate_in_between",
+        "command": "write",
+        "msgProperty": "payload.flowrate_in_between",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 960,
+        "y": 760,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5feeca33f3a87c8a",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "290796618b24955f",
+        "group": "0531957b8d4ecb7d",
+        "page": "",
+        "ui": "",
+        "name": "settings-segmentation",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Segmentation</h2>\n    </section>\n    <section class=\"settings-segmentation-container\">\n      <label>MSTS (Minimal size to segment)</label>\n      <v-text-field v-model=\"msts\" type=\"number\" density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        msts: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.msts) {\n            this.msts = msg.msts;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      msts: {\n        handler(newVal) {\n          this.send({ payload: newVal });\n        },\n        deep: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.msts) {\n              this.msts = msg.msts;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-segmentation-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .settings-segmentation-container label {\n    margin-right: 1rem;\n  }\n\n\n  .settings-segmentation-container .v-input {\n    max-width: 170px;\n  }\n\n  .settings-segmentation-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 680,
+        "y": 860,
+        "wires": [
+            [
+                "1d6f4ea4e54b0656"
+            ]
+        ]
+    },
+    {
+        "id": "7bfa8347d6717246",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "290796618b24955f",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "54330ee0-437d-11ef-946b-75401899c243",
+        "value": "MSTS",
+        "command": "read",
+        "msgProperty": "msts",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 390,
+        "y": 860,
+        "wires": [
+            [
+                "5feeca33f3a87c8a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1d6f4ea4e54b0656",
+        "type": "persistent value",
+        "z": "5047c566973ee3a1",
+        "g": "290796618b24955f",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "54330ee0-437d-11ef-946b-75401899c243",
+        "value": "MSTS",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 930,
+        "y": 860,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ea3288b5bc6bc136",
+        "type": "link in",
+        "z": "5047c566973ee3a1",
+        "g": "290796618b24955f",
+        "name": "link in 75",
+        "links": [
+            "3818cc8b0a5aabed",
+            "5059739dbd1ae510",
+            "dda766f441681122",
+            "64f12fa191e7d7e0"
+        ],
+        "x": 225,
+        "y": 860,
+        "wires": [
+            [
+                "7bfa8347d6717246"
+            ]
+        ]
+    },
+    {
+        "id": "23ffd2c116cbdf71",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "925817a4bacd25ee",
+        "group": "0531957b8d4ecb7d",
+        "page": "",
+        "ui": "",
+        "name": "settings-segmentation",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"default-button-container\">\n    <v-btn color=\"orange darken-2\" class=\"default-settings-btn\" @click=\"confirmRestore\">Default settings</v-btn>\n  </div>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      msts: '',\n    };\n  },\n  methods: {\n    confirmRestore() {\n      if (confirm(\"Are you sure you want to reset default settings?\")) {\n        this.send({ payload: \"reset\" });\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .default-button-container {\n    position: relative;\n  }\n\n  .default-settings-btn {\n    position: absolute;\n    bottom: 1rem;\n    right: 0rem;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 960,
+        "wires": [
+            [
+                "250fac5d08b457a3"
+            ]
+        ]
+    },
+    {
+        "id": "250fac5d08b457a3",
+        "type": "link out",
+        "z": "5047c566973ee3a1",
+        "g": "925817a4bacd25ee",
+        "name": "link out 80",
+        "mode": "link",
+        "links": [
+            "f67384bd93fa9723"
+        ],
+        "x": 715,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "90e4abe12845a2df",
+        "type": "ui-event",
+        "z": "5047c566973ee3a1",
+        "ui": "1eeac55ba6b9065f",
+        "name": "",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "3818cc8b0a5aabed"
+            ]
+        ]
+    },
+    {
+        "id": "6fa34a1f2515c4cf",
+        "type": "inject",
+        "z": "5047c566973ee3a1",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "dda766f441681122"
+            ]
+        ]
+    },
+    {
+        "id": "dda766f441681122",
+        "type": "link out",
+        "z": "5047c566973ee3a1",
+        "name": "link out 100",
+        "mode": "link",
+        "links": [
+            "4e5baf21e265d811",
+            "c52bf2a4ca8f30e3",
+            "b1e3240bad8585c3",
+            "323fc05b6b6661cf",
+            "50a812cd9b3daf49",
+            "f15fabe9a83fbae7",
+            "ce9a58a38a8120dc",
+            "ea3288b5bc6bc136"
+        ],
+        "x": 445,
+        "y": 100,
+        "wires": []
+    },
+    {
         "id": "55974a9928ce597e",
         "type": "persistent value",
         "z": "b70df4b6cc88d09a",
@@ -15638,7 +15638,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"header-hardware-settings-container\">\n    <div class=\"header-hardware-settings-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-hardware-settings-container-right\">\n      <div class=\"header-hardware-settings-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-hardware-settings-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-hardware-settings-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-hardware-settings-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-hardware-settings-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-hardware-settings-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-hardware-settings-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-hardware-settings-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-hardware-settings-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-hardware-settings-container\">\n    <div class=\"header-hardware-settings-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-hardware-settings-container-right\">\n      <div class=\"header-hardware-settings-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-hardware-settings-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n    z-index: 1000000;\n  }\n\n  .header-hardware-settings-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-hardware-settings-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-hardware-settings-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-hardware-settings-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-hardware-settings-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-hardware-settings-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-hardware-settings-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -16547,7 +16547,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"header-monitoring-container\">\n    <div class=\"header-monitoring-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-monitoring-container-right\">\n      <div class=\"header-monitoring-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-monitoring-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-monitoring-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-monitoring-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-monitoring-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-monitoring-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-monitoring-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-monitoring-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-monitoring-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-monitoring-container\">\n    <div class=\"header-monitoring-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-monitoring-container-right\">\n      <div class=\"header-monitoring-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-monitoring-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-monitoring-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-monitoring-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-monitoring-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-monitoring-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-monitoring-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-monitoring-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-monitoring-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
