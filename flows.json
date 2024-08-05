@@ -10684,8 +10684,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 2160,
-        "y": 380,
+        "x": 1560,
+        "y": 240,
         "wires": [
             [
                 "e9702e2afce40391"
@@ -10703,8 +10703,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1990,
-        "y": 380,
+        "x": 1390,
+        "y": 240,
         "wires": [
             [
                 "918aba2d582e4a12"
@@ -10725,8 +10725,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 2350,
-        "y": 380,
+        "x": 1750,
+        "y": 240,
         "wires": []
     },
     {
@@ -10742,8 +10742,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2360,
-        "y": 340,
+        "x": 1760,
+        "y": 200,
         "wires": []
     },
     {
@@ -12936,6 +12936,61 @@
         ],
         "x": 255,
         "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2cf8f4f750e4834b",
+        "type": "file in",
+        "z": "00a14f98244d252e",
+        "name": "",
+        "filename": "/usr/share/planktoscope/installer-versioning.yml",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 400,
+        "y": 720,
+        "wires": [
+            [
+                "27b1d390621bd4e0"
+            ]
+        ]
+    },
+    {
+        "id": "bd0282ee554702de",
+        "type": "inject",
+        "z": "00a14f98244d252e",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 150,
+        "y": 720,
+        "wires": [
+            [
+                "2cf8f4f750e4834b"
+            ]
+        ]
+    },
+    {
+        "id": "27b1d390621bd4e0",
+        "type": "debug",
+        "z": "00a14f98244d252e",
+        "name": "debug 49",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 720,
         "wires": []
     },
     {
