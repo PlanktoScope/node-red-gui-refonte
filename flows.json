@@ -1326,12 +1326,13 @@
             "984b3bce0eba0dc7",
             "d3b072c2497a5209",
             "6d5bce164621a153",
-            "12d2c8b03fc1f242"
+            "12d2c8b03fc1f242",
+            "1fe601d84a9f0d02"
         ],
         "x": 124,
         "y": 659,
-        "w": 1252,
-        "h": 1522
+        "w": 1312,
+        "h": 1562
     },
     {
         "id": "3b32c3c9506eb933",
@@ -10446,7 +10447,7 @@
         "payload": "{\"imageVolume\":\"xx mL\",\"totalVolume\":\"xx mL\",\"progression\":0}",
         "payloadType": "json",
         "x": 550,
-        "y": 560,
+        "y": 600,
         "wires": [
             []
         ]
@@ -10526,8 +10527,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1410,
-        "y": 300,
+        "x": 1330,
+        "y": 200,
         "wires": [
             [
                 "b3e666d4e675a451"
@@ -10547,8 +10548,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1580,
-        "y": 300,
+        "x": 1500,
+        "y": 200,
         "wires": []
     },
     {
@@ -10711,8 +10712,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1560,
-        "y": 240,
+        "x": 1480,
+        "y": 140,
         "wires": [
             [
                 "e9702e2afce40391"
@@ -10730,8 +10731,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1390,
-        "y": 240,
+        "x": 1310,
+        "y": 140,
         "wires": [
             [
                 "918aba2d582e4a12"
@@ -10752,8 +10753,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1750,
-        "y": 240,
+        "x": 1670,
+        "y": 140,
         "wires": []
     },
     {
@@ -10769,8 +10770,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1760,
-        "y": 200,
+        "x": 1680,
+        "y": 100,
         "wires": []
     },
     {
@@ -11740,7 +11741,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 1010,
+        "x": 990,
         "y": 440,
         "wires": [
             [
@@ -11877,7 +11878,7 @@
         "z": "70f558eb9d60b6fc",
         "g": "3b32c3c9506eb933",
         "name": "Paylod for MQTT",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -11946,8 +11947,7 @@
         "y": 520,
         "wires": [
             [
-                "60bc270ddfa20f0b",
-                "997c71e9dcf596e8"
+                "60bc270ddfa20f0b"
             ]
         ]
     },
@@ -11984,7 +11984,8 @@
                 "7264fd4534476f08",
                 "87c72e161a760ea1",
                 "f6e7e0d05af5b212",
-                "75ce2f8d97d68069"
+                "75ce2f8d97d68069",
+                "1fe601d84a9f0d02"
             ]
         ]
     },
@@ -12012,7 +12013,7 @@
         "links": [
             "17a57f860b746d9c"
         ],
-        "x": 905,
+        "x": 865,
         "y": 560,
         "wires": [
             [
@@ -12029,7 +12030,7 @@
         "links": [
             "16496890b192797c"
         ],
-        "x": 905,
+        "x": 865,
         "y": 520,
         "wires": [
             [
@@ -12047,7 +12048,7 @@
         "links": [
             "25f6794686ddf057"
         ],
-        "x": 1335,
+        "x": 1395,
         "y": 1580,
         "wires": []
     },
@@ -12077,7 +12078,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 390,
-        "y": 480,
+        "y": 500,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -12096,7 +12097,7 @@
             "0804cf4b32049a1d"
         ],
         "x": 175,
-        "y": 480,
+        "y": 500,
         "wires": [
             [
                 "c51927142025c58c"
@@ -12129,7 +12130,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 410,
-        "y": 520,
+        "y": 560,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -12148,7 +12149,7 @@
             "0804cf4b32049a1d"
         ],
         "x": 175,
-        "y": 520,
+        "y": 560,
         "wires": [
             [
                 "14dab3e6993ce1dd"
@@ -12181,7 +12182,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1270,
-        "y": 440,
+        "y": 460,
         "wires": [
             [],
             []
@@ -12193,19 +12194,18 @@
         "z": "70f558eb9d60b6fc",
         "g": "3b32c3c9506eb933",
         "name": "Create payload",
-        "func": "// {\n//     \"action\": \"update_config\",\n//     \"config\": {\n//          ...:...\n//     }\n// }\n\nconst metadata = msg.payload;\n\nmsg.payload = {\n    \"action\": \"update_config\",\n    \"config\": metadata\n}\n\nreturn msg;",
+        "func": "// {\n//     \"action\": \"update_config\",\n//     \"config\": {\n//            \"description\": ...\n//          ...:...\n//     }\n// }\n\nconst metadata = msg.payload;\n\nmsg.payload = {\n    \"action\": \"update_config\",\n    \"config\": metadata\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
+        "x": 980,
         "y": 560,
         "wires": [
             [
-                "749f53cf1cdc61f9",
-                "b4a6261d50d0a9c3"
+                "749f53cf1cdc61f9"
             ]
         ]
     },
@@ -12321,6 +12321,34 @@
         "libs": [],
         "x": 950,
         "y": 1900,
+        "wires": [
+            [
+                "2406c0a2f5784c72"
+            ]
+        ]
+    },
+    {
+        "id": "1fe601d84a9f0d02",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.description",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 2180,
         "wires": [
             [
                 "2406c0a2f5784c72"
