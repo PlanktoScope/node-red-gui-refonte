@@ -112,6 +112,14 @@
         "env": []
     },
     {
+        "id": "819880c202d2361a",
+        "type": "tab",
+        "label": "Visualization Data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "de2b0f7cb4455c9b",
         "type": "group",
         "z": "2d41a8ed5aea3449",
@@ -642,38 +650,6 @@
         "y": 359,
         "w": 192,
         "h": 82
-    },
-    {
-        "id": "5c8dc5f5e1904bf8",
-        "type": "group",
-        "z": "fb15c917381dd273",
-        "name": "first-visit-form",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "43f2c97055fc26be",
-            "0565dc25419690e3",
-            "90d9c21321164d49",
-            "37fdca294eb2d1bb",
-            "dcc0c648c7c57223",
-            "8b05263aee3303bf",
-            "2cba5a92e292ae0f",
-            "9ed31adfa207532c",
-            "d3a5a70db54745f0",
-            "f6c532036b5081b0",
-            "cae0178a8a69f787",
-            "db90716e8f85a03f",
-            "eac22c776f85072b",
-            "469d021252c5af93",
-            "840870e225e30144"
-        ],
-        "x": 104,
-        "y": 479,
-        "w": 1512,
-        "h": 222
     },
     {
         "id": "1001f50c9610fbab",
@@ -1384,6 +1360,45 @@
         "h": 1002
     },
     {
+        "id": "3b32c3c9506eb933",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "Settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "dc1b246968e8333a",
+            "2efa775925b01a42",
+            "9f562d703ae1ccbf",
+            "a8b40501e4c53fed",
+            "997c71e9dcf596e8",
+            "6def4e7e67623547",
+            "883c8bcbd98bb3c3",
+            "f65e14920a75ce9f",
+            "20f0245cbefbbf69",
+            "4317b389f6b1b156",
+            "60bc270ddfa20f0b",
+            "b4a6261d50d0a9c3",
+            "16496890b192797c",
+            "c51927142025c58c",
+            "edd15056c8b5ffc8",
+            "14dab3e6993ce1dd",
+            "c6633d19eafe05ef",
+            "650a00ed7ac1e9b8",
+            "25f6794686ddf057",
+            "b7d43a5399350e4c",
+            "b0669e2b7f125e7e",
+            "bff53e3e25fde770"
+        ],
+        "x": 134,
+        "y": 379,
+        "w": 1512,
+        "h": 282
+    },
+    {
         "id": "b08415909e5dc4da",
         "type": "group",
         "z": "e988301e60e4b458",
@@ -1507,43 +1522,169 @@
         "h": 882
     },
     {
-        "id": "3b32c3c9506eb933",
+        "id": "217abb3abac21001",
         "type": "group",
-        "z": "70f558eb9d60b6fc",
-        "name": "Settings",
+        "z": "f260ed9417849607",
+        "g": "0d384e544ffce204",
+        "name": "Select DataFrame",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#000000",
+            "fill-opacity": "0.65"
+        },
+        "nodes": [
+            "b53fa58bab471031",
+            "e4c5ac606ec6a5db",
+            "19dbf1af317825a6",
+            "00cbf4bcc851b630",
+            "7eb37a75f138d6c6",
+            "c57055b8cd4e52fd",
+            "c3bad434668c251d",
+            "5299cd86668a8449",
+            "730cbd2b78f5828b",
+            "6a0aacfdb4ef9b75",
+            "cc7a2fc1b2854427",
+            "9aa0c8749b9f1030",
+            "92915fe2ec89ef89",
+            "3604caf66d1604b6",
+            "50d076d2b05a3a6b",
+            "ed47364d2ee05dd4",
+            "b094db16ee10b12b",
+            "31363c34d65e5218",
+            "dad2dff397f06377",
+            "e2d064d340c9f011",
+            "8bcdfc2623a6d65c",
+            "6860b65791664f1d",
+            "1e962f2079c6f2e3",
+            "d35ec9faaebe3bd4",
+            "c12d91f312ba4389",
+            "74cf38c8d80b39c7",
+            "2ec82ed343666992",
+            "a5da80d9e95dfdaf",
+            "4c5dadcb54550cbb",
+            "c0095bd3c4fd5369",
+            "1e70d69aa2625e53",
+            "78412c7f6dc52b8f",
+            "9640278eb6d47dab",
+            "452df08781166706",
+            "2fe093ecfa16aa73",
+            "58b70a617c6a0213",
+            "d80c1ba1cd41c454"
+        ],
+        "x": 34,
+        "y": 899,
+        "w": 1752,
+        "h": 829.5
+    },
+    {
+        "id": "3a99d3e5ba59a12d",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "g": "0d384e544ffce204",
+        "name": "DataTable",
         "style": {
             "stroke": "#000000",
             "label": true,
             "color": "#000000"
         },
         "nodes": [
-            "dc1b246968e8333a",
-            "2efa775925b01a42",
-            "9f562d703ae1ccbf",
-            "a8b40501e4c53fed",
-            "997c71e9dcf596e8",
-            "6def4e7e67623547",
-            "883c8bcbd98bb3c3",
-            "f65e14920a75ce9f",
-            "20f0245cbefbbf69",
-            "4317b389f6b1b156",
-            "60bc270ddfa20f0b",
-            "b4a6261d50d0a9c3",
-            "16496890b192797c",
-            "c51927142025c58c",
-            "edd15056c8b5ffc8",
-            "14dab3e6993ce1dd",
-            "c6633d19eafe05ef",
-            "650a00ed7ac1e9b8",
-            "25f6794686ddf057",
-            "b7d43a5399350e4c",
-            "b0669e2b7f125e7e",
-            "bff53e3e25fde770"
+            "0d159c22ef7345c9",
+            "f9ea49beed099d6f",
+            "20f133774f79275e",
+            "1d8bc6ea7056cbdd",
+            "4d0362defd7a3b29",
+            "7e538b792d597d2e",
+            "1b3f2f52d79a978f"
+        ],
+        "x": 974,
+        "y": 599,
+        "w": 692,
+        "h": 262
+    },
+    {
+        "id": "d9a24d94ae3bdddb",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "g": "0d384e544ffce204",
+        "name": "Timeline",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f222f4ac9670330a",
+            "716a9546a10d44d7",
+            "86312631e7454d0e",
+            "891e46bad4e67dc3",
+            "1b8975860cf1197a",
+            "b5cd94b563000b24",
+            "677adf66aaeb8215"
         ],
         "x": 134,
-        "y": 379,
-        "w": 1512,
-        "h": 282
+        "y": 659,
+        "w": 712,
+        "h": 222
+    },
+    {
+        "id": "758f20607e7c5eba",
+        "type": "group",
+        "z": "f260ed9417849607",
+        "g": "0d384e544ffce204",
+        "name": "InfoTable",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "6dc5f707f93bece4",
+            "48c4e8cea0f3babe",
+            "e3eb9d72533782c1",
+            "00b0d1365d72f7ca",
+            "36f0f5b05b237f22",
+            "6f59b7c66be79b8f",
+            "1328d8289798347b"
+        ],
+        "x": 1714,
+        "y": 599,
+        "w": 692,
+        "h": 262
+    },
+    {
+        "id": "5c8dc5f5e1904bf8",
+        "type": "group",
+        "z": "fb15c917381dd273",
+        "name": "first-visit-form",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "43f2c97055fc26be",
+            "0565dc25419690e3",
+            "90d9c21321164d49",
+            "37fdca294eb2d1bb",
+            "dcc0c648c7c57223",
+            "8b05263aee3303bf",
+            "2cba5a92e292ae0f",
+            "9ed31adfa207532c",
+            "d3a5a70db54745f0",
+            "f6c532036b5081b0",
+            "cae0178a8a69f787",
+            "db90716e8f85a03f",
+            "eac22c776f85072b",
+            "469d021252c5af93",
+            "840870e225e30144",
+            "695a202180a55638"
+        ],
+        "x": 44,
+        "y": 479,
+        "w": 1572,
+        "h": 222
     },
     {
         "id": "cae0178a8a69f787",
@@ -2663,22 +2804,90 @@
         ]
     },
     {
+        "id": "4f4513db7c879892",
+        "type": "persistent values config",
+        "name": "Visualization_Graphs",
+        "values": [
+            {
+                "id": "f2795c20-4991-11ef-9554-a70fc822169d",
+                "name": "map",
+                "datatype": "str",
+                "default": "",
+                "description": "url of the map",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "a9ee5ba0-4995-11ef-9554-a70fc822169d",
+                "name": "datatable",
+                "datatype": "str",
+                "default": "",
+                "description": "url of the datatable",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "2a3ef590-5011-11ef-8a3a-f1ecc38ac21c",
+                "name": "infotable",
+                "datatype": "str",
+                "default": "",
+                "description": "",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "b2a02b80-4999-11ef-9554-a70fc822169d",
+                "name": "chartsection_charts",
+                "datatype": "json",
+                "default": "[]",
+                "description": "array of charts url",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "98b8b560-4a6c-11ef-aec9-29e63ad077bb",
+                "name": "chartsection_metadata",
+                "datatype": "json",
+                "default": "[]",
+                "description": "object metadatas to create graphs",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "c3613240-4d89-11ef-8784-530357231a16",
+                "name": "timeline",
+                "datatype": "str",
+                "default": "",
+                "description": "url of the timeline",
+                "scope": "global",
+                "storage": "default"
+            }
+        ]
+    },
+    {
+        "id": "3b6f8b6b4fefa74c",
+        "type": "ui-group",
+        "name": "Timeline",
+        "page": "662357e16a28be28",
+        "width": "12",
+        "height": "3",
+        "order": 4,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
         "id": "ab7abe42214339fd",
         "type": "inject",
         "z": "2d41a8ed5aea3449",
         "name": "Begin",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
+        "props": [],
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "str",
         "x": 90,
         "y": 100,
         "wires": [
@@ -2714,7 +2923,7 @@
         "z": "2d41a8ed5aea3449",
         "g": "de2b0f7cb4455c9b",
         "name": "Env variables set",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2835,7 +3044,7 @@
         "z": "2d41a8ed5aea3449",
         "g": "96bb330907da5bdb",
         "name": "Read first-visit state",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2907,7 +3116,7 @@
         "z": "2d41a8ed5aea3449",
         "g": "96bb330907da5bdb",
         "name": "Read coord-format state",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2948,7 +3157,7 @@
         "type": "debug",
         "z": "2d41a8ed5aea3449",
         "name": "debug 28",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3004,7 +3213,7 @@
         "type": "debug",
         "z": "2d41a8ed5aea3449",
         "name": "Controller.py OUTPUT",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5145,14 +5354,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Model</label>\n        <v-select\n          label=\"Select your model\"\n          v-model=\"hardware.model\"\n          :items=msg.model_list\n          variant=\"outlined\"\n          density=\"compact\"\n        ></v-select>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator: {\n        name: '',\n        email: '',\n      },\n      hardware: {\n        model: '',\n      }\n    };\n  },\n  methods: {\n    validateForm() {\n      const { name, email } = this.operator;\n      const { model } = this.hardware;\n\n      if (!name || !email || !model) {\n        // alert\n        return;\n      }\n\n      const formData = {\n        operator: this.operator,\n        hardware: this.hardware,\n      };\n\n      this.send({\n        payload: {\n          operator: this.operator,\n          hardware: this.hardware,\n          firstVisit: false\n        }\n      })\n    }\n  },\n  watch: {\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.model_selected) {\n              this.hardware.model = msg.payload.model_selected;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n}\n</script>\n\n<style>\n\n  .first-visit-custom-button {\n    border-radius: 8px;\n    font-size: 1vw;\n    padding-top: 12px;\n    padding-bottom: 12px;\n  }\n\n  .form-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n  }\n\n  .first-visit-form-block-one, .first-visit-form-block-two {\n    width: 80%;\n    max-width: 600px;\n    padding: 1rem;\n    border: 1px solid black;\n    border-radius: 5px;\n    margin-bottom: 1rem;\n  }\n\n  p#first-visit-block-one-title, p#first-visit-block-two-title {\n    font-size: 1.5vw;\n    margin-bottom: 1rem;\n  }\n\n  .first-visit-input-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0rem 0rem 1rem 1.4rem;\n  }\n\n  .my-first-visit-label {\n    font-size: 1.2vw;\n    min-width: 10rem;\n  }\n\n  .button-container {\n    display: flex;\n    justify-content: flex-end;\n    width: 80%;\n    max-width: 600px;\n  }\n\n  .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          @input=\"updatePayload\"\n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          @input=\"updatePayload\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Model</label>\n        <v-select\n          label=\"Select your model\"\n          v-model=\"model_selected\"\n          @input=\"updatePayload\"\n          :items=\"model_list\"\n          variant=\"outlined\"\n          density=\"compact\"\n        ></v-select>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n        first_visit: true,\n        model_list: [],\n        model_selected: \"\",\n        operator: {\n            name: '',\n            email: '',\n        }\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n          \n          if (payload.first_visit) {\n            this.first_visit = payload.first_visit;\n          }\n          if (payload.model_list) {\n            this.model_list = payload.model_list;\n          }\n          if (payload.model_selected) {\n            this.model_selected = payload.model_selected;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n        const payload = {\n            operator: this.operator,\n            hardware: this.model_selected,\n        };\n        \n        this.send({ payload });\n    },\n    validateForm() {\n      if (!this.operator.name || !this.operator.email || !this.model_selected) {\n        this.send({payload : \"test\"})\n        return;\n      }\n\n      this.send({\n        payload: {\n          operator: this.operator,\n          hardware: this.model_selected,\n          firstVisit: this.first_visit\n        }\n      });\n    }\n  },\n}\n</script>\n\n<style scoped>\n.first-visit-custom-button {\n  border-radius: 8px;\n  font-size: 1vw;\n  padding-top: 12px;\n  padding-bottom: 12px;\n}\n\n.form-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n}\n\n.first-visit-form-block-one, .first-visit-form-block-two {\n  width: 80%;\n  max-width: 600px;\n  padding: 1rem;\n  border: 1px solid black;\n  border-radius: 5px;\n  margin-bottom: 1rem;\n}\n\np#first-visit-block-one-title, p#first-visit-block-two-title {\n  font-size: 1.5vw;\n  margin-bottom: 1rem;\n}\n\n.first-visit-input-container {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  margin: 0rem 0rem 1rem 1.4rem;\n}\n\n.my-first-visit-label {\n  font-size: 1.2vw;\n  min-width: 10rem;\n}\n\n.button-container {\n  display: flex;\n  justify-content: flex-end;\n  width: 80%;\n  max-width: 600px;\n}\n\n.v-input__details {\n  display: none;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 620,
-        "y": 540,
+        "y": 580,
         "wires": [
             [
                 "0565dc25419690e3",
@@ -5205,7 +5414,7 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "false"
+                "t": "true"
             }
         ],
         "checkall": "true",
@@ -5301,7 +5510,7 @@
         "valueId": "120f5c10-49a6-11ef-9331-19c39f8156d0",
         "value": "model_list",
         "command": "read",
-        "msgProperty": "model_list",
+        "msgProperty": "payload.model_list",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5333,12 +5542,13 @@
         "links": [
             "c24d1751dd739fe4"
         ],
-        "x": 145,
-        "y": 540,
+        "x": 85,
+        "y": 560,
         "wires": [
             [
                 "eac22c776f85072b",
-                "840870e225e30144"
+                "840870e225e30144",
+                "695a202180a55638"
             ]
         ]
     },
@@ -5380,7 +5590,7 @@
         "z": "fb15c917381dd273",
         "g": "5c8dc5f5e1904bf8",
         "name": "Set payload == model",
-        "func": "const buffer = msg.payload.hardware.model;\n\nmsg.payload = buffer;\n\nreturn msg;",
+        "func": "const buffer = msg.payload.hardware;\n\nmsg.payload = buffer;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5421,7 +5631,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 560,
+        "y": 580,
         "wires": [
             [
                 "43f2c97055fc26be"
@@ -5490,6 +5700,40 @@
         "y": 660,
         "wires": [
             [],
+            []
+        ]
+    },
+    {
+        "id": "695a202180a55638",
+        "type": "persistent value",
+        "z": "fb15c917381dd273",
+        "g": "5c8dc5f5e1904bf8",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "read",
+        "msgProperty": "payload.first_visit",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "43f2c97055fc26be"
+            ],
             []
         ]
     },
@@ -14727,7 +14971,7 @@
         "z": "f260ed9417849607",
         "g": "217abb3abac21001",
         "name": "Find .tsv file",
-        "func": "\nconst directory = \"C:/Users/luffy/.node-red/data/export\";\n\nasync function getTsvFiles(dir) {\n    let results = [];\n    try {\n        const files = await fs.readdir(dir, { withFileTypes: true });\n        for (const file of files) {\n            const filePath = path.join(dir, file.name);\n            if (file.isDirectory()) {\n                const nestedFiles = await getTsvFiles(filePath);\n                results = results.concat(nestedFiles);\n            } else if (file.name.endsWith(\".zip\")) {\n                // Read the ZIP file\n                const zip = new AdmZip(filePath);\n                const zipEntries = zip.getEntries();\n                for (const zipEntry of zipEntries) {\n                    if (zipEntry.entryName.endsWith(\".tsv\")) {\n                        results.push({\n                            value: `${filePath}:${zipEntry.entryName}`,\n                            label: zipEntry.entryName\n                        });\n                    }\n                }\n            } else if (file.name.endsWith(\".tsv\")) {\n                results.push({\n                    value: filePath,\n                    label: file.name\n                });\n            }\n        }\n    } catch (err) {\n        console.error(`Error reading directory ${dir}: ${err}`);\n    }\n    return results;\n}\n\ngetTsvFiles(directory)\n    .then(files => {\n        console.log(files);\n        msg.options = files; \n        node.send(msg); \n    })\n    .catch(err => {\n        console.error('Unable to scan directory: ' + err);\n    });\n",
+        "func": "\nconst directory = \"/home/pi/data/export\";\n\nasync function getTsvFiles(dir) {\n    let results = [];\n    try {\n        const files = await fs.readdir(dir, { withFileTypes: true });\n        for (const file of files) {\n            const filePath = path.join(dir, file.name);\n            if (file.isDirectory()) {\n                const nestedFiles = await getTsvFiles(filePath);\n                results = results.concat(nestedFiles);\n            } else if (file.name.endsWith(\".zip\")) {\n                // Read the ZIP file\n                const zip = new AdmZip(filePath);\n                const zipEntries = zip.getEntries();\n                for (const zipEntry of zipEntries) {\n                    if (zipEntry.entryName.endsWith(\".tsv\")) {\n                        results.push({\n                            value: `${filePath}:${zipEntry.entryName}`,\n                            label: zipEntry.entryName\n                        });\n                    }\n                }\n            } else if (file.name.endsWith(\".tsv\")) {\n                results.push({\n                    value: filePath,\n                    label: file.name\n                });\n            }\n        }\n    } catch (err) {\n        console.error(`Error reading directory ${dir}: ${err}`);\n    }\n    return results;\n}\n\ngetTsvFiles(directory)\n    .then(files => {\n        console.log(files);\n        msg.options = files; \n        node.send(msg); \n    })\n    .catch(err => {\n        console.error('Unable to scan directory: ' + err);\n    });\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14931,7 +15175,7 @@
         "page": "",
         "ui": "",
         "name": "DataTable",
-        "order": 7,
+        "order": 6,
         "width": "3",
         "height": "5",
         "head": "",
@@ -15437,6 +15681,822 @@
         "x": 1050,
         "y": 1420,
         "wires": []
+    },
+    {
+        "id": "7786016a46447829",
+        "type": "link out",
+        "z": "f260ed9417849607",
+        "g": "90c3a646e08cf822",
+        "name": "out Map",
+        "mode": "link",
+        "links": [
+            "cd40f94b90bb753c"
+        ],
+        "x": 435,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "89615d017cc8a981",
+        "type": "link in",
+        "z": "f260ed9417849607",
+        "g": "90c3a646e08cf822",
+        "name": "in Map",
+        "links": [
+            "8185c9da69152b2e"
+        ],
+        "x": 365,
+        "y": 520,
+        "wires": [
+            [
+                "94d3348c2fa75e5f"
+            ]
+        ]
+    },
+    {
+        "id": "6860b65791664f1d",
+        "type": "persistent value",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "DATA",
+        "valueId": "b3ccc830-4505-11ef-a4b1-fb6c49220709",
+        "value": "dataset_path",
+        "command": "read",
+        "msgProperty": "destination",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 800,
+        "y": 1560,
+        "wires": [
+            [
+                "c0095bd3c4fd5369",
+                "9640278eb6d47dab"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1e962f2079c6f2e3",
+        "type": "ui-template",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "group": "f215418ba0dbaaad",
+        "page": "",
+        "ui": "",
+        "name": "Replace dataframe",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n    <div class=\"ReplaceButtonDiv\">\n        <v-btn class=\"ReplaceButton\" @click=\"openFileDialog\">Replace dataframe</v-btn>\n        <input type=\"file\" ref=\"fileInput\" style=\"display: none\" @change=\"fileSelected\">\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            fileContent: '',\n            msg: { payload: '', topic: 'selectedFile' }, // Initialize the message object\n            lines: [] // Array to store the TSV file lines\n        };\n    },\n    methods: {\n        openFileDialog() {\n            this.$refs.fileInput.click();\n        },\n        fileSelected(event) {\n            const file = event.target.files[0];\n            if (file) {\n                // Read the contents of the selected file as a string\n                const reader = new FileReader();\n                reader.onload = function() {\n                    this.fileContent = reader.result;\n                    const lines = this.fileContent.split('\\n'); // Split the file into lines\n                    for (const line of lines) {\n                        if (line !== '') { // Skip empty lines\n                            const cols = line.split('\\t'); // Split the line into columns\n                            const payload = cols.join(','); // Join the columns with commas\n                            this.lines.push(payload); // Add the line to our array\n                            this.send({ topic: 'selectedFile', payload: payload }); // Send each line as a separate message\n                        }\n                    }\n                    this.send({ topic: 'selectedFile', complete: true }); // Send msg.complete\n                }.bind(this);\n                reader.readAsText(file);\n            }\n        }\n    }\n};\n</script>\n\n<style>\n    .ReplaceButtonDiv{\n        display:flex;\n    }\n    .ReplaceButton{\n        flex:1;\n        width:100%;\n        height:100%;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 150,
+        "y": 1560,
+        "wires": [
+            [
+                "d35ec9faaebe3bd4",
+                "c12d91f312ba4389"
+            ]
+        ]
+    },
+    {
+        "id": "d35ec9faaebe3bd4",
+        "type": "debug",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "debug 44",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 180,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "c12d91f312ba4389",
+        "type": "join",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 390,
+        "y": 1560,
+        "wires": [
+            [
+                "2ec82ed343666992"
+            ]
+        ]
+    },
+    {
+        "id": "74cf38c8d80b39c7",
+        "type": "file",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "",
+        "filename": "destination",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1700,
+        "y": 1560,
+        "wires": [
+            [
+                "452df08781166706"
+            ]
+        ]
+    },
+    {
+        "id": "2ec82ed343666992",
+        "type": "function",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "recreate .tsv file",
+        "func": "// Node-RED Function Node\n// Ensure msg.payload is an array where each element is a line of the data\n\nif (!Array.isArray(msg.payload)) {\n    node.error(\"msg.payload is not an array\", msg);\n    return null;\n}\n\nconst rows = msg.payload;\n\n// Function to parse. Taking care of cells that contains Json object\nfunction parseLine(line) {\n    const result = [];\n    let currentItem = '';\n    let inBraces = 0;\n\n    for (let i = 0; i < line.length; i++) {\n        const char = line[i];\n\n        if (char === '{') {\n            inBraces++;\n        } else if (char === '}') {\n            inBraces--;\n        } else if (char === ',' && inBraces === 0) {\n            result.push(currentItem);\n            currentItem = '';\n            continue;\n        }\n\n        currentItem += char;\n    }\n\n    result.push(currentItem); // Push the last item\n    return result;\n}\n\n// Step 1: Separate headers and data rows\nconst headers = parseLine(rows[0]);\nconst dataRows = rows.slice(1).map(row => parseLine(row));\n\n// Step 2: Remove surrounding quotes from headers and data rows\n//const cleanHeaders = headers.map(header => header.replace(/^\"|\"$/g, ''));\n//const cleanDataRows = dataRows.map(dataRow => dataRow.map(item => item.replace(/^\"|\"$/g, '')));\nconst cleanHeaders = headers;\nconst cleanDataRows = dataRows;\n// Step 3: Join headers and data rows into TSV format\nconst tsvHeaders = cleanHeaders.join(\"\\t\");\nconst tsvDataRows = cleanDataRows.map(dataRow => dataRow.join(\"\\t\")).join(\"\\n\");\n\n// Step 4: Construct the final TSV string\nconst tsvOutput = `${tsvHeaders}\\n${tsvDataRows}`;\n\n// Step 5: Set the output message payload to the TSV string\nmsg.payload = tsvOutput;\n\n// Return the message object\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1560,
+        "wires": [
+            [
+                "6860b65791664f1d"
+            ]
+        ]
+    },
+    {
+        "id": "a5da80d9e95dfdaf",
+        "type": "switch",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1340,
+        "y": 1560,
+        "wires": [
+            [
+                "4c5dadcb54550cbb"
+            ]
+        ]
+    },
+    {
+        "id": "4c5dadcb54550cbb",
+        "type": "switch",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "",
+        "property": "destination",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1500,
+        "y": 1560,
+        "wires": [
+            [
+                "74cf38c8d80b39c7"
+            ]
+        ]
+    },
+    {
+        "id": "c0095bd3c4fd5369",
+        "type": "debug",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "debug 45",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "7e538b792d597d2e",
+        "type": "link in",
+        "z": "f260ed9417849607",
+        "g": "3a99d3e5ba59a12d",
+        "name": "in DataTable",
+        "links": [
+            "fcb87e389542e76b",
+            "68b62fae889416d2"
+        ],
+        "x": 1335,
+        "y": 820,
+        "wires": [
+            [
+                "f9ea49beed099d6f"
+            ]
+        ]
+    },
+    {
+        "id": "1b3f2f52d79a978f",
+        "type": "link out",
+        "z": "f260ed9417849607",
+        "g": "3a99d3e5ba59a12d",
+        "name": "out DataTable",
+        "mode": "link",
+        "links": [
+            "959eae8c211e5426",
+            "fe5d2ab2facb707f"
+        ],
+        "x": 1395,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "fe2841e73b262323",
+        "type": "link in",
+        "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
+        "name": "in ChartSection",
+        "links": [
+            "5567e81e4ec9703a",
+            "986bcf8e0120a93f"
+        ],
+        "x": 285,
+        "y": 2100,
+        "wires": [
+            [
+                "019af3477dfde6a9"
+            ]
+        ]
+    },
+    {
+        "id": "85270dcda34b8cc8",
+        "type": "link out",
+        "z": "f260ed9417849607",
+        "g": "856d9c3d6ae49cc6",
+        "name": "out ChartSection",
+        "mode": "link",
+        "links": [
+            "d500801594206f28"
+        ],
+        "x": 425,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "1e70d69aa2625e53",
+        "type": "exec",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1250,
+        "y": 1680,
+        "wires": [
+            [
+                "78412c7f6dc52b8f"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "78412c7f6dc52b8f",
+        "type": "debug",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "debug 51",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "9640278eb6d47dab",
+        "type": "function",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "rename to file_temp",
+        "func": "const destination_path= msg.destination\nlet renamed_destination = destination_path.substring(0,destination_path.length -4)+'_temp'+'.tsv';\nmsg.destination=renamed_destination;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1560,
+        "wires": [
+            [
+                "a5da80d9e95dfdaf"
+            ]
+        ]
+    },
+    {
+        "id": "452df08781166706",
+        "type": "function",
+        "z": "f260ed9417849607",
+        "d": true,
+        "g": "217abb3abac21001",
+        "name": "function 3",
+        "func": "msg.command=\"cp ./.node_red/\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f222f4ac9670330a",
+        "type": "ui-template",
+        "z": "f260ed9417849607",
+        "g": "d9a24d94ae3bdddb",
+        "group": "3b6f8b6b4fefa74c",
+        "page": "",
+        "ui": "",
+        "name": "timeline",
+        "order": 1,
+        "width": "12",
+        "height": "3",
+        "head": "",
+        "format": "<template>\n    <div class=\"timeline-container\">\n        <iframe v-if=\"iframeSrc\" :src=\"iframeSrc\" frameborder=\"0\"></iframe>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            iframeSrc: null\n        };\n    },\n    mounted() {\n        // Écoute des mises à jour du message entrant depuis Node-RED\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n                if (msg.payload.command === 'add iframe' && msg.payload.src) {\n                    // Ajout d'une iframe contenant la carte\n                    this.addIframe(msg.payload.src);\n                }\n            }\n            if (msg.datas) {\n                this.verifyData(msg.datas);\n            }\n        });\n    },\n    methods: {\n        verifyData(datas) {\n            if (this.iframeSrc !== datas[0]) {\n                this.addIframe(datas[0]);\n            }\n        },\n        addIframe(src) {\n            // Ajouter l'iframe à la vue\n            this.iframeSrc = src;\n        },\n        removeIframe() {\n            // Retirer l'iframe de la vue\n            this.iframeSrc = null;\n        }\n    }\n};\n</script>\n\n<style scoped>\n.timeline-container {\n    position: relative;\n    width: 100%;\n    overflow: hidden;\n}\n\n.timeline-container iframe {\n    position: absolute;\n    overflow:hidden;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    border: none;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "716a9546a10d44d7",
+        "type": "mqtt in",
+        "z": "f260ed9417849607",
+        "g": "d9a24d94ae3bdddb",
+        "name": "",
+        "topic": "visualization/timeline",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 800,
+        "wires": [
+            [
+                "f222f4ac9670330a",
+                "b5cd94b563000b24"
+            ]
+        ]
+    },
+    {
+        "id": "86312631e7454d0e",
+        "type": "inject",
+        "z": "f260ed9417849607",
+        "g": "d9a24d94ae3bdddb",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "x": 240,
+        "y": 700,
+        "wires": [
+            [
+                "891e46bad4e67dc3"
+            ]
+        ]
+    },
+    {
+        "id": "891e46bad4e67dc3",
+        "type": "change",
+        "z": "f260ed9417849607",
+        "g": "d9a24d94ae3bdddb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"command\":\"create timeline\",\"args\":[]}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 700,
+        "wires": [
+            [
+                "1b8975860cf1197a"
+            ]
+        ]
+    },
+    {
+        "id": "1b8975860cf1197a",
+        "type": "mqtt out",
+        "z": "f260ed9417849607",
+        "g": "d9a24d94ae3bdddb",
+        "name": "",
+        "topic": "visualization/commands",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 710,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b5cd94b563000b24",
+        "type": "link out",
+        "z": "f260ed9417849607",
+        "g": "d9a24d94ae3bdddb",
+        "name": "out Timeline",
+        "mode": "link",
+        "links": [
+            "df844b0b197b9687"
+        ],
+        "x": 435,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "677adf66aaeb8215",
+        "type": "link in",
+        "z": "f260ed9417849607",
+        "g": "d9a24d94ae3bdddb",
+        "name": "in Timeline",
+        "links": [
+            "252e4d385f355983"
+        ],
+        "x": 365,
+        "y": 840,
+        "wires": [
+            [
+                "f222f4ac9670330a"
+            ]
+        ]
+    },
+    {
+        "id": "6dc5f707f93bece4",
+        "type": "mqtt out",
+        "z": "f260ed9417849607",
+        "g": "758f20607e7c5eba",
+        "name": "",
+        "topic": "visualization/commands",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 2270,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "48c4e8cea0f3babe",
+        "type": "ui-template",
+        "z": "f260ed9417849607",
+        "g": "758f20607e7c5eba",
+        "group": "f215418ba0dbaaad",
+        "page": "",
+        "ui": "",
+        "name": "InfoTable",
+        "order": 7,
+        "width": "3",
+        "height": "5",
+        "head": "",
+        "format": "<template>\n    <div class=\"iframe-container\">\n        <iframe v-if=\"iframeSrc\" :src=\"iframeSrc\" frameborder=\"0\"></iframe>\n    </div>\n</template>\n\n<script>\n    export default {\n    data() {\n        return {\n            iframeSrc: null\n        };\n    },\n    mounted() {\n        // Écoute des mises à jour du message entrant depuis Node-RED\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n                if (msg.payload.command === 'add iframe' && msg.payload.src) {\n                    // Ajout d'une iframe contenant la carte\n                    this.addIframe(msg.payload.src);\n                }\n            }\n            if (msg.datas){\n                this.verifyData(msg.datas);\n            }\n        });\n    },\n    methods: {\n        verifyData(datas){\n            if(this.iframeSrc !== datas[0]){\n                this.addIframe(datas[0]);\n            }\n        },\n        addIframe(src) {\n            // Ajouter l'iframe à la vue\n            this.iframeSrc = src;\n        },\n        removeIframe() {\n            // Retirer l'iframe de la vue\n            this.iframeSrc = null;\n        }\n    }\n};\n</script>\n\n<style scoped>\n    .iframe-container {\n        width: 100%;\n        height: 100%;\n    }\n\n    iframe {\n        width: 100%;\n        height: 100%;\n        border: none;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 2180,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3eb9d72533782c1",
+        "type": "mqtt in",
+        "z": "f260ed9417849607",
+        "g": "758f20607e7c5eba",
+        "name": "",
+        "topic": "visualization/infotable",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1840,
+        "y": 780,
+        "wires": [
+            [
+                "48c4e8cea0f3babe",
+                "1328d8289798347b"
+            ]
+        ]
+    },
+    {
+        "id": "00b0d1365d72f7ca",
+        "type": "inject",
+        "z": "f260ed9417849607",
+        "g": "758f20607e7c5eba",
+        "name": "Run at start",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "x": 1830,
+        "y": 640,
+        "wires": [
+            [
+                "36f0f5b05b237f22"
+            ]
+        ]
+    },
+    {
+        "id": "36f0f5b05b237f22",
+        "type": "change",
+        "z": "f260ed9417849607",
+        "g": "758f20607e7c5eba",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"command\":\"init infotable\",\"args\":[]}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2030,
+        "y": 640,
+        "wires": [
+            [
+                "6dc5f707f93bece4"
+            ]
+        ]
+    },
+    {
+        "id": "6f59b7c66be79b8f",
+        "type": "link in",
+        "z": "f260ed9417849607",
+        "g": "758f20607e7c5eba",
+        "name": "in InfoTable",
+        "links": [
+            "4495f51c704206a4"
+        ],
+        "x": 2075,
+        "y": 820,
+        "wires": [
+            [
+                "48c4e8cea0f3babe"
+            ]
+        ]
+    },
+    {
+        "id": "1328d8289798347b",
+        "type": "link out",
+        "z": "f260ed9417849607",
+        "g": "758f20607e7c5eba",
+        "name": "out InfoTable",
+        "mode": "link",
+        "links": [
+            "51a9c4ce41597853"
+        ],
+        "x": 2135,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "3909344acb7dde59",
+        "type": "mqtt in",
+        "z": "f260ed9417849607",
+        "name": "",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "57592c7f15ca5f8e"
+            ]
+        ]
+    },
+    {
+        "id": "57592c7f15ca5f8e",
+        "type": "debug",
+        "z": "f260ed9417849607",
+        "name": "MQTT msg",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2fe093ecfa16aa73",
+        "type": "mqtt in",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "",
+        "topic": "visualization/dataset",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1060,
+        "wires": [
+            [
+                "58b70a617c6a0213"
+            ]
+        ]
+    },
+    {
+        "id": "58b70a617c6a0213",
+        "type": "change",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "select",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 1060,
+        "wires": [
+            [
+                "d80c1ba1cd41c454"
+            ]
+        ]
+    },
+    {
+        "id": "d80c1ba1cd41c454",
+        "type": "function",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "Select tsv file",
+        "func": "// Create a closure to store the last payload\nlet lastPayload = context.get('TSV_files_found') || {};\n\nfunction handleMessage(msg) {\n    // Check if the message contains payload to store\n    if (msg.options && Array.isArray(msg.options) && !msg.select) {\n        // Store the new payload\n        if (lastPayload!=msg.options){\n            context.set('TSV_files_found', msg.options);            // Optionally, log or debug the stored payload\n            //node.warn('Payload stored: ' + JSON.stringify(msg.options));\n            return null; // No output required for storing the payload\n        }\n        \n    }\n\n    // Check if the message contains a select key\n    if (msg.select && typeof msg.select === 'string') {\n\n        // Search the stored payload for the matching label\n        if (lastPayload) {\n            for (let item of lastPayload) {\n                if (item.label === msg.select) {\n                    node.warn('Match found : '+item.value)\n                    return { payload: item.value };\n                }\n            }\n        }\n        \n        // If no matching label is found, log a warning and return null\n        node.warn('Label not found: ' + msg.select);\n        return { payload: null }; // Or handle the case as required\n    }\n\n    // If the message doesn't meet any conditions, just pass it through (or handle as needed)\n    return null;\n}\n\n// Define the function node behavior\nreturn handleMessage(msg);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "path",
+                "module": "path"
+            },
+            {
+                "var": "fs",
+                "module": "fs.promises"
+            },
+            {
+                "var": "AdmZip",
+                "module": "adm-zip"
+            }
+        ],
+        "x": 550,
+        "y": 1060,
+        "wires": [
+            [
+                "e4c5ac606ec6a5db",
+                "5299cd86668a8449"
+            ]
+        ]
     },
     {
         "id": "fc701c9ad326380a",
@@ -18983,1036 +20043,6 @@
         "wires": [
             [
                 "f31a598d.9fd2c8"
-            ]
-        ]
-    },
-    {
-        "id": "819880c202d2361a",
-        "type": "tab",
-        "label": "Visualization Data",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "217abb3abac21001",
-        "type": "group",
-        "z": "f260ed9417849607",
-        "g": "0d384e544ffce204",
-        "name": "Select DataFrame",
-        "style": {
-            "stroke": "#000000",
-            "fill": "#e3f3d3",
-            "label": true,
-            "color": "#000000",
-            "fill-opacity": "0.65"
-        },
-        "nodes": [
-            "b53fa58bab471031",
-            "e4c5ac606ec6a5db",
-            "19dbf1af317825a6",
-            "00cbf4bcc851b630",
-            "7eb37a75f138d6c6",
-            "c57055b8cd4e52fd",
-            "c3bad434668c251d",
-            "5299cd86668a8449",
-            "730cbd2b78f5828b",
-            "6a0aacfdb4ef9b75",
-            "cc7a2fc1b2854427",
-            "9aa0c8749b9f1030",
-            "92915fe2ec89ef89",
-            "3604caf66d1604b6",
-            "50d076d2b05a3a6b",
-            "ed47364d2ee05dd4",
-            "b094db16ee10b12b",
-            "31363c34d65e5218",
-            "dad2dff397f06377",
-            "e2d064d340c9f011",
-            "8bcdfc2623a6d65c",
-            "6860b65791664f1d",
-            "1e962f2079c6f2e3",
-            "d35ec9faaebe3bd4",
-            "c12d91f312ba4389",
-            "74cf38c8d80b39c7",
-            "2ec82ed343666992",
-            "a5da80d9e95dfdaf",
-            "4c5dadcb54550cbb",
-            "c0095bd3c4fd5369",
-            "1e70d69aa2625e53",
-            "78412c7f6dc52b8f",
-            "9640278eb6d47dab",
-            "452df08781166706",
-            "2fe093ecfa16aa73",
-            "58b70a617c6a0213",
-            "d80c1ba1cd41c454"
-        ],
-        "x": 34,
-        "y": 899,
-        "w": 1772,
-        "h": 829.5
-    },
-    {
-        "id": "3a99d3e5ba59a12d",
-        "type": "group",
-        "z": "f260ed9417849607",
-        "g": "0d384e544ffce204",
-        "name": "DataTable",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "0d159c22ef7345c9",
-            "f9ea49beed099d6f",
-            "20f133774f79275e",
-            "1d8bc6ea7056cbdd",
-            "4d0362defd7a3b29",
-            "7e538b792d597d2e",
-            "1b3f2f52d79a978f"
-        ],
-        "x": 974,
-        "y": 599,
-        "w": 692,
-        "h": 262
-    },
-    {
-        "id": "d9a24d94ae3bdddb",
-        "type": "group",
-        "z": "f260ed9417849607",
-        "g": "0d384e544ffce204",
-        "name": "Timeline",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "f222f4ac9670330a",
-            "716a9546a10d44d7",
-            "86312631e7454d0e",
-            "891e46bad4e67dc3",
-            "1b8975860cf1197a",
-            "b5cd94b563000b24",
-            "677adf66aaeb8215"
-        ],
-        "x": 134,
-        "y": 659,
-        "w": 712,
-        "h": 222
-    },
-    {
-        "id": "758f20607e7c5eba",
-        "type": "group",
-        "z": "f260ed9417849607",
-        "g": "0d384e544ffce204",
-        "name": "InfoTable",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "6dc5f707f93bece4",
-            "48c4e8cea0f3babe",
-            "e3eb9d72533782c1",
-            "00b0d1365d72f7ca",
-            "36f0f5b05b237f22",
-            "6f59b7c66be79b8f",
-            "1328d8289798347b"
-        ],
-        "x": 1714,
-        "y": 599,
-        "w": 692,
-        "h": 262
-    },
-    {
-        "id": "4f4513db7c879892",
-        "type": "persistent values config",
-        "name": "Visualization_Graphs",
-        "values": [
-            {
-                "id": "f2795c20-4991-11ef-9554-a70fc822169d",
-                "name": "map",
-                "datatype": "str",
-                "default": "",
-                "description": "url of the map",
-                "scope": "global",
-                "storage": "default"
-            },
-            {
-                "id": "a9ee5ba0-4995-11ef-9554-a70fc822169d",
-                "name": "datatable",
-                "datatype": "str",
-                "default": "",
-                "description": "url of the datatable",
-                "scope": "global",
-                "storage": "default"
-            },
-            {
-                "id": "2a3ef590-5011-11ef-8a3a-f1ecc38ac21c",
-                "name": "infotable",
-                "datatype": "str",
-                "default": "",
-                "description": "",
-                "scope": "global",
-                "storage": "default"
-            },
-            {
-                "id": "b2a02b80-4999-11ef-9554-a70fc822169d",
-                "name": "chartsection_charts",
-                "datatype": "json",
-                "default": "[]",
-                "description": "array of charts url",
-                "scope": "global",
-                "storage": "default"
-            },
-            {
-                "id": "98b8b560-4a6c-11ef-aec9-29e63ad077bb",
-                "name": "chartsection_metadata",
-                "datatype": "json",
-                "default": "[]",
-                "description": "object metadatas to create graphs",
-                "scope": "global",
-                "storage": "default"
-            },
-            {
-                "id": "c3613240-4d89-11ef-8784-530357231a16",
-                "name": "timeline",
-                "datatype": "str",
-                "default": "",
-                "description": "url of the timeline",
-                "scope": "global",
-                "storage": "default"
-            }
-        ]
-    },
-    {
-        "id": "3b6f8b6b4fefa74c",
-        "type": "ui-group",
-        "name": "Timeline",
-        "page": "662357e16a28be28",
-        "width": "12",
-        "height": "3",
-        "order": 4,
-        "showTitle": false,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "7786016a46447829",
-        "type": "link out",
-        "z": "f260ed9417849607",
-        "g": "90c3a646e08cf822",
-        "name": "out Map",
-        "mode": "link",
-        "links": [
-            "cd40f94b90bb753c"
-        ],
-        "x": 435,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "89615d017cc8a981",
-        "type": "link in",
-        "z": "f260ed9417849607",
-        "g": "90c3a646e08cf822",
-        "name": "in Map",
-        "links": [
-            "8185c9da69152b2e"
-        ],
-        "x": 365,
-        "y": 520,
-        "wires": [
-            [
-                "94d3348c2fa75e5f"
-            ]
-        ]
-    },
-    {
-        "id": "6860b65791664f1d",
-        "type": "persistent value",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "b3ccc830-4505-11ef-a4b1-fb6c49220709",
-        "value": "dataset_path",
-        "command": "read",
-        "msgProperty": "destination",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 800,
-        "y": 1560,
-        "wires": [
-            [
-                "c0095bd3c4fd5369",
-                "9640278eb6d47dab"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "1e962f2079c6f2e3",
-        "type": "ui-template",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "group": "f215418ba0dbaaad",
-        "page": "",
-        "ui": "",
-        "name": "Replace dataframe",
-        "order": 4,
-        "width": "2",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n    <div class=\"ReplaceButtonDiv\">\n        <v-btn class=\"ReplaceButton\" @click=\"openFileDialog\">Replace dataframe</v-btn>\n        <input type=\"file\" ref=\"fileInput\" style=\"display: none\" @change=\"fileSelected\">\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            fileContent: '',\n            msg: { payload: '', topic: 'selectedFile' }, // Initialize the message object\n            lines: [] // Array to store the TSV file lines\n        };\n    },\n    methods: {\n        openFileDialog() {\n            this.$refs.fileInput.click();\n        },\n        fileSelected(event) {\n            const file = event.target.files[0];\n            if (file) {\n                // Read the contents of the selected file as a string\n                const reader = new FileReader();\n                reader.onload = function() {\n                    this.fileContent = reader.result;\n                    const lines = this.fileContent.split('\\n'); // Split the file into lines\n                    for (const line of lines) {\n                        if (line !== '') { // Skip empty lines\n                            const cols = line.split('\\t'); // Split the line into columns\n                            const payload = cols.join(','); // Join the columns with commas\n                            this.lines.push(payload); // Add the line to our array\n                            this.send({ topic: 'selectedFile', payload: payload }); // Send each line as a separate message\n                        }\n                    }\n                    this.send({ topic: 'selectedFile', complete: true }); // Send msg.complete\n                }.bind(this);\n                reader.readAsText(file);\n            }\n        }\n    }\n};\n</script>\n\n<style>\n    .ReplaceButtonDiv{\n        display:flex;\n    }\n    .ReplaceButton{\n        flex:1;\n        width:100%;\n        height:100%;\n    }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 150,
-        "y": 1560,
-        "wires": [
-            [
-                "d35ec9faaebe3bd4",
-                "c12d91f312ba4389"
-            ]
-        ]
-    },
-    {
-        "id": "d35ec9faaebe3bd4",
-        "type": "debug",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "debug 44",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 180,
-        "y": 1520,
-        "wires": []
-    },
-    {
-        "id": "c12d91f312ba4389",
-        "type": "join",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "",
-        "mode": "custom",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 390,
-        "y": 1560,
-        "wires": [
-            [
-                "2ec82ed343666992"
-            ]
-        ]
-    },
-    {
-        "id": "74cf38c8d80b39c7",
-        "type": "file",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "",
-        "filename": "destination",
-        "filenameType": "msg",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 1700,
-        "y": 1560,
-        "wires": [
-            [
-                "452df08781166706"
-            ]
-        ]
-    },
-    {
-        "id": "2ec82ed343666992",
-        "type": "function",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "recreate .tsv file",
-        "func": "// Node-RED Function Node\n// Ensure msg.payload is an array where each element is a line of the data\n\nif (!Array.isArray(msg.payload)) {\n    node.error(\"msg.payload is not an array\", msg);\n    return null;\n}\n\nconst rows = msg.payload;\n\n// Function to parse. Taking care of cells that contains Json object\nfunction parseLine(line) {\n    const result = [];\n    let currentItem = '';\n    let inBraces = 0;\n\n    for (let i = 0; i < line.length; i++) {\n        const char = line[i];\n\n        if (char === '{') {\n            inBraces++;\n        } else if (char === '}') {\n            inBraces--;\n        } else if (char === ',' && inBraces === 0) {\n            result.push(currentItem);\n            currentItem = '';\n            continue;\n        }\n\n        currentItem += char;\n    }\n\n    result.push(currentItem); // Push the last item\n    return result;\n}\n\n// Step 1: Separate headers and data rows\nconst headers = parseLine(rows[0]);\nconst dataRows = rows.slice(1).map(row => parseLine(row));\n\n// Step 2: Remove surrounding quotes from headers and data rows\n//const cleanHeaders = headers.map(header => header.replace(/^\"|\"$/g, ''));\n//const cleanDataRows = dataRows.map(dataRow => dataRow.map(item => item.replace(/^\"|\"$/g, '')));\nconst cleanHeaders = headers;\nconst cleanDataRows = dataRows;\n// Step 3: Join headers and data rows into TSV format\nconst tsvHeaders = cleanHeaders.join(\"\\t\");\nconst tsvDataRows = cleanDataRows.map(dataRow => dataRow.join(\"\\t\")).join(\"\\n\");\n\n// Step 4: Construct the final TSV string\nconst tsvOutput = `${tsvHeaders}\\n${tsvDataRows}`;\n\n// Step 5: Set the output message payload to the TSV string\nmsg.payload = tsvOutput;\n\n// Return the message object\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 1560,
-        "wires": [
-            [
-                "6860b65791664f1d"
-            ]
-        ]
-    },
-    {
-        "id": "a5da80d9e95dfdaf",
-        "type": "switch",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1340,
-        "y": 1560,
-        "wires": [
-            [
-                "4c5dadcb54550cbb"
-            ]
-        ]
-    },
-    {
-        "id": "4c5dadcb54550cbb",
-        "type": "switch",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "",
-        "property": "destination",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1500,
-        "y": 1560,
-        "wires": [
-            [
-                "74cf38c8d80b39c7"
-            ]
-        ]
-    },
-    {
-        "id": "c0095bd3c4fd5369",
-        "type": "debug",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "debug 45",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 1520,
-        "wires": []
-    },
-    {
-        "id": "7e538b792d597d2e",
-        "type": "link in",
-        "z": "f260ed9417849607",
-        "g": "3a99d3e5ba59a12d",
-        "name": "in DataTable",
-        "links": [
-            "fcb87e389542e76b",
-            "68b62fae889416d2"
-        ],
-        "x": 1335,
-        "y": 820,
-        "wires": [
-            [
-                "f9ea49beed099d6f"
-            ]
-        ]
-    },
-    {
-        "id": "1b3f2f52d79a978f",
-        "type": "link out",
-        "z": "f260ed9417849607",
-        "g": "3a99d3e5ba59a12d",
-        "name": "out DataTable",
-        "mode": "link",
-        "links": [
-            "959eae8c211e5426",
-            "fe5d2ab2facb707f"
-        ],
-        "x": 1395,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "fe2841e73b262323",
-        "type": "link in",
-        "z": "f260ed9417849607",
-        "g": "856d9c3d6ae49cc6",
-        "name": "in ChartSection",
-        "links": [
-            "5567e81e4ec9703a",
-            "986bcf8e0120a93f"
-        ],
-        "x": 285,
-        "y": 2100,
-        "wires": [
-            [
-                "019af3477dfde6a9"
-            ]
-        ]
-    },
-    {
-        "id": "85270dcda34b8cc8",
-        "type": "link out",
-        "z": "f260ed9417849607",
-        "g": "856d9c3d6ae49cc6",
-        "name": "out ChartSection",
-        "mode": "link",
-        "links": [
-            "d500801594206f28"
-        ],
-        "x": 425,
-        "y": 1980,
-        "wires": []
-    },
-    {
-        "id": "1e70d69aa2625e53",
-        "type": "exec",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "command": "",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 1250,
-        "y": 1680,
-        "wires": [
-            [
-                "78412c7f6dc52b8f"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "78412c7f6dc52b8f",
-        "type": "debug",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "debug 51",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1400,
-        "y": 1660,
-        "wires": []
-    },
-    {
-        "id": "9640278eb6d47dab",
-        "type": "function",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "rename to file_temp",
-        "func": "const destination_path= msg.destination\nlet renamed_destination = destination_path.substring(0,destination_path.length -4)+'_temp'+'.tsv';\nmsg.destination=renamed_destination;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1100,
-        "y": 1560,
-        "wires": [
-            [
-                "a5da80d9e95dfdaf"
-            ]
-        ]
-    },
-    {
-        "id": "452df08781166706",
-        "type": "function",
-        "z": "f260ed9417849607",
-        "d": true,
-        "g": "217abb3abac21001",
-        "name": "function 3",
-        "func": "msg.command=\"cp ./.node_red/\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1090,
-        "y": 1680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f222f4ac9670330a",
-        "type": "ui-template",
-        "z": "f260ed9417849607",
-        "g": "d9a24d94ae3bdddb",
-        "group": "3b6f8b6b4fefa74c",
-        "page": "",
-        "ui": "",
-        "name": "timeline",
-        "order": 1,
-        "width": "12",
-        "height": "3",
-        "head": "",
-        "format": "<template>\n    <div class=\"timeline-container\">\n        <iframe v-if=\"iframeSrc\" :src=\"iframeSrc\" frameborder=\"0\"></iframe>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            iframeSrc: null\n        };\n    },\n    mounted() {\n        // Écoute des mises à jour du message entrant depuis Node-RED\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n                if (msg.payload.command === 'add iframe' && msg.payload.src) {\n                    // Ajout d'une iframe contenant la carte\n                    this.addIframe(msg.payload.src);\n                }\n            }\n            if (msg.datas) {\n                this.verifyData(msg.datas);\n            }\n        });\n    },\n    methods: {\n        verifyData(datas) {\n            if (this.iframeSrc !== datas[0]) {\n                this.addIframe(datas[0]);\n            }\n        },\n        addIframe(src) {\n            // Ajouter l'iframe à la vue\n            this.iframeSrc = src;\n        },\n        removeIframe() {\n            // Retirer l'iframe de la vue\n            this.iframeSrc = null;\n        }\n    }\n};\n</script>\n\n<style scoped>\n.timeline-container {\n    position: relative;\n    width: 100%;\n    overflow: hidden;\n}\n\n.timeline-container iframe {\n    position: absolute;\n    overflow:hidden;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    border: none;\n}\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 500,
-        "y": 800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "716a9546a10d44d7",
-        "type": "mqtt in",
-        "z": "f260ed9417849607",
-        "g": "d9a24d94ae3bdddb",
-        "name": "",
-        "topic": "visualization/timeline",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "a973d821cae4ecce",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 250,
-        "y": 800,
-        "wires": [
-            [
-                "f222f4ac9670330a",
-                "b5cd94b563000b24"
-            ]
-        ]
-    },
-    {
-        "id": "86312631e7454d0e",
-        "type": "inject",
-        "z": "f260ed9417849607",
-        "g": "d9a24d94ae3bdddb",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "topic": "",
-        "x": 240,
-        "y": 700,
-        "wires": [
-            [
-                "891e46bad4e67dc3"
-            ]
-        ]
-    },
-    {
-        "id": "891e46bad4e67dc3",
-        "type": "change",
-        "z": "f260ed9417849607",
-        "g": "d9a24d94ae3bdddb",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"command\":\"create timeline\",\"args\":[]}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 450,
-        "y": 700,
-        "wires": [
-            [
-                "1b8975860cf1197a"
-            ]
-        ]
-    },
-    {
-        "id": "1b8975860cf1197a",
-        "type": "mqtt out",
-        "z": "f260ed9417849607",
-        "g": "d9a24d94ae3bdddb",
-        "name": "",
-        "topic": "visualization/commands",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "a973d821cae4ecce",
-        "x": 710,
-        "y": 700,
-        "wires": []
-    },
-    {
-        "id": "b5cd94b563000b24",
-        "type": "link out",
-        "z": "f260ed9417849607",
-        "g": "d9a24d94ae3bdddb",
-        "name": "out Timeline",
-        "mode": "link",
-        "links": [
-            "df844b0b197b9687"
-        ],
-        "x": 435,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "677adf66aaeb8215",
-        "type": "link in",
-        "z": "f260ed9417849607",
-        "g": "d9a24d94ae3bdddb",
-        "name": "in Timeline",
-        "links": [
-            "252e4d385f355983"
-        ],
-        "x": 365,
-        "y": 840,
-        "wires": [
-            [
-                "f222f4ac9670330a"
-            ]
-        ]
-    },
-    {
-        "id": "6dc5f707f93bece4",
-        "type": "mqtt out",
-        "z": "f260ed9417849607",
-        "g": "758f20607e7c5eba",
-        "name": "",
-        "topic": "visualization/commands",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "a973d821cae4ecce",
-        "x": 2270,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "48c4e8cea0f3babe",
-        "type": "ui-template",
-        "z": "f260ed9417849607",
-        "g": "758f20607e7c5eba",
-        "group": "f215418ba0dbaaad",
-        "page": "",
-        "ui": "",
-        "name": "InfoTable",
-        "order": 7,
-        "width": "3",
-        "height": "5",
-        "head": "",
-        "format": "<template>\n    <div class=\"iframe-container\">\n        <iframe v-if=\"iframeSrc\" :src=\"iframeSrc\" frameborder=\"0\"></iframe>\n    </div>\n</template>\n\n<script>\n    export default {\n    data() {\n        return {\n            iframeSrc: null\n        };\n    },\n    mounted() {\n        // Écoute des mises à jour du message entrant depuis Node-RED\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n                if (msg.payload.command === 'add iframe' && msg.payload.src) {\n                    // Ajout d'une iframe contenant la carte\n                    this.addIframe(msg.payload.src);\n                }\n            }\n            if (msg.datas){\n                this.verifyData(msg.datas);\n            }\n        });\n    },\n    methods: {\n        verifyData(datas){\n            if(this.iframeSrc !== datas[0]){\n                this.addIframe(datas[0]);\n            }\n        },\n        addIframe(src) {\n            // Ajouter l'iframe à la vue\n            this.iframeSrc = src;\n        },\n        removeIframe() {\n            // Retirer l'iframe de la vue\n            this.iframeSrc = null;\n        }\n    }\n};\n</script>\n\n<style scoped>\n    .iframe-container {\n        width: 100%;\n        height: 100%;\n    }\n\n    iframe {\n        width: 100%;\n        height: 100%;\n        border: none;\n    }\n</style>",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2180,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e3eb9d72533782c1",
-        "type": "mqtt in",
-        "z": "f260ed9417849607",
-        "g": "758f20607e7c5eba",
-        "name": "",
-        "topic": "visualization/infotable",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "a973d821cae4ecce",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 1840,
-        "y": 780,
-        "wires": [
-            [
-                "48c4e8cea0f3babe",
-                "1328d8289798347b"
-            ]
-        ]
-    },
-    {
-        "id": "00b0d1365d72f7ca",
-        "type": "inject",
-        "z": "f260ed9417849607",
-        "g": "758f20607e7c5eba",
-        "name": "Run at start",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "topic": "",
-        "x": 1830,
-        "y": 640,
-        "wires": [
-            [
-                "36f0f5b05b237f22"
-            ]
-        ]
-    },
-    {
-        "id": "36f0f5b05b237f22",
-        "type": "change",
-        "z": "f260ed9417849607",
-        "g": "758f20607e7c5eba",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"command\":\"init infotable\",\"args\":[]}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2030,
-        "y": 640,
-        "wires": [
-            [
-                "6dc5f707f93bece4"
-            ]
-        ]
-    },
-    {
-        "id": "6f59b7c66be79b8f",
-        "type": "link in",
-        "z": "f260ed9417849607",
-        "g": "758f20607e7c5eba",
-        "name": "in InfoTable",
-        "links": [
-            "4495f51c704206a4"
-        ],
-        "x": 2075,
-        "y": 820,
-        "wires": [
-            [
-                "48c4e8cea0f3babe"
-            ]
-        ]
-    },
-    {
-        "id": "1328d8289798347b",
-        "type": "link out",
-        "z": "f260ed9417849607",
-        "g": "758f20607e7c5eba",
-        "name": "out InfoTable",
-        "mode": "link",
-        "links": [
-            "51a9c4ce41597853"
-        ],
-        "x": 2135,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "3909344acb7dde59",
-        "type": "mqtt in",
-        "z": "f260ed9417849607",
-        "name": "",
-        "topic": "#",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "a973d821cae4ecce",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 170,
-        "y": 100,
-        "wires": [
-            [
-                "57592c7f15ca5f8e"
-            ]
-        ]
-    },
-    {
-        "id": "57592c7f15ca5f8e",
-        "type": "debug",
-        "z": "f260ed9417849607",
-        "name": "MQTT msg",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 370,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "2fe093ecfa16aa73",
-        "type": "mqtt in",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "",
-        "topic": "visualization/dataset",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "a973d821cae4ecce",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 150,
-        "y": 1060,
-        "wires": [
-            [
-                "58b70a617c6a0213"
-            ]
-        ]
-    },
-    {
-        "id": "58b70a617c6a0213",
-        "type": "change",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "select",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 360,
-        "y": 1060,
-        "wires": [
-            [
-                "d80c1ba1cd41c454"
-            ]
-        ]
-    },
-    {
-        "id": "d80c1ba1cd41c454",
-        "type": "function",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "Select tsv file",
-        "func": "// Create a closure to store the last payload\nlet lastPayload = context.get('TSV_files_found') || {};\n\nfunction handleMessage(msg) {\n    // Check if the message contains payload to store\n    if (msg.options && Array.isArray(msg.options) && !msg.select) {\n        // Store the new payload\n        if (lastPayload!=msg.options){\n            context.set('TSV_files_found', msg.options);            // Optionally, log or debug the stored payload\n            //node.warn('Payload stored: ' + JSON.stringify(msg.options));\n            return null; // No output required for storing the payload\n        }\n        \n    }\n\n    // Check if the message contains a select key\n    if (msg.select && typeof msg.select === 'string') {\n\n        // Search the stored payload for the matching label\n        if (lastPayload) {\n            for (let item of lastPayload) {\n                if (item.label === msg.select) {\n                    node.warn('Match found : '+item.value)\n                    return { payload: item.value };\n                }\n            }\n        }\n        \n        // If no matching label is found, log a warning and return null\n        node.warn('Label not found: ' + msg.select);\n        return { payload: null }; // Or handle the case as required\n    }\n\n    // If the message doesn't meet any conditions, just pass it through (or handle as needed)\n    return null;\n}\n\n// Define the function node behavior\nreturn handleMessage(msg);\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "path",
-                "module": "path"
-            },
-            {
-                "var": "fs",
-                "module": "fs.promises"
-            },
-            {
-                "var": "AdmZip",
-                "module": "adm-zip"
-            }
-        ],
-        "x": 550,
-        "y": 1060,
-        "wires": [
-            [
-                "e4c5ac606ec6a5db",
-                "5299cd86668a8449"
             ]
         ]
     },
