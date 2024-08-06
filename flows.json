@@ -1270,72 +1270,6 @@
         "h": 234
     },
     {
-        "id": "b383604c2ffb0c81",
-        "type": "group",
-        "z": "70f558eb9d60b6fc",
-        "name": "update_config",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000",
-            "fill": "#ffffff"
-        },
-        "nodes": [
-            "fb9d64e1d38df424",
-            "d40e81478f29c1fd",
-            "5c846bbe8d829d09",
-            "f7c549d688a82217",
-            "c156111030f8a27d",
-            "66b5dbde2d2c4978",
-            "ef1499f9032e38e2",
-            "9fafb0cdbf808e08",
-            "ac6013d701d061e8",
-            "e85a9d29696e99ff",
-            "fe9d0a3dfde010c9",
-            "9297c1303d0ee9c3",
-            "c3aceb9c96df8b7f",
-            "c60830e67ed5eb74",
-            "4d6b8ff374ab04e3",
-            "dab3f2c5661aa8cb",
-            "a8339dd574181c71",
-            "472821529981cf6d",
-            "0769aafda6e1b0e7",
-            "99c17632bfa31f50",
-            "fe00896803b982bf",
-            "9cdb5df1dba5e667",
-            "5b086554d036cbde",
-            "c2ad4cea7159a08e",
-            "cea09d01c3bacaa7",
-            "6b7022fcf0d5108a",
-            "0e6be75a67384bdf",
-            "4feb75276a5af405",
-            "614a445455c9ebce",
-            "cea7ab000f782c70",
-            "0ba03d1e83cfe141",
-            "7264fd4534476f08",
-            "87c72e161a760ea1",
-            "f6e7e0d05af5b212",
-            "75ce2f8d97d68069",
-            "2406c0a2f5784c72",
-            "b2c43aaf95412f25",
-            "5b71ea0212473d82",
-            "425e378462938661",
-            "c0cd42a36e735f09",
-            "17a57f860b746d9c",
-            "37e59749715142c8",
-            "984b3bce0eba0dc7",
-            "d3b072c2497a5209",
-            "6d5bce164621a153",
-            "12d2c8b03fc1f242",
-            "1fe601d84a9f0d02",
-            "0f2434a1cc556b60"
-        ],
-        "x": 114,
-        "y": 779,
-        "w": 1862,
-        "h": 922
-    },
-    {
         "id": "3b32c3c9506eb933",
         "type": "group",
         "z": "70f558eb9d60b6fc",
@@ -1357,21 +1291,18 @@
             "20f0245cbefbbf69",
             "4317b389f6b1b156",
             "60bc270ddfa20f0b",
-            "b7d43a5399350e4c",
             "b4a6261d50d0a9c3",
             "16496890b192797c",
-            "25f6794686ddf057",
-            "112de282d8055653",
             "c51927142025c58c",
             "edd15056c8b5ffc8",
             "14dab3e6993ce1dd",
             "c6633d19eafe05ef",
             "650a00ed7ac1e9b8",
-            "5a0408ea219ea695",
-            "749f53cf1cdc61f9"
+            "25f6794686ddf057",
+            "b7d43a5399350e4c"
         ],
         "x": 134,
-        "y": 359,
+        "y": 379,
         "w": 1352,
         "h": 282
     },
@@ -1588,6 +1519,118 @@
         "y": 1399,
         "w": 682,
         "h": 202
+    },
+    {
+        "id": "b383604c2ffb0c81",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "update_config",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000",
+            "fill": "#ffffff"
+        },
+        "nodes": [
+            "fb9d64e1d38df424",
+            "d40e81478f29c1fd",
+            "5c846bbe8d829d09",
+            "f7c549d688a82217",
+            "c156111030f8a27d",
+            "66b5dbde2d2c4978",
+            "ef1499f9032e38e2",
+            "9fafb0cdbf808e08",
+            "ac6013d701d061e8",
+            "e85a9d29696e99ff",
+            "fe9d0a3dfde010c9",
+            "9297c1303d0ee9c3",
+            "c3aceb9c96df8b7f",
+            "c60830e67ed5eb74",
+            "4d6b8ff374ab04e3",
+            "dab3f2c5661aa8cb",
+            "a8339dd574181c71",
+            "472821529981cf6d",
+            "0769aafda6e1b0e7",
+            "99c17632bfa31f50",
+            "fe00896803b982bf",
+            "9cdb5df1dba5e667",
+            "5b086554d036cbde",
+            "c2ad4cea7159a08e",
+            "cea09d01c3bacaa7",
+            "6b7022fcf0d5108a",
+            "0e6be75a67384bdf",
+            "4feb75276a5af405",
+            "614a445455c9ebce",
+            "cea7ab000f782c70",
+            "0ba03d1e83cfe141",
+            "7264fd4534476f08",
+            "87c72e161a760ea1",
+            "f6e7e0d05af5b212",
+            "75ce2f8d97d68069",
+            "b2c43aaf95412f25",
+            "5b71ea0212473d82",
+            "425e378462938661",
+            "c0cd42a36e735f09",
+            "17a57f860b746d9c",
+            "37e59749715142c8",
+            "984b3bce0eba0dc7",
+            "d3b072c2497a5209",
+            "6d5bce164621a153",
+            "12d2c8b03fc1f242",
+            "1fe601d84a9f0d02",
+            "c5da8fccb31815ae",
+            "689c1b47df4cd992",
+            "a38d15cbeda1a02c",
+            "8c7975e3abdfb950",
+            "ecbe7f58e169c89c",
+            "b8d71671448af045",
+            "4063bd2bb8af8a95",
+            "487d2cd3e69f4cec",
+            "313e2908de9d681e",
+            "59ade27756b2fd23",
+            "bb5a3a8b59d9f674",
+            "f8726f9e02382b5e",
+            "7fdabca73a0a1855",
+            "d82329d2ef996f64",
+            "48419516ba1c0132",
+            "26f5054a4321ef3d",
+            "832eddbe6e69bb73",
+            "6e7da51db1340b5c",
+            "cfb0c8e7bf206814",
+            "124b794f9816c66b",
+            "481aaacc17a72f65",
+            "53c6eb15fd0715c7",
+            "26c65a6ec5883d4a",
+            "44bfabe506b330e1",
+            "55ecdb80fdc69378",
+            "a9c93db64ecfa9a5",
+            "a905312fb8938f6f",
+            "f37f959bc9aadfc2",
+            "95164b69e98df231",
+            "f52f2584fc95aab6",
+            "3f11847f343ced62",
+            "3dce28226792d1eb",
+            "1f1e48b0064cddc7",
+            "ae4f1437d5284f21",
+            "01518df3bebb092b",
+            "f7a5b12f274aca4b",
+            "7449cab14c396834",
+            "a3c2c0038a541f40",
+            "9b1768f64542705b",
+            "fab0fd5a61ae1dcd",
+            "e19f686978cee1d6",
+            "e5ad38b0e760da7b",
+            "a27ac2d9c1ec545f",
+            "4cb46d4b9e2bf275",
+            "1203080efaebcc0d",
+            "6530ccdb60829ae5",
+            "d382992324069c5d",
+            "749f53cf1cdc61f9"
+        ],
+        "x": 114,
+        "y": 779,
+        "w": 1722,
+        "h": 1002
     },
     {
         "id": "cae0178a8a69f787",
@@ -10386,7 +10429,7 @@
         "templateScope": "local",
         "className": "",
         "x": 690,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
                 "6def4e7e67623547",
@@ -10448,7 +10491,7 @@
         "payload": "{\"imageVolume\":\"xx mL\",\"totalVolume\":\"xx mL\",\"progression\":0}",
         "payloadType": "json",
         "x": 550,
-        "y": 600,
+        "y": 620,
         "wires": [
             []
         ]
@@ -10568,7 +10611,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 450,
-        "y": 400,
+        "y": 420,
         "wires": [
             [
                 "a8b40501e4c53fed",
@@ -10591,7 +10634,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 670,
-        "y": 400,
+        "y": 420,
         "wires": []
     },
     {
@@ -10609,8 +10652,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1370,
-        "y": 520,
+        "x": 1130,
+        "y": 540,
         "wires": []
     },
     {
@@ -10790,8 +10833,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1170,
-        "y": 560,
+        "x": 990,
+        "y": 600,
         "wires": []
     },
     {
@@ -10823,7 +10866,7 @@
         "y": 820,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "44bfabe506b330e1"
             ],
             []
         ]
@@ -10857,7 +10900,7 @@
         "y": 860,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "26c65a6ec5883d4a"
             ],
             []
         ]
@@ -10913,7 +10956,7 @@
         "y": 900,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "53c6eb15fd0715c7"
             ],
             []
         ]
@@ -10969,7 +11012,7 @@
         "y": 980,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "124b794f9816c66b"
             ],
             []
         ]
@@ -11014,7 +11057,7 @@
         "y": 1020,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "cfb0c8e7bf206814"
             ],
             []
         ]
@@ -11059,7 +11102,7 @@
         "y": 1060,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "6e7da51db1340b5c"
             ],
             []
         ]
@@ -11093,7 +11136,7 @@
         "y": 1100,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "832eddbe6e69bb73"
             ],
             []
         ]
@@ -11160,7 +11203,7 @@
         "y": 1180,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "48419516ba1c0132"
             ],
             []
         ]
@@ -11260,7 +11303,7 @@
         "y": 1260,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "7fdabca73a0a1855"
             ],
             []
         ]
@@ -11305,7 +11348,7 @@
         "y": 940,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "481aaacc17a72f65"
             ],
             []
         ]
@@ -11336,10 +11379,10 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 770,
-        "y": 1420,
+        "y": 1460,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "487d2cd3e69f4cec"
             ],
             []
         ]
@@ -11373,7 +11416,7 @@
         "y": 1300,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "f8726f9e02382b5e"
             ],
             []
         ]
@@ -11407,7 +11450,7 @@
         "y": 1340,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "bb5a3a8b59d9f674"
             ],
             []
         ]
@@ -11438,7 +11481,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 770,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "12d2c8b03fc1f242"
@@ -11472,10 +11515,10 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 770,
-        "y": 1460,
+        "y": 1500,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "4063bd2bb8af8a95"
             ],
             []
         ]
@@ -11506,7 +11549,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 770,
-        "y": 1500,
+        "y": 1560,
         "wires": [
             [
                 "6d5bce164621a153"
@@ -11540,10 +11583,10 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 750,
-        "y": 1540,
+        "y": 1620,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "8c7975e3abdfb950"
             ],
             []
         ]
@@ -11574,10 +11617,10 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 750,
-        "y": 1580,
+        "y": 1660,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "a38d15cbeda1a02c"
             ],
             []
         ]
@@ -11593,7 +11636,7 @@
         "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
         "value": "sieve_mesh_size",
         "command": "read",
-        "msgProperty": "payload.sample_gear_net_opening",
+        "msgProperty": "payload.sieve_mesh_size",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -11608,42 +11651,12 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 770,
-        "y": 1620,
+        "y": 1700,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "689c1b47df4cd992"
             ],
             []
-        ]
-    },
-    {
-        "id": "2406c0a2f5784c72",
-        "type": "join",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "mode": "custom",
-        "build": "merged",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": false,
-        "accumulate": false,
-        "timeout": "1",
-        "count": "",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 1290,
-        "y": 1220,
-        "wires": [
-            [
-                "0f2434a1cc556b60"
-            ]
         ]
     },
     {
@@ -11659,11 +11672,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
+        "x": 910,
         "y": 1220,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "d82329d2ef996f64"
             ]
         ]
     },
@@ -11672,7 +11685,7 @@
         "type": "file in",
         "z": "70f558eb9d60b6fc",
         "g": "b383604c2ffb0c81",
-        "name": "",
+        "name": "Get version from file",
         "filename": "/usr/share/planktoscope/installer-versioning.yml",
         "filenameType": "str",
         "format": "utf8",
@@ -11680,7 +11693,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 780,
+        "x": 700,
         "y": 1220,
         "wires": [
             [
@@ -11781,7 +11794,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1250,
-        "y": 400,
+        "y": 420,
         "wires": [
             [],
             []
@@ -11816,7 +11829,7 @@
         "y": 1140,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "26f5054a4321ef3d"
             ],
             []
         ]
@@ -11847,7 +11860,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 390,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -11866,7 +11879,7 @@
             "0804cf4b32049a1d"
         ],
         "x": 175,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
                 "20f0245cbefbbf69"
@@ -11879,7 +11892,7 @@
         "z": "70f558eb9d60b6fc",
         "g": "3b32c3c9506eb933",
         "name": "Paylod for MQTT",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -11887,8 +11900,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1330,
-        "y": 560,
+        "x": 1170,
+        "y": 580,
         "wires": []
     },
     {
@@ -11927,33 +11940,6 @@
         "wires": []
     },
     {
-        "id": "b7d43a5399350e4c",
-        "type": "delay",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "3",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1160,
-        "y": 520,
-        "wires": [
-            [
-                "60bc270ddfa20f0b",
-                "997c71e9dcf596e8"
-            ]
-        ]
-    },
-    {
         "id": "c0cd42a36e735f09",
         "type": "link in",
         "z": "70f558eb9d60b6fc",
@@ -11962,32 +11948,11 @@
         "links": [
             "37e59749715142c8"
         ],
-        "x": 425,
-        "y": 1580,
+        "x": 555,
+        "y": 1220,
         "wires": [
             [
-                "b2c43aaf95412f25",
-                "a8339dd574181c71",
-                "425e378462938661",
-                "c3aceb9c96df8b7f",
-                "9297c1303d0ee9c3",
-                "c156111030f8a27d",
-                "e85a9d29696e99ff",
-                "9fafb0cdbf808e08",
-                "6b7022fcf0d5108a",
-                "d40e81478f29c1fd",
-                "fb9d64e1d38df424",
-                "c2ad4cea7159a08e",
-                "4feb75276a5af405",
-                "614a445455c9ebce",
-                "cea7ab000f782c70",
-                "0e6be75a67384bdf",
-                "0ba03d1e83cfe141",
-                "7264fd4534476f08",
-                "87c72e161a760ea1",
-                "f6e7e0d05af5b212",
-                "75ce2f8d97d68069",
-                "1fe601d84a9f0d02"
+                "b2c43aaf95412f25"
             ]
         ]
     },
@@ -12002,43 +11967,9 @@
             "112de282d8055653",
             "d3b072c2497a5209"
         ],
-        "x": 765,
+        "x": 835,
         "y": 480,
         "wires": []
-    },
-    {
-        "id": "25f6794686ddf057",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "link in 151",
-        "links": [
-            "17a57f860b746d9c"
-        ],
-        "x": 865,
-        "y": 560,
-        "wires": [
-            [
-                "5a0408ea219ea695"
-            ]
-        ]
-    },
-    {
-        "id": "112de282d8055653",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "link in 152",
-        "links": [
-            "16496890b192797c"
-        ],
-        "x": 865,
-        "y": 520,
-        "wires": [
-            [
-                "b7d43a5399350e4c"
-            ]
-        ]
     },
     {
         "id": "17a57f860b746d9c",
@@ -12050,8 +11981,8 @@
         "links": [
             "25f6794686ddf057"
         ],
-        "x": 1935,
-        "y": 1580,
+        "x": 1795,
+        "y": 820,
         "wires": []
     },
     {
@@ -12080,7 +12011,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 390,
-        "y": 500,
+        "y": 520,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -12099,7 +12030,7 @@
             "0804cf4b32049a1d"
         ],
         "x": 175,
-        "y": 500,
+        "y": 520,
         "wires": [
             [
                 "c51927142025c58c"
@@ -12132,7 +12063,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 410,
-        "y": 560,
+        "y": 580,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -12151,7 +12082,7 @@
             "0804cf4b32049a1d"
         ],
         "x": 175,
-        "y": 560,
+        "y": 580,
         "wires": [
             [
                 "14dab3e6993ce1dd"
@@ -12191,45 +12122,6 @@
         ]
     },
     {
-        "id": "5a0408ea219ea695",
-        "type": "function",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "Create payload",
-        "func": "// {\n//     \"action\": \"update_config\",\n//     \"config\": {\n//            \"description\": ...\n//          ...:...\n//     }\n// }\n\nconst metadata = msg.payload;\n\nmsg.payload = {\n    \"action\": \"update_config\",\n    \"config\": metadata\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 980,
-        "y": 560,
-        "wires": [
-            [
-                "749f53cf1cdc61f9",
-                "b4a6261d50d0a9c3"
-            ]
-        ]
-    },
-    {
-        "id": "749f53cf1cdc61f9",
-        "type": "debug",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "debug 48",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1180,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "37e59749715142c8",
         "type": "link out",
         "z": "70f558eb9d60b6fc",
@@ -12237,7 +12129,28 @@
         "name": "link out 106",
         "mode": "link",
         "links": [
-            "c0cd42a36e735f09"
+            "c0cd42a36e735f09",
+            "55ecdb80fdc69378",
+            "a9c93db64ecfa9a5",
+            "a905312fb8938f6f",
+            "f37f959bc9aadfc2",
+            "95164b69e98df231",
+            "f52f2584fc95aab6",
+            "3f11847f343ced62",
+            "3dce28226792d1eb",
+            "1f1e48b0064cddc7",
+            "ae4f1437d5284f21",
+            "01518df3bebb092b",
+            "f7a5b12f274aca4b",
+            "7449cab14c396834",
+            "a3c2c0038a541f40",
+            "9b1768f64542705b",
+            "fab0fd5a61ae1dcd",
+            "e19f686978cee1d6",
+            "e5ad38b0e760da7b",
+            "a27ac2d9c1ec545f",
+            "4cb46d4b9e2bf275",
+            "1203080efaebcc0d"
         ],
         "x": 375,
         "y": 1580,
@@ -12302,10 +12215,11 @@
         "finalize": "",
         "libs": [],
         "x": 1030,
-        "y": 1500,
+        "y": 1560,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "ecbe7f58e169c89c",
+                "b8d71671448af045"
             ]
         ]
     },
@@ -12323,10 +12237,11 @@
         "finalize": "",
         "libs": [],
         "x": 1030,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "313e2908de9d681e",
+                "59ade27756b2fd23"
             ]
         ]
     },
@@ -12351,29 +12266,1106 @@
         "to": "",
         "reg": false,
         "x": 720,
-        "y": 1660,
+        "y": 1740,
         "wires": [
             [
-                "2406c0a2f5784c72"
+                "c5da8fccb31815ae"
             ]
         ]
     },
     {
-        "id": "0f2434a1cc556b60",
+        "id": "c5da8fccb31815ae",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "description",
+                "pt": "flow",
+                "to": "payload.description",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "689c1b47df4cd992",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sieve_mesh_size",
+                "pt": "flow",
+                "to": "payload.sieve_mesh_size",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a38d15cbeda1a02c",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_depth_max",
+                "pt": "flow",
+                "to": "payload.object_depth_max",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c7975e3abdfb950",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_depth_min",
+                "pt": "flow",
+                "to": "payload.object_depth_min",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ecbe7f58e169c89c",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_lat_end",
+                "pt": "flow",
+                "to": "payload.object_lat_end",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8d71671448af045",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_lon_end",
+                "pt": "flow",
+                "to": "payload.object_lon_end",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4063bd2bb8af8a95",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_time_end",
+                "pt": "flow",
+                "to": "payload.object_time_end",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "487d2cd3e69f4cec",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_date_end",
+                "pt": "flow",
+                "to": "payload.object_date_end",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "313e2908de9d681e",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_lat",
+                "pt": "flow",
+                "to": "payload.object_lat",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59ade27756b2fd23",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_lon",
+                "pt": "flow",
+                "to": "payload.object_lon",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb5a3a8b59d9f674",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_time",
+                "pt": "flow",
+                "to": "payload.object_time",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8726f9e02382b5e",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "object_date",
+                "pt": "flow",
+                "to": "payload.object_date",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7fdabca73a0a1855",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "acq_time_between_frames",
+                "pt": "flow",
+                "to": "payload.acq_time_between_frames",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d82329d2ef996f64",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "acq_software",
+                "pt": "flow",
+                "to": "payload.acq_software",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48419516ba1c0132",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "acq_software",
+                "pt": "flow",
+                "to": "payload.acq_instrument",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26f5054a4321ef3d",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "acq_id",
+                "pt": "flow",
+                "to": "payload.acq_id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "832eddbe6e69bb73",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sample_depth_max",
+                "pt": "flow",
+                "to": "payload.sample_depth_max",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e7da51db1340b5c",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sample_depth_min",
+                "pt": "flow",
+                "to": "payload.sample_depth_min",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cfb0c8e7bf206814",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sample_instrument",
+                "pt": "flow",
+                "to": "payload.sample_instrument",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "124b794f9816c66b",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sample_dillution_factor",
+                "pt": "flow",
+                "to": "payload.sample_dillution_factor",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "481aaacc17a72f65",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sample_sampling_gear",
+                "pt": "flow",
+                "to": "payload.sample_sampling_gear",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53c6eb15fd0715c7",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sample_operator",
+                "pt": "flow",
+                "to": "payload.sample_operator",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26c65a6ec5883d4a",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sample_id",
+                "pt": "flow",
+                "to": "payload.sample_id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44bfabe506b330e1",
+        "type": "change",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Set in flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sample_project",
+                "pt": "flow",
+                "to": "payload.sample_project",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 820,
+        "wires": [
+            [
+                "d382992324069c5d"
+            ]
+        ]
+    },
+    {
+        "id": "55ecdb80fdc69378",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 157",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1260,
+        "wires": [
+            [
+                "c2ad4cea7159a08e"
+            ]
+        ]
+    },
+    {
+        "id": "a9c93db64ecfa9a5",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 158",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1300,
+        "wires": [
+            [
+                "4feb75276a5af405"
+            ]
+        ]
+    },
+    {
+        "id": "a905312fb8938f6f",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 159",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1340,
+        "wires": [
+            [
+                "614a445455c9ebce"
+            ]
+        ]
+    },
+    {
+        "id": "f37f959bc9aadfc2",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 160",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1400,
+        "wires": [
+            [
+                "cea7ab000f782c70"
+            ]
+        ]
+    },
+    {
+        "id": "95164b69e98df231",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 161",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1460,
+        "wires": [
+            [
+                "0e6be75a67384bdf"
+            ]
+        ]
+    },
+    {
+        "id": "f52f2584fc95aab6",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 162",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1500,
+        "wires": [
+            [
+                "0ba03d1e83cfe141"
+            ]
+        ]
+    },
+    {
+        "id": "3f11847f343ced62",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 163",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1560,
+        "wires": [
+            [
+                "7264fd4534476f08"
+            ]
+        ]
+    },
+    {
+        "id": "3dce28226792d1eb",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 164",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1620,
+        "wires": [
+            [
+                "87c72e161a760ea1"
+            ]
+        ]
+    },
+    {
+        "id": "1f1e48b0064cddc7",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 165",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1660,
+        "wires": [
+            [
+                "f6e7e0d05af5b212"
+            ]
+        ]
+    },
+    {
+        "id": "ae4f1437d5284f21",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 166",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1700,
+        "wires": [
+            [
+                "75ce2f8d97d68069"
+            ]
+        ]
+    },
+    {
+        "id": "01518df3bebb092b",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 167",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1740,
+        "wires": [
+            [
+                "1fe601d84a9f0d02"
+            ]
+        ]
+    },
+    {
+        "id": "f7a5b12f274aca4b",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 168",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1180,
+        "wires": [
+            [
+                "a8339dd574181c71"
+            ]
+        ]
+    },
+    {
+        "id": "7449cab14c396834",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 169",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1140,
+        "wires": [
+            [
+                "425e378462938661"
+            ]
+        ]
+    },
+    {
+        "id": "a3c2c0038a541f40",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 170",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1100,
+        "wires": [
+            [
+                "c3aceb9c96df8b7f"
+            ]
+        ]
+    },
+    {
+        "id": "9b1768f64542705b",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 171",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1060,
+        "wires": [
+            [
+                "9297c1303d0ee9c3"
+            ]
+        ]
+    },
+    {
+        "id": "fab0fd5a61ae1dcd",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 172",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 1020,
+        "wires": [
+            [
+                "e85a9d29696e99ff"
+            ]
+        ]
+    },
+    {
+        "id": "e19f686978cee1d6",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 173",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 980,
+        "wires": [
+            [
+                "9fafb0cdbf808e08"
+            ]
+        ]
+    },
+    {
+        "id": "e5ad38b0e760da7b",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 174",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 940,
+        "wires": [
+            [
+                "6b7022fcf0d5108a"
+            ]
+        ]
+    },
+    {
+        "id": "a27ac2d9c1ec545f",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 175",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 900,
+        "wires": [
+            [
+                "c156111030f8a27d"
+            ]
+        ]
+    },
+    {
+        "id": "4cb46d4b9e2bf275",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 176",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 860,
+        "wires": [
+            [
+                "d40e81478f29c1fd"
+            ]
+        ]
+    },
+    {
+        "id": "1203080efaebcc0d",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "link in 177",
+        "links": [
+            "37e59749715142c8"
+        ],
+        "x": 555,
+        "y": 820,
+        "wires": [
+            [
+                "fb9d64e1d38df424"
+            ]
+        ]
+    },
+    {
+        "id": "6530ccdb60829ae5",
+        "type": "function",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "Create payload for \"update_config\"",
+        "func": "var description = flow.get('description');\n\n// Initialiser la description avec les valeurs récupérées via flow.get\ndescription = {\n    sample_project: flow.get(\"sample_project\"),\n    sample_id: flow.get(\"sample_id\"),\n    sample_uuid: \"\", // Si ce champ est généré automatiquement, le laisser vide\n    sample_ship: flow.get(\"sample_ship\"),\n    sample_operator: flow.get(\"sample_operator\"),\n    sample_sampling_gear: flow.get(\"sample_sampling_gear\"),\n    sample_concentrated_sample_volume: flow.get(\"sample_concentrated_sample_volume\"),\n    sample_total_volume: flow.get(\"sample_total_volume\"),\n    sample_dilution_factor: flow.get(\"sample_dilution_factor\"),\n    sample_speed_through_water: flow.get(\"sample_speed_through_water\"),\n\n    acq_id: flow.get(\"acq_id\"),\n    acq_uuid: \"\", // Si ce champ est généré automatiquement, le laisser vide\n    acq_instrument: flow.get(\"acq_instrument\"),\n    acq_instrument_id: flow.get(\"acq_instrument_id\"),\n    acq_celltype: flow.get(\"acq_celltype\"),\n    acq_minimum_mesh: flow.get(\"acq_minimum_mesh\"),\n    acq_maximum_mesh: flow.get(\"acq_maximum_mesh\"),\n    acq_min_esd: flow.get(\"acq_min_esd\"),\n    acq_max_esd: flow.get(\"acq_max_esd\"),\n    acq_volume: flow.get(\"acq_volume\"),\n    acq_imaged_volume: flow.get(\"acq_imaged_volume\"),\n    acq_magnification: flow.get(\"acq_magnification\"),\n    acq_fnumber_objective: flow.get(\"acq_fnumber_objective\"),\n    acq_camera_name: flow.get(\"acq_camera_name\"),\n    acq_nb_frame: flow.get(\"acq_nb_frame\"),\n    acq_local_datetime: flow.get(\"acq_local_datetime\"),\n    acq_camera_resolution: flow.get(\"acq_camera_resolution\"),\n    acq_camera_iso: flow.get(\"acq_camera_iso\"),\n    acq_camera_shutter_speed: flow.get(\"acq_camera_shutter_speed\"),\n    acq_software: flow.get(\"acq_software\"),\n\n    object_date: flow.get(\"object_date\"),\n    object_time: flow.get(\"object_time\"),\n    object_lat: flow.get(\"object_lat\"),\n    object_lon: flow.get(\"object_lon\"),\n    object_depth_min: flow.get(\"object_depth_min\"),\n    object_depth_max: flow.get(\"object_depth_max\"),\n\n    process_pixel: flow.get(\"process_pixel\"),\n    process_datetime: flow.get(\"process_datetime\"),\n    process_id: flow.get(\"process_id\"),\n    process_uuid: \"\", // Si ce champ est généré automatiquement, le laisser vide\n    process_source: flow.get(\"process_source\"),\n    process_commit: flow.get(\"process_commit\"),\n\n    sample_gear_net_opening: flow.get(\"sample_gear_net_opening\"),\n    object_date_end: flow.get(\"object_date_end\"),\n    object_time_end: flow.get(\"object_time_end\"),\n    object_lat_end: flow.get(\"object_lat_end\"),\n    object_lon_end: flow.get(\"object_lon_end\")\n};\n\nmsg.payload = {\n    action: \"update_config\",\n    config: {\n        description: description,\n        sample_project: flow.get(\"sample_project\"),\n        sample_id: flow.get(\"sample_id\"),\n        sample_ship: flow.get(\"sample_ship\"),\n        sample_operator: flow.get(\"sample_operator\"),\n        sample_sampling_gear: flow.get(\"sample_sampling_gear\"),\n        sample_concentrated_sample_volume: flow.get(\"sample_concentrated_sample_volume\"),\n        sample_total_volume: flow.get(\"sample_total_volume\"),\n        sample_dilution_factor: flow.get(\"sample_dilution_factor\"),\n        sample_speed_through_water: flow.get(\"sample_speed_through_water\"),\n\n        acq_id: flow.get(\"acq_id\"),\n        acq_instrument: flow.get(\"acq_instrument\"),\n        acq_instrument_id: flow.get(\"acq_instrument_id\"),\n        acq_celltype: flow.get(\"acq_celltype\"),\n        acq_minimum_mesh: flow.get(\"acq_minimum_mesh\"),\n        acq_maximum_mesh: flow.get(\"acq_maximum_mesh\"),\n        acq_min_esd: flow.get(\"acq_min_esd\"),\n        acq_max_esd: flow.get(\"acq_max_esd\"),\n        acq_volume: flow.get(\"acq_volume\"),\n        acq_imaged_volume: flow.get(\"acq_imaged_volume\"),\n        acq_magnification: flow.get(\"acq_magnification\"),\n        acq_fnumber_objective: flow.get(\"acq_fnumber_objective\"),\n        acq_camera: flow.get(\"acq_camera\"),\n        acq_nb_frame: flow.get(\"acq_nb_frame\"),\n        acq_software: flow.get(\"acq_software\"),\n\n        object_date: flow.get(\"object_date\"),\n        object_time: flow.get(\"object_time\"),\n        object_lat: flow.get(\"object_lat\"),\n        object_lon: flow.get(\"object_lon\"),\n        object_depth_min: flow.get(\"object_depth_min\"),\n        object_depth_max: flow.get(\"object_depth_max\"),\n\n        process_pixel: flow.get(\"process_pixel\"),\n        process_source: flow.get(\"process_source\"),\n        process_commit: flow.get(\"process_commit\")\n    }\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 820,
+        "wires": [
+            [
+                "17a57f860b746d9c",
+                "749f53cf1cdc61f9"
+            ]
+        ]
+    },
+    {
+        "id": "25f6794686ddf057",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "name": "link in 151",
+        "links": [
+            "17a57f860b746d9c"
+        ],
+        "x": 835,
+        "y": 580,
+        "wires": [
+            [
+                "b4a6261d50d0a9c3",
+                "b7d43a5399350e4c"
+            ]
+        ]
+    },
+    {
+        "id": "d382992324069c5d",
+        "type": "delay",
+        "z": "70f558eb9d60b6fc",
+        "g": "b383604c2ffb0c81",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1360,
+        "y": 820,
+        "wires": [
+            [
+                "6530ccdb60829ae5"
+            ]
+        ]
+    },
+    {
+        "id": "749f53cf1cdc61f9",
         "type": "debug",
         "z": "70f558eb9d60b6fc",
         "g": "b383604c2ffb0c81",
-        "name": "debug 50",
-        "active": true,
+        "name": "update_config payload",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1420,
-        "y": 1220,
+        "x": 1640,
+        "y": 860,
         "wires": []
+    },
+    {
+        "id": "b7d43a5399350e4c",
+        "type": "delay",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1000,
+        "y": 560,
+        "wires": [
+            [
+                "60bc270ddfa20f0b",
+                "997c71e9dcf596e8"
+            ]
+        ]
     },
     {
         "id": "af3cbcd9f5f35be3",
