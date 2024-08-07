@@ -120,27 +120,6 @@
         "env": []
     },
     {
-        "id": "de2b0f7cb4455c9b",
-        "type": "group",
-        "z": "2d41a8ed5aea3449",
-        "name": "Global variable",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "885ac675497d0229",
-            "60dbf0a81c4be17e",
-            "dd51b147fcd3bf55",
-            "de5ce0a5d51b4a20"
-        ],
-        "x": 284,
-        "y": 59,
-        "w": 702,
-        "h": 82
-    },
-    {
         "id": "96bb330907da5bdb",
         "type": "group",
         "z": "2d41a8ed5aea3449",
@@ -159,8 +138,8 @@
             "2dc8d24abaf780c7",
             "cef686ed8e156c03"
         ],
-        "x": 284,
-        "y": 159,
+        "x": 214,
+        "y": 19,
         "w": 822,
         "h": 122
     },
@@ -440,12 +419,13 @@
             "d417adf0e2e7759b",
             "d39a23df09b43d2b",
             "4b6824e2ecaa9016",
-            "343ad9e58c44f9d9"
+            "343ad9e58c44f9d9",
+            "ee4f56191c0a79e9"
         ],
         "x": 404,
-        "y": 339,
+        "y": 319,
         "w": 412,
-        "h": 82
+        "h": 122
     },
     {
         "id": "3bb6cedcc43ce23c",
@@ -526,19 +506,21 @@
             "42fc3d43830febaa",
             "aa582b7c4e2ce8c7",
             "67b91503eb38afe7",
-            "033732c765f1c939",
             "a0368732ccfa08d8",
             "62d2042e91fbe197",
             "d721115905e941f3",
             "cf21ab67185f9d54",
             "d3b2e7d1bba0372d",
             "6d941e58139bc4ef",
-            "e6ba170eea1efeb4"
+            "e6ba170eea1efeb4",
+            "193d3837469bc271",
+            "2cf602d6c4ccb957",
+            "2298a8a5a04dade7"
         ],
         "x": 104,
         "y": 459,
         "w": 992,
-        "h": 222
+        "h": 322
     },
     {
         "id": "490dfe89220d57c8",
@@ -2898,64 +2880,6 @@
         ]
     },
     {
-        "id": "885ac675497d0229",
-        "type": "function",
-        "z": "2d41a8ed5aea3449",
-        "g": "de2b0f7cb4455c9b",
-        "name": "Set env variables",
-        "func": "const ENV_VARIABLES = new Map()\n\nENV_VARIABLES.set(\"\", \"\");\n\nglobal.set(\"envVariables\", ENV_VARIABLES);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 100,
-        "wires": [
-            [
-                "dd51b147fcd3bf55"
-            ]
-        ]
-    },
-    {
-        "id": "60dbf0a81c4be17e",
-        "type": "debug",
-        "z": "2d41a8ed5aea3449",
-        "g": "de2b0f7cb4455c9b",
-        "name": "Env variables set",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 850,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "dd51b147fcd3bf55",
-        "type": "function",
-        "z": "2d41a8ed5aea3449",
-        "g": "de2b0f7cb4455c9b",
-        "name": "Get env variables",
-        "func": "var env_variables = global.get(\"envVariables\");\nvar LAUNCH_BUTTON_STATE = env_variables.get(\"LAUNCH_BUTTON_STATE\");\n\nmsg.payload = LAUNCH_BUTTON_STATE;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 650,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "97790217bf3c2c85",
         "type": "link out",
         "z": "2d41a8ed5aea3449",
@@ -2977,23 +2901,6 @@
         "wires": []
     },
     {
-        "id": "de5ce0a5d51b4a20",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "de2b0f7cb4455c9b",
-        "name": "link in 40",
-        "links": [
-            "97790217bf3c2c85"
-        ],
-        "x": 325,
-        "y": 100,
-        "wires": [
-            [
-                "885ac675497d0229"
-            ]
-        ]
-    },
-    {
         "id": "9d5c5f31e49c7414",
         "type": "change",
         "z": "2d41a8ed5aea3449",
@@ -3013,8 +2920,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 200,
+        "x": 400,
+        "y": 60,
         "wires": [
             [
                 "26ef12e53ec2958f"
@@ -3030,8 +2937,8 @@
         "links": [
             "97790217bf3c2c85"
         ],
-        "x": 325,
-        "y": 240,
+        "x": 255,
+        "y": 100,
         "wires": [
             [
                 "9d5c5f31e49c7414",
@@ -3053,8 +2960,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 890,
-        "y": 200,
+        "x": 820,
+        "y": 60,
         "wires": []
     },
     {
@@ -3103,8 +3010,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 240,
+        "x": 400,
+        "y": 100,
         "wires": [
             [
                 "931e4aba3ed98eab"
@@ -3125,8 +3032,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 950,
-        "y": 240,
+        "x": 880,
+        "y": 100,
         "wires": []
     },
     {
@@ -3251,8 +3158,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 680,
-        "y": 200,
+        "x": 610,
+        "y": 60,
         "wires": [
             [
                 "85d18d7f5d8af6b8"
@@ -3317,8 +3224,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 700,
-        "y": 240,
+        "x": 630,
+        "y": 100,
         "wires": [
             [
                 "cef686ed8e156c03"
@@ -13640,7 +13547,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n    <template v-slot:item=\"{ item, index }\">\n      <tr>\n        <td>{{ item.acquisitionID }}</td>\n        <td>{{ item.estimatedTime }}</td>\n        <td>{{ item.status }}</td>\n        <td class=\"input-msts\">\n          <v-text-field :disabled=\"isFieldDisabled(item)\" v-model=\"item.input\" @input=\"onInputChange(item)\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n        </td>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n        { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n        { title: 'Status', align: 'start', key: 'status' },\n        { title: 'MSTS', align: 'start', key: 'msts' }\n      ],\n      tableData: [],\n      msts: '',\n      isTableDisabled: false\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    },\n    updateTableDataWithMSTS() {\n      this.tableData = this.tableData.map(item => ({\n        ...item,\n        input: this.msts\n      }));\n    },\n    onInputChange(item) {\n      this.send({ payload: this.tableData });\n    },\n    isFieldDisabled(item) {\n      return this.isTableDisabled || item.status === 'In Progress' || item.status === 'Done';\n    }\n  },\n  watch: {\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload == \"start\") {\n            this.send({\n                payload: {\n                    \"action\": \"segment\",\n                    \"settings\": {\n                        \"force\": true,\n                        \"ecotaxa\": true,\n                    }\n                },\n                topic: \"segmenter/segment\"\n            })\n              \n            this.isTableDisabled = true;\n          }\n          if (msg.payload && msg.payload == \"pause\") {\n            this.send({\n                payload: {\n                    \"action\": \"stop\",\n                },\n                topic: \"segmenter/segment\"\n            })\n\n            this.isTableDisabled = false;\n          }\n          if (msg.payload && msg.payload == \"clear\") {\n            this.send({\n                payload: {\n                    \"action\": \"stop\",\n                },\n                topic: \"segmenter/segment\"\n            })\n\n            this.tableData = [];\n          } else if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n          }\n          if (msg.msts) {\n            this.msts = msg.msts;\n            this.updateTableDataWithMSTS(); \n          }\n          this.send({ payload: this.tableData });\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n          this.updateTableDataWithMSTS();\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n\n.input-msts {\n  margin: 10px;\n  max-width: 100px;\n}\n\n.input-msts .v-input__details {\n  display: none;\n}\n</style>\n",
+        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n    <template v-slot:item=\"{ item, index }\">\n      <tr>\n        <td>{{ item.acquisitionID }}</td>\n        <td>{{ item.estimatedTime }}</td>\n        <td>{{ item.status }}</td>\n        <td class=\"input-msts\">\n          <v-text-field :disabled=\"isFieldDisabled(item)\" v-model=\"item.input\" @input=\"onInputChange(item)\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n        </td>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n        { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n        { title: 'Status', align: 'start', key: 'status' },\n        { title: 'MSTS', align: 'start', key: 'msts' }\n      ],\n      tableData: [], \n      msts: '',\n      isTableDisabled: false, \n      currentRowIndex: 0 \n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    },\n    updateTableDataWithMSTS() {\n      this.tableData = this.tableData.map(item => ({\n        ...item,\n        input: this.msts\n      }));\n    },\n    onInputChange(item) {\n      this.send({ payload: this.tableData });\n    },\n    isFieldDisabled(item) {\n      return this.isTableDisabled || item.status === 'In Progress' || item.status === 'Done';\n    },\n    sendCurrentRow() {\n      if (this.tableData.length > 0 && this.currentRowIndex < this.tableData.length) {\n        const item = this.tableData[this.currentRowIndex];\n        this.send({\n          payload: {\n            \"action\": \"segment\",\n            \"settings\": {\n                \"path\": item.path,\n                \"force\": true,\n                \"ecotaxa\": true,\n            }\n          },\n          topic: \"segmenter/segment\"\n        });\n\n        if (this.currentRowIndex === this.tableData.length - 1) {\n          this.isTableDisabled = true;\n        }\n      }\n    },\n    processStatusDone() {\n      if (this.currentRowIndex < this.tableData.length - 1) {\n        this.currentRowIndex++;\n        this.sendCurrentRow();\n      } else {\n        this.send({\n          payload: \"Done\",\n        });\n      }\n    }\n  },\n  watch: {\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload === \"start\") {\n            this.sendCurrentRow();\n          }\n          if (msg.payload && msg.payload === \"pause\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.isTableDisabled = false;\n          }\n          if (msg.payload && msg.payload === \"clear\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.tableData = [];\n            this.currentRowIndex = 0; // Réinitialiser l'index de ligne\n            this.isTableDisabled = false; // Assurez-vous que la table n'est pas désactivée après effacement\n          } else if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n            this.updateTableDataWithMSTS();\n          }\n          if (msg.msts) {\n            this.msts = msg.msts;\n            this.updateTableDataWithMSTS(); \n          }\n          if (msg.payload && msg.payload.status === \"Done\") {\n            this.processStatusDone();\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n          this.updateTableDataWithMSTS();\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n\n.input-msts {\n  margin: 10px;\n  max-width: 100px;\n}\n\n.input-msts .v-input__details {\n  display: none;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -13650,8 +13557,8 @@
         "y": 540,
         "wires": [
             [
-                "033732c765f1c939",
-                "d721115905e941f3"
+                "d721115905e941f3",
+                "2298a8a5a04dade7"
             ]
         ]
     },
@@ -13668,14 +13575,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn @click=\"handleToggleClick('pause')\" style=\"padding: 10px;\">\n                <v-icon left>mdi-pause</v-icon>Pause\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('clear')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('start')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-triangle</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                toggle: null\n            };\n        },\n        methods: {\n            handleToggleClick(action) {\n                this.send({payload: action});\n            }\n        }\n    }\n</script>\n\n<style scoped>\n    div .v-btn-toggle {\n        background-color: #ffffff;\n    }\n\n    .toggle-full-width {\n        width: 100%;\n        margin-top: 15px;\n    }\n\n    .toggle {\n        width: 100%;\n        border-color: #0a6eca;\n        color: #0a6eca;\n    }\n\n    .toggle .v-btn--active {\n        background-color: #0a6eca !important;\n        color: white !important;\n    }\n</style>\n",
+        "format": "<template>\n    <div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn @click=\"handleToggleClick('pause')\" style=\"padding: 10px;\">\n                <v-icon left>mdi-pause</v-icon>Pause\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('clear')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('start')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-triangle</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                toggle: null\n            };\n        },\n        methods: {\n            handleToggleClick(action) {\n                this.send({ payload: action });\n            },\n            handleDone() {\n                this.toggle = 0;\n                this.send({ payload: \"pause\" });\n            }\n        },\n        watch: {\n            '$socket': {\n                handler(newVal, oldVal) {\n                    this.$socket.on('msg-input:' + this.id, (msg) => {\n                        if (msg.payload === \"Done\") {\n                            this.handleDone();\n                        }\n                    });\n                },\n                deep: true,\n                immediate: true\n            }\n        }\n    }\n</script>\n\n<style scoped>\n    div .v-btn-toggle {\n        background-color: #ffffff;\n    }\n\n    .toggle-full-width {\n        width: 100%;\n        margin-top: 15px;\n    }\n\n    .toggle {\n        width: 100%;\n        border-color: #0a6eca;\n        color: #0a6eca;\n    }\n\n    .toggle .v-btn--active {\n        background-color: #0a6eca !important;\n        color: white !important;\n    }\n</style>\n",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 600,
+        "y": 700,
         "wires": [
             [
                 "c18005dcbaf22026",
@@ -13820,17 +13727,18 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" v-model=\"selected\" show-select class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">{{ column.title }}</span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n            <v-icon v-if=\"column.removable\" icon=\"$close\" @click=\"() => remove(column.key)\"></v-icon>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Project name', align: 'start', sortable: false, key: 'projectName', removable: false },\n        { title: 'Sample ID', align: 'start', key: 'sampleID', removable: true, sortable: true },\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID', removable: true, sortable: true },\n        { title: 'Operator', align: 'start', key: 'operator', removable: true, sortable: true },\n        { title: 'Image', align: 'start', key: 'image', removable: true, sortable: true },\n        { title: 'MSTS', align: 'start', key: 'MSTS', removable: true, sortable: true },\n      ],\n      tableData: [], // Initialiser avec un tableau vide\n      selected: [],\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key);\n    },\n    updateTableData(newData) {\n      // Éviter les duplications en combinant les anciennes et nouvelles données\n      const combinedData = [...this.tableData, ...newData.filter(item => !this.tableData.some(existingItem => existingItem.acquisitionID === item.acquisitionID))];\n      this.tableData = combinedData;\n    },\n  },\n  watch: {\n    selected: {\n      handler(newVal) {\n        // Envoyer les données mises à jour via WebSocket\n        this.send({ payload: newVal });\n      },\n      deep: true\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload === \"clear\") {\n            this.selected = []; // Vider les lignes sélectionnées\n          } else if (Array.isArray(msg.payload)) {\n            this.updateTableData(msg.payload); // Mettre à jour les données du tableau avec celles reçues\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    // Récupérer les données initiales depuis msg.payload\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (Array.isArray(msg.payload)) {\n          this.updateTableData(msg.payload); // Mettre à jour les données du tableau avec celles reçues\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>",
+        "format": "<template>\n  <v-data-table \n    :headers=\"headers\" \n    :items=\"tableData\" \n    item-value=\"acquisitionID\" \n    v-model=\"selected\" \n    show-select \n    class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n            <v-icon v-if=\"column.removable\" icon=\"$close\" @click=\"() => remove(column.key)\"></v-icon>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Project name', align: 'start', sortable: false, key: 'projectName', removable: false },\n        { title: 'Sample ID', align: 'start', key: 'sampleID', removable: true, sortable: true },\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID', removable: true, sortable: true },\n        { title: 'Operator', align: 'start', key: 'operator', removable: true, sortable: true },\n        { title: 'Image', align: 'start', key: 'image', removable: true, sortable: true },\n        { title: 'MSTS', align: 'start', key: 'MSTS', removable: true, sortable: true },\n      ],\n      tableData: [], // Tableau des données à afficher\n      selected: [], // Stocke les identifiants sélectionnés\n    }\n  },\n  methods: {\n    // Supprime une colonne des en-têtes\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key);\n    },\n    // Met à jour les données du tableau en ajoutant de nouvelles données\n    updateTableData(newData) {\n      const combinedData = [\n        ...this.tableData,\n        ...newData.filter(item => !this.tableData.some(existingItem => existingItem.acquisitionID === item.acquisitionID))\n      ];\n      this.tableData = combinedData;\n    },\n    // Récupère les objets complets sélectionnés\n    getSelectedItems() {\n      return this.tableData.filter(item => this.selected.includes(item.acquisitionID));\n    },\n    // Envoie les données sélectionnées (obtenues en utilisant `getSelectedItems`)\n    sendPayload() {\n      const selectedItems = this.getSelectedItems();\n      console.log('Données envoyées :', selectedItems);\n      // Envoyez ces données à l'endroit souhaité\n      this.send({payload: selectedItems })\n    }\n  },\n  watch: {\n    selected: {\n      handler(newVal) {\n        this.sendPayload();\n      },\n      deep: true\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload === \"clear\") {\n            this.selected = []; // Réinitialise la sélection si la charge utile est \"clear\"\n          } else if (Array.isArray(msg.payload)) {\n            this.updateTableData(msg.payload); // Met à jour les données du tableau\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (Array.isArray(msg.payload)) {\n          this.updateTableData(msg.payload); // Met à jour les données du tableau\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>\n",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 380,
+        "y": 400,
         "wires": [
             [
-                "d39a23df09b43d2b"
+                "d39a23df09b43d2b",
+                "ee4f56191c0a79e9"
             ]
         ]
     },
@@ -13840,7 +13748,7 @@
         "z": "00a14f98244d252e",
         "g": "cd7cd2c05c7f55bf",
         "name": "function 1",
-        "func": "if (!Array.isArray(msg.payload)) {\n    msg.payload = \"\";\n    return msg;\n}\n\nfor (let element of msg.payload) {\n    if (typeof element !== 'string') {\n        msg.payload = \"\";\n        return msg;\n    }\n}\n\nvar resultat = []\n\nresultat = msg.payload.map(element => ({\n    acquisitionID: element,\n    estimatedTime: \"WIP\",\n    status: \"To do\"\n}));\n\nflow.set('segmentation_queue', resultat);\n\nmsg.payload = resultat;\n\nreturn msg;",
+        "func": "// Vérifiez si msg.payload est un tableau\nif (!Array.isArray(msg.payload)) {\n    msg.payload = \"\";\n    return msg;\n}\n\n// Vérifiez que chaque élément du tableau est un objet avec les propriétés attendues\nfor (let element of msg.payload) {\n    if (typeof element !== 'object' || element === null || !element.acquisitionID || !element.path) {\n        msg.payload = \"\";\n        return msg;\n    }\n}\n\n// Transformez les objets pour ne conserver que path et acquisitionID\nvar resultat = msg.payload.map(element => ({\n    acquisitionID: element.acquisitionID,\n    path: element.path,\n    estimatedTime: \"WIP\",\n    status: \"To do\"\n}));\n\n// Stockez le résultat dans le flow\nflow.set('segmentation_queue', resultat);\n\n// Définissez msg.payload avec le résultat\nmsg.payload = resultat;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -13848,7 +13756,7 @@
         "finalize": "",
         "libs": [],
         "x": 680,
-        "y": 380,
+        "y": 400,
         "wires": [
             [
                 "343ad9e58c44f9d9"
@@ -13869,7 +13777,7 @@
         "finalize": "",
         "libs": [],
         "x": 900,
-        "y": 620,
+        "y": 720,
         "wires": [
             [
                 "9529b63ced697421"
@@ -13929,7 +13837,7 @@
         "repair": false,
         "outputs": 2,
         "x": 690,
-        "y": 600,
+        "y": 700,
         "wires": [
             [
                 "e6ba170eea1efeb4"
@@ -13950,7 +13858,7 @@
             "da2a5658f65d64a4"
         ],
         "x": 1055,
-        "y": 620,
+        "y": 720,
         "wires": []
     },
     {
@@ -13964,7 +13872,7 @@
             "4b6824e2ecaa9016"
         ],
         "x": 955,
-        "y": 580,
+        "y": 680,
         "wires": []
     },
     {
@@ -13996,7 +13904,7 @@
             "c491425e02dc2976"
         ],
         "x": 445,
-        "y": 380,
+        "y": 400,
         "wires": [
             [
                 "d417adf0e2e7759b"
@@ -14014,7 +13922,7 @@
             "67b91503eb38afe7"
         ],
         "x": 775,
-        "y": 380,
+        "y": 400,
         "wires": []
     },
     {
@@ -14105,7 +14013,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 310,
-        "y": 500,
+        "y": 540,
         "wires": [
             [
                 "af3cbcd9f5f35be3"
@@ -14123,30 +14031,12 @@
             "343ad9e58c44f9d9"
         ],
         "x": 145,
-        "y": 500,
+        "y": 540,
         "wires": [
             [
                 "aa582b7c4e2ce8c7"
             ]
         ]
-    },
-    {
-        "id": "033732c765f1c939",
-        "type": "debug",
-        "z": "00a14f98244d252e",
-        "g": "d3d7be8ef5f940c4",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 550,
-        "y": 500,
-        "wires": []
     },
     {
         "id": "62d2042e91fbe197",
@@ -14158,8 +14048,8 @@
         "links": [
             "49ea401a0745e446"
         ],
-        "x": 585,
-        "y": 640,
+        "x": 655,
+        "y": 740,
         "wires": []
     },
     {
@@ -14435,7 +14325,7 @@
         "type": "function",
         "z": "00a14f98244d252e",
         "name": "Format payload to display",
-        "func": "// Récupère le tableau des descriptions et des chemins stockés dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\nconst acquisition_path_array = flow.get('acquisition_path_array') || [];\n\n// Crée une correspondance entre acquisitionID et path\nconst pathMap = new Map(acquisition_path_array.map(item => [item.acquisitionID, item.path]));\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\",\n            path: pathMap.get(acquisitionID) || \"\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
+        "func": "// Récupère le tableau des descriptions et des chemins stockés dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\nconst acquisition_path_array = flow.get('acquisition_path_array') || [];\n\n// Fonction pour extraire acquisitionID du chemin\nfunction extractAcquisitionID(path) {\n    const parts = path.split('/');\n    return parts[parts.length - 2];  // avant-dernier élément du chemin\n}\n\n// Crée une correspondance entre acquisitionID et path\nconst pathMap = new Map(acquisition_path_array.map(item => [extractAcquisitionID(item.path), item.path]));\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\",\n            path: pathMap.get(acquisitionID) || \"\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14456,7 +14346,7 @@
         "type": "debug",
         "z": "00a14f98244d252e",
         "name": "debug 48",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14507,7 +14397,8 @@
         "id": "2cf602d6c4ccb957",
         "type": "mqtt in",
         "z": "00a14f98244d252e",
-        "name": "Listen imager status",
+        "g": "d3d7be8ef5f940c4",
+        "name": "Listen Segmenter status",
         "topic": "status/segmenter",
         "qos": "2",
         "datatype": "auto-detect",
@@ -14516,11 +14407,12 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1210,
-        "y": 460,
+        "x": 330,
+        "y": 500,
         "wires": [
             [
-                "193d3837469bc271"
+                "193d3837469bc271",
+                "af3cbcd9f5f35be3"
             ]
         ]
     },
@@ -14528,7 +14420,8 @@
         "id": "193d3837469bc271",
         "type": "debug",
         "z": "00a14f98244d252e",
-        "name": "Pump status",
+        "g": "d3d7be8ef5f940c4",
+        "name": "Segmenter status",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -14537,8 +14430,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1390,
-        "y": 460,
+        "x": 570,
+        "y": 500,
         "wires": []
     },
     {
@@ -14571,7 +14464,6 @@
         "id": "cf21ab67185f9d54",
         "type": "mqtt out",
         "z": "00a14f98244d252e",
-        "d": true,
         "g": "d3d7be8ef5f940c4",
         "name": "",
         "topic": "",
@@ -14597,7 +14489,7 @@
             "a502f95380d7ea32"
         ],
         "x": 145,
-        "y": 540,
+        "y": 580,
         "wires": [
             [
                 "6d941e58139bc4ef"
@@ -14618,11 +14510,9 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 540,
+        "y": 580,
         "wires": [
-            [
-                "af3cbcd9f5f35be3"
-            ]
+            []
         ]
     },
     {
@@ -14639,7 +14529,7 @@
         "finalize": "",
         "libs": [],
         "x": 850,
-        "y": 580,
+        "y": 680,
         "wires": [
             [
                 "a0368732ccfa08d8"
@@ -14698,6 +14588,49 @@
         "x": 1060,
         "y": 960,
         "wires": []
+    },
+    {
+        "id": "ee4f56191c0a79e9",
+        "type": "debug",
+        "z": "00a14f98244d252e",
+        "g": "cd7cd2c05c7f55bf",
+        "name": "debug 60",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2298a8a5a04dade7",
+        "type": "switch",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Done",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 580,
+        "wires": [
+            [
+                "cf4fbc0932d87cc7"
+            ]
+        ]
     },
     {
         "id": "107c602539a8cf19",
