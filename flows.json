@@ -911,7 +911,8 @@
             "ef1abfee73208836",
             "13cdc4d42826fa8f",
             "dda11a33a13eb2d5",
-            "872ca1ac17bbd6d5"
+            "872ca1ac17bbd6d5",
+            "4c23fa82d4496339"
         ],
         "x": 34,
         "y": 353,
@@ -3075,7 +3076,7 @@
         "payload": "",
         "payloadType": "str",
         "x": 140,
-        "y": 600,
+        "y": 660,
         "wires": [
             [
                 "401bfc3969550dac"
@@ -3233,6 +3234,7 @@
         "name": "",
         "mode": "link",
         "links": [
+            "0cee35de3e61c695",
             "47793af3c5948f4c",
             "569d67a3e424fbfc",
             "59fb45c7686d6613",
@@ -3242,11 +3244,9 @@
             "be3b221fc2df4911",
             "c3daa12c86987eb9",
             "c5ca778e3eda6a52",
+            "dda11a33a13eb2d5",
             "ea3ed4500ce285e0",
-            "0cee35de3e61c695",
-            "f51f31818cb618a7",
-            "ef1abfee73208836",
-            "dda11a33a13eb2d5"
+            "ef1abfee73208836"
         ],
         "x": 235,
         "y": 600,
@@ -4386,7 +4386,7 @@
         "g": "6720ea496a9e645e",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "write",
@@ -4404,7 +4404,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 610,
+        "x": 640,
         "y": 960,
         "wires": [
             [],
@@ -5120,7 +5120,7 @@
             "5144a6f881adaa91",
             "469d021252c5af93"
         ],
-        "x": 215,
+        "x": 235,
         "y": 60,
         "wires": []
     },
@@ -5135,7 +5135,7 @@
             "dcc0c648c7c57223"
         ],
         "x": 95,
-        "y": 200,
+        "y": 140,
         "wires": [
             [
                 "43dd46a8e4c6e486"
@@ -5152,16 +5152,22 @@
         "rules": [
             {
                 "t": "false"
+            },
+            {
+                "t": "true"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
-        "x": 500,
-        "y": 140,
+        "outputs": 2,
+        "x": 820,
+        "y": 100,
         "wires": [
             [
                 "1660c112924a30ff"
+            ],
+            [
+                "9f65e288ffde4e1f"
             ]
         ]
     },
@@ -5184,8 +5190,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 670,
-        "y": 140,
+        "x": 980,
+        "y": 80,
         "wires": [
             [
                 "5a6d4529c23e5762"
@@ -5201,8 +5207,8 @@
         "links": [
             "f2332fa1b7e6397e"
         ],
-        "x": 795,
-        "y": 140,
+        "x": 1095,
+        "y": 80,
         "wires": []
     },
     {
@@ -5222,7 +5228,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 310,
+        "x": 330,
         "y": 100,
         "wires": [
             [
@@ -5467,7 +5473,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 200,
-        "y": 200,
+        "y": 140,
         "wires": [
             []
         ]
@@ -5496,8 +5502,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 280,
-        "y": 140,
+        "x": 600,
+        "y": 100,
         "wires": [
             [
                 "638b0a62601acf8b"
@@ -11093,10 +11099,9 @@
         "id": "73dbec532343f666",
         "type": "inject",
         "z": "70f558eb9d60b6fc",
-        "d": true,
         "name": "",
         "props": [],
-        "repeat": "10",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -11116,9 +11121,7 @@
         "name": "link out 103",
         "mode": "link",
         "links": [
-            "4317b389f6b1b156",
-            "edd15056c8b5ffc8",
-            "c6633d19eafe05ef"
+            "4317b389f6b1b156"
         ],
         "x": 535,
         "y": 40,
@@ -11178,8 +11181,7 @@
         "g": "3b32c3c9506eb933",
         "name": "link in 153",
         "links": [
-            "8228453d1c618570",
-            "0804cf4b32049a1d"
+            "8228453d1c618570"
         ],
         "x": 175,
         "y": 520,
@@ -11196,8 +11198,7 @@
         "g": "3b32c3c9506eb933",
         "name": "link in 154",
         "links": [
-            "8228453d1c618570",
-            "0804cf4b32049a1d"
+            "8228453d1c618570"
         ],
         "x": 175,
         "y": 580,
@@ -13877,7 +13878,8 @@
             "21fa8983c634e8d6",
             "4cf3eec1ce2d4242",
             "d3b2e7d1bba0372d",
-            "1031589ab54758f7"
+            "1031589ab54758f7",
+            "9f6ae562f1b445b6"
         ],
         "x": 255,
         "y": 80,
@@ -13992,7 +13994,9 @@
         "y": 920,
         "wires": [
             [
-                "a7571dda2afc9bf5"
+                "a7571dda2afc9bf5",
+                "7ad651f163137130",
+                "00356111d14fa4fc"
             ]
         ]
     },
@@ -14072,7 +14076,7 @@
         "type": "function",
         "z": "00a14f98244d252e",
         "name": "Format payload to display",
-        "func": "// Récupère le tableau des descriptions stockées dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
+        "func": "// Récupère le tableau des descriptions et des chemins stockés dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\nconst acquisition_path_array = flow.get('acquisition_path_array') || [];\n\n// Crée une correspondance entre acquisitionID et path\nconst pathMap = new Map(acquisition_path_array.map(item => [item.acquisitionID, item.path]));\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\",\n            path: pathMap.get(acquisitionID) || \"\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14093,7 +14097,7 @@
         "type": "debug",
         "z": "00a14f98244d252e",
         "name": "debug 48",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14208,6 +14212,7 @@
         "id": "cf21ab67185f9d54",
         "type": "mqtt out",
         "z": "00a14f98244d252e",
+        "d": true,
         "g": "d3d7be8ef5f940c4",
         "name": "",
         "topic": "",
@@ -14245,15 +14250,15 @@
         "type": "function",
         "z": "00a14f98244d252e",
         "g": "d3d7be8ef5f940c4",
-        "name": "function 13",
-        "func": "\nconst payload = flow.get('segmentation_queue');\n\nmsg.payload = payload;\n\nreturn msg;",
+        "name": "Get flow variables",
+        "func": "\nconst seg_queu = flow.get('segmentation_queue');\nconst acq_path_array = flow.get('acquisition_path_array');\n\nmsg.payload = {\n    seg_queu: seg_queu,\n    acq_path_array: acq_path_array\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 250,
+        "x": 270,
         "y": 540,
         "wires": [
             [
@@ -21553,5 +21558,88 @@
                 "f31a598d.9fd2c8"
             ]
         ]
+    },
+    {
+        "id": "4c23fa82d4496339",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
+        "name": "Reset all",
+        "links": [
+            "9f65e288ffde4e1f"
+        ],
+        "x": 85,
+        "y": 600,
+        "wires": [
+            [
+                "401bfc3969550dac"
+            ]
+        ]
+    },
+    {
+        "id": "9f65e288ffde4e1f",
+        "type": "link out",
+        "z": "fb15c917381dd273",
+        "name": "link out 108",
+        "mode": "link",
+        "links": [
+            "4c23fa82d4496339"
+        ],
+        "x": 915,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7ad651f163137130",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "name": "function 14",
+        "func": "const newValue = msg.filename;\nlet actualArray = flow.get('acquisition_path_array') || [];\n\n// Ajouter le nouveau chemin s'il n'est pas vide et n'existe pas déjà dans le tableau\nif (newValue && !actualArray.some(item => item.path === newValue)) {\n    actualArray.push({\n        path: newValue\n    });\n}\n\n// Supprimer les éléments avec des chemins vides ou nuls\nactualArray = actualArray.filter(item => item.path);\n\n// Supprimer les doublons en utilisant un Set\nconst uniquePaths = Array.from(new Set(actualArray.map(item => item.path))).map(path => ({ path }));\n\n// Mettre à jour le tableau dans le contexte du flux\nflow.set('acquisition_path_array', uniquePaths);\n\n// Mettre à jour le payload du message\nmsg.payload = uniquePaths;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 880,
+        "wires": [
+            [
+                "8fca3cb19c201138"
+            ]
+        ]
+    },
+    {
+        "id": "8fca3cb19c201138",
+        "type": "debug",
+        "z": "00a14f98244d252e",
+        "name": "debug 58",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "00356111d14fa4fc",
+        "type": "debug",
+        "z": "00a14f98244d252e",
+        "name": "debug 59",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "filename",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 960,
+        "wires": []
     }
 ]
