@@ -1399,6 +1399,39 @@
         "h": 282
     },
     {
+        "id": "5c8dc5f5e1904bf8",
+        "type": "group",
+        "z": "fb15c917381dd273",
+        "name": "first-visit-form",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "43f2c97055fc26be",
+            "0565dc25419690e3",
+            "90d9c21321164d49",
+            "37fdca294eb2d1bb",
+            "dcc0c648c7c57223",
+            "8b05263aee3303bf",
+            "2cba5a92e292ae0f",
+            "9ed31adfa207532c",
+            "d3a5a70db54745f0",
+            "f6c532036b5081b0",
+            "cae0178a8a69f787",
+            "db90716e8f85a03f",
+            "eac22c776f85072b",
+            "469d021252c5af93",
+            "840870e225e30144",
+            "695a202180a55638"
+        ],
+        "x": 44,
+        "y": 479,
+        "w": 1572,
+        "h": 222
+    },
+    {
         "id": "b08415909e5dc4da",
         "type": "group",
         "z": "e988301e60e4b458",
@@ -1652,39 +1685,6 @@
         "y": 599,
         "w": 692,
         "h": 262
-    },
-    {
-        "id": "5c8dc5f5e1904bf8",
-        "type": "group",
-        "z": "fb15c917381dd273",
-        "name": "first-visit-form",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "43f2c97055fc26be",
-            "0565dc25419690e3",
-            "90d9c21321164d49",
-            "37fdca294eb2d1bb",
-            "dcc0c648c7c57223",
-            "8b05263aee3303bf",
-            "2cba5a92e292ae0f",
-            "9ed31adfa207532c",
-            "d3a5a70db54745f0",
-            "f6c532036b5081b0",
-            "cae0178a8a69f787",
-            "db90716e8f85a03f",
-            "eac22c776f85072b",
-            "469d021252c5af93",
-            "840870e225e30144",
-            "695a202180a55638"
-        ],
-        "x": 44,
-        "y": 479,
-        "w": 1572,
-        "h": 222
     },
     {
         "id": "cae0178a8a69f787",
@@ -12065,10 +12065,9 @@
         "id": "73dbec532343f666",
         "type": "inject",
         "z": "70f558eb9d60b6fc",
-        "d": true,
         "name": "",
         "props": [],
-        "repeat": "10",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -12088,9 +12087,7 @@
         "name": "link out 103",
         "mode": "link",
         "links": [
-            "4317b389f6b1b156",
-            "edd15056c8b5ffc8",
-            "c6633d19eafe05ef"
+            "4317b389f6b1b156"
         ],
         "x": 535,
         "y": 40,
@@ -12184,8 +12181,7 @@
         "g": "3b32c3c9506eb933",
         "name": "link in 153",
         "links": [
-            "8228453d1c618570",
-            "0804cf4b32049a1d"
+            "8228453d1c618570"
         ],
         "x": 175,
         "y": 520,
@@ -12236,8 +12232,7 @@
         "g": "3b32c3c9506eb933",
         "name": "link in 154",
         "links": [
-            "8228453d1c618570",
-            "0804cf4b32049a1d"
+            "8228453d1c618570"
         ],
         "x": 175,
         "y": 580,
@@ -14181,7 +14176,8 @@
             "21fa8983c634e8d6",
             "4cf3eec1ce2d4242",
             "d3b2e7d1bba0372d",
-            "1031589ab54758f7"
+            "1031589ab54758f7",
+            "9f6ae562f1b445b6"
         ],
         "x": 255,
         "y": 80,
@@ -14296,7 +14292,9 @@
         "y": 920,
         "wires": [
             [
-                "a7571dda2afc9bf5"
+                "a7571dda2afc9bf5",
+                "7ad651f163137130",
+                "00356111d14fa4fc"
             ]
         ]
     },
@@ -14376,7 +14374,7 @@
         "type": "function",
         "z": "00a14f98244d252e",
         "name": "Format payload to display",
-        "func": "// Récupère le tableau des descriptions stockées dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
+        "func": "// Récupère le tableau des descriptions et des chemins stockés dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\nconst acquisition_path_array = flow.get('acquisition_path_array') || [];\n\n// Crée une correspondance entre acquisitionID et path\nconst pathMap = new Map(acquisition_path_array.map(item => [item.acquisitionID, item.path]));\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\",\n            path: pathMap.get(acquisitionID) || \"\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14397,7 +14395,7 @@
         "type": "debug",
         "z": "00a14f98244d252e",
         "name": "debug 48",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14512,6 +14510,7 @@
         "id": "cf21ab67185f9d54",
         "type": "mqtt out",
         "z": "00a14f98244d252e",
+        "d": true,
         "g": "d3d7be8ef5f940c4",
         "name": "",
         "topic": "",
@@ -14549,15 +14548,15 @@
         "type": "function",
         "z": "00a14f98244d252e",
         "g": "d3d7be8ef5f940c4",
-        "name": "function 13",
-        "func": "\nconst payload = flow.get('segmentation_queue');\n\nmsg.payload = payload;\n\nreturn msg;",
+        "name": "Get flow variables",
+        "func": "\nconst seg_queu = flow.get('segmentation_queue');\nconst acq_path_array = flow.get('acquisition_path_array');\n\nmsg.payload = {\n    seg_queu: seg_queu,\n    acq_path_array: acq_path_array\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 250,
+        "x": 270,
         "y": 540,
         "wires": [
             [
@@ -14585,6 +14584,59 @@
                 "a0368732ccfa08d8"
             ]
         ]
+    },
+    {
+        "id": "7ad651f163137130",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "name": "function 14",
+        "func": "const newValue = msg.filename;\nlet actualArray = flow.get('acquisition_path_array') || [];\n\n// Ajouter le nouveau chemin s'il n'est pas vide et n'existe pas déjà dans le tableau\nif (newValue && !actualArray.some(item => item.path === newValue)) {\n    actualArray.push({\n        path: newValue\n    });\n}\n\n// Supprimer les éléments avec des chemins vides ou nuls\nactualArray = actualArray.filter(item => item.path);\n\n// Supprimer les doublons en utilisant un Set\nconst uniquePaths = Array.from(new Set(actualArray.map(item => item.path))).map(path => ({ path }));\n\n// Mettre à jour le tableau dans le contexte du flux\nflow.set('acquisition_path_array', uniquePaths);\n\n// Mettre à jour le payload du message\nmsg.payload = uniquePaths;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 880,
+        "wires": [
+            [
+                "8fca3cb19c201138"
+            ]
+        ]
+    },
+    {
+        "id": "8fca3cb19c201138",
+        "type": "debug",
+        "z": "00a14f98244d252e",
+        "name": "debug 58",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "00356111d14fa4fc",
+        "type": "debug",
+        "z": "00a14f98244d252e",
+        "name": "debug 59",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "filename",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 960,
+        "wires": []
     },
     {
         "id": "107c602539a8cf19",
