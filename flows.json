@@ -5084,6 +5084,23 @@
         ]
     },
     {
+        "id": "4c23fa82d4496339",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "6720ea496a9e645e",
+        "name": "Reset all",
+        "links": [
+            "9f65e288ffde4e1f"
+        ],
+        "x": 85,
+        "y": 600,
+        "wires": [
+            [
+                "401bfc3969550dac"
+            ]
+        ]
+    },
+    {
         "id": "db628ba400a981fc",
         "type": "ui-template",
         "z": "54343cf33bf0a216",
@@ -5742,6 +5759,19 @@
             ],
             []
         ]
+    },
+    {
+        "id": "9f65e288ffde4e1f",
+        "type": "link out",
+        "z": "fb15c917381dd273",
+        "name": "link out 108",
+        "mode": "link",
+        "links": [
+            "4c23fa82d4496339"
+        ],
+        "x": 915,
+        "y": 120,
+        "wires": []
     },
     {
         "id": "2cc4d8075a852a14",
@@ -6973,7 +7003,7 @@
         "width": "8",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n        <img src=\"http://92.167.184.163/ps/hal/camera/streams/preview.mjpg\">\n        <!--<img src=\"/ps/hal/camera/streams/preview.mjpg\">-->\n    </div>\n    <!--<div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>-->\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n    };\n  },\n  methods: {\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;    },\n  },\n};\n</script>\n\n<style scoped>\n.image-zoom-container {\n  /*cursor: none;*/\n  border: 1px solid black;\n  border-radius: 5px;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper {\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper img {\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: transform 0.2s ease-out;\n}\n\n.zoomed-image {\n  position: absolute;\n  top: 50%; /* Centre vertical */\n  left: 50%; /* Centre horizontal */\n  transform: translate(-50%, -50%); /* Centrer l'image zoomée */\n  width: 150px; /* Taille réduite de l'image zoomée */\n  height: 300px; /* Taille réduite de l'image zoomée */\n  pointer-events: none;\n  z-index: 1000;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n        <!--<img src=\"http://92.167.184.163\n        /ps/hal/camera/streams/preview.mjpg\">-->\n        <img src=\"http://planktoscope.local/ps/hal/camera/streams/preview.mjpg\">\n    </div>\n    <!--<div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>-->\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n    };\n  },\n  methods: {\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;    },\n  },\n};\n</script>\n\n<style scoped>\n.image-zoom-container {\n  /*cursor: none;*/\n  border: 1px solid black;\n  border-radius: 5px;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper {\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper img {\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: transform 0.2s ease-out;\n}\n\n.zoomed-image {\n  position: absolute;\n  top: 50%; /* Centre vertical */\n  left: 50%; /* Centre horizontal */\n  transform: translate(-50%, -50%); /* Centrer l'image zoomée */\n  width: 150px; /* Taille réduite de l'image zoomée */\n  height: 300px; /* Taille réduite de l'image zoomée */\n  pointer-events: none;\n  z-index: 1000;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -14589,6 +14619,59 @@
         ]
     },
     {
+        "id": "7ad651f163137130",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "name": "function 14",
+        "func": "const newValue = msg.filename;\nlet actualArray = flow.get('acquisition_path_array') || [];\n\n// Ajouter le nouveau chemin s'il n'est pas vide et n'existe pas déjà dans le tableau\nif (newValue && !actualArray.some(item => item.path === newValue)) {\n    actualArray.push({\n        path: newValue\n    });\n}\n\n// Supprimer les éléments avec des chemins vides ou nuls\nactualArray = actualArray.filter(item => item.path);\n\n// Supprimer les doublons en utilisant un Set\nconst uniquePaths = Array.from(new Set(actualArray.map(item => item.path))).map(path => ({ path }));\n\n// Mettre à jour le tableau dans le contexte du flux\nflow.set('acquisition_path_array', uniquePaths);\n\n// Mettre à jour le payload du message\nmsg.payload = uniquePaths;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 880,
+        "wires": [
+            [
+                "8fca3cb19c201138"
+            ]
+        ]
+    },
+    {
+        "id": "8fca3cb19c201138",
+        "type": "debug",
+        "z": "00a14f98244d252e",
+        "name": "debug 58",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "00356111d14fa4fc",
+        "type": "debug",
+        "z": "00a14f98244d252e",
+        "name": "debug 59",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "filename",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 960,
+        "wires": []
+    },
+    {
         "id": "325c645ea4e0bfac",
         "type": "link in",
         "z": "f260ed9417849607",
@@ -15978,6 +16061,7 @@
         "id": "6a0aacfdb4ef9b75",
         "type": "ui-button",
         "z": "f260ed9417849607",
+        "d": true,
         "g": "217abb3abac21001",
         "group": "f215418ba0dbaaad",
         "name": "",
@@ -16013,7 +16097,7 @@
         "name": "",
         "label": "Clear dataframe",
         "order": 3,
-        "width": "2",
+        "width": "6",
         "height": "1",
         "emulateClick": false,
         "tooltip": "",
@@ -16226,6 +16310,7 @@
         "id": "1e962f2079c6f2e3",
         "type": "ui-template",
         "z": "f260ed9417849607",
+        "d": true,
         "g": "217abb3abac21001",
         "group": "f215418ba0dbaaad",
         "page": "",
@@ -21558,88 +21643,5 @@
                 "f31a598d.9fd2c8"
             ]
         ]
-    },
-    {
-        "id": "4c23fa82d4496339",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "Reset all",
-        "links": [
-            "9f65e288ffde4e1f"
-        ],
-        "x": 85,
-        "y": 600,
-        "wires": [
-            [
-                "401bfc3969550dac"
-            ]
-        ]
-    },
-    {
-        "id": "9f65e288ffde4e1f",
-        "type": "link out",
-        "z": "fb15c917381dd273",
-        "name": "link out 108",
-        "mode": "link",
-        "links": [
-            "4c23fa82d4496339"
-        ],
-        "x": 915,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "7ad651f163137130",
-        "type": "function",
-        "z": "00a14f98244d252e",
-        "name": "function 14",
-        "func": "const newValue = msg.filename;\nlet actualArray = flow.get('acquisition_path_array') || [];\n\n// Ajouter le nouveau chemin s'il n'est pas vide et n'existe pas déjà dans le tableau\nif (newValue && !actualArray.some(item => item.path === newValue)) {\n    actualArray.push({\n        path: newValue\n    });\n}\n\n// Supprimer les éléments avec des chemins vides ou nuls\nactualArray = actualArray.filter(item => item.path);\n\n// Supprimer les doublons en utilisant un Set\nconst uniquePaths = Array.from(new Set(actualArray.map(item => item.path))).map(path => ({ path }));\n\n// Mettre à jour le tableau dans le contexte du flux\nflow.set('acquisition_path_array', uniquePaths);\n\n// Mettre à jour le payload du message\nmsg.payload = uniquePaths;\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1070,
-        "y": 880,
-        "wires": [
-            [
-                "8fca3cb19c201138"
-            ]
-        ]
-    },
-    {
-        "id": "8fca3cb19c201138",
-        "type": "debug",
-        "z": "00a14f98244d252e",
-        "name": "debug 58",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1220,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "00356111d14fa4fc",
-        "type": "debug",
-        "z": "00a14f98244d252e",
-        "name": "debug 59",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "filename",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1060,
-        "y": 960,
-        "wires": []
     }
 ]
