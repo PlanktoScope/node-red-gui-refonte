@@ -6535,7 +6535,7 @@
         "width": "8",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n        <img :src=\"dynamicImageUrl\" ref=\"image\">\n    </div>\n    <!--<div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>-->\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n      dynamicImageUrl: ''\n    };\n  },\n  created() {\n    this.setDynamicImageUrl();\n  },\n  methods: {\n    setDynamicImageUrl() {\n      const currentUrl = new URL(window.location.href);\n      const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n      const relativePath = '/ps/hal/camera/streams/preview.mjpg';\n      const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n      this.dynamicImageUrl = fullUrl.href;\n    },\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;\n    },\n  },\n};\n</script>\n\n<style scoped>\n.image-zoom-container {\n  /*cursor: none;*/\n  border: 1px solid black;\n  border-radius: 5px;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper {\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper img {\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: transform 0.2s ease-out;\n}\n\n.zoomed-image {\n  position: absolute;\n  top: 50%; /* Centre vertical */\n  left: 50%; /* Centre horizontal */\n  transform: translate(-50%, -50%); /* Centrer l'image zoomée */\n  width: 150px; /* Taille réduite de l'image zoomée */\n  height: 300px; /* Taille réduite de l'image zoomée */\n  pointer-events: none;\n  z-index: 1000;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n        <img :src=\"dynamicImageUrl\" ref=\"image\">\n    </div>\n    <!--<div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>-->\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n      dynamicImageUrl: ''\n    };\n  },\n  mounted() {\n    this.setDynamicImageUrl();\n  },\n  methods: {\n    setDynamicImageUrl() {\n      const currentUrl = new URL(window.location.href);\n      const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n      const relativePath = '/ps/hal/camera/streams/preview.mjpg';\n      const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n      this.dynamicImageUrl = fullUrl.href;\n    },\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;\n    },\n  },\n};\n</script>\n\n<style scoped>\n.image-zoom-container {\n  /*cursor: none;*/\n  border: 1px solid black;\n  border-radius: 5px;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper {\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n}\n\n.image-wrapper img {\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: transform 0.2s ease-out;\n}\n\n.zoomed-image {\n  position: absolute;\n  top: 50%; /* Centre vertical */\n  left: 50%; /* Centre horizontal */\n  transform: translate(-50%, -50%); /* Centrer l'image zoomée */\n  width: 150px; /* Taille réduite de l'image zoomée */\n  height: 300px; /* Taille réduite de l'image zoomée */\n  pointer-events: none;\n  z-index: 1000;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -15759,18 +15759,6 @@
         ]
     },
     {
-        "id": "8bcdfc2623a6d65c",
-        "type": "downloadfile",
-        "z": "f260ed9417849607",
-        "g": "217abb3abac21001",
-        "name": "",
-        "filename": "",
-        "encoding": "none",
-        "x": 1050,
-        "y": 1420,
-        "wires": []
-    },
-    {
         "id": "7786016a46447829",
         "type": "link out",
         "z": "f260ed9417849607",
@@ -16484,7 +16472,7 @@
         "type": "debug",
         "z": "f260ed9417849607",
         "name": "MQTT msg",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16585,6 +16573,18 @@
                 "5299cd86668a8449"
             ]
         ]
+    },
+    {
+        "id": "8bcdfc2623a6d65c",
+        "type": "downloadfile",
+        "z": "f260ed9417849607",
+        "g": "217abb3abac21001",
+        "name": "",
+        "filename": "",
+        "encoding": "none",
+        "x": 1050,
+        "y": 1420,
+        "wires": []
     },
     {
         "id": "fc701c9ad326380a",
