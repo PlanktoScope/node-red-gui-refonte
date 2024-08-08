@@ -1385,6 +1385,32 @@
         "h": 222
     },
     {
+        "id": "96bb330907da5bdb",
+        "type": "group",
+        "z": "fb15c917381dd273",
+        "name": "First visit",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "26ef12e53ec2958f",
+            "803915abe34bbd0f",
+            "bfac68a2ad929ed7",
+            "6b477d3de64a57fd",
+            "350889dfdbf346b1",
+            "955cc34dc652948a",
+            "c24d1751dd739fe4",
+            "d80ab3b457ba2653",
+            "ddb9c4fcb2355d4c"
+        ],
+        "x": 34,
+        "y": 59,
+        "w": 992,
+        "h": 142
+    },
+    {
         "id": "b08415909e5dc4da",
         "type": "group",
         "z": "e988301e60e4b458",
@@ -1638,32 +1664,6 @@
         "y": 599,
         "w": 692,
         "h": 262
-    },
-    {
-        "id": "96bb330907da5bdb",
-        "type": "group",
-        "z": "fb15c917381dd273",
-        "name": "First visit",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "26ef12e53ec2958f",
-            "803915abe34bbd0f",
-            "bfac68a2ad929ed7",
-            "6b477d3de64a57fd",
-            "350889dfdbf346b1",
-            "955cc34dc652948a",
-            "c24d1751dd739fe4",
-            "d80ab3b457ba2653",
-            "ddb9c4fcb2355d4c"
-        ],
-        "x": 34,
-        "y": 59,
-        "w": 992,
-        "h": 142
     },
     {
         "id": "cae0178a8a69f787",
@@ -2335,7 +2335,7 @@
                 "id": "002259e0-42c0-11ef-89ad-e57161842148",
                 "name": "delay_to_stabilized",
                 "datatype": "str",
-                "default": "20",
+                "default": "2",
                 "description": "Delay to stabilize an image",
                 "scope": "global",
                 "storage": "default"
@@ -2344,7 +2344,7 @@
                 "id": "16042860-42c0-11ef-89ad-e57161842148",
                 "name": "flowrate_in_between",
                 "datatype": "str",
-                "default": "20",
+                "default": "2",
                 "description": "TODO",
                 "scope": "global",
                 "storage": "default"
@@ -16465,7 +16465,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Sample</h2>\n    </section>\n    <section class=\"settings-sample-container\">\n      <label>GPS Format</label>\n      <v-select\n          v-model=\"coordFormat\"\n          :items=\"['Decimal degrees (DD)', 'Degrees, minutes and seconds (DMS)']\"\n          variant=\"outlined\"\n          append-icon=\"mdi-information\" \n          @click:append=\"switchDialog\"\n          density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        coordFormat: [],\n        dialog: false,\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      coordFormat: {\n        handler(newVal) {\n          this.send({ payload: newVal });\n        },\n        deep: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload) {\n              this.coordFormat = msg.payload;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-sample-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .settings-sample-container label {\n    margin-right: 1rem;\n  }\n\n\n  .settings-sample-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-sample-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Sample</h2>\n    </section>\n    <section class=\"settings-sample-container\">\n      <label>GPS Format</label>\n      <v-select\n        v-model=\"coordFormat\"\n        :items=\"['Decimal degrees (DD)', 'Degrees, minutes and seconds (DMS)']\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n\n  <!-- Dialog -->\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      coordFormat: [],\n      dialog: false,\n    };\n  },\n  methods: {\n    openDialog() {\n      this.dialog = true;\n    },\n    closeDialog() {\n      this.dialog = false;\n    },\n  },\n  watch: {\n    coordFormat: {\n      handler(newVal) {\n        this.send({ payload: newVal });\n      },\n      deep: true,\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload) {\n            this.coordFormat = msg.payload;\n          }\n        });\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n};\n</script>\n\n<style>\n.settings-container {\n  border: black 1px solid;\n  border-radius: 5px;\n  padding: 1rem;\n}\n\n.settings-sample-container {\n  display: flex;\n  align-items: center;\n  padding-left: 1rem;\n}\n\n.settings-sample-container label {\n  margin-right: 1rem;\n}\n\n.settings-sample-container .v-input {\n  max-width: 500px;\n}\n\n.settings-sample-container .v-input__details {\n  display: none;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -16558,7 +16558,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Operator</h2>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Name</label>\n      <v-text-field v-model=\"operator_name\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Email</label>\n      <v-text-field v-model=\"operator_email\" density=\"compact\" clearable label=\"\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        operator_name: '',\n        operator_email: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.operator_name) {\n            this.operator_name = msg.operator_name;\n          }\n          if (msg.payload.operator_email) {\n            this.operator_email = msg.operator_email;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      operator_name: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: newVal,\n              operator_email: this.operator_email\n            }});\n          }\n        },\n        deep: true\n      },\n      operator_email: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              operator_name: this.operator_name,\n              operator_email: newVal\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.operator_email) {\n              this.operator_email = msg.operator_email;\n            }\n            if (msg.operator_name) {\n              this.operator_name = msg.operator_name;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-container h2 {\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-operator-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .settings-operator-container .v-input {\n    max-width: 500px;\n  }\n\n  .settings-operator-container .v-input__details {\n    display: none;\n  }\n\n</style>",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Operator</h2>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Name</label>\n      <v-text-field\n        v-model=\"operator_name\"\n        density=\"compact\"\n        clearable\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog('operatorName')\"\n      ></v-text-field>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Email</label>\n      <v-text-field\n        v-model=\"operator_email\"\n        density=\"compact\"\n        clearable\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog('operatorEmail')\"\n      ></v-text-field>\n    </section>\n  </div>\n\n  <!-- Dialogs -->\n  <v-dialog v-model=\"dialogs.operatorName\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Operator Name Information</v-card-title>\n      <v-card-text>This is the operator name information dialog.</v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog('operatorName')\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n\n  <v-dialog v-model=\"dialogs.operatorEmail\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Operator Email Information</v-card-title>\n      <v-card-text>This is the operator email information dialog.</v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog('operatorEmail')\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator_name: '',\n      operator_email: '',\n      dialogs: {\n        operatorName: false,\n        operatorEmail: false,\n      },\n    };\n  },\n  created() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload.operator_name) {\n          this.operator_name = msg.payload.operator_name;\n        }\n        if (msg.payload.operator_email) {\n          this.operator_email = msg.payload.operator_email;\n        }\n      });\n    }\n  },\n  methods: {\n    openDialog(dialogName) {\n      this.dialogs[dialogName] = true;\n    },\n    closeDialog(dialogName) {\n      this.dialogs[dialogName] = false;\n    },\n  },\n  watch: {\n    operator_name: {\n      handler(newVal) {\n        if (newVal != \"\" && newVal != null) {\n          this.send({\n            payload: {\n              operator_name: newVal,\n              operator_email: this.operator_email,\n            },\n          });\n        }\n      },\n      deep: true,\n    },\n    operator_email: {\n      handler(newVal) {\n        if (newVal != \"\" && newVal != null) {\n          this.send({\n            payload: {\n              operator_name: this.operator_name,\n              operator_email: newVal,\n            },\n          });\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.operator_email) {\n            this.operator_email = msg.operator_email;\n          }\n          if (msg.operator_name) {\n            this.operator_name = msg.operator_name;\n          }\n        });\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n};\n</script>\n\n<style>\n.settings-container {\n  border: black 1px solid;\n  border-radius: 5px;\n  padding: 1rem;\n}\n\n.settings-container h2 {\n  margin-bottom: 1rem;\n}\n\n.settings-operator-container {\n  display: flex;\n  align-items: center;\n  padding-left: 1rem;\n  margin-bottom: 1rem;\n}\n\n.settings-operator-container label {\n  margin-right: 1rem;\n  min-width: 100px;\n}\n\n.settings-operator-container .v-input {\n  max-width: 500px;\n}\n\n.settings-operator-container .v-input__details {\n  display: none;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -17081,7 +17081,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Acquisition</h2>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Delay to stabilized</label>\n      <v-text-field v-model=\"delay_to_stabilize\" type=\"number\" density=\"compact\" suffix=\"s\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Flowrate in between each images</label>\n      <v-text-field v-model=\"flowrate_in_between\" type=\"number\" density=\"compact\" suffix=\"ml/min\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        delay_to_stabilize: '',\n        flowrate_in_between: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.delay_to_stabilize) {\n            this.delay_to_stabilize = msg.delay_to_stabilize;\n          }\n          if (msg.payload.flowrate_in_between) {\n            this.flowrate_in_between = msg.flowrate_in_between;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      delay_to_stabilize: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              delay_to_stabilize: newVal,\n              flowrate_in_between: this.flowrate_in_between\n            }});\n          }\n        },\n        deep: true\n      },\n      flowrate_in_between: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              delay_to_stabilize: this.delay_to_stabilize,\n              flowrate_in_between: newVal\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.flowrate_in_between) {\n              this.flowrate_in_between = msg.flowrate_in_between;\n            }\n            if (msg.delay_to_stabilize) {\n              this.delay_to_stabilize = msg.delay_to_stabilize;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-acquisition-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-acquisition-container label {\n    min-width: 230px;\n  }\n\n  .settings-acquisition-container .v-input {\n    max-width: 170px;\n  }\n\n  .settings-acquisition-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Acquisition</h2>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Delay to stabilized</label>\n      <v-text-field v-model=\"delay_to_stabilize\" type=\"number\" density=\"compact\" suffix=\"s\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"openDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Flowrate in between each images</label>\n      <v-text-field v-model=\"flowrate_in_between\" type=\"number\" density=\"compact\" suffix=\"ml/min\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"openDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        delay_to_stabilize: '',\n        flowrate_in_between: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.delay_to_stabilize) {\n            this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n          }\n          if (msg.payload.flowrate_in_between) {\n            this.flowrate_in_between = msg.payload.flowrate_in_between;\n          }\n        });\n      }\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      },\n      closeDialog() {\n        this.dialog = false;\n      },\n    },\n    watch: {\n      delay_to_stabilize: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({\n              payload: {\n                delay_to_stabilize: newVal,\n                flowrate_in_between: this.flowrate_in_between\n              }\n            });\n          }\n        },\n        deep: true\n      },\n      flowrate_in_between: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({\n              payload: {\n                delay_to_stabilize: this.delay_to_stabilize,\n                flowrate_in_between: newVal\n              }\n            });\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.flowrate_in_between) {\n              this.flowrate_in_between = msg.payload.flowrate_in_between;\n            }\n            if (msg.payload.delay_to_stabilize) {\n              this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-acquisition-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-acquisition-container label {\n    min-width: 230px;\n  }\n\n  .settings-acquisition-container .v-input {\n    max-width: 170px;\n  }\n\n  .settings-acquisition-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -17128,7 +17128,7 @@
         "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
         "value": "delay_to_stabilized",
         "command": "read",
-        "msgProperty": "delay_to_stabilize",
+        "msgProperty": "payload.delay_to_stabilize",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -17162,7 +17162,7 @@
         "valueId": "16042860-42c0-11ef-89ad-e57161842148",
         "value": "flowrate_in_between",
         "command": "read",
-        "msgProperty": "flowrate_in_between",
+        "msgProperty": "payload.flowrate_in_between",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
