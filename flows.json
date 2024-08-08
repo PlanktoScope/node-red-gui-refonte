@@ -8,14 +8,6 @@
         "env": []
     },
     {
-        "id": "54343cf33bf0a216",
-        "type": "tab",
-        "label": "Global",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "fb15c917381dd273",
         "type": "tab",
         "label": "Page First welcoming",
@@ -4846,30 +4838,6 @@
             [
                 "931e4aba3ed98eab"
             ]
-        ]
-    },
-    {
-        "id": "db628ba400a981fc",
-        "type": "ui-template",
-        "z": "54343cf33bf0a216",
-        "group": "",
-        "page": "",
-        "ui": "1eeac55ba6b9065f",
-        "name": "Custom CSS - All pages",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "/* Global CSS - All pages */\n\n\n/*i.mdi-menu.mdi.v-icon.notranslate.v-theme--nrdb.v-icon--size-default {*/\n/*    color: #fffffd;*/\n/*}*/\n\n/*.v-navigation-drawer {*/\n/*    border: 0px solid transparent;*/\n    /* color: #0a6eca;\n    background-color: #ffffff !important; */\n/*    color: #fffffd;*/\n/*    background-color: #0a6eca !important;*/\n/*}*/\n\n\ndiv .v-field__append-inner {\n    align-items: center !important;\n    padding-top: 0 !important;\n}",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "site:style",
-        "className": "",
-        "x": 630,
-        "y": 40,
-        "wires": [
-            []
         ]
     },
     {
