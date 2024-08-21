@@ -1185,105 +1185,32 @@
             "fill": "#ffffff"
         },
         "nodes": [
-            "fb9d64e1d38df424",
-            "d40e81478f29c1fd",
             "5c846bbe8d829d09",
             "f7c549d688a82217",
-            "c156111030f8a27d",
             "66b5dbde2d2c4978",
             "ef1499f9032e38e2",
-            "9fafb0cdbf808e08",
             "ac6013d701d061e8",
-            "e85a9d29696e99ff",
             "fe9d0a3dfde010c9",
-            "9297c1303d0ee9c3",
-            "c3aceb9c96df8b7f",
             "c60830e67ed5eb74",
             "4d6b8ff374ab04e3",
             "dab3f2c5661aa8cb",
-            "a8339dd574181c71",
             "472821529981cf6d",
             "0769aafda6e1b0e7",
             "99c17632bfa31f50",
             "fe00896803b982bf",
             "9cdb5df1dba5e667",
             "5b086554d036cbde",
-            "c2ad4cea7159a08e",
             "cea09d01c3bacaa7",
-            "6b7022fcf0d5108a",
-            "0e6be75a67384bdf",
-            "4feb75276a5af405",
-            "614a445455c9ebce",
-            "cea7ab000f782c70",
-            "0ba03d1e83cfe141",
-            "7264fd4534476f08",
-            "87c72e161a760ea1",
-            "f6e7e0d05af5b212",
-            "75ce2f8d97d68069",
-            "b2c43aaf95412f25",
-            "5b71ea0212473d82",
-            "425e378462938661",
-            "c0cd42a36e735f09",
             "17a57f860b746d9c",
-            "37e59749715142c8",
             "984b3bce0eba0dc7",
             "d3b072c2497a5209",
-            "6d5bce164621a153",
-            "12d2c8b03fc1f242",
-            "1fe601d84a9f0d02",
-            "c5da8fccb31815ae",
-            "689c1b47df4cd992",
-            "a38d15cbeda1a02c",
-            "8c7975e3abdfb950",
-            "ecbe7f58e169c89c",
-            "b8d71671448af045",
-            "4063bd2bb8af8a95",
-            "487d2cd3e69f4cec",
-            "313e2908de9d681e",
-            "59ade27756b2fd23",
-            "bb5a3a8b59d9f674",
-            "f8726f9e02382b5e",
-            "7fdabca73a0a1855",
-            "d82329d2ef996f64",
-            "48419516ba1c0132",
-            "26f5054a4321ef3d",
-            "832eddbe6e69bb73",
-            "6e7da51db1340b5c",
-            "cfb0c8e7bf206814",
-            "124b794f9816c66b",
-            "481aaacc17a72f65",
-            "53c6eb15fd0715c7",
-            "26c65a6ec5883d4a",
-            "44bfabe506b330e1",
-            "55ecdb80fdc69378",
-            "a9c93db64ecfa9a5",
-            "a905312fb8938f6f",
-            "f37f959bc9aadfc2",
-            "95164b69e98df231",
-            "f52f2584fc95aab6",
-            "3f11847f343ced62",
-            "3dce28226792d1eb",
-            "1f1e48b0064cddc7",
-            "ae4f1437d5284f21",
-            "01518df3bebb092b",
-            "f7a5b12f274aca4b",
-            "7449cab14c396834",
-            "a3c2c0038a541f40",
-            "9b1768f64542705b",
-            "fab0fd5a61ae1dcd",
-            "e19f686978cee1d6",
-            "e5ad38b0e760da7b",
-            "a27ac2d9c1ec545f",
-            "4cb46d4b9e2bf275",
-            "1203080efaebcc0d",
             "6530ccdb60829ae5",
-            "d382992324069c5d",
             "749f53cf1cdc61f9"
         ],
         "x": 134,
         "y": 739,
-        "w": 1682,
-        "h": 1002
+        "w": 962,
+        "h": 682
     },
     {
         "id": "3b32c3c9506eb933",
@@ -1443,6 +1370,68 @@
         "y": 119,
         "w": 142,
         "h": 82
+    },
+    {
+        "id": "dfcc82a233df71ec",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Default config - Init",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "15f3b975f3b5eb77",
+            "3cb515e1c2943dee",
+            "b268cb4fc1962e4d",
+            "5366a9c252403340"
+        ],
+        "x": 298,
+        "y": 213,
+        "w": 1514,
+        "h": 934
+    },
+    {
+        "id": "33612d5553587d0f",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Restore to default all the data",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "9a59e8d02ffe1f9b",
+            "401bfc3969550dac"
+        ],
+        "x": 954,
+        "y": 119,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "797840f55c8b0798",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Setting Metadata restoration to default",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f67384bd93fa9723",
+            "1fe7d856f30939e1",
+            "da3f319d8264cbb8",
+            "8f8806a0020e12d3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1838,
+        "y": 219,
+        "w": 658,
+        "h": 708
     },
     {
         "id": "b08415909e5dc4da",
@@ -1640,27 +1629,6 @@
         "h": 262
     },
     {
-        "id": "dfcc82a233df71ec",
-        "type": "group",
-        "z": "2d41a8ed5aea3449",
-        "name": "Default config - Init",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "15f3b975f3b5eb77",
-            "3cb515e1c2943dee",
-            "b268cb4fc1962e4d",
-            "5366a9c252403340"
-        ],
-        "x": 298,
-        "y": 213,
-        "w": 1514,
-        "h": 934
-    },
-    {
         "id": "15f3b975f3b5eb77",
         "type": "group",
         "z": "2d41a8ed5aea3449",
@@ -1805,47 +1773,6 @@
         "y": 239,
         "w": 482,
         "h": 122
-    },
-    {
-        "id": "33612d5553587d0f",
-        "type": "group",
-        "z": "2d41a8ed5aea3449",
-        "name": "Restore to default all the data",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "9a59e8d02ffe1f9b",
-            "401bfc3969550dac"
-        ],
-        "x": 954,
-        "y": 119,
-        "w": 252,
-        "h": 82
-    },
-    {
-        "id": "797840f55c8b0798",
-        "type": "group",
-        "z": "2d41a8ed5aea3449",
-        "name": "Setting Metadata restoration to default",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "f67384bd93fa9723",
-            "1fe7d856f30939e1",
-            "da3f319d8264cbb8",
-            "8f8806a0020e12d3",
-            "23e5915a9545ac05"
-        ],
-        "x": 1838,
-        "y": 219,
-        "w": 658,
-        "h": 708
     },
     {
         "id": "8f8806a0020e12d3",
@@ -12167,74 +12094,6 @@
         "wires": []
     },
     {
-        "id": "fb9d64e1d38df424",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "8dad4db0-4e50-11ef-86a5-e9c7b2057935",
-        "value": "project_name",
-        "command": "read",
-        "msgProperty": "payload.sample_project",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 780,
-        "y": 780,
-        "wires": [
-            [
-                "44bfabe506b330e1"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "d40e81478f29c1fd",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "90285fd0-4e50-11ef-86a5-e9c7b2057935",
-        "value": "sample_id",
-        "command": "read",
-        "msgProperty": "payload.sample_id",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 770,
-        "y": 820,
-        "wires": [
-            [
-                "26c65a6ec5883d4a"
-            ],
-            []
-        ]
-    },
-    {
         "id": "5c846bbe8d829d09",
         "type": "comment",
         "z": "70f558eb9d60b6fc",
@@ -12255,40 +12114,6 @@
         "x": 280,
         "y": 820,
         "wires": []
-    },
-    {
-        "id": "c156111030f8a27d",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
-        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
-        "value": "operator_name",
-        "command": "read",
-        "msgProperty": "payload.sample_operator",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 780,
-        "y": 860,
-        "wires": [
-            [
-                "53c6eb15fd0715c7"
-            ],
-            []
-        ]
     },
     {
         "id": "66b5dbde2d2c4978",
@@ -12313,40 +12138,6 @@
         "wires": []
     },
     {
-        "id": "9fafb0cdbf808e08",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "412c8850-4e5c-11ef-86a5-e9c7b2057935",
-        "value": "dillution_factor",
-        "command": "read",
-        "msgProperty": "payload.sample_dillution_factor",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 780,
-        "y": 940,
-        "wires": [
-            [
-                "124b794f9816c66b"
-            ],
-            []
-        ]
-    },
-    {
         "id": "ac6013d701d061e8",
         "type": "comment",
         "z": "70f558eb9d60b6fc",
@@ -12358,40 +12149,6 @@
         "wires": []
     },
     {
-        "id": "e85a9d29696e99ff",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
-        "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
-        "value": "model_selected",
-        "command": "read",
-        "msgProperty": "payload.sample_instrument",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 780,
-        "y": 980,
-        "wires": [
-            [
-                "cfb0c8e7bf206814"
-            ],
-            []
-        ]
-    },
-    {
         "id": "fe9d0a3dfde010c9",
         "type": "comment",
         "z": "70f558eb9d60b6fc",
@@ -12401,74 +12158,6 @@
         "x": 290,
         "y": 980,
         "wires": []
-    },
-    {
-        "id": "9297c1303d0ee9c3",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "92ae25b0-4e63-11ef-86a5-e9c7b2057935",
-        "value": "depth_min",
-        "command": "read",
-        "msgProperty": "payload.sample_depth_min",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 770,
-        "y": 1020,
-        "wires": [
-            [
-                "6e7da51db1340b5c"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "c3aceb9c96df8b7f",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "978fb080-4e63-11ef-86a5-e9c7b2057935",
-        "value": "depth_max",
-        "command": "read",
-        "msgProperty": "payload.sample_depth_max",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 770,
-        "y": 1060,
-        "wires": [
-            [
-                "832eddbe6e69bb73"
-            ],
-            []
-        ]
     },
     {
         "id": "c60830e67ed5eb74",
@@ -12502,40 +12191,6 @@
         "x": 280,
         "y": 1100,
         "wires": []
-    },
-    {
-        "id": "a8339dd574181c71",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
-        "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
-        "value": "model_selected",
-        "command": "read",
-        "msgProperty": "payload.acq_instrument",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 780,
-        "y": 1140,
-        "wires": [
-            [
-                "48419516ba1c0132"
-            ],
-            []
-        ]
     },
     {
         "id": "472821529981cf6d",
@@ -12604,40 +12259,6 @@
         "wires": []
     },
     {
-        "id": "c2ad4cea7159a08e",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
-        "value": "delay_to_stabilized",
-        "command": "read",
-        "msgProperty": "payload.acq_time_between_frames",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 1220,
-        "wires": [
-            [
-                "7fdabca73a0a1855"
-            ],
-            []
-        ]
-    },
-    {
         "id": "cea09d01c3bacaa7",
         "type": "comment",
         "z": "70f558eb9d60b6fc",
@@ -12647,388 +12268,6 @@
         "x": 220,
         "y": 1380,
         "wires": []
-    },
-    {
-        "id": "6b7022fcf0d5108a",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "5ecde410-4ff8-11ef-8af0-151edf01ff7c",
-        "value": "sampling_gear",
-        "command": "read",
-        "msgProperty": "payload.sample_sampling_gear",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 780,
-        "y": 900,
-        "wires": [
-            [
-                "481aaacc17a72f65"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "0e6be75a67384bdf",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "d66c06a0-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "ending_point_date",
-        "command": "read",
-        "msgProperty": "payload.object_date_end",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 1420,
-        "wires": [
-            [
-                "487d2cd3e69f4cec"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "4feb75276a5af405",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "907912f0-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "starting_point_date",
-        "command": "read",
-        "msgProperty": "payload.object_date",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 1260,
-        "wires": [
-            [
-                "f8726f9e02382b5e"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "614a445455c9ebce",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "aa48e480-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "starting_point_time",
-        "command": "read",
-        "msgProperty": "payload.object_time",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 1300,
-        "wires": [
-            [
-                "bb5a3a8b59d9f674"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "cea7ab000f782c70",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "b5faaac0-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "starting_point_gps",
-        "command": "read",
-        "msgProperty": "payload.starting_point_gps",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 1360,
-        "wires": [
-            [
-                "12d2c8b03fc1f242"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "0ba03d1e83cfe141",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "d6b592c0-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "ending_point_time",
-        "command": "read",
-        "msgProperty": "payload.object_time_end",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 1460,
-        "wires": [
-            [
-                "4063bd2bb8af8a95"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "7264fd4534476f08",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "d6e55550-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "ending_point_gps",
-        "command": "read",
-        "msgProperty": "payload.ending_point_gps",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 1520,
-        "wires": [
-            [
-                "6d5bce164621a153"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "87c72e161a760ea1",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "92ae25b0-4e63-11ef-86a5-e9c7b2057935",
-        "value": "depth_min",
-        "command": "read",
-        "msgProperty": "payload.object_depth_min",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 770,
-        "y": 1580,
-        "wires": [
-            [
-                "8c7975e3abdfb950"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "f6e7e0d05af5b212",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "978fb080-4e63-11ef-86a5-e9c7b2057935",
-        "value": "depth_max",
-        "command": "read",
-        "msgProperty": "payload.object_depth_max",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 770,
-        "y": 1620,
-        "wires": [
-            [
-                "a38d15cbeda1a02c"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "75ce2f8d97d68069",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
-        "value": "sieve_mesh_size",
-        "command": "read",
-        "msgProperty": "payload.sieve_mesh_size",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 1660,
-        "wires": [
-            [
-                "689c1b47df4cd992"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "5b71ea0212473d82",
-        "type": "function",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set payload.version",
-        "func": "const rawPayload = msg.payload;\n\nconst lines = rawPayload.split('\\n');\n\nlet version = null;\n\nfor (const line of lines) {\n    if (line.trim().startsWith('version:')) {\n        version = line.split(':')[1].trim().replace(/\"/g, '');\n        break;\n    }\n}\n\nmsg = {\n    payload: {\n        acq_software: version\n    }\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 930,
-        "y": 1180,
-        "wires": [
-            [
-                "d82329d2ef996f64"
-            ]
-        ]
-    },
-    {
-        "id": "b2c43aaf95412f25",
-        "type": "file in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Get version from file",
-        "filename": "/usr/share/planktoscope/installer-versioning.yml",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 720,
-        "y": 1180,
-        "wires": [
-            [
-                "5b71ea0212473d82"
-            ]
-        ]
     },
     {
         "id": "6def4e7e67623547",
@@ -13126,40 +12365,6 @@
         "y": 480,
         "wires": [
             [],
-            []
-        ]
-    },
-    {
-        "id": "425e378462938661",
-        "type": "persistent value",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "valuesConfig": "842103bc1301dfb9",
-        "valuesConfigName": "Acquisition Metadata",
-        "valueId": "cb9cb620-4ffd-11ef-8af0-151edf01ff7c",
-        "value": "acquisition_id",
-        "command": "read",
-        "msgProperty": "payload.acq_id",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 790,
-        "y": 1100,
-        "wires": [
-            [
-                "26f5054a4321ef3d"
-            ],
             []
         ]
     },
@@ -13266,23 +12471,6 @@
         "wires": []
     },
     {
-        "id": "c0cd42a36e735f09",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 150",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1180,
-        "wires": [
-            [
-                "b2c43aaf95412f25"
-            ]
-        ]
-    },
-    {
         "id": "16496890b192797c",
         "type": "link out",
         "z": "70f558eb9d60b6fc",
@@ -13308,8 +12496,8 @@
         "links": [
             "25f6794686ddf057"
         ],
-        "x": 1775,
-        "y": 1340,
+        "x": 1055,
+        "y": 800,
         "wires": []
     },
     {
@@ -13447,41 +12635,6 @@
         ]
     },
     {
-        "id": "37e59749715142c8",
-        "type": "link out",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link out 106",
-        "mode": "link",
-        "links": [
-            "c0cd42a36e735f09",
-            "55ecdb80fdc69378",
-            "a9c93db64ecfa9a5",
-            "a905312fb8938f6f",
-            "f37f959bc9aadfc2",
-            "95164b69e98df231",
-            "f52f2584fc95aab6",
-            "3f11847f343ced62",
-            "3dce28226792d1eb",
-            "1f1e48b0064cddc7",
-            "ae4f1437d5284f21",
-            "01518df3bebb092b",
-            "f7a5b12f274aca4b",
-            "7449cab14c396834",
-            "a3c2c0038a541f40",
-            "9b1768f64542705b",
-            "fab0fd5a61ae1dcd",
-            "e19f686978cee1d6",
-            "e5ad38b0e760da7b",
-            "a27ac2d9c1ec545f",
-            "4cb46d4b9e2bf275",
-            "1203080efaebcc0d"
-        ],
-        "x": 405,
-        "y": 1540,
-        "wires": []
-    },
-    {
         "id": "984b3bce0eba0dc7",
         "type": "change",
         "z": "70f558eb9d60b6fc",
@@ -13501,11 +12654,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 300,
-        "y": 1540,
+        "x": 640,
+        "y": 800,
         "wires": [
             [
-                "37e59749715142c8"
+                "6530ccdb60829ae5"
             ]
         ]
     },
@@ -13518,1066 +12671,11 @@
         "links": [
             "16496890b192797c"
         ],
-        "x": 195,
-        "y": 1540,
+        "x": 535,
+        "y": 800,
         "wires": [
             [
                 "984b3bce0eba0dc7"
-            ]
-        ]
-    },
-    {
-        "id": "6d5bce164621a153",
-        "type": "function",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "function 11",
-        "func": "msg.payload = {\n    object_lat_end: msg.payload.ending_point_gps.latitude,\n    object_lon_end: msg.payload.ending_point_gps.longitude,\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1050,
-        "y": 1520,
-        "wires": [
-            [
-                "ecbe7f58e169c89c",
-                "b8d71671448af045"
-            ]
-        ]
-    },
-    {
-        "id": "12d2c8b03fc1f242",
-        "type": "function",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "function 12",
-        "func": "msg.payload = {\n    object_lat: msg.payload.starting_point_gps.latitude,\n    object_lon: msg.payload.starting_point_gps.longitude,\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1050,
-        "y": 1360,
-        "wires": [
-            [
-                "313e2908de9d681e",
-                "59ade27756b2fd23"
-            ]
-        ]
-    },
-    {
-        "id": "1fe601d84a9f0d02",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload.description",
-                "pt": "msg",
-                "to": "{}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 740,
-        "y": 1700,
-        "wires": [
-            [
-                "c5da8fccb31815ae"
-            ]
-        ]
-    },
-    {
-        "id": "c5da8fccb31815ae",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "description",
-                "pt": "flow",
-                "to": "payload.description",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "689c1b47df4cd992",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "sieve_mesh_size",
-                "pt": "flow",
-                "to": "payload.sieve_mesh_size",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a38d15cbeda1a02c",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_depth_max",
-                "pt": "flow",
-                "to": "payload.object_depth_max",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8c7975e3abdfb950",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_depth_min",
-                "pt": "flow",
-                "to": "payload.object_depth_min",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ecbe7f58e169c89c",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_lat_end",
-                "pt": "flow",
-                "to": "payload.object_lat_end",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b8d71671448af045",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_lon_end",
-                "pt": "flow",
-                "to": "payload.object_lon_end",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4063bd2bb8af8a95",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_time_end",
-                "pt": "flow",
-                "to": "payload.object_time_end",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "487d2cd3e69f4cec",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_date_end",
-                "pt": "flow",
-                "to": "payload.object_date_end",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "313e2908de9d681e",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_lat",
-                "pt": "flow",
-                "to": "payload.object_lat",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1340,
-        "wires": [
-            [
-                "d382992324069c5d"
-            ]
-        ]
-    },
-    {
-        "id": "59ade27756b2fd23",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_lon",
-                "pt": "flow",
-                "to": "payload.object_lon",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bb5a3a8b59d9f674",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_time",
-                "pt": "flow",
-                "to": "payload.object_time",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f8726f9e02382b5e",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "object_date",
-                "pt": "flow",
-                "to": "payload.object_date",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7fdabca73a0a1855",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "acq_time_between_frames",
-                "pt": "flow",
-                "to": "payload.acq_time_between_frames",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d82329d2ef996f64",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "acq_software",
-                "pt": "flow",
-                "to": "payload.acq_software",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "48419516ba1c0132",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "acq_software",
-                "pt": "flow",
-                "to": "payload.acq_instrument",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "26f5054a4321ef3d",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "acq_id",
-                "pt": "flow",
-                "to": "payload.acq_id",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "832eddbe6e69bb73",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "sample_depth_max",
-                "pt": "flow",
-                "to": "payload.sample_depth_max",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1060,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6e7da51db1340b5c",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "sample_depth_min",
-                "pt": "flow",
-                "to": "payload.sample_depth_min",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "cfb0c8e7bf206814",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "sample_instrument",
-                "pt": "flow",
-                "to": "payload.sample_instrument",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 980,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "124b794f9816c66b",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "sample_dillution_factor",
-                "pt": "flow",
-                "to": "payload.sample_dillution_factor",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 940,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "481aaacc17a72f65",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "sample_sampling_gear",
-                "pt": "flow",
-                "to": "payload.sample_sampling_gear",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "53c6eb15fd0715c7",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "sample_operator",
-                "pt": "flow",
-                "to": "payload.sample_operator",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 860,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "26c65a6ec5883d4a",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "sample_id",
-                "pt": "flow",
-                "to": "payload.sample_id",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 820,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "44bfabe506b330e1",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "Set in flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "sample_project",
-                "pt": "flow",
-                "to": "payload.sample_project",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "55ecdb80fdc69378",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 157",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1220,
-        "wires": [
-            [
-                "c2ad4cea7159a08e"
-            ]
-        ]
-    },
-    {
-        "id": "a9c93db64ecfa9a5",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 158",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1260,
-        "wires": [
-            [
-                "4feb75276a5af405"
-            ]
-        ]
-    },
-    {
-        "id": "a905312fb8938f6f",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 159",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1300,
-        "wires": [
-            [
-                "614a445455c9ebce"
-            ]
-        ]
-    },
-    {
-        "id": "f37f959bc9aadfc2",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 160",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1360,
-        "wires": [
-            [
-                "cea7ab000f782c70"
-            ]
-        ]
-    },
-    {
-        "id": "95164b69e98df231",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 161",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1420,
-        "wires": [
-            [
-                "0e6be75a67384bdf"
-            ]
-        ]
-    },
-    {
-        "id": "f52f2584fc95aab6",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 162",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1460,
-        "wires": [
-            [
-                "0ba03d1e83cfe141"
-            ]
-        ]
-    },
-    {
-        "id": "3f11847f343ced62",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 163",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1520,
-        "wires": [
-            [
-                "7264fd4534476f08"
-            ]
-        ]
-    },
-    {
-        "id": "3dce28226792d1eb",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 164",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1580,
-        "wires": [
-            [
-                "87c72e161a760ea1"
-            ]
-        ]
-    },
-    {
-        "id": "1f1e48b0064cddc7",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 165",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1620,
-        "wires": [
-            [
-                "f6e7e0d05af5b212"
-            ]
-        ]
-    },
-    {
-        "id": "ae4f1437d5284f21",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 166",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1660,
-        "wires": [
-            [
-                "75ce2f8d97d68069"
-            ]
-        ]
-    },
-    {
-        "id": "01518df3bebb092b",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 167",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1700,
-        "wires": [
-            [
-                "1fe601d84a9f0d02"
-            ]
-        ]
-    },
-    {
-        "id": "f7a5b12f274aca4b",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 168",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1140,
-        "wires": [
-            [
-                "a8339dd574181c71"
-            ]
-        ]
-    },
-    {
-        "id": "7449cab14c396834",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 169",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1100,
-        "wires": [
-            [
-                "425e378462938661"
-            ]
-        ]
-    },
-    {
-        "id": "a3c2c0038a541f40",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 170",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1060,
-        "wires": [
-            [
-                "c3aceb9c96df8b7f"
-            ]
-        ]
-    },
-    {
-        "id": "9b1768f64542705b",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 171",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 1020,
-        "wires": [
-            [
-                "9297c1303d0ee9c3"
-            ]
-        ]
-    },
-    {
-        "id": "fab0fd5a61ae1dcd",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 172",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 980,
-        "wires": [
-            [
-                "e85a9d29696e99ff"
-            ]
-        ]
-    },
-    {
-        "id": "e19f686978cee1d6",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 173",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 940,
-        "wires": [
-            [
-                "9fafb0cdbf808e08"
-            ]
-        ]
-    },
-    {
-        "id": "e5ad38b0e760da7b",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 174",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 900,
-        "wires": [
-            [
-                "6b7022fcf0d5108a"
-            ]
-        ]
-    },
-    {
-        "id": "a27ac2d9c1ec545f",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 175",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 860,
-        "wires": [
-            [
-                "c156111030f8a27d"
-            ]
-        ]
-    },
-    {
-        "id": "4cb46d4b9e2bf275",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 176",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 820,
-        "wires": [
-            [
-                "d40e81478f29c1fd"
-            ]
-        ]
-    },
-    {
-        "id": "1203080efaebcc0d",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link in 177",
-        "links": [
-            "37e59749715142c8"
-        ],
-        "x": 575,
-        "y": 780,
-        "wires": [
-            [
-                "fb9d64e1d38df424"
             ]
         ]
     },
@@ -14587,15 +12685,15 @@
         "z": "70f558eb9d60b6fc",
         "g": "b383604c2ffb0c81",
         "name": "Create payload for \"update_config\"",
-        "func": "var description = flow.get('description');\n\n// Initialiser la description avec les valeurs récupérées via flow.get\ndescription = {\n    sample_project: flow.get(\"sample_project\"),\n    sample_id: flow.get(\"sample_id\"),\n    sample_uuid: \"\", // Si ce champ est généré automatiquement, le laisser vide\n    sample_ship: flow.get(\"sample_ship\"),\n    sample_operator: flow.get(\"sample_operator\"),\n    sample_sampling_gear: flow.get(\"sample_sampling_gear\"),\n    sample_concentrated_sample_volume: flow.get(\"sample_concentrated_sample_volume\"),\n    sample_total_volume: flow.get(\"sample_total_volume\"),\n    sample_dilution_factor: flow.get(\"sample_dilution_factor\"),\n    sample_speed_through_water: flow.get(\"sample_speed_through_water\"),\n\n    acq_id: flow.get(\"acq_id\"),\n    acq_uuid: \"\", // Si ce champ est généré automatiquement, le laisser vide\n    acq_instrument: flow.get(\"acq_instrument\"),\n    acq_instrument_id: flow.get(\"acq_instrument_id\"),\n    acq_celltype: flow.get(\"acq_celltype\"),\n    acq_minimum_mesh: flow.get(\"acq_minimum_mesh\"),\n    acq_maximum_mesh: flow.get(\"acq_maximum_mesh\"),\n    acq_min_esd: flow.get(\"acq_min_esd\"),\n    acq_max_esd: flow.get(\"acq_max_esd\"),\n    acq_volume: flow.get(\"acq_volume\"),\n    acq_imaged_volume: flow.get(\"acq_imaged_volume\"),\n    acq_magnification: flow.get(\"acq_magnification\"),\n    acq_fnumber_objective: flow.get(\"acq_fnumber_objective\"),\n    acq_camera_name: flow.get(\"acq_camera_name\"),\n    acq_nb_frame: flow.get(\"acq_nb_frame\"),\n    acq_local_datetime: flow.get(\"acq_local_datetime\"),\n    acq_camera_resolution: flow.get(\"acq_camera_resolution\"),\n    acq_camera_iso: flow.get(\"acq_camera_iso\"),\n    acq_camera_shutter_speed: flow.get(\"acq_camera_shutter_speed\"),\n    acq_software: flow.get(\"acq_software\"),\n\n    object_date: flow.get(\"object_date\"),\n    object_time: flow.get(\"object_time\"),\n    object_lat: flow.get(\"object_lat\"),\n    object_lon: flow.get(\"object_lon\"),\n    object_depth_min: flow.get(\"object_depth_min\"),\n    object_depth_max: flow.get(\"object_depth_max\"),\n\n    process_pixel: flow.get(\"process_pixel\"),\n    process_datetime: flow.get(\"process_datetime\"),\n    process_id: flow.get(\"process_id\"),\n    process_uuid: \"\", // Si ce champ est généré automatiquement, le laisser vide\n    process_source: flow.get(\"process_source\"),\n    process_commit: flow.get(\"process_commit\"),\n\n    sample_gear_net_opening: flow.get(\"sample_gear_net_opening\"),\n    object_date_end: flow.get(\"object_date_end\"),\n    object_time_end: flow.get(\"object_time_end\"),\n    object_lat_end: flow.get(\"object_lat_end\"),\n    object_lon_end: flow.get(\"object_lon_end\")\n};\n\nmsg.payload = {\n    action: \"update_config\",\n    config: {\n        description: description,\n        sample_project: flow.get(\"sample_project\"),\n        sample_id: flow.get(\"sample_id\"),\n        sample_ship: flow.get(\"sample_ship\"),\n        sample_operator: flow.get(\"sample_operator\"),\n        sample_sampling_gear: flow.get(\"sample_sampling_gear\"),\n        sample_concentrated_sample_volume: flow.get(\"sample_concentrated_sample_volume\"),\n        sample_total_volume: flow.get(\"sample_total_volume\"),\n        sample_dilution_factor: flow.get(\"sample_dilution_factor\"),\n        sample_speed_through_water: flow.get(\"sample_speed_through_water\"),\n\n        acq_id: flow.get(\"acq_id\"),\n        acq_instrument: flow.get(\"acq_instrument\"),\n        acq_instrument_id: flow.get(\"acq_instrument_id\"),\n        acq_celltype: flow.get(\"acq_celltype\"),\n        acq_minimum_mesh: flow.get(\"acq_minimum_mesh\"),\n        acq_maximum_mesh: flow.get(\"acq_maximum_mesh\"),\n        acq_min_esd: flow.get(\"acq_min_esd\"),\n        acq_max_esd: flow.get(\"acq_max_esd\"),\n        acq_volume: flow.get(\"acq_volume\"),\n        acq_imaged_volume: flow.get(\"acq_imaged_volume\"),\n        acq_magnification: flow.get(\"acq_magnification\"),\n        acq_fnumber_objective: flow.get(\"acq_fnumber_objective\"),\n        acq_camera: flow.get(\"acq_camera\"),\n        acq_nb_frame: flow.get(\"acq_nb_frame\"),\n        acq_software: flow.get(\"acq_software\"),\n\n        object_date: flow.get(\"object_date\"),\n        object_time: flow.get(\"object_time\"),\n        object_lat: flow.get(\"object_lat\"),\n        object_lon: flow.get(\"object_lon\"),\n        object_depth_min: flow.get(\"object_depth_min\"),\n        object_depth_max: flow.get(\"object_depth_max\"),\n\n        process_pixel: flow.get(\"process_pixel\"),\n        process_source: flow.get(\"process_source\"),\n        process_commit: flow.get(\"process_commit\")\n    }\n};\n\nreturn msg;\n",
+        "func": "var description = {};\n\ndescription = {\n    sample_project: global.get(\"Sample_Metadata_project_name\"),\n    sample_id: global.get(\"Sample_Metadata_sample_id\"),\n    sample_operator: global.get(\"Setting_Metadata_operator_name\"),\n    sample_sampling_gear: global.get(\"Sample_Metadata_sampling_gear\"),\n    sample_dilution_factor: global.get(\"Sample_Metadata_dillution_factor\"),\n\n    sample_uuid: \"\", // A revoir\n    sample_ship: global.get(\"sample_ship\"), // A revoir\n    sample_concentrated_sample_volume: global.get(\"sample_concentrated_sample_volume\"), // A revoir\n    sample_total_volume: global.get(\"sample_total_volume\"), // A revoir\n    sample_speed_through_water: global.get(\"sample_speed_through_water\"), // A revoir\n    acq_uuid: \"\", // A revoir\n    acq_instrument_id: global.get(\"acq_instrument_id\"), // A revoir\n    acq_minimum_mesh: global.get(\"acq_minimum_mesh\"), // A revoir \n    acq_maximum_mesh: global.get(\"acq_maximum_mesh\"), // A revoir\n    acq_celltype: global.get(\"acq_celltype\"), // A revoir \n    acq_min_esd: global.get(\"acq_min_esd\"), // A revoir\n    acq_max_esd: global.get(\"acq_max_esd\"), // A revoir\n    acq_volume: global.get(\"acq_volume\"), // A revoir\n    acq_imaged_volume: global.get(\"acq_imaged_volume\"), // A revoir\n    acq_magnification: global.get(\"acq_magnification\"), // A revoir\n    acq_fnumber_objective: global.get(\"acq_fnumber_objective\"), // A revoir\n    acq_camera_name: global.get(\"acq_camera_name\"), // A revoir\n    acq_nb_frame: global.get(\"acq_nb_frame\"), // A revoir\n    acq_local_datetime: global.get(\"acq_local_datetime\"), // A revoir\n    acq_camera_resolution: global.get(\"acq_camera_resolution\"), // A revoir\n    acq_camera_iso: global.get(\"acq_camera_iso\"), // A revoir\n    acq_camera_shutter_speed: global.get(\"acq_camera_shutter_speed\"), // A revoir\n    process_uuid: \"\", // A revoir\n    process_pixel: global.get(\"process_pixel\"), // A revoir\n    process_datetime: global.get(\"process_datetime\"), // A revoir\n    process_id: global.get(\"process_id\"), // A revoir\n    process_source: global.get(\"process_source\"), // A revoir\n    process_commit: global.get(\"process_commit\"), // A revoir\n    \n    acq_id: global.get(\"Acquisition_Metadata_acquisition_id\"),\n    acq_software: global.get(\"Setting_Metadata_model_selected\"),\n    acq_instrument: global.get(\"Setting_Metadata_model_selected\"),\n    object_date: global.get(\"Sample_Metadata_starting_point_date\"),\n    object_time: global.get(\"Sample_Metadata_starting_point_time\"),\n    object_lat: global.get(\"Sample_Metadata_starting_point_gps\").latitude,\n    object_lon: global.get(\"Sample_Metadata_starting_point_gps\").longitude,\n    object_depth_min: global.get(\"Sample_Metadata_depth_min\"),\n    object_depth_max: global.get(\"Sample_Metadata_depth_max\"),\n    sample_gear_net_opening: global.get(\"Sample_Metadata_mouth_opening_diam\"),\n    object_date_end: global.get(\"Sample_Metadata_ending_point_date\"),\n    object_time_end: global.get(\"Sample_Metadata_ending_point_time\"),\n    object_lat_end: global.get(\"Sample_Metadata_ending_point_gps\").latitude,\n    object_lon_end: global.get(\"Sample_Metadata_ending_point_gps\").longitude,\n};\n\nmsg.payload = {\n    action: \"update_config\",\n    config: {\n        description: description,\n        sample_project: global.get(\"Sample_Metadata_project_name\"),\n        sample_id: global.get(\"Sample_Metadata_sample_id\"),\n        sample_operator: global.get(\"Setting_Metadata_operator_name\"),\n        sample_sampling_gear: global.get(\"Sample_Metadata_sampling_gear\"),\n        sample_dilution_factor: global.get(\"Sample_Metadata_dillution_factor\"),\n        acq_id: global.get(\"Acquisition_Metadata_acquisition_id\"),\n        acq_instrument: global.get(\"Setting_Metadata_model_selected\"),\n        acq_software: global.get(\"Setting_Metadata_model_selected\"),\n        \n        acq_celltype: global.get(\"acq_celltype\"), // A revoir\n        sample_speed_through_water: global.get(\"sample_speed_through_water\"), // A revoir        \n        sample_total_volume: global.get(\"sample_total_volume\"), // A revoir\n        acq_instrument_id: global.get(\"acq_instrument_id\"), // A revoir\n        sample_ship: global.get(\"sample_ship\"), // A revoir\n        sample_concentrated_sample_volume: global.get(\"sample_concentrated_sample_volume\"), // A revoir\n        acq_minimum_mesh: global.get(\"acq_minimum_mesh\"), // A revoir\n        acq_maximum_mesh: global.get(\"acq_maximum_mesh\"), // A revoir\n        acq_min_esd: global.get(\"acq_min_esd\"), // A revoir\n        acq_max_esd: global.get(\"acq_max_esd\"), // A revoir\n        acq_volume: global.get(\"acq_volume\"),\n        acq_imaged_volume: global.get(\"acq_imaged_volume\"), \n        acq_magnification: global.get(\"acq_magnification\"), // A revoir\n        acq_fnumber_objective: global.get(\"acq_fnumber_objective\"), // A revoir\n        acq_camera: global.get(\"acq_camera\"), // A revoir\n        acq_nb_frame: global.get(\"acq_nb_frame\"), // A revoir\n        process_pixel: global.get(\"process_pixel\"), // A revoir\n        process_source: global.get(\"process_source\"), // A revoir\n        process_commit: global.get(\"process_commit\"), // A revoir\n        \n        object_date: global.get(\"Sample_Metadata_starting_point_date\"),\n        object_time: global.get(\"Sample_Metadata_starting_point_time\"),\n        object_lat: global.get(\"Sample_Metadata_starting_point_gps\").latitude,\n        object_lon: global.get(\"Sample_Metadata_starting_point_gps\").longitude,\n        object_depth_min: global.get(\"Sample_Metadata_depth_min\"),\n        object_depth_max: global.get(\"Sample_Metadata_depth_max\"),\n    }\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1580,
-        "y": 1340,
+        "x": 860,
+        "y": 800,
         "wires": [
             [
                 "17a57f860b746d9c",
@@ -14621,38 +12719,12 @@
         ]
     },
     {
-        "id": "d382992324069c5d",
-        "type": "delay",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1360,
-        "y": 1340,
-        "wires": [
-            [
-                "6530ccdb60829ae5"
-            ]
-        ]
-    },
-    {
         "id": "749f53cf1cdc61f9",
         "type": "debug",
         "z": "70f558eb9d60b6fc",
         "g": "b383604c2ffb0c81",
         "name": "update_config payload",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14660,8 +12732,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1620,
-        "y": 1380,
+        "x": 900,
+        "y": 840,
         "wires": []
     },
     {
