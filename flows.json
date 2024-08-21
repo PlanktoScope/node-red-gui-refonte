@@ -838,60 +838,6 @@
         "h": 82
     },
     {
-        "id": "6720ea496a9e645e",
-        "type": "group",
-        "z": "2d41a8ed5aea3449",
-        "name": "Data restoration - WARNING",
-        "style": {
-            "stroke": "#000000",
-            "fill": "#ff7f7f",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "6a5d78b1bdbbd9da",
-            "9a59e8d02ffe1f9b",
-            "4469155952188120",
-            "b45db1e61d1984ce",
-            "caa5d00ff15afc7b",
-            "28eb8fb70252bece",
-            "d09d2878c5a4f034",
-            "8777af2465094b01",
-            "71229c84c971a227",
-            "50beb12661979952",
-            "401bfc3969550dac",
-            "c3daa12c86987eb9",
-            "c5ca778e3eda6a52",
-            "569d67a3e424fbfc",
-            "70bdda69151a2d51",
-            "6cc482054923eb78",
-            "59fb45c7686d6613",
-            "be3b221fc2df4911",
-            "47793af3c5948f4c",
-            "ea3ed4500ce285e0",
-            "74edaec95cafb2d9",
-            "752f586529da1398",
-            "f67384bd93fa9723",
-            "d67a089534fb33a1",
-            "4782940c3eb11f57",
-            "0cee35de3e61c695",
-            "bfce8bcf0432af22",
-            "dedd2f376269d92d",
-            "89246bd4b7b399ea",
-            "ef1abfee73208836",
-            "13cdc4d42826fa8f",
-            "dda11a33a13eb2d5",
-            "872ca1ac17bbd6d5",
-            "4c23fa82d4496339",
-            "931e4aba3ed98eab",
-            "7e1481c754e52498"
-        ],
-        "x": 94,
-        "y": 173,
-        "w": 1598,
-        "h": 934
-    },
-    {
         "id": "925817a4bacd25ee",
         "type": "group",
         "z": "5047c566973ee3a1",
@@ -1438,6 +1384,67 @@
         "h": 142
     },
     {
+        "id": "fbcc2ce08c4d6887",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Create default file",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "05f49d4990dc0595",
+            "1b173e5913aa9646",
+            "1ef453ad87465b88",
+            "e8eeb682015e557c"
+        ],
+        "x": 294,
+        "y": 119,
+        "w": 642,
+        "h": 82
+    },
+    {
+        "id": "ae0a6fbc18d4204a",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Reboot & Shutdown",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "a15686c4b2da8224",
+            "960c1b4e1358e139",
+            "6810166ee9e618d8",
+            "bde1030622d41c2d"
+        ],
+        "x": 294,
+        "y": 11.5,
+        "w": 452,
+        "h": 97
+    },
+    {
+        "id": "a381f950b5d93580",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "First visit == True",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "4c23fa82d4496339",
+            "e670cf51fd0f33f7"
+        ],
+        "x": 134,
+        "y": 119,
+        "w": 142,
+        "h": 82
+    },
+    {
         "id": "b08415909e5dc4da",
         "type": "group",
         "z": "e988301e60e4b458",
@@ -1499,66 +1506,6 @@
         "y": 339,
         "w": 692,
         "h": 222
-    },
-    {
-        "id": "13cdc4d42826fa8f",
-        "type": "group",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "Sample metadata",
-        "style": {
-            "label": true,
-            "stroke": "#000000",
-            "color": "#000000"
-        },
-        "nodes": [
-            "aefe7bf6d57b98c3",
-            "28f0e4b4a1588515",
-            "d022b35e669b39d1",
-            "a68c89dcf712e634",
-            "98e4f743473e2afc",
-            "e01f0c8cba4709ce",
-            "66ef5ae4e5f9bd59",
-            "dee737db75e5db3e",
-            "90ef93ec881b494e",
-            "ba8f3510278b9962",
-            "37c9983936759ce1",
-            "e710471b5191006f",
-            "bbdb7ae0d167cbba",
-            "fb1a569a997da8a1",
-            "5c9ba1f9c301a8e8",
-            "9ba81934916fbcf7",
-            "1e7ae904374abcd6",
-            "1bb428d37b010ce8",
-            "efd114de3f33308b",
-            "9cfda0ca343555fb",
-            "a40cc1b5a685f25f",
-            "6dffe97616090f22",
-            "1c6b535a721438af",
-            "37621fc63e964f84",
-            "ec0610c6d1a0bee2",
-            "f9eea1bd8c4f6c69",
-            "d5f5eede02c25e8a",
-            "d343450c61db41f7",
-            "510ed87eb40bcbfd",
-            "1c6fee1f472d8e7d",
-            "5a9438e26f1afdc9",
-            "a81c6159825755b3",
-            "1e98e7c781cf01c1",
-            "e909cfe8c1a643a1",
-            "8cf136cc352c41ed",
-            "b43c55797e299adf",
-            "dcaadb963bc56149",
-            "1b9f3b3d691ce0f5",
-            "609369c36282f33c",
-            "ec8fd890d587c626",
-            "52b5b6ab8e06a73d",
-            "287bb1b845a62702"
-        ],
-        "x": 1174,
-        "y": 199,
-        "w": 492,
-        "h": 882
     },
     {
         "id": "217abb3abac21001",
@@ -1691,6 +1638,258 @@
         "y": 599,
         "w": 692,
         "h": 262
+    },
+    {
+        "id": "dfcc82a233df71ec",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Default config - Init",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "15f3b975f3b5eb77",
+            "3cb515e1c2943dee",
+            "b268cb4fc1962e4d",
+            "5366a9c252403340"
+        ],
+        "x": 298,
+        "y": 213,
+        "w": 1514,
+        "h": 934
+    },
+    {
+        "id": "15f3b975f3b5eb77",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "g": "dfcc82a233df71ec",
+        "name": "Setting Metadata - SET",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5453240684e27c92",
+            "8139dd796516fff2",
+            "16de60a2941651a7",
+            "925dc4fe3efe6894",
+            "4ba9e79184472449",
+            "6529845f2d952459",
+            "0ce2346192c64fcc",
+            "3b72dceb26dec7db",
+            "ca8f99521e22e18d",
+            "9759dee5c373944b",
+            "713fe494b6a7ef30",
+            "1218141a50ea0191",
+            "9792ed9e0d045e6e",
+            "24b197a9de2a21e9",
+            "f54c1bedef882c05",
+            "851ef466eeb0fc43",
+            "e4ce9a9254bd3014",
+            "2b654f26635ca4cc",
+            "7f89e79cf69697c4",
+            "85704cdf1bc50207",
+            "5da71e47c1b51fb7",
+            "1220e0b2e592262a",
+            "8d454e4e89d085a8",
+            "2388807069d5ec18",
+            "635c9c7c52336acb",
+            "7aec4feeb319af9d"
+        ],
+        "x": 324,
+        "y": 239,
+        "w": 462,
+        "h": 602
+    },
+    {
+        "id": "3cb515e1c2943dee",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "g": "dfcc82a233df71ec",
+        "name": "Hard coded value - SET",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "947db7c0f34ba7fd",
+            "f13e9e1e80fbbcf2"
+        ],
+        "x": 324,
+        "y": 859,
+        "w": 402,
+        "h": 82
+    },
+    {
+        "id": "b268cb4fc1962e4d",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "g": "dfcc82a233df71ec",
+        "name": "Sample metadata - SET",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "2e886a1c3c592e37",
+            "e914704b766cea9f",
+            "2898217c339a7d17",
+            "24a6c22e6e4f15b4",
+            "8ac49e8a2ec2beb1",
+            "ae513f8a40e9873e",
+            "a46dd7b988c2e887",
+            "b8ea680c60eadd3b",
+            "04020e5373c00367",
+            "e8b6810af3e18bd8",
+            "b9acdc5625182e2d",
+            "ed1762149f59cda0",
+            "30387afc9486ade0",
+            "94a7c56b5a7d26c7",
+            "9da0bff82fd913cb",
+            "927a5cee83a40dd6",
+            "a501694d5a797c8b",
+            "27e95a294484b696",
+            "9159b725b95585e8",
+            "c3436332c18e7ae3",
+            "336dd37e7f9e8f95",
+            "065732882c0856ab",
+            "e107ea45d7fbc414",
+            "00de106f51eea6b4",
+            "cd4903421f1eade7",
+            "9c3fee9872fd6797",
+            "073857668ac1409a",
+            "9b739697cf2d2018",
+            "d944946a74934f96",
+            "03ba126aba921e62",
+            "0888cf871e9a09ea",
+            "b843bea2ee1444f0",
+            "b1127e5ff34a4291",
+            "fe572f623a8b7283",
+            "2511ae6b7709b50b",
+            "3bae9e15dd5a1912",
+            "345ab91e3835c60e",
+            "1b658fa0d89a977a",
+            "ea6eccb844b26946",
+            "37620e74d21bc71d",
+            "29b0ec18e56f4db2",
+            "a5a114c1aa5776df"
+        ],
+        "x": 804,
+        "y": 239,
+        "w": 482,
+        "h": 882
+    },
+    {
+        "id": "5366a9c252403340",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "g": "dfcc82a233df71ec",
+        "name": "Acquisition Metadata - SET",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "34eed7a856b62fd0",
+            "131f2701ee390b1a",
+            "85d163b37e5aa94a",
+            "0c7d231a41f1a15c"
+        ],
+        "x": 1304,
+        "y": 239,
+        "w": 482,
+        "h": 122
+    },
+    {
+        "id": "33612d5553587d0f",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Restore to default all the data",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "9a59e8d02ffe1f9b",
+            "401bfc3969550dac"
+        ],
+        "x": 954,
+        "y": 119,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "797840f55c8b0798",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "Setting Metadata restoration to default",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f67384bd93fa9723",
+            "1fe7d856f30939e1",
+            "da3f319d8264cbb8",
+            "8f8806a0020e12d3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1838,
+        "y": 219,
+        "w": 658,
+        "h": 708
+    },
+    {
+        "id": "8f8806a0020e12d3",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "g": "797840f55c8b0798",
+        "name": "Setting Metadata - SET",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "a4acb6a7353353b0",
+            "f9f91f62e4061edd",
+            "abf60f1ae6b4edf4",
+            "29caedd1ecdd4cbd",
+            "f48d1c5aab997360",
+            "eeba4965108cf885",
+            "b754c1555e996ad1",
+            "36e95390abf76fb7",
+            "86720f3e68429771",
+            "c8b7241e0a2baa7c",
+            "011f46ae3ddba9cd",
+            "89095eea693ae0a7",
+            "4585c6c2889a5a24",
+            "6e5e3bceb7510185",
+            "3b86ab59fbab0347",
+            "38d48734a6d0702f",
+            "c93e64072d1c9088",
+            "1ce0e92e86307257",
+            "85378a27e75dce0e",
+            "3ded02ee1a27ab59",
+            "f420b5f6be1325a5",
+            "5cd174f6d927c581",
+            "4be3c64c77d1d695",
+            "6526acc269d5ac13",
+            "1a0abe2c635a4b72",
+            "40b29eb6c6f42aed"
+        ],
+        "x": 1864,
+        "y": 299,
+        "w": 462,
+        "h": 602
     },
     {
         "id": "cae0178a8a69f787",
@@ -2775,7 +2974,7 @@
                 "id": "cb9cb620-4ffd-11ef-8af0-151edf01ff7c",
                 "name": "acquisition_id",
                 "datatype": "str",
-                "default": "default",
+                "default": "",
                 "description": "TO DO",
                 "scope": "global",
                 "storage": "default"
@@ -2784,7 +2983,7 @@
                 "id": "18a9dd30-5017-11ef-8af0-151edf01ff7c",
                 "name": "acquisition_comment",
                 "datatype": "str",
-                "default": "default",
+                "default": "",
                 "description": "TO DO",
                 "scope": "global",
                 "storage": "default"
@@ -2869,7 +3068,7 @@
         "id": "9a59e8d02ffe1f9b",
         "type": "inject",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
+        "g": "33612d5553587d0f",
         "name": "Reset ALL",
         "props": [
             {
@@ -2883,8 +3082,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "x": 200,
-        "y": 480,
+        "x": 1060,
+        "y": 160,
         "wires": [
             [
                 "401bfc3969550dac"
@@ -2892,395 +3091,10 @@
         ]
     },
     {
-        "id": "ba2c8b29b89da0f2",
-        "type": "exec",
-        "z": "2d41a8ed5aea3449",
-        "d": true,
-        "command": "pip install -r /home/pi/Visualization-plot/requirements.txt",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 360,
-        "y": 100,
-        "wires": [
-            [
-                "adba3d76093b90b5",
-                "d1b174f3a21fd9cc"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "adba3d76093b90b5",
-        "type": "debug",
-        "z": "2d41a8ed5aea3449",
-        "name": "debug 28",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 500,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "d1b174f3a21fd9cc",
-        "type": "exec",
-        "z": "2d41a8ed5aea3449",
-        "d": true,
-        "command": "python /home/pi/Visualization-plot/controller.py",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 780,
-        "y": 100,
-        "wires": [
-            [
-                "6bade76e305b0cc7"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "18557cb938c26901",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "name": "link in 52",
-        "links": [
-            "97790217bf3c2c85"
-        ],
-        "x": 125,
-        "y": 100,
-        "wires": [
-            [
-                "ba2c8b29b89da0f2"
-            ]
-        ]
-    },
-    {
-        "id": "6bade76e305b0cc7",
-        "type": "debug",
-        "z": "2d41a8ed5aea3449",
-        "name": "Controller.py OUTPUT",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 940,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "6a5d78b1bdbbd9da",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
-        "value": "first-visit",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 540,
-        "y": 220,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "4469155952188120",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 560,
-        "y": 280,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "b45db1e61d1984ce",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
-        "value": "operator_name",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 570,
-        "y": 340,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "caa5d00ff15afc7b",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
-        "value": "operator_email",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 560,
-        "y": 400,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "28eb8fb70252bece",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
-        "value": "flowrate_preset",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 570,
-        "y": 460,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "d09d2878c5a4f034",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
-        "value": "volume_preset",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 560,
-        "y": 520,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "8777af2465094b01",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
-        "value": "focus_preset",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 560,
-        "y": 580,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "71229c84c971a227",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
-        "value": "delay_to_stabilized",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 980,
-        "y": 220,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "50beb12661979952",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "16042860-42c0-11ef-89ad-e57161842148",
-        "value": "flowrate_in_between",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 980,
-        "y": 280,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
         "id": "401bfc3969550dac",
         "type": "link out",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
+        "g": "33612d5553587d0f",
         "name": "",
         "mode": "link",
         "links": [
@@ -3297,276 +3111,285 @@
             "dda11a33a13eb2d5",
             "ea3ed4500ce285e0",
             "ef1abfee73208836",
-            "7e1481c754e52498"
+            "7e1481c754e52498",
+            "bde03b51b9ec00b7",
+            "cf92570f052c53b4",
+            "05f49d4990dc0595"
         ],
-        "x": 315,
-        "y": 420,
+        "x": 1165,
+        "y": 160,
         "wires": []
-    },
-    {
-        "id": "c3daa12c86987eb9",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 63",
-        "links": [
-            "401bfc3969550dac"
-        ],
-        "x": 405,
-        "y": 220,
-        "wires": [
-            [
-                "6a5d78b1bdbbd9da"
-            ]
-        ]
-    },
-    {
-        "id": "c5ca778e3eda6a52",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 64",
-        "links": [
-            "401bfc3969550dac"
-        ],
-        "x": 405,
-        "y": 280,
-        "wires": [
-            [
-                "4469155952188120"
-            ]
-        ]
-    },
-    {
-        "id": "569d67a3e424fbfc",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 65",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 405,
-        "y": 340,
-        "wires": [
-            [
-                "b45db1e61d1984ce"
-            ]
-        ]
-    },
-    {
-        "id": "70bdda69151a2d51",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 66",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 405,
-        "y": 400,
-        "wires": [
-            [
-                "caa5d00ff15afc7b"
-            ]
-        ]
-    },
-    {
-        "id": "6cc482054923eb78",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 67",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 405,
-        "y": 460,
-        "wires": [
-            [
-                "28eb8fb70252bece"
-            ]
-        ]
-    },
-    {
-        "id": "59fb45c7686d6613",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 68",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 405,
-        "y": 520,
-        "wires": [
-            [
-                "d09d2878c5a4f034"
-            ]
-        ]
-    },
-    {
-        "id": "be3b221fc2df4911",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 69",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 405,
-        "y": 580,
-        "wires": [
-            [
-                "8777af2465094b01"
-            ]
-        ]
-    },
-    {
-        "id": "47793af3c5948f4c",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 70",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 805,
-        "y": 220,
-        "wires": [
-            [
-                "71229c84c971a227"
-            ]
-        ]
-    },
-    {
-        "id": "ea3ed4500ce285e0",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 71",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 805,
-        "y": 280,
-        "wires": [
-            [
-                "50beb12661979952"
-            ]
-        ]
-    },
-    {
-        "id": "74edaec95cafb2d9",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
-        "valueId": "54330ee0-437d-11ef-946b-75401899c243",
-        "value": "MSTS",
-        "command": "reset",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 940,
-        "y": 340,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "752f586529da1398",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 76",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 805,
-        "y": 340,
-        "wires": [
-            [
-                "74edaec95cafb2d9"
-            ]
-        ]
     },
     {
         "id": "f67384bd93fa9723",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
+        "g": "797840f55c8b0798",
         "name": "reset",
         "links": [
             "250fac5d08b457a3"
         ],
-        "x": 155,
-        "y": 220,
+        "x": 1885,
+        "y": 260,
         "wires": [
             [
-                "d67a089534fb33a1"
+                "1fe7d856f30939e1"
             ]
         ]
     },
     {
-        "id": "d67a089534fb33a1",
+        "id": "4c23fa82d4496339",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "a381f950b5d93580",
+        "name": "Reset all",
+        "links": [
+            "9f65e288ffde4e1f",
+            "bfac68a2ad929ed7"
+        ],
+        "x": 175,
+        "y": 160,
+        "wires": [
+            [
+                "e670cf51fd0f33f7"
+            ]
+        ]
+    },
+    {
+        "id": "a15686c4b2da8224",
+        "type": "exec",
+        "z": "2d41a8ed5aea3449",
+        "g": "ae0a6fbc18d4204a",
+        "command": "sudo reboot",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Reboot",
+        "x": 440,
+        "y": 60,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "960c1b4e1358e139",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "ae0a6fbc18d4204a",
+        "name": "Reboot",
+        "links": [
+            "d4af39c15f3540b2",
+            "ec1137fb63fbb85a",
+            "88baa8ae55dc9fe2",
+            "e7ef6ef1f343a096",
+            "3f6329f6f64a5d57",
+            "aefc0f84026bcf7b",
+            "0d78c0467054ebc9",
+            "67fcf51f541bd536"
+        ],
+        "x": 335,
+        "y": 60,
+        "wires": [
+            [
+                "a15686c4b2da8224"
+            ]
+        ]
+    },
+    {
+        "id": "6810166ee9e618d8",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "ae0a6fbc18d4204a",
+        "name": "Shutdown",
+        "links": [
+            "61aef8544c46a619",
+            "1ab62a6e28ceeacb",
+            "f7640955206f3cad",
+            "c65cad12fbc1ec52",
+            "a9b6da2f2e6a066a",
+            "9f4d9eacaefc1402",
+            "c7beb866c037aefc",
+            "757e7132e148e450"
+        ],
+        "x": 555,
+        "y": 60,
+        "wires": [
+            [
+                "bde1030622d41c2d"
+            ]
+        ]
+    },
+    {
+        "id": "bde1030622d41c2d",
+        "type": "exec",
+        "z": "2d41a8ed5aea3449",
+        "g": "ae0a6fbc18d4204a",
+        "command": "sudo shutdown -force",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Shutdown",
+        "x": 660,
+        "y": 60,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e670cf51fd0f33f7",
         "type": "link out",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
+        "g": "a381f950b5d93580",
+        "name": "link out 130",
         "mode": "link",
         "links": [
-            "569d67a3e424fbfc",
-            "70bdda69151a2d51",
-            "6cc482054923eb78",
-            "59fb45c7686d6613",
-            "be3b221fc2df4911",
-            "47793af3c5948f4c",
-            "ea3ed4500ce285e0",
-            "752f586529da1398",
-            "0cee35de3e61c695",
-            "f51f31818cb618a7",
-            "ef1abfee73208836",
-            "7e1481c754e52498"
+            "05f49d4990dc0595"
         ],
-        "x": 315,
-        "y": 220,
+        "x": 235,
+        "y": 160,
         "wires": []
     },
     {
-        "id": "4782940c3eb11f57",
+        "id": "05f49d4990dc0595",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "fbcc2ce08c4d6887",
+        "name": "link in 182",
+        "links": [
+            "e670cf51fd0f33f7",
+            "401bfc3969550dac"
+        ],
+        "x": 335,
+        "y": 160,
+        "wires": [
+            [
+                "1b173e5913aa9646"
+            ]
+        ]
+    },
+    {
+        "id": "1b173e5913aa9646",
+        "type": "function",
+        "z": "2d41a8ed5aea3449",
+        "g": "fbcc2ce08c4d6887",
+        "name": "Create payload for the next file",
+        "func": "msg.payload = {\n    \"Sample_Metadata_volume_of_the_collector\": \"0\",\n    \"Setting_metadata_dataset_path\": \"\",\n    \"Visualization_Graphs_map\": \"\",\n    \"Visualization_Graphs_datatable\": \"\",\n    \"Visualization_Graphs_chartsection_charts\": [],\n    \"Visualization_Graphs_chartsection_metadata\": [],\n    \"Visualization_Graphs_infotable\": \"\",\n    \"Setting_metadata_coord-format\": \"Decimal degrees (DD)\",\n    \"Setting_metadata_operator_name\": \"a\",\n    \"Setting_metadata_operator_email\": \"a\",\n    \"Setting_metadata_flowrate_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\",\n        \"45\"\n    ],\n    \"Setting_metadata_volume_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\"\n    ],\n    \"Setting_metadata_focus_preset\": [\n        \"0.10\",\n        \"0.50\",\n        \"10\",\n        \"45\"\n    ],\n    \"Setting_metadata_delay_to_stabilized\": \"2\",\n    \"Setting_metadata_flowrate_in_between\": \"2\",\n    \"Setting_metadata_MSTS\": \"10\",\n    \"Hard-coded_value_model_list\": [\n        \"PlanktoScope v2.1\",\n        \"PlanktoScope v2.3\",\n        \"PlanktoScope v2.5\",\n        \"PlanktoScope v2.6\"\n    ],\n    \"Setting_metadata_first-visit\": false,\n    \"Sample_Metadata_project_name\": \"default project name\",\n    \"Sample_Metadata_sample_id\": \"default id\",\n    \"Sample_Metadata_starting_point_date\": \"0000-00-00\",\n    \"Sample_Metadata_starting_point_time\": \"00:00\",\n    \"Sample_Metadata_starting_point_gps\": {},\n    \"Sample_Metadata_ending_point_date\": \"0000-00-00\",\n    \"Sample_Metadata_ending_point_time\": \"00:00\",\n    \"Sample_Metadata_ending_point_gps\": {},\n    \"Sample_Metadata_mouth_opening_diam\": \"0\",\n    \"Sample_Metadata_length_of_the_net\": \"0\",\n    \"Sample_Metadata_mesh_size\": \"0\",\n    \"Sample_Metadata_filtered_volume\": \"0\",\n    \"Sample_Metadata_dillution_factor\": \"0\",\n    \"Sample_Metadata_sieve_mesh_size\": \"0\",\n    \"Sample_Metadata_depth_of_the_sample\": \"0\",\n    \"Sample_Metadata_sample_comment\": \"\",\n    \"Sample_Metadata_volume_of_the_bottle\": \"0\",\n    \"Sample_Metadata_depth_min\": \"0\",\n    \"Sample_Metadata_depth_max\": \"0\",\n    \"Sample_Metadata_depth\": \"0\",\n    \"Setting_metadata_model_selected\": \"PlanktoScope v2.6\",\n    \"Sample_Metadata_sampling_gear\": \"Lab culture\",\n    \"Acquisition_Metadata_acquisition_id\": \"\",\n    \"Acquisition_Metadata_acquisition_comment\": \"\",\n    \"Setting_Metadata_delay_to_stabilized\": \"2\",\n    \"Setting_Metadata_operator_name\": \"Manu Prakash\",\n    \"Setting_Metadata_volume_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\"\n    ],\n    \"Setting_Metadata_flowrate_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\",\n        \"45\"\n    ],\n    \"Setting_Metadata_operator_email\": \"manu@fairscope.com\",\n    \"Setting_Metadata_MSTS\": \"10\",\n    \"Setting_Metadata_focus_preset\": [\n        \"0.10\",\n        \"0.50\",\n        \"10\",\n        \"45\"\n    ],\n    \"Setting_Metadata_first-visit\": true,\n    \"Setting_Metadata_coord-format\": \"Decimal degrees (DD)\",\n    \"Setting_Metadata_flowrate_in_between\": \"2\",\n    \"Setting_Metadata_dataset_path\": \"\",\n    \"Setting_Metadata_model_selected\": \"PlanktoScope v2.6\"  \n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "1ef453ad87465b88"
+            ]
+        ]
+    },
+    {
+        "id": "1ef453ad87465b88",
+        "type": "file",
+        "z": "2d41a8ed5aea3449",
+        "g": "fbcc2ce08c4d6887",
+        "name": "Create default.json file",
+        "filename": ".node-red/context/default/default.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 760,
+        "y": 160,
+        "wires": [
+            [
+                "e8eeb682015e557c"
+            ]
+        ]
+    },
+    {
+        "id": "e8eeb682015e557c",
+        "type": "link out",
+        "z": "2d41a8ed5aea3449",
+        "g": "fbcc2ce08c4d6887",
+        "name": "link out 131",
+        "mode": "link",
+        "links": [
+            "f54c1bedef882c05",
+            "851ef466eeb0fc43",
+            "e4ce9a9254bd3014",
+            "2b654f26635ca4cc",
+            "7f89e79cf69697c4",
+            "85704cdf1bc50207",
+            "5da71e47c1b51fb7",
+            "1220e0b2e592262a",
+            "8d454e4e89d085a8",
+            "2388807069d5ec18",
+            "635c9c7c52336acb",
+            "7aec4feeb319af9d",
+            "f13e9e1e80fbbcf2",
+            "065732882c0856ab",
+            "e107ea45d7fbc414",
+            "00de106f51eea6b4",
+            "cd4903421f1eade7",
+            "9c3fee9872fd6797",
+            "073857668ac1409a",
+            "9b739697cf2d2018",
+            "d944946a74934f96",
+            "03ba126aba921e62",
+            "0888cf871e9a09ea",
+            "b843bea2ee1444f0",
+            "b1127e5ff34a4291",
+            "fe572f623a8b7283",
+            "2511ae6b7709b50b",
+            "3bae9e15dd5a1912",
+            "345ab91e3835c60e",
+            "1b658fa0d89a977a",
+            "ea6eccb844b26946",
+            "37620e74d21bc71d",
+            "29b0ec18e56f4db2",
+            "a5a114c1aa5776df",
+            "0c7d231a41f1a15c",
+            "85d163b37e5aa94a",
+            "8f79894b7dadb9d1",
+            "09c1b684679fce10",
+            "91e93a13abce56bd",
+            "c019ed58055a929a",
+            "0ad4f0c109f290d4",
+            "b6bfb03d30fbb535",
+            "8387df0d2525b5bb",
+            "865a97c719b421b7",
+            "49e3527ee270a8b2",
+            "714e4f841831d0f8",
+            "4e0513042a591ae7"
+        ],
+        "x": 895,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5453240684e27c92",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
+        "g": "15f3b975f3b5eb77",
         "name": "",
-        "valuesConfig": "176d84b611842be2",
-        "valuesConfigName": "Hard-coded value",
-        "valueId": "120f5c10-49a6-11ef-9331-19c39f8156d0",
-        "value": "model_list",
-        "command": "reset",
-        "msgProperty": "payload",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_first-visit",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -3580,7 +3403,295 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 590,
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8139dd796516fff2",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_coord-format",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "16de60a2941651a7",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 560,
+        "y": 360,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "925dc4fe3efe6894",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_email",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_operator_email",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 560,
+        "y": 400,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4ba9e79184472449",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
+        "value": "flowrate_preset",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_flowrate_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 560,
+        "y": 440,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6529845f2d952459",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
+        "value": "volume_preset",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_volume_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 560,
+        "y": 480,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0ce2346192c64fcc",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
+        "value": "focus_preset",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_focus_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 550,
+        "y": 520,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3b72dceb26dec7db",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
+        "value": "delay_to_stabilized",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_delay_to_stabilized",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 570,
+        "y": 560,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ca8f99521e22e18d",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "16042860-42c0-11ef-89ad-e57161842148",
+        "value": "flowrate_in_between",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_flowrate_in_between",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 580,
+        "y": 600,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9759dee5c373944b",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "54330ee0-437d-11ef-946b-75401899c243",
+        "value": "MSTS",
+        "command": "reset",
+        "msgProperty": "payload.Setting_Metadata_MSTS",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 530,
         "y": 640,
         "wires": [
             [],
@@ -3588,31 +3699,13 @@
         ]
     },
     {
-        "id": "0cee35de3e61c695",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 82",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 405,
-        "y": 640,
-        "wires": [
-            [
-                "4782940c3eb11f57"
-            ]
-        ]
-    },
-    {
-        "id": "bfce8bcf0432af22",
+        "id": "713fe494b6a7ef30",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
+        "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "write",
@@ -3630,18 +3723,18 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 600,
-        "y": 740,
+        "x": 560,
+        "y": 800,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "dedd2f376269d92d",
+        "id": "1218141a50ea0191",
         "type": "file in",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
+        "g": "15f3b975f3b5eb77",
         "name": "Get Model",
         "filename": "/home/pi/PlanktoScope/config.json",
         "filenameType": "str",
@@ -3650,19 +3743,19 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 310,
-        "y": 780,
+        "x": 470,
+        "y": 720,
         "wires": [
             [
-                "89246bd4b7b399ea"
+                "9792ed9e0d045e6e"
             ]
         ]
     },
     {
-        "id": "89246bd4b7b399ea",
+        "id": "9792ed9e0d045e6e",
         "type": "function",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
+        "g": "15f3b975f3b5eb77",
         "name": "Get model variable",
         "func": "const parsedData = JSON.parse(msg.payload);\nconst cellType = parsedData.acq_instrument;\n\nmsg.payload = {\n    acq_instrument: cellType\n};\n\nreturn msg;",
         "outputs": 1,
@@ -3671,44 +3764,337 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 740,
+        "x": 490,
+        "y": 760,
         "wires": [
             [
-                "bfce8bcf0432af22"
+                "713fe494b6a7ef30"
             ]
         ]
     },
     {
-        "id": "ef1abfee73208836",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 87",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 165,
-        "y": 780,
-        "wires": [
-            [
-                "dedd2f376269d92d"
-            ]
-        ]
-    },
-    {
-        "id": "aefe7bf6d57b98c3",
+        "id": "24b197a9de2a21e9",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "15f3b975f3b5eb77",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_coord-format",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 550,
+        "y": 680,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f54c1bedef882c05",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 185",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 280,
+        "wires": [
+            [
+                "5453240684e27c92"
+            ]
+        ]
+    },
+    {
+        "id": "851ef466eeb0fc43",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 186",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 320,
+        "wires": [
+            [
+                "8139dd796516fff2"
+            ]
+        ]
+    },
+    {
+        "id": "e4ce9a9254bd3014",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 187",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 360,
+        "wires": [
+            [
+                "16de60a2941651a7"
+            ]
+        ]
+    },
+    {
+        "id": "2b654f26635ca4cc",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 188",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 400,
+        "wires": [
+            [
+                "925dc4fe3efe6894"
+            ]
+        ]
+    },
+    {
+        "id": "7f89e79cf69697c4",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 189",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 440,
+        "wires": [
+            [
+                "4ba9e79184472449"
+            ]
+        ]
+    },
+    {
+        "id": "85704cdf1bc50207",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 190",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 480,
+        "wires": [
+            [
+                "6529845f2d952459"
+            ]
+        ]
+    },
+    {
+        "id": "5da71e47c1b51fb7",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 191",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 520,
+        "wires": [
+            [
+                "0ce2346192c64fcc"
+            ]
+        ]
+    },
+    {
+        "id": "1220e0b2e592262a",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 192",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 560,
+        "wires": [
+            [
+                "3b72dceb26dec7db"
+            ]
+        ]
+    },
+    {
+        "id": "8d454e4e89d085a8",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 193",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 600,
+        "wires": [
+            [
+                "ca8f99521e22e18d"
+            ]
+        ]
+    },
+    {
+        "id": "2388807069d5ec18",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 194",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 640,
+        "wires": [
+            [
+                "9759dee5c373944b"
+            ]
+        ]
+    },
+    {
+        "id": "635c9c7c52336acb",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 195",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 680,
+        "wires": [
+            [
+                "24b197a9de2a21e9"
+            ]
+        ]
+    },
+    {
+        "id": "7aec4feeb319af9d",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "15f3b975f3b5eb77",
+        "name": "link in 196",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 720,
+        "wires": [
+            [
+                "1218141a50ea0191"
+            ]
+        ]
+    },
+    {
+        "id": "947db7c0f34ba7fd",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "3cb515e1c2943dee",
+        "name": "",
+        "valuesConfig": "176d84b611842be2",
+        "valuesConfigName": "Hard-coded value",
+        "valueId": "120f5c10-49a6-11ef-9331-19c39f8156d0",
+        "value": "model_list",
+        "command": "write",
+        "msgProperty": "payload.Hard-coded_value_model_list",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 550,
+        "y": 900,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f13e9e1e80fbbcf2",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "3cb515e1c2943dee",
+        "name": "link in 197",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 365,
+        "y": 900,
+        "wires": [
+            [
+                "947db7c0f34ba7fd"
+            ]
+        ]
+    },
+    {
+        "id": "2e886a1c3c592e37",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "8dad4db0-4e50-11ef-86a5-e9c7b2057935",
         "value": "project_name",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_project_name",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -3722,25 +4108,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1420,
-        "y": 240,
+        "x": 1040,
+        "y": 280,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "28f0e4b4a1588515",
+        "id": "e914704b766cea9f",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "90285fd0-4e50-11ef-86a5-e9c7b2057935",
         "value": "sample_id",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_sample_id",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -3754,25 +4140,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1410,
-        "y": 280,
+        "x": 1030,
+        "y": 320,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "d022b35e669b39d1",
+        "id": "2898217c339a7d17",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "907912f0-4dc3-11ef-86a5-e9c7b2057935",
         "value": "starting_point_date",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_starting_point_date",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -3786,25 +4172,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1440,
-        "y": 320,
+        "x": 1050,
+        "y": 360,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "a68c89dcf712e634",
+        "id": "24a6c22e6e4f15b4",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "aa48e480-4dc3-11ef-86a5-e9c7b2057935",
         "value": "starting_point_time",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_starting_point_time",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -3818,93 +4204,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 360,
+        "x": 1050,
+        "y": 400,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "98e4f743473e2afc",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 127",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 240,
-        "wires": [
-            [
-                "aefe7bf6d57b98c3"
-            ]
-        ]
-    },
-    {
-        "id": "e01f0c8cba4709ce",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 128",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 280,
-        "wires": [
-            [
-                "28f0e4b4a1588515"
-            ]
-        ]
-    },
-    {
-        "id": "66ef5ae4e5f9bd59",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 129",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 320,
-        "wires": [
-            [
-                "d022b35e669b39d1"
-            ]
-        ]
-    },
-    {
-        "id": "dee737db75e5db3e",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 130",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 360,
-        "wires": [
-            [
-                "a68c89dcf712e634"
-            ]
-        ]
-    },
-    {
-        "id": "90ef93ec881b494e",
+        "id": "8ac49e8a2ec2beb1",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "b5faaac0-4dc3-11ef-86a5-e9c7b2057935",
         "value": "starting_point_gps",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_starting_point_gps",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -3918,112 +4236,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 400,
+        "x": 1050,
+        "y": 440,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "ba8f3510278b9962",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 131",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 400,
-        "wires": [
-            [
-                "90ef93ec881b494e"
-            ]
-        ]
-    },
-    {
-        "id": "dda11a33a13eb2d5",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "reset sample metadata",
-        "links": [
-            "401bfc3969550dac"
-        ],
-        "x": 155,
-        "y": 320,
-        "wires": [
-            [
-                "872ca1ac17bbd6d5"
-            ]
-        ]
-    },
-    {
-        "id": "872ca1ac17bbd6d5",
-        "type": "link out",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link out 102",
-        "mode": "link",
-        "links": [
-            "98e4f743473e2afc",
-            "e01f0c8cba4709ce",
-            "66ef5ae4e5f9bd59",
-            "dee737db75e5db3e",
-            "ba8f3510278b9962",
-            "37c9983936759ce1",
-            "fb1a569a997da8a1",
-            "9ba81934916fbcf7",
-            "1bb428d37b010ce8",
-            "9cfda0ca343555fb",
-            "ebb8215ea0abb97f",
-            "fdc6cc58ee4c89bd",
-            "6dffe97616090f22",
-            "37621fc63e964f84",
-            "f9eea1bd8c4f6c69",
-            "d343450c61db41f7",
-            "1c6fee1f472d8e7d",
-            "a81c6159825755b3",
-            "e909cfe8c1a643a1",
-            "b43c55797e299adf",
-            "1b9f3b3d691ce0f5",
-            "ec8fd890d587c626",
-            "287bb1b845a62702"
-        ],
-        "x": 315,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "37c9983936759ce1",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 132",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 440,
-        "wires": [
-            [
-                "e710471b5191006f"
-            ]
-        ]
-    },
-    {
-        "id": "e710471b5191006f",
+        "id": "ae513f8a40e9873e",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "d66c06a0-4dc3-11ef-86a5-e9c7b2057935",
         "value": "ending_point_date",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_ending_point_date",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4037,25 +4268,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 440,
+        "x": 1050,
+        "y": 480,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "bbdb7ae0d167cbba",
+        "id": "a46dd7b988c2e887",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "d6b592c0-4dc3-11ef-86a5-e9c7b2057935",
         "value": "ending_point_time",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_ending_point_time",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4069,42 +4300,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 480,
+        "x": 1050,
+        "y": 520,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "fb1a569a997da8a1",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 133",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 480,
-        "wires": [
-            [
-                "bbdb7ae0d167cbba"
-            ]
-        ]
-    },
-    {
-        "id": "5c9ba1f9c301a8e8",
+        "id": "b8ea680c60eadd3b",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "d6e55550-4dc3-11ef-86a5-e9c7b2057935",
         "value": "ending_point_gps",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_ending_point_gps",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4118,42 +4332,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 520,
+        "x": 1050,
+        "y": 560,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "9ba81934916fbcf7",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 134",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 520,
-        "wires": [
-            [
-                "5c9ba1f9c301a8e8"
-            ]
-        ]
-    },
-    {
-        "id": "1e7ae904374abcd6",
+        "id": "04020e5373c00367",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "80f7c120-4e52-11ef-86a5-e9c7b2057935",
         "value": "mouth_opening_diam",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_mouth_opening_diam",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4167,42 +4364,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1440,
-        "y": 560,
+        "x": 1060,
+        "y": 600,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "1bb428d37b010ce8",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 135",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 560,
-        "wires": [
-            [
-                "1e7ae904374abcd6"
-            ]
-        ]
-    },
-    {
-        "id": "efd114de3f33308b",
+        "id": "e8b6810af3e18bd8",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "82b15800-4e52-11ef-86a5-e9c7b2057935",
         "value": "length_of_the_net",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_length_of_the_net",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4216,42 +4396,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 600,
+        "x": 1050,
+        "y": 640,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "9cfda0ca343555fb",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 136",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 600,
-        "wires": [
-            [
-                "efd114de3f33308b"
-            ]
-        ]
-    },
-    {
-        "id": "a40cc1b5a685f25f",
+        "id": "b9acdc5625182e2d",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "8330e840-4e52-11ef-86a5-e9c7b2057935",
         "value": "mesh_size",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_mesh_size",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4265,42 +4428,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1410,
-        "y": 640,
+        "x": 1030,
+        "y": 680,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "6dffe97616090f22",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 137",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 640,
-        "wires": [
-            [
-                "a40cc1b5a685f25f"
-            ]
-        ]
-    },
-    {
-        "id": "1c6b535a721438af",
+        "id": "ed1762149f59cda0",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "836ae400-4e52-11ef-86a5-e9c7b2057935",
         "value": "volume_of_the_collector",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_volume_of_the_collector",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4314,42 +4460,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1450,
-        "y": 680,
+        "x": 1070,
+        "y": 720,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "37621fc63e964f84",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 138",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 680,
-        "wires": [
-            [
-                "1c6b535a721438af"
-            ]
-        ]
-    },
-    {
-        "id": "ec0610c6d1a0bee2",
+        "id": "30387afc9486ade0",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "40e9b2f0-4e5c-11ef-86a5-e9c7b2057935",
         "value": "filtered_volume",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_filtered_volume",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4363,42 +4492,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1420,
-        "y": 720,
+        "x": 1040,
+        "y": 760,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "f9eea1bd8c4f6c69",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 139",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 720,
-        "wires": [
-            [
-                "ec0610c6d1a0bee2"
-            ]
-        ]
-    },
-    {
-        "id": "d5f5eede02c25e8a",
+        "id": "94a7c56b5a7d26c7",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "412c8850-4e5c-11ef-86a5-e9c7b2057935",
         "value": "dillution_factor",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_dillution_factor",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4412,42 +4524,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1420,
-        "y": 760,
+        "x": 1040,
+        "y": 800,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "d343450c61db41f7",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 140",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 760,
-        "wires": [
-            [
-                "d5f5eede02c25e8a"
-            ]
-        ]
-    },
-    {
-        "id": "510ed87eb40bcbfd",
+        "id": "9da0bff82fd913cb",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
         "value": "sieve_mesh_size",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_sieve_mesh_size",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4461,42 +4556,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 800,
+        "x": 1050,
+        "y": 840,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "1c6fee1f472d8e7d",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 141",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 800,
-        "wires": [
-            [
-                "510ed87eb40bcbfd"
-            ]
-        ]
-    },
-    {
-        "id": "5a9438e26f1afdc9",
+        "id": "927a5cee83a40dd6",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "4195d170-4e5c-11ef-86a5-e9c7b2057935",
         "value": "depth_of_the_sample",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_depth_of_the_sample",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4510,42 +4588,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1440,
-        "y": 840,
+        "x": 1060,
+        "y": 880,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "a81c6159825755b3",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 142",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 840,
-        "wires": [
-            [
-                "5a9438e26f1afdc9"
-            ]
-        ]
-    },
-    {
-        "id": "1e98e7c781cf01c1",
+        "id": "a501694d5a797c8b",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "69ca7b50-4e5c-11ef-86a5-e9c7b2057935",
         "value": "sample_comment",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_sample_comment",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4559,42 +4620,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 880,
+        "x": 1050,
+        "y": 920,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "e909cfe8c1a643a1",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 143",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 880,
-        "wires": [
-            [
-                "1e98e7c781cf01c1"
-            ]
-        ]
-    },
-    {
-        "id": "8cf136cc352c41ed",
+        "id": "27e95a294484b696",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "21548210-4e63-11ef-86a5-e9c7b2057935",
         "value": "volume_of_the_bottle",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_volume_of_the_bottle",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4608,42 +4652,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1440,
-        "y": 920,
+        "x": 1060,
+        "y": 960,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "b43c55797e299adf",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 144",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 920,
-        "wires": [
-            [
-                "8cf136cc352c41ed"
-            ]
-        ]
-    },
-    {
-        "id": "dcaadb963bc56149",
+        "id": "9159b725b95585e8",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "92ae25b0-4e63-11ef-86a5-e9c7b2057935",
         "value": "depth_min",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_depth_min",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4657,42 +4684,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1410,
-        "y": 960,
+        "x": 1030,
+        "y": 1000,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "1b9f3b3d691ce0f5",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 145",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 960,
-        "wires": [
-            [
-                "dcaadb963bc56149"
-            ]
-        ]
-    },
-    {
-        "id": "609369c36282f33c",
+        "id": "c3436332c18e7ae3",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "978fb080-4e63-11ef-86a5-e9c7b2057935",
         "value": "depth_max",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_depth_max",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4706,42 +4716,25 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1410,
-        "y": 1000,
+        "x": 1030,
+        "y": 1040,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "ec8fd890d587c626",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 146",
-        "links": [
-            "872ca1ac17bbd6d5"
-        ],
-        "x": 1215,
-        "y": 1000,
-        "wires": [
-            [
-                "609369c36282f33c"
-            ]
-        ]
-    },
-    {
-        "id": "52b5b6ab8e06a73d",
+        "id": "336dd37e7f9e8f95",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
+        "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
         "valuesConfigName": "Sample Metadata",
         "valueId": "c0901960-4e64-11ef-86a5-e9c7b2057935",
         "value": "depth",
-        "command": "reset",
-        "msgProperty": "payload",
+        "command": "write",
+        "msgProperty": "payload.Sample_Metadata_depth",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -4755,182 +4748,1236 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1390,
-        "y": 1040,
+        "x": 1010,
+        "y": 1080,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "287bb1b845a62702",
+        "id": "065732882c0856ab",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
-        "g": "13cdc4d42826fa8f",
-        "name": "link in 147",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 198",
         "links": [
-            "872ca1ac17bbd6d5"
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
         ],
-        "x": 1215,
-        "y": 1040,
+        "x": 845,
+        "y": 440,
         "wires": [
             [
-                "52b5b6ab8e06a73d"
+                "8ac49e8a2ec2beb1"
             ]
         ]
     },
     {
-        "id": "4c23fa82d4496339",
+        "id": "e107ea45d7fbc414",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "Reset all",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 199",
         "links": [
-            "9f65e288ffde4e1f",
-            "bfac68a2ad929ed7"
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
         ],
-        "x": 155,
+        "x": 845,
+        "y": 400,
+        "wires": [
+            [
+                "24a6c22e6e4f15b4"
+            ]
+        ]
+    },
+    {
+        "id": "00de106f51eea6b4",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 200",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 360,
+        "wires": [
+            [
+                "2898217c339a7d17"
+            ]
+        ]
+    },
+    {
+        "id": "cd4903421f1eade7",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 201",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 320,
+        "wires": [
+            [
+                "e914704b766cea9f"
+            ]
+        ]
+    },
+    {
+        "id": "9c3fee9872fd6797",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 202",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 280,
+        "wires": [
+            [
+                "2e886a1c3c592e37"
+            ]
+        ]
+    },
+    {
+        "id": "073857668ac1409a",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 203",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 640,
+        "wires": [
+            [
+                "e8b6810af3e18bd8"
+            ]
+        ]
+    },
+    {
+        "id": "9b739697cf2d2018",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 204",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 600,
+        "wires": [
+            [
+                "04020e5373c00367"
+            ]
+        ]
+    },
+    {
+        "id": "d944946a74934f96",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 205",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 560,
+        "wires": [
+            [
+                "b8ea680c60eadd3b"
+            ]
+        ]
+    },
+    {
+        "id": "03ba126aba921e62",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 206",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 520,
+        "wires": [
+            [
+                "a46dd7b988c2e887"
+            ]
+        ]
+    },
+    {
+        "id": "0888cf871e9a09ea",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 207",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 480,
+        "wires": [
+            [
+                "ae513f8a40e9873e"
+            ]
+        ]
+    },
+    {
+        "id": "b843bea2ee1444f0",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 208",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 840,
+        "wires": [
+            [
+                "9da0bff82fd913cb"
+            ]
+        ]
+    },
+    {
+        "id": "b1127e5ff34a4291",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 209",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 800,
+        "wires": [
+            [
+                "94a7c56b5a7d26c7"
+            ]
+        ]
+    },
+    {
+        "id": "fe572f623a8b7283",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 210",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 760,
+        "wires": [
+            [
+                "30387afc9486ade0"
+            ]
+        ]
+    },
+    {
+        "id": "2511ae6b7709b50b",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 211",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 720,
+        "wires": [
+            [
+                "ed1762149f59cda0"
+            ]
+        ]
+    },
+    {
+        "id": "3bae9e15dd5a1912",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 212",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 680,
+        "wires": [
+            [
+                "b9acdc5625182e2d"
+            ]
+        ]
+    },
+    {
+        "id": "345ab91e3835c60e",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 213",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 1040,
+        "wires": [
+            [
+                "c3436332c18e7ae3"
+            ]
+        ]
+    },
+    {
+        "id": "1b658fa0d89a977a",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 214",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 1000,
+        "wires": [
+            [
+                "9159b725b95585e8"
+            ]
+        ]
+    },
+    {
+        "id": "ea6eccb844b26946",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 215",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 960,
+        "wires": [
+            [
+                "27e95a294484b696"
+            ]
+        ]
+    },
+    {
+        "id": "37620e74d21bc71d",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 216",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 920,
+        "wires": [
+            [
+                "a501694d5a797c8b"
+            ]
+        ]
+    },
+    {
+        "id": "29b0ec18e56f4db2",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 217",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 880,
+        "wires": [
+            [
+                "927a5cee83a40dd6"
+            ]
+        ]
+    },
+    {
+        "id": "a5a114c1aa5776df",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 218",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 1080,
+        "wires": [
+            [
+                "336dd37e7f9e8f95"
+            ]
+        ]
+    },
+    {
+        "id": "34eed7a856b62fd0",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "5366a9c252403340",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "Acquisition Metadata",
+        "valueId": "cb9cb620-4ffd-11ef-8af0-151edf01ff7c",
+        "value": "acquisition_id",
+        "command": "write",
+        "msgProperty": "payload.Acquisition_Metadata_acquisition_id",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1550,
+        "y": 280,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "131f2701ee390b1a",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "5366a9c252403340",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "Acquisition Metadata",
+        "valueId": "18a9dd30-5017-11ef-8af0-151edf01ff7c",
+        "value": "acquisition_comment",
+        "command": "write",
+        "msgProperty": "payload.Acquisition_Metadata_acquisition_comment",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1570,
+        "y": 320,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "85d163b37e5aa94a",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "5366a9c252403340",
+        "name": "link in 219",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 1345,
+        "y": 280,
+        "wires": [
+            [
+                "34eed7a856b62fd0"
+            ]
+        ]
+    },
+    {
+        "id": "0c7d231a41f1a15c",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "5366a9c252403340",
+        "name": "link in 220",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 1345,
+        "y": 320,
+        "wires": [
+            [
+                "131f2701ee390b1a"
+            ]
+        ]
+    },
+    {
+        "id": "1fe7d856f30939e1",
+        "type": "function",
+        "z": "2d41a8ed5aea3449",
+        "g": "797840f55c8b0798",
+        "name": "Create payload for the next file",
+        "func": "msg.payload = {\n    \"Sample_Metadata_volume_of_the_collector\": \"0\",\n    \"Setting_metadata_dataset_path\": \"\",\n    \"Visualization_Graphs_map\": \"\",\n    \"Visualization_Graphs_datatable\": \"\",\n    \"Visualization_Graphs_chartsection_charts\": [],\n    \"Visualization_Graphs_chartsection_metadata\": [],\n    \"Visualization_Graphs_infotable\": \"\",\n    \"Setting_metadata_coord-format\": \"Decimal degrees (DD)\",\n    \"Setting_metadata_operator_name\": \"a\",\n    \"Setting_metadata_operator_email\": \"a\",\n    \"Setting_metadata_flowrate_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\",\n        \"45\"\n    ],\n    \"Setting_metadata_volume_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\"\n    ],\n    \"Setting_metadata_focus_preset\": [\n        \"0.10\",\n        \"0.50\",\n        \"10\",\n        \"45\"\n    ],\n    \"Setting_metadata_delay_to_stabilized\": \"2\",\n    \"Setting_metadata_flowrate_in_between\": \"2\",\n    \"Setting_metadata_MSTS\": \"10\",\n    \"Hard-coded_value_model_list\": [\n        \"PlanktoScope v2.1\",\n        \"PlanktoScope v2.3\",\n        \"PlanktoScope v2.5\",\n        \"PlanktoScope v2.6\"\n    ],\n    \"Setting_metadata_first-visit\": false,\n    \"Sample_Metadata_project_name\": \"default project name\",\n    \"Sample_Metadata_sample_id\": \"default id\",\n    \"Sample_Metadata_starting_point_date\": \"0000-00-00\",\n    \"Sample_Metadata_starting_point_time\": \"00:00\",\n    \"Sample_Metadata_starting_point_gps\": {},\n    \"Sample_Metadata_ending_point_date\": \"0000-00-00\",\n    \"Sample_Metadata_ending_point_time\": \"00:00\",\n    \"Sample_Metadata_ending_point_gps\": {},\n    \"Sample_Metadata_mouth_opening_diam\": \"0\",\n    \"Sample_Metadata_length_of_the_net\": \"0\",\n    \"Sample_Metadata_mesh_size\": \"0\",\n    \"Sample_Metadata_filtered_volume\": \"0\",\n    \"Sample_Metadata_dillution_factor\": \"0\",\n    \"Sample_Metadata_sieve_mesh_size\": \"0\",\n    \"Sample_Metadata_depth_of_the_sample\": \"0\",\n    \"Sample_Metadata_sample_comment\": \"\",\n    \"Sample_Metadata_volume_of_the_bottle\": \"0\",\n    \"Sample_Metadata_depth_min\": \"0\",\n    \"Sample_Metadata_depth_max\": \"0\",\n    \"Sample_Metadata_depth\": \"0\",\n    \"Setting_metadata_model_selected\": \"PlanktoScope v2.6\",\n    \"Sample_Metadata_sampling_gear\": \"Lab culture\",\n    \"Acquisition_Metadata_acquisition_id\": \"\",\n    \"Acquisition_Metadata_acquisition_comment\": \"\",\n    \"Setting_Metadata_delay_to_stabilized\": \"2\",\n    \"Setting_Metadata_operator_name\": \"Manu Prakash\",\n    \"Setting_Metadata_volume_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\"\n    ],\n    \"Setting_Metadata_flowrate_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\",\n        \"45\"\n    ],\n    \"Setting_Metadata_operator_email\": \"manu@fairscope.com\",\n    \"Setting_Metadata_MSTS\": \"10\",\n    \"Setting_Metadata_focus_preset\": [\n        \"0.10\",\n        \"0.50\",\n        \"10\",\n        \"45\"\n    ],\n    \"Setting_Metadata_first-visit\": true,\n    \"Setting_Metadata_coord-format\": \"Decimal degrees (DD)\",\n    \"Setting_Metadata_flowrate_in_between\": \"2\",\n    \"Setting_Metadata_dataset_path\": \"\",\n    \"Setting_Metadata_model_selected\": \"PlanktoScope v2.6\"  \n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2060,
+        "y": 260,
+        "wires": [
+            [
+                "da3f319d8264cbb8"
+            ]
+        ]
+    },
+    {
+        "id": "da3f319d8264cbb8",
+        "type": "file",
+        "z": "2d41a8ed5aea3449",
+        "g": "797840f55c8b0798",
+        "name": "Create default.json file",
+        "filename": ".node-red/context/default/default.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 2320,
+        "y": 260,
+        "wires": [
+            [
+                "23e5915a9545ac05"
+            ]
+        ]
+    },
+    {
+        "id": "a4acb6a7353353b0",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
+        "value": "first-visit",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_first-visit",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2080,
+        "y": 340,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f9f91f62e4061edd",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_coord-format",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2090,
+        "y": 380,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "abf60f1ae6b4edf4",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_operator_name",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2100,
+        "y": 420,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "29caedd1ecdd4cbd",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_email",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_operator_email",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2100,
+        "y": 460,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f48d1c5aab997360",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
+        "value": "flowrate_preset",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_flowrate_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2100,
+        "y": 500,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "eeba4965108cf885",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
+        "value": "volume_preset",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_volume_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2100,
+        "y": 540,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b754c1555e996ad1",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
+        "value": "focus_preset",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_focus_preset",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2090,
+        "y": 580,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "36e95390abf76fb7",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
+        "value": "delay_to_stabilized",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_delay_to_stabilized",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2110,
+        "y": 620,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "86720f3e68429771",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "16042860-42c0-11ef-89ad-e57161842148",
+        "value": "flowrate_in_between",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_flowrate_in_between",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2120,
+        "y": 660,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c8b7241e0a2baa7c",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "54330ee0-437d-11ef-946b-75401899c243",
+        "value": "MSTS",
+        "command": "reset",
+        "msgProperty": "payload.Setting_Metadata_MSTS",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2070,
+        "y": 700,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "011f46ae3ddba9cd",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
+        "value": "model_selected",
+        "command": "write",
+        "msgProperty": "payload.acq_instrument",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2100,
+        "y": 860,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "89095eea693ae0a7",
+        "type": "file in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "Get Model",
+        "filename": "/home/pi/PlanktoScope/config.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 2010,
+        "y": 780,
+        "wires": [
+            [
+                "4585c6c2889a5a24"
+            ]
+        ]
+    },
+    {
+        "id": "4585c6c2889a5a24",
+        "type": "function",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "Get model variable",
+        "func": "const parsedData = JSON.parse(msg.payload);\nconst cellType = parsedData.acq_instrument;\n\nmsg.payload = {\n    acq_instrument: cellType\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2030,
+        "y": 820,
+        "wires": [
+            [
+                "011f46ae3ddba9cd"
+            ]
+        ]
+    },
+    {
+        "id": "6e5e3bceb7510185",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
+        "value": "coord-format",
+        "command": "write",
+        "msgProperty": "payload.Setting_Metadata_coord-format",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 2090,
+        "y": 740,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3b86ab59fbab0347",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 221",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
+        "y": 340,
+        "wires": [
+            [
+                "a4acb6a7353353b0"
+            ]
+        ]
+    },
+    {
+        "id": "23e5915a9545ac05",
+        "type": "link out",
+        "z": "2d41a8ed5aea3449",
+        "g": "797840f55c8b0798",
+        "name": "link out 132",
+        "mode": "link",
+        "links": [
+            "3b86ab59fbab0347",
+            "38d48734a6d0702f",
+            "c93e64072d1c9088",
+            "1ce0e92e86307257",
+            "2a055387a8ebb7cf",
+            "2e34c96d65b9397d",
+            "f547260ce9f3e791",
+            "e44dfc930d03d271",
+            "85378a27e75dce0e",
+            "3ded02ee1a27ab59",
+            "f420b5f6be1325a5",
+            "5cd174f6d927c581",
+            "4be3c64c77d1d695",
+            "6526acc269d5ac13",
+            "1a0abe2c635a4b72",
+            "40b29eb6c6f42aed"
+        ],
+        "x": 2455,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "38d48734a6d0702f",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 222",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
+        "y": 380,
+        "wires": [
+            [
+                "f9f91f62e4061edd"
+            ]
+        ]
+    },
+    {
+        "id": "c93e64072d1c9088",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 223",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
+        "y": 460,
+        "wires": [
+            [
+                "29caedd1ecdd4cbd"
+            ]
+        ]
+    },
+    {
+        "id": "1ce0e92e86307257",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 224",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
         "y": 420,
         "wires": [
             [
-                "401bfc3969550dac"
+                "abf60f1ae6b4edf4"
             ]
         ]
     },
     {
-        "id": "931e4aba3ed98eab",
-        "type": "persistent value",
+        "id": "85378a27e75dce0e",
+        "type": "link in",
         "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "",
-        "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
-        "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
-        "command": "read",
-        "msgProperty": "payload",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 590,
+        "g": "8f8806a0020e12d3",
+        "name": "link in 225",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
+        "y": 620,
+        "wires": [
+            [
+                "36e95390abf76fb7"
+            ]
+        ]
+    },
+    {
+        "id": "3ded02ee1a27ab59",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 226",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
+        "y": 580,
+        "wires": [
+            [
+                "b754c1555e996ad1"
+            ]
+        ]
+    },
+    {
+        "id": "f420b5f6be1325a5",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 227",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
+        "y": 540,
+        "wires": [
+            [
+                "eeba4965108cf885"
+            ]
+        ]
+    },
+    {
+        "id": "5cd174f6d927c581",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 228",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
+        "y": 500,
+        "wires": [
+            [
+                "f48d1c5aab997360"
+            ]
+        ]
+    },
+    {
+        "id": "4be3c64c77d1d695",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 229",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
+        "y": 780,
+        "wires": [
+            [
+                "89095eea693ae0a7"
+            ]
+        ]
+    },
+    {
+        "id": "6526acc269d5ac13",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 230",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
+        "y": 740,
+        "wires": [
+            [
+                "6e5e3bceb7510185"
+            ]
+        ]
+    },
+    {
+        "id": "1a0abe2c635a4b72",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 231",
+        "links": [
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
+        ],
+        "x": 1905,
         "y": 700,
         "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "7e1481c754e52498",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "6720ea496a9e645e",
-        "name": "link in 181",
-        "links": [
-            "401bfc3969550dac",
-            "d67a089534fb33a1"
-        ],
-        "x": 405,
-        "y": 700,
-        "wires": [
             [
-                "931e4aba3ed98eab"
+                "c8b7241e0a2baa7c"
             ]
         ]
     },
     {
-        "id": "a15686c4b2da8224",
-        "type": "exec",
-        "z": "2d41a8ed5aea3449",
-        "command": "sudo reboot",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "Reboot",
-        "x": 1380,
-        "y": 60,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "960c1b4e1358e139",
+        "id": "40b29eb6c6f42aed",
         "type": "link in",
         "z": "2d41a8ed5aea3449",
-        "name": "Reboot",
+        "g": "8f8806a0020e12d3",
+        "name": "link in 232",
         "links": [
-            "d4af39c15f3540b2",
-            "ec1137fb63fbb85a",
-            "88baa8ae55dc9fe2",
-            "e7ef6ef1f343a096",
-            "3f6329f6f64a5d57",
-            "aefc0f84026bcf7b",
-            "0d78c0467054ebc9",
-            "67fcf51f541bd536"
+            "9379acf82c9c4075",
+            "685ab611734609b3",
+            "23e5915a9545ac05"
         ],
-        "x": 1285,
-        "y": 60,
+        "x": 1905,
+        "y": 660,
         "wires": [
             [
-                "a15686c4b2da8224"
+                "86720f3e68429771"
             ]
-        ]
-    },
-    {
-        "id": "6810166ee9e618d8",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "name": "Shutdown",
-        "links": [
-            "61aef8544c46a619",
-            "1ab62a6e28ceeacb",
-            "f7640955206f3cad",
-            "c65cad12fbc1ec52",
-            "a9b6da2f2e6a066a",
-            "9f4d9eacaefc1402",
-            "c7beb866c037aefc",
-            "757e7132e148e450"
-        ],
-        "x": 1285,
-        "y": 120,
-        "wires": [
-            [
-                "bde1030622d41c2d"
-            ]
-        ]
-    },
-    {
-        "id": "bde1030622d41c2d",
-        "type": "exec",
-        "z": "2d41a8ed5aea3449",
-        "command": "sudo shutdown -force",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "Shutdown",
-        "x": 1380,
-        "y": 120,
-        "wires": [
-            [],
-            [],
-            []
         ]
     },
     {
