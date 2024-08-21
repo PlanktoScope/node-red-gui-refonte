@@ -26,7 +26,7 @@
     {
         "id": "db1e7a22029cc2a4",
         "type": "tab",
-        "label": "Preview 2",
+        "label": "Preview",
         "disabled": false,
         "info": "",
         "env": []
@@ -34,7 +34,7 @@
     {
         "id": "e988301e60e4b458",
         "type": "tab",
-        "label": "Sample 2",
+        "label": "Sample",
         "disabled": false,
         "info": "",
         "env": []
@@ -42,7 +42,7 @@
     {
         "id": "70f558eb9d60b6fc",
         "type": "tab",
-        "label": "Acquisition 2",
+        "label": "Acquisition",
         "disabled": false,
         "info": "",
         "env": []
@@ -50,7 +50,7 @@
     {
         "id": "00a14f98244d252e",
         "type": "tab",
-        "label": "Segmentation 2",
+        "label": "Segmentation",
         "disabled": false,
         "info": "",
         "env": []
@@ -83,14 +83,6 @@
         "id": "a697ff46c6e7b7fb",
         "type": "tab",
         "label": "Monitoring",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "a975acfdbcf8fbf1",
-        "type": "tab",
-        "label": "Page Shutdown",
         "disabled": false,
         "info": "",
         "env": []
@@ -665,7 +657,7 @@
         ],
         "x": 144,
         "y": 619,
-        "w": 952,
+        "w": 942,
         "h": 82
     },
     {
@@ -1123,7 +1115,7 @@
         ],
         "x": 84,
         "y": 699,
-        "w": 1172,
+        "w": 1162,
         "h": 162
     },
     {
@@ -1342,9 +1334,9 @@
             "d382992324069c5d",
             "749f53cf1cdc61f9"
         ],
-        "x": 124,
+        "x": 134,
         "y": 739,
-        "w": 1692,
+        "w": 1682,
         "h": 1002
     },
     {
@@ -1831,7 +1823,7 @@
     {
         "id": "c37f9bbd954cb6ec",
         "type": "ui-page",
-        "name": "Preview-2",
+        "name": "Preview",
         "ui": "1eeac55ba6b9065f",
         "path": "/preview-2",
         "icon": "eye-outline",
@@ -1839,7 +1831,7 @@
         "theme": "c0ea559892f9bd33",
         "order": 3,
         "className": "",
-        "visible": true,
+        "visible": "true",
         "disabled": "false"
     },
     {
@@ -1884,7 +1876,7 @@
     {
         "id": "37a234524bb1b554",
         "type": "ui-page",
-        "name": "Acquisition-2",
+        "name": "Acquisition",
         "ui": "1eeac55ba6b9065f",
         "path": "/acquisition-2",
         "icon": "camera",
@@ -1892,7 +1884,7 @@
         "theme": "c0ea559892f9bd33",
         "order": 5,
         "className": "",
-        "visible": true,
+        "visible": "true",
         "disabled": "false"
     },
     {
@@ -1937,7 +1929,7 @@
     {
         "id": "c392bc525769b274",
         "type": "ui-page",
-        "name": "Sample-2",
+        "name": "Sample",
         "ui": "1eeac55ba6b9065f",
         "path": "/sample-2",
         "icon": "file",
@@ -1945,7 +1937,7 @@
         "theme": "c0ea559892f9bd33",
         "order": 4,
         "className": "",
-        "visible": true,
+        "visible": "true",
         "disabled": "false"
     },
     {
@@ -2094,7 +2086,7 @@
     {
         "id": "5e6b607c2476b7d4",
         "type": "ui-page",
-        "name": "Segmentation-2",
+        "name": "Segmentation",
         "ui": "1eeac55ba6b9065f",
         "path": "/segmentation-2",
         "icon": "puzzle",
@@ -5773,7 +5765,7 @@
         "z": "a707f17e5367291d",
         "g": "d6362eced379ae80",
         "name": "Prepare payload to navigate",
-        "func": "var itemNumber = msg.payload;\n\nif (itemNumber == 1) {\n    msg.payload = {\"page\":\"Preview-2\"}\n} else if (itemNumber == 3) {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (itemNumber == 5) {\n    msg.payload = {\"page\":\"Monitoring\"}\n}\n\nreturn msg;",
+        "func": "var itemNumber = msg.payload;\n\nif (itemNumber == 1) {\n    msg.payload = {\"page\":\"Preview\"}\n} else if (itemNumber == 3) {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (itemNumber == 5) {\n    msg.payload = {\"page\":\"Monitoring\"}\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6452,7 +6444,7 @@
         "z": "db1e7a22029cc2a4",
         "g": "4237eacb62444cc7",
         "name": "Format command to change page",
-        "func": "const numberStringMap = {\n  1: \"Preview-2\",\n  2: \"Sample-2\",\n  3: \"Acquisition-2\",\n  4: \"Segmentation-2\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
+        "func": "const numberStringMap = {\n  1: \"Preview\",\n  2: \"Sample\",\n  3: \"Acquisition\",\n  4: \"Segmentation\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7400,7 +7392,7 @@
         "z": "e988301e60e4b458",
         "g": "610c7571a6ee5612",
         "name": "Format command to change page",
-        "func": "const numberStringMap = {\n  1: \"Preview-2\",\n  2: \"Sample-2\",\n  3: \"Acquisition-2\",\n  4: \"Segmentation-2\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
+        "func": "const numberStringMap = {\n  1: \"Preview\",\n  2: \"Sample\",\n  3: \"Acquisition\",\n  4: \"Segmentation\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -10694,7 +10686,7 @@
         "z": "70f558eb9d60b6fc",
         "g": "c285048823f34bc0",
         "name": "Format command to change page",
-        "func": "const numberStringMap = {\n  1: \"Preview-2\",\n  2: \"Sample-2\",\n  3: \"Acquisition-2\",\n  4: \"Segmentation-2\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
+        "func": "const numberStringMap = {\n  1: \"Preview\",\n  2: \"Sample\",\n  3: \"Acquisition\",\n  4: \"Segmentation\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -13956,7 +13948,7 @@
         "z": "00a14f98244d252e",
         "g": "99e9870d6e66aeaf",
         "name": "Format command to change page",
-        "func": "const numberStringMap = {\n  1: \"Preview-2\",\n  2: \"Sample-2\",\n  3: \"Acquisition-2\",\n  4: \"Segmentation-2\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
+        "func": "const numberStringMap = {\n  1: \"Preview\",\n  2: \"Sample\",\n  3: \"Acquisition\",\n  4: \"Segmentation\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -15117,7 +15109,7 @@
         "z": "f260ed9417849607",
         "g": "490dfe89220d57c8",
         "name": "Format command to change page",
-        "func": "const numberStringMap = {\n  1: \"Preview-2\",\n  2: \"Sample-2\",\n  3: \"Acquisition-2\",\n  4: \"Segmentation-2\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
+        "func": "const numberStringMap = {\n  1: \"Preview\",\n  2: \"Sample\",\n  3: \"Acquisition\",\n  4: \"Segmentation\",\n  5: \"Visualization\"\n};\n\nconst key = numberStringMap[msg.payload];\n\nif (key) {\n  msg.payload = { \"page\": numberStringMap[msg.payload] };\n} else {\n  console.log(`Key not found for value: ${msg.payload}`);\n  msg.payload = { \"page\": null };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -19789,145 +19781,6 @@
         ],
         "x": 1235,
         "y": 280,
-        "wires": []
-    },
-    {
-        "id": "835e4cc018194bf5",
-        "type": "ui-template",
-        "z": "a975acfdbcf8fbf1",
-        "group": "ae9894da80aed523",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<template>\n    <div class=\"center-container\">\n        <h2 class=\"title\">Machine Shutdown Confirmation</h2>\n        <p class=\"message\">Are you sure you want to shut down the machine?</p>\n        <v-btn class=\"confirm-btn\" color=\"error\" dark @click=\"turnOff()\">Confirm</v-btn>\n        <v-btn class=\"cancel-btn\" dark @click=\"cancel()\">Cancel</v-btn>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            turnOff() {\n                this.send({ payload: `Shutdown` });\n            },\n            cancel() {\n                this.send({ payload: `Return` });\n            }\n        }\n    }\n</script>\n\n<style>\n    .center-container {\n        position: fixed;\n        padding: 5rem 5rem;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        text-align: center;\n        background-color: #f5f5f5; /* Légèrement moins blanc */\n        border-radius: 10px;\n        border: solid 1px #ccc;\n    }\n\n    .title {\n        font-size: 28px;\n        font-weight: bold;\n        margin-bottom: 1rem;\n    }\n\n    .message {\n        font-size: 16px;\n        margin-bottom: 3rem;\n    }\n\n    .confirm-btn, .cancel-btn {\n        margin-top: 20px; \n        padding: 15px 30px; \n        font-size: 18px;\n    }\n\n    .confirm-btn {\n        margin-right: 10px;\n    }\n\n    .cancel-btn {\n        margin-left: 10px;\n    }\n</style>\n",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 600,
-        "y": 40,
-        "wires": [
-            [
-                "ef9a2869e384edf8"
-            ]
-        ]
-    },
-    {
-        "id": "5b7e92dd119a9ab4",
-        "type": "ui-control",
-        "z": "a975acfdbcf8fbf1",
-        "name": "",
-        "ui": "1eeac55ba6b9065f",
-        "events": "all",
-        "x": 200,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "63d7611842b9ada1",
-        "type": "link in",
-        "z": "a975acfdbcf8fbf1",
-        "name": "link in 29",
-        "links": [
-            "fe665c51e023e21e"
-        ],
-        "x": 75,
-        "y": 40,
-        "wires": [
-            [
-                "5b7e92dd119a9ab4"
-            ]
-        ]
-    },
-    {
-        "id": "ef9a2869e384edf8",
-        "type": "switch",
-        "z": "a975acfdbcf8fbf1",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Shutdown",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Return",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 600,
-        "y": 100,
-        "wires": [
-            [
-                "21571395e72134a8"
-            ],
-            [
-                "bc2e46824eb150bc"
-            ]
-        ]
-    },
-    {
-        "id": "bc2e46824eb150bc",
-        "type": "change",
-        "z": "a975acfdbcf8fbf1",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"page\":\"Home\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 790,
-        "y": 120,
-        "wires": [
-            [
-                "fe665c51e023e21e"
-            ]
-        ]
-    },
-    {
-        "id": "fe665c51e023e21e",
-        "type": "link out",
-        "z": "a975acfdbcf8fbf1",
-        "name": "link out 28",
-        "mode": "link",
-        "links": [
-            "63d7611842b9ada1"
-        ],
-        "x": 915,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "21571395e72134a8",
-        "type": "link out",
-        "z": "a975acfdbcf8fbf1",
-        "name": "link out 111",
-        "mode": "link",
-        "links": [],
-        "x": 725,
-        "y": 80,
         "wires": []
     },
     {
