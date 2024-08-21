@@ -2255,24 +2255,6 @@
         "sessionExpiry": ""
     },
     {
-        "id": "e9df991e202040bd",
-        "type": "ui-theme",
-        "name": "Default",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094ce",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
         "id": "8a90010318b784c1",
         "type": "ui-group",
         "name": "prepare-bare",
@@ -2301,7 +2283,7 @@
     {
         "id": "3da386409fa03189",
         "type": "persistent values config",
-        "name": "Setting metadata",
+        "name": "Setting Metadata",
         "values": [
             {
                 "id": "a820b210-1122-11ef-859a-e74349e74cab",
@@ -11242,7 +11224,7 @@
         "g": "b383604c2ffb0c81",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -11343,7 +11325,7 @@
         "g": "b383604c2ffb0c81",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "read",
@@ -11489,7 +11471,7 @@
         "g": "b383604c2ffb0c81",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "read",
