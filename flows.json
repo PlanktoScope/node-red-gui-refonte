@@ -376,7 +376,7 @@
             "3f6329f6f64a5d57",
             "a9b6da2f2e6a066a"
         ],
-        "x": 64,
+        "x": 24,
         "y": 99,
         "w": 1192,
         "h": 202
@@ -398,7 +398,7 @@
             "343ad9e58c44f9d9",
             "ee4f56191c0a79e9"
         ],
-        "x": 404,
+        "x": 364,
         "y": 319,
         "w": 412,
         "h": 122
@@ -497,10 +497,10 @@
             "2cf602d6c4ccb957",
             "2298a8a5a04dade7"
         ],
-        "x": 104,
+        "x": 64,
         "y": 459,
-        "w": 992,
-        "h": 322
+        "w": 1272,
+        "h": 202
     },
     {
         "id": "490dfe89220d57c8",
@@ -1826,6 +1826,42 @@
         "h": 602
     },
     {
+        "id": "ead3a496052db315",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Get Acquisition array",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b66bf570c5656d37",
+            "41add91cc9a0f0d2",
+            "a7571dda2afc9bf5",
+            "dcdd3d182172e37b",
+            "abb1be992fc0f571",
+            "fae11872d37ca7ea",
+            "4cf3eec1ce2d4242",
+            "97882a7a4f73a796",
+            "baf89db54ae56a37",
+            "7ad651f163137130",
+            "c5ba95b82832310f",
+            "47704da97cb477f3",
+            "7d7daee3e1ed39f7",
+            "945e4b2465a1e732",
+            "3780e6a8fd770f31",
+            "0ce3d980ff14fa82",
+            "6d9b00293e8bc92f",
+            "596d0884550802d2",
+            "2f55e4293dac256a"
+        ],
+        "x": 64,
+        "y": 679,
+        "w": 1402,
+        "h": 322
+    },
+    {
         "id": "cae0178a8a69f787",
         "type": "junction",
         "z": "fb15c917381dd273",
@@ -1875,19 +1911,6 @@
         "layout": "grid",
         "theme": "c0ea559892f9bd33",
         "order": 10,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "ae9894da80aed523",
-        "type": "ui-group",
-        "name": "Section-shutdown",
-        "page": "b5447ffdf167fa24",
-        "width": "12",
-        "height": "12",
-        "order": 1,
-        "showTitle": false,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -11747,7 +11770,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n  <div class=\"acquisition-container\">\n    <h2>Acquisition settings</h2>\n    <!-- Acquisition ID -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Acquisition ID</label>\n      <v-text-field\n        v-model=\"acquisitionId\"\n        variant=\"outlined\"\n        density=\"compact\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog1\"\n        class=\"acquisition-my-v-text\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>This is an information dialog 1.</v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Number of images -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        color=\"#0a6eca\"\n        label=\"Number of images\"\n        step=\"1\"\n        min=\"1\"\n        max=\"2000\"\n        v-model=\"numberOfImages\"\n        class=\"acquisition-my-slider\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"numberOfImages\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"img\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog2\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>This is an information dialog 2.</v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Pumped volume -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        v-model=\"pumpedVolume\"\n        color=\"#0a6eca\"\n        label=\"Pumped volume\"\n        step=\"0.01\"\n        min=\"0.08\"\n        max=\"1\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"pumpedVolume\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"ml/min\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog3\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>This is an information dialog 3.</v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Information for Image volume & Volume total -->\n    <div class=\"information-image-volume\">\n      <p class=\"v-label v-slider__label acquisition-my-label\">Image volume: <span class=\"span-information\">{{msg.payload.imageVolume || \"Work in progress - Waiting back\"}}</span></p>\n      <p class=\"v-label v-slider__label acquisition-my-label\">Volume total: <span class=\"span-information\">{{msg.payload.totalVolume || \"Work in progress - Waiting back\"}}</span></p>\n    </div>\n    <!-- Acquisition comment -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Comment</label>\n      <v-textarea\n        v-model=\"comment\"\n        class=\"acquisition-my-v-textarea\"\n        variant=\"outlined\"\n        density=\"compact\"\n        @change=\"updateInfo\"\n      ></v-textarea>\n    </div>\n    <!-- Progress -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label-2\">Progression</label>\n      <v-progress-linear\n        color=\"#0a6eca\"\n        :value=\"msg.payload.progression\"\n        height=\"25\"\n        style=\"width: 80%;\"\n      >\n        <strong>{{msg.payload.progression || \"Work in progress - Waiting back\"}} % </strong>\n      </v-progress-linear>\n    </div>\n    <div class=\"acquisition-horizontal-alignment acquisition-progress-info\">\n      <label class=\"v-label v-slider__label\">Estimated duration left:</label>\n      <label class=\"v-label v-slider__label acquisition-my-value-label\">{{ msg.payload.estimated_time || \"Work in progress - Waiting back\" }}</label>\n    </div>\n    <!-- Stop / Start acquisition -->\n    <v-btn-toggle\n      v-model=\"toggle\"\n      variant=\"outlined\"\n      density=\"compact\"\n      color=\"#0a6eca\"\n      divided\n      class=\"acquisition-toggle-full-width acquisition-toggle\"\n    >\n      <v-btn\n        style=\"padding: 10px;\"\n        @click=\"stopAcquisition\"\n        :disabled=\"toggle == 0\"\n      >\n        <v-icon left>mdi-stop</v-icon>Stop\n      </v-btn>\n      <v-btn\n        style=\"padding: 10px;\"\n        @click=\"startAcquisition\"\n        :disabled=\"toggle == 1\"\n      >\n        <v-icon right>mdi-play</v-icon>Start\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      acquisitionId: '',\n      numberOfImages: '',\n      pumpedVolume: '',\n      comment: '',\n      delay_to_stabilize: '',\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      toggle: null,\n      state: \"not a state\",\n    };\n  },\n    watch: {\n      acquisitionId(newVal) {\n        if (newVal != this.acquisitionId) {\n            this.updateInfo();\n        }\n      },\n      numberOfImages(newVal) {\n        if (newVal != this.numberOfImages) {\n            this.updateInfo();\n        }\n        this.updateInfo();\n      },\n      pumpedVolume(newVal) {\n        if (newVal != this.pumpedVolume) {\n            this.updateInfo();\n        }\n        this.updateInfo();\n      },\n      comment(newVal) {\n        if (newVal != this.comment) {\n            this.updateInfo();\n        }\n        this.updateInfo();\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n                \n            if (msg.payload && msg.payload.progression) {\n              this.progression = msg.payload.progression;\n            }\n            if (msg.payload && msg.payload.delay_to_stabilize) {\n              this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n            }\n            if (msg.payload && msg.payload.acquisition_id) {\n              this.acquisitionId = msg.payload.acquisition_id;\n            }\n            if (msg.payload && msg.payload.number_of_images) {\n              this.numberOfImages = msg.payload.number_of_images;\n            }\n            if (msg.payload && msg.payload.pumped_volume) {\n              this.pumpedVolume = msg.payload.pumped_volume;\n            }\n            if (msg.payload && msg.payload.comment) {\n              this.comment = msg.payload.comment;\n            }\n\n            if (msg.payload && msg.payload.state) {\n                this.state = msg.payload.state;\n                this.toggle = this.state == \"waiting\" ? 0 : 1;\n            }\n    \n            if (['Error', 'Done', 'Configuration update error: Chosen id are already in use!'].includes(msg.payload.status)) {\n              this.toggle = 0;\n              this.state = \"waiting\";\n              this.updateInfo();\n            }\n    \n            this.delay_to_stabilize = msg.payload.delay_to_stabilize || this.delay_to_stabilize;\n            this.progression = msg.payload.progression || this.progression;\n          });\n        },\n        deep: true,\n        immediate: true,\n      },\n    },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    startAcquisition() {\n      this.toggle = 1;\n      this.updatePayload('start');\n    },\n    stopAcquisition() {\n      this.toggle = 0;\n      this.updatePayload('stop');\n    },\n    updateInfo() {\n        if (this.state != \"not a state\") {\n            this.send({\n                payloadToSave: {\n                acquisitionId: this.acquisitionId,\n                numberOfImages: this.numberOfImages.toString(),\n                pumpedVolume: this.pumpedVolume.toString(),\n                comment: this.comment,\n                state: this.state,\n                },\n            });\n        }\n    },\n    updatePayload(action) {\n      let payload = {};\n\n      if (action === 'start') {\n        payload = {\n          action: 'image',\n          pump_direction: \"FORWARD\",\n          volume: this.pumpedVolume,\n          nb_frame: this.numberOfImages,\n          sleep: parseInt(this.delay_to_stabilize, 10),\n        };\n        this.state = \"running\";\n      } else if (action === 'stop') {\n        payload = { action: 'stop' };\n        this.state = \"waiting\";\n      }\n\n      const payloadToSave = {\n          acquisitionId: this.acquisitionId,\n          numberOfImages: this.numberOfImages.toString(),\n          pumpedVolume: this.pumpedVolume.toString(),\n          comment: this.comment,\n          state: this.state,\n      };\n\n      this.send({\n        payloadToSave: payloadToSave,\n        payload: payload,\n        topic: 'imager/image'\n      });\n    },\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 1rem;\n  }\n\n  .acquisition-container {\n    padding: 10px 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n  }\n\n  .acquisition-my-label {\n    font-size: 0.9vw !important;\n    margin-bottom: 10px !important;\n    font-weight: bolder !important;\n  }\n\n  .acquisition-my-slider {\n    margin-right: 20px !important;\n    flex: 1 !important;\n  }\n\n  div.v-slider {\n    font-weight: bolder !important;\n    padding-right: 10px !important;\n  }\n\n  .acquisition-my-v-text-2 {\n    flex: 0.5 !important;\n  }\n\n  .acquisition-toggle .v-btn--disabled {\n    opacity: 1;\n  }\n\n  .acquisition-my-v-text-2 > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-textarea>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-value-label {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    color: #0a6eca !important;\n  }\n\n  .span-information {\n    font-weight: normal !important;\n    margin-left: 5px !important;\n  }\n\n  .information-image-volume {\n    display: flex;\n    flex-direction: column;\n    margin: 0rem 0rem 0rem 0rem;\n  }\n\n  .information-image-volume p {\n    margin-bottom: 2rem !important;\n  }\n\n  .acquisition-horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .acquisition-toggle-full-width {\n    width: 100% !important;\n    margin-top: 15px !important;\n  }\n\n  .v-progress-linear {\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .acquisition-toggle {\n    width: 100% !important;\n    border-color: #0a6eca !important;\n    color: #0a6eca !important;\n  }\n\n  .acquisition-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .acquisition-my-label-2 {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    flex: 1 !important;\n  }\n\n  .acquisition-progress-info {\n    margin-top: 12px !important;\n  }\n\n  .acquisition-custom-slider .v-slider__label {\n    font-size: 0.9vw !important;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"acquisition-container\">\n    <h2>Acquisition settings</h2>\n    <!-- Acquisition ID -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Acquisition ID</label>\n      <v-text-field\n        v-model=\"acquisitionId\"\n        variant=\"outlined\"\n        density=\"compact\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog1\"\n        class=\"acquisition-my-v-text\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>This is an information dialog 1.</v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Number of images -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        color=\"#0a6eca\"\n        label=\"Number of images\"\n        step=\"1\"\n        min=\"1\"\n        max=\"2000\"\n        v-model=\"numberOfImages\"\n        class=\"acquisition-my-slider\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"numberOfImages\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"img\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog2\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>This is an information dialog 2.</v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Pumped volume -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        v-model=\"pumpedVolume\"\n        color=\"#0a6eca\"\n        label=\"Pumped volume\"\n        step=\"0.01\"\n        min=\"0.08\"\n        max=\"1\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"pumpedVolume\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"ml/min\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog3\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>This is an information dialog 3.</v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Information for Image volume & Volume total -->\n    <div class=\"information-image-volume\">\n      <p class=\"v-label v-slider__label acquisition-my-label\">Image volume: <span class=\"span-information\">{{msg.payload.imageVolume || \"Work in progress - Waiting back\"}}</span></p>\n      <p class=\"v-label v-slider__label acquisition-my-label\">Volume total: <span class=\"span-information\">{{msg.payload.totalVolume || \"Work in progress - Waiting back\"}}</span></p>\n    </div>\n    <!-- Acquisition comment -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Comment</label>\n      <v-textarea\n        v-model=\"comment\"\n        class=\"acquisition-my-v-textarea\"\n        variant=\"outlined\"\n        density=\"compact\"\n        @change=\"updateInfo\"\n      ></v-textarea>\n    </div>\n    <!-- Progress -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label-2\">Progression</label>\n      <v-progress-linear\n        color=\"#0a6eca\"\n        :value=\"msg.payload.progression\"\n        height=\"25\"\n        style=\"width: 80%;\"\n      >\n        <strong>{{msg.payload.progression || \"Work in progress - Waiting back\"}} % </strong>\n      </v-progress-linear>\n    </div>\n    <div class=\"acquisition-horizontal-alignment acquisition-progress-info\">\n      <label class=\"v-label v-slider__label\">Estimated duration left:</label>\n      <label class=\"v-label v-slider__label acquisition-my-value-label\">{{ msg.payload.estimated_time || \"Work in progress - Waiting back\" }}</label>\n    </div>\n    <!-- Stop / Start acquisition -->\n    <v-btn-toggle\n      v-model=\"toggle\"\n      variant=\"outlined\"\n      density=\"compact\"\n      color=\"#0a6eca\"\n      divided\n      class=\"acquisition-toggle-full-width acquisition-toggle\"\n    >\n      <v-btn\n        style=\"padding: 10px;\"\n        @click=\"stopAcquisition\"\n        :disabled=\"toggle == 0\"\n      >\n        <v-icon left>mdi-stop</v-icon>Stop\n      </v-btn>\n      <v-btn\n        style=\"padding: 10px;\"\n        @click=\"startAcquisition\"\n        :disabled=\"toggle == 1\"\n      >\n        <v-icon right>mdi-play</v-icon>Start\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      acquisitionId: '',\n      numberOfImages: '',\n      pumpedVolume: '',\n      comment: '',\n      delay_to_stabilize: '',\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      toggle: null,\n      state: \"not a state\",\n    };\n  },\n    watch: {\n      acquisitionId(newVal) {\n        if (newVal != this.acquisitionId) {\n            this.updateInfo();\n        }\n      },\n      numberOfImages(newVal) {\n        if (newVal != this.numberOfImages) {\n            this.updateInfo();\n        }\n        this.updateInfo();\n      },\n      pumpedVolume(newVal) {\n        if (newVal != this.pumpedVolume) {\n            this.updateInfo();\n        }\n        this.updateInfo();\n      },\n      comment(newVal) {\n        if (newVal != this.comment) {\n            this.updateInfo();\n        }\n        this.updateInfo();\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n                \n            if (msg.payload && msg.payload.progression) {\n              this.progression = msg.payload.progression;\n            }\n            if (msg.payload && msg.payload.delay_to_stabilize) {\n              this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n            }\n            if (msg.payload && msg.payload.acquisition_id) {\n              this.acquisitionId = msg.payload.acquisition_id;\n            }\n            if (msg.payload && msg.payload.number_of_images) {\n              this.numberOfImages = msg.payload.number_of_images;\n            }\n            if (msg.payload && msg.payload.pumped_volume) {\n              this.pumpedVolume = msg.payload.pumped_volume;\n            }\n            if (msg.payload && msg.payload.comment) {\n              this.comment = msg.payload.comment;\n            }\n\n            if (msg.payload && msg.payload.state) {\n                this.state = msg.payload.state;\n                this.toggle = this.state == \"waiting\" ? 0 : 1;\n            }\n    \n            if (['Error', 'Done', 'Configuration update error: Chosen id are already in use!'].includes(msg.payload.status)) {\n              this.toggle = 0;\n              this.state = \"waiting\";\n              this.updateInfo();\n            }\n    \n            this.delay_to_stabilize = msg.payload.delay_to_stabilize || this.delay_to_stabilize;\n            this.progression = msg.payload.progression || this.progression;\n          });\n        },\n        deep: true,\n        immediate: true,\n      },\n    },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    startAcquisition() {\n      this.toggle = 1;\n      this.updatePayload('start');\n    },\n    stopAcquisition() {\n      this.toggle = 0;\n      this.updatePayload('stop');\n    },\n    updateInfo() {\n        if (this.state != \"not a state\") {\n            this.send({\n                payloadToSave: {\n                acquisitionId: this.acquisitionId,\n                numberOfImages: this.numberOfImages.toString(),\n                pumpedVolume: this.pumpedVolume.toString(),\n                comment: this.comment,\n                state: this.state,\n                },\n            });\n        }\n    },\n    updatePayload(action) {\n      let payload = {};\n\n      if (action === 'start') {\n        payload = {\n          action: 'image',\n          pump_direction: \"FORWARD\",\n          volume: this.pumpedVolume,\n          nb_frame: this.numberOfImages,\n          sleep: parseInt(this.delay_to_stabilize, 10),\n        };\n        this.state = \"running\";\n      } else if (action === 'stop') {\n        payload = { action: 'stop' };\n        this.state = \"waiting\";\n      }\n\n      const payloadToSave = {\n          acquisitionId: this.acquisitionId,\n          numberOfImages: this.numberOfImages.toString(),\n          pumpedVolume: this.pumpedVolume.toString(),\n          comment: this.comment,\n          state: this.state,\n      };\n\n      this.send({\n        payloadToSave: payloadToSave,\n        payload: payload,\n        topic: 'imager/image'\n      });\n    },\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 1rem;\n  }\n\n  .acquisition-container {\n    padding: 10px 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n  }\n\n  .acquisition-my-label {\n    font-size: 0.9vw !important;\n    margin-bottom: 10px !important;\n    font-weight: bolder !important;\n  }\n\n  .acquisition-my-slider {\n    margin-right: 20px !important;\n    flex: 1 !important;\n  }\n\n  div.v-slider {\n    font-weight: bolder !important;\n    padding-right: 10px !important;\n  }\n\n  .acquisition-my-v-text-2 {\n    flex: 0.8 !important;\n  }\n\n  .acquisition-toggle .v-btn--disabled {\n    opacity: 1;\n  }\n\n  .acquisition-my-v-text-2 > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-textarea>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-value-label {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    color: #0a6eca !important;\n  }\n\n  .span-information {\n    font-weight: normal !important;\n    margin-left: 5px !important;\n  }\n\n  .information-image-volume {\n    display: flex;\n    flex-direction: column;\n    margin: 0rem 0rem 0rem 0rem;\n  }\n\n  .information-image-volume p {\n    margin-bottom: 2rem !important;\n  }\n\n  .acquisition-horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .acquisition-toggle-full-width {\n    width: 100% !important;\n    margin-top: 15px !important;\n  }\n\n  .v-progress-linear {\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .acquisition-toggle {\n    width: 100% !important;\n    border-color: #0a6eca !important;\n    color: #0a6eca !important;\n  }\n\n  .acquisition-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .acquisition-my-label-2 {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    flex: 1 !important;\n  }\n\n  .acquisition-progress-info {\n    margin-top: 12px !important;\n  }\n\n  .acquisition-custom-slider .v-slider__label {\n    font-size: 0.9vw !important;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -13130,7 +13153,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 540,
+        "x": 500,
         "y": 540,
         "wires": [
             [
@@ -13158,8 +13181,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 540,
-        "y": 700,
+        "x": 780,
+        "y": 580,
         "wires": [
             [
                 "c18005dcbaf22026",
@@ -13186,7 +13209,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 530,
+        "x": 490,
         "y": 140,
         "wires": [
             [
@@ -13213,7 +13236,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 540,
+        "x": 500,
         "y": 180,
         "wires": [
             [
@@ -13229,7 +13252,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 980,
+        "x": 940,
         "y": 180,
         "wires": [
             []
@@ -13248,7 +13271,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
+        "x": 720,
         "y": 180,
         "wires": [
             [
@@ -13269,7 +13292,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
+        "x": 700,
         "y": 140,
         "wires": [
             [
@@ -13285,7 +13308,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 960,
+        "x": 920,
         "y": 140,
         "wires": [
             []
@@ -13310,7 +13333,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 540,
+        "x": 500,
         "y": 400,
         "wires": [
             [
@@ -13332,7 +13355,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
+        "x": 640,
         "y": 400,
         "wires": [
             [
@@ -13353,8 +13376,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 720,
+        "x": 1140,
+        "y": 600,
         "wires": [
             [
                 "9529b63ced697421"
@@ -13413,8 +13436,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 690,
-        "y": 700,
+        "x": 930,
+        "y": 580,
         "wires": [
             [
                 "e6ba170eea1efeb4"
@@ -13434,8 +13457,8 @@
         "links": [
             "da2a5658f65d64a4"
         ],
-        "x": 1055,
-        "y": 720,
+        "x": 1295,
+        "y": 600,
         "wires": []
     },
     {
@@ -13448,8 +13471,8 @@
         "links": [
             "4b6824e2ecaa9016"
         ],
-        "x": 955,
-        "y": 680,
+        "x": 1195,
+        "y": 560,
         "wires": []
     },
     {
@@ -13462,7 +13485,7 @@
             "e0327fbe42203370",
             "62d2042e91fbe197"
         ],
-        "x": 425,
+        "x": 385,
         "y": 580,
         "wires": [
             [
@@ -13478,9 +13501,10 @@
         "name": "link in 50",
         "links": [
             "a0368732ccfa08d8",
-            "c491425e02dc2976"
+            "c491425e02dc2976",
+            "2f55e4293dac256a"
         ],
-        "x": 445,
+        "x": 405,
         "y": 400,
         "wires": [
             [
@@ -13498,7 +13522,7 @@
         "links": [
             "67b91503eb38afe7"
         ],
-        "x": 775,
+        "x": 735,
         "y": 400,
         "wires": []
     },
@@ -13521,7 +13545,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 550,
+        "x": 510,
         "y": 220,
         "wires": [
             [
@@ -13554,7 +13578,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 310,
+        "x": 270,
         "y": 540,
         "wires": [
             [
@@ -13572,7 +13596,7 @@
         "links": [
             "343ad9e58c44f9d9"
         ],
-        "x": 145,
+        "x": 105,
         "y": 540,
         "wires": [
             [
@@ -13590,8 +13614,8 @@
         "links": [
             "49ea401a0745e446"
         ],
-        "x": 655,
-        "y": 740,
+        "x": 895,
+        "y": 620,
         "wires": []
     },
     {
@@ -13619,7 +13643,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 300,
+        "x": 260,
         "y": 220,
         "wires": [
             [
@@ -13637,7 +13661,7 @@
         "links": [
             "a502f95380d7ea32"
         ],
-        "x": 105,
+        "x": 65,
         "y": 220,
         "wires": [
             [
@@ -13680,6 +13704,7 @@
         "id": "b66bf570c5656d37",
         "type": "exec",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "command": "find data/img/ -name \"metadata.json\"",
         "addpay": "",
         "append": "",
@@ -13687,9 +13712,9 @@
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "",
-        "x": 310,
-        "y": 920,
+        "name": "find \"metadata.json\"",
+        "x": 240,
+        "y": 760,
         "wires": [
             [
                 "41add91cc9a0f0d2"
@@ -13702,6 +13727,7 @@
         "id": "41add91cc9a0f0d2",
         "type": "split",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "name": "",
         "splt": "\\n",
         "spltType": "str",
@@ -13710,12 +13736,11 @@
         "stream": false,
         "addname": "",
         "property": "payload",
-        "x": 550,
-        "y": 920,
+        "x": 430,
+        "y": 760,
         "wires": [
             [
-                "dcdd3d182172e37b",
-                "4ccc9f3dbff5355d"
+                "dcdd3d182172e37b"
             ]
         ]
     },
@@ -13723,6 +13748,7 @@
         "id": "a7571dda2afc9bf5",
         "type": "file in",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "name": "open \"metadata.json\"",
         "filename": "filename",
         "filenameType": "msg",
@@ -13731,8 +13757,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 1100,
-        "y": 920,
+        "x": 980,
+        "y": 760,
         "wires": [
             [
                 "fae11872d37ca7ea"
@@ -13743,6 +13769,7 @@
         "id": "dcdd3d182172e37b",
         "type": "change",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "name": "",
         "rules": [
             {
@@ -13758,8 +13785,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 720,
-        "y": 920,
+        "x": 600,
+        "y": 760,
         "wires": [
             [
                 "abb1be992fc0f571"
@@ -13770,6 +13797,7 @@
         "id": "abb1be992fc0f571",
         "type": "switch",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "name": "Not empty",
         "property": "filename",
         "propertyType": "msg",
@@ -13781,13 +13809,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 910,
-        "y": 920,
+        "x": 790,
+        "y": 760,
         "wires": [
             [
                 "a7571dda2afc9bf5",
-                "7ad651f163137130",
-                "00356111d14fa4fc"
+                "7ad651f163137130"
             ]
         ]
     },
@@ -13795,67 +13822,34 @@
         "id": "fae11872d37ca7ea",
         "type": "function",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "name": "Merge all metadata in flow.acquisition_array",
-        "func": "const acquisition_array = flow.get('acquisition_array') || [];\n\nconst metadata = JSON.parse(msg.payload);\n\nif (metadata.description && typeof metadata.description === 'object' && Object.keys(metadata.description).length > 0) {\n    acquisition_array.push(metadata.description);\n    flow.set('acquisition_array', acquisition_array);\n    msg.payload = acquisition_array;\n} else {\n    msg.payload = \"\";\n}\n\nreturn msg;\n",
+        "func": "const acquisition_array = flow.get('acquisition_array') || [];\n\nconst metadata = JSON.parse(msg.payload);\n\nif (metadata.description && typeof metadata.description === 'object' && Object.keys(metadata.description).length > 0) {\n    acquisition_array.push(metadata.description);\n\n    const unique_array = [...new Set(acquisition_array.map(JSON.stringify))].map(JSON.parse);\n\n    flow.set('acquisition_array', unique_array);\n    msg.payload = unique_array;\n} else {\n    msg.payload = \"\";\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1390,
-        "y": 920,
+        "x": 1270,
+        "y": 760,
         "wires": [
             [
-                "ce3abd70727f1374",
                 "baf89db54ae56a37"
             ]
         ]
     },
     {
-        "id": "ce3abd70727f1374",
-        "type": "debug",
-        "z": "00a14f98244d252e",
-        "name": "acquisition_array",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1470,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "4ccc9f3dbff5355d",
-        "type": "debug",
-        "z": "00a14f98244d252e",
-        "name": "List of \"metadata.json\" founded",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 630,
-        "y": 960,
-        "wires": []
-    },
-    {
         "id": "4cf3eec1ce2d4242",
         "type": "link in",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "name": "link in 179",
         "links": [
             "a502f95380d7ea32"
         ],
-        "x": 125,
-        "y": 920,
+        "x": 105,
+        "y": 760,
         "wires": [
             [
                 "b66bf570c5656d37"
@@ -13866,43 +13860,28 @@
         "id": "97882a7a4f73a796",
         "type": "function",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "name": "Format payload to display",
-        "func": "// Récupère le tableau des descriptions et des chemins stockés dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\nconst acquisition_path_array = flow.get('acquisition_path_array') || [];\n\n// Fonction pour extraire acquisitionID du chemin\nfunction extractAcquisitionID(path) {\n    const parts = path.split('/');\n    return parts[parts.length - 2];  // avant-dernier élément du chemin\n}\n\n// Crée une correspondance entre acquisitionID et path\nconst pathMap = new Map(acquisition_path_array.map(item => [extractAcquisitionID(item.path), item.path]));\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\",\n            path: pathMap.get(acquisitionID) || \"\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
+        "func": "// Récupère le tableau des descriptions et des chemins stockés dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\nconst acquisition_path_array = flow.get('acquisition_path_array') || [];\n\n\n\n// Fonction pour extraire acquisitionID du chemin\nfunction extractAcquisitionID(path) {\n    const parts = path.split('/');\n    return parts[parts.length - 2];  // avant-dernier élément du chemin\n}\n\n// Crée une correspondance entre acquisitionID et path\nconst pathMap = new Map(acquisition_path_array.map(item => [extractAcquisitionID(item.path), item.path]));\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\",\n            path: pathMap.get(acquisitionID) || \"\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1450,
-        "y": 1000,
+        "x": 1330,
+        "y": 840,
         "wires": [
             [
-                "59fa9fd249f9d575",
-                "c491425e02dc2976"
+                "c5ba95b82832310f"
             ]
         ]
-    },
-    {
-        "id": "59fa9fd249f9d575",
-        "type": "debug",
-        "z": "00a14f98244d252e",
-        "name": "debug 48",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1500,
-        "y": 1040,
-        "wires": []
     },
     {
         "id": "baf89db54ae56a37",
         "type": "switch",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "name": "Not empty",
         "property": "payload",
         "propertyType": "msg",
@@ -13914,26 +13893,13 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1490,
-        "y": 960,
+        "x": 1370,
+        "y": 800,
         "wires": [
             [
                 "97882a7a4f73a796"
             ]
         ]
-    },
-    {
-        "id": "c491425e02dc2976",
-        "type": "link out",
-        "z": "00a14f98244d252e",
-        "name": "link out 107",
-        "mode": "link",
-        "links": [
-            "4b6824e2ecaa9016"
-        ],
-        "x": 1625,
-        "y": 1000,
-        "wires": []
     },
     {
         "id": "2cf602d6c4ccb957",
@@ -13949,7 +13915,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 330,
+        "x": 290,
         "y": 500,
         "wires": [
             [
@@ -13972,7 +13938,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
+        "x": 530,
         "y": 500,
         "wires": []
     },
@@ -13994,7 +13960,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 690,
+        "x": 650,
         "y": 540,
         "wires": [
             [
@@ -14017,7 +13983,7 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 810,
+        "x": 770,
         "y": 540,
         "wires": []
     },
@@ -14030,7 +13996,7 @@
         "links": [
             "a502f95380d7ea32"
         ],
-        "x": 145,
+        "x": 105,
         "y": 580,
         "wires": [
             [
@@ -14051,7 +14017,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 270,
+        "x": 230,
         "y": 580,
         "wires": [
             []
@@ -14070,8 +14036,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 680,
+        "x": 1090,
+        "y": 560,
         "wires": [
             [
                 "a0368732ccfa08d8"
@@ -14082,6 +14048,7 @@
         "id": "7ad651f163137130",
         "type": "function",
         "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
         "name": "function 14",
         "func": "const newValue = msg.filename;\nlet actualArray = flow.get('acquisition_path_array') || [];\n\n// Ajouter le nouveau chemin s'il n'est pas vide et n'existe pas déjà dans le tableau\nif (newValue && !actualArray.some(item => item.path === newValue)) {\n    actualArray.push({\n        path: newValue\n    });\n}\n\n// Supprimer les éléments avec des chemins vides ou nuls\nactualArray = actualArray.filter(item => item.path);\n\n// Supprimer les doublons en utilisant un Set\nconst uniquePaths = Array.from(new Set(actualArray.map(item => item.path))).map(path => ({ path }));\n\n// Mettre à jour le tableau dans le contexte du flux\nflow.set('acquisition_path_array', uniquePaths);\n\n// Mettre à jour le payload du message\nmsg.payload = uniquePaths;\n\nreturn msg;\n",
         "outputs": 1,
@@ -14090,46 +14057,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
-        "y": 880,
+        "x": 950,
+        "y": 720,
         "wires": [
-            [
-                "8fca3cb19c201138"
-            ]
+            []
         ]
-    },
-    {
-        "id": "8fca3cb19c201138",
-        "type": "debug",
-        "z": "00a14f98244d252e",
-        "name": "debug 58",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1220,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "00356111d14fa4fc",
-        "type": "debug",
-        "z": "00a14f98244d252e",
-        "name": "debug 59",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "filename",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1060,
-        "y": 960,
-        "wires": []
     },
     {
         "id": "ee4f56191c0a79e9",
@@ -14144,7 +14076,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
+        "x": 640,
         "y": 360,
         "wires": []
     },
@@ -14166,7 +14098,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 690,
+        "x": 650,
         "y": 580,
         "wires": [
             [
@@ -14182,7 +14114,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1120,
+        "x": 1080,
         "y": 200,
         "wires": [
             []
@@ -14207,7 +14139,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 950,
+        "x": 910,
         "y": 220,
         "wires": [
             [
@@ -14231,7 +14163,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
+        "x": 720,
         "y": 220,
         "wires": [
             [
@@ -14262,7 +14194,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1110,
+        "x": 1070,
         "y": 240,
         "wires": [
             [
@@ -14283,7 +14215,7 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1215,
+        "x": 1175,
         "y": 220,
         "wires": []
     },
@@ -14297,8 +14229,193 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1215,
+        "x": 1175,
         "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c5ba95b82832310f",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "Remove filename on path",
+        "func": "const path_array = [];\n\nmsg.payload = msg.payload.map(item => {\n    item.path = item.path.replace(/\\/[^\\/]+\\.json$/, '/');\n    path_array.push(item.path);\n    return item;\n});\n\nmsg = {\n    payload: msg.payload,\n    path_array\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 900,
+        "wires": [
+            [
+                "47704da97cb477f3"
+            ]
+        ]
+    },
+    {
+        "id": "47704da97cb477f3",
+        "type": "split",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": true,
+        "addname": "",
+        "property": "path_array",
+        "x": 430,
+        "y": 900,
+        "wires": [
+            [
+                "945e4b2465a1e732"
+            ]
+        ]
+    },
+    {
+        "id": "7d7daee3e1ed39f7",
+        "type": "exec",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "command": "",
+        "addpay": "command",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 790,
+        "y": 900,
+        "wires": [
+            [
+                "6d9b00293e8bc92f"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "945e4b2465a1e732",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "Make the bash command",
+        "func": "// Récupère le chemin à partir de msg.filename\nconst path = msg.path_array.replace(/\\/[^\\/]+$/, '/');\n\n// Construire la commande pour compter les fichiers .png\nmsg.command = `ls -1 ${path}*.jpg | wc -l`;\nmsg.oldPayload = msg.payload;\n// Ajouter le chemin au message\nmsg.path = path;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 900,
+        "wires": [
+            [
+                "7d7daee3e1ed39f7"
+            ]
+        ]
+    },
+    {
+        "id": "3780e6a8fd770f31",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "function 15",
+        "func": "const oldPayload = flow.get('oldPayload') || [];\nlet replaced = false;\nlet nb = 0;\n\nif (oldPayload.length > 0) {\n    msg.oldPayload = oldPayload.map(item => {\n        if (item.image === \"WIP\" && !replaced) {\n            item.image = nb;\n            // item.image = msg.payload;\n            replaced = true;\n            nb++;\n        }\n        return item;\n    });\n} else {\n    msg.oldPayload = msg.payload.map(item => {\n        if (item.image === \"WIP\" && !replaced) {\n            // item.image = msg.payload;\n            item.image = nb;\n            replaced = true;\n            nb++;\n        }\n        return item;\n    });\n}\n\nflow.set(\"oldPayload\", msg.oldPayload);\nmsg.payload = msg.oldPayload;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 940,
+        "wires": [
+            [
+                "0ce3d980ff14fa82",
+                "2f55e4293dac256a"
+            ]
+        ]
+    },
+    {
+        "id": "0ce3d980ff14fa82",
+        "type": "debug",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "debug 66",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "6d9b00293e8bc92f",
+        "type": "split",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 930,
+        "y": 900,
+        "wires": [
+            [
+                "596d0884550802d2"
+            ]
+        ]
+    },
+    {
+        "id": "596d0884550802d2",
+        "type": "switch",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "Not empty",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 940,
+        "wires": [
+            [
+                "3780e6a8fd770f31"
+            ]
+        ]
+    },
+    {
+        "id": "2f55e4293dac256a",
+        "type": "link out",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "link out 134",
+        "mode": "link",
+        "links": [
+            "4b6824e2ecaa9016"
+        ],
+        "x": 1305,
+        "y": 960,
         "wires": []
     },
     {
