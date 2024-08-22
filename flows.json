@@ -1207,52 +1207,9 @@
             "b4a6261d50d0a9c3"
         ],
         "x": 134,
-        "y": 999,
+        "y": 839,
         "w": 1732,
         "h": 262
-    },
-    {
-        "id": "3b32c3c9506eb933",
-        "type": "group",
-        "z": "70f558eb9d60b6fc",
-        "name": "Settings",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "dc1b246968e8333a",
-            "2efa775925b01a42",
-            "9f562d703ae1ccbf",
-            "a8b40501e4c53fed",
-            "997c71e9dcf596e8",
-            "6def4e7e67623547",
-            "883c8bcbd98bb3c3",
-            "f65e14920a75ce9f",
-            "20f0245cbefbbf69",
-            "4317b389f6b1b156",
-            "60bc270ddfa20f0b",
-            "16496890b192797c",
-            "c51927142025c58c",
-            "edd15056c8b5ffc8",
-            "14dab3e6993ce1dd",
-            "c6633d19eafe05ef",
-            "650a00ed7ac1e9b8",
-            "b7d43a5399350e4c",
-            "b0669e2b7f125e7e",
-            "bff53e3e25fde770",
-            "e0d432878556942b",
-            "9a38a6dff2041265",
-            "54b253242d0655f7",
-            "a3ef94a3cec0838d",
-            "29745aa8446e900f",
-            "842b8b30fac3aafc"
-        ],
-        "x": 134,
-        "y": 439,
-        "w": 1532,
-        "h": 362
     },
     {
         "id": "5c8dc5f5e1904bf8",
@@ -1435,6 +1392,53 @@
         "y": 219,
         "w": 658,
         "h": 708
+    },
+    {
+        "id": "44d3381948f5bea1",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "Acquisition settings",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "dc1b246968e8333a",
+            "2efa775925b01a42",
+            "9f562d703ae1ccbf",
+            "a8b40501e4c53fed",
+            "997c71e9dcf596e8",
+            "f65e14920a75ce9f",
+            "20f0245cbefbbf69",
+            "4317b389f6b1b156",
+            "60bc270ddfa20f0b",
+            "c51927142025c58c",
+            "edd15056c8b5ffc8",
+            "14dab3e6993ce1dd",
+            "c6633d19eafe05ef",
+            "650a00ed7ac1e9b8",
+            "b7d43a5399350e4c",
+            "b0669e2b7f125e7e",
+            "e0d432878556942b",
+            "9a38a6dff2041265",
+            "54b253242d0655f7",
+            "a3ef94a3cec0838d",
+            "29745aa8446e900f",
+            "842b8b30fac3aafc",
+            "3e4c8594c13249ca",
+            "83f49a7b01087a92",
+            "8c41d88befc8e7d3",
+            "78678b94b28b09e8",
+            "21a88ef6574955eb",
+            "e2e666a913b7a662",
+            "59766803528ece98",
+            "93fa8ee375ebf8d9"
+        ],
+        "x": 134,
+        "y": 439,
+        "w": 1432,
+        "h": 382
     },
     {
         "id": "b08415909e5dc4da",
@@ -2904,7 +2908,7 @@
                 "id": "cb9cb620-4ffd-11ef-8af0-151edf01ff7c",
                 "name": "acquisition_id",
                 "datatype": "str",
-                "default": "",
+                "default": "acq_id_0",
                 "description": "TO DO",
                 "scope": "global",
                 "storage": "default"
@@ -2932,6 +2936,15 @@
                 "name": "pumped_volume",
                 "datatype": "str",
                 "default": "0.08",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "cd11cb30-606a-11ef-9c85-81609e7d2b3e",
+                "name": "state",
+                "datatype": "str",
+                "default": "waiting",
                 "description": "TO DO",
                 "scope": "global",
                 "storage": "default"
@@ -3231,7 +3244,7 @@
         "z": "2d41a8ed5aea3449",
         "g": "fbcc2ce08c4d6887",
         "name": "Create payload for the next file",
-        "func": "msg.payload = {\n    \"Sample_Metadata_volume_of_the_collector\": \"0\",\n    \"Setting_metadata_dataset_path\": \"\",\n    \"Visualization_Graphs_map\": \"\",\n    \"Visualization_Graphs_datatable\": \"\",\n    \"Visualization_Graphs_chartsection_charts\": [],\n    \"Visualization_Graphs_chartsection_metadata\": [],\n    \"Visualization_Graphs_infotable\": \"\",\n    \"Setting_metadata_coord-format\": \"Decimal degrees (DD)\",\n    \"Setting_metadata_operator_name\": \"a\",\n    \"Setting_metadata_operator_email\": \"a\",\n    \"Setting_metadata_flowrate_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\",\n        \"45\"\n    ],\n    \"Setting_metadata_volume_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\"\n    ],\n    \"Setting_metadata_focus_preset\": [\n        \"0.10\",\n        \"0.50\",\n        \"10\",\n        \"45\"\n    ],\n    \"Setting_metadata_delay_to_stabilized\": \"2\",\n    \"Setting_metadata_flowrate_in_between\": \"2\",\n    \"Setting_metadata_MSTS\": \"10\",\n    \"Hard-coded_value_model_list\": [\n        \"PlanktoScope v2.1\",\n        \"PlanktoScope v2.3\",\n        \"PlanktoScope v2.5\",\n        \"PlanktoScope v2.6\"\n    ],\n    \"Setting_metadata_first-visit\": false,\n    \"Sample_Metadata_project_name\": \"default project name\",\n    \"Sample_Metadata_sample_id\": \"default id\",\n    \"Sample_Metadata_starting_point_date\": \"0000-00-00\",\n    \"Sample_Metadata_starting_point_time\": \"00:00\",\n    \"Sample_Metadata_starting_point_gps\": {},\n    \"Sample_Metadata_ending_point_date\": \"0000-00-00\",\n    \"Sample_Metadata_ending_point_time\": \"00:00\",\n    \"Sample_Metadata_ending_point_gps\": {},\n    \"Sample_Metadata_mouth_opening_diam\": \"0\",\n    \"Sample_Metadata_length_of_the_net\": \"0\",\n    \"Sample_Metadata_mesh_size\": \"0\",\n    \"Sample_Metadata_filtered_volume\": \"0\",\n    \"Sample_Metadata_dillution_factor\": \"0\",\n    \"Sample_Metadata_sieve_mesh_size\": \"0\",\n    \"Sample_Metadata_depth_of_the_sample\": \"0\",\n    \"Sample_Metadata_sample_comment\": \"\",\n    \"Sample_Metadata_volume_of_the_bottle\": \"0\",\n    \"Sample_Metadata_depth_min\": \"0\",\n    \"Sample_Metadata_depth_max\": \"0\",\n    \"Sample_Metadata_depth\": \"0\",\n    \"Setting_metadata_model_selected\": \"PlanktoScope v2.6\",\n    \"Sample_Metadata_sampling_gear\": \"Lab culture\",\n    \"Acquisition_Metadata_acquisition_id\": \"\",\n    \"Acquisition_Metadata_acquisition_comment\": \"\",\n    \"Setting_Metadata_delay_to_stabilized\": \"2\",\n    \"Setting_Metadata_operator_name\": \"Manu Prakash\",\n    \"Setting_Metadata_volume_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\"\n    ],\n    \"Setting_Metadata_flowrate_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\",\n        \"45\"\n    ],\n    \"Setting_Metadata_operator_email\": \"manu@fairscope.com\",\n    \"Setting_Metadata_MSTS\": \"10\",\n    \"Setting_Metadata_focus_preset\": [\n        \"0.10\",\n        \"0.50\",\n        \"10\",\n        \"45\"\n    ],\n    \"Setting_Metadata_first-visit\": true,\n    \"Setting_Metadata_coord-format\": \"Decimal degrees (DD)\",\n    \"Setting_Metadata_flowrate_in_between\": \"2\",\n    \"Setting_Metadata_dataset_path\": \"\",\n    \"Setting_Metadata_model_selected\": \"PlanktoScope v2.6\"  \n}\n\nreturn msg;",
+        "func": "msg.payload = {\n    \"Sample_Metadata_volume_of_the_collector\": \"0\",\n    \"Setting_metadata_dataset_path\": \"\",\n    \"Visualization_Graphs_map\": \"\",\n    \"Visualization_Graphs_datatable\": \"\",\n    \"Visualization_Graphs_chartsection_charts\": [],\n    \"Visualization_Graphs_chartsection_metadata\": [],\n    \"Visualization_Graphs_infotable\": \"\",\n    \"Setting_metadata_coord-format\": \"Decimal degrees (DD)\",\n    \"Setting_metadata_operator_name\": \"a\",\n    \"Setting_metadata_operator_email\": \"a\",\n    \"Setting_metadata_flowrate_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\",\n        \"45\"\n    ],\n    \"Setting_metadata_volume_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\"\n    ],\n    \"Setting_metadata_focus_preset\": [\n        \"0.10\",\n        \"0.50\",\n        \"10\",\n        \"45\"\n    ],\n    \"Setting_metadata_delay_to_stabilized\": \"2\",\n    \"Setting_metadata_flowrate_in_between\": \"2\",\n    \"Setting_metadata_MSTS\": \"10\",\n    \"Hard-coded_value_model_list\": [\n        \"PlanktoScope v2.1\",\n        \"PlanktoScope v2.3\",\n        \"PlanktoScope v2.5\",\n        \"PlanktoScope v2.6\"\n    ],\n    \"Setting_metadata_first-visit\": false,\n    \"Sample_Metadata_project_name\": \"default project name\",\n    \"Sample_Metadata_sample_id\": \"default id\",\n    \"Sample_Metadata_starting_point_date\": \"0000-00-00\",\n    \"Sample_Metadata_starting_point_time\": \"00:00\",\n    \"Sample_Metadata_starting_point_gps\": {},\n    \"Sample_Metadata_ending_point_date\": \"0000-00-00\",\n    \"Sample_Metadata_ending_point_time\": \"00:00\",\n    \"Sample_Metadata_ending_point_gps\": {},\n    \"Sample_Metadata_mouth_opening_diam\": \"0\",\n    \"Sample_Metadata_length_of_the_net\": \"0\",\n    \"Sample_Metadata_mesh_size\": \"0\",\n    \"Sample_Metadata_filtered_volume\": \"0\",\n    \"Sample_Metadata_dillution_factor\": \"0\",\n    \"Sample_Metadata_sieve_mesh_size\": \"0\",\n    \"Sample_Metadata_depth_of_the_sample\": \"0\",\n    \"Sample_Metadata_sample_comment\": \"\",\n    \"Sample_Metadata_volume_of_the_bottle\": \"0\",\n    \"Sample_Metadata_depth_min\": \"0\",\n    \"Sample_Metadata_depth_max\": \"0\",\n    \"Sample_Metadata_depth\": \"0\",\n    \"Setting_metadata_model_selected\": \"PlanktoScope v2.6\",\n    \"Sample_Metadata_sampling_gear\": \"Lab culture\",\n    \"Acquisition_Metadata_acquisition_id\": \"acq_id_0\",\n    \"Acquisition_Metadata_acquisition_comment\": \"\",\n    \"Acquisition_Metadata_state\": \"waiting\",\n    \"Setting_Metadata_delay_to_stabilized\": \"2\",\n    \"Setting_Metadata_operator_name\": \"Manu Prakash\",\n    \"Setting_Metadata_volume_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\"\n    ],\n    \"Setting_Metadata_flowrate_preset\": [\n        \"0.01\",\n        \"0.1\",\n        \"1\",\n        \"45\"\n    ],\n    \"Setting_Metadata_operator_email\": \"manu@fairscope.com\",\n    \"Setting_Metadata_MSTS\": \"10\",\n    \"Setting_Metadata_focus_preset\": [\n        \"0.10\",\n        \"0.50\",\n        \"10\",\n        \"45\"\n    ],\n    \"Setting_Metadata_first-visit\": true,\n    \"Setting_Metadata_coord-format\": \"Decimal degrees (DD)\",\n    \"Setting_Metadata_flowrate_in_between\": \"2\",\n    \"Setting_Metadata_dataset_path\": \"\",\n    \"Setting_Metadata_model_selected\": \"PlanktoScope v2.6\"  \n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -11725,7 +11738,7 @@
         "id": "dc1b246968e8333a",
         "type": "ui-template",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "group": "0e652f1b8a07fae8",
         "page": "",
         "ui": "",
@@ -11734,7 +11747,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n  <div class=\"acquisition-container\">\n    <h2>Acquisition settings</h2>\n    <!-- Acquisition ID -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Acquisition ID</label>\n      <v-text-field\n        v-model=\"acquisitionId\"\n        variant=\"outlined\"\n        density=\"compact\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog1\"\n        class=\"acquisition-my-v-text\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Number of images -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        color=\"#0a6eca\"\n        label=\"Number of images\"\n        step=\"1\"\n        min=\"1\"\n        max=\"2000\"\n        v-model=\"numberOfImages\"\n        class=\"acquisition-my-slider acquisition-custom-slider\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"numberOfImages\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"img\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog2\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Pumped volume -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        v-model=\"pumpedVolume\"\n        class=\"acquisition-my-slider acquisition-custom-slider\"\n        color=\"#0a6eca\"\n        label=\"Pumped volume\"\n        step=\"0.01\"\n        min=\"0.08\"\n        max=\"1\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"pumpedVolume\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"ml/min\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog3\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Information for Image volume & Volume total -->\n    <div class=\"information-image-volume\">\n      <p class=\"v-label v-slider__label acquisition-my-label\">Image volume: <span class=\"span-information\">{{msg.payload.imageVolume || \"Work in progress - Wainting back\"}}</span></p>\n      <p class=\"v-label v-slider__label acquisition-my-label\">Volume total: <span class=\"span-information\">{{msg.payload.totalVolume || \"Work in progress - Wainting back\"}}</span></p>\n    </div>\n    <!-- Acquisition comment -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Comment</label>\n      <v-textarea\n        v-model=\"comment\"\n        class=\"acquisition-my-v-textarea\"\n        variant=\"outlined\"\n        density=\"compact\"\n        @change=\"updateInfo\"\n      ></v-textarea>\n    </div>\n    <!-- Progress -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label-2\">progression</label>\n      <v-progress-linear\n        color=\"#0a6eca\"\n        :value=\"msg.payload.progression\"\n        height=\"25\"\n        style=\"width: 80%;\"\n      >\n        <strong>{{msg.payload.progression || \"Work in progress - Wainting back\"}} % </strong>\n      </v-progress-linear>\n    </div>\n    <div class=\"acquisition-horizontal-alignment acquisition-progress-info\">\n      <label class=\"v-label v-slider__label\">Estimated duration left:</label>\n      <label class=\"v-label v-slider__label acquisition-my-value-label\">{{ msg.payload.estimated_time || \"Work in progress - Wainting back\" }}</label>\n    </div>\n    <!-- Stop / Start acquisition -->\n    <v-btn-toggle\n      v-model=\"toggle\"\n      variant=\"outlined\"\n      density=\"compact\"\n      color=\"#0a6eca\"\n      divided\n      class=\"acquisition-toggle-full-width acquisition-toggle\"\n      @change=\"updatePayload\"\n    >\n      <v-btn style=\"padding: 10px;\">\n        <v-icon left>mdi-stop</v-icon>Stop\n      </v-btn>\n      <v-btn style=\"padding: 10px;\">\n        <v-icon right>mdi-play</v-icon>Start\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      acquisitionId: '',\n      numberOfImages: '',\n      pumpedVolume: '',\n      comment: '',\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      toggle: 0,\n    };\n  },\n  watch: {\n    toggle(newVal) {\n      this.updatePayload();\n    },\n    acquisitionId(newVal) {\n      this.updateInfo();\n    },\n    numberOfImages(newVal) {\n      this.updateInfo();\n    },\n    pumpedVolume(newVal) {\n      this.updateInfo();\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload.progression) {\n            this.progression = msg.payload.progression;\n          }\n          if (msg.payload && msg.payload.delay_to_stabilize) {\n            this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n          }\n          if (msg.payload && msg.payload.acquisition_id) {\n            this.acquisitionId = msg.payload.acquisition_id;\n          }\n          if (msg.payload && msg.payload.number_of_images) {\n            this.numberOfImages = msg.payload.number_of_images;\n          }\n          if (msg.payload && msg.payload.pumped_volume) {\n            this.pumpedVolume = msg.payload.pumped_volume;\n          }\n          if (msg.payload && msg.payload.comment) {\n            this.comment = msg.payload.comment;\n          }\n          if (msg.payload.status && msg.payload.status === \"Done\") {\n            this.toggle = 0;\n          }\n        });\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    updateInfo() {\n        this.send({\n            payloadToSave: {\n                acquisitionId: this.acquisitionId,\n                numberOfImages: this.numberOfImages.toString(),\n                pumpedVolume: this.pumpedVolume.toString(),\n                comment: this.comment\n            },\n        });\n    },\n    updatePayload() {\n        const action = this.toggle === 0 ? 'stop' : 'start';\n        var payload = {};\n\n        if (action == 'stop') {\n            payload = {\n                action: 'stop',\n            };\n        } else {\n            payload = {\n                action: 'image', \n                pump_direction: \"FORWARD\",\n                volume: this.pumpedVolume,\n                nb_frame: this.numberOfImages,\n                sleep: parseInt(this.delay_to_stabilize, 10)\n            };\n        }\n        \n        const payloadToSave = {\n            acquisitionId: this.acquisitionId,\n            numberOfImages: this.numberOfImages,\n            pumpedVolume: this.pumpedVolume,\n            comment: this.comment\n        };\n        this.send({\n            payloadToSave: payloadToSave,\n            payload: payload,\n            topic: 'imager/image'\n        });\n    },\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 1rem;\n  }\n\n  .acquisition-container {\n    padding: 10px 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n  }\n\n  .acquisition-my-label {\n    font-size: 0.9vw !important;\n    margin-bottom: 10px !important;\n    font-weight: bolder !important;\n  }\n\n  .acquisition-my-slider {\n    margin-right: 20px !important;\n    flex: 1 !important;\n  }\n\n  div.v-slider {\n    font-weight: bolder !important;\n    padding-right: 10px !important;\n  }\n\n  .acquisition-my-v-text-2 {\n    flex: 0.5 !important;\n  }\n\n  .acquisition-my-v-text-2 > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-textarea>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-value-label {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    color: #0a6eca !important;\n  }\n\n  .span-information {\n    font-weight: normal !important;\n    margin-left: 5px !important;\n  }\n\n  .information-image-volume {\n    display: flex;\n    flex-direction: column;\n    margin: 0rem 0rem 0rem 0rem;\n  }\n\n  .information-image-volume p {\n    margin-bottom: 2rem !important;\n  }\n\n  .acquisition-horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .acquisition-toggle-full-width {\n    width: 100% !important;\n    margin-top: 15px !important;\n  }\n\n  .v-progress-linear {\n    border-radius: 5px !important;\n  }\n\n  .acquisition-toggle {\n    width: 100% !important;\n    border-color: #0a6eca !important;\n    color: #0a6eca !important;\n  }\n\n  .acquisition-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .acquisition-my-label-2 {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    flex: 1 !important;\n  }\n\n  .acquisition-progress-info {\n    margin-top: 12px !important;\n  }\n\n  .acquisition-custom-slider .v-slider__label {\n    font-size: 0.9vw !important;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"acquisition-container\">\n    <h2>Acquisition settings</h2>\n    <!-- Acquisition ID -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Acquisition ID</label>\n      <v-text-field\n        v-model=\"acquisitionId\"\n        variant=\"outlined\"\n        density=\"compact\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog1\"\n        class=\"acquisition-my-v-text\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>This is an information dialog 1.</v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Number of images -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        color=\"#0a6eca\"\n        label=\"Number of images\"\n        step=\"1\"\n        min=\"1\"\n        max=\"2000\"\n        v-model=\"numberOfImages\"\n        class=\"acquisition-my-slider\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"numberOfImages\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"img\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog2\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>This is an information dialog 2.</v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Pumped volume -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        v-model=\"pumpedVolume\"\n        color=\"#0a6eca\"\n        label=\"Pumped volume\"\n        step=\"0.01\"\n        min=\"0.08\"\n        max=\"1\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"pumpedVolume\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"ml/min\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog3\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>This is an information dialog 3.</v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Information for Image volume & Volume total -->\n    <div class=\"information-image-volume\">\n      <p class=\"v-label v-slider__label acquisition-my-label\">Image volume: <span class=\"span-information\">{{msg.payload.imageVolume || \"Work in progress - Waiting back\"}}</span></p>\n      <p class=\"v-label v-slider__label acquisition-my-label\">Volume total: <span class=\"span-information\">{{msg.payload.totalVolume || \"Work in progress - Waiting back\"}}</span></p>\n    </div>\n    <!-- Acquisition comment -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Comment</label>\n      <v-textarea\n        v-model=\"comment\"\n        class=\"acquisition-my-v-textarea\"\n        variant=\"outlined\"\n        density=\"compact\"\n        @change=\"updateInfo\"\n      ></v-textarea>\n    </div>\n    <!-- Progress -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label-2\">Progression</label>\n      <v-progress-linear\n        color=\"#0a6eca\"\n        :value=\"msg.payload.progression\"\n        height=\"25\"\n        style=\"width: 80%;\"\n      >\n        <strong>{{msg.payload.progression || \"Work in progress - Waiting back\"}} % </strong>\n      </v-progress-linear>\n    </div>\n    <div class=\"acquisition-horizontal-alignment acquisition-progress-info\">\n      <label class=\"v-label v-slider__label\">Estimated duration left:</label>\n      <label class=\"v-label v-slider__label acquisition-my-value-label\">{{ msg.payload.estimated_time || \"Work in progress - Waiting back\" }}</label>\n    </div>\n    <!-- Stop / Start acquisition -->\n    <v-btn-toggle\n      v-model=\"toggle\"\n      variant=\"outlined\"\n      density=\"compact\"\n      color=\"#0a6eca\"\n      divided\n      class=\"acquisition-toggle-full-width acquisition-toggle\"\n    >\n      <v-btn\n        style=\"padding: 10px;\"\n        @click=\"stopAcquisition\"\n        :disabled=\"toggle == 0\"\n      >\n        <v-icon left>mdi-stop</v-icon>Stop\n      </v-btn>\n      <v-btn\n        style=\"padding: 10px;\"\n        @click=\"startAcquisition\"\n        :disabled=\"toggle == 1\"\n      >\n        <v-icon right>mdi-play</v-icon>Start\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      acquisitionId: '',\n      numberOfImages: '',\n      pumpedVolume: '',\n      comment: '',\n      delay_to_stabilize: '',\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      toggle: null,\n      state: \"not a state\",\n    };\n  },\n    watch: {\n      acquisitionId(newVal) {\n        if (newVal != this.acquisitionId) {\n            this.updateInfo();\n        }\n      },\n      numberOfImages(newVal) {\n        if (newVal != this.numberOfImages) {\n            this.updateInfo();\n        }\n        this.updateInfo();\n      },\n      pumpedVolume(newVal) {\n        if (newVal != this.pumpedVolume) {\n            this.updateInfo();\n        }\n        this.updateInfo();\n      },\n      comment(newVal) {\n        if (newVal != this.comment) {\n            this.updateInfo();\n        }\n        this.updateInfo();\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n                \n            if (msg.payload && msg.payload.progression) {\n              this.progression = msg.payload.progression;\n            }\n            if (msg.payload && msg.payload.delay_to_stabilize) {\n              this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n            }\n            if (msg.payload && msg.payload.acquisition_id) {\n              this.acquisitionId = msg.payload.acquisition_id;\n            }\n            if (msg.payload && msg.payload.number_of_images) {\n              this.numberOfImages = msg.payload.number_of_images;\n            }\n            if (msg.payload && msg.payload.pumped_volume) {\n              this.pumpedVolume = msg.payload.pumped_volume;\n            }\n            if (msg.payload && msg.payload.comment) {\n              this.comment = msg.payload.comment;\n            }\n\n            if (msg.payload && msg.payload.state) {\n                this.state = msg.payload.state;\n                this.toggle = this.state == \"waiting\" ? 0 : 1;\n            }\n    \n            if (['Error', 'Done', 'Configuration update error: Chosen id are already in use!'].includes(msg.payload.status)) {\n              this.toggle = 0;\n              this.state = \"waiting\";\n              this.updateInfo();\n            }\n    \n            this.delay_to_stabilize = msg.payload.delay_to_stabilize || this.delay_to_stabilize;\n            this.progression = msg.payload.progression || this.progression;\n          });\n        },\n        deep: true,\n        immediate: true,\n      },\n    },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    startAcquisition() {\n      this.toggle = 1;\n      this.updatePayload('start');\n    },\n    stopAcquisition() {\n      this.toggle = 0;\n      this.updatePayload('stop');\n    },\n    updateInfo() {\n        if (this.state != \"not a state\") {\n            this.send({\n                payloadToSave: {\n                acquisitionId: this.acquisitionId,\n                numberOfImages: this.numberOfImages.toString(),\n                pumpedVolume: this.pumpedVolume.toString(),\n                comment: this.comment,\n                state: this.state,\n                },\n            });\n        }\n    },\n    updatePayload(action) {\n      let payload = {};\n\n      if (action === 'start') {\n        payload = {\n          action: 'image',\n          pump_direction: \"FORWARD\",\n          volume: this.pumpedVolume,\n          nb_frame: this.numberOfImages,\n          sleep: parseInt(this.delay_to_stabilize, 10),\n        };\n        this.state = \"running\";\n      } else if (action === 'stop') {\n        payload = { action: 'stop' };\n        this.state = \"waiting\";\n      }\n\n      const payloadToSave = {\n          acquisitionId: this.acquisitionId,\n          numberOfImages: this.numberOfImages.toString(),\n          pumpedVolume: this.pumpedVolume.toString(),\n          comment: this.comment,\n          state: this.state,\n      };\n\n      this.send({\n        payloadToSave: payloadToSave,\n        payload: payload,\n        topic: 'imager/image'\n      });\n    },\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 1rem;\n  }\n\n  .acquisition-container {\n    padding: 10px 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n  }\n\n  .acquisition-my-label {\n    font-size: 0.9vw !important;\n    margin-bottom: 10px !important;\n    font-weight: bolder !important;\n  }\n\n  .acquisition-my-slider {\n    margin-right: 20px !important;\n    flex: 1 !important;\n  }\n\n  div.v-slider {\n    font-weight: bolder !important;\n    padding-right: 10px !important;\n  }\n\n  .acquisition-my-v-text-2 {\n    flex: 0.5 !important;\n  }\n\n  .acquisition-toggle .v-btn--disabled {\n    opacity: 1;\n  }\n\n  .acquisition-my-v-text-2 > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-textarea>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-value-label {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    color: #0a6eca !important;\n  }\n\n  .span-information {\n    font-weight: normal !important;\n    margin-left: 5px !important;\n  }\n\n  .information-image-volume {\n    display: flex;\n    flex-direction: column;\n    margin: 0rem 0rem 0rem 0rem;\n  }\n\n  .information-image-volume p {\n    margin-bottom: 2rem !important;\n  }\n\n  .acquisition-horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .acquisition-toggle-full-width {\n    width: 100% !important;\n    margin-top: 15px !important;\n  }\n\n  .v-progress-linear {\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff;\n  }\n\n  .acquisition-toggle {\n    width: 100% !important;\n    border-color: #0a6eca !important;\n    color: #0a6eca !important;\n  }\n\n  .acquisition-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .acquisition-my-label-2 {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    flex: 1 !important;\n  }\n\n  .acquisition-progress-info {\n    margin-top: 12px !important;\n  }\n\n  .acquisition-custom-slider .v-slider__label {\n    font-size: 0.9vw !important;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -11744,7 +11757,8 @@
         "y": 600,
         "wires": [
             [
-                "bff53e3e25fde770"
+                "59766803528ece98",
+                "93fa8ee375ebf8d9"
             ]
         ]
     },
@@ -11788,7 +11802,7 @@
         "type": "inject",
         "z": "70f558eb9d60b6fc",
         "d": true,
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "props": [
             {
@@ -11802,8 +11816,8 @@
         "topic": "",
         "payload": "{\"imageVolume\":\"xx mL\",\"totalVolume\":\"xx mL\",\"progression\":0}",
         "payloadType": "json",
-        "x": 550,
-        "y": 760,
+        "x": 270,
+        "y": 780,
         "wires": [
             []
         ]
@@ -11848,8 +11862,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1790,
-        "y": 560,
+        "x": 710,
+        "y": 80,
         "wires": [
             [
                 "b3e666d4e675a451"
@@ -11869,15 +11883,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1960,
-        "y": 560,
+        "x": 880,
+        "y": 80,
         "wires": []
     },
     {
         "id": "9f562d703ae1ccbf",
         "type": "mqtt in",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "Listen imager status",
         "topic": "status/imager",
         "qos": "2",
@@ -11900,8 +11914,8 @@
         "id": "a8b40501e4c53fed",
         "type": "debug",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "Pump status",
+        "g": "44d3381948f5bea1",
+        "name": "Imager status",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -11910,7 +11924,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 730,
+        "x": 740,
         "y": 480,
         "wires": []
     },
@@ -11918,7 +11932,7 @@
         "id": "997c71e9dcf596e8",
         "type": "mqtt out",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "\"image\"",
         "topic": "",
         "qos": "",
@@ -11959,7 +11973,9 @@
             "edd15056c8b5ffc8",
             "c6633d19eafe05ef",
             "54b253242d0655f7",
-            "a3ef94a3cec0838d"
+            "a3ef94a3cec0838d",
+            "83f49a7b01087a92",
+            "355739aa88762397"
         ],
         "x": 295,
         "y": 80,
@@ -12017,87 +12033,6 @@
         ]
     },
     {
-        "id": "918aba2d582e4a12",
-        "type": "change",
-        "z": "70f558eb9d60b6fc",
-        "name": "Set camera settings",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"action\":\"settings\",\"settings\":{\"iso\":100,\"shutter_speed\":40,\"white_balance_gain\":{\"red\":100,\"blue\":100},\"white_balance\":\"auto\"}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1940,
-        "y": 500,
-        "wires": [
-            [
-                "e9702e2afce40391"
-            ]
-        ]
-    },
-    {
-        "id": "20a346b078ede9c7",
-        "type": "inject",
-        "z": "70f558eb9d60b6fc",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1770,
-        "y": 500,
-        "wires": [
-            [
-                "918aba2d582e4a12"
-            ]
-        ]
-    },
-    {
-        "id": "1f0db78d4becd99d",
-        "type": "mqtt out",
-        "z": "70f558eb9d60b6fc",
-        "name": "",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "a973d821cae4ecce",
-        "x": 2130,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "e9702e2afce40391",
-        "type": "debug",
-        "z": "70f558eb9d60b6fc",
-        "name": "debug 47",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2140,
-        "y": 480,
-        "wires": []
-    },
-    {
         "id": "b4a6261d50d0a9c3",
         "type": "mqtt out",
         "z": "70f558eb9d60b6fc",
@@ -12113,7 +12048,7 @@
         "expiry": "",
         "broker": "a973d821cae4ecce",
         "x": 760,
-        "y": 1040,
+        "y": 880,
         "wires": []
     },
     {
@@ -12124,7 +12059,7 @@
         "name": "\"sample_uuid\": \"uuid-1234\",",
         "info": "",
         "x": 1720,
-        "y": 1140,
+        "y": 980,
         "wires": []
     },
     {
@@ -12135,7 +12070,7 @@
         "name": "\"sample_ship\": \"Fairscope\",",
         "info": "",
         "x": 940,
-        "y": 1140,
+        "y": 980,
         "wires": []
     },
     {
@@ -12146,7 +12081,7 @@
         "name": "\"sample_concentrated_sample_volume\": 70,",
         "info": "",
         "x": 990,
-        "y": 1220,
+        "y": 1060,
         "wires": []
     },
     {
@@ -12157,7 +12092,7 @@
         "name": "\"sample_total_volume\": 100,",
         "info": "",
         "x": 1340,
-        "y": 1140,
+        "y": 980,
         "wires": []
     },
     {
@@ -12168,7 +12103,7 @@
         "name": "\"sample_speed_through_water\": \"5 knots\",",
         "info": "",
         "x": 1380,
-        "y": 1220,
+        "y": 1060,
         "wires": []
     },
     {
@@ -12179,7 +12114,7 @@
         "name": "\"sample_bottom_depth\": \"N/A\",",
         "info": "",
         "x": 290,
-        "y": 1180,
+        "y": 1020,
         "wires": []
     },
     {
@@ -12190,7 +12125,7 @@
         "name": "\"sample_temperature\": \"N/A\"",
         "info": "",
         "x": 280,
-        "y": 1220,
+        "y": 1060,
         "wires": []
     },
     {
@@ -12201,7 +12136,7 @@
         "name": "\"sample_salinity\": \"N/A\",",
         "info": "",
         "x": 1710,
-        "y": 1220,
+        "y": 1060,
         "wires": []
     },
     {
@@ -12212,7 +12147,7 @@
         "name": "\"sample_date\": \"2024-05-15\",",
         "info": "",
         "x": 280,
-        "y": 1140,
+        "y": 980,
         "wires": []
     },
     {
@@ -12223,7 +12158,7 @@
         "name": "\"acq_magnification\": \"1.2\",",
         "info": "",
         "x": 930,
-        "y": 1180,
+        "y": 1020,
         "wires": []
     },
     {
@@ -12234,7 +12169,7 @@
         "name": "\"acq_camera_id\": \"deep-point-8125\",",
         "info": "",
         "x": 1360,
-        "y": 1180,
+        "y": 1020,
         "wires": []
     },
     {
@@ -12245,7 +12180,7 @@
         "name": " \"acq_camera_lens\": \"N/A\",",
         "info": "",
         "x": 1710,
-        "y": 1180,
+        "y": 1020,
         "wires": []
     },
     {
@@ -12256,7 +12191,7 @@
         "name": "\"acq_atlas_id\": \"N/A\",     ",
         "info": "",
         "x": 620,
-        "y": 1180,
+        "y": 1020,
         "wires": []
     },
     {
@@ -12267,7 +12202,7 @@
         "name": "\"acq_resolution\": \"1080p\",     ",
         "info": "",
         "x": 630,
-        "y": 1220,
+        "y": 1060,
         "wires": []
     },
     {
@@ -12278,92 +12213,21 @@
         "name": "",
         "info": "\"acq_brightness\": \"N/A\",\n\"acq_contrast\": \"N/A\",\n\"acq_sharpness\": \"N/A\",\n\"acq_saturation\": \"N/A\",\n\"acq_gamma\": \"N/A\",\n\"acq_uuid\": \"acq-uuid-5678\",\n\"acq_volume\": 2.50,\n\"acq_imaged_volume\": 1.04,\n\"acq_minimum_mesh\": 300,\n\"acq_maximum_mesh\": 300,\n\"acq_min_esd\": 300,\n\"acq_max_esd\": 300,\n\"acq_camera_name\": \"HQ Camera\",\n\"acq_nb_frame\": 500,\n\"acq_local_datetime\": \"2024-05-15T09:00:00Z\",\n\"acq_caamera_iso\": 400,\n\"acq_camera_shutter_speed\": 500,\n\n\"process_pixel\": 0.75,\n\"process_datetime\": \"2024-05-15T09:00:00Z\",\n\"process_id\": \"Process01\",\n\"process_uuid\": \"proc-uuid-7890\",\n\"process_source\": \"https://www.github.com/PlanktonPlanet/PlanktoScope\",\n\"process_commit\": \"CommitHash\",\n\"acq_stacks_count\": \"N/A\",\n",
         "x": 580,
-        "y": 1140,
+        "y": 980,
         "wires": []
-    },
-    {
-        "id": "6def4e7e67623547",
-        "type": "split",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "topic",
-        "property": "payloadToSave",
-        "x": 1050,
-        "y": 580,
-        "wires": [
-            [
-                "883c8bcbd98bb3c3"
-            ]
-        ]
-    },
-    {
-        "id": "883c8bcbd98bb3c3",
-        "type": "switch",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "acquisitionId",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "numberOfImages",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "pumpedVolume",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "comment",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 4,
-        "x": 1170,
-        "y": 580,
-        "wires": [
-            [
-                "f65e14920a75ce9f"
-            ],
-            [
-                "842b8b30fac3aafc"
-            ],
-            [
-                "29745aa8446e900f"
-            ],
-            [
-                "650a00ed7ac1e9b8"
-            ]
-        ]
     },
     {
         "id": "f65e14920a75ce9f",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
         "valuesConfigName": "Acquisition Metadata",
         "valueId": "cb9cb620-4ffd-11ef-8af0-151edf01ff7c",
         "value": "acquisition_id",
         "command": "write",
-        "msgProperty": "payloadToSave",
+        "msgProperty": "acquisitionId",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -12377,8 +12241,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 520,
+        "x": 1330,
+        "y": 500,
         "wires": [
             [],
             []
@@ -12388,10 +12252,10 @@
         "id": "20f0245cbefbbf69",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
         "value": "delay_to_stabilized",
         "command": "read",
@@ -12422,7 +12286,7 @@
         "id": "4317b389f6b1b156",
         "type": "link in",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "link in 149",
         "links": [
             "8228453d1c618570",
@@ -12440,7 +12304,7 @@
         "id": "60bc270ddfa20f0b",
         "type": "debug",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "Paylod for MQTT",
         "active": true,
         "tosidebar": true,
@@ -12487,26 +12351,10 @@
         "wires": []
     },
     {
-        "id": "16496890b192797c",
-        "type": "link out",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "link out 104",
-        "mode": "link",
-        "links": [
-            "112de282d8055653",
-            "d3b072c2497a5209",
-            "b0669e2b7f125e7e"
-        ],
-        "x": 1015,
-        "y": 620,
-        "wires": []
-    },
-    {
         "id": "c51927142025c58c",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
         "valuesConfigName": "Acquisition Metadata",
@@ -12540,7 +12388,7 @@
         "id": "edd15056c8b5ffc8",
         "type": "link in",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "link in 153",
         "links": [
             "8228453d1c618570"
@@ -12557,7 +12405,7 @@
         "id": "14dab3e6993ce1dd",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
         "valuesConfigName": "Acquisition Metadata",
@@ -12591,7 +12439,7 @@
         "id": "c6633d19eafe05ef",
         "type": "link in",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "link in 154",
         "links": [
             "8228453d1c618570"
@@ -12608,14 +12456,14 @@
         "id": "650a00ed7ac1e9b8",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
         "valuesConfigName": "Acquisition Metadata",
         "valueId": "18a9dd30-5017-11ef-8af0-151edf01ff7c",
         "value": "acquisition_comment",
         "command": "write",
-        "msgProperty": "payloadToSave",
+        "msgProperty": "comment",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -12629,8 +12477,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1450,
-        "y": 640,
+        "x": 1350,
+        "y": 620,
         "wires": [
             [],
             []
@@ -12657,7 +12505,7 @@
         "to": "",
         "reg": false,
         "x": 280,
-        "y": 1060,
+        "y": 900,
         "wires": [
             [
                 "6530ccdb60829ae5"
@@ -12671,10 +12519,10 @@
         "g": "b383604c2ffb0c81",
         "name": "link in 155",
         "links": [
-            "16496890b192797c"
+            "21a88ef6574955eb"
         ],
         "x": 175,
-        "y": 1060,
+        "y": 900,
         "wires": [
             [
                 "984b3bce0eba0dc7"
@@ -12695,7 +12543,7 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 1060,
+        "y": 900,
         "wires": [
             [
                 "749f53cf1cdc61f9",
@@ -12718,14 +12566,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 780,
-        "y": 1080,
+        "y": 920,
         "wires": []
     },
     {
         "id": "b7d43a5399350e4c",
         "type": "delay",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "pauseType": "delay",
         "timeout": "3",
@@ -12739,8 +12587,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1200,
-        "y": 740,
+        "x": 1220,
+        "y": 760,
         "wires": [
             [
                 "60bc270ddfa20f0b",
@@ -12752,46 +12600,16 @@
         "id": "b0669e2b7f125e7e",
         "type": "link in",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "link in 178",
         "links": [
-            "16496890b192797c"
+            "21a88ef6574955eb"
         ],
-        "x": 1075,
-        "y": 740,
+        "x": 1115,
+        "y": 760,
         "wires": [
             [
                 "b7d43a5399350e4c"
-            ]
-        ]
-    },
-    {
-        "id": "bff53e3e25fde770",
-        "type": "switch",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "null"
-            },
-            {
-                "t": "nnull"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 910,
-        "y": 600,
-        "wires": [
-            [
-                "6def4e7e67623547"
-            ],
-            [
-                "16496890b192797c"
             ]
         ]
     },
@@ -12926,7 +12744,7 @@
         "id": "e0d432878556942b",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
         "valuesConfigName": "Acquisition Metadata",
@@ -12960,7 +12778,7 @@
         "id": "9a38a6dff2041265",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
         "valuesConfigName": "Acquisition Metadata",
@@ -12994,7 +12812,7 @@
         "id": "54b253242d0655f7",
         "type": "link in",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "link in 233",
         "links": [
             "8228453d1c618570"
@@ -13011,7 +12829,7 @@
         "id": "a3ef94a3cec0838d",
         "type": "link in",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "link in 234",
         "links": [
             "8228453d1c618570"
@@ -13028,14 +12846,14 @@
         "id": "29745aa8446e900f",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
         "valuesConfigName": "Acquisition Metadata",
         "valueId": "7fd8e1c0-6068-11ef-9c85-81609e7d2b3e",
         "value": "pumped_volume",
         "command": "write",
-        "msgProperty": "payloadToSave",
+        "msgProperty": "pumpedVolume",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -13049,8 +12867,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1440,
-        "y": 600,
+        "x": 1340,
+        "y": 580,
         "wires": [
             [],
             []
@@ -13060,14 +12878,14 @@
         "id": "842b8b30fac3aafc",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "44d3381948f5bea1",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
         "valuesConfigName": "Acquisition Metadata",
         "valueId": "712e26d0-6068-11ef-9c85-81609e7d2b3e",
         "value": "number_of_images",
         "command": "write",
-        "msgProperty": "payloadToSave",
+        "msgProperty": "numberOfImages",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -13081,11 +12899,216 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1440,
-        "y": 560,
+        "x": 1340,
+        "y": 540,
         "wires": [
             [],
             []
+        ]
+    },
+    {
+        "id": "3e4c8594c13249ca",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "44d3381948f5bea1",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "Acquisition Metadata",
+        "valueId": "cd11cb30-606a-11ef-9c85-81609e7d2b3e",
+        "value": "state",
+        "command": "read",
+        "msgProperty": "payload.state",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 360,
+        "y": 720,
+        "wires": [
+            [
+                "dc1b246968e8333a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "83f49a7b01087a92",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "44d3381948f5bea1",
+        "name": "link in 235",
+        "links": [
+            "8228453d1c618570"
+        ],
+        "x": 175,
+        "y": 720,
+        "wires": [
+            [
+                "3e4c8594c13249ca"
+            ]
+        ]
+    },
+    {
+        "id": "8c41d88befc8e7d3",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "44d3381948f5bea1",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "Acquisition Metadata",
+        "valueId": "cd11cb30-606a-11ef-9c85-81609e7d2b3e",
+        "value": "state",
+        "command": "write",
+        "msgProperty": "state",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1300,
+        "y": 660,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "78678b94b28b09e8",
+        "type": "switch",
+        "z": "70f558eb9d60b6fc",
+        "g": "44d3381948f5bea1",
+        "name": "",
+        "property": "payload.action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "image",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 990,
+        "y": 660,
+        "wires": [
+            [
+                "e2e666a913b7a662"
+            ],
+            [
+                "21a88ef6574955eb"
+            ]
+        ]
+    },
+    {
+        "id": "21a88ef6574955eb",
+        "type": "link out",
+        "z": "70f558eb9d60b6fc",
+        "g": "44d3381948f5bea1",
+        "name": "link out 133",
+        "mode": "link",
+        "links": [
+            "b0669e2b7f125e7e",
+            "d3b072c2497a5209"
+        ],
+        "x": 1025,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e2e666a913b7a662",
+        "type": "delay",
+        "z": "70f558eb9d60b6fc",
+        "g": "44d3381948f5bea1",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1220,
+        "y": 720,
+        "wires": [
+            [
+                "997c71e9dcf596e8",
+                "60bc270ddfa20f0b"
+            ]
+        ]
+    },
+    {
+        "id": "59766803528ece98",
+        "type": "function",
+        "z": "70f558eb9d60b6fc",
+        "g": "44d3381948f5bea1",
+        "name": "Keep \"payloadToSave\"",
+        "func": "if (msg.payloadToSave) {\n    msg = msg.payloadToSave;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 580,
+        "wires": [
+            [
+                "f65e14920a75ce9f",
+                "842b8b30fac3aafc",
+                "29745aa8446e900f",
+                "650a00ed7ac1e9b8",
+                "8c41d88befc8e7d3"
+            ]
+        ]
+    },
+    {
+        "id": "93fa8ee375ebf8d9",
+        "type": "function",
+        "z": "70f558eb9d60b6fc",
+        "g": "44d3381948f5bea1",
+        "name": "Keep \"payload\"",
+        "func": "if (msg.payload) {\n    msg.payload = msg.payload;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 620,
+        "wires": [
+            [
+                "78678b94b28b09e8"
+            ]
         ]
     },
     {
