@@ -1199,18 +1199,17 @@
             "99c17632bfa31f50",
             "fe00896803b982bf",
             "9cdb5df1dba5e667",
-            "5b086554d036cbde",
             "cea09d01c3bacaa7",
-            "17a57f860b746d9c",
             "984b3bce0eba0dc7",
             "d3b072c2497a5209",
             "6530ccdb60829ae5",
-            "749f53cf1cdc61f9"
+            "749f53cf1cdc61f9",
+            "b4a6261d50d0a9c3"
         ],
         "x": 134,
-        "y": 739,
-        "w": 962,
-        "h": 682
+        "y": 999,
+        "w": 1732,
+        "h": 262
     },
     {
         "id": "3b32c3c9506eb933",
@@ -1234,22 +1233,26 @@
             "20f0245cbefbbf69",
             "4317b389f6b1b156",
             "60bc270ddfa20f0b",
-            "b4a6261d50d0a9c3",
             "16496890b192797c",
             "c51927142025c58c",
             "edd15056c8b5ffc8",
             "14dab3e6993ce1dd",
             "c6633d19eafe05ef",
             "650a00ed7ac1e9b8",
-            "25f6794686ddf057",
             "b7d43a5399350e4c",
             "b0669e2b7f125e7e",
-            "bff53e3e25fde770"
+            "bff53e3e25fde770",
+            "e0d432878556942b",
+            "9a38a6dff2041265",
+            "54b253242d0655f7",
+            "a3ef94a3cec0838d",
+            "29745aa8446e900f",
+            "842b8b30fac3aafc"
         ],
         "x": 134,
         "y": 439,
-        "w": 1512,
-        "h": 282
+        "w": 1532,
+        "h": 362
     },
     {
         "id": "5c8dc5f5e1904bf8",
@@ -2911,6 +2914,24 @@
                 "name": "acquisition_comment",
                 "datatype": "str",
                 "default": "",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "712e26d0-6068-11ef-9c85-81609e7d2b3e",
+                "name": "number_of_images",
+                "datatype": "str",
+                "default": "1",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "7fd8e1c0-6068-11ef-9c85-81609e7d2b3e",
+                "name": "pumped_volume",
+                "datatype": "str",
+                "default": "0.08",
                 "description": "TO DO",
                 "scope": "global",
                 "storage": "default"
@@ -11713,14 +11734,14 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n  <div class=\"acquisition-container\">\n    <h2>Acquisition settings</h2>\n    <!-- Acquisition ID -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Acquisition ID</label>\n      <v-text-field\n        v-model=\"acquisitionId\"\n        variant=\"outlined\"\n        density=\"compact\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog1\"\n        class=\"acquisition-my-v-text\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Number of images -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        color=\"#0a6eca\"\n        label=\"Number of images\"\n        step=\"1\"\n        min=\"1\"\n        max=\"2000\"\n        v-model=\"numberOfImages\"\n        class=\"acquisition-my-slider acquisition-custom-slider\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"numberOfImages\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"img\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog2\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Pumped volume -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        v-model=\"pumpedVolume\"\n        class=\"acquisition-my-slider acquisition-custom-slider\"\n        color=\"#0a6eca\"\n        label=\"Pumped volume\"\n        step=\"0.01\"\n        min=\"0.08\"\n        max=\"1\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"pumpedVolume\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"ml/min\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog3\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Information for Image volume & Volume total -->\n    <div class=\"information-image-volume\">\n      <p class=\"v-label v-slider__label acquisition-my-label\">Image volume: <span class=\"span-information\">{{msg.payload.imageVolume || \"Work in progress - Wainting back\"}}</span></p>\n      <p class=\"v-label v-slider__label acquisition-my-label\">Volume total: <span class=\"span-information\">{{msg.payload.totalVolume || \"Work in progress - Wainting back\"}}</span></p>\n    </div>\n    <!-- Acquisition comment -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Comment</label>\n      <v-textarea\n        v-model=\"comment\"\n        class=\"acquisition-my-v-textarea\"\n        variant=\"outlined\"\n        density=\"compact\"\n        @change=\"updateInfo\"\n      ></v-textarea>\n    </div>\n    <!-- Progress -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label-2\">progression</label>\n      <v-progress-linear\n        color=\"#0a6eca\"\n        :value=\"msg.payload.progression\"\n        height=\"25\"\n        style=\"width: 80%;\"\n      >\n        <strong>{{msg.payload.progression || \"Work in progress - Wainting back\"}} % </strong>\n      </v-progress-linear>\n    </div>\n    <div class=\"acquisition-horizontal-alignment acquisition-progress-info\">\n      <label class=\"v-label v-slider__label\">Estimated duration left:</label>\n      <label class=\"v-label v-slider__label acquisition-my-value-label\">{{ msg.payload.estimated_time || \"Work in progress - Wainting back\" }}</label>\n    </div>\n    <!-- Stop / Start acquisition -->\n    <v-btn-toggle\n      v-model=\"toggle\"\n      variant=\"outlined\"\n      density=\"compact\"\n      color=\"#0a6eca\"\n      divided\n      class=\"acquisition-toggle-full-width acquisition-toggle\"\n      @change=\"updatePayload\"\n    >\n      <v-btn style=\"padding: 10px;\">\n        <v-icon left>mdi-stop</v-icon>Stop\n      </v-btn>\n      <v-btn style=\"padding: 10px;\">\n        <v-icon right>mdi-play</v-icon>Start\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      acquisitionId: '',\n      numberOfImages: 2,\n      pumpedVolume: 0.1,\n      comment: '',\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      toggle: 0,\n    };\n  },\n  watch: {\n    toggle(newVal) {\n      this.updatePayload();\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload.progression) {\n            this.progression = msg.payload.progression;\n          }\n          if (msg.payload && msg.payload.delay_to_stabilize) {\n            this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n          }\n          if (msg.payload && msg.payload.acquisition_id) {\n            this.acquisitionId = msg.payload.acquisition_id;\n          }\n          if (msg.payload && msg.payload.comment) {\n            this.comment = msg.payload.comment;\n          }\n          if (msg.payload.status && msg.payload.status === \"Done\") {\n            this.toggle = 0;\n          }\n        });\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    updateInfo() {\n        this.send({\n            payloadToSave: {\n                acquisitionId: this.acquisitionId,\n                numberOfImages: this.numberOfImages,\n                pumpedVolume: this.pumpedVolume,\n                comment: this.comment\n            },\n        });\n    },\n    updatePayload() {\n        const action = this.toggle === 0 ? 'stop' : 'start';\n        var payload = {};\n\n        if (action == 'stop') {\n            payload = {\n                action: 'stop',\n            };\n        } else {\n            payload = {\n                action: 'image', \n                pump_direction: \"FORWARD\",\n                volume: this.pumpedVolume,\n                nb_frame: this.numberOfImages,\n                sleep: parseInt(this.delay_to_stabilize, 10)\n            };\n        }\n        \n        const payloadToSave = {\n            acquisitionId: this.acquisitionId,\n            numberOfImages: this.numberOfImages,\n            pumpedVolume: this.pumpedVolume,\n            comment: this.comment\n        };\n        this.send({\n            payloadToSave: payloadToSave,\n            payload: payload,\n            topic: 'imager/image'\n        });\n    },\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 1rem;\n  }\n\n  .acquisition-container {\n    padding: 10px 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n  }\n\n  .acquisition-my-label {\n    font-size: 0.9vw !important;\n    margin-bottom: 10px !important;\n    font-weight: bolder !important;\n  }\n\n  .acquisition-my-slider {\n    margin-right: 20px !important;\n    flex: 1 !important;\n  }\n\n  div.v-slider {\n    font-weight: bolder !important;\n    padding-right: 10px !important;\n  }\n\n  .acquisition-my-v-text-2 {\n    flex: 0.5 !important;\n  }\n\n  .acquisition-my-v-text-2 > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-textarea>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-value-label {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    color: #0a6eca !important;\n  }\n\n  .span-information {\n    font-weight: normal !important;\n    margin-left: 5px !important;\n  }\n\n  .information-image-volume {\n    display: flex;\n    flex-direction: column;\n    margin: 0rem 0rem 0rem 0rem;\n  }\n\n  .information-image-volume p {\n    margin-bottom: 2rem !important;\n  }\n\n  .acquisition-horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .acquisition-toggle-full-width {\n    width: 100% !important;\n    margin-top: 15px !important;\n  }\n\n  .v-progress-linear {\n    border-radius: 5px !important;\n  }\n\n  .acquisition-toggle {\n    width: 100% !important;\n    border-color: #0a6eca !important;\n    color: #0a6eca !important;\n  }\n\n  .acquisition-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .acquisition-my-label-2 {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    flex: 1 !important;\n  }\n\n  .acquisition-progress-info {\n    margin-top: 12px !important;\n  }\n\n  .acquisition-custom-slider .v-slider__label {\n    font-size: 0.9vw !important;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"acquisition-container\">\n    <h2>Acquisition settings</h2>\n    <!-- Acquisition ID -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Acquisition ID</label>\n      <v-text-field\n        v-model=\"acquisitionId\"\n        variant=\"outlined\"\n        density=\"compact\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog1\"\n        class=\"acquisition-my-v-text\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Number of images -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        color=\"#0a6eca\"\n        label=\"Number of images\"\n        step=\"1\"\n        min=\"1\"\n        max=\"2000\"\n        v-model=\"numberOfImages\"\n        class=\"acquisition-my-slider acquisition-custom-slider\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"numberOfImages\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"img\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog2\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Pumped volume -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <v-slider\n        v-model=\"pumpedVolume\"\n        class=\"acquisition-my-slider acquisition-custom-slider\"\n        color=\"#0a6eca\"\n        label=\"Pumped volume\"\n        step=\"0.01\"\n        min=\"0.08\"\n        max=\"1\"\n        @change=\"updateInfo\"\n      ></v-slider>\n      <v-text-field\n        v-model=\"pumpedVolume\"\n        variant=\"outlined\"\n        density=\"compact\"\n        suffix=\"ml/min\"\n        append-inner-icon=\"mdi-information\"\n        @click:append-inner=\"openDialog3\"\n        class=\"acquisition-my-v-text-2\"\n        @change=\"updateInfo\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Information for Image volume & Volume total -->\n    <div class=\"information-image-volume\">\n      <p class=\"v-label v-slider__label acquisition-my-label\">Image volume: <span class=\"span-information\">{{msg.payload.imageVolume || \"Work in progress - Wainting back\"}}</span></p>\n      <p class=\"v-label v-slider__label acquisition-my-label\">Volume total: <span class=\"span-information\">{{msg.payload.totalVolume || \"Work in progress - Wainting back\"}}</span></p>\n    </div>\n    <!-- Acquisition comment -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Comment</label>\n      <v-textarea\n        v-model=\"comment\"\n        class=\"acquisition-my-v-textarea\"\n        variant=\"outlined\"\n        density=\"compact\"\n        @change=\"updateInfo\"\n      ></v-textarea>\n    </div>\n    <!-- Progress -->\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label-2\">progression</label>\n      <v-progress-linear\n        color=\"#0a6eca\"\n        :value=\"msg.payload.progression\"\n        height=\"25\"\n        style=\"width: 80%;\"\n      >\n        <strong>{{msg.payload.progression || \"Work in progress - Wainting back\"}} % </strong>\n      </v-progress-linear>\n    </div>\n    <div class=\"acquisition-horizontal-alignment acquisition-progress-info\">\n      <label class=\"v-label v-slider__label\">Estimated duration left:</label>\n      <label class=\"v-label v-slider__label acquisition-my-value-label\">{{ msg.payload.estimated_time || \"Work in progress - Wainting back\" }}</label>\n    </div>\n    <!-- Stop / Start acquisition -->\n    <v-btn-toggle\n      v-model=\"toggle\"\n      variant=\"outlined\"\n      density=\"compact\"\n      color=\"#0a6eca\"\n      divided\n      class=\"acquisition-toggle-full-width acquisition-toggle\"\n      @change=\"updatePayload\"\n    >\n      <v-btn style=\"padding: 10px;\">\n        <v-icon left>mdi-stop</v-icon>Stop\n      </v-btn>\n      <v-btn style=\"padding: 10px;\">\n        <v-icon right>mdi-play</v-icon>Start\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      acquisitionId: '',\n      numberOfImages: '',\n      pumpedVolume: '',\n      comment: '',\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      toggle: 0,\n    };\n  },\n  watch: {\n    toggle(newVal) {\n      this.updatePayload();\n    },\n    acquisitionId(newVal) {\n      this.updateInfo();\n    },\n    numberOfImages(newVal) {\n      this.updateInfo();\n    },\n    pumpedVolume(newVal) {\n      this.updateInfo();\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload.progression) {\n            this.progression = msg.payload.progression;\n          }\n          if (msg.payload && msg.payload.delay_to_stabilize) {\n            this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n          }\n          if (msg.payload && msg.payload.acquisition_id) {\n            this.acquisitionId = msg.payload.acquisition_id;\n          }\n          if (msg.payload && msg.payload.number_of_images) {\n            this.numberOfImages = msg.payload.number_of_images;\n          }\n          if (msg.payload && msg.payload.pumped_volume) {\n            this.pumpedVolume = msg.payload.pumped_volume;\n          }\n          if (msg.payload && msg.payload.comment) {\n            this.comment = msg.payload.comment;\n          }\n          if (msg.payload.status && msg.payload.status === \"Done\") {\n            this.toggle = 0;\n          }\n        });\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    updateInfo() {\n        this.send({\n            payloadToSave: {\n                acquisitionId: this.acquisitionId,\n                numberOfImages: this.numberOfImages.toString(),\n                pumpedVolume: this.pumpedVolume.toString(),\n                comment: this.comment\n            },\n        });\n    },\n    updatePayload() {\n        const action = this.toggle === 0 ? 'stop' : 'start';\n        var payload = {};\n\n        if (action == 'stop') {\n            payload = {\n                action: 'stop',\n            };\n        } else {\n            payload = {\n                action: 'image', \n                pump_direction: \"FORWARD\",\n                volume: this.pumpedVolume,\n                nb_frame: this.numberOfImages,\n                sleep: parseInt(this.delay_to_stabilize, 10)\n            };\n        }\n        \n        const payloadToSave = {\n            acquisitionId: this.acquisitionId,\n            numberOfImages: this.numberOfImages,\n            pumpedVolume: this.pumpedVolume,\n            comment: this.comment\n        };\n        this.send({\n            payloadToSave: payloadToSave,\n            payload: payload,\n            topic: 'imager/image'\n        });\n    },\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 1rem;\n  }\n\n  .acquisition-container {\n    padding: 10px 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n  }\n\n  .acquisition-my-label {\n    font-size: 0.9vw !important;\n    margin-bottom: 10px !important;\n    font-weight: bolder !important;\n  }\n\n  .acquisition-my-slider {\n    margin-right: 20px !important;\n    flex: 1 !important;\n  }\n\n  div.v-slider {\n    font-weight: bolder !important;\n    padding-right: 10px !important;\n  }\n\n  .acquisition-my-v-text-2 {\n    flex: 0.5 !important;\n  }\n\n  .acquisition-my-v-text-2 > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-v-textarea>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .acquisition-my-value-label {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    color: #0a6eca !important;\n  }\n\n  .span-information {\n    font-weight: normal !important;\n    margin-left: 5px !important;\n  }\n\n  .information-image-volume {\n    display: flex;\n    flex-direction: column;\n    margin: 0rem 0rem 0rem 0rem;\n  }\n\n  .information-image-volume p {\n    margin-bottom: 2rem !important;\n  }\n\n  .acquisition-horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .acquisition-toggle-full-width {\n    width: 100% !important;\n    margin-top: 15px !important;\n  }\n\n  .v-progress-linear {\n    border-radius: 5px !important;\n  }\n\n  .acquisition-toggle {\n    width: 100% !important;\n    border-color: #0a6eca !important;\n    color: #0a6eca !important;\n  }\n\n  .acquisition-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .acquisition-my-label-2 {\n    font-size: 0.9vw !important;\n    font-weight: bolder !important;\n    flex: 1 !important;\n  }\n\n  .acquisition-progress-info {\n    margin-top: 12px !important;\n  }\n\n  .acquisition-custom-slider .v-slider__label {\n    font-size: 0.9vw !important;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 690,
-        "y": 520,
+        "x": 750,
+        "y": 600,
         "wires": [
             [
                 "bff53e3e25fde770"
@@ -11782,7 +11803,7 @@
         "payload": "{\"imageVolume\":\"xx mL\",\"totalVolume\":\"xx mL\",\"progression\":0}",
         "payloadType": "json",
         "x": 550,
-        "y": 680,
+        "y": 760,
         "wires": [
             []
         ]
@@ -11866,7 +11887,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 450,
+        "x": 470,
         "y": 480,
         "wires": [
             [
@@ -11889,7 +11910,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
+        "x": 730,
         "y": 480,
         "wires": []
     },
@@ -11908,8 +11929,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1300,
-        "y": 600,
+        "x": 1380,
+        "y": 720,
         "wires": []
     },
     {
@@ -11936,7 +11957,9 @@
             "b2e678c70a46968c",
             "4317b389f6b1b156",
             "edd15056c8b5ffc8",
-            "c6633d19eafe05ef"
+            "c6633d19eafe05ef",
+            "54b253242d0655f7",
+            "a3ef94a3cec0838d"
         ],
         "x": 295,
         "y": 80,
@@ -12054,7 +12077,7 @@
         "expiry": "",
         "broker": "a973d821cae4ecce",
         "x": 2130,
-        "y": 500,
+        "y": 520,
         "wires": []
     },
     {
@@ -12071,14 +12094,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2140,
-        "y": 460,
+        "y": 480,
         "wires": []
     },
     {
         "id": "b4a6261d50d0a9c3",
         "type": "mqtt out",
         "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
+        "g": "b383604c2ffb0c81",
         "name": "\"update_config\"",
         "topic": "",
         "qos": "",
@@ -12089,8 +12112,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1140,
-        "y": 660,
+        "x": 760,
+        "y": 1040,
         "wires": []
     },
     {
@@ -12100,8 +12123,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_uuid\": \"uuid-1234\",",
         "info": "",
-        "x": 280,
-        "y": 780,
+        "x": 1720,
+        "y": 1140,
         "wires": []
     },
     {
@@ -12111,8 +12134,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_ship\": \"Fairscope\",",
         "info": "",
-        "x": 280,
-        "y": 820,
+        "x": 940,
+        "y": 1140,
         "wires": []
     },
     {
@@ -12122,8 +12145,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_concentrated_sample_volume\": 70,",
         "info": "",
-        "x": 330,
-        "y": 860,
+        "x": 990,
+        "y": 1220,
         "wires": []
     },
     {
@@ -12133,8 +12156,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_total_volume\": 100,",
         "info": "",
-        "x": 280,
-        "y": 900,
+        "x": 1340,
+        "y": 1140,
         "wires": []
     },
     {
@@ -12144,8 +12167,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_speed_through_water\": \"5 knots\",",
         "info": "",
-        "x": 320,
-        "y": 940,
+        "x": 1380,
+        "y": 1220,
         "wires": []
     },
     {
@@ -12156,7 +12179,7 @@
         "name": "\"sample_bottom_depth\": \"N/A\",",
         "info": "",
         "x": 290,
-        "y": 980,
+        "y": 1180,
         "wires": []
     },
     {
@@ -12167,7 +12190,7 @@
         "name": "\"sample_temperature\": \"N/A\"",
         "info": "",
         "x": 280,
-        "y": 1020,
+        "y": 1220,
         "wires": []
     },
     {
@@ -12177,8 +12200,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_salinity\": \"N/A\",",
         "info": "",
-        "x": 270,
-        "y": 1060,
+        "x": 1710,
+        "y": 1220,
         "wires": []
     },
     {
@@ -12189,7 +12212,7 @@
         "name": "\"sample_date\": \"2024-05-15\",",
         "info": "",
         "x": 280,
-        "y": 1100,
+        "y": 1140,
         "wires": []
     },
     {
@@ -12199,8 +12222,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_magnification\": \"1.2\",",
         "info": "",
-        "x": 270,
-        "y": 1140,
+        "x": 930,
+        "y": 1180,
         "wires": []
     },
     {
@@ -12210,7 +12233,7 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_camera_id\": \"deep-point-8125\",",
         "info": "",
-        "x": 300,
+        "x": 1360,
         "y": 1180,
         "wires": []
     },
@@ -12221,8 +12244,8 @@
         "g": "b383604c2ffb0c81",
         "name": " \"acq_camera_lens\": \"N/A\",",
         "info": "",
-        "x": 270,
-        "y": 1220,
+        "x": 1710,
+        "y": 1180,
         "wires": []
     },
     {
@@ -12232,8 +12255,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_atlas_id\": \"N/A\",     ",
         "info": "",
-        "x": 260,
-        "y": 1260,
+        "x": 620,
+        "y": 1180,
         "wires": []
     },
     {
@@ -12243,19 +12266,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_resolution\": \"1080p\",     ",
         "info": "",
-        "x": 270,
-        "y": 1300,
-        "wires": []
-    },
-    {
-        "id": "5b086554d036cbde",
-        "type": "comment",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "\"acq_stacks_count\": \"N/A\",",
-        "info": "",
-        "x": 270,
-        "y": 1340,
+        "x": 630,
+        "y": 1220,
         "wires": []
     },
     {
@@ -12264,9 +12276,9 @@
         "z": "70f558eb9d60b6fc",
         "g": "b383604c2ffb0c81",
         "name": "",
-        "info": "\"acq_brightness\": \"N/A\",\n\"acq_contrast\": \"N/A\",\n\"acq_sharpness\": \"N/A\",\n\"acq_saturation\": \"N/A\",\n\"acq_gamma\": \"N/A\",\n\"acq_uuid\": \"acq-uuid-5678\",\n\"acq_volume\": 2.50,\n\"acq_imaged_volume\": 1.04,\n\"acq_minimum_mesh\": 300,\n\"acq_maximum_mesh\": 300,\n\"acq_min_esd\": 300,\n\"acq_max_esd\": 300,\n\"acq_camera_name\": \"HQ Camera\",\n\"acq_nb_frame\": 500,\n\"acq_local_datetime\": \"2024-05-15T09:00:00Z\",\n\"acq_caamera_iso\": 400,\n\"acq_camera_shutter_speed\": 500,\n\n\"process_pixel\": 0.75,\n\"process_datetime\": \"2024-05-15T09:00:00Z\",\n\"process_id\": \"Process01\",\n\"process_uuid\": \"proc-uuid-7890\",\n\"process_source\": \"https://www.github.com/PlanktonPlanet/PlanktoScope\",\n\"process_commit\": \"CommitHash\",\n\n",
-        "x": 220,
-        "y": 1380,
+        "info": "\"acq_brightness\": \"N/A\",\n\"acq_contrast\": \"N/A\",\n\"acq_sharpness\": \"N/A\",\n\"acq_saturation\": \"N/A\",\n\"acq_gamma\": \"N/A\",\n\"acq_uuid\": \"acq-uuid-5678\",\n\"acq_volume\": 2.50,\n\"acq_imaged_volume\": 1.04,\n\"acq_minimum_mesh\": 300,\n\"acq_maximum_mesh\": 300,\n\"acq_min_esd\": 300,\n\"acq_max_esd\": 300,\n\"acq_camera_name\": \"HQ Camera\",\n\"acq_nb_frame\": 500,\n\"acq_local_datetime\": \"2024-05-15T09:00:00Z\",\n\"acq_caamera_iso\": 400,\n\"acq_camera_shutter_speed\": 500,\n\n\"process_pixel\": 0.75,\n\"process_datetime\": \"2024-05-15T09:00:00Z\",\n\"process_id\": \"Process01\",\n\"process_uuid\": \"proc-uuid-7890\",\n\"process_source\": \"https://www.github.com/PlanktonPlanet/PlanktoScope\",\n\"process_commit\": \"CommitHash\",\n\"acq_stacks_count\": \"N/A\",\n",
+        "x": 580,
+        "y": 1140,
         "wires": []
     },
     {
@@ -12282,8 +12294,8 @@
         "stream": false,
         "addname": "topic",
         "property": "payloadToSave",
-        "x": 1030,
-        "y": 500,
+        "x": 1050,
+        "y": 580,
         "wires": [
             [
                 "883c8bcbd98bb3c3"
@@ -12323,14 +12335,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 1150,
-        "y": 500,
+        "x": 1170,
+        "y": 580,
         "wires": [
             [
                 "f65e14920a75ce9f"
             ],
-            [],
-            [],
+            [
+                "842b8b30fac3aafc"
+            ],
+            [
+                "29745aa8446e900f"
+            ],
             [
                 "650a00ed7ac1e9b8"
             ]
@@ -12361,8 +12377,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1410,
-        "y": 480,
+        "x": 1430,
+        "y": 520,
         "wires": [
             [],
             []
@@ -12434,8 +12450,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1330,
-        "y": 640,
+        "x": 1410,
+        "y": 760,
         "wires": []
     },
     {
@@ -12482,22 +12498,8 @@
             "d3b072c2497a5209",
             "b0669e2b7f125e7e"
         ],
-        "x": 995,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "17a57f860b746d9c",
-        "type": "link out",
-        "z": "70f558eb9d60b6fc",
-        "g": "b383604c2ffb0c81",
-        "name": "link out 105",
-        "mode": "link",
-        "links": [
-            "25f6794686ddf057"
-        ],
-        "x": 1055,
-        "y": 800,
+        "x": 1015,
+        "y": 620,
         "wires": []
     },
     {
@@ -12526,7 +12528,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 390,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -12544,7 +12546,7 @@
             "8228453d1c618570"
         ],
         "x": 175,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
                 "c51927142025c58c"
@@ -12577,7 +12579,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 410,
-        "y": 640,
+        "y": 600,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -12595,7 +12597,7 @@
             "8228453d1c618570"
         ],
         "x": 175,
-        "y": 640,
+        "y": 600,
         "wires": [
             [
                 "14dab3e6993ce1dd"
@@ -12627,8 +12629,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1430,
-        "y": 520,
+        "x": 1450,
+        "y": 640,
         "wires": [
             [],
             []
@@ -12654,8 +12656,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
-        "y": 800,
+        "x": 280,
+        "y": 1060,
         "wires": [
             [
                 "6530ccdb60829ae5"
@@ -12671,8 +12673,8 @@
         "links": [
             "16496890b192797c"
         ],
-        "x": 535,
-        "y": 800,
+        "x": 175,
+        "y": 1060,
         "wires": [
             [
                 "984b3bce0eba0dc7"
@@ -12692,28 +12694,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 800,
+        "x": 500,
+        "y": 1060,
         "wires": [
             [
-                "17a57f860b746d9c",
-                "749f53cf1cdc61f9"
-            ]
-        ]
-    },
-    {
-        "id": "25f6794686ddf057",
-        "type": "link in",
-        "z": "70f558eb9d60b6fc",
-        "g": "3b32c3c9506eb933",
-        "name": "link in 151",
-        "links": [
-            "17a57f860b746d9c"
-        ],
-        "x": 995,
-        "y": 660,
-        "wires": [
-            [
+                "749f53cf1cdc61f9",
                 "b4a6261d50d0a9c3"
             ]
         ]
@@ -12732,8 +12717,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 900,
-        "y": 840,
+        "x": 780,
+        "y": 1080,
         "wires": []
     },
     {
@@ -12754,8 +12739,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1120,
-        "y": 620,
+        "x": 1200,
+        "y": 740,
         "wires": [
             [
                 "60bc270ddfa20f0b",
@@ -12772,8 +12757,8 @@
         "links": [
             "16496890b192797c"
         ],
-        "x": 995,
-        "y": 620,
+        "x": 1075,
+        "y": 740,
         "wires": [
             [
                 "b7d43a5399350e4c"
@@ -12799,8 +12784,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 850,
-        "y": 520,
+        "x": 910,
+        "y": 600,
         "wires": [
             [
                 "6def4e7e67623547"
@@ -12934,6 +12919,172 @@
         "x": 1240,
         "y": 220,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0d432878556942b",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "Acquisition Metadata",
+        "valueId": "712e26d0-6068-11ef-9c85-81609e7d2b3e",
+        "value": "number_of_images",
+        "command": "read",
+        "msgProperty": "payload.number_of_images",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 400,
+        "y": 640,
+        "wires": [
+            [
+                "dc1b246968e8333a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9a38a6dff2041265",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "Acquisition Metadata",
+        "valueId": "7fd8e1c0-6068-11ef-9c85-81609e7d2b3e",
+        "value": "pumped_volume",
+        "command": "read",
+        "msgProperty": "payload.pumped_volume",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 400,
+        "y": 680,
+        "wires": [
+            [
+                "dc1b246968e8333a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "54b253242d0655f7",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "name": "link in 233",
+        "links": [
+            "8228453d1c618570"
+        ],
+        "x": 175,
+        "y": 640,
+        "wires": [
+            [
+                "e0d432878556942b"
+            ]
+        ]
+    },
+    {
+        "id": "a3ef94a3cec0838d",
+        "type": "link in",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "name": "link in 234",
+        "links": [
+            "8228453d1c618570"
+        ],
+        "x": 175,
+        "y": 680,
+        "wires": [
+            [
+                "9a38a6dff2041265"
+            ]
+        ]
+    },
+    {
+        "id": "29745aa8446e900f",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "Acquisition Metadata",
+        "valueId": "7fd8e1c0-6068-11ef-9c85-81609e7d2b3e",
+        "value": "pumped_volume",
+        "command": "write",
+        "msgProperty": "payloadToSave",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1440,
+        "y": 600,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "842b8b30fac3aafc",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "3b32c3c9506eb933",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "Acquisition Metadata",
+        "valueId": "712e26d0-6068-11ef-9c85-81609e7d2b3e",
+        "value": "number_of_images",
+        "command": "write",
+        "msgProperty": "payloadToSave",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1440,
+        "y": 560,
+        "wires": [
+            [],
             []
         ]
     },
