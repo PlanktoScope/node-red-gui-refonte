@@ -1851,15 +1851,18 @@
             "7d7daee3e1ed39f7",
             "945e4b2465a1e732",
             "3780e6a8fd770f31",
-            "0ce3d980ff14fa82",
             "6d9b00293e8bc92f",
             "596d0884550802d2",
-            "2f55e4293dac256a"
+            "2f55e4293dac256a",
+            "156972ebab521833",
+            "e820a58dd9154f93",
+            "b3fc3025774d3e96",
+            "a5eca0282a193652"
         ],
-        "x": 64,
+        "x": 44,
         "y": 679,
-        "w": 1402,
-        "h": 322
+        "w": 2172,
+        "h": 282
     },
     {
         "id": "cae0178a8a69f787",
@@ -13327,7 +13330,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table \n    :headers=\"headers\" \n    :items=\"tableData\" \n    item-value=\"acquisitionID\" \n    v-model=\"selected\" \n    show-select \n    class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Project name', align: 'start', sortable: false, key: 'projectName', removable: false },\n        { title: 'Sample ID', align: 'start', key: 'sampleID', removable: true, sortable: true },\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID', removable: true, sortable: true },\n        { title: 'Operator', align: 'start', key: 'operator', removable: true, sortable: true },\n        { title: 'Image', align: 'start', key: 'image', removable: true, sortable: true },\n        { title: 'MSTS', align: 'start', key: 'MSTS', removable: true, sortable: true },\n      ],\n      tableData: [], // Tableau des données à afficher\n      selected: [], // Stocke les identifiants sélectionnés\n    }\n  },\n  methods: {\n    // Supprime une colonne des en-têtes\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key);\n    },\n    // Met à jour les données du tableau en ajoutant de nouvelles données\n    updateTableData(newData) {\n      const combinedData = [\n        ...this.tableData,\n        ...newData.filter(item => !this.tableData.some(existingItem => existingItem.acquisitionID === item.acquisitionID))\n      ];\n      this.tableData = combinedData;\n    },\n    // Récupère les objets complets sélectionnés\n    getSelectedItems() {\n      return this.tableData.filter(item => this.selected.includes(item.acquisitionID));\n    },\n    // Envoie les données sélectionnées (obtenues en utilisant `getSelectedItems`)\n    sendPayload() {\n      const selectedItems = this.getSelectedItems();\n      console.log('Données envoyées :', selectedItems);\n      // Envoyez ces données à l'endroit souhaité\n      this.send({payload: selectedItems })\n    }\n  },\n  watch: {\n    selected: {\n      handler(newVal) {\n        this.sendPayload();\n      },\n      deep: true\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload === \"clear\") {\n            this.selected = []; // Réinitialise la sélection si la charge utile est \"clear\"\n          } else if (Array.isArray(msg.payload)) {\n            this.updateTableData(msg.payload); // Met à jour les données du tableau\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (Array.isArray(msg.payload)) {\n          this.updateTableData(msg.payload); // Met à jour les données du tableau\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>\n",
+        "format": "<template>\n  <v-data-table \n    :headers=\"headers\" \n    :items=\"tableData\" \n    item-value=\"acquisitionID\" \n    v-model=\"selected\" \n    show-select \n    class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Project name', align: 'start', sortable: false, key: 'projectName', removable: false },\n        { title: 'Sample ID', align: 'start', key: 'sampleID', removable: true, sortable: true },\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID', removable: true, sortable: true },\n        { title: 'Operator', align: 'start', key: 'operator', removable: true, sortable: true },\n        { title: 'Image', align: 'start', key: 'image', removable: true, sortable: true },\n        { title: 'MSTS', align: 'start', key: 'MSTS', removable: true, sortable: true },\n      ],\n      tableData: [], // Tableau des données à afficher\n      selected: [], // Stocke les identifiants sélectionnés\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key);\n    },\n    updateTableData(newData) {\n      if (!Array.isArray(newData) || newData.length === 0) return;\n\n      this.tableData = [...newData];\n    },\n    getSelectedItems() {\n      return this.tableData.filter(item => this.selected.includes(item.acquisitionID));\n    },\n    sendPayload() {\n      const selectedItems = this.getSelectedItems();\n      this.send({payload: selectedItems });\n    }\n  },\n  watch: {\n    selected: {\n      handler(newVal) {\n        this.sendPayload();\n      },\n      deep: true\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload === \"clear\") {\n            this.selected = []; // Réinitialise la sélection si la charge utile est \"clear\"\n          } else if (Array.isArray(msg.payload)) {\n            this.updateTableData(msg.payload); // Met à jour les données du tableau\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (Array.isArray(msg.payload)) {\n          this.updateTableData(msg.payload); // Met à jour les données du tableau\n        }\n      });\n    }\n  }\n}\n</script>\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -13679,7 +13682,7 @@
         "y": 40,
         "wires": [
             [
-                "a502f95380d7ea32"
+                "e33b4b81839dc596"
             ]
         ]
     },
@@ -13696,7 +13699,7 @@
             "1031589ab54758f7",
             "9f6ae562f1b445b6"
         ],
-        "x": 395,
+        "x": 515,
         "y": 40,
         "wires": []
     },
@@ -13848,7 +13851,7 @@
         "links": [
             "a502f95380d7ea32"
         ],
-        "x": 105,
+        "x": 85,
         "y": 760,
         "wires": [
             [
@@ -13869,8 +13872,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1330,
-        "y": 840,
+        "x": 1210,
+        "y": 800,
         "wires": [
             [
                 "c5ba95b82832310f"
@@ -13893,8 +13896,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1370,
-        "y": 800,
+        "x": 1530,
+        "y": 760,
         "wires": [
             [
                 "97882a7a4f73a796"
@@ -14246,11 +14249,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 250,
-        "y": 900,
+        "x": 1450,
+        "y": 800,
         "wires": [
             [
-                "47704da97cb477f3"
+                "156972ebab521833"
             ]
         ]
     },
@@ -14266,9 +14269,9 @@
         "arraySpltType": "len",
         "stream": true,
         "addname": "",
-        "property": "path_array",
-        "x": 430,
-        "y": 900,
+        "property": "payload",
+        "x": 1330,
+        "y": 840,
         "wires": [
             [
                 "945e4b2465a1e732"
@@ -14288,7 +14291,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 790,
+        "x": 1390,
         "y": 900,
         "wires": [
             [
@@ -14304,14 +14307,14 @@
         "z": "00a14f98244d252e",
         "g": "ead3a496052db315",
         "name": "Make the bash command",
-        "func": "// Récupère le chemin à partir de msg.filename\nconst path = msg.path_array.replace(/\\/[^\\/]+$/, '/');\n\n// Construire la commande pour compter les fichiers .png\nmsg.command = `ls -1 ${path}*.jpg | wc -l`;\nmsg.oldPayload = msg.payload;\n// Ajouter le chemin au message\nmsg.path = path;\n\nreturn msg;",
+        "func": "const path = msg.payload.path;\n\nmsg.command = `ls -1 ${path}*.jpg | wc -l`;\nmsg.oldPayload = msg.payload;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
+        "x": 1210,
         "y": 900,
         "wires": [
             [
@@ -14324,40 +14327,21 @@
         "type": "function",
         "z": "00a14f98244d252e",
         "g": "ead3a496052db315",
-        "name": "function 15",
-        "func": "const oldPayload = flow.get('oldPayload') || [];\nlet replaced = false;\nlet nb = 0;\n\nif (oldPayload.length > 0) {\n    msg.oldPayload = oldPayload.map(item => {\n        if (item.image === \"WIP\" && !replaced) {\n            item.image = nb;\n            // item.image = msg.payload;\n            replaced = true;\n            nb++;\n        }\n        return item;\n    });\n} else {\n    msg.oldPayload = msg.payload.map(item => {\n        if (item.image === \"WIP\" && !replaced) {\n            // item.image = msg.payload;\n            item.image = nb;\n            replaced = true;\n            nb++;\n        }\n        return item;\n    });\n}\n\nflow.set(\"oldPayload\", msg.oldPayload);\nmsg.payload = msg.oldPayload;\n\nreturn msg;\n",
+        "name": "Set image number",
+        "func": "const oldPayload = flow.get('oldPayload') || [];\n// let replaced = false;\n\nif (msg.oldPayload.image === \"WIP\") {\n    msg.oldPayload.image = msg.payload;\n}\n\nflow.set(\"oldPayload\", msg.oldPayload);\n\nmsg.payload = msg.oldPayload;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1110,
-        "y": 940,
+        "x": 1730,
+        "y": 920,
         "wires": [
             [
-                "0ce3d980ff14fa82",
-                "2f55e4293dac256a"
+                "b3fc3025774d3e96"
             ]
         ]
-    },
-    {
-        "id": "0ce3d980ff14fa82",
-        "type": "debug",
-        "z": "00a14f98244d252e",
-        "g": "ead3a496052db315",
-        "name": "debug 66",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1260,
-        "y": 920,
-        "wires": []
     },
     {
         "id": "6d9b00293e8bc92f",
@@ -14372,8 +14356,8 @@
         "stream": false,
         "addname": "",
         "property": "payload",
-        "x": 930,
-        "y": 900,
+        "x": 1530,
+        "y": 880,
         "wires": [
             [
                 "596d0884550802d2"
@@ -14396,8 +14380,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 950,
-        "y": 940,
+        "x": 1550,
+        "y": 920,
         "wires": [
             [
                 "3780e6a8fd770f31"
@@ -14414,9 +14398,136 @@
         "links": [
             "4b6824e2ecaa9016"
         ],
-        "x": 1305,
-        "y": 960,
+        "x": 2175,
+        "y": 920,
         "wires": []
+    },
+    {
+        "id": "e33b4b81839dc596",
+        "type": "switch",
+        "z": "00a14f98244d252e",
+        "name": "",
+        "property": "payload.page.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Segmentation",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 40,
+        "wires": [
+            [
+                "a502f95380d7ea32"
+            ]
+        ]
+    },
+    {
+        "id": "156972ebab521833",
+        "type": "join",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "Join each process -",
+        "mode": "custom",
+        "build": "array",
+        "property": "",
+        "propertyType": "full",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1680,
+        "y": 800,
+        "wires": [
+            [
+                "e820a58dd9154f93"
+            ]
+        ]
+    },
+    {
+        "id": "e820a58dd9154f93",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "Simplify output",
+        "func": "// Supposons que msg.payload est un tableau avec plusieurs objets\n// Nous voulons garder seulement le dernier objet et son path_array\n\n// Vérifier que msg.payload est un tableau et contient au moins un objet\nif (!Array.isArray(msg.payload) || msg.payload.length === 0) {\n    node.error(\"Payload is not an array or is empty\", msg);\n    return null;\n}\n\n// Obtenir le dernier objet dans le tableau\nconst lastObject = msg.payload[msg.payload.length - 1];\n\n// Extraire le dernier path_array associé à cet objet\nconst lastPathArray = lastObject.path_array || [];\n\n// Extraire le payload associé au dernier objet\nconst lastPayload = lastObject.payload || [];\n\n// Retourner le nouvel objet comme payload\nmsg.payload = lastPayload;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 840,
+        "wires": [
+            [
+                "47704da97cb477f3"
+            ]
+        ]
+    },
+    {
+        "id": "b3fc3025774d3e96",
+        "type": "join",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "1",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1890,
+        "y": 920,
+        "wires": [
+            [
+                "a5eca0282a193652"
+            ]
+        ]
+    },
+    {
+        "id": "a5eca0282a193652",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "Remove duplication",
+        "func": "function removeDuplicates(array) {\n  const uniqueMap = new Map();\n\n  array.forEach(item => {\n    if (!uniqueMap.has(item.acquisitionID)) {\n      uniqueMap.set(item.acquisitionID, item);\n    }\n  });\n\n  return Array.from(uniqueMap.values());\n}\n\nconst cleanedData = removeDuplicates(msg.payload);\n\nmsg.payload = cleanedData;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2050,
+        "y": 920,
+        "wires": [
+            [
+                "2f55e4293dac256a"
+            ]
+        ]
     },
     {
         "id": "107c602539a8cf19",
