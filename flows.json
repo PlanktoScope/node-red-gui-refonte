@@ -382,32 +382,6 @@
         "h": 202
     },
     {
-        "id": "cd7cd2c05c7f55bf",
-        "type": "group",
-        "z": "00a14f98244d252e",
-        "name": "Acquisition list",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "d417adf0e2e7759b",
-            "d39a23df09b43d2b",
-            "4b6824e2ecaa9016",
-            "343ad9e58c44f9d9",
-            "087698e99c0b873f",
-            "c8092e76ddb39c4d",
-            "e299a4102bf9d4aa",
-            "10de7b2e182bbace",
-            "d8c60c1b9271bea5"
-        ],
-        "x": 164,
-        "y": 339,
-        "w": 932,
-        "h": 122
-    },
-    {
         "id": "3bb6cedcc43ce23c",
         "type": "group",
         "z": "a707f17e5367291d",
@@ -1795,6 +1769,67 @@
         "h": 602
     },
     {
+        "id": "d3d7be8ef5f940c4",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Acquisition queue",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "af3cbcd9f5f35be3",
+            "cf4fbc0932d87cc7",
+            "c18005dcbaf22026",
+            "9529b63ced697421",
+            "42fc3d43830febaa",
+            "aa582b7c4e2ce8c7",
+            "67b91503eb38afe7",
+            "a0368732ccfa08d8",
+            "d721115905e941f3",
+            "cf21ab67185f9d54",
+            "d3b2e7d1bba0372d",
+            "e6ba170eea1efeb4",
+            "193d3837469bc271",
+            "2cf602d6c4ccb957",
+            "2298a8a5a04dade7",
+            "8ac5eb4e767b1172",
+            "937cc5b0d10ab1c9",
+            "62d2042e91fbe197"
+        ],
+        "x": 324,
+        "y": 459,
+        "w": 1312,
+        "h": 222
+    },
+    {
+        "id": "cd7cd2c05c7f55bf",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Acquisition list",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "d417adf0e2e7759b",
+            "d39a23df09b43d2b",
+            "4b6824e2ecaa9016",
+            "343ad9e58c44f9d9",
+            "087698e99c0b873f",
+            "c8092e76ddb39c4d",
+            "e299a4102bf9d4aa",
+            "10de7b2e182bbace",
+            "d8c60c1b9271bea5"
+        ],
+        "x": 164,
+        "y": 319,
+        "w": 932,
+        "h": 122
+    },
+    {
         "id": "ead3a496052db315",
         "type": "group",
         "z": "00a14f98244d252e",
@@ -1825,47 +1860,13 @@
             "156972ebab521833",
             "e820a58dd9154f93",
             "b3fc3025774d3e96",
-            "a5eca0282a193652"
+            "a5eca0282a193652",
+            "19963a0df50a04b6"
         ],
-        "x": 64,
-        "y": 711.5,
-        "w": 2172,
-        "h": 249.5
-    },
-    {
-        "id": "d3d7be8ef5f940c4",
-        "type": "group",
-        "z": "00a14f98244d252e",
-        "name": "Acquisition queue",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "af3cbcd9f5f35be3",
-            "cf4fbc0932d87cc7",
-            "c18005dcbaf22026",
-            "9529b63ced697421",
-            "49ea401a0745e446",
-            "42fc3d43830febaa",
-            "aa582b7c4e2ce8c7",
-            "67b91503eb38afe7",
-            "a0368732ccfa08d8",
-            "62d2042e91fbe197",
-            "d721115905e941f3",
-            "cf21ab67185f9d54",
-            "d3b2e7d1bba0372d",
-            "6d941e58139bc4ef",
-            "e6ba170eea1efeb4",
-            "193d3837469bc271",
-            "2cf602d6c4ccb957",
-            "2298a8a5a04dade7"
-        ],
-        "x": 364,
-        "y": 499,
-        "w": 1272,
-        "h": 202
+        "x": 84,
+        "y": 719,
+        "w": 2152,
+        "h": 282
     },
     {
         "id": "cae0178a8a69f787",
@@ -3053,6 +3054,22 @@
         "className": "",
         "visible": "true",
         "disabled": "false"
+    },
+    {
+        "id": "dcc0da7e6546c618",
+        "type": "persistent values config",
+        "name": "Segmentation Metadata",
+        "values": [
+            {
+                "id": "a757a4e0-63a4-11ef-896a-298ca7d12c69",
+                "name": "state",
+                "datatype": "str",
+                "default": "",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            }
+        ]
     },
     {
         "id": "9a59e8d02ffe1f9b",
@@ -13153,18 +13170,18 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n    <template v-slot:item=\"{ item, index }\">\n      <tr>\n        <td>{{ item.acquisitionID }}</td>\n        <td>{{ item.estimatedTime }}</td>\n        <td>{{ item.status }}</td>\n        <td class=\"input-msts\">\n          <v-text-field :disabled=\"isFieldDisabled(item)\" v-model=\"item.input\" @input=\"onInputChange(item)\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n        </td>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n        { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n        { title: 'Status', align: 'start', key: 'status' },\n        { title: 'MSTS', align: 'start', key: 'msts' }\n      ],\n      tableData: [], \n      msts: '',\n      isTableDisabled: false, \n      currentRowIndex: 0 \n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    },\n    updateTableDataWithMSTS() {\n      this.tableData = this.tableData.map(item => ({\n        ...item,\n        input: this.msts\n      }));\n    },\n    onInputChange(item) {\n      this.send({ payload: this.tableData });\n    },\n    isFieldDisabled(item) {\n      return this.isTableDisabled || item.status === 'In Progress' || item.status === 'Done';\n    },\n    sendCurrentRow() {\n      if (this.tableData.length > 0 && this.currentRowIndex < this.tableData.length) {\n        const item = this.tableData[this.currentRowIndex];\n        this.send({\n          payload: {\n            \"action\": \"segment\",\n            \"settings\": {\n                \"path\": item.path,\n                \"force\": true,\n                \"ecotaxa\": true,\n            }\n          },\n          topic: \"segmenter/segment\"\n        });\n\n        if (this.currentRowIndex === this.tableData.length - 1) {\n          this.isTableDisabled = true;\n        }\n      }\n    },\n    processStatusDone() {\n      if (this.currentRowIndex < this.tableData.length - 1) {\n        this.currentRowIndex++;\n        this.sendCurrentRow();\n      } else {\n        this.send({\n          payload: \"Done\",\n        });\n      }\n    }\n  },\n  watch: {\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload === \"start\") {\n            this.sendCurrentRow();\n          }\n          if (msg.payload && msg.payload === \"pause\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.isTableDisabled = false;\n          }\n          if (msg.payload && msg.payload === \"clear\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.tableData = [];\n            this.currentRowIndex = 0; // Réinitialiser l'index de ligne\n            this.isTableDisabled = false; // Assurez-vous que la table n'est pas désactivée après effacement\n          } else if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n            this.updateTableDataWithMSTS();\n          }\n          if (msg.msts) {\n            this.msts = msg.msts;\n            this.updateTableDataWithMSTS(); \n          }\n          if (msg.payload && msg.payload.status === \"Done\") {\n            this.processStatusDone();\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n          this.updateTableDataWithMSTS();\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n\n.input-msts {\n  margin: 10px;\n  max-width: 100px;\n}\n\n.input-msts .v-input__details {\n  display: none;\n}\n</style>\n",
+        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n    <template v-slot:item=\"{ item, index }\">\n      <tr>\n        <td>{{ item.acquisitionID }}</td>\n        <td>{{ item.estimatedTime }}</td>\n        <td>{{ item.status }}</td>\n        <td class=\"input-msts\">\n          <v-text-field :disabled=\"isFieldDisabled(item)\" v-model=\"item.input\" @input=\"onInputChange(item)\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n        </td>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n        { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n        { title: 'Status', align: 'start', key: 'status' },\n        { title: 'MSTS', align: 'start', key: 'msts' }\n      ],\n      tableData: [], \n      msts: '',\n      isTableDisabled: false, \n      currentRowIndex: 0,\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    },\n    updateTableDataWithMSTS() {\n      this.tableData = this.tableData.map(item => ({\n        ...item,\n        input: this.msts\n      }));\n    },\n    onInputChange(item) {\n      this.send({ payload: this.tableData });\n    },\n    isFieldDisabled(item) {\n      return this.isTableDisabled || item.status === 'In Progress' || item.status === 'Done';\n    },\n    sendCurrentRow() {\n      if (this.tableData.length > 0 && this.currentRowIndex < this.tableData.length) {\n        const item = this.tableData[this.currentRowIndex];\n        this.send({\n          payload: {\n            \"action\": \"segment\",\n            \"settings\": {\n                \"path\": item.path,\n                \"force\": true,\n                \"ecotaxa\": true,\n            }\n          },\n          topic: \"segmenter/segment\"\n        });\n\n        if (this.currentRowIndex === this.tableData.length - 1) {\n          this.isTableDisabled = true;\n        }\n      }\n    },\n    processStatusDone() {\n      if (this.currentRowIndex < this.tableData.length - 1) {\n        this.currentRowIndex++;\n        this.sendCurrentRow();\n      } else {\n        this.send({\n          payload: \"Done\",\n        });\n      }\n    }\n  },\n  watch: {\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload === \"start\") {\n            this.sendCurrentRow();\n          }\n          if (msg.payload && msg.payload === \"pause\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.isTableDisabled = false;\n          }\n          if (msg.payload && msg.payload === \"clear\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.tableData = [];\n            this.currentRowIndex = 0; // Réinitialiser l'index de ligne\n            this.isTableDisabled = false; // Assurez-vous que la table n'est pas désactivée après effacement\n          } else if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n            this.updateTableDataWithMSTS();\n          }\n          if (msg.msts) {\n            this.msts = msg.msts;\n            this.updateTableDataWithMSTS(); \n          }\n          if (msg.payload && msg.payload.status === \"Done\") {\n            this.processStatusDone();\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n          this.updateTableDataWithMSTS();\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n\n.input-msts {\n  margin: 10px;\n  max-width: 100px;\n}\n\n.input-msts .v-input__details {\n  display: none;\n}\n</style>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 800,
-        "y": 580,
+        "y": 540,
         "wires": [
             [
-                "d721115905e941f3",
-                "2298a8a5a04dade7"
+                "2298a8a5a04dade7",
+                "d721115905e941f3"
             ]
         ]
     },
@@ -13181,7 +13198,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn @click=\"handleToggleClick('pause')\" style=\"padding: 10px;\">\n                <v-icon left>mdi-pause</v-icon>Pause\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('clear')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('start')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-play</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                toggle: null\n            };\n        },\n        methods: {\n            handleToggleClick(action) {\n                this.send({ payload: action });\n            },\n            handleDone() {\n                this.toggle = 0;\n                this.send({ payload: \"pause\" });\n            }\n        },\n        watch: {\n            '$socket': {\n                handler(newVal, oldVal) {\n                    this.$socket.on('msg-input:' + this.id, (msg) => {\n                        if (msg.payload === \"Done\") {\n                            this.handleDone();\n                        }\n                    });\n                },\n                deep: true,\n                immediate: true\n            }\n        }\n    }\n</script>\n\n<style scoped>\n    div .v-btn-toggle {\n        background-color: #ffffff;\n    }\n\n    .toggle-full-width {\n        width: 100%;\n        margin-top: 15px;\n    }\n\n    .toggle {\n        width: 100%;\n        border-color: #0a6eca;\n        color: #0a6eca;\n    }\n\n    .toggle .v-btn--active {\n        background-color: #0a6eca !important;\n        color: white !important;\n    }\n</style>\n",
+        "format": "<template>\n    <div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn @click=\"handleToggleClick('pause')\" style=\"padding: 10px;\">\n                <v-icon left>mdi-pause</v-icon>Pause\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('clear')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('start')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-play</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                toggle: null,\n                toggleState: null\n            };\n        },\n        methods: {\n            handleToggleClick(action) {\n                this.send({ payload: action });\n                this.toggleState = action;  \n            },\n            handleDone() {\n                this.toggle = this.toggleState; \n                this.send({ payload: \"pause\" });\n            }\n        },\n        watch: {\n            '$socket': {\n                handler(newVal, oldVal) {\n                    this.$socket.on('msg-input:' + this.id, (msg) => {\n                        if (msg.payload === \"Done\") {\n                            this.handleDone();\n                        }\n                        if (msg.state) {\n                            if (msg.state == \"start\") {\n                                this.toggle = 2;\n                            }\n                            if (msg.state == \"clear\") {\n                                this.toggle = 1;\n                            }\n                            if (msg.state == \"pause\") {\n                                this.toggle = 0;\n                            }\n                            this.toggleState = msg.state;\n                        }\n                    });\n                },\n                deep: true,\n                immediate: true\n            }\n        }\n    }\n</script>\n\n<style scoped>\n    div .v-btn-toggle {\n        background-color: #ffffff;\n    }\n\n    .toggle-full-width {\n        width: 100%;\n        margin-top: 15px;\n    }\n\n    .toggle {\n        width: 100%;\n        border-color: #0a6eca;\n        color: #0a6eca;\n    }\n\n    .toggle .v-btn--active {\n        background-color: #0a6eca !important;\n        color: white !important;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -13192,7 +13209,7 @@
         "wires": [
             [
                 "c18005dcbaf22026",
-                "62d2042e91fbe197"
+                "8ac5eb4e767b1172"
             ]
         ]
     },
@@ -13340,7 +13357,7 @@
         "templateScope": "local",
         "className": "",
         "x": 800,
-        "y": 380,
+        "y": 360,
         "wires": [
             [
                 "e299a4102bf9d4aa",
@@ -13362,7 +13379,7 @@
         "finalize": "",
         "libs": [],
         "x": 960,
-        "y": 420,
+        "y": 400,
         "wires": [
             [
                 "343ad9e58c44f9d9"
@@ -13443,7 +13460,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1230,
-        "y": 620,
+        "y": 640,
         "wires": [
             [
                 "e6ba170eea1efeb4"
@@ -13482,24 +13499,6 @@
         "wires": []
     },
     {
-        "id": "49ea401a0745e446",
-        "type": "link in",
-        "z": "00a14f98244d252e",
-        "g": "d3d7be8ef5f940c4",
-        "name": "link in 49",
-        "links": [
-            "e0327fbe42203370",
-            "62d2042e91fbe197"
-        ],
-        "x": 685,
-        "y": 620,
-        "wires": [
-            [
-                "af3cbcd9f5f35be3"
-            ]
-        ]
-    },
-    {
         "id": "4b6824e2ecaa9016",
         "type": "link in",
         "z": "00a14f98244d252e",
@@ -13508,10 +13507,11 @@
         "links": [
             "a0368732ccfa08d8",
             "c491425e02dc2976",
-            "2f55e4293dac256a"
+            "2f55e4293dac256a",
+            "96b438fd7f029156"
         ],
         "x": 685,
-        "y": 420,
+        "y": 400,
         "wires": [
             [
                 "d417adf0e2e7759b"
@@ -13529,7 +13529,7 @@
             "67b91503eb38afe7"
         ],
         "x": 1055,
-        "y": 420,
+        "y": 400,
         "wires": []
     },
     {
@@ -13566,7 +13566,7 @@
         "g": "d3d7be8ef5f940c4",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "54330ee0-437d-11ef-946b-75401899c243",
         "value": "MSTS",
         "command": "read",
@@ -13585,7 +13585,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 570,
-        "y": 580,
+        "y": 540,
         "wires": [
             [
                 "af3cbcd9f5f35be3"
@@ -13603,26 +13603,12 @@
             "343ad9e58c44f9d9"
         ],
         "x": 405,
-        "y": 580,
+        "y": 540,
         "wires": [
             [
                 "aa582b7c4e2ce8c7"
             ]
         ]
-    },
-    {
-        "id": "62d2042e91fbe197",
-        "type": "link out",
-        "z": "00a14f98244d252e",
-        "g": "d3d7be8ef5f940c4",
-        "name": "link out 79",
-        "mode": "link",
-        "links": [
-            "49ea401a0745e446"
-        ],
-        "x": 1195,
-        "y": 660,
-        "wires": []
     },
     {
         "id": "db8dbeb996228096",
@@ -13631,7 +13617,7 @@
         "g": "99e9870d6e66aeaf",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -13720,7 +13706,7 @@
         "oldrc": false,
         "name": "find \"metadata.json\"",
         "x": 260,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "41add91cc9a0f0d2"
@@ -13743,7 +13729,7 @@
         "addname": "",
         "property": "payload",
         "x": 450,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "dcdd3d182172e37b"
@@ -13764,7 +13750,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 1000,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "fae11872d37ca7ea"
@@ -13792,7 +13778,7 @@
         "to": "",
         "reg": false,
         "x": 620,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "abb1be992fc0f571"
@@ -13816,10 +13802,11 @@
         "repair": false,
         "outputs": 1,
         "x": 810,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
-                "a7571dda2afc9bf5"
+                "a7571dda2afc9bf5",
+                "19963a0df50a04b6"
             ]
         ]
     },
@@ -13837,7 +13824,7 @@
         "finalize": "",
         "libs": [],
         "x": 1290,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "baf89db54ae56a37"
@@ -13853,8 +13840,8 @@
         "links": [
             "d8c60c1b9271bea5"
         ],
-        "x": 105,
-        "y": 760,
+        "x": 125,
+        "y": 800,
         "wires": [
             [
                 "b66bf570c5656d37"
@@ -13867,7 +13854,7 @@
         "z": "00a14f98244d252e",
         "g": "ead3a496052db315",
         "name": "Format payload to display",
-        "func": "// Récupère le tableau des descriptions et des chemins stockés dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\nconst acquisition_path_array = flow.get('acquisition_path_array') || [];\n\n\n\n// Fonction pour extraire acquisitionID du chemin\nfunction extractAcquisitionID(path) {\n    const parts = path.split('/');\n    return parts[parts.length - 2];  // avant-dernier élément du chemin\n}\n\n// Crée une correspondance entre acquisitionID et path\nconst pathMap = new Map(acquisition_path_array.map(item => [extractAcquisitionID(item.path), item.path]));\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\",\n            path: pathMap.get(acquisitionID) || \"\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
+        "func": "// Récupère le tableau des descriptions et des chemins stockés dans le contexte de flux\nconst acquisition_array = flow.get('acquisition_array') || [];\nconst acquisition_path_array = flow.get('acquisition_path_array') || [];\n\n\n// Fonction pour extraire acquisitionID du chemin\nfunction extractAcquisitionID(path) {\n    const parts = path.split('/');\n    return parts[parts.length - 2];  // avant-dernier élément du chemin\n}\n\n// Crée une correspondance entre acquisitionID et path\nconst pathMap = new Map(acquisition_path_array.map(item => [extractAcquisitionID(item.path), item.path]));\n\n// Utilise un Set pour suivre les acquisitionID déjà rencontrés\nconst seenAcquisitionIDs = new Set();\n\n// Filtre et formate les éléments, en évitant les duplicata\nconst formatted_array = acquisition_array.reduce((result, desc) => {\n    const acquisitionID = desc.acq_id;\n    \n    // Vérifie si l'acquisitionID a déjà été ajouté\n    if (!seenAcquisitionIDs.has(acquisitionID)) {\n        seenAcquisitionIDs.add(acquisitionID);\n        \n        result.push({\n            projectName: desc.sample_project || \"\",\n            sampleID: desc.sample_id || \"\",\n            acquisitionID: desc.acq_id || \"\",\n            operator: desc.sample_operator || \"\",\n            image: \"WIP\",\n            MSTS: \"WIP\",\n            path: pathMap.get(acquisitionID) || \"\"\n        });\n    }\n    \n    return result;\n}, []);\n\n// Affecte le tableau formaté à msg.payload\nmsg.payload = formatted_array;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -13875,7 +13862,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 800,
+        "y": 840,
         "wires": [
             [
                 "c5ba95b82832310f"
@@ -13899,7 +13886,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1550,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "97882a7a4f73a796"
@@ -13921,7 +13908,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 590,
-        "y": 540,
+        "y": 500,
         "wires": [
             [
                 "193d3837469bc271",
@@ -13944,7 +13931,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 830,
-        "y": 540,
+        "y": 500,
         "wires": []
     },
     {
@@ -13966,11 +13953,9 @@
         "repair": false,
         "outputs": 1,
         "x": 950,
-        "y": 580,
+        "y": 540,
         "wires": [
-            [
-                "cf21ab67185f9d54"
-            ]
+            []
         ]
     },
     {
@@ -13989,7 +13974,7 @@
         "expiry": "",
         "broker": "a973d821cae4ecce",
         "x": 1070,
-        "y": 580,
+        "y": 540,
         "wires": []
     },
     {
@@ -13999,33 +13984,15 @@
         "g": "d3d7be8ef5f940c4",
         "name": "link in 180",
         "links": [
-            "a502f95380d7ea32"
+            "a502f95380d7ea32",
+            "62d2042e91fbe197"
         ],
-        "x": 405,
+        "x": 365,
         "y": 620,
         "wires": [
             [
-                "6d941e58139bc4ef"
+                "937cc5b0d10ab1c9"
             ]
-        ]
-    },
-    {
-        "id": "6d941e58139bc4ef",
-        "type": "function",
-        "z": "00a14f98244d252e",
-        "g": "d3d7be8ef5f940c4",
-        "name": "Get flow variables",
-        "func": "\nconst seg_queu = flow.get('segmentation_queue');\nconst acq_path_array = flow.get('acquisition_path_array');\n\nmsg.payload = {\n    seg_queu: seg_queu,\n    acq_path_array: acq_path_array\n};\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 620,
-        "wires": [
-            []
         ]
     },
     {
@@ -14068,7 +14035,7 @@
         "repair": false,
         "outputs": 1,
         "x": 950,
-        "y": 620,
+        "y": 580,
         "wires": [
             [
                 "cf4fbc0932d87cc7"
@@ -14216,7 +14183,7 @@
         "finalize": "",
         "libs": [],
         "x": 1470,
-        "y": 800,
+        "y": 840,
         "wires": [
             [
                 "156972ebab521833"
@@ -14237,7 +14204,7 @@
         "addname": "",
         "property": "payload",
         "x": 1350,
-        "y": 840,
+        "y": 880,
         "wires": [
             [
                 "945e4b2465a1e732"
@@ -14258,7 +14225,7 @@
         "oldrc": false,
         "name": "",
         "x": 1410,
-        "y": 900,
+        "y": 940,
         "wires": [
             [
                 "6d9b00293e8bc92f"
@@ -14281,7 +14248,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 900,
+        "y": 940,
         "wires": [
             [
                 "7d7daee3e1ed39f7"
@@ -14302,7 +14269,7 @@
         "finalize": "",
         "libs": [],
         "x": 1750,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
                 "b3fc3025774d3e96"
@@ -14323,7 +14290,7 @@
         "addname": "",
         "property": "payload",
         "x": 1550,
-        "y": 880,
+        "y": 920,
         "wires": [
             [
                 "596d0884550802d2"
@@ -14347,7 +14314,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1570,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
                 "3780e6a8fd770f31"
@@ -14365,7 +14332,7 @@
             "4b6824e2ecaa9016"
         ],
         "x": 2195,
-        "y": 920,
+        "y": 960,
         "wires": []
     },
     {
@@ -14415,8 +14382,8 @@
         "reduceInit": "",
         "reduceInitType": "num",
         "reduceFixup": "",
-        "x": 1700,
-        "y": 800,
+        "x": 1760,
+        "y": 840,
         "wires": [
             [
                 "e820a58dd9154f93"
@@ -14437,7 +14404,7 @@
         "finalize": "",
         "libs": [],
         "x": 1200,
-        "y": 840,
+        "y": 880,
         "wires": [
             [
                 "47704da97cb477f3"
@@ -14459,7 +14426,7 @@
         "joinerType": "str",
         "useparts": false,
         "accumulate": false,
-        "timeout": "1",
+        "timeout": "2",
         "count": "",
         "reduceRight": false,
         "reduceExp": "",
@@ -14467,7 +14434,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 1910,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
                 "a5eca0282a193652"
@@ -14488,7 +14455,7 @@
         "finalize": "",
         "libs": [],
         "x": 2070,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
                 "2f55e4293dac256a"
@@ -14501,7 +14468,7 @@
         "z": "00a14f98244d252e",
         "g": "cd7cd2c05c7f55bf",
         "name": "Get array with selected",
-        "func": "const selected_acquisition_array = flow.get('selected_acquisition_array');\n\nmsg.payload = selected_acquisition_array;\n\nreturn msg;",
+        "func": "const selected_acquisition_array = flow.get('selected_acquisition_array') || [];\n\nlet anyItemSelected = false;\n\nif (selected_acquisition_array.length <= 0) {\n    msg.reloadAcquisitionList = true;\n    msg.payload = selected_acquisition_array;\n}\n\nselected_acquisition_array.forEach(item => {\n    if (item.isSelected === true) {\n        anyItemSelected = true;\n    }\n});\n\nmsg.reloadAcquisitionList = !anyItemSelected;\nmsg.payload = selected_acquisition_array;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14509,7 +14476,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "10de7b2e182bbace"
@@ -14526,7 +14493,7 @@
             "a502f95380d7ea32"
         ],
         "x": 205,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "087698e99c0b873f"
@@ -14547,7 +14514,7 @@
         "finalize": "",
         "libs": [],
         "x": 970,
-        "y": 380,
+        "y": 360,
         "wires": [
             []
         ]
@@ -14558,21 +14525,21 @@
         "z": "00a14f98244d252e",
         "g": "cd7cd2c05c7f55bf",
         "name": "",
-        "property": "payload",
+        "property": "reloadAcquisitionList",
         "propertyType": "msg",
         "rules": [
             {
-                "t": "nnull"
+                "t": "false"
             },
             {
-                "t": "null"
+                "t": "true"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
         "x": 510,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "d417adf0e2e7759b"
@@ -14590,11 +14557,115 @@
         "name": "link out 135",
         "mode": "link",
         "links": [
-            "4cf3eec1ce2d4242"
+            "4cf3eec1ce2d4242",
+            "7dedd91c30c6d657"
         ],
         "x": 595,
-        "y": 420,
+        "y": 400,
         "wires": []
+    },
+    {
+        "id": "8ac5eb4e767b1172",
+        "type": "persistent value",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "",
+        "valuesConfig": "dcc0da7e6546c618",
+        "valuesConfigName": "Segmentation Metadata",
+        "valueId": "a757a4e0-63a4-11ef-896a-298ca7d12c69",
+        "value": "state",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1330,
+        "y": 540,
+        "wires": [
+            [
+                "62d2042e91fbe197"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "937cc5b0d10ab1c9",
+        "type": "persistent value",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "",
+        "valuesConfig": "dcc0da7e6546c618",
+        "valuesConfigName": "Segmentation Metadata",
+        "valueId": "a757a4e0-63a4-11ef-896a-298ca7d12c69",
+        "value": "state",
+        "command": "read",
+        "msgProperty": "state",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 550,
+        "y": 620,
+        "wires": [
+            [
+                "af3cbcd9f5f35be3",
+                "cf4fbc0932d87cc7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "62d2042e91fbe197",
+        "type": "link out",
+        "z": "00a14f98244d252e",
+        "g": "d3d7be8ef5f940c4",
+        "name": "link out 79",
+        "mode": "link",
+        "links": [
+            "49ea401a0745e446",
+            "d3b2e7d1bba0372d"
+        ],
+        "x": 1515,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "19963a0df50a04b6",
+        "type": "function",
+        "z": "00a14f98244d252e",
+        "g": "ead3a496052db315",
+        "name": "function 12",
+        "func": "const newValue = msg.filename;\nlet actualArray = flow.get('acquisition_path_array') || [];\n\n// Ajouter le nouveau chemin s'il n'est pas vide et n'existe pas déjà dans le tableau\nif (newValue && !actualArray.some(item => item.path === newValue)) {\n    actualArray.push({\n        path: newValue\n    });\n}\n\n// Supprimer les éléments avec des chemins vides ou nuls\nactualArray = actualArray.filter(item => item.path);\n\n// Supprimer les doublons en utilisant un Set\nconst uniquePaths = Array.from(new Set(actualArray.map(item => item.path))).map(path => ({ path }));\n\n// Mettre à jour le tableau dans le contexte du flux\nflow.set('acquisition_path_array', uniquePaths);\n\n// Mettre à jour le payload du message\nmsg.payload = uniquePaths;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 760,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "107c602539a8cf19",
