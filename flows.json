@@ -1,8 +1,16 @@
 [
     {
+        "id": "31cc837d4bed97b4",
+        "type": "tab",
+        "label": "Lab",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "2d41a8ed5aea3449",
         "type": "tab",
-        "label": "Autre - Node gestion etc..",
+        "label": "Global",
         "disabled": false,
         "info": "",
         "env": []
@@ -600,7 +608,7 @@
         ],
         "x": 144,
         "y": 619,
-        "w": 942,
+        "w": 952,
         "h": 82
     },
     {
@@ -1004,7 +1012,7 @@
         ],
         "x": 84,
         "y": 699,
-        "w": 1162,
+        "w": 1172,
         "h": 162
     },
     {
@@ -1208,9 +1216,9 @@
             "d80ab3b457ba2653",
             "ddb9c4fcb2355d4c"
         ],
-        "x": 34,
+        "x": 24,
         "y": 59,
-        "w": 992,
+        "w": 1002,
         "h": 142
     },
     {
@@ -1252,7 +1260,7 @@
         ],
         "x": 294,
         "y": 11.5,
-        "w": 452,
+        "w": 462,
         "h": 97
     },
     {
@@ -1382,6 +1390,155 @@
         "y": 439,
         "w": 1432,
         "h": 382
+    },
+    {
+        "id": "d3d7be8ef5f940c4",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Acquisition queue",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "af3cbcd9f5f35be3",
+            "cf4fbc0932d87cc7",
+            "c18005dcbaf22026",
+            "9529b63ced697421",
+            "42fc3d43830febaa",
+            "aa582b7c4e2ce8c7",
+            "67b91503eb38afe7",
+            "a0368732ccfa08d8",
+            "d721115905e941f3",
+            "cf21ab67185f9d54",
+            "d3b2e7d1bba0372d",
+            "e6ba170eea1efeb4",
+            "193d3837469bc271",
+            "2cf602d6c4ccb957",
+            "2298a8a5a04dade7",
+            "8ac5eb4e767b1172",
+            "937cc5b0d10ab1c9",
+            "62d2042e91fbe197"
+        ],
+        "x": 324,
+        "y": 459,
+        "w": 1312,
+        "h": 222
+    },
+    {
+        "id": "cd7cd2c05c7f55bf",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Acquisition list",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "d417adf0e2e7759b",
+            "d39a23df09b43d2b",
+            "4b6824e2ecaa9016",
+            "343ad9e58c44f9d9",
+            "087698e99c0b873f",
+            "c8092e76ddb39c4d",
+            "e299a4102bf9d4aa",
+            "10de7b2e182bbace",
+            "d8c60c1b9271bea5"
+        ],
+        "x": 164,
+        "y": 319,
+        "w": 932,
+        "h": 122
+    },
+    {
+        "id": "ead3a496052db315",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Get Acquisition array",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b66bf570c5656d37",
+            "41add91cc9a0f0d2",
+            "a7571dda2afc9bf5",
+            "dcdd3d182172e37b",
+            "abb1be992fc0f571",
+            "fae11872d37ca7ea",
+            "4cf3eec1ce2d4242",
+            "97882a7a4f73a796",
+            "baf89db54ae56a37",
+            "c5ba95b82832310f",
+            "47704da97cb477f3",
+            "7d7daee3e1ed39f7",
+            "945e4b2465a1e732",
+            "3780e6a8fd770f31",
+            "6d9b00293e8bc92f",
+            "596d0884550802d2",
+            "2f55e4293dac256a",
+            "156972ebab521833",
+            "e820a58dd9154f93",
+            "b3fc3025774d3e96",
+            "a5eca0282a193652",
+            "19963a0df50a04b6"
+        ],
+        "x": 84,
+        "y": 719,
+        "w": 2152,
+        "h": 282
+    },
+    {
+        "id": "57273196ea82116a",
+        "type": "group",
+        "z": "2d41a8ed5aea3449",
+        "name": "It's nice",
+        "style": {
+            "label": true,
+            "stroke": "#6f2fa0",
+            "label-position": "n",
+            "color": "#6f2fa0",
+            "fill": "#bfc7d7"
+        },
+        "nodes": [
+            "ab161f05c3e4b336"
+        ],
+        "x": 1074,
+        "y": 1259,
+        "w": 192,
+        "h": 82
+    },
+    {
+        "id": "138209c04d19955e",
+        "type": "group",
+        "z": "31cc837d4bed97b4",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d33b5b4b0c13da70",
+            "984d882d045ddef7",
+            "8c847dad6085b87b",
+            "e582b09ef0ee179b",
+            "ae37ecde2381f2da",
+            "58bcebdb0f7bf46b",
+            "038a7fca0ec60791",
+            "5aab3d77f5f76bba",
+            "c813ee0363b277bb"
+        ],
+        "x": 94,
+        "y": 379,
+        "w": 1392,
+        "h": 189.5
     },
     {
         "id": "b08415909e5dc4da",
@@ -1769,106 +1926,6 @@
         "h": 602
     },
     {
-        "id": "d3d7be8ef5f940c4",
-        "type": "group",
-        "z": "00a14f98244d252e",
-        "name": "Acquisition queue",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "af3cbcd9f5f35be3",
-            "cf4fbc0932d87cc7",
-            "c18005dcbaf22026",
-            "9529b63ced697421",
-            "42fc3d43830febaa",
-            "aa582b7c4e2ce8c7",
-            "67b91503eb38afe7",
-            "a0368732ccfa08d8",
-            "d721115905e941f3",
-            "cf21ab67185f9d54",
-            "d3b2e7d1bba0372d",
-            "e6ba170eea1efeb4",
-            "193d3837469bc271",
-            "2cf602d6c4ccb957",
-            "2298a8a5a04dade7",
-            "8ac5eb4e767b1172",
-            "937cc5b0d10ab1c9",
-            "62d2042e91fbe197"
-        ],
-        "x": 324,
-        "y": 459,
-        "w": 1312,
-        "h": 222
-    },
-    {
-        "id": "cd7cd2c05c7f55bf",
-        "type": "group",
-        "z": "00a14f98244d252e",
-        "name": "Acquisition list",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "d417adf0e2e7759b",
-            "d39a23df09b43d2b",
-            "4b6824e2ecaa9016",
-            "343ad9e58c44f9d9",
-            "087698e99c0b873f",
-            "c8092e76ddb39c4d",
-            "e299a4102bf9d4aa",
-            "10de7b2e182bbace",
-            "d8c60c1b9271bea5"
-        ],
-        "x": 164,
-        "y": 319,
-        "w": 932,
-        "h": 122
-    },
-    {
-        "id": "ead3a496052db315",
-        "type": "group",
-        "z": "00a14f98244d252e",
-        "name": "Get Acquisition array",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "b66bf570c5656d37",
-            "41add91cc9a0f0d2",
-            "a7571dda2afc9bf5",
-            "dcdd3d182172e37b",
-            "abb1be992fc0f571",
-            "fae11872d37ca7ea",
-            "4cf3eec1ce2d4242",
-            "97882a7a4f73a796",
-            "baf89db54ae56a37",
-            "c5ba95b82832310f",
-            "47704da97cb477f3",
-            "7d7daee3e1ed39f7",
-            "945e4b2465a1e732",
-            "3780e6a8fd770f31",
-            "6d9b00293e8bc92f",
-            "596d0884550802d2",
-            "2f55e4293dac256a",
-            "156972ebab521833",
-            "e820a58dd9154f93",
-            "b3fc3025774d3e96",
-            "a5eca0282a193652",
-            "19963a0df50a04b6"
-        ],
-        "x": 84,
-        "y": 719,
-        "w": 2152,
-        "h": 282
-    },
-    {
         "id": "cae0178a8a69f787",
         "type": "junction",
         "z": "fb15c917381dd273",
@@ -1905,22 +1962,8 @@
         "theme": "c0ea559892f9bd33",
         "order": 2,
         "className": "home-page",
-        "visible": "false",
-        "disabled": "false"
-    },
-    {
-        "id": "b5447ffdf167fa24",
-        "type": "ui-page",
-        "name": "Shutdown",
-        "ui": "1eeac55ba6b9065f",
-        "path": "/shutdown",
-        "icon": "power",
-        "layout": "grid",
-        "theme": "c0ea559892f9bd33",
-        "order": 10,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": false,
+        "disabled": false
     },
     {
         "id": "8c9f114bff281989",
@@ -1958,9 +2001,9 @@
         "colors": {
             "surface": "#ffffff",
             "primary": "#000000",
-            "bgPage": "#ffffff",
-            "groupBg": "#ffffff",
-            "groupOutline": "#ffffff"
+            "bgPage": "#f4f5f6",
+            "groupBg": "#f4f5f6",
+            "groupOutline": "#f4f5f6"
         },
         "sizes": {
             "pagePadding": "0px",
@@ -1976,7 +2019,7 @@
         "ui": "1eeac55ba6b9065f",
         "path": "/settings",
         "icon": "cog",
-        "layout": "grid",
+        "layout": "notebook",
         "theme": "c0ea559892f9bd33",
         "order": 8,
         "className": "",
@@ -2635,7 +2678,7 @@
         "ui": "1eeac55ba6b9065f",
         "path": "/hardware",
         "icon": "cog-box",
-        "layout": "grid",
+        "layout": "notebook",
         "theme": "c0ea559892f9bd33",
         "order": 9,
         "className": "",
@@ -2677,10 +2720,10 @@
         "icon": "chart-line",
         "layout": "grid",
         "theme": "c0ea559892f9bd33",
-        "order": 11,
+        "order": 10,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "88ffa2caedbdccbb",
@@ -3072,6 +3115,473 @@
         ]
     },
     {
+        "id": "f90d50097c6eb575",
+        "type": "persistent values config",
+        "name": "acq",
+        "values": [
+            {
+                "id": "b33a7620-63b8-11ef-896a-298ca7d12c69",
+                "name": "volume",
+                "datatype": "num",
+                "default": 2,
+                "description": "unit in ml",
+                "scope": "global",
+                "storage": "default"
+            }
+        ]
+    },
+    {
+        "id": "f587a15c603ff586",
+        "type": "ui-page",
+        "name": "Lab",
+        "ui": "1eeac55ba6b9065f",
+        "path": "/Lab",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "c0ea559892f9bd33",
+        "order": 11,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d3fa3b511f48b837",
+        "type": "ui-group",
+        "name": "My Group",
+        "page": "f587a15c603ff586",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "f4a6f590dcdb31eb",
+        "type": "ui-group",
+        "name": "Cards",
+        "page": "f587a15c603ff586",
+        "width": "12",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "35b25807c4799e49",
+        "type": "ui-group",
+        "name": "Chips",
+        "page": "f587a15c603ff586",
+        "width": "12",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "e02392f1b8a73ded",
+        "type": "ui-group",
+        "name": "Footer",
+        "page": "f587a15c603ff586",
+        "width": "12",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d33b5b4b0c13da70",
+        "type": "ui-control",
+        "z": "31cc837d4bed97b4",
+        "g": "138209c04d19955e",
+        "name": "",
+        "ui": "1eeac55ba6b9065f",
+        "events": "all",
+        "x": 1240,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "984d882d045ddef7",
+        "type": "ui-template",
+        "z": "31cc837d4bed97b4",
+        "g": "138209c04d19955e",
+        "group": "d3fa3b511f48b837",
+        "page": "",
+        "ui": "",
+        "name": "top-header-home",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p>{{ currentDate }}</p>\n        <p>-</p>\n        <p>{{ currentTime }}</p>\n        <span\n          class=\"mdi mdi-account-circle\"\n          @click=\"menu = true\"\n          aria-label=\"Open menu\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list-item>\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\">\n            <v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account-circle</v-icon>\n            {{ profilName }}\n          </v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title>\n            <v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>\n            {{ item.title }}\n          </v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title>\n            <v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>\n            {{ item.title }}\n          </v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      currentDate: '',\n      currentTime: '',\n      profilName: '',\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Gallery', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' },\n        { title: 'Test', icon: 'mdi-test-tube' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.profilName = this.$msg?.payload?.profilName || \"Profile\";\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      this.currentDate = now.toLocaleDateString(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\"\n      });\n\n      this.currentTime = now.toLocaleTimeString(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        second: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\"\n      }) + \" (UTC)\";\n    },\n    menuItemClicked(item) {\n      if (item.title === \"Gallery\") {\n        this.openGallery();\n      } else if (item.title === \"Documentation\") {\n        this.openDocumentation();\n      } else if (item.title === \"Reboot\" || item.title === \"Shutdown\") {\n        this.confirmAction(item.title);\n      } else {\n        this.send({ payload: item.title });\n      }\n    },\n    openGallery() {\n      const currentUrl = new URL(window.location.href);\n      const baseUrlWithoutPort = `${currentUrl.protocol}//${currentUrl.hostname}`;\n      const fullUrl = new URL('/ps/data/browse/files/', baseUrlWithoutPort);\n      open(fullUrl.href, '_blank');\n    },\n    openDocumentation() {\n      open(\"https://docs-edge.planktoscope.community\", '_blank');\n    },\n    confirmAction(action) {\n      if (confirm(`Are you sure you want to ${action.toLowerCase()}?`)) {\n        this.send({ payload: action });\n      }\n    },\n    navigateToHome() {\n      this.send({ payload: \"Home\" });\n    }\n  }\n};\n</script>\n\n<style scoped>\n.my-menu {\n  display: flex;\n  align-items: flex-start;\n  justify-content: flex-end;\n}\n\n.gap-icon {\n  margin-right: 1rem;\n}\n\n.gap-icon-profil {\n  font-size: 35px;\n  height: 3rem;\n  width: 3rem;\n}\n\n.header-top-home-container {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  border-bottom: 1px solid #e0e0e0;\n  display: flex;\n}\n\n.header-top-home-container-left {\n  display: flex;\n  align-items: center;\n  padding-left: 1rem;\n  cursor: pointer;\n}\n\n.header-top-home-container-left img {\n  height: 2vw;\n  width: 2vw;\n  margin-right: 0.6rem;\n}\n\n.header-top-home-container-left p {\n  font-size: 1vw;\n  color: black;\n  font-weight: 600;\n}\n\n.header-top-home-container-right {\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  flex-grow: 1;\n}\n\n.header-top-home-information-container {\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  margin-right: 1rem;\n}\n\n.header-top-home-information-container p {\n  margin: 0 5px;\n  font-size: 0.8vw;\n  color: black;\n}\n\n.header-top-home-information-container span {\n  color: #066fac;\n  font-size: 25px;\n  padding: 10px 5px;\n  cursor: pointer;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 690,
+        "y": 440,
+        "wires": [
+            [
+                "8c847dad6085b87b"
+            ]
+        ]
+    },
+    {
+        "id": "8c847dad6085b87b",
+        "type": "function",
+        "z": "31cc837d4bed97b4",
+        "g": "138209c04d19955e",
+        "name": "Prepare payload to navigate",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    msg.payload = \"Reboot\"\n} else if (title == \"Shutdown\") {\n    msg.payload = \"Restart\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 440,
+        "wires": [
+            [
+                "038a7fca0ec60791"
+            ]
+        ]
+    },
+    {
+        "id": "e582b09ef0ee179b",
+        "type": "ui-event",
+        "z": "31cc837d4bed97b4",
+        "g": "138209c04d19955e",
+        "ui": "1eeac55ba6b9065f",
+        "name": "",
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "ae37ecde2381f2da"
+            ]
+        ]
+    },
+    {
+        "id": "ae37ecde2381f2da",
+        "type": "persistent value",
+        "z": "31cc837d4bed97b4",
+        "g": "138209c04d19955e",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting metadata",
+        "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
+        "value": "operator_name",
+        "command": "read",
+        "msgProperty": "payload.profilName",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 440,
+        "wires": [
+            [
+                "984d882d045ddef7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "58bcebdb0f7bf46b",
+        "type": "switch",
+        "z": "31cc837d4bed97b4",
+        "g": "138209c04d19955e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Reboot",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Shutdown",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1230,
+        "y": 460,
+        "wires": [
+            [
+                "c813ee0363b277bb"
+            ],
+            [
+                "5aab3d77f5f76bba"
+            ]
+        ]
+    },
+    {
+        "id": "038a7fca0ec60791",
+        "type": "switch",
+        "z": "31cc837d4bed97b4",
+        "g": "138209c04d19955e",
+        "name": "",
+        "property": "payload.page",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1110,
+        "y": 440,
+        "wires": [
+            [
+                "d33b5b4b0c13da70"
+            ],
+            [
+                "58bcebdb0f7bf46b"
+            ]
+        ]
+    },
+    {
+        "id": "5aab3d77f5f76bba",
+        "type": "exec",
+        "z": "31cc837d4bed97b4",
+        "g": "138209c04d19955e",
+        "command": "sudo shutdown -force",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Shutdown",
+        "x": 1390,
+        "y": 520,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c813ee0363b277bb",
+        "type": "exec",
+        "z": "31cc837d4bed97b4",
+        "g": "138209c04d19955e",
+        "command": "sudo reboot",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Reboot",
+        "x": 1380,
+        "y": 460,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ed913b5ed82dea05",
+        "type": "ui-template",
+        "z": "31cc837d4bed97b4",
+        "group": "f4a6f590dcdb31eb",
+        "page": "",
+        "ui": "",
+        "name": "Elevation",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-card\n    class=\"mx-auto my-8\"\n    elevation=\"16\"\n    max-width=\"344\"\n  >\n    <v-card-item>\n      <v-card-title>\n        Card title\n      </v-card-title>\n\n      <v-card-subtitle>\n        Card subtitle secondary text\n      </v-card-subtitle>\n    </v-card-item>\n\n    <v-card-text>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n    </v-card-text>\n  </v-card>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 180,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "786221ec2857d660",
+        "type": "ui-template",
+        "z": "31cc837d4bed97b4",
+        "group": "f4a6f590dcdb31eb",
+        "page": "",
+        "ui": "",
+        "name": "Hover",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-card\n    class=\"mx-auto\"\n    max-width=\"344\"\n    hover\n  >\n    <v-card-item>\n      <v-card-title>\n        Card title\n      </v-card-title>\n\n      <v-card-subtitle>\n        Card subtitle secondary text\n      </v-card-subtitle>\n    </v-card-item>\n\n    <v-card-text>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n    </v-card-text>\n  </v-card>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 170,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7660219985b01b3d",
+        "type": "ui-template",
+        "z": "31cc837d4bed97b4",
+        "group": "f4a6f590dcdb31eb",
+        "page": "",
+        "ui": "",
+        "name": "Href",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-card\n    append-icon=\"mdi-open-in-new\"\n    class=\"mx-auto\"\n    href=\"https://github.com/vuetifyjs/vuetify/\"\n    max-width=\"344\"\n    prepend-icon=\"mdi-github\"\n    rel=\"noopener\"\n    subtitle=\"Check out the official repository\"\n    target=\"_blank\"\n    title=\"Vuetify on GitHub\"\n  ></v-card>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 170,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0b2f5a3e5bbcf2c",
+        "type": "ui-template",
+        "z": "31cc837d4bed97b4",
+        "group": "f4a6f590dcdb31eb",
+        "page": "",
+        "ui": "",
+        "name": "Avatar and icon",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-row dense>\n    <v-col\n      v-for=\"(item, index) in items\"\n      :key=\"index\"\n      cols=\"12\"\n      md=\"4\"\n    >\n      <v-card\n        class=\"mx-auto\"\n        max-width=\"300\"\n        @click=\"handleClick(item.id)\"\n      >\n        <v-card-title class=\"d-flex align-center\">\n          <v-icon :icon=\"item.icon\" class=\"mr-2\">{{ item.icon }}</v-icon>\n          {{ item.title }}\n          <!-- Ajout de l'icône \"open in new\" si le lien s'ouvre dans un nouvel onglet -->\n          <v-icon v-if=\"item.opensNewTab\" small class=\"ml-auto\">{{ item.newTabIcon }}</v-icon>\n        </v-card-title>\n        <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>\n        <v-card-text>{{ item.description }}</v-card-text>\n        <template v-slot:actions>\n          <v-btn text @click.stop=\"handleClick(item.id)\">\n            {{ item.buttonText }}\n            <!-- Ajouter l'icône sur le bouton également si le lien s'ouvre dans un nouvel onglet -->\n            <v-icon v-if=\"item.opensNewTab\" small class=\"ml-2\">{{ item.newTabIcon }}</v-icon>\n          </v-btn>\n        </template>\n      </v-card>\n\n      <div class=\"text-center text-caption mt-2\">{{ item.variant }}</div>\n    </v-col>\n  </v-row>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      items: [\n        {\n          id: 1,\n          title: 'Launch the preview',\n          subtitle: 'Preview your project',\n          description: 'Check if you can see anything',\n          buttonText: 'Preview',\n          icon: 'mdi-eye',\n          variant: 'Preview',\n          opensNewTab: false, // Pas d'icône \"ouvrir dans un nouvel onglet\"\n        },\n        {\n          id: 2,\n          title: 'Gallery',\n          subtitle: 'Browse gallery',\n          description: 'Check out the collected images and objects.',\n          buttonText: 'Open',\n          icon: 'mdi-image',\n          variant: 'Gallery',\n          opensNewTab: true, // Ajout de l'icône pour les nouveaux onglets\n          newTabIcon: 'mdi-open-in-new',\n        },\n        {\n          id: 3,\n          title: 'Calibration',\n          subtitle: 'Adjust settings',\n          description: 'Ensure accurate measurements.',\n          buttonText: 'Calibrate',\n          icon: 'mdi-bullseye',\n          variant: 'Calibration',\n          opensNewTab: false,\n        },\n        {\n          id: 4,\n          title: 'Learn how to use PlanktoScope',\n          subtitle: 'Detailed instructions',\n          description: 'Find detailed instructions here.',\n          buttonText: 'Learn More',\n          icon: 'mdi-text-box-search-outline',\n          variant: 'Documentation',\n          opensNewTab: true,\n          newTabIcon: 'mdi-open-in-new',\n        },\n        {\n          id: 5,\n          title: 'Monitoring',\n          subtitle: 'System performance',\n          description: 'Keep track of system performance.',\n          buttonText: 'Monitor',\n          icon: 'mdi-chart-line',\n          variant: 'Monitoring',\n          opensNewTab: false,\n        },\n        {\n          id: 6,\n          title: 'Submit Feedback',\n          subtitle: 'Your thoughts matter',\n          description: 'We\\'d love to hear your thoughts and improve!',\n          buttonText: 'Submit',\n          icon: 'mdi-message-alert',\n          variant: 'Feedback',\n          opensNewTab: true,\n          newTabIcon: 'mdi-open-in-new',\n        },\n      ],\n    }),\n    methods: {\n      handleClick(id) {\n        if (id === 2) {\n          window.open('/ps/data/browse/files/', '_blank');\n        } else if (id === 4) {\n          window.open(\"http://192.168.1.32/ps/docs/\", '_blank');\n        } else if (id === 6) {\n          window.open(\"https://www.fairscope.com/helpdesk\", '_blank');\n        } else {\n          console.log(`Send item with ID: ${id}`);\n        }\n      }\n    }\n  }\n</script>\n\n<style scoped>\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.d-flex {\n  display: flex;\n}\n.align-center {\n  align-items: center;\n}\n.ml-auto {\n  margin-left: auto;\n}\n.ml-2 {\n  margin-left: 8px;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "622e8b89c79e1068",
+        "type": "ui-template",
+        "z": "31cc837d4bed97b4",
+        "group": "f4a6f590dcdb31eb",
+        "page": "",
+        "ui": "",
+        "name": "GUI",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-row dense>\n    <v-col\n      v-for=\"(item, index) in items\"\n      :key=\"index\"\n      cols=\"12\"\n      md=\"4\"\n    >\n      <v-card\n        class=\"mx-auto\"\n        max-width=\"300\"\n        @click=\"handleClick(item.id)\"\n        class=\"clickable-card\"\n      >\n        <v-card-title class=\"d-flex align-center\">\n          <v-icon :icon=\"item.icon\" class=\"mr-2\">{{ item.icon }}</v-icon>\n          {{ item.title }}\n          <!-- Icône \"ouvrir dans un nouvel onglet\" si applicable -->\n          <v-icon v-if=\"item.opensNewTab\" small class=\"ml-auto\">{{ item.newTabIcon }}</v-icon>\n        </v-card-title>\n        <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>\n        <v-card-text>{{ item.description }}</v-card-text>\n      </v-card>\n\n      <div class=\"text-center text-caption mt-2\">{{ item.variant }}</div>\n    </v-col>\n  </v-row>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      items: [\n        {\n          id: 1,\n          title: 'Launch the preview',\n          subtitle: 'Preview your project',\n          description: 'Check if you can see anything',\n          icon: 'mdi-eye',\n          variant: 'Preview',\n          opensNewTab: false,\n        },\n        {\n          id: 2,\n          title: 'Gallery',\n          subtitle: 'Browse gallery',\n          description: 'Check out the collected images and objects.',\n          icon: 'mdi-image',\n          variant: 'Gallery',\n          opensNewTab: true,\n          newTabIcon: 'mdi-open-in-new',\n        },\n        {\n          id: 3,\n          title: 'Calibration',\n          subtitle: 'Adjust settings',\n          description: 'Ensure accurate measurements.',\n          icon: 'mdi-bullseye',\n          variant: 'Calibration',\n          opensNewTab: false,\n        },\n        {\n          id: 4,\n          title: 'Learn how to use PlanktoScope',\n          subtitle: 'Detailed instructions',\n          description: 'Find detailed instructions here.',\n          icon: 'mdi-text-box-search-outline',\n          variant: 'Documentation',\n          opensNewTab: true,\n          newTabIcon: 'mdi-open-in-new',\n        },\n        {\n          id: 5,\n          title: 'Monitoring',\n          subtitle: 'System performance',\n          description: 'Keep track of system performance.',\n          icon: 'mdi-chart-line',\n          variant: 'Monitoring',\n          opensNewTab: false,\n        },\n        {\n          id: 6,\n          title: 'Submit Feedback',\n          subtitle: 'Your thoughts matter',\n          description: 'We\\'d love to hear your thoughts and improve!',\n          icon: 'mdi-message-alert',\n          variant: 'Feedback',\n          opensNewTab: true,\n          newTabIcon: 'mdi-open-in-new',\n        },\n      ],\n    }),\n    methods: {\n      handleClick(id) {\n        if (id === 2) {\n          window.open('/ps/data/browse/files/', '_blank');\n        } else if (id === 4) {\n          window.open(\"http://192.168.1.32/ps/docs/\", '_blank');\n        } else if (id === 6) {\n          window.open(\"https://www.fairscope.com/helpdesk\", '_blank');\n        } else {\n          console.log(`Send item with ID: ${id}`);\n        }\n      }\n    }\n  }\n</script>\n\n<style scoped>\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.d-flex {\n  display: flex;\n}\n.align-center {\n  align-items: center;\n}\n.ml-auto {\n  margin-left: auto;\n}\n.clickable-card {\n  cursor: pointer;\n  transition: background-color 0.3s;\n}\n.clickable-card:hover {\n  background-color: #f6f6f6;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 170,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7048280cb782b5ac",
+        "type": "ui-template",
+        "z": "31cc837d4bed97b4",
+        "group": "35b25807c4799e49",
+        "page": "",
+        "ui": "",
+        "name": "chips/#in-selects",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-combobox\n    v-model=\"chips\"\n    :items=\"items\"\n    label=\"Your favorite hobbies\"\n    prepend-icon=\"mdi-filter-variant\"\n    variant=\"solo\"\n    chips\n    clearable\n    multiple\n  >\n    <template v-slot:selection=\"{ attrs, item, select, selected }\">\n      <v-chip\n        v-bind=\"attrs\"\n        :model-value=\"selected\"\n        closable\n        @click=\"select\"\n        @click:close=\"remove(item)\"\n      >\n        <strong>{{ item }}</strong>&nbsp;\n        <span>(interest)</span>\n      </v-chip>\n    </template>\n  </v-combobox>\n</template>\n<script>\n  export default {\n    data () {\n      return {\n        chips: ['Programming', 'Playing video games', 'Watching movies', 'Sleeping'],\n        items: ['Streaming', 'Eating'],\n      }\n    },\n\n    methods: {\n      remove (item) {\n        this.chips.splice(this.chips.indexOf(item), 1)\n      },\n    },\n  }\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 210,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71e24a380bd63af9",
+        "type": "ui-template",
+        "z": "31cc837d4bed97b4",
+        "group": "e02392f1b8a73ded",
+        "page": "",
+        "ui": "",
+        "name": "Teal Footer",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-card class=\"pa-0\">\n    <div class=\"v-card-text pa-0 no-padding\">\n      <footer class=\"v-footer d-flex flex-column pa-0\">\n        <div class=\"d-flex w-100 align-center pa-0\">\n          <strong class=\"ml-4\">Get connected with us on social networks!</strong>\n\n          <v-spacer></v-spacer>\n\n          <v-btn\n            v-for=\"icon in icons\"\n            :key=\"icon\"\n            :icon=\"icon\"\n            class=\"ma-0\"\n            size=\"small\"\n            variant=\"plain\"\n          ></v-btn>\n        </div>\n\n        <div class=\"text-center w-100 pa-0\">\n          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>\n        </div>\n      </footer>\n    </div>\n  </v-card>\n</template>\n\n<script>\n  export default {\n    data: () => ({\n      icons: [\n        'mdi-facebook',\n        'mdi-twitter',\n        'mdi-linkedin',\n        'mdi-instagram',\n      ],\n    }),\n  };\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 190,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "9a59e8d02ffe1f9b",
         "type": "inject",
         "z": "2d41a8ed5aea3449",
@@ -3197,7 +3707,8 @@
             "3f6329f6f64a5d57",
             "aefc0f84026bcf7b",
             "0d78c0467054ebc9",
-            "67fcf51f541bd536"
+            "67fcf51f541bd536",
+            "9e5e52b423a49dbd"
         ],
         "x": 335,
         "y": 60,
@@ -3221,7 +3732,8 @@
             "a9b6da2f2e6a066a",
             "9f4d9eacaefc1402",
             "c7beb866c037aefc",
-            "757e7132e148e450"
+            "757e7132e148e450",
+            "18bd4031c49c739a"
         ],
         "x": 555,
         "y": 60,
@@ -5988,6 +6500,140 @@
         ]
     },
     {
+        "id": "b5fe8f07ffca93af",
+        "type": "ui-template",
+        "z": "2d41a8ed5aea3449",
+        "group": "cc5bd9fa98de3240",
+        "page": "",
+        "ui": "",
+        "name": "Starting point",
+        "order": 1,
+        "width": "12",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Starting point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"coordFormat === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      coordFormat: \"\",\n      selectedDate: \"\",\n      selectedTime: \"\",\n      longitude: null,\n      latitude: null,\n      dmsLongitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.coordFormat !== undefined) {\n            this.coordFormat = payload.coordFormat;\n          }\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.gps) {\n            if (this.coordFormat === 'Decimal degrees (DD)') {\n              if (payload.gps.longitude !== undefined) {\n                this.longitude = payload.gps.longitude;\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.latitude = payload.gps.latitude;\n              }\n            } else {\n              if (payload.gps.longitude !== undefined) {\n                this.dmsLongitude = {\n                  ...this.dmsLongitude,\n                  ...payload.gps.longitude\n                };\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.dmsLatitude = {\n                  ...this.dmsLatitude,\n                  ...payload.gps.latitude\n                };\n              }\n            }\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.coordFormat === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload });\n    }\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .spacing {\n    margin-right: 15px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .container {\n    padding: 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .grid-container {\n    display: grid !important;\n    height: 5vh !important;\n  }\n\n  .my-label-gps {\n    font-weight: bold !important;\n    flex: 2 !important;\n    margin-bottom: 20px !important;\n    font-size: 1vw !important;\n  }\n\n  .label-DD {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-date {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-time {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    padding-left: 25px !important;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    justify-content: space-between !important;\n  }\n\n  .label-bloc-3 {\n    flex: 0.1;\n    display: flex;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .p-container {\n    display: inline-block !important;\n    height: 100px !important;\n  }\n\n  p#dms-format {\n    horizontal-align: top !important;\n    display: inline-block !important;\n    font-weight: bolder !important;\n    font-size: 20px !important\n  }\n\n  .v-select-compas {\n    min-width: 95px !important;\n  }\n\n  .v-text-format {\n  }\n\n  .v-text-format-2 {\n    min-width: 90px !important;\n  }\n\n  .dms {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    max-width: 100% !important;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 1300,
+        "wires": [
+            [
+                "3442a9a7f346f637"
+            ]
+        ]
+    },
+    {
+        "id": "4cfa923ea2a75c0c",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "f90d50097c6eb575",
+        "valuesConfigName": "acq",
+        "valueId": "b33a7620-63b8-11ef-896a-298ca7d12c69",
+        "value": "volume",
+        "command": "read",
+        "msgProperty": "payload.selectedDate",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 530,
+        "y": 1300,
+        "wires": [
+            [
+                "b5fe8f07ffca93af"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "11ef71995338ebf2",
+        "type": "inject",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "x": 370,
+        "y": 1300,
+        "wires": [
+            [
+                "4cfa923ea2a75c0c"
+            ]
+        ]
+    },
+    {
+        "id": "3442a9a7f346f637",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "name": "",
+        "valuesConfig": "f90d50097c6eb575",
+        "valuesConfigName": "acq",
+        "valueId": "b33a7620-63b8-11ef-896a-298ca7d12c69",
+        "value": "volume",
+        "command": "write",
+        "msgProperty": "payload.date",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 910,
+        "y": 1300,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ab161f05c3e4b336",
+        "type": "ui-template",
+        "z": "2d41a8ed5aea3449",
+        "g": "57273196ea82116a",
+        "group": "",
+        "page": "",
+        "ui": "1eeac55ba6b9065f",
+        "name": "CSS Global",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": ".v-icon--clickable{\n    color: red;\n    margin-top: 4px;\n}\n\n\n\n.nrdb-ui-group>.v-card {\n    border: none;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 1170,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "c24d1751dd739fe4",
         "type": "link out",
         "z": "fb15c917381dd273",
@@ -6697,7 +7343,9 @@
             "0e78c20a20947374",
             "7150e1ace23a0ffe",
             "9be9795ec75136f3",
-            "e83cc6473d7c6e2e"
+            "e83cc6473d7c6e2e",
+            "f3861367fad40248",
+            "529259c0cda5c2e6"
         ],
         "x": 75,
         "y": 40,
@@ -6720,7 +7368,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"header-home-container\">\n        <div class=\"header-home-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"header-home-message-container\">\n            <p>Welcome on the <span id=\"planktoscope\">PlanktoScope GUI</span></p>\n        </div>\n    </div>\n</template>\n\n<style>\n    .header-home-container {\n        display: flex;\n        flex-direction: row;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container img {\n        height: 5.5vw;\n        width: 5.5vw;\n        margin-right: 20px;\n    }\n\n    .header-home-message-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-message-container p {\n        font-size: 2.5vw;\n        font-weight: 100;\n        color: black;\n    }\n\n    .header-home-message-container span#version {\n        color: #076eac;\n    }\n\n    .header-home-message-container span#planktoscope {\n        font-weight: bold;\n        /* color: #076eac; */\n    }\n\n</style>",
+        "format": "<template>\n    <div class=\"header-home-container\">\n        <div class=\"header-home-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"header-home-message-container\">\n            <p>Welcome on the <span id=\"planktoscope\">PlanktoScope GUI</span></p>\n                <a href=\"http://92.167.184.163:1880/ps/node-red-v2/dashboard/Lab\">\n                    <i class=\"mdi mdi-test-tube\"></i> Accéder au flow Lab\n                </a>\n        </div>\n    </div>\n</template>\n\n<style>\n    .header-home-container {\n        display: flex;\n        flex-direction: row;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container img {\n        height: 5.5vw;\n        width: 5.5vw;\n        margin-right: 20px;\n    }\n\n    .header-home-message-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-message-container p {\n        font-size: 2.5vw;\n        font-weight: 100;\n        color: black;\n    }\n\n    .header-home-message-container span#version {\n        color: #076eac;\n    }\n\n    .header-home-message-container span#planktoscope {\n        font-weight: bold;\n        /* color: #076eac; */\n    }\n\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -6745,7 +7393,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account-circle\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list-item>\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account-circle</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Gallery', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-container {\n    position: fixed !important;\n    top: 0 !important;\n    left: 0 !important;\n    width: 100% !important;\n    border-bottom: 1px solid black !important;\n    display: flex !important;\n  }\n\n  .header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n  }\n\n  .header-top-home-information-container span {\n    color: #066fac;\n    font-size: 25px;\n    padding: 10px 5px;\n    cursor: pointer;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account-circle\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list-item>\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account-circle</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Gallery', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' },\n        { title: 'Lab', icon: 'mdi-test-tube' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-container {\n    position: fixed !important;\n    top: 0 !important;\n    left: 0 !important;\n    width: 100% !important;\n    border-bottom: 1px solid black !important;\n    display: flex !important;\n  }\n\n  .header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n  }\n\n  .header-top-home-information-container span {\n    color: #066fac;\n    font-size: 25px;\n    padding: 10px 5px;\n    cursor: pointer;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -6772,7 +7420,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image\"></span>\n                <p id=\"first-p\">Gallery</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-bullseye\"></span>\n                <p id=\"first-p\">Calibration</p>\n                <p id=\"second-p\">Adjust your settings to ensure accurate measurements.</p>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item5\" @click=\"handleClick(5)\">\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-chart-line\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Monitoring</p>\n                    <p id=\"second-p\">Keep track of system performance.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item6\" @click=\"handleClick(6)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                const currentUrl = new URL(window.location.href);\n                const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n                if (itemNumber == 2) {\n                    const relativePath = '/ps/data/browse/files/';\n                    const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n                    open(fullUrl.href, '_blank');\n                } else if (itemNumber == 4) {\n                    open(\"http://192.168.1.32/ps/docs/\", '_blank');\n                } else if (itemNumber == 6) {\n                    open(\"https://www.fairscope.com/helpdesk\", '_blank');\n                } else {\n                    this.send({payload: itemNumber});\n                }\n            }\n        }\n    };\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 1% 12%;\n        grid-template-columns: 2fr 2fr 2fr; \n        grid-template-rows: 2fr 1fr;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        position: absolute;\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 2vw 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 1.5vw 10px 25px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n        margin: 1.5vw 0 0 0;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        background :#f6f6f6;\n    }\n\n    .first-line-container div#size {\n        height: 12vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 3;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 3;\n        grid-row: 1 / span 2;\n    }\n    \n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n    \n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 1 / 2;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item5 {\n        grid-column: 2 / 3; \n        grid-row: 2 / 3;\n    }\n\n    .item5 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item5 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item6 {\n        grid-column: 3 / 4; \n        grid-row: 2 / 3;\n    }\n    \n    .item6 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n    \n    .item6 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image\"></span>\n                <p id=\"first-p\">Gallery</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-bullseye\"></span>\n                <p id=\"first-p\">Calibration</p>\n                <p id=\"second-p\">Adjust your settings to ensure accurate measurements.</p>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item5\" @click=\"handleClick(5)\">\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-chart-line\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Monitoring</p>\n                    <p id=\"second-p\">Keep track of system performance.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item6\" @click=\"handleClick(6)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                const currentUrl = new URL(window.location.href);\n                const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n                if (itemNumber == 2) {\n                    const relativePath = '/ps/data/browse/files/';\n                    const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n                    open(fullUrl.href, '_blank');\n                } else if (itemNumber == 4) {\n                    open(\"http://192.168.1.32/ps/docs/\", '_blank');\n                } else if (itemNumber == 6) {\n                    open(\"https://www.fairscope.com/helpdesk\", '_blank');\n                } else {\n                    this.send({payload: itemNumber});\n                }\n            }\n        }\n    };\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 1% 12%;\n        grid-template-columns: 2fr 2fr 2fr; \n        grid-template-rows: 2fr 1fr;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        position: absolute;\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 2vw 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 1.5vw 10px 25px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n        margin: 1.5vw 0 0 0;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        background :#f6f6f6;\n    }\n\n    .first-line-container div#size {\n        height: 14vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 3;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 3;\n        grid-row: 1 / span 2;\n    }\n    \n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n    \n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 1 / 2;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item5 {\n        grid-column: 2 / 3; \n        grid-row: 2 / 3;\n    }\n\n    .item5 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item5 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item6 {\n        grid-column: 3 / 4; \n        grid-row: 2 / 3;\n    }\n    \n    .item6 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n    \n    .item6 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -6842,7 +7490,9 @@
         "name": "link out 61",
         "mode": "link",
         "links": [
-            "2cc4d8075a852a14"
+            "2cc4d8075a852a14",
+            "9343f1c619041277",
+            "331619c373e7be62"
         ],
         "x": 1155,
         "y": 420,
@@ -6896,7 +7546,7 @@
         "z": "a707f17e5367291d",
         "g": "1daf5cfc8e29e5ad",
         "name": "Prepare payload to navigate",
-        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Reboot\") {\n    msg.payload = \"Reboot\"\n} else if (title == \"Shutdown\") {\n    msg.payload = \"Restart\"\n}\n\nreturn msg;",
+        "func": "var title = msg.payload;\n\nif (title == \"Home\") {\n    msg.payload = {\"page\":\"Home\"}\n} else if (title == \"Settings\") {\n    msg.payload = {\"page\":\"Settings\"}\n} else if (title == \"Calibration\") {\n    msg.payload = {\"page\":\"Calibration\"}\n} else if (title == \"Hardware\") {\n    msg.payload = {\"page\":\"Hardware\"}\n} else if (title == \"Monitoring\") {\n    msg.payload = {\"page\":\"Monitoring\"}\n} else if (title == \"Lab\") {\n    msg.payload = {\"page\":\"Lab\"}\n} else if (title == \"Reboot\") {\n    msg.payload = \"Reboot\"\n} else if (title == \"Shutdown\") {\n    msg.payload = \"Restart\"\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6919,7 +7569,8 @@
         "name": "link out 67",
         "mode": "link",
         "links": [
-            "2cc4d8075a852a14"
+            "2cc4d8075a852a14",
+            "9343f1c619041277"
         ],
         "x": 1485,
         "y": 140,
@@ -7103,7 +7754,9 @@
             "913867d97ba2a2ca",
             "2b081acaeb1f304d",
             "cfa47830686d6be3",
-            "064155ee1c670211"
+            "064155ee1c670211",
+            "ddb68dd551c36b53",
+            "c905e61be6997950"
         ],
         "x": 235,
         "y": 520,
@@ -7123,7 +7776,9 @@
             "913867d97ba2a2ca",
             "2b081acaeb1f304d",
             "cfa47830686d6be3",
-            "064155ee1c670211"
+            "064155ee1c670211",
+            "ddb68dd551c36b53",
+            "c905e61be6997950"
         ],
         "x": 235,
         "y": 560,
@@ -7143,7 +7798,9 @@
             "913867d97ba2a2ca",
             "2b081acaeb1f304d",
             "cfa47830686d6be3",
-            "064155ee1c670211"
+            "064155ee1c670211",
+            "ddb68dd551c36b53",
+            "c905e61be6997950"
         ],
         "x": 235,
         "y": 640,
@@ -7217,7 +7874,9 @@
             "913867d97ba2a2ca",
             "2b081acaeb1f304d",
             "cfa47830686d6be3",
-            "064155ee1c670211"
+            "064155ee1c670211",
+            "ddb68dd551c36b53",
+            "c905e61be6997950"
         ],
         "x": 235,
         "y": 720,
@@ -7258,7 +7917,9 @@
             "913867d97ba2a2ca",
             "2b081acaeb1f304d",
             "cfa47830686d6be3",
-            "064155ee1c670211"
+            "064155ee1c670211",
+            "ddb68dd551c36b53",
+            "c905e61be6997950"
         ],
         "x": 205,
         "y": 800,
@@ -7664,7 +8325,7 @@
         "width": "0",
         "height": "0",
         "head": "",
-        "format": ".calibration-button .v-btn {\n    background-color: #0a6eca;\n    color: #ffffff;\n    border-radius: 7px;\n}",
+        "format": ".calibration-button .v-btn {\n    background-color: #0a6eca;\n    color: #ffffff;\n    border-radius: 7px;\n}\n\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -8474,7 +9135,7 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment-sgi\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field\n          v-model=\"projectName\"\n          @input=\"updatePayload\"\n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          v-model=\"sampleId\"\n          @input=\"updatePayload\"\n          label=\"ex: S001\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment-sgi\">\n      <div class=\"label-bloc-sgi-2\">\n        <label class=\"v-label v-slider__label my-label-sgi-2\">Sampling Gear</label>\n      </div>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      toggle: null,\n      projectName: '',\n      sampleId: ''\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.project_name !== undefined) {\n            this.projectName = payload.project_name;\n          }\n          if (payload.sample_id !== undefined) {\n            this.sampleId = payload.sample_id;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    sendTitle(title) {\n      this.send({payload : {\n          gear: title\n      }});\n    },\n    updatePayload() {\n      const payload = {\n        project_name: this.projectName,\n        sample_id: this.sampleId\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .gear-selection {\n    width: 100%;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general-sgi {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-sgi-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-sgi {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-sgi {\n    display: flex;\n    flex: 0.2;\n    justify-content: center !important;\n    align-items: center;\n  }\n\n  .label-bloc-sgi-2 {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .toggle-full-width {\n    width: 92% !important;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    background-color: #ffffff !important;\n    color: #0a6eca !important;\n  }\n\n  .my-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .progress-info {\n    margin-top: 12px !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment-sgi\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field\n          v-model=\"projectName\"\n          @input=\"updatePayload\"\n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text icon-update\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1 dude.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          v-model=\"sampleId\"\n          @input=\"updatePayload\"\n          label=\"ex: S001\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment-sgi\">\n      <div class=\"label-bloc-sgi-2\">\n        <label class=\"v-label v-slider__label my-label-sgi-2\">Sampling Gear</label>\n      </div>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      toggle: null,\n      projectName: '',\n      sampleId: ''\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.project_name !== undefined) {\n            this.projectName = payload.project_name;\n          }\n          if (payload.sample_id !== undefined) {\n            this.sampleId = payload.sample_id;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    sendTitle(title) {\n      this.send({payload : {\n          gear: title\n      }});\n    },\n    updatePayload() {\n      const payload = {\n        project_name: this.projectName,\n        sample_id: this.sampleId\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .gear-selection {\n    width: 100%;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general-sgi {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-sgi-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-sgi {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-sgi {\n    display: flex;\n    flex: 0.2;\n    justify-content: center !important;\n    align-items: center;\n  }\n\n  .label-bloc-sgi-2 {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .toggle-full-width {\n    width: 92% !important;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    background-color: #ffffff !important;\n    color: #0a6eca !important;\n  }\n\n  .my-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .progress-info {\n    margin-top: 12px !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -8532,7 +9193,7 @@
         "page": "",
         "ui": "",
         "name": "Starting point",
-        "order": 1,
+        "order": 2,
         "width": "12",
         "height": "1",
         "head": "",
@@ -9169,8 +9830,6 @@
         "g": "45c6a7006373dadb",
         "name": "link in 98",
         "links": [
-            "32e3989018637909",
-            "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
         "x": 125,
@@ -16839,7 +17498,7 @@
         "g": "149a607c8eda744a",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -17883,7 +18542,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"header-hardware-settings-container\">\n    <div class=\"header-hardware-settings-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-hardware-settings-container-right\">\n      <div class=\"header-hardware-settings-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-hardware-settings-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n    z-index: 1000000;\n  }\n\n  .header-hardware-settings-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-hardware-settings-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-hardware-settings-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-hardware-settings-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
