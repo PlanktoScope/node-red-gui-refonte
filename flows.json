@@ -238,8 +238,8 @@
             "88baa8ae55dc9fe2",
             "f7640955206f3cad"
         ],
-        "x": 224,
-        "y": 199,
+        "x": 174,
+        "y": 299,
         "w": 1192,
         "h": 202
     },
@@ -268,8 +268,8 @@
             "22424630f98f525f",
             "a514467c6bc076c0"
         ],
-        "x": 84,
-        "y": 1059,
+        "x": 174,
+        "y": 1199,
         "w": 1202,
         "h": 202
     },
@@ -301,8 +301,8 @@
             "0c3837abf17b6e69",
             "c727fe7b031df253"
         ],
-        "x": 84,
-        "y": 1639,
+        "x": 174,
+        "y": 1779,
         "w": 1262,
         "h": 242
     },
@@ -331,8 +331,8 @@
             "31086f2f8fadc1a9",
             "a64633dc848b180d"
         ],
-        "x": 84,
-        "y": 1899,
+        "x": 174,
+        "y": 2039,
         "w": 1282,
         "h": 202
     },
@@ -352,8 +352,8 @@
             "5de1187ebfd8bc79",
             "b708f61bae3b3542"
         ],
-        "x": 84,
-        "y": 1279,
+        "x": 174,
+        "y": 1419,
         "w": 1202,
         "h": 82
     },
@@ -1010,8 +1010,8 @@
             "f1cd6cda6811df0d",
             "86625c5739968525"
         ],
-        "x": 84,
-        "y": 699,
+        "x": 174,
+        "y": 839,
         "w": 1162,
         "h": 162
     },
@@ -1038,8 +1038,8 @@
             "d8c320a906f03e95",
             "30d76989325c8687"
         ],
-        "x": 84,
-        "y": 879,
+        "x": 174,
+        "y": 1019,
         "w": 1162,
         "h": 162
     },
@@ -1064,11 +1064,13 @@
             "0caf8dc53c166886",
             "a1f5a28590776828",
             "26384e9142c6e77d",
-            "7220b5161dc33941"
+            "7220b5161dc33941",
+            "fbeebcd053912f51",
+            "91ce13c6dbb7bfb1"
         ],
         "x": 174,
-        "y": 419,
-        "w": 1352,
+        "y": 519,
+        "w": 1342,
         "h": 202
     },
     {
@@ -1099,8 +1101,8 @@
             "06f62ec6bb72808a",
             "2fe68d76dd3ae605"
         ],
-        "x": 84,
-        "y": 1379,
+        "x": 174,
+        "y": 1519,
         "w": 1302,
         "h": 242
     },
@@ -1119,8 +1121,8 @@
             "b08415909e5dc4da",
             "ed805c7828d607cc"
         ],
-        "x": 588,
-        "y": 2133,
+        "x": 174,
+        "y": 2273,
         "w": 464,
         "h": 234
     },
@@ -1554,8 +1556,8 @@
         "nodes": [
             "5b2b9e8bb104b3d7"
         ],
-        "x": 614,
-        "y": 2159,
+        "x": 200,
+        "y": 2299,
         "w": 412,
         "h": 82
     },
@@ -1573,8 +1575,8 @@
         "nodes": [
             "e7fdcbc88dc9b248"
         ],
-        "x": 614,
-        "y": 2259,
+        "x": 200,
+        "y": 2399,
         "w": 272,
         "h": 82
     },
@@ -1924,6 +1926,69 @@
         "y": 299,
         "w": 462,
         "h": 602
+    },
+    {
+        "id": "3cdf45ec83c267ed",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Get coordonate format ",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e5239cb6eb875cd1",
+            "764bf644172419d4",
+            "bf31c62fba21e7bb",
+            "e4e5f2ac69be59ad"
+        ],
+        "x": 174,
+        "y": 739,
+        "w": 632,
+        "h": 82
+    },
+    {
+        "id": "a346b8f63436cac2",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Init all node to get data ",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "10db78f4fa94db24",
+            "d82f912c99fe109a",
+            "e367adcfacf8716e",
+            "35280c47dcb8588f"
+        ],
+        "x": 174,
+        "y": 19,
+        "w": 222,
+        "h": 122
+    },
+    {
+        "id": "630d2ebfad069d63",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Detect when the use arrive, then init the page",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "a4b88adea83b2353",
+            "3771bfacc7b4c6f8",
+            "08324bbd83565d26",
+            "df824b3eae9a8d40"
+        ],
+        "x": 174,
+        "y": 159,
+        "w": 532,
+        "h": 122
     },
     {
         "id": "cae0178a8a69f787",
@@ -9049,8 +9114,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 690,
-        "y": 240,
+        "x": 640,
+        "y": 340,
         "wires": [
             [
                 "86d23d1c6a0ea540"
@@ -9076,8 +9141,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 700,
-        "y": 280,
+        "x": 650,
+        "y": 380,
         "wires": [
             [
                 "97a70986fa0406ce"
@@ -9092,8 +9157,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1140,
-        "y": 280,
+        "x": 1090,
+        "y": 380,
         "wires": [
             []
         ]
@@ -9111,8 +9176,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 280,
+        "x": 870,
+        "y": 380,
         "wires": [
             [
                 "62ed056b8dcaa302"
@@ -9132,14 +9197,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment-sgi\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field\n          v-model=\"projectName\"\n          @input=\"updatePayload\"\n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text icon-update\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1 dude.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          v-model=\"sampleId\"\n          @input=\"updatePayload\"\n          label=\"ex: S001\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment-sgi\">\n      <div class=\"label-bloc-sgi-2\">\n        <label class=\"v-label v-slider__label my-label-sgi-2\">Sampling Gear</label>\n      </div>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 0\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 1\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 2\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 3\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 4\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      toggle: null,\n      projectName: '',\n      sampleId: ''\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.project_name !== undefined) {\n            this.projectName = payload.project_name;\n          }\n          if (payload.sample_id !== undefined) {\n            this.sampleId = payload.sample_id;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    sendTitle(title) {\n      this.send({payload : {\n          gear: title\n      }});\n    },\n    updatePayload() {\n      const payload = {\n        project_name: this.projectName,\n        sample_id: this.sampleId\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .gear-selection {\n    width: 100%;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general-sgi {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-sgi-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-sgi {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-sgi {\n    display: flex;\n    flex: 0.2;\n    justify-content: center !important;\n    align-items: center;\n  }\n\n  .label-bloc-sgi-2 {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-toggle .v-btn--disabled {\n    opacity: 1;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .toggle-full-width {\n    width: 92% !important;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    background-color: #ffffff !important;\n    color: #0a6eca !important;\n  }\n\n  .my-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .progress-info {\n    margin-top: 12px !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment-sgi\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field\n          v-model=\"projectName\"\n          @input=\"updatePayload\"\n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text icon-update\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1 dude.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          v-model=\"sampleId\"\n          @input=\"updatePayload\"\n          label=\"ex: S001\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment-sgi\">\n      <div class=\"label-bloc-sgi-2\">\n        <label class=\"v-label v-slider__label my-label-sgi-2\">Sampling Gear</label>\n      </div>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 0\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 1\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 2\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 3\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 4\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      toggle: null,\n      gear: \"\",\n      projectName: '',\n      sampleId: ''\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.project_name !== undefined) {\n            this.projectName = payload.project_name;\n          }\n\n          if (payload.gear !== undefined) {\n            this.gear = payload.gear;\n            \n            if (this.gear == \"Horizontal Net\") {\n                this.toggle = 0;\n            } else if (this.gear == \"Vertical Net\") {\n                this.toggle = 1;\n            } else if (this.gear == \"Niskin bottle\") {\n                this.toggle = 2;\n            } else if (this.gear == \"Lab culture\") {\n                this.toggle = 3;\n            } else if (this.gear == \"Demo / Test\") {\n                this.toggle = 4;\n            }\n          }\n\n          if (payload.sample_id !== undefined) {\n            this.sampleId = payload.sample_id;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    sendTitle(title) {\n      this.send({payload : {\n          gear: title\n      }});\n    },\n    updatePayload() {\n      const payload = {\n        project_name: this.projectName,\n        sample_id: this.sampleId\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .gear-selection {\n    width: 100%;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general-sgi {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-sgi-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-sgi {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-sgi {\n    display: flex;\n    flex: 0.2;\n    justify-content: center !important;\n    align-items: center;\n  }\n\n  .label-bloc-sgi-2 {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-toggle .v-btn--disabled {\n    opacity: 1;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .toggle-full-width {\n    width: 92% !important;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    background-color: #ffffff !important;\n    color: #0a6eca !important;\n  }\n\n  .my-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .progress-info {\n    margin-top: 12px !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 760,
-        "y": 520,
+        "x": 750,
+        "y": 620,
         "wires": [
             [
                 "26384e9142c6e77d"
@@ -9154,8 +9219,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1440,
-        "y": 580,
+        "x": 1430,
+        "y": 680,
         "wires": [
             []
         ]
@@ -9173,8 +9238,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1220,
-        "y": 580,
+        "x": 1210,
+        "y": 680,
         "wires": [
             [
                 "697ae94309963b9b"
@@ -9200,8 +9265,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 710,
-        "y": 780,
+        "x": 800,
+        "y": 920,
         "wires": [
             [
                 "72b7984ea35d8a21",
@@ -9214,6 +9279,7 @@
         "id": "764bf644172419d4",
         "type": "link out",
         "z": "e988301e60e4b458",
+        "g": "3cdf45ec83c267ed",
         "name": "link out 60",
         "mode": "link",
         "links": [
@@ -9222,8 +9288,8 @@
             "d0f0965ace2cdaaf",
             "2bb3a49785cacf3b"
         ],
-        "x": 655,
-        "y": 660,
+        "x": 765,
+        "y": 780,
         "wires": []
     },
     {
@@ -9236,8 +9302,8 @@
             "764bf644172419d4",
             "32e3989018637909"
         ],
-        "x": 655,
-        "y": 740,
+        "x": 745,
+        "y": 880,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -9263,8 +9329,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 720,
-        "y": 1160,
+        "x": 810,
+        "y": 1300,
         "wires": [
             [
                 "6109a08395735bbd",
@@ -9287,8 +9353,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 240,
+        "x": 850,
+        "y": 340,
         "wires": [
             [
                 "87f5b98130be3cd8"
@@ -9303,8 +9369,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1120,
-        "y": 240,
+        "x": 1070,
+        "y": 340,
         "wires": [
             []
         ]
@@ -9328,8 +9394,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 770,
-        "y": 1760,
+        "x": 860,
+        "y": 1900,
         "wires": [
             [
                 "38b39c419f51dc17",
@@ -9359,8 +9425,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 770,
-        "y": 2000,
+        "x": 860,
+        "y": 2140,
         "wires": [
             [
                 "78ed3523acf4aa56",
@@ -9389,8 +9455,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 720,
-        "y": 1320,
+        "x": 810,
+        "y": 1460,
         "wires": [
             [
                 "b708f61bae3b3542"
@@ -9416,8 +9482,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 820,
-        "y": 2200,
+        "x": 406,
+        "y": 2340,
         "wires": [
             []
         ]
@@ -9441,8 +9507,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 750,
-        "y": 2300,
+        "x": 336,
+        "y": 2440,
         "wires": [
             []
         ]
@@ -9451,6 +9517,7 @@
         "id": "bf31c62fba21e7bb",
         "type": "persistent value",
         "z": "e988301e60e4b458",
+        "g": "3cdf45ec83c267ed",
         "name": "",
         "valuesConfig": "3da386409fa03189",
         "valuesConfigName": "Setting metadata",
@@ -9471,8 +9538,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 310,
-        "y": 660,
+        "x": 420,
+        "y": 780,
         "wires": [
             [
                 "e5239cb6eb875cd1"
@@ -9484,11 +9551,12 @@
         "id": "a4b88adea83b2353",
         "type": "ui-control",
         "z": "e988301e60e4b458",
+        "g": "630d2ebfad069d63",
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 980,
-        "y": 100,
+        "x": 620,
+        "y": 200,
         "wires": [
             []
         ]
@@ -9512,8 +9580,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 710,
-        "y": 320,
+        "x": 660,
+        "y": 420,
         "wires": [
             [
                 "a7e174825f5991b0"
@@ -9528,8 +9596,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1280,
-        "y": 300,
+        "x": 1230,
+        "y": 400,
         "wires": [
             []
         ]
@@ -9538,10 +9606,11 @@
         "id": "3771bfacc7b4c6f8",
         "type": "ui-event",
         "z": "e988301e60e4b458",
+        "g": "630d2ebfad069d63",
         "ui": "1eeac55ba6b9065f",
         "name": "",
-        "x": 590,
-        "y": 120,
+        "x": 250,
+        "y": 220,
         "wires": [
             [
                 "08324bbd83565d26",
@@ -9553,6 +9622,7 @@
         "id": "08324bbd83565d26",
         "type": "function",
         "z": "e988301e60e4b458",
+        "g": "630d2ebfad069d63",
         "name": "Set placeholder groups",
         "func": "msg.payload = {\n    \"group\":\n        {\n            \"show\": [],\n            \"hide\":\n                [\n                    \"Sample-2:starting-point-sample-2\",\n                    \"Sample-2:ending-point-sample-2\",\n                    \"Sample-2:net-specificity-sample-2\",\n                    \"Sample-2:other-information-horizontal-net\",\n                    \"Sample-2:other-information-vertical-net\",\n                    \"Sample-2:other-information-niskin-bottle\",\n                    \"Sample-2:bottle-specificity-sample-2\",\n                    \"Sample-2:other-information-lab-culture-&-demo\",\n                    \"Sample-2:custom-sample-metadata\"\n                ]\n        }\n}\n\nreturn msg;",
         "outputs": 1,
@@ -9561,8 +9631,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
-        "y": 100,
+        "x": 430,
+        "y": 200,
         "wires": [
             [
                 "a4b88adea83b2353"
@@ -9594,8 +9664,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 460,
-        "y": 320,
+        "x": 410,
+        "y": 420,
         "wires": [
             [
                 "7e6b0fe8d3df5f29"
@@ -9614,8 +9684,8 @@
             "df824b3eae9a8d40",
             "35280c47dcb8588f"
         ],
-        "x": 265,
-        "y": 320,
+        "x": 215,
+        "y": 420,
         "wires": [
             [
                 "c0aa6894fa9aaf74"
@@ -9647,8 +9717,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 740,
+        "x": 1140,
+        "y": 880,
         "wires": [
             [],
             []
@@ -9679,8 +9749,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 780,
+        "x": 1140,
+        "y": 920,
         "wires": [
             [],
             []
@@ -9711,8 +9781,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 820,
+        "x": 1140,
+        "y": 960,
         "wires": [
             [],
             []
@@ -9743,8 +9813,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 740,
+        "x": 440,
+        "y": 880,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -9777,8 +9847,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 780,
+        "x": 440,
+        "y": 920,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -9811,8 +9881,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 820,
+        "x": 440,
+        "y": 960,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -9829,8 +9899,8 @@
         "links": [
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 740,
+        "x": 215,
+        "y": 880,
         "wires": [
             [
                 "96ab8a6338e4fcfc"
@@ -9848,8 +9918,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 780,
+        "x": 215,
+        "y": 920,
         "wires": [
             [
                 "0f42da474afce82c"
@@ -9867,8 +9937,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 820,
+        "x": 215,
+        "y": 960,
         "wires": [
             [
                 "3370481fa03529d1"
@@ -9879,6 +9949,7 @@
         "id": "e5239cb6eb875cd1",
         "type": "function",
         "z": "e988301e60e4b458",
+        "g": "3cdf45ec83c267ed",
         "name": "Set format",
         "func": "\nmsg.payload = {\n    coordFormat: msg.payload.coordFormat\n}\n\nreturn msg;",
         "outputs": 1,
@@ -9887,8 +9958,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
-        "y": 660,
+        "x": 660,
+        "y": 780,
         "wires": [
             [
                 "764bf644172419d4"
@@ -9899,21 +9970,24 @@
         "id": "df824b3eae9a8d40",
         "type": "link out",
         "z": "e988301e60e4b458",
+        "g": "630d2ebfad069d63",
         "name": "link out 95",
         "mode": "link",
         "links": [
             "ebc182ac620954af",
             "bac194ac08ecd558",
-            "ab8f773ee48978da"
+            "ab8f773ee48978da",
+            "91ce13c6dbb7bfb1"
         ],
-        "x": 695,
-        "y": 140,
+        "x": 335,
+        "y": 240,
         "wires": []
     },
     {
         "id": "10db78f4fa94db24",
         "type": "inject",
         "z": "e988301e60e4b458",
+        "g": "a346b8f63436cac2",
         "name": "",
         "props": [],
         "repeat": "2",
@@ -9921,8 +9995,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 410,
-        "y": 100,
+        "x": 270,
+        "y": 60,
         "wires": [
             [
                 "d82f912c99fe109a"
@@ -9933,6 +10007,7 @@
         "id": "d82f912c99fe109a",
         "type": "link out",
         "z": "e988301e60e4b458",
+        "g": "a346b8f63436cac2",
         "name": "link out 97",
         "mode": "link",
         "links": [
@@ -9971,22 +10046,23 @@
             "8e84a78cf2bc0972",
             "a64633dc848b180d"
         ],
-        "x": 495,
-        "y": 100,
+        "x": 355,
+        "y": 60,
         "wires": []
     },
     {
         "id": "e4e5f2ac69be59ad",
         "type": "link in",
         "z": "e988301e60e4b458",
+        "g": "3cdf45ec83c267ed",
         "name": "link in 101",
         "links": [
             "32e3989018637909",
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 660,
+        "x": 215,
+        "y": 780,
         "wires": [
             [
                 "bf31c62fba21e7bb"
@@ -10012,8 +10088,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 710,
-        "y": 960,
+        "x": 800,
+        "y": 1100,
         "wires": [
             [
                 "fc386a9e16260470",
@@ -10032,8 +10108,8 @@
             "764bf644172419d4",
             "32e3989018637909"
         ],
-        "x": 655,
-        "y": 920,
+        "x": 745,
+        "y": 1060,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -10065,8 +10141,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 920,
+        "x": 1140,
+        "y": 1060,
         "wires": [
             [],
             []
@@ -10097,8 +10173,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 960,
+        "x": 1140,
+        "y": 1100,
         "wires": [
             [],
             []
@@ -10129,8 +10205,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 1000,
+        "x": 1140,
+        "y": 1140,
         "wires": [
             [],
             []
@@ -10161,8 +10237,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 920,
+        "x": 440,
+        "y": 1060,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -10195,8 +10271,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 960,
+        "x": 440,
+        "y": 1100,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -10229,8 +10305,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 1000,
+        "x": 440,
+        "y": 1140,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -10249,8 +10325,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 920,
+        "x": 215,
+        "y": 1060,
         "wires": [
             [
                 "0d4af74dc3740347"
@@ -10268,8 +10344,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 960,
+        "x": 215,
+        "y": 1100,
         "wires": [
             [
                 "ac3ec79e3b41827f"
@@ -10287,8 +10363,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1000,
+        "x": 215,
+        "y": 1140,
         "wires": [
             [
                 "fb2959a5122f4779"
@@ -10320,8 +10396,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
-        "y": 500,
+        "x": 410,
+        "y": 600,
         "wires": [
             [
                 "23a443593bbc53fe"
@@ -10354,8 +10430,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 410,
-        "y": 540,
+        "x": 400,
+        "y": 640,
         "wires": [
             [
                 "23a443593bbc53fe"
@@ -10375,7 +10451,7 @@
             "35280c47dcb8588f"
         ],
         "x": 215,
-        "y": 500,
+        "y": 600,
         "wires": [
             [
                 "35bf8991beb7e84d"
@@ -10394,7 +10470,7 @@
             "35280c47dcb8588f"
         ],
         "x": 215,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
                 "6836b771497a13ae"
@@ -10426,8 +10502,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1240,
-        "y": 460,
+        "x": 1230,
+        "y": 560,
         "wires": [
             [],
             []
@@ -10458,8 +10534,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1230,
-        "y": 500,
+        "x": 1220,
+        "y": 600,
         "wires": [
             [],
             []
@@ -10484,8 +10560,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 950,
-        "y": 520,
+        "x": 940,
+        "y": 620,
         "wires": [
             [
                 "a1f5a28590776828",
@@ -10522,8 +10598,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 360,
-        "y": 1100,
+        "x": 450,
+        "y": 1240,
         "wires": [
             [
                 "cc28e6514a5a9c99"
@@ -10542,8 +10618,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1100,
+        "x": 215,
+        "y": 1240,
         "wires": [
             [
                 "73f91661b6841190"
@@ -10575,8 +10651,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 1140,
+        "x": 440,
+        "y": 1280,
         "wires": [
             [
                 "cc28e6514a5a9c99"
@@ -10595,8 +10671,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1140,
+        "x": 215,
+        "y": 1280,
         "wires": [
             [
                 "27c7bd9710ac7319"
@@ -10628,8 +10704,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 330,
-        "y": 1180,
+        "x": 420,
+        "y": 1320,
         "wires": [
             [
                 "cc28e6514a5a9c99"
@@ -10648,8 +10724,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1180,
+        "x": 215,
+        "y": 1320,
         "wires": [
             [
                 "76c578ddabf2971c"
@@ -10681,8 +10757,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 370,
-        "y": 1220,
+        "x": 460,
+        "y": 1360,
         "wires": [
             [
                 "cc28e6514a5a9c99"
@@ -10701,8 +10777,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1220,
+        "x": 215,
+        "y": 1360,
         "wires": [
             [
                 "f92c7e06d2ed0d87"
@@ -10734,8 +10810,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1060,
-        "y": 1100,
+        "x": 1150,
+        "y": 1240,
         "wires": [
             [],
             []
@@ -10766,8 +10842,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 1140,
+        "x": 1140,
+        "y": 1280,
         "wires": [
             [],
             []
@@ -10798,8 +10874,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1030,
-        "y": 1180,
+        "x": 1120,
+        "y": 1320,
         "wires": [
             [],
             []
@@ -10830,8 +10906,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1070,
-        "y": 1220,
+        "x": 1160,
+        "y": 1360,
         "wires": [
             [],
             []
@@ -10856,8 +10932,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 780,
-        "y": 1500,
+        "x": 870,
+        "y": 1640,
         "wires": [
             [
                 "b8e827b49ed71ded",
@@ -10893,8 +10969,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 1580,
+        "x": 440,
+        "y": 1720,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -10927,8 +11003,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 340,
-        "y": 1420,
+        "x": 430,
+        "y": 1560,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -10961,8 +11037,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 340,
-        "y": 1460,
+        "x": 430,
+        "y": 1600,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -10995,8 +11071,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 1500,
+        "x": 440,
+        "y": 1640,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -11029,8 +11105,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 360,
-        "y": 1540,
+        "x": 450,
+        "y": 1680,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -11049,8 +11125,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1420,
+        "x": 215,
+        "y": 1560,
         "wires": [
             [
                 "11d0f008572b1816"
@@ -11068,8 +11144,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1460,
+        "x": 215,
+        "y": 1600,
         "wires": [
             [
                 "88988d2b5efe7a55"
@@ -11087,8 +11163,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1500,
+        "x": 215,
+        "y": 1640,
         "wires": [
             [
                 "aab491fd4d8d370e"
@@ -11106,8 +11182,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1540,
+        "x": 215,
+        "y": 1680,
         "wires": [
             [
                 "b59379492732a989"
@@ -11125,8 +11201,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1580,
+        "x": 215,
+        "y": 1720,
         "wires": [
             [
                 "d2e3027e09f33d42"
@@ -11158,8 +11234,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1170,
-        "y": 1580,
+        "x": 1260,
+        "y": 1720,
         "wires": [
             [],
             []
@@ -11190,8 +11266,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1160,
-        "y": 1420,
+        "x": 1250,
+        "y": 1560,
         "wires": [
             [],
             []
@@ -11222,8 +11298,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1160,
-        "y": 1460,
+        "x": 1250,
+        "y": 1600,
         "wires": [
             [],
             []
@@ -11254,8 +11330,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1170,
-        "y": 1500,
+        "x": 1260,
+        "y": 1640,
         "wires": [
             [],
             []
@@ -11286,8 +11362,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1180,
-        "y": 1540,
+        "x": 1270,
+        "y": 1680,
         "wires": [
             [],
             []
@@ -11318,8 +11394,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 370,
-        "y": 1320,
+        "x": 460,
+        "y": 1460,
         "wires": [
             [
                 "4a4db8d5c9ce9226"
@@ -11338,8 +11414,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1320,
+        "x": 215,
+        "y": 1460,
         "wires": [
             [
                 "8602fcc44b294bfc"
@@ -11371,8 +11447,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1070,
-        "y": 1320,
+        "x": 1160,
+        "y": 1460,
         "wires": [
             [],
             []
@@ -11403,8 +11479,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 340,
-        "y": 1680,
+        "x": 430,
+        "y": 1820,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -11437,8 +11513,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 340,
-        "y": 1720,
+        "x": 430,
+        "y": 1860,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -11471,8 +11547,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 1760,
+        "x": 440,
+        "y": 1900,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -11491,8 +11567,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1760,
+        "x": 215,
+        "y": 1900,
         "wires": [
             [
                 "ebabbfe97e25d57a"
@@ -11510,8 +11586,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1720,
+        "x": 215,
+        "y": 1860,
         "wires": [
             [
                 "ba086b5748dc75a9"
@@ -11529,8 +11605,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1680,
+        "x": 215,
+        "y": 1820,
         "wires": [
             [
                 "f31535161df5937b"
@@ -11562,8 +11638,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1140,
-        "y": 1680,
+        "x": 1230,
+        "y": 1820,
         "wires": [
             [],
             []
@@ -11594,8 +11670,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1140,
-        "y": 1720,
+        "x": 1230,
+        "y": 1860,
         "wires": [
             [],
             []
@@ -11626,8 +11702,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1150,
-        "y": 1760,
+        "x": 1240,
+        "y": 1900,
         "wires": [
             [],
             []
@@ -11658,8 +11734,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 330,
-        "y": 1800,
+        "x": 420,
+        "y": 1940,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -11692,8 +11768,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 330,
-        "y": 1840,
+        "x": 420,
+        "y": 1980,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -11726,8 +11802,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1130,
-        "y": 1800,
+        "x": 1220,
+        "y": 1940,
         "wires": [
             [],
             []
@@ -11758,8 +11834,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1130,
-        "y": 1840,
+        "x": 1220,
+        "y": 1980,
         "wires": [
             [],
             []
@@ -11776,8 +11852,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1800,
+        "x": 215,
+        "y": 1940,
         "wires": [
             [
                 "b33763b35fe6bed5"
@@ -11795,8 +11871,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1840,
+        "x": 215,
+        "y": 1980,
         "wires": [
             [
                 "5ff224fdd65af7b4"
@@ -11828,8 +11904,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 1980,
+        "x": 440,
+        "y": 2120,
         "wires": [
             [
                 "0eec8b84ecf95b07"
@@ -11862,8 +11938,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 340,
-        "y": 1940,
+        "x": 430,
+        "y": 2080,
         "wires": [
             [
                 "0eec8b84ecf95b07"
@@ -11882,8 +11958,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1980,
+        "x": 215,
+        "y": 2120,
         "wires": [
             [
                 "5ac56b2b093b7f88"
@@ -11901,8 +11977,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 1940,
+        "x": 215,
+        "y": 2080,
         "wires": [
             [
                 "b5126cbae5244cd0"
@@ -11934,8 +12010,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1160,
-        "y": 1940,
+        "x": 1250,
+        "y": 2080,
         "wires": [
             [],
             []
@@ -11966,8 +12042,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1170,
-        "y": 1980,
+        "x": 1260,
+        "y": 2120,
         "wires": [
             [],
             []
@@ -11998,8 +12074,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 2020,
+        "x": 440,
+        "y": 2160,
         "wires": [
             [
                 "0eec8b84ecf95b07"
@@ -12018,8 +12094,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 2020,
+        "x": 215,
+        "y": 2160,
         "wires": [
             [
                 "d87add2bc6bd4ca6"
@@ -12051,8 +12127,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1170,
-        "y": 2020,
+        "x": 1260,
+        "y": 2160,
         "wires": [
             [],
             []
@@ -12083,8 +12159,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 350,
-        "y": 2060,
+        "x": 440,
+        "y": 2200,
         "wires": [
             [
                 "0eec8b84ecf95b07"
@@ -12117,8 +12193,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1170,
-        "y": 2060,
+        "x": 1260,
+        "y": 2200,
         "wires": [
             [],
             []
@@ -12135,8 +12211,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 125,
-        "y": 2060,
+        "x": 215,
+        "y": 2200,
         "wires": [
             [
                 "05ce26a33861a872"
@@ -12147,6 +12223,7 @@
         "id": "e367adcfacf8716e",
         "type": "inject",
         "z": "e988301e60e4b458",
+        "g": "a346b8f63436cac2",
         "name": "",
         "props": [],
         "repeat": "",
@@ -12154,8 +12231,8 @@
         "once": true,
         "onceDelay": "2",
         "topic": "",
-        "x": 410,
-        "y": 140,
+        "x": 270,
+        "y": 100,
         "wires": [
             [
                 "35280c47dcb8588f"
@@ -12166,15 +12243,17 @@
         "id": "35280c47dcb8588f",
         "type": "link out",
         "z": "e988301e60e4b458",
+        "g": "a346b8f63436cac2",
         "name": "link out 99",
         "mode": "link",
         "links": [
             "ebc182ac620954af",
             "bac194ac08ecd558",
-            "ab8f773ee48978da"
+            "ab8f773ee48978da",
+            "91ce13c6dbb7bfb1"
         ],
-        "x": 495,
-        "y": 140,
+        "x": 355,
+        "y": 100,
         "wires": []
     },
     {
@@ -12202,8 +12281,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1240,
-        "y": 540,
+        "x": 1230,
+        "y": 640,
         "wires": [
             [],
             []
@@ -12219,8 +12298,8 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1375,
-        "y": 320,
+        "x": 1325,
+        "y": 420,
         "wires": []
     },
     {
@@ -12233,8 +12312,8 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1375,
-        "y": 360,
+        "x": 1325,
+        "y": 460,
         "wires": []
     },
     {
@@ -12260,8 +12339,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1270,
-        "y": 340,
+        "x": 1220,
+        "y": 440,
         "wires": [
             [
                 "88baa8ae55dc9fe2"
@@ -12290,8 +12369,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1110,
-        "y": 320,
+        "x": 1060,
+        "y": 420,
         "wires": [
             [
                 "85ae464a86f572ec"
@@ -12314,11 +12393,64 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 320,
+        "x": 870,
+        "y": 420,
         "wires": [
             [
                 "5c29c3693e422965"
+            ]
+        ]
+    },
+    {
+        "id": "fbeebcd053912f51",
+        "type": "persistent value",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "Sample Metadata",
+        "valueId": "5ecde410-4ff8-11ef-8af0-151edf01ff7c",
+        "value": "sampling_gear",
+        "command": "read",
+        "msgProperty": "payload.gear",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "23a443593bbc53fe"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "91ce13c6dbb7bfb1",
+        "type": "link in",
+        "z": "e988301e60e4b458",
+        "g": "307fb977cf47b651",
+        "name": "link in 237",
+        "links": [
+            "32e3989018637909",
+            "df824b3eae9a8d40",
+            "35280c47dcb8588f"
+        ],
+        "x": 215,
+        "y": 560,
+        "wires": [
+            [
+                "fbeebcd053912f51"
             ]
         ]
     },
