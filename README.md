@@ -9,8 +9,6 @@
 - *Introduction*
 - *Prérequis*
 - *Installation sur le PlanktoScope*
-- *Utilisation du mode projet*
-- *Utilisation rapide du dashboard Node-RED*
 
 ## **Introduction**
 
