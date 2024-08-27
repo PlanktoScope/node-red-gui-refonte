@@ -2,7 +2,7 @@
 
 *Version du document : V1*
 
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/PlanktoScope/node-red-gui-refonte/tree/feat/doc/README.en.md)
+[![fr](https://img.shields.io/badge/lang-fr-red.svg)](https://github.com/PlanktoScope/node-red-gui-refonte/tree/feat/doc/README.md)
 
 ## ***Sommaire***
 
