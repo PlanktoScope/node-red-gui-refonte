@@ -188,8 +188,8 @@
             "8f8904dea405bc9f",
             "41261010b645e245"
         ],
-        "x": 184,
-        "y": 119,
+        "x": 124,
+        "y": 139,
         "w": 1192,
         "h": 202
     },
@@ -206,8 +206,8 @@
         "nodes": [
             "2ef2375e2641e206"
         ],
-        "x": 574,
-        "y": 339,
+        "x": 124,
+        "y": 359,
         "w": 192,
         "h": 82
     },
@@ -384,8 +384,8 @@
             "3f6329f6f64a5d57",
             "a9b6da2f2e6a066a"
         ],
-        "x": 324,
-        "y": 99,
+        "x": 84,
+        "y": 239,
         "w": 1192,
         "h": 202
     },
@@ -1159,8 +1159,8 @@
             "749f53cf1cdc61f9",
             "b4a6261d50d0a9c3"
         ],
-        "x": 134,
-        "y": 839,
+        "x": 124,
+        "y": 859,
         "w": 1732,
         "h": 262
     },
@@ -1388,8 +1388,8 @@
             "59766803528ece98",
             "93fa8ee375ebf8d9"
         ],
-        "x": 134,
-        "y": 439,
+        "x": 124,
+        "y": 459,
         "w": 1432,
         "h": 382
     },
@@ -1423,9 +1423,9 @@
             "937cc5b0d10ab1c9",
             "62d2042e91fbe197"
         ],
-        "x": 324,
-        "y": 459,
-        "w": 1312,
+        "x": 84,
+        "y": 599,
+        "w": 1472,
         "h": 222
     },
     {
@@ -1449,9 +1449,9 @@
             "10de7b2e182bbace",
             "d8c60c1b9271bea5"
         ],
-        "x": 164,
-        "y": 319,
-        "w": 932,
+        "x": 84,
+        "y": 459,
+        "w": 1052,
         "h": 122
     },
     {
@@ -1489,7 +1489,7 @@
             "19963a0df50a04b6"
         ],
         "x": 84,
-        "y": 719,
+        "y": 859,
         "w": 2152,
         "h": 282
     },
@@ -2101,6 +2101,66 @@
             "f2332fa1b7e6397e"
         ],
         "x": 54,
+        "y": 39,
+        "w": 245,
+        "h": 82
+    },
+    {
+        "id": "fdd57634d8e01688",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "Detect when the use arrive, then init the page",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "455afa9f4f1f9311",
+            "8228453d1c618570",
+            "73dbec532343f666",
+            "0804cf4b32049a1d"
+        ],
+        "x": 124,
+        "y": 39,
+        "w": 402,
+        "h": 82
+    },
+    {
+        "id": "4260ebb1839e7f80",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Detect when the use arrive, then init the page",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e33b4b81839dc596",
+            "7508ddea7c6e85b2",
+            "a502f95380d7ea32"
+        ],
+        "x": 84,
+        "y": 139,
+        "w": 322,
+        "h": 82
+    },
+    {
+        "id": "a788c637023eecd1",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Control which page is shown to a user",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "025e18267bc7995a",
+            "da2a5658f65d64a4"
+        ],
+        "x": 84,
         "y": 39,
         "w": 245,
         "h": 82
@@ -12563,8 +12623,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 650,
-        "y": 160,
+        "x": 590,
+        "y": 180,
         "wires": [
             [
                 "b6d0e22f33ca686c"
@@ -12590,8 +12650,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 660,
-        "y": 200,
+        "x": 600,
+        "y": 220,
         "wires": [
             [
                 "bf4e6ca4f9cb03d0"
@@ -12606,8 +12666,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1100,
-        "y": 200,
+        "x": 1040,
+        "y": 220,
         "wires": [
             []
         ]
@@ -12625,8 +12685,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 200,
+        "x": 820,
+        "y": 220,
         "wires": [
             [
                 "c7e80bc0431e15d7"
@@ -12652,8 +12712,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 670,
-        "y": 380,
+        "x": 220,
+        "y": 400,
         "wires": [
             []
         ]
@@ -12677,8 +12737,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 750,
-        "y": 600,
+        "x": 740,
+        "y": 620,
         "wires": [
             [
                 "59766803528ece98",
@@ -12699,8 +12759,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 160,
+        "x": 800,
+        "y": 180,
         "wires": [
             [
                 "2a5d62263d874923"
@@ -12715,8 +12775,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1080,
-        "y": 160,
+        "x": 1020,
+        "y": 180,
         "wires": [
             []
         ]
@@ -12740,8 +12800,8 @@
         "topic": "",
         "payload": "{\"imageVolume\":\"xx mL\",\"totalVolume\":\"xx mL\",\"progression\":0}",
         "payloadType": "json",
-        "x": 270,
-        "y": 780,
+        "x": 260,
+        "y": 800,
         "wires": [
             []
         ]
@@ -12765,51 +12825,13 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 670,
-        "y": 240,
+        "x": 610,
+        "y": 260,
         "wires": [
             [
                 "8f8904dea405bc9f"
             ]
         ]
-    },
-    {
-        "id": "76b6a3dffef7932e",
-        "type": "mqtt in",
-        "z": "70f558eb9d60b6fc",
-        "name": "Listen to all topics",
-        "topic": "#",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "a973d821cae4ecce",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 710,
-        "y": 80,
-        "wires": [
-            [
-                "b3e666d4e675a451"
-            ]
-        ]
-    },
-    {
-        "id": "b3e666d4e675a451",
-        "type": "debug",
-        "z": "70f558eb9d60b6fc",
-        "name": "debug 45",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 80,
-        "wires": []
     },
     {
         "id": "9f562d703ae1ccbf",
@@ -12825,8 +12847,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 470,
-        "y": 480,
+        "x": 460,
+        "y": 500,
         "wires": [
             [
                 "a8b40501e4c53fed",
@@ -12848,8 +12870,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 480,
+        "x": 730,
+        "y": 500,
         "wires": []
     },
     {
@@ -12867,17 +12889,18 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1380,
-        "y": 720,
+        "x": 1370,
+        "y": 740,
         "wires": []
     },
     {
         "id": "455afa9f4f1f9311",
         "type": "ui-event",
         "z": "70f558eb9d60b6fc",
+        "g": "fdd57634d8e01688",
         "ui": "1eeac55ba6b9065f",
         "name": "",
-        "x": 210,
+        "x": 200,
         "y": 80,
         "wires": [
             [
@@ -12889,6 +12912,7 @@
         "id": "8228453d1c618570",
         "type": "link out",
         "z": "70f558eb9d60b6fc",
+        "g": "fdd57634d8e01688",
         "name": "link out 94",
         "mode": "link",
         "links": [
@@ -12901,7 +12925,7 @@
             "83f49a7b01087a92",
             "355739aa88762397"
         ],
-        "x": 295,
+        "x": 285,
         "y": 80,
         "wires": []
     },
@@ -12930,8 +12954,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
-        "y": 240,
+        "x": 360,
+        "y": 260,
         "wires": [
             [
                 "c46dc09dcaa89b8c"
@@ -12948,8 +12972,8 @@
         "links": [
             "8228453d1c618570"
         ],
-        "x": 225,
-        "y": 240,
+        "x": 165,
+        "y": 260,
         "wires": [
             [
                 "478e79c6f72c6a53"
@@ -12971,8 +12995,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 760,
-        "y": 880,
+        "x": 750,
+        "y": 900,
         "wires": []
     },
     {
@@ -12982,8 +13006,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_uuid\": \"uuid-1234\",",
         "info": "",
-        "x": 1720,
-        "y": 980,
+        "x": 1710,
+        "y": 1000,
         "wires": []
     },
     {
@@ -12993,8 +13017,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_ship\": \"Fairscope\",",
         "info": "",
-        "x": 940,
-        "y": 980,
+        "x": 930,
+        "y": 1000,
         "wires": []
     },
     {
@@ -13004,8 +13028,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_concentrated_sample_volume\": 70,",
         "info": "",
-        "x": 990,
-        "y": 1060,
+        "x": 980,
+        "y": 1080,
         "wires": []
     },
     {
@@ -13015,8 +13039,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_total_volume\": 100,",
         "info": "",
-        "x": 1340,
-        "y": 980,
+        "x": 1330,
+        "y": 1000,
         "wires": []
     },
     {
@@ -13026,8 +13050,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_speed_through_water\": \"5 knots\",",
         "info": "",
-        "x": 1380,
-        "y": 1060,
+        "x": 1370,
+        "y": 1080,
         "wires": []
     },
     {
@@ -13037,8 +13061,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_bottom_depth\": \"N/A\",",
         "info": "",
-        "x": 290,
-        "y": 1020,
+        "x": 280,
+        "y": 1040,
         "wires": []
     },
     {
@@ -13048,8 +13072,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_temperature\": \"N/A\"",
         "info": "",
-        "x": 280,
-        "y": 1060,
+        "x": 270,
+        "y": 1080,
         "wires": []
     },
     {
@@ -13059,8 +13083,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_salinity\": \"N/A\",",
         "info": "",
-        "x": 1710,
-        "y": 1060,
+        "x": 1700,
+        "y": 1080,
         "wires": []
     },
     {
@@ -13070,8 +13094,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"sample_date\": \"2024-05-15\",",
         "info": "",
-        "x": 280,
-        "y": 980,
+        "x": 270,
+        "y": 1000,
         "wires": []
     },
     {
@@ -13081,8 +13105,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_magnification\": \"1.2\",",
         "info": "",
-        "x": 930,
-        "y": 1020,
+        "x": 920,
+        "y": 1040,
         "wires": []
     },
     {
@@ -13092,8 +13116,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_camera_id\": \"deep-point-8125\",",
         "info": "",
-        "x": 1360,
-        "y": 1020,
+        "x": 1350,
+        "y": 1040,
         "wires": []
     },
     {
@@ -13103,8 +13127,8 @@
         "g": "b383604c2ffb0c81",
         "name": " \"acq_camera_lens\": \"N/A\",",
         "info": "",
-        "x": 1710,
-        "y": 1020,
+        "x": 1700,
+        "y": 1040,
         "wires": []
     },
     {
@@ -13114,8 +13138,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_atlas_id\": \"N/A\",     ",
         "info": "",
-        "x": 620,
-        "y": 1020,
+        "x": 610,
+        "y": 1040,
         "wires": []
     },
     {
@@ -13125,8 +13149,8 @@
         "g": "b383604c2ffb0c81",
         "name": "\"acq_resolution\": \"1080p\",     ",
         "info": "",
-        "x": 630,
-        "y": 1060,
+        "x": 620,
+        "y": 1080,
         "wires": []
     },
     {
@@ -13136,8 +13160,8 @@
         "g": "b383604c2ffb0c81",
         "name": "",
         "info": "\"acq_brightness\": \"N/A\",\n\"acq_contrast\": \"N/A\",\n\"acq_sharpness\": \"N/A\",\n\"acq_saturation\": \"N/A\",\n\"acq_gamma\": \"N/A\",\n\"acq_uuid\": \"acq-uuid-5678\",\n\"acq_volume\": 2.50,\n\"acq_imaged_volume\": 1.04,\n\"acq_minimum_mesh\": 300,\n\"acq_maximum_mesh\": 300,\n\"acq_min_esd\": 300,\n\"acq_max_esd\": 300,\n\"acq_camera_name\": \"HQ Camera\",\n\"acq_nb_frame\": 500,\n\"acq_local_datetime\": \"2024-05-15T09:00:00Z\",\n\"acq_caamera_iso\": 400,\n\"acq_camera_shutter_speed\": 500,\n\n\"process_pixel\": 0.75,\n\"process_datetime\": \"2024-05-15T09:00:00Z\",\n\"process_id\": \"Process01\",\n\"process_uuid\": \"proc-uuid-7890\",\n\"process_source\": \"https://www.github.com/PlanktonPlanet/PlanktoScope\",\n\"process_commit\": \"CommitHash\",\n\"acq_stacks_count\": \"N/A\",\n",
-        "x": 580,
-        "y": 980,
+        "x": 570,
+        "y": 1000,
         "wires": []
     },
     {
@@ -13165,8 +13189,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1330,
-        "y": 500,
+        "x": 1320,
+        "y": 520,
         "wires": [
             [],
             []
@@ -13197,8 +13221,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 390,
-        "y": 520,
+        "x": 380,
+        "y": 540,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -13216,8 +13240,8 @@
             "8228453d1c618570",
             "0804cf4b32049a1d"
         ],
-        "x": 175,
-        "y": 520,
+        "x": 165,
+        "y": 540,
         "wires": [
             [
                 "20f0245cbefbbf69"
@@ -13238,14 +13262,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1410,
-        "y": 760,
+        "x": 1400,
+        "y": 780,
         "wires": []
     },
     {
         "id": "73dbec532343f666",
         "type": "inject",
         "z": "70f558eb9d60b6fc",
+        "g": "fdd57634d8e01688",
         "name": "",
         "props": [],
         "repeat": "1",
@@ -13253,7 +13278,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 450,
+        "x": 400,
         "y": 80,
         "wires": [
             [
@@ -13265,12 +13290,13 @@
         "id": "0804cf4b32049a1d",
         "type": "link out",
         "z": "70f558eb9d60b6fc",
+        "g": "fdd57634d8e01688",
         "name": "link out 103",
         "mode": "link",
         "links": [
             "4317b389f6b1b156"
         ],
-        "x": 535,
+        "x": 485,
         "y": 80,
         "wires": []
     },
@@ -13299,8 +13325,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 390,
-        "y": 560,
+        "x": 380,
+        "y": 580,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -13317,8 +13343,8 @@
         "links": [
             "8228453d1c618570"
         ],
-        "x": 175,
-        "y": 560,
+        "x": 165,
+        "y": 580,
         "wires": [
             [
                 "c51927142025c58c"
@@ -13350,8 +13376,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 410,
-        "y": 600,
+        "x": 400,
+        "y": 620,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -13368,8 +13394,8 @@
         "links": [
             "8228453d1c618570"
         ],
-        "x": 175,
-        "y": 600,
+        "x": 165,
+        "y": 620,
         "wires": [
             [
                 "14dab3e6993ce1dd"
@@ -13401,8 +13427,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1350,
-        "y": 620,
+        "x": 1340,
+        "y": 640,
         "wires": [
             [],
             []
@@ -13428,8 +13454,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 280,
-        "y": 900,
+        "x": 270,
+        "y": 920,
         "wires": [
             [
                 "6530ccdb60829ae5"
@@ -13445,8 +13471,8 @@
         "links": [
             "21a88ef6574955eb"
         ],
-        "x": 175,
-        "y": 900,
+        "x": 165,
+        "y": 920,
         "wires": [
             [
                 "984b3bce0eba0dc7"
@@ -13466,8 +13492,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 900,
+        "x": 490,
+        "y": 920,
         "wires": [
             [
                 "749f53cf1cdc61f9",
@@ -13489,8 +13515,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
-        "y": 920,
+        "x": 770,
+        "y": 940,
         "wires": []
     },
     {
@@ -13511,8 +13537,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1220,
-        "y": 760,
+        "x": 1210,
+        "y": 780,
         "wires": [
             [
                 "60bc270ddfa20f0b",
@@ -13529,8 +13555,8 @@
         "links": [
             "21a88ef6574955eb"
         ],
-        "x": 1115,
-        "y": 760,
+        "x": 1105,
+        "y": 780,
         "wires": [
             [
                 "b7d43a5399350e4c"
@@ -13547,8 +13573,8 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1335,
-        "y": 240,
+        "x": 1275,
+        "y": 260,
         "wires": []
     },
     {
@@ -13561,8 +13587,8 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1335,
-        "y": 280,
+        "x": 1275,
+        "y": 300,
         "wires": []
     },
     {
@@ -13588,8 +13614,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1230,
-        "y": 260,
+        "x": 1170,
+        "y": 280,
         "wires": [
             [
                 "e7ef6ef1f343a096"
@@ -13618,8 +13644,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1070,
-        "y": 240,
+        "x": 1010,
+        "y": 260,
         "wires": [
             [
                 "41261010b645e245"
@@ -13642,8 +13668,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 240,
+        "x": 820,
+        "y": 260,
         "wires": [
             [
                 "3163b083f704c234"
@@ -13658,8 +13684,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1240,
-        "y": 220,
+        "x": 1180,
+        "y": 240,
         "wires": [
             []
         ]
@@ -13689,8 +13715,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 400,
-        "y": 640,
+        "x": 390,
+        "y": 660,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -13723,8 +13749,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 400,
-        "y": 680,
+        "x": 390,
+        "y": 700,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -13741,8 +13767,8 @@
         "links": [
             "8228453d1c618570"
         ],
-        "x": 175,
-        "y": 640,
+        "x": 165,
+        "y": 660,
         "wires": [
             [
                 "e0d432878556942b"
@@ -13758,8 +13784,8 @@
         "links": [
             "8228453d1c618570"
         ],
-        "x": 175,
-        "y": 680,
+        "x": 165,
+        "y": 700,
         "wires": [
             [
                 "9a38a6dff2041265"
@@ -13791,8 +13817,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1340,
-        "y": 580,
+        "x": 1330,
+        "y": 600,
         "wires": [
             [],
             []
@@ -13823,8 +13849,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1340,
-        "y": 540,
+        "x": 1330,
+        "y": 560,
         "wires": [
             [],
             []
@@ -13855,8 +13881,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 360,
-        "y": 720,
+        "x": 350,
+        "y": 740,
         "wires": [
             [
                 "dc1b246968e8333a"
@@ -13873,8 +13899,8 @@
         "links": [
             "8228453d1c618570"
         ],
-        "x": 175,
-        "y": 720,
+        "x": 165,
+        "y": 740,
         "wires": [
             [
                 "3e4c8594c13249ca"
@@ -13906,8 +13932,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1300,
-        "y": 660,
+        "x": 1290,
+        "y": 680,
         "wires": [
             [],
             []
@@ -13936,8 +13962,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 990,
-        "y": 660,
+        "x": 980,
+        "y": 680,
         "wires": [
             [
                 "e2e666a913b7a662"
@@ -13958,8 +13984,8 @@
             "b0669e2b7f125e7e",
             "d3b072c2497a5209"
         ],
-        "x": 1025,
-        "y": 700,
+        "x": 1015,
+        "y": 720,
         "wires": []
     },
     {
@@ -13980,8 +14006,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1220,
-        "y": 720,
+        "x": 1210,
+        "y": 740,
         "wires": [
             [
                 "997c71e9dcf596e8",
@@ -14002,8 +14028,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
-        "y": 580,
+        "x": 970,
+        "y": 600,
         "wires": [
             [
                 "f65e14920a75ce9f",
@@ -14027,8 +14053,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 620,
+        "x": 950,
+        "y": 640,
         "wires": [
             [
                 "78678b94b28b09e8"
@@ -14043,7 +14069,7 @@
         "group": "8c5ef97069f3c9a4",
         "page": "",
         "ui": "",
-        "name": "",
+        "name": "Acquisition queue",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -14054,8 +14080,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 800,
-        "y": 540,
+        "x": 590,
+        "y": 680,
         "wires": [
             [
                 "2298a8a5a04dade7",
@@ -14071,7 +14097,7 @@
         "group": "8c5ef97069f3c9a4",
         "page": "",
         "ui": "",
-        "name": "",
+        "name": "Acquisition queue button",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -14082,8 +14108,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1080,
-        "y": 620,
+        "x": 950,
+        "y": 760,
         "wires": [
             [
                 "c18005dcbaf22026",
@@ -14110,8 +14136,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 790,
-        "y": 140,
+        "x": 550,
+        "y": 280,
         "wires": [
             [
                 "b1eacad4b3bf6e97"
@@ -14137,8 +14163,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 800,
-        "y": 180,
+        "x": 560,
+        "y": 320,
         "wires": [
             [
                 "d68c231c98bf92e0"
@@ -14153,8 +14179,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1240,
-        "y": 180,
+        "x": 1000,
+        "y": 320,
         "wires": [
             []
         ]
@@ -14172,8 +14198,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 180,
+        "x": 780,
+        "y": 320,
         "wires": [
             [
                 "8cf785fffe790177"
@@ -14193,8 +14219,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1000,
-        "y": 140,
+        "x": 760,
+        "y": 280,
         "wires": [
             [
                 "1e4493ea93992368"
@@ -14209,8 +14235,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1220,
-        "y": 140,
+        "x": 980,
+        "y": 280,
         "wires": [
             []
         ]
@@ -14223,7 +14249,7 @@
         "group": "3b6f841875ac2355",
         "page": "",
         "ui": "",
-        "name": "",
+        "name": "Acquisition array",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -14234,8 +14260,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 800,
-        "y": 360,
+        "x": 740,
+        "y": 500,
         "wires": [
             [
                 "e299a4102bf9d4aa",
@@ -14248,7 +14274,7 @@
         "type": "function",
         "z": "00a14f98244d252e",
         "g": "cd7cd2c05c7f55bf",
-        "name": "function 1",
+        "name": "processSelectedItems",
         "func": "// Vérifiez si msg.payload est un tableau\nif (!Array.isArray(msg.selected)) {\n    msg.payload = \"\";\n    return msg;\n}\n\n// Vérifiez que chaque élément du tableau est un objet avec les propriétés attendues\nfor (let element of msg.selected) {\n    if (typeof element !== 'object' || element === null || !element.acquisitionID || !element.path) {\n        msg.payload = \"\";\n        return msg;\n    }\n}\n\n// Transformez les objets pour ne conserver que path et acquisitionID\nvar resultat = msg.selected.map(element => ({\n    acquisitionID: element.acquisitionID,\n    path: element.path,\n    estimatedTime: \"WIP\",\n    status: \"To do\"\n}));\n\n// Stockez le résultat dans le flow\nflow.set('segmentation_queue', resultat);\n\n// Définissez msg.payload avec le résultat\nmsg.payload = resultat;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -14257,7 +14283,7 @@
         "finalize": "",
         "libs": [],
         "x": 960,
-        "y": 400,
+        "y": 540,
         "wires": [
             [
                 "343ad9e58c44f9d9"
@@ -14277,8 +14303,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1440,
-        "y": 640,
+        "x": 1360,
+        "y": 780,
         "wires": [
             [
                 "9529b63ced697421"
@@ -14289,11 +14315,12 @@
         "id": "025e18267bc7995a",
         "type": "ui-control",
         "z": "00a14f98244d252e",
+        "g": "a788c637023eecd1",
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 180,
-        "y": 40,
+        "x": 220,
+        "y": 80,
         "wires": [
             []
         ]
@@ -14302,12 +14329,13 @@
         "id": "da2a5658f65d64a4",
         "type": "link in",
         "z": "00a14f98244d252e",
+        "g": "a788c637023eecd1",
         "name": "link in 48",
         "links": [
             "9529b63ced697421"
         ],
-        "x": 85,
-        "y": 40,
+        "x": 125,
+        "y": 80,
         "wires": [
             [
                 "025e18267bc7995a"
@@ -14337,8 +14365,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1230,
-        "y": 640,
+        "x": 1150,
+        "y": 780,
         "wires": [
             [
                 "e6ba170eea1efeb4"
@@ -14358,8 +14386,8 @@
         "links": [
             "da2a5658f65d64a4"
         ],
-        "x": 1595,
-        "y": 640,
+        "x": 1515,
+        "y": 780,
         "wires": []
     },
     {
@@ -14372,8 +14400,8 @@
         "links": [
             "4b6824e2ecaa9016"
         ],
-        "x": 1495,
-        "y": 600,
+        "x": 1415,
+        "y": 740,
         "wires": []
     },
     {
@@ -14388,8 +14416,8 @@
             "2f55e4293dac256a",
             "96b438fd7f029156"
         ],
-        "x": 685,
-        "y": 400,
+        "x": 605,
+        "y": 540,
         "wires": [
             [
                 "d417adf0e2e7759b"
@@ -14406,8 +14434,8 @@
         "links": [
             "67b91503eb38afe7"
         ],
-        "x": 1055,
-        "y": 400,
+        "x": 1095,
+        "y": 540,
         "wires": []
     },
     {
@@ -14429,8 +14457,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 810,
-        "y": 220,
+        "x": 570,
+        "y": 360,
         "wires": [
             [
                 "25b53f7dfdeeeecc"
@@ -14462,8 +14490,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 570,
-        "y": 540,
+        "x": 330,
+        "y": 680,
         "wires": [
             [
                 "af3cbcd9f5f35be3"
@@ -14480,8 +14508,8 @@
         "links": [
             "343ad9e58c44f9d9"
         ],
-        "x": 405,
-        "y": 540,
+        "x": 165,
+        "y": 680,
         "wires": [
             [
                 "aa582b7c4e2ce8c7"
@@ -14513,8 +14541,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 560,
-        "y": 220,
+        "x": 320,
+        "y": 360,
         "wires": [
             [
                 "a004902c262b883a"
@@ -14531,8 +14559,8 @@
         "links": [
             "a502f95380d7ea32"
         ],
-        "x": 365,
-        "y": 220,
+        "x": 125,
+        "y": 360,
         "wires": [
             [
                 "db8dbeb996228096"
@@ -14543,10 +14571,11 @@
         "id": "7508ddea7c6e85b2",
         "type": "ui-event",
         "z": "00a14f98244d252e",
+        "g": "4260ebb1839e7f80",
         "ui": "1eeac55ba6b9065f",
         "name": "",
-        "x": 310,
-        "y": 40,
+        "x": 160,
+        "y": 180,
         "wires": [
             [
                 "e33b4b81839dc596"
@@ -14557,6 +14586,7 @@
         "id": "a502f95380d7ea32",
         "type": "link out",
         "z": "00a14f98244d252e",
+        "g": "4260ebb1839e7f80",
         "name": "link out 96",
         "mode": "link",
         "links": [
@@ -14566,8 +14596,8 @@
             "9f6ae562f1b445b6",
             "c8092e76ddb39c4d"
         ],
-        "x": 515,
-        "y": 40,
+        "x": 365,
+        "y": 180,
         "wires": []
     },
     {
@@ -14584,7 +14614,7 @@
         "oldrc": false,
         "name": "find \"metadata.json\"",
         "x": 260,
-        "y": 800,
+        "y": 940,
         "wires": [
             [
                 "41add91cc9a0f0d2"
@@ -14607,7 +14637,7 @@
         "addname": "",
         "property": "payload",
         "x": 450,
-        "y": 800,
+        "y": 940,
         "wires": [
             [
                 "dcdd3d182172e37b"
@@ -14628,7 +14658,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 1000,
-        "y": 800,
+        "y": 940,
         "wires": [
             [
                 "fae11872d37ca7ea"
@@ -14656,7 +14686,7 @@
         "to": "",
         "reg": false,
         "x": 620,
-        "y": 800,
+        "y": 940,
         "wires": [
             [
                 "abb1be992fc0f571"
@@ -14680,7 +14710,7 @@
         "repair": false,
         "outputs": 1,
         "x": 810,
-        "y": 800,
+        "y": 940,
         "wires": [
             [
                 "a7571dda2afc9bf5",
@@ -14702,7 +14732,7 @@
         "finalize": "",
         "libs": [],
         "x": 1290,
-        "y": 800,
+        "y": 940,
         "wires": [
             [
                 "baf89db54ae56a37"
@@ -14719,7 +14749,7 @@
             "d8c60c1b9271bea5"
         ],
         "x": 125,
-        "y": 800,
+        "y": 940,
         "wires": [
             [
                 "b66bf570c5656d37"
@@ -14740,7 +14770,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 840,
+        "y": 980,
         "wires": [
             [
                 "c5ba95b82832310f"
@@ -14764,7 +14794,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1550,
-        "y": 800,
+        "y": 940,
         "wires": [
             [
                 "97882a7a4f73a796"
@@ -14785,8 +14815,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 590,
-        "y": 500,
+        "x": 350,
+        "y": 640,
         "wires": [
             [
                 "193d3837469bc271",
@@ -14808,8 +14838,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 500,
+        "x": 590,
+        "y": 640,
         "wires": []
     },
     {
@@ -14830,10 +14860,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 950,
-        "y": 540,
+        "x": 770,
+        "y": 680,
         "wires": [
-            []
+            [
+                "cf21ab67185f9d54"
+            ]
         ]
     },
     {
@@ -14851,8 +14883,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1070,
-        "y": 540,
+        "x": 890,
+        "y": 680,
         "wires": []
     },
     {
@@ -14865,8 +14897,8 @@
             "a502f95380d7ea32",
             "62d2042e91fbe197"
         ],
-        "x": 365,
-        "y": 620,
+        "x": 125,
+        "y": 760,
         "wires": [
             [
                 "937cc5b0d10ab1c9"
@@ -14886,8 +14918,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1390,
-        "y": 600,
+        "x": 1310,
+        "y": 740,
         "wires": [
             [
                 "a0368732ccfa08d8"
@@ -14912,8 +14944,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 950,
-        "y": 580,
+        "x": 770,
+        "y": 720,
         "wires": [
             [
                 "cf4fbc0932d87cc7"
@@ -14928,8 +14960,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1380,
-        "y": 200,
+        "x": 1140,
+        "y": 340,
         "wires": [
             []
         ]
@@ -14953,8 +14985,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1210,
-        "y": 220,
+        "x": 970,
+        "y": 360,
         "wires": [
             [
                 "c7380afc08bb239e"
@@ -14977,8 +15009,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 220,
+        "x": 780,
+        "y": 360,
         "wires": [
             [
                 "c632cc613a0f8ce5"
@@ -15008,8 +15040,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1370,
-        "y": 240,
+        "x": 1130,
+        "y": 380,
         "wires": [
             [
                 "3f6329f6f64a5d57"
@@ -15029,8 +15061,8 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1475,
-        "y": 220,
+        "x": 1235,
+        "y": 360,
         "wires": []
     },
     {
@@ -15043,8 +15075,8 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1475,
-        "y": 260,
+        "x": 1235,
+        "y": 400,
         "wires": []
     },
     {
@@ -15061,7 +15093,7 @@
         "finalize": "",
         "libs": [],
         "x": 1470,
-        "y": 840,
+        "y": 980,
         "wires": [
             [
                 "156972ebab521833"
@@ -15082,7 +15114,7 @@
         "addname": "",
         "property": "payload",
         "x": 1350,
-        "y": 880,
+        "y": 1020,
         "wires": [
             [
                 "945e4b2465a1e732"
@@ -15103,7 +15135,7 @@
         "oldrc": false,
         "name": "",
         "x": 1410,
-        "y": 940,
+        "y": 1080,
         "wires": [
             [
                 "6d9b00293e8bc92f"
@@ -15126,7 +15158,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 940,
+        "y": 1080,
         "wires": [
             [
                 "7d7daee3e1ed39f7"
@@ -15147,7 +15179,7 @@
         "finalize": "",
         "libs": [],
         "x": 1750,
-        "y": 960,
+        "y": 1100,
         "wires": [
             [
                 "b3fc3025774d3e96"
@@ -15168,7 +15200,7 @@
         "addname": "",
         "property": "payload",
         "x": 1550,
-        "y": 920,
+        "y": 1060,
         "wires": [
             [
                 "596d0884550802d2"
@@ -15192,7 +15224,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1570,
-        "y": 960,
+        "y": 1100,
         "wires": [
             [
                 "3780e6a8fd770f31"
@@ -15210,13 +15242,14 @@
             "4b6824e2ecaa9016"
         ],
         "x": 2195,
-        "y": 960,
+        "y": 1100,
         "wires": []
     },
     {
         "id": "e33b4b81839dc596",
         "type": "switch",
         "z": "00a14f98244d252e",
+        "g": "4260ebb1839e7f80",
         "name": "",
         "property": "payload.page.name",
         "propertyType": "msg",
@@ -15230,8 +15263,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 430,
-        "y": 40,
+        "x": 280,
+        "y": 180,
         "wires": [
             [
                 "a502f95380d7ea32"
@@ -15261,7 +15294,7 @@
         "reduceInitType": "num",
         "reduceFixup": "",
         "x": 1760,
-        "y": 840,
+        "y": 980,
         "wires": [
             [
                 "e820a58dd9154f93"
@@ -15282,7 +15315,7 @@
         "finalize": "",
         "libs": [],
         "x": 1200,
-        "y": 880,
+        "y": 1020,
         "wires": [
             [
                 "47704da97cb477f3"
@@ -15312,7 +15345,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 1910,
-        "y": 960,
+        "y": 1100,
         "wires": [
             [
                 "a5eca0282a193652"
@@ -15333,7 +15366,7 @@
         "finalize": "",
         "libs": [],
         "x": 2070,
-        "y": 960,
+        "y": 1100,
         "wires": [
             [
                 "2f55e4293dac256a"
@@ -15353,8 +15386,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 380,
+        "x": 260,
+        "y": 520,
         "wires": [
             [
                 "10de7b2e182bbace"
@@ -15370,8 +15403,8 @@
         "links": [
             "a502f95380d7ea32"
         ],
-        "x": 205,
-        "y": 380,
+        "x": 125,
+        "y": 520,
         "wires": [
             [
                 "087698e99c0b873f"
@@ -15383,7 +15416,7 @@
         "type": "function",
         "z": "00a14f98244d252e",
         "g": "cd7cd2c05c7f55bf",
-        "name": "function 11",
+        "name": "markSelectedItems",
         "func": "const tableData = msg.allData;\nconst selected = msg.selected;\n\nfunction enhanceWithSelection(tableData, selected) {\n  const selectedIDs = selected.map(item => item.acquisitionID);\n\n  return tableData.map(item => {\n    const isSelected = selectedIDs.includes(item.acquisitionID);\n    \n    return {\n      ...item,\n      isSelected: isSelected\n    };\n  });\n}\n\nconst data = enhanceWithSelection(tableData, selected);\n\nflow.set('selected_acquisition_array', data);\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -15391,8 +15424,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 970,
-        "y": 360,
+        "x": 950,
+        "y": 500,
         "wires": [
             []
         ]
@@ -15416,8 +15449,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 510,
-        "y": 380,
+        "x": 430,
+        "y": 520,
         "wires": [
             [
                 "d417adf0e2e7759b"
@@ -15438,8 +15471,8 @@
             "4cf3eec1ce2d4242",
             "7dedd91c30c6d657"
         ],
-        "x": 595,
-        "y": 400,
+        "x": 515,
+        "y": 540,
         "wires": []
     },
     {
@@ -15467,8 +15500,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1330,
-        "y": 540,
+        "x": 1250,
+        "y": 680,
         "wires": [
             [
                 "62d2042e91fbe197"
@@ -15501,8 +15534,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 550,
-        "y": 620,
+        "x": 310,
+        "y": 760,
         "wires": [
             [
                 "af3cbcd9f5f35be3",
@@ -15522,8 +15555,8 @@
             "49ea401a0745e446",
             "d3b2e7d1bba0372d"
         ],
-        "x": 1515,
-        "y": 540,
+        "x": 1435,
+        "y": 680,
         "wires": []
     },
     {
@@ -15531,7 +15564,7 @@
         "type": "function",
         "z": "00a14f98244d252e",
         "g": "ead3a496052db315",
-        "name": "function 12",
+        "name": "updateAcquisitionPaths",
         "func": "const newValue = msg.filename;\nlet actualArray = flow.get('acquisition_path_array') || [];\n\n// Ajouter le nouveau chemin s'il n'est pas vide et n'existe pas déjà dans le tableau\nif (newValue && !actualArray.some(item => item.path === newValue)) {\n    actualArray.push({\n        path: newValue\n    });\n}\n\n// Supprimer les éléments avec des chemins vides ou nuls\nactualArray = actualArray.filter(item => item.path);\n\n// Supprimer les doublons en utilisant un Set\nconst uniquePaths = Array.from(new Set(actualArray.map(item => item.path))).map(path => ({ path }));\n\n// Mettre à jour le tableau dans le contexte du flux\nflow.set('acquisition_path_array', uniquePaths);\n\n// Mettre à jour le payload du message\nmsg.payload = uniquePaths;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -15539,8 +15572,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 970,
-        "y": 760,
+        "x": 1010,
+        "y": 900,
         "wires": [
             []
         ]
