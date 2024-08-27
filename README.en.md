@@ -1,4 +1,4 @@
-# Node-RED (dashboard V2)** installation & user guide
+# Node-RED (dashboard V2) installation & user guide
 
 *Document version : V1*
 
@@ -65,7 +65,7 @@ Replace <password> with “copepode”.
 
 To configure Node-RED, you need to edit the settings.js configuration file.
 
-A. **File location** : The settings.js file is located in the /etc/nodered/ directory, and can be accessed with the following command: 
+A **File location** : The settings.js file is located in the /etc/nodered/ directory, and can be accessed with the following command: 
 
 ```
 cd /etc/nodered/
