@@ -1,54 +1,54 @@
-# **Guide d’installation & d’utilisation de Node-RED (dashboard V2)**
+# Node-RED (dashboard V2)** installation & user guide
 
-*Version du document : V1*
+*Document version : V1*
 
-[![fr](https://img.shields.io/badge/lang-fr-red.svg)](https://github.com/PlanktoScope/node-red-gui-refonte/tree/feat/doc/README.md)
+[![en](https://img.shields.io/badge/lang-fr-red.svg)](https://github.com/PlanktoScope/node-red-gui-refonte/tree/feat/doc/README.md)
 
-## ***Sommaire***
+## **Summary**
 
 - *Introduction*
-- *Prérequis*
-- *Installation sur le PlanktoScope*
-- *Utilisation du mode projet*
-- *Utilisation rapide du dashboard Node-RED*
+- *Requirements*
+- *Installation on PlanktoScope*
+- *Using project mode* *Quick dashboard
+- *Quick use of the Node-RED dashboard* *Preferences
 
 ## **Introduction**
 
-Node-RED est un outil de développement visuel pour connecter des dispositifs matériels, des API et des services en ligne de manière nouvelle et excitante. Il offre une interface intuitive pour construire des flux d'applications en connectant des nœuds qui représentent des blocs de fonctionnalités distincts. Dans cette documentation, nous allons vous guider à travers le processus d'installation, de configuration, et d'utilisation de Node-RED, en particulier dans le contexte du PlanktoScope.
+Node-RED is a visual development tool for connecting hardware devices, APIs and online services in new and exciting ways. It offers an intuitive interface for building application flows by connecting nodes that represent distinct blocks of functionality. In this documentation, we'll guide you through the process of installing, configuring and using Node-RED, particularly in the context of PlanktoScope.
 
-## **Prérequis**
+## **Prerequisites**
 
-* **PlanktoScope** : Assurez-vous que le PlanktoScope est correctement installé et accessible via SSH.  
-* **Compte GitHub** : Un compte GitHub est nécessaire pour gérer les projets et les jetons d'accès (access tokens).  
-* **Accès SSH** : Vous devez pouvoir vous connecter à votre PlanktoScope via SSH pour modifier les fichiers de configuration de Node-RED.
-
-
-## **Installation sur le PlanktoScope**
-
-1. **Accès au Dashboard V1 du PlanktoScope**
-
-Après avoir inséré une carte SD contenant l'image du PlanktoScope, la V1 du dashboard est disponible en ligne. Vous pouvez accéder à la landing page du PlanktoScope via l'adresse suivante :
-
-**Landing page :** `http://<adresse-ip-du-planktoscope>`
-
-Depuis cette page, plusieurs options sont disponibles, dont :
-
-* **Node-RED dashboard editor :** Ce lien vous donne accès à l'éditeur du dashboard. Cet éditeur vous permet de modifier et personnaliser les différents éléments du dashboard.
-
-* **Node-RED dashboard :** Ce lien vous permet de voir la version V1 du dashboard. Cependant, veuillez noter qu'après l'installation de la version V2, ce lien ne fonctionnera plus.
+**PlanktoScope**: Make sure PlanktoScope is correctly installed and accessible via SSH.  
+**GitHub account**: A GitHub account is required to manage projects and access tokens.  
+**SSH access**: You must be able to connect to your PlanktoScope via SSH to modify Node-RED configuration files.
 
 
-2. **Démarrage du PlanktoScope**
+## **Installation on the PlanktoScope**.
 
-**Ouvrir un terminal** : Commencez par ouvrir un terminal sur votre machine locale.  
-**Connexion SSH** : Connectez-vous au PlanktoScope via SSH en utilisant la commande suivante :
+1. **Accessing the PlanktoScope V1 Dashboard** (in French)
+
+After inserting an SD card containing the PlanktoScope image, the V1 dashboard is available online. You can access the PlanktoScope landing page at the following address:
+
+**Landing page :** `http://<planktoscope-ip-address>`
+
+From this page, several options are available, including :
+
+* **Node-RED dashboard editor :** This link gives you access to the dashboard editor. This editor allows you to modify and customize the various elements of the dashboard.
+
+* **Node-RED dashboard:** This link takes you to the V1 version of the dashboard. However, please note that once you have installed version V2, this link will no longer work.
+
+
+2. **Starting PlanktoScope** : Start by opening a terminal on your local machine.
+
+**Open a terminal**: Start by opening a terminal on your local machine.  
+**SSH connection**: Connect to PlanktoScope via SSH using the following command:
 
 ```
-ssh pi@<adresse-ip-du-planktoscope>
+ssh pi@<planktoscope-ip-address>
 ```
 
-Remplacez \<adresse-ip-du-planktoscope\> par l'adresse IP de votre PlanktoScope.  
-Puis entrer le mot de passe dans l’invite de commande qui devrait ressembler à ça :
+Replace \<planktoscope-ip-address> with the IP address of your PlanktoScope.  
+Then enter the password in the command prompt, which should look like this:
 
 ```
 Please note that SSH may not work until a valid user has been set up.
@@ -57,30 +57,30 @@ See http://rptl.io/newuser for details.
 pi@92.167.184.163's password:<password>
 ```
 
-Remplacez \<password\> par “copepode”.
+Replace <password> with “copepode”.
 
-3. **Configuration de Node-RED**  
+3. **Node-RED** configuration  
 
-3.1 **Modifier le fichier settings.js**
+3.1 **Edit settings.js** file
 
-Pour configurer Node-RED, vous devez éditer le fichier de configuration settings.js.
+To configure Node-RED, you need to edit the settings.js configuration file.
 
-A. **Localisation du fichier** : Le fichier settings.js se trouve dans le répertoire /etc/nodered/ accessible par la commande suivante : 
+A. **File location** : The settings.js file is located in the /etc/nodered/ directory, and can be accessed with the following command: 
 
 ```
 cd /etc/nodered/
 ```
 
-Ouvrir le fichier fichier avec un éditeur de texte (*exemple “nano” ou “vim”*).
+Open the file with a text editor *(example “nano” or “vim”)*.
 
-B. **Modification des paramètres** :  
-   * **Activation du stockage de contexte (contextStorage)** : Retirez les commentaires pour activer le contextStorage. Cela permet de sauvegarder les données entre les redémarrages de Node-RED.  
-   * **Mode projet** : Changez la valeur de enabled à true pour activer le mode projet. Cela vous permettra de gérer vos flux avec un contrôle de version via Git.
+B. **Modifying parameters** :  
+   * **Enable context storage (contextStorage)**: Remove comments to enable contextStorage. This saves data between Node-RED reboots.  
+   * Project mode**: Change the value from enabled to true to activate project mode. This will enable you to manage your feeds with version control via Git.
 
-Exemple de modification dans settings.js pour le contextStorage :
+Example of modification in settings.js for contextStorage :
 
 ```javascript
-// Enlever les commentaires pour activer la partie suivante
+// Remove comments to activate the next part
 contextStorage: {
     default: {
         module: "localfilesystem"
@@ -88,10 +88,10 @@ contextStorage: {
 },
 ```
 
-### Exemple de modification dans settings.js pour le mode projet : 
+### Example of modification in settings.js for project mode : 
 
 ```javascript
-// Mettre à true la valeur de l'attibut "enable" dans la partie suivante
+// Set the value of the “enable” attribute to true in the following section
 editorTheme: {
     projects: {
         enabled: true
@@ -99,34 +99,34 @@ editorTheme: {
 }
 ```
 
-Une fois les modifications faites, sur “nano” vous devez faire “ctrl+x” puis “y” et la touche “enter” pour quitter tout en sauvegardant.
+Once you've made your changes, on “nano” you need to press “ctrl+x” then “y” and the “enter” key to exit while saving.
 
-3.2 **Redémarrer Node-RED**
+3.2 **Restarting Node-RED** (in French)
 
-Après avoir modifié le fichier de configuration, redémarrez Node-RED pour appliquer les changements :
+After modifying the configuration file, restart Node-RED to apply the changes:
 
 ```
 sudo systemctl restart nodered
 ```
 
-Une fois Node-RED redémarré, ouvrez l'interface d'édition via un navigateur web en vous connectant grâce au lien sur la landing page :
+Once Node-RED has been restarted, open the editing interface via a web browser by logging in via the link on the landing page:
 
 - **Node-RED dashboard editor**
 
-4. ## **Utilisation de Node-RED**
+4. ## **Node-RED use**
 
-   A. **Interface d'édition**
+   4.1 **Editing interface**
 
-Après avoir démarré Node-RED, vous serez accueilli par l'interface d'édition où vous pouvez créer et gérer vos flux. Avec le mode projet activé, vous pouvez maintenant gérer vos projets. 
+After starting Node-RED, you'll be greeted by the editing interface, where you can create and manage your feeds. With project mode activated, you can now manage your projects. 
 
 <p align="center">
     <img src="image-doc/Screen-1.png" alt="Screen 1" width="30%"/>
     <img src="image-doc/Screen-2.png" alt="Screen 2" width="30%"/>
 </p>
 
-**Screen 1 :** Pour récupérer le Dashboard V2, veuillez cliquer sur Clone repository. 
+**Screen 1 :** To retrieve Dashboard V2, please click on Clone repository. 
 
-**Screen 2 :** Veuillez remplir Username et Email par celles que vous souhaitez *(ex : Mettre vos identifiants Github actuel)*. Ces informations seront celles qui vous identifient lors des push/pull. Puis cliquez sur Next.
+**Screen 2 :** Please fill in Username and Email with the ones you want *(e.g. Put in your current Github credentials)*. This information will be used to identify you during push/pull operations. Then click on Next.
 
 <div style="display: flex">
     <p align="center">
@@ -138,11 +138,10 @@ Après avoir démarré Node-RED, vous serez accueilli par l'interface d'édition
     </p>
 </div>
 
+**Screen 3:** Here you'll need to retrieve the .git link for the repository you wish to clone. In our case the link is: https://github.com/PlanktoScope/node-red-gui-refonte.git  
+Copying and pasting this link into the Git repository URL text box will automatically retrieve the Project name. Now fill in Username and Password with your Github credentials, then click on Clone project.
 
-**Screen 3 :** Ici vous allez devoir récupérer le lien .git du repository que vous souhaitez cloner. Dans notre cas le lien est le suivant : https://github.com/PlanktoScope/node-red-gui-refonte.git  
-Copier coller ce lien dans la zone de texte Git repository URL va automatiquement récupérer le Project name. Veuillez maintenant remplir Username et Password par vos identifiants Github, puis cliquez sur Clone project.
-
-**Screen 4 & 5 :** Si vous obtenez cet avertissement concernant les credentials, veuillez cliquer sur Setup credentials. Puis cliquez sur edit et sur le crayon, ensuite entrez une nouvelle clé qui servira d’encryptage *(ex: plk\_q8dSMZ7HIPyi8o7LSDJudWvd2B3Ro)* puis cliquez sur Save et Close*.* Une fois 
+**Screen 4 & 5 :** If you get this warning about credentials, please click Setup credentials. Then click on edit and on the pencil, then enter a new key to be used for encryption *(ex: plk\_q8dSMZ7HIPyi8o7LSDJudWvd2B3Ro)* then click on Save and Close. 
 
 <div style="display: flex">
     <p align="center">
@@ -153,15 +152,15 @@ Copier coller ce lien dans la zone de texte Git repository URL va automatiquemen
     </p>
 </div>
 
-**Screen 6 :** Cliquer sur l'icône grisée.
+**Screen 6 :** Click on the gray icon.
 
-**Screen 7 & 8 & 9 :** Après avoir modifier les credentials vous aurez dans Local files les fichier node-RED qui ont été modifiés. Il vous suffit de cliquer sur \+all pour ajouter sélectionner les fichiers. Puis dans le **Screen 8** cliquez sur commit, une zone de texte va apparaître. Dedans veuillez écrire la description ce qui a été modifié, une explication courte de ce que vous avez fait, dans notre cas ça peut être update/credentials, puis cliquez sur Commit. Maintenant il faut cliquer sur Commit History, ce qui va ouvrir un onglet qui vous fera voir votre dernier commit et un bouton avec deux flèches, cliquez dessus, puis sur push.
+**Screen 7 & 8 & 9 :** After modifying credentials, you'll see the node-RED files that have been modified in Local files. Just click on \+all to add and select the files. Then in **Screen 8** click on commit, a text box will appear. In it, write a description of what's been modified, a short explanation of what you've done (in our case, it might be update/credentials), then click on Commit. Now click on Commit History, which will open a tab showing your last commit and a button with two arrows, click on it, then on push.
 
 <img src="image-doc/Screen-10.png" alt="Screen 10" width="45%"/>
 
-**Screen 10 :** Une fois l’étape **screen 9** finit, cette pop-up vous demande de renseigner vos identifiants de connexion Github. Ici votre Password est en réalité un access-token que vous allez devoir générer depuis Github, je vous renvoie vers la [documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\#creating-a-personal-access-token-classic) en lien et une fois récupérer et rentrer dans Password, cliquez sur Retry.
+**Screen 10:** Once step **screen 9** is complete, this pop-up asks you to enter your Github login details. Here, your Password is actually an access-token that you'll need to generate from Github. I refer you to the [documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\#creating-a-personal-access-token-classic) link, and once you've retrieved it and entered Password, click Retry.
 
-Une fois toutes ses étapes finies, vous allez devoir redémarrer node-RED comme vous l’avez fait à l’étape **3.2 Redémarrer Node-RED**.
+Once all these steps have been completed, you'll need to restart node-RED as you did in step **3.2 Restart Node-RED**.
 
 <div style="display: flex">
     <p align="center">
@@ -170,9 +169,9 @@ Une fois toutes ses étapes finies, vous allez devoir redémarrer node-RED comme
     </p>
 </div>
 
-**Screen 11 :** Une fois le dashboard rouvert, après redémarrage, node-RED vous dit qu’il y a des dépendances manquantes. Il suffit d’aller dans Manage project dependencies.
+**Screen 11:** Once the dashboard has been reopened, node-RED tells you that there are some missing dependencies. Just go to Manage project dependencies.
 
-**Screen 12 :** Vous pouvez voir ici les deux dépendances que node-RED proposent, vous avez juste à cliquer sur install puis sur Close puis rafraîchissez la page internet.
+**Screen 12:** Here you can see the two dependencies that node-RED offers. Just click on install, then Close, then refresh the web page.
 
 <div style="display: flex">
     <p align="center">
@@ -181,9 +180,9 @@ Une fois toutes ses étapes finies, vous allez devoir redémarrer node-RED comme
     </p>
 </div>
 
-**Screen 13 :** Il devrait vous rester une dépendance qui serait downloadfile. Ensuite cliquez sur Manage project dependencies.
+**Screen 13:** You should have one dependency left: downloadfile. Then click on Manage project dependencies.
 
-**Screen 14 :** Ici vous avez la liste complète des dépendances. Vous allez devoir supprimer toutes celles qui ne sont plus utilisées. Dans notre cas : 
+**Screen 14:** Here you have the complete list of dependencies. You'll need to delete any that are no longer in use. In our case : 
 - node-red-contrib-dir2files,  
 - node-red-contrib-gpsd,  
 - node-red-contrib-python3-function,  
@@ -192,4 +191,4 @@ Une fois toutes ses étapes finies, vous allez devoir redémarrer node-RED comme
 - node-red-node-pi-gpio,  
 - node-red-node-ui-list
 
-Puis allez dans l’onglet Install cherchez et installez le module downloadfile *(@prescient-devices/node-red-contrib-downloadfile).* Une fois installé, vous avez besoin de rafraîchir la page et votre installation de la V2 en ligne avec github project est terminée.
+Then go to the Install tab, search for and install the downloadfile module *(@prescient-devices/node-red-contrib-downloadfile).* Once installed, you'll need to refresh the page and your online V2 installation with github project is complete.
