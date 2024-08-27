@@ -1,9 +1,8 @@
-**Guide d’installation & d’utilisation de Node-RED**   
-*(dashboard V2)*
+# **Guide d’installation & d’utilisation de Node-RED (dashboard V2)**
 
 *Version du document : V1*
 
-***Sommaire***
+## ***Sommaire***
 
 - *Introduction*
 - *Prérequis*
@@ -11,7 +10,7 @@
 - *Utilisation du mode projet*
 - *Utilisation rapide du dashboard Node-RED*
 
-**Introduction**
+## **Introduction**
 
 Node-RED est un outil de développement visuel pour connecter des dispositifs matériels, des API et des services en ligne de manière nouvelle et excitante. Il offre une interface intuitive pour construire des flux d'applications en connectant des nœuds qui représentent des blocs de fonctionnalités distincts. Dans cette documentation, nous allons vous guider à travers le processus d'installation, de configuration, et d'utilisation de Node-RED, en particulier dans le contexte du PlanktoScope.
 
