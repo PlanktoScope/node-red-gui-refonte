@@ -542,7 +542,7 @@
             "20208cc0649c9fba"
         ],
         "x": 54,
-        "y": 299,
+        "y": 399,
         "w": 212,
         "h": 82
     },
@@ -560,7 +560,7 @@
             "48814ebcfe772953"
         ],
         "x": 54,
-        "y": 399,
+        "y": 499,
         "w": 192,
         "h": 82
     },
@@ -1193,7 +1193,7 @@
             "695a202180a55638"
         ],
         "x": 54,
-        "y": 499,
+        "y": 599,
         "w": 1582,
         "h": 222
     },
@@ -1219,7 +1219,7 @@
             "ddb9c4fcb2355d4c"
         ],
         "x": 54,
-        "y": 139,
+        "y": 239,
         "w": 992,
         "h": 142
     },
@@ -1537,9 +1537,9 @@
             "5aab3d77f5f76bba",
             "c813ee0363b277bb"
         ],
-        "x": 104,
+        "x": 94,
         "y": 379,
-        "w": 1372,
+        "w": 1392,
         "h": 189.5
     },
     {
@@ -1677,9 +1677,9 @@
             "2b081acaeb1f304d",
             "71876f75ae3e4ba6"
         ],
-        "x": 64,
+        "x": 54,
         "y": 59,
-        "w": 290,
+        "w": 291,
         "h": 82
     },
     {
@@ -1698,7 +1698,7 @@
         ],
         "x": 64,
         "y": 159,
-        "w": 245,
+        "w": 248,
         "h": 82
     },
     {
@@ -1778,6 +1778,162 @@
         "x": 84,
         "y": 39,
         "w": 245,
+        "h": 82
+    },
+    {
+        "id": "6e5db789a34bfd94",
+        "type": "group",
+        "z": "5047c566973ee3a1",
+        "name": "Detect when the use arrive, then init the page",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "3818cc8b0a5aabed",
+            "90e4abe12845a2df",
+            "6fa34a1f2515c4cf",
+            "dda766f441681122"
+        ],
+        "x": 104,
+        "y": 79,
+        "w": 432,
+        "h": 82
+    },
+    {
+        "id": "65bb8c27447f7783",
+        "type": "group",
+        "z": "5047c566973ee3a1",
+        "name": "Control which page is shown to a user",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "38b9b989ed435680",
+            "d1f80e39243d05fb"
+        ],
+        "x": 104,
+        "y": 179,
+        "w": 245,
+        "h": 82
+    },
+    {
+        "id": "4786ae6325653022",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "Data restoration pop-up",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "59a118377d0b7b47",
+            "2256e9c9ee162c6a",
+            "350acdaf74ad1e92"
+        ],
+        "x": 84,
+        "y": 979,
+        "w": 502,
+        "h": 82
+    },
+    {
+        "id": "a69884b8c0acd8d4",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "Detect when the use arrive, then init the page",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5ee536271d7c7790",
+            "05f3de085aa30475",
+            "816b6e4b808a51b8",
+            "9c2590d80c6812bb"
+        ],
+        "x": 84,
+        "y": 139,
+        "w": 432,
+        "h": 82
+    },
+    {
+        "id": "7ddb295e3fba2cb4",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "Control which page is shown to a user",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "fda6a38f1b44263a",
+            "3f473766a11c3784"
+        ],
+        "x": 84,
+        "y": 39,
+        "w": 245,
+        "h": 82
+    },
+    {
+        "id": "c0f5de4355b1dbd2",
+        "type": "group",
+        "z": "a697ff46c6e7b7fb",
+        "name": "Detect when the use arrive, then init the page",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "83b6394625e71c0f",
+            "a3a9370294d86cb2"
+        ],
+        "x": 84,
+        "y": 139,
+        "w": 290,
+        "h": 82
+    },
+    {
+        "id": "28c4473212724473",
+        "type": "group",
+        "z": "a697ff46c6e7b7fb",
+        "name": "Control which page / group is shown to a user",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "668595394db47c54",
+            "9d2388378e60b099"
+        ],
+        "x": 84,
+        "y": 39,
+        "w": 292,
+        "h": 82
+    },
+    {
+        "id": "565423f619cd33da",
+        "type": "group",
+        "z": "fb15c917381dd273",
+        "name": "Page CSS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "cea55bc861641e92"
+        ],
+        "x": 54,
+        "y": 139,
+        "w": 292,
         "h": 82
     },
     {
@@ -2166,150 +2322,12 @@
         "h": 602
     },
     {
-        "id": "6e5db789a34bfd94",
-        "type": "group",
-        "z": "5047c566973ee3a1",
-        "name": "Detect when the use arrive, then init the page",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "3818cc8b0a5aabed",
-            "90e4abe12845a2df",
-            "6fa34a1f2515c4cf",
-            "dda766f441681122"
-        ],
-        "x": 104,
-        "y": 79,
-        "w": 432,
-        "h": 82
-    },
-    {
-        "id": "65bb8c27447f7783",
-        "type": "group",
-        "z": "5047c566973ee3a1",
-        "name": "Control which page is shown to a user",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "38b9b989ed435680",
-            "d1f80e39243d05fb"
-        ],
-        "x": 104,
-        "y": 179,
-        "w": 245,
-        "h": 82
-    },
-    {
-        "id": "4786ae6325653022",
-        "type": "group",
-        "z": "b70df4b6cc88d09a",
-        "name": "Data restoration pop-up",
-        "style": {
-            "label": true,
-            "stroke": "#000000",
-            "color": "#000000"
-        },
-        "nodes": [
-            "59a118377d0b7b47",
-            "2256e9c9ee162c6a",
-            "350acdaf74ad1e92"
-        ],
-        "x": 84,
-        "y": 979,
-        "w": 502,
-        "h": 82
-    },
-    {
-        "id": "a69884b8c0acd8d4",
-        "type": "group",
-        "z": "b70df4b6cc88d09a",
-        "name": "Detect when the use arrive, then init the page",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "5ee536271d7c7790",
-            "05f3de085aa30475",
-            "816b6e4b808a51b8",
-            "9c2590d80c6812bb"
-        ],
-        "x": 84,
-        "y": 139,
-        "w": 432,
-        "h": 82
-    },
-    {
-        "id": "7ddb295e3fba2cb4",
-        "type": "group",
-        "z": "b70df4b6cc88d09a",
-        "name": "Control which page is shown to a user",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "fda6a38f1b44263a",
-            "3f473766a11c3784"
-        ],
-        "x": 84,
-        "y": 39,
-        "w": 245,
-        "h": 82
-    },
-    {
-        "id": "c0f5de4355b1dbd2",
-        "type": "group",
-        "z": "a697ff46c6e7b7fb",
-        "name": "Detect when the use arrive, then init the page",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "83b6394625e71c0f",
-            "a3a9370294d86cb2"
-        ],
-        "x": 84,
-        "y": 139,
-        "w": 290,
-        "h": 82
-    },
-    {
-        "id": "28c4473212724473",
-        "type": "group",
-        "z": "a697ff46c6e7b7fb",
-        "name": "Control which page / group is shown to a user",
-        "style": {
-            "label": true,
-            "stroke": "#000000",
-            "color": "#000000"
-        },
-        "nodes": [
-            "668595394db47c54",
-            "9d2388378e60b099"
-        ],
-        "x": 84,
-        "y": 39,
-        "w": 292,
-        "h": 82
-    },
-    {
         "id": "cae0178a8a69f787",
         "type": "junction",
         "z": "fb15c917381dd273",
         "g": "5c8dc5f5e1904bf8",
         "x": 820,
-        "y": 680,
+        "y": 780,
         "wires": [
             [
                 "f6c532036b5081b0"
@@ -2322,7 +2340,7 @@
         "z": "fb15c917381dd273",
         "g": "5c8dc5f5e1904bf8",
         "x": 820,
-        "y": 640,
+        "y": 740,
         "wires": [
             [
                 "d3a5a70db54745f0"
@@ -7026,7 +7044,7 @@
             "469d021252c5af93"
         ],
         "x": 375,
-        "y": 240,
+        "y": 340,
         "wires": []
     },
     {
@@ -7071,7 +7089,7 @@
         "ui": "1eeac55ba6b9065f",
         "name": "",
         "x": 130,
-        "y": 220,
+        "y": 320,
         "wires": [
             [
                 "955cc34dc652948a",
@@ -7092,14 +7110,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"header-first-visit-container\">\n    <div class=\"header-first-visit-container-left\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-first-visit-container-right\">\n      <div class=\"header-first-visit-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n        ></span>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n  },\n};\n</script>\n\n<style>\n  .header-first-visit-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-first-visit-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .header-first-visit-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-first-visit-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-first-visit-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-first-visit-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-first-visit-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-first-visit-information-container span {\n    color: black;\n    font-size: 35px;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-first-visit-container\">\n    <div class=\"header-first-visit-container-left\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-first-visit-container-right\">\n      <div class=\"header-first-visit-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n        ></span>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n  },\n};\n</script>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 160,
-        "y": 340,
+        "y": 440,
         "wires": [
             []
         ]
@@ -7117,14 +7135,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"title-first-visit-container\">\n        <div class=\"title-first-visit-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"title-first-visit-message-container\">\n            <p id=\"first-p-first-visit\">Welcome on the <span id=\"planktoscope\">PlanktoScope</span></p>\n            <p id=\"second-p-first-visit\">We glad to have you here for the first time</p>\n        </div>\n    </div>\n</template>\n\n<style>\n    .title-first-visit-container {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .title-first-visit-image-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        margin-bottom: 2rem;\n    }\n\n    .title-first-visit-image-container img {\n        height: 6vw;\n        width: 6vw;\n    }\n\n    .title-first-visit-message-container {\n        display: flex;\n        justify-content: center;\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .title-first-visit-message-container p#first-p-first-visit {\n        font-size: 2.8vw;\n        font-weight: 50;\n        color: black;\n    }\n\n    .title-first-visit-message-container span#planktoscope {\n        font-weight: bold;\n        color: #0a6eca;\n    }\n\n    .title-first-visit-message-container p#second-p-first-visit {\n        font-weight: 1;\n        font-size: 1.5vw;\n    }\n\n</style>",
+        "format": "<template>\n    <div class=\"title-first-visit-container\">\n        <div class=\"title-first-visit-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"title-first-visit-message-container\">\n            <p id=\"first-p-first-visit\">Welcome on the <span id=\"planktoscope\">PlanktoScope</span></p>\n            <p id=\"second-p-first-visit\">We glad to have you here for the first time</p>\n        </div>\n    </div>\n</template>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 150,
-        "y": 440,
+        "y": 540,
         "wires": [
             []
         ]
@@ -7142,14 +7160,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          @input=\"updatePayload\"\n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          @input=\"updatePayload\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Model</label>\n        <v-select\n          label=\"Select your model\"\n          v-model=\"model_selected\"\n          @input=\"updatePayload\"\n          :items=\"model_list\"\n          variant=\"outlined\"\n          density=\"compact\"\n        ></v-select>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n        first_visit: true,\n        model_list: [],\n        model_selected: \"\",\n        operator: {\n            name: '',\n            email: '',\n        }\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n          \n          if (payload.first_visit) {\n            this.first_visit = payload.first_visit;\n          }\n          if (payload.model_list) {\n            this.model_list = payload.model_list;\n          }\n          if (payload.model_selected) {\n            this.model_selected = payload.model_selected;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n        const payload = {\n            operator: this.operator,\n            hardware: this.model_selected,\n        };\n        \n        this.send({ payload });\n    },\n    validateForm() {\n      if (!this.operator.name || !this.operator.email || !this.model_selected) {\n        this.send({payload : \"test\"})\n        return;\n      }\n\n      this.send({\n        payload: {\n          operator: this.operator,\n          hardware: this.model_selected,\n          firstVisit: this.first_visit\n        }\n      });\n    }\n  },\n}\n</script>\n\n<style scoped>\n.first-visit-custom-button {\n  border-radius: 8px;\n  font-size: 1vw;\n  padding-top: 12px;\n  padding-bottom: 12px;\n}\n\n.form-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n}\n\n.first-visit-form-block-one, .first-visit-form-block-two {\n  width: 80%;\n  max-width: 600px;\n  padding: 1rem;\n  border: 1px solid black;\n  border-radius: 5px;\n  margin-bottom: 1rem;\n}\n\np#first-visit-block-one-title, p#first-visit-block-two-title {\n  font-size: 1.5vw;\n  margin-bottom: 1rem;\n}\n\n.first-visit-input-container {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  margin: 0rem 0rem 1rem 1.4rem;\n}\n\n.my-first-visit-label {\n  font-size: 1.2vw;\n  min-width: 10rem;\n}\n\n.button-container {\n  display: flex;\n  justify-content: flex-end;\n  width: 80%;\n  max-width: 600px;\n}\n\n.v-input__details {\n  display: none;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"form-container\">\n    <div class=\"first-visit-form-block-one\">\n      <p id=\"first-visit-block-one-title\">Operator</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Name</label>\n        <v-text-field \n          v-model=\"operator.name\" \n          @input=\"updatePayload\"\n          clearable variant=\"outlined\" \n          density=\"compact\"\n        ></v-text-field>\n      </div>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Email</label>\n        <v-text-field \n          v-model=\"operator.email\"\n          @input=\"updatePayload\"\n          clearable variant=\"outlined\"\n          density=\"compact\"\n        ></v-text-field>\n      </div>\n    </div>\n\n    <div class=\"first-visit-form-block-two\">\n      <p id=\"first-visit-block-two-title\">Hardware</p>\n      <div class=\"first-visit-input-container\">\n        <label class=\"my-first-visit-label\">Model</label>\n        <v-select\n          label=\"Select your model\"\n          v-model=\"model_selected\"\n          @input=\"updatePayload\"\n          :items=\"model_list\"\n          variant=\"outlined\"\n          density=\"compact\"\n        ></v-select>\n      </div>\n    </div>\n\n    <div class=\"button-container\">\n      <v-btn\n        color=\"#0a6eca\"\n        variant=\"flat\"\n        class=\"first-visit-custom-button\"\n        @click=\"validateForm\"\n      >\n        Validate\n      </v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n        first_visit: true,\n        model_list: [],\n        model_selected: \"\",\n        operator: {\n            name: '',\n            email: '',\n        }\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n          \n          if (payload.first_visit) {\n            this.first_visit = payload.first_visit;\n          }\n          if (payload.model_list) {\n            this.model_list = payload.model_list;\n          }\n          if (payload.model_selected) {\n            this.model_selected = payload.model_selected;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n        const payload = {\n            operator: this.operator,\n            hardware: this.model_selected,\n        };\n        \n        this.send({ payload });\n    },\n    validateForm() {\n      if (!this.operator.name || !this.operator.email || !this.model_selected) {\n        this.send({payload : \"test\"})\n        return;\n      }\n\n      this.send({\n        payload: {\n          operator: this.operator,\n          hardware: this.model_selected,\n          firstVisit: this.first_visit\n        }\n      });\n    }\n  },\n}\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 640,
-        "y": 600,
+        "y": 700,
         "wires": [
             [
                 "0565dc25419690e3",
@@ -7184,7 +7202,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1240,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
                 "8b05263aee3303bf"
@@ -7209,7 +7227,7 @@
         "repair": false,
         "outputs": 1,
         "x": 810,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
                 "37fdca294eb2d1bb",
@@ -7238,7 +7256,7 @@
         "to": "",
         "reg": false,
         "x": 1000,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
                 "90d9c21321164d49"
@@ -7256,7 +7274,7 @@
             "f2332fa1b7e6397e"
         ],
         "x": 1595,
-        "y": 540,
+        "y": 640,
         "wires": []
     },
     {
@@ -7280,7 +7298,7 @@
         "to": "",
         "reg": false,
         "x": 1480,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
                 "dcc0c648c7c57223"
@@ -7313,7 +7331,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
                 "43f2c97055fc26be"
@@ -7331,7 +7349,7 @@
             "c24d1751dd739fe4"
         ],
         "x": 95,
-        "y": 600,
+        "y": 700,
         "wires": [
             [
                 "eac22c776f85072b",
@@ -7366,7 +7384,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1300,
-        "y": 580,
+        "y": 680,
         "wires": [
             [],
             []
@@ -7386,7 +7404,7 @@
         "finalize": "",
         "libs": [],
         "x": 1020,
-        "y": 580,
+        "y": 680,
         "wires": [
             [
                 "2cba5a92e292ae0f"
@@ -7419,7 +7437,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 360,
-        "y": 600,
+        "y": 700,
         "wires": [
             [
                 "43f2c97055fc26be"
@@ -7453,7 +7471,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1300,
-        "y": 640,
+        "y": 740,
         "wires": [
             [],
             []
@@ -7485,7 +7503,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1300,
-        "y": 680,
+        "y": 780,
         "wires": [
             [],
             []
@@ -7517,7 +7535,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 660,
+        "y": 760,
         "wires": [
             [
                 "43f2c97055fc26be"
@@ -7544,7 +7562,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 280,
-        "y": 240,
+        "y": 340,
         "wires": [
             [
                 "c24d1751dd739fe4"
@@ -7577,7 +7595,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 460,
-        "y": 200,
+        "y": 300,
         "wires": [
             [
                 "803915abe34bbd0f"
@@ -7605,7 +7623,7 @@
         "repair": false,
         "outputs": 2,
         "x": 650,
-        "y": 200,
+        "y": 300,
         "wires": [
             [
                 "bfac68a2ad929ed7"
@@ -7626,7 +7644,7 @@
             "4c23fa82d4496339"
         ],
         "x": 755,
-        "y": 180,
+        "y": 280,
         "wires": []
     },
     {
@@ -7650,7 +7668,7 @@
         "to": "",
         "reg": false,
         "x": 850,
-        "y": 220,
+        "y": 320,
         "wires": [
             [
                 "d80ab3b457ba2653"
@@ -7668,7 +7686,7 @@
             "f2332fa1b7e6397e"
         ],
         "x": 1005,
-        "y": 220,
+        "y": 320,
         "wires": []
     },
     {
@@ -7690,11 +7708,36 @@
         "repair": false,
         "outputs": 1,
         "x": 270,
-        "y": 200,
+        "y": 300,
         "wires": [
             [
                 "26ef12e53ec2958f"
             ]
+        ]
+    },
+    {
+        "id": "cea55bc861641e92",
+        "type": "ui-template",
+        "z": "fb15c917381dd273",
+        "g": "565423f619cd33da",
+        "group": "",
+        "page": "8c9f114bff281989",
+        "ui": "",
+        "name": "Page CSS - First Welcoming",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* --------------------------------------------- */\n/* Template : header-first-visit */\n/* --------------------------------------------- */\n\n\n  .header-first-visit-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-first-visit-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .header-first-visit-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-first-visit-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-first-visit-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-first-visit-information-container {\n    display: flex;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-first-visit-information-container p {\n    margin: 0 5px;\n    font-size: 1vw;\n    color: black;\n    font-weight: bold;\n  }\n\n  .header-first-visit-information-container span {\n    color: black;\n    font-size: 35px;\n  }\n\n\n/* --------------------------------------------- */\n/* Template : title-first-visit */\n/* --------------------------------------------- */\n\n\n.title-first-visit-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.title-first-visit-image-container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 2rem;\n}\n\n.title-first-visit-image-container img {\n    height: 6vw;\n    width: 6vw;\n}\n\n.title-first-visit-message-container {\n    display: flex;\n    justify-content: center;\n    flex-direction: column;\n    align-items: center;\n}\n\n.title-first-visit-message-container #first-p-first-visit {\n    font-size: 2.8vw;\n    font-weight: 100;\n    color: black;\n}\n\n.title-first-visit-message-container #planktoscope {\n    font-weight: bold;\n    color: #0a6eca;\n}\n\n.title-first-visit-message-container #second-p-first-visit {\n    font-weight: 100;\n    font-size: 1.5vw;\n}\n\n/* --------------------------------------------- */\n/* Template : first-visit-form */\n/* --------------------------------------------- */\n\n.first-visit-custom-button {\n  border-radius: 8px;\n  font-size: 1vw;\n  padding-top: 12px;\n  padding-bottom: 12px;\n}\n\n.form-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n}\n\n.first-visit-form-block-one, .first-visit-form-block-two {\n  width: 80%;\n  max-width: 600px;\n  padding: 1rem;\n  border: 1px solid black;\n  border-radius: 5px;\n  margin-bottom: 1rem;\n}\n\n#first-visit-block-one-title, #first-visit-block-two-title {\n  font-size: 1.5vw;\n  margin-bottom: 1rem;\n}\n\n.first-visit-input-container {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  margin: 0rem 0rem 1rem 1.4rem;\n}\n\n.my-first-visit-label {\n  font-size: 1.2vw;\n  min-width: 10rem;\n}\n\n.button-container {\n  display: flex;\n  justify-content: flex-end;\n  width: 80%;\n  max-width: 600px;\n}\n\n.v-input__details {\n  display: none;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 200,
+        "y": 180,
+        "wires": [
+            []
         ]
     },
     {
@@ -7750,7 +7793,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"header-home-container\">\n        <div class=\"header-home-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"header-home-message-container\">\n            <p>Welcome on the <span id=\"planktoscope\">PlanktoScope GUI</span></p>\n                <a href=\"http://92.167.184.163:1880/ps/node-red-v2/dashboard/Lab\">\n                    <i class=\"mdi mdi-test-tube\"></i> Accéder au flow Lab\n                </a>\n        </div>\n    </div>\n</template>\n\n<style>\n    .header-home-container {\n        display: flex;\n        flex-direction: row;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container img {\n        height: 5.5vw;\n        width: 5.5vw;\n        margin-right: 20px;\n    }\n\n    .header-home-message-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-message-container p {\n        font-size: 2.5vw;\n        font-weight: 100;\n        color: black;\n    }\n\n    .header-home-message-container span#version {\n        color: #076eac;\n    }\n\n    .header-home-message-container span#planktoscope {\n        font-weight: bold;\n        /* color: #076eac; */\n    }\n\n</style>",
+        "format": "<template>\n    <div class=\"header-home-container\">\n        <div class=\"header-home-image-container\">\n            <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"PlanktoScope logo\">\n        </div>\n        <div class=\"header-home-message-container\">\n            <p>Welcome on the <span id=\"planktoscope\">PlanktoScope GUI</span></p>\n        </div>\n    </div>\n</template>\n\n<style>\n    .header-home-container {\n        display: flex;\n        flex-direction: row;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-image-container img {\n        height: 5.5vw;\n        width: 5.5vw;\n        margin-right: 20px;\n    }\n\n    .header-home-message-container {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .header-home-message-container p {\n        font-size: 2.5vw;\n        font-weight: 100;\n        color: black;\n    }\n\n    .header-home-message-container span#version {\n        color: #076eac;\n    }\n\n    .header-home-message-container span#planktoscope {\n        font-weight: bold;\n        /* color: #076eac; */\n    }\n\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -7802,7 +7845,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image\"></span>\n                <p id=\"first-p\">Gallery</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-bullseye\"></span>\n                <p id=\"first-p\">Calibration</p>\n                <p id=\"second-p\">Adjust your settings to ensure accurate measurements.</p>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item5\" @click=\"handleClick(5)\">\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-chart-line\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Monitoring</p>\n                    <p id=\"second-p\">Keep track of system performance.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item6\" @click=\"handleClick(6)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                const currentUrl = new URL(window.location.href);\n                const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n                if (itemNumber == 2) {\n                    const relativePath = '/ps/data/browse/files/';\n                    const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n                    open(fullUrl.href, '_blank');\n                } else if (itemNumber == 4) {\n                    open(\"http://192.168.1.32/ps/docs/\", '_blank');\n                } else if (itemNumber == 6) {\n                    open(\"https://www.fairscope.com/helpdesk\", '_blank');\n                } else {\n                    this.send({payload: itemNumber});\n                }\n            }\n        }\n    };\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 1% 12%;\n        grid-template-columns: 2fr 2fr 2fr; \n        grid-template-rows: 2fr 1fr;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        position: absolute;\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 2vw 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 1.5vw 10px 25px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n        margin: 1.5vw 0 0 0;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        background :#f6f6f6;\n    }\n\n    .first-line-container div#size {\n        height: 14vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 3;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 3;\n        grid-row: 1 / span 2;\n    }\n    \n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n    \n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 1 / 2;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item5 {\n        grid-column: 2 / 3; \n        grid-row: 2 / 3;\n    }\n\n    .item5 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item5 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item6 {\n        grid-column: 3 / 4; \n        grid-row: 2 / 3;\n    }\n    \n    .item6 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n    \n    .item6 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n</style>\n",
+        "format": "<template>\n    <div class=\"first-line-container\">\n        <div id=\"size\" class=\"item1\" @click=\"handleClick(1)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi-eye\"></span>\n                <p id=\"first-p\">Launch the preview</p>\n                <p id=\"second-p\">Check if you can see anything</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item2\" @click=\"handleClick(2)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-image\"></span>\n                <p id=\"first-p\">Gallery</p>\n                <p id=\"second-p\">Check out the collected images and objects.</p>\n            </section>\n        </div>\n        <div id=\"size\" class=\"item3\" @click=\"handleClick(3)\">\n            <section class=\"first-line-section-middle\">\n                <span class=\"mdi mdi mdi-bullseye\"></span>\n                <p id=\"first-p\">Calibration</p>\n                <p id=\"second-p\">Adjust your settings to ensure accurate measurements.</p>\n            </section>\n        </div>\n        <div class=\"item4\" @click=\"handleClick(4)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi-text-box-search-outline\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Learn how to use PlanktoScope</p>\n                    <p id=\"second-p\">Find detailed instructions here.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item5\" @click=\"handleClick(5)\">\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-chart-line\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Monitoring</p>\n                    <p id=\"second-p\">Keep track of system performance.</p>\n                </section>\n            </section>\n        </div>\n        <div class=\"item6\" @click=\"handleClick(6)\">\n            <section class=\"first-line-section-corner\">\n                <span class=\"mdi mdi-open-in-new\"></span>\n            </section>\n            <section class=\"first-line-section-middle-v2\">\n                <span class=\"mdi mdi mdi-message-alert\"></span>\n                <section class=\"first-line-section-middle-text\">\n                    <p id=\"first-p\">Submit a feedback</p>\n                    <p id=\"second-p\">We'd love to hear your thoughts and improve!</p>\n                </section>\n            </section>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n        methods: {\n            handleClick(itemNumber) {\n                const currentUrl = new URL(window.location.href);\n                const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n                if (itemNumber == 2) {\n                    const relativePath = '/ps/data/browse/files/';\n                    const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n                    open(fullUrl.href, '_blank');\n                } else if (itemNumber == 4) {\n                    open(\"http://192.168.1.32/ps/docs/\", '_blank');\n                } else if (itemNumber == 6) {\n                    open(\"https://www.fairscope.com/helpdesk\", '_blank');\n                } else {\n                    this.send({payload: itemNumber});\n                }\n            }\n        }\n    };\n</script>\n\n<style>\n    .first-line-container {\n        display: grid;\n        margin: 0% 12% 1% 12%;\n        grid-template-columns: 2fr 2fr 2fr; \n        grid-template-rows: 2fr 1fr;\n        gap: 25px;\n    }\n\n    .first-line-section-corner {\n        display: flex;\n        justify-content: flex-end;\n    }\n\n    .first-line-section-corner span {\n        position: absolute;\n        color: gray;\n        font-size: 1.5vw;\n        margin-right: 5px;\n    }\n\n    .first-line-section-middle {\n        display: flex;\n        align-items: center;\n        flex-direction: column;\n    }\n\n    .first-line-section-middle span.mdi {\n        color: #076eac;\n        font-size: 7vw;\n        margin: 2vw 5px 18px 0px;\n        line-height: 0.6;\n    }\n\n    .first-line-section-middle-v2 {\n        display: flex;\n        justify-content: left;\n        align-items: center;\n    }\n\n    .first-line-section-middle-v2 span.mdi {\n        color: #076eac;\n        font-size: 3vw;\n        margin: 1.5vw 10px 25px 10px;\n        line-height: 0.4;\n    }\n\n    .first-line-section-middle-text {\n        display: flex;\n        flex-direction: column;\n        margin: 1.5vw 0 0 0;\n    }\n\n    .first-line-container div {\n        border: 1px solid #E0E0E0;\n        border-radius: 5px;\n        cursor: pointer;\n    }\n\n    .first-line-container div:hover {\n        background :#f6f6f6;\n    }\n\n    .first-line-container div#size {\n        height: 12vw;\n    }\n\n    .item1 {\n        grid-column: 1 / 2;\n        grid-row: 1 / span 2;\n    }\n\n    .item1 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item1 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item2 {\n        grid-column: 2 / 3;\n        grid-row: 1 / span 2;\n    }\n\n    .item2 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n\n    .item2 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item3 {\n        grid-column: 3 / 3;\n        grid-row: 1 / span 2;\n    }\n    \n    .item3 p#first-p {\n        font-weight: bold;\n        font-size: 1.5vw;\n        margin-bottom: 10px;\n    }\n    \n    .item3 p#second-p {\n        font-size: 0.7vw;\n    }\n\n    .item4 {\n        grid-column: 1 / 2;\n        grid-row: 2 / 3;\n    }\n\n    .item4 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item4 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item5 {\n        grid-column: 2 / 3; \n        grid-row: 2 / 3;\n    }\n\n    .item5 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n\n    .item5 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n\n    .item6 {\n        grid-column: 3 / 4; \n        grid-row: 2 / 3;\n    }\n    \n    .item6 p#first-p {\n        font-weight: bold;\n        font-size: 0.9vw;\n        margin-bottom: 10px;\n    }\n    \n    .item6 p#second-p {\n        font-size: 0.7vw;\n        margin-bottom: 25px;\n    }\n</style>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
