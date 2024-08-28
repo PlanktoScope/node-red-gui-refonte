@@ -385,7 +385,7 @@
             "a9b6da2f2e6a066a"
         ],
         "x": 84,
-        "y": 239,
+        "y": 339,
         "w": 1192,
         "h": 202
     },
@@ -586,7 +586,7 @@
             "9f4d9eacaefc1402"
         ],
         "x": 104,
-        "y": 279,
+        "y": 379,
         "w": 1252,
         "h": 142
     },
@@ -607,7 +607,7 @@
             "4e5baf21e265d811"
         ],
         "x": 104,
-        "y": 759,
+        "y": 859,
         "w": 942,
         "h": 82
     },
@@ -630,7 +630,7 @@
             "7b3e64e2512b4f9f"
         ],
         "x": 104,
-        "y": 439,
+        "y": 539,
         "w": 982,
         "h": 122
     },
@@ -655,7 +655,7 @@
             "b07c9313574e2c5e"
         ],
         "x": 104,
-        "y": 579,
+        "y": 679,
         "w": 1032,
         "h": 162
     },
@@ -678,7 +678,7 @@
             "fb3284d43226bc67"
         ],
         "x": 104,
-        "y": 859,
+        "y": 959,
         "w": 1062,
         "h": 122
     },
@@ -784,7 +784,7 @@
             "ea3288b5bc6bc136"
         ],
         "x": 104,
-        "y": 999,
+        "y": 1099,
         "w": 902,
         "h": 82
     },
@@ -806,7 +806,7 @@
             "6db5780f32d06404"
         ],
         "x": 104,
-        "y": 1099,
+        "y": 1199,
         "w": 722,
         "h": 122
     },
@@ -1424,7 +1424,7 @@
             "62d2042e91fbe197"
         ],
         "x": 84,
-        "y": 599,
+        "y": 699,
         "w": 1472,
         "h": 222
     },
@@ -1450,7 +1450,7 @@
             "d8c60c1b9271bea5"
         ],
         "x": 84,
-        "y": 459,
+        "y": 559,
         "w": 1052,
         "h": 122
     },
@@ -1489,7 +1489,7 @@
             "19963a0df50a04b6"
         ],
         "x": 84,
-        "y": 859,
+        "y": 959,
         "w": 2152,
         "h": 282
     },
@@ -2372,6 +2372,42 @@
         ],
         "x": 124,
         "y": 139,
+        "w": 272,
+        "h": 82
+    },
+    {
+        "id": "adf65ce29d5c8a20",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Page CSS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b17fd9172fe5e9ff"
+        ],
+        "x": 84,
+        "y": 239,
+        "w": 292,
+        "h": 82
+    },
+    {
+        "id": "342708c6c3fec39e",
+        "type": "group",
+        "z": "5047c566973ee3a1",
+        "name": "Page CSS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "6e6de8c26bc039d5"
+        ],
+        "x": 104,
+        "y": 279,
         "w": 272,
         "h": 82
     },
@@ -14388,14 +14424,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n    <template v-slot:item=\"{ item, index }\">\n      <tr>\n        <td>{{ item.acquisitionID }}</td>\n        <td>{{ item.estimatedTime }}</td>\n        <td>{{ item.status }}</td>\n        <td class=\"input-msts\">\n          <v-text-field :disabled=\"isFieldDisabled(item)\" v-model=\"item.input\" @input=\"onInputChange(item)\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n        </td>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n        { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n        { title: 'Status', align: 'start', key: 'status' },\n        { title: 'MSTS', align: 'start', key: 'msts' }\n      ],\n      tableData: [], \n      msts: '',\n      isTableDisabled: false, \n      currentRowIndex: 0,\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    },\n    updateTableDataWithMSTS() {\n      this.tableData = this.tableData.map(item => ({\n        ...item,\n        input: this.msts\n      }));\n    },\n    onInputChange(item) {\n      this.send({ payload: this.tableData });\n    },\n    isFieldDisabled(item) {\n      return this.isTableDisabled || item.status === 'In Progress' || item.status === 'Done';\n    },\n    sendCurrentRow() {\n      if (this.tableData.length > 0 && this.currentRowIndex < this.tableData.length) {\n        const item = this.tableData[this.currentRowIndex];\n        this.send({\n          payload: {\n            \"action\": \"segment\",\n            \"settings\": {\n                \"path\": item.path,\n                \"force\": true,\n                \"ecotaxa\": true,\n            }\n          },\n          topic: \"segmenter/segment\"\n        });\n\n        if (this.currentRowIndex === this.tableData.length - 1) {\n          this.isTableDisabled = true;\n        }\n      }\n    },\n    processStatusDone() {\n      if (this.currentRowIndex < this.tableData.length - 1) {\n        this.currentRowIndex++;\n        this.sendCurrentRow();\n      } else {\n        this.send({\n          payload: \"Done\",\n        });\n      }\n    }\n  },\n  watch: {\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload === \"start\") {\n            this.sendCurrentRow();\n          }\n          if (msg.payload && msg.payload === \"pause\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.isTableDisabled = false;\n          }\n          if (msg.payload && msg.payload === \"clear\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.tableData = [];\n            this.currentRowIndex = 0; // Réinitialiser l'index de ligne\n            this.isTableDisabled = false; // Assurez-vous que la table n'est pas désactivée après effacement\n          } else if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n            this.updateTableDataWithMSTS();\n          }\n          if (msg.msts) {\n            this.msts = msg.msts;\n            this.updateTableDataWithMSTS(); \n          }\n          if (msg.payload && msg.payload.status === \"Done\") {\n            this.processStatusDone();\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n          this.updateTableDataWithMSTS();\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n\n.input-msts {\n  margin: 10px;\n  max-width: 100px;\n}\n\n.input-msts .v-input__details {\n  display: none;\n}\n</style>",
+        "format": "<template>\n  <v-data-table :headers=\"headers\" :items=\"tableData\" item-value=\"acquisitionID\" class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n    <template v-slot:item=\"{ item, index }\">\n      <tr>\n        <td>{{ item.acquisitionID }}</td>\n        <td>{{ item.estimatedTime }}</td>\n        <td>{{ item.status }}</td>\n        <td class=\"input-msts\">\n          <v-text-field :disabled=\"isFieldDisabled(item)\" v-model=\"item.input\" @input=\"onInputChange(item)\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n        </td>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID' },\n        { title: 'Estimated time', align: 'start', key: 'estimatedTime' },\n        { title: 'Status', align: 'start', key: 'status' },\n        { title: 'MSTS', align: 'start', key: 'msts' }\n      ],\n      tableData: [], \n      msts: '',\n      isTableDisabled: false, \n      currentRowIndex: 0,\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key)\n    },\n    updateTableDataWithMSTS() {\n      this.tableData = this.tableData.map(item => ({\n        ...item,\n        input: this.msts\n      }));\n    },\n    onInputChange(item) {\n      this.send({ payload: this.tableData });\n    },\n    isFieldDisabled(item) {\n      return this.isTableDisabled || item.status === 'In Progress' || item.status === 'Done';\n    },\n    sendCurrentRow() {\n      if (this.tableData.length > 0 && this.currentRowIndex < this.tableData.length) {\n        const item = this.tableData[this.currentRowIndex];\n        this.send({\n          payload: {\n            \"action\": \"segment\",\n            \"settings\": {\n                \"path\": item.path,\n                \"force\": true,\n                \"ecotaxa\": true,\n            }\n          },\n          topic: \"segmenter/segment\"\n        });\n\n        if (this.currentRowIndex === this.tableData.length - 1) {\n          this.isTableDisabled = true;\n        }\n      }\n    },\n    processStatusDone() {\n      if (this.currentRowIndex < this.tableData.length - 1) {\n        this.currentRowIndex++;\n        this.sendCurrentRow();\n      } else {\n        this.send({\n          payload: \"Done\",\n        });\n      }\n    }\n  },\n  watch: {\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload && msg.payload === \"start\") {\n            this.sendCurrentRow();\n          }\n          if (msg.payload && msg.payload === \"pause\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.isTableDisabled = false;\n          }\n          if (msg.payload && msg.payload === \"clear\") {\n            this.send({\n              payload: {\n                \"action\": \"stop\",\n              },\n              topic: \"segmenter/segment\"\n            });\n            this.tableData = [];\n            this.currentRowIndex = 0; // Réinitialiser l'index de ligne\n            this.isTableDisabled = false; // Assurez-vous que la table n'est pas désactivée après effacement\n          } else if (msg.payload && Array.isArray(msg.payload)) {\n            this.tableData = msg.payload;\n            this.updateTableDataWithMSTS();\n          }\n          if (msg.msts) {\n            this.msts = msg.msts;\n            this.updateTableDataWithMSTS(); \n          }\n          if (msg.payload && msg.payload.status === \"Done\") {\n            this.processStatusDone();\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload && Array.isArray(msg.payload)) {\n          this.tableData = msg.payload;\n          this.updateTableDataWithMSTS();\n        }\n      });\n    }\n  }\n}\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 590,
-        "y": 680,
+        "y": 780,
         "wires": [
             [
                 "2298a8a5a04dade7",
@@ -14416,14 +14452,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n    <div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn @click=\"handleToggleClick('pause')\" style=\"padding: 10px;\">\n                <v-icon left>mdi-pause</v-icon>Pause\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('clear')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('start')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-play</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                toggle: null,\n                toggleState: null\n            };\n        },\n        methods: {\n            handleToggleClick(action) {\n                this.send({ payload: action });\n                this.toggleState = action;  \n            },\n            handleDone() {\n                this.toggle = this.toggleState; \n                this.send({ payload: \"pause\" });\n            }\n        },\n        watch: {\n            '$socket': {\n                handler(newVal, oldVal) {\n                    this.$socket.on('msg-input:' + this.id, (msg) => {\n                        if (msg.payload === \"Done\") {\n                            this.handleDone();\n                        }\n                        if (msg.state) {\n                            if (msg.state == \"start\") {\n                                this.toggle = 2;\n                            }\n                            if (msg.state == \"clear\") {\n                                this.toggle = 1;\n                            }\n                            if (msg.state == \"pause\") {\n                                this.toggle = 0;\n                            }\n                            this.toggleState = msg.state;\n                        }\n                    });\n                },\n                deep: true,\n                immediate: true\n            }\n        }\n    }\n</script>\n\n<style scoped>\n    div .v-btn-toggle {\n        background-color: #ffffff;\n    }\n\n    .toggle-full-width {\n        width: 100%;\n        margin-top: 15px;\n    }\n\n    .toggle {\n        width: 100%;\n        border-color: #0a6eca;\n        color: #0a6eca;\n    }\n\n    .toggle .v-btn--active {\n        background-color: #0a6eca !important;\n        color: white !important;\n    }\n</style>\n",
+        "format": "<template>\n    <div>\n        <!-- Stop / Start acquisition -->\n        <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n            class=\"toggle-full-width toggle\">\n            <v-btn @click=\"handleToggleClick('pause')\" style=\"padding: 10px;\">\n                <v-icon left>mdi-pause</v-icon>Pause\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('clear')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-delete</v-icon>Clear\n            </v-btn>\n            <v-btn @click=\"handleToggleClick('start')\" style=\"padding: 10px;\">\n                <v-icon right>mdi-play</v-icon>Start\n            </v-btn>\n        </v-btn-toggle>\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                toggle: null,\n                toggleState: null\n            };\n        },\n        methods: {\n            handleToggleClick(action) {\n                this.send({ payload: action });\n                this.toggleState = action;  \n            },\n            handleDone() {\n                this.toggle = this.toggleState; \n                this.send({ payload: \"pause\" });\n            }\n        },\n        watch: {\n            '$socket': {\n                handler(newVal, oldVal) {\n                    this.$socket.on('msg-input:' + this.id, (msg) => {\n                        if (msg.payload === \"Done\") {\n                            this.handleDone();\n                        }\n                        if (msg.state) {\n                            if (msg.state == \"start\") {\n                                this.toggle = 2;\n                            }\n                            if (msg.state == \"clear\") {\n                                this.toggle = 1;\n                            }\n                            if (msg.state == \"pause\") {\n                                this.toggle = 0;\n                            }\n                            this.toggleState = msg.state;\n                        }\n                    });\n                },\n                deep: true,\n                immediate: true\n            }\n        }\n    }\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 950,
-        "y": 760,
+        "y": 860,
         "wires": [
             [
                 "c18005dcbaf22026",
@@ -14444,14 +14480,14 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\" @click=\"navigateToHome\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image-1\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        navigateToHome() {\n            this.send(\"Clicked!\");\n        }\n    }\n}\n</script>\n\n<style scoped>\n    h3 {\n        font-size: 1vw;\n    }\n\n    .center-container {\n        display: flex;\n        justify-content: flex-start;\n        align-items: center;\n        cursor: pointer;\n    }\n\n    .center-image-1 {\n        margin-right: 25px;\n        max-width: 40px;\n        line-height: 0px;\n    }\n\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\" @click=\"navigateToHome\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image-1\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        navigateToHome() {\n            this.send(\"Clicked!\");\n        }\n    }\n}\n</script>\n",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 550,
-        "y": 280,
+        "y": 380,
         "wires": [
             [
                 "b1eacad4b3bf6e97"
@@ -14471,14 +14507,14 @@
         "width": "7",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div>\n    <v-stepper model-value=\"4\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n          class=\"selected-step\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  div.v-stepper.v-sheet {\n    background-color: transparent;\n    box-shadow: none;\n    border-radius: 0px;\n    overflow: hidden;\n  }\n\n  .selected-step div.v-avatar.v-theme--nrdb.v-avatar--density-default.v-avatar--variant-flat.v-stepper-item__avatar {\n    background-color: #0a6eca;\n  }\n</style>",
+        "format": "<template>\n  <div>\n    <v-stepper model-value=\"4\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n          class=\"selected-step\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        console.log(`Step clicked: ${step}`);\n        this.send(step);\n      }\n    }\n  }\n</script>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 560,
-        "y": 320,
+        "y": 420,
         "wires": [
             [
                 "d68c231c98bf92e0"
@@ -14494,7 +14530,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 1000,
-        "y": 320,
+        "y": 420,
         "wires": [
             []
         ]
@@ -14513,7 +14549,7 @@
         "finalize": "",
         "libs": [],
         "x": 780,
-        "y": 320,
+        "y": 420,
         "wires": [
             [
                 "8cf785fffe790177"
@@ -14534,7 +14570,7 @@
         "finalize": "",
         "libs": [],
         "x": 760,
-        "y": 280,
+        "y": 380,
         "wires": [
             [
                 "1e4493ea93992368"
@@ -14550,7 +14586,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 980,
-        "y": 280,
+        "y": 380,
         "wires": [
             []
         ]
@@ -14568,14 +14604,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-data-table \n    :headers=\"headers\" \n    :items=\"tableData\" \n    item-value=\"acquisitionID\" \n    v-model=\"selected\" \n    show-select \n    class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Project name', align: 'start', sortable: false, key: 'projectName', removable: false },\n        { title: 'Sample ID', align: 'start', key: 'sampleID', removable: true, sortable: true },\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID', removable: true, sortable: true },\n        { title: 'Operator', align: 'start', key: 'operator', removable: true, sortable: true },\n        { title: 'Image', align: 'start', key: 'image', removable: true, sortable: true },\n        { title: 'MSTS', align: 'start', key: 'MSTS', removable: true, sortable: true },\n      ],\n      tableData: [], // Tableau des données à afficher\n      selected: [], // Stocke les identifiants sélectionnés\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key);\n    },\n    updateTableData(newData) {\n      if (!Array.isArray(newData) || newData.length === 0) return;\n\n      // Met à jour les données du tableau\n      this.tableData = [...newData];\n      \n      // Met à jour la sélection basée sur la propriété isSelected\n      this.selected = newData\n        .filter(item => item.isSelected)\n        .map(item => item.acquisitionID);\n    },\n    getSelectedItems() {\n      return this.tableData.filter(item => this.selected.includes(item.acquisitionID));\n    },\n    sendPayload() {\n      const selectedItems = this.getSelectedItems();\n      const fullTableData = this.tableData; // L'ensemble des données du tableau\n      this.send({\n        selected: selectedItems,\n        allData: fullTableData // Inclut toutes les données du tableau\n      });\n    }\n  },\n  watch: {\n    selected: {\n      handler(newVal) {\n        this.sendPayload();\n      },\n      deep: true\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload === \"clear\") {\n            this.selected = []; // Réinitialise la sélection si la charge utile est \"clear\"\n          } else if (Array.isArray(msg.payload)) {\n            // Met à jour les données du tableau et la sélection\n            this.updateTableData(msg.payload); \n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (Array.isArray(msg.payload)) {\n          // Met à jour les données du tableau et la sélection\n          this.updateTableData(msg.payload);\n        }\n      });\n    }\n  }\n}\n</script>\n\n<style>\n.custom-table {\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  padding: 16px 0;\n}\n\n.custom-header {\n  font-weight: bold;\n  text-transform: uppercase;\n}\n</style>\n",
+        "format": "<template>\n  <v-data-table \n    :headers=\"headers\" \n    :items=\"tableData\" \n    item-value=\"acquisitionID\" \n    v-model=\"selected\" \n    show-select \n    class=\"custom-table\">\n    <template v-slot:headers=\"{ columns, isSorted, getSortIcon, toggleSort }\">\n      <tr>\n        <template v-for=\"column in columns\" :key=\"column.key\">\n          <td>\n            <span class=\"mr-2 cursor-pointer\" @click=\"() => toggleSort(column)\">\n              {{ column.title }}\n            </span>\n            <template v-if=\"isSorted(column)\">\n              <v-icon :icon=\"getSortIcon(column)\"></v-icon>\n            </template>\n          </td>\n        </template>\n      </tr>\n    </template>\n  </v-data-table>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      headers: [\n        { title: 'Project name', align: 'start', sortable: false, key: 'projectName', removable: false },\n        { title: 'Sample ID', align: 'start', key: 'sampleID', removable: true, sortable: true },\n        { title: 'Acquisition ID', align: 'start', key: 'acquisitionID', removable: true, sortable: true },\n        { title: 'Operator', align: 'start', key: 'operator', removable: true, sortable: true },\n        { title: 'Image', align: 'start', key: 'image', removable: true, sortable: true },\n        { title: 'MSTS', align: 'start', key: 'MSTS', removable: true, sortable: true },\n      ],\n      tableData: [], // Tableau des données à afficher\n      selected: [], // Stocke les identifiants sélectionnés\n    }\n  },\n  methods: {\n    remove(key) {\n      this.headers = this.headers.filter(header => header.key !== key);\n    },\n    updateTableData(newData) {\n      if (!Array.isArray(newData) || newData.length === 0) return;\n\n      // Met à jour les données du tableau\n      this.tableData = [...newData];\n      \n      // Met à jour la sélection basée sur la propriété isSelected\n      this.selected = newData\n        .filter(item => item.isSelected)\n        .map(item => item.acquisitionID);\n    },\n    getSelectedItems() {\n      return this.tableData.filter(item => this.selected.includes(item.acquisitionID));\n    },\n    sendPayload() {\n      const selectedItems = this.getSelectedItems();\n      const fullTableData = this.tableData; // L'ensemble des données du tableau\n      this.send({\n        selected: selectedItems,\n        allData: fullTableData // Inclut toutes les données du tableau\n      });\n    }\n  },\n  watch: {\n    selected: {\n      handler(newVal) {\n        this.sendPayload();\n      },\n      deep: true\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload === \"clear\") {\n            this.selected = []; // Réinitialise la sélection si la charge utile est \"clear\"\n          } else if (Array.isArray(msg.payload)) {\n            // Met à jour les données du tableau et la sélection\n            this.updateTableData(msg.payload); \n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  },\n  mounted() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (Array.isArray(msg.payload)) {\n          // Met à jour les données du tableau et la sélection\n          this.updateTableData(msg.payload);\n        }\n      });\n    }\n  }\n}\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 740,
-        "y": 500,
+        "y": 600,
         "wires": [
             [
                 "e299a4102bf9d4aa",
@@ -14597,7 +14633,7 @@
         "finalize": "",
         "libs": [],
         "x": 960,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
                 "343ad9e58c44f9d9"
@@ -14618,7 +14654,7 @@
         "finalize": "",
         "libs": [],
         "x": 1360,
-        "y": 780,
+        "y": 880,
         "wires": [
             [
                 "9529b63ced697421"
@@ -14680,7 +14716,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1150,
-        "y": 780,
+        "y": 880,
         "wires": [
             [
                 "e6ba170eea1efeb4"
@@ -14701,7 +14737,7 @@
             "da2a5658f65d64a4"
         ],
         "x": 1515,
-        "y": 780,
+        "y": 880,
         "wires": []
     },
     {
@@ -14715,7 +14751,7 @@
             "4b6824e2ecaa9016"
         ],
         "x": 1415,
-        "y": 740,
+        "y": 840,
         "wires": []
     },
     {
@@ -14731,7 +14767,7 @@
             "96b438fd7f029156"
         ],
         "x": 605,
-        "y": 540,
+        "y": 640,
         "wires": [
             [
                 "d417adf0e2e7759b"
@@ -14749,7 +14785,7 @@
             "67b91503eb38afe7"
         ],
         "x": 1095,
-        "y": 540,
+        "y": 640,
         "wires": []
     },
     {
@@ -14765,14 +14801,14 @@
         "width": "3",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Gallery', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Gallery', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n  },\n};\n</script>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 570,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "25b53f7dfdeeeecc"
@@ -14805,7 +14841,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 330,
-        "y": 680,
+        "y": 780,
         "wires": [
             [
                 "af3cbcd9f5f35be3"
@@ -14823,7 +14859,7 @@
             "343ad9e58c44f9d9"
         ],
         "x": 165,
-        "y": 680,
+        "y": 780,
         "wires": [
             [
                 "aa582b7c4e2ce8c7"
@@ -14856,7 +14892,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 320,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "a004902c262b883a"
@@ -14874,7 +14910,7 @@
             "a502f95380d7ea32"
         ],
         "x": 125,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "db8dbeb996228096"
@@ -14928,7 +14964,7 @@
         "oldrc": false,
         "name": "find \"metadata.json\"",
         "x": 260,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [
                 "41add91cc9a0f0d2"
@@ -14951,7 +14987,7 @@
         "addname": "",
         "property": "payload",
         "x": 450,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [
                 "dcdd3d182172e37b"
@@ -14972,7 +15008,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 1000,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [
                 "fae11872d37ca7ea"
@@ -15000,7 +15036,7 @@
         "to": "",
         "reg": false,
         "x": 620,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [
                 "abb1be992fc0f571"
@@ -15024,7 +15060,7 @@
         "repair": false,
         "outputs": 1,
         "x": 810,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [
                 "a7571dda2afc9bf5",
@@ -15046,7 +15082,7 @@
         "finalize": "",
         "libs": [],
         "x": 1290,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [
                 "baf89db54ae56a37"
@@ -15063,7 +15099,7 @@
             "d8c60c1b9271bea5"
         ],
         "x": 125,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [
                 "b66bf570c5656d37"
@@ -15084,7 +15120,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 980,
+        "y": 1080,
         "wires": [
             [
                 "c5ba95b82832310f"
@@ -15108,7 +15144,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1550,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [
                 "97882a7a4f73a796"
@@ -15130,7 +15166,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 350,
-        "y": 640,
+        "y": 740,
         "wires": [
             [
                 "193d3837469bc271",
@@ -15153,7 +15189,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 590,
-        "y": 640,
+        "y": 740,
         "wires": []
     },
     {
@@ -15175,7 +15211,7 @@
         "repair": false,
         "outputs": 1,
         "x": 770,
-        "y": 680,
+        "y": 780,
         "wires": [
             [
                 "cf21ab67185f9d54"
@@ -15198,7 +15234,7 @@
         "expiry": "",
         "broker": "a973d821cae4ecce",
         "x": 890,
-        "y": 680,
+        "y": 780,
         "wires": []
     },
     {
@@ -15212,7 +15248,7 @@
             "62d2042e91fbe197"
         ],
         "x": 125,
-        "y": 760,
+        "y": 860,
         "wires": [
             [
                 "937cc5b0d10ab1c9"
@@ -15233,7 +15269,7 @@
         "finalize": "",
         "libs": [],
         "x": 1310,
-        "y": 740,
+        "y": 840,
         "wires": [
             [
                 "a0368732ccfa08d8"
@@ -15259,7 +15295,7 @@
         "repair": false,
         "outputs": 1,
         "x": 770,
-        "y": 720,
+        "y": 820,
         "wires": [
             [
                 "cf4fbc0932d87cc7"
@@ -15275,7 +15311,7 @@
         "ui": "1eeac55ba6b9065f",
         "events": "all",
         "x": 1140,
-        "y": 340,
+        "y": 440,
         "wires": [
             []
         ]
@@ -15300,7 +15336,7 @@
         "repair": false,
         "outputs": 2,
         "x": 970,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "c7380afc08bb239e"
@@ -15324,7 +15360,7 @@
         "finalize": "",
         "libs": [],
         "x": 780,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "c632cc613a0f8ce5"
@@ -15355,7 +15391,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1130,
-        "y": 380,
+        "y": 480,
         "wires": [
             [
                 "3f6329f6f64a5d57"
@@ -15376,7 +15412,7 @@
             "960c1b4e1358e139"
         ],
         "x": 1235,
-        "y": 360,
+        "y": 460,
         "wires": []
     },
     {
@@ -15390,7 +15426,7 @@
             "6810166ee9e618d8"
         ],
         "x": 1235,
-        "y": 400,
+        "y": 500,
         "wires": []
     },
     {
@@ -15407,7 +15443,7 @@
         "finalize": "",
         "libs": [],
         "x": 1470,
-        "y": 980,
+        "y": 1080,
         "wires": [
             [
                 "156972ebab521833"
@@ -15428,7 +15464,7 @@
         "addname": "",
         "property": "payload",
         "x": 1350,
-        "y": 1020,
+        "y": 1120,
         "wires": [
             [
                 "945e4b2465a1e732"
@@ -15449,7 +15485,7 @@
         "oldrc": false,
         "name": "",
         "x": 1410,
-        "y": 1080,
+        "y": 1180,
         "wires": [
             [
                 "6d9b00293e8bc92f"
@@ -15472,7 +15508,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 1080,
+        "y": 1180,
         "wires": [
             [
                 "7d7daee3e1ed39f7"
@@ -15493,7 +15529,7 @@
         "finalize": "",
         "libs": [],
         "x": 1750,
-        "y": 1100,
+        "y": 1200,
         "wires": [
             [
                 "b3fc3025774d3e96"
@@ -15514,7 +15550,7 @@
         "addname": "",
         "property": "payload",
         "x": 1550,
-        "y": 1060,
+        "y": 1160,
         "wires": [
             [
                 "596d0884550802d2"
@@ -15538,7 +15574,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1570,
-        "y": 1100,
+        "y": 1200,
         "wires": [
             [
                 "3780e6a8fd770f31"
@@ -15556,7 +15592,7 @@
             "4b6824e2ecaa9016"
         ],
         "x": 2195,
-        "y": 1100,
+        "y": 1200,
         "wires": []
     },
     {
@@ -15608,7 +15644,7 @@
         "reduceInitType": "num",
         "reduceFixup": "",
         "x": 1760,
-        "y": 980,
+        "y": 1080,
         "wires": [
             [
                 "e820a58dd9154f93"
@@ -15629,7 +15665,7 @@
         "finalize": "",
         "libs": [],
         "x": 1200,
-        "y": 1020,
+        "y": 1120,
         "wires": [
             [
                 "47704da97cb477f3"
@@ -15659,7 +15695,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 1910,
-        "y": 1100,
+        "y": 1200,
         "wires": [
             [
                 "a5eca0282a193652"
@@ -15680,7 +15716,7 @@
         "finalize": "",
         "libs": [],
         "x": 2070,
-        "y": 1100,
+        "y": 1200,
         "wires": [
             [
                 "2f55e4293dac256a"
@@ -15701,7 +15737,7 @@
         "finalize": "",
         "libs": [],
         "x": 260,
-        "y": 520,
+        "y": 620,
         "wires": [
             [
                 "10de7b2e182bbace"
@@ -15718,7 +15754,7 @@
             "a502f95380d7ea32"
         ],
         "x": 125,
-        "y": 520,
+        "y": 620,
         "wires": [
             [
                 "087698e99c0b873f"
@@ -15739,7 +15775,7 @@
         "finalize": "",
         "libs": [],
         "x": 950,
-        "y": 500,
+        "y": 600,
         "wires": [
             []
         ]
@@ -15764,7 +15800,7 @@
         "repair": false,
         "outputs": 2,
         "x": 430,
-        "y": 520,
+        "y": 620,
         "wires": [
             [
                 "d417adf0e2e7759b"
@@ -15786,7 +15822,7 @@
             "7dedd91c30c6d657"
         ],
         "x": 515,
-        "y": 540,
+        "y": 640,
         "wires": []
     },
     {
@@ -15815,7 +15851,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 1250,
-        "y": 680,
+        "y": 780,
         "wires": [
             [
                 "62d2042e91fbe197"
@@ -15849,7 +15885,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 310,
-        "y": 760,
+        "y": 860,
         "wires": [
             [
                 "af3cbcd9f5f35be3",
@@ -15870,7 +15906,7 @@
             "d3b2e7d1bba0372d"
         ],
         "x": 1435,
-        "y": 680,
+        "y": 780,
         "wires": []
     },
     {
@@ -15887,7 +15923,32 @@
         "finalize": "",
         "libs": [],
         "x": 1010,
-        "y": 900,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b17fd9172fe5e9ff",
+        "type": "ui-template",
+        "z": "00a14f98244d252e",
+        "g": "adf65ce29d5c8a20",
+        "group": "",
+        "page": "5e6b607c2476b7d4",
+        "ui": "",
+        "name": "Custom CSS - Segmentation",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "/* --------------------------------------------- */\n/* Template : Title */\n/* --------------------------------------------- */\n\nh3 {\n    font-size: 1vw;\n}\n\n.center-container {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    cursor: pointer;\n}\n\n.center-image-1 {\n    margin-right: 25px;\n    max-width: 40px;\n    line-height: 0;\n}\n\n/* --------------------------------------------- */\n/* Template : Step bar */\n/* --------------------------------------------- */\n\ndiv.v-stepper.v-sheet {\n    background-color: transparent;\n    box-shadow: none;\n    border-radius: 0;\n    overflow: hidden;\n}\n\n.v-stepper-header {\n    display: flex;\n    align-items: center;\n}\n\n  .selected-step div.v-avatar.v-theme--nrdb.v-avatar--density-default.v-avatar--variant-flat.v-stepper-item__avatar {\n    background-color: #0a6eca;\n}\n\n/* --------------------------------------------- */\n/* Template : Information */\n/* --------------------------------------------- */\n\n.my-menu {\n    display: flex;\n    justify-content: flex-end;\n}\n\n.gap-icon {\n    margin-right: 1rem;\n}\n\n.gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n}\n\n.header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n}\n\n.header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n}\n\n.header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n}\n\n/* --------------------------------------------- */\n/* Common Styles for Custom Tables and Buttons  */\n/* --------------------------------------------- */\n\n.custom-table {\n    background-color: white;\n    border-radius: 10px;\n    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n    padding: 16px 0;\n}\n\n.custom-header {\n    font-weight: bold;\n    text-transform: uppercase;\n}\n\n.v-btn-toggle {\n    background-color: #ffffff;\n}\n\n.toggle-full-width,\n.toggle {\n    width: 100%;\n}\n\n.toggle {\n    border-color: #0a6eca;\n    color: #0a6eca;\n}\n\n.toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n}\n\n/* --------------------------------------------- */\n/* Template : Acquisition array */\n/* --------------------------------------------- */\n\n/* No additional specific styles required */\n\n/* --------------------------------------------- */\n/* Template : Acquisition queue */\n/* --------------------------------------------- */\n\n.input-msts {\n    margin: 10px;\n    max-width: 100px;\n}\n\n.input-msts .v-input__details {\n    display: none;\n}\n\n/* --------------------------------------------- */\n/* Template : Acquisition queue button */\n/* --------------------------------------------- */\n\n/* No additional specific styles required */",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 230,
+        "y": 280,
         "wires": [
             []
         ]
@@ -20212,7 +20273,7 @@
             "d1f80e39243d05fb"
         ],
         "x": 1175,
-        "y": 320,
+        "y": 420,
         "wires": []
     },
     {
@@ -20228,14 +20289,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n  }\n\n  .header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n  }\n\n  .header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n  }\n\n  .header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n  }\n\n  .header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-top-home-container\">\n    <div class=\"header-top-home-container-left\" @click=\"navigateToHome\">\n      <img\n        src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\"\n        alt=\"PlanktoScope logo\"\n      />\n      <p>PlanktoScope GUI</p>\n    </div>\n\n    <div class=\"header-top-home-container-right\">\n      <div class=\"header-top-home-information-container\">\n        <p id=\"date\"></p>\n        <p>-</p>\n        <p id=\"time-first-visit\"></p>\n        <span\n          class=\"mdi mdi-account\"\n          :style=\"{ color: 'black' }\"\n          @click=\"menu = true\"\n        ></span>\n      </div>\n    </div>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list->\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.operator_name }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Manage your data', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n    navigateToHome() {\n      this.send(\"Home\");\n    }\n  },\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 630,
-        "y": 340,
+        "y": 440,
         "wires": [
             [
                 "3519c483c429e46f"
@@ -20287,14 +20348,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Sample</h2>\n    </section>\n    <section class=\"settings-sample-container\">\n      <label>GPS Format</label>\n      <v-select\n        v-model=\"coordFormat\"\n        :items=\"['Decimal degrees (DD)', 'Degrees, minutes and seconds (DMS)']\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n\n  <!-- Dialog -->\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      coordFormat: [],\n      dialog: false,\n    };\n  },\n  methods: {\n    openDialog() {\n      this.dialog = true;\n    },\n    closeDialog() {\n      this.dialog = false;\n    },\n  },\n  watch: {\n    coordFormat: {\n      handler(newVal) {\n        this.send({ payload: newVal });\n      },\n      deep: true,\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload) {\n            this.coordFormat = msg.payload;\n          }\n        });\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n};\n</script>\n\n<style>\n.settings-container {\n  border: black 1px solid;\n  border-radius: 5px;\n  padding: 1rem;\n}\n\n.settings-sample-container {\n  display: flex;\n  align-items: center;\n  padding-left: 1rem;\n}\n\n.settings-sample-container label {\n  margin-right: 1rem;\n}\n\n.settings-sample-container .v-input {\n  max-width: 500px;\n}\n\n.settings-sample-container .v-input__details {\n  display: none;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Sample</h2>\n    </section>\n    <section class=\"settings-sample-container\">\n      <label>GPS Format</label>\n      <v-select\n        v-model=\"coordFormat\"\n        :items=\"['Decimal degrees (DD)', 'Degrees, minutes and seconds (DMS)']\"\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog\"\n        density=\"compact\"\n      ></v-select>\n    </section>\n  </div>\n\n  <!-- Dialog -->\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      coordFormat: [],\n      dialog: false,\n    };\n  },\n  methods: {\n    openDialog() {\n      this.dialog = true;\n    },\n    closeDialog() {\n      this.dialog = false;\n    },\n  },\n  watch: {\n    coordFormat: {\n      handler(newVal) {\n        this.send({ payload: newVal });\n      },\n      deep: true,\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload) {\n            this.coordFormat = msg.payload;\n          }\n        });\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 620,
-        "y": 800,
+        "y": 900,
         "wires": [
             [
                 "53b390b93b29c5fa"
@@ -20327,7 +20388,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 330,
-        "y": 800,
+        "y": 900,
         "wires": [
             [
                 "60b2ecc0d6e457c8"
@@ -20361,7 +20422,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 870,
-        "y": 800,
+        "y": 900,
         "wires": [
             [],
             []
@@ -20380,14 +20441,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Operator</h2>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Name</label>\n      <v-text-field\n        v-model=\"operator_name\"\n        density=\"compact\"\n        clearable\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog('operatorName')\"\n      ></v-text-field>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Email</label>\n      <v-text-field\n        v-model=\"operator_email\"\n        density=\"compact\"\n        clearable\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog('operatorEmail')\"\n      ></v-text-field>\n    </section>\n  </div>\n\n  <!-- Dialogs -->\n  <v-dialog v-model=\"dialogs.operatorName\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Operator Name Information</v-card-title>\n      <v-card-text>This is the operator name information dialog.</v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog('operatorName')\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n\n  <v-dialog v-model=\"dialogs.operatorEmail\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Operator Email Information</v-card-title>\n      <v-card-text>This is the operator email information dialog.</v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog('operatorEmail')\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator_name: '',\n      operator_email: '',\n      dialogs: {\n        operatorName: false,\n        operatorEmail: false,\n      },\n    };\n  },\n  created() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload.operator_name) {\n          this.operator_name = msg.payload.operator_name;\n        }\n        if (msg.payload.operator_email) {\n          this.operator_email = msg.payload.operator_email;\n        }\n      });\n    }\n  },\n  methods: {\n    openDialog(dialogName) {\n      this.dialogs[dialogName] = true;\n    },\n    closeDialog(dialogName) {\n      this.dialogs[dialogName] = false;\n    },\n  },\n  watch: {\n    operator_name: {\n      handler(newVal) {\n        if (newVal != \"\" && newVal != null) {\n          this.send({\n            payload: {\n              operator_name: newVal,\n              operator_email: this.operator_email,\n            },\n          });\n        }\n      },\n      deep: true,\n    },\n    operator_email: {\n      handler(newVal) {\n        if (newVal != \"\" && newVal != null) {\n          this.send({\n            payload: {\n              operator_name: this.operator_name,\n              operator_email: newVal,\n            },\n          });\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.operator_email) {\n            this.operator_email = msg.operator_email;\n          }\n          if (msg.operator_name) {\n            this.operator_name = msg.operator_name;\n          }\n        });\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n};\n</script>\n\n<style>\n.settings-container {\n  border: black 1px solid;\n  border-radius: 5px;\n  padding: 1rem;\n}\n\n.settings-container h2 {\n  margin-bottom: 1rem;\n}\n\n.settings-operator-container {\n  display: flex;\n  align-items: center;\n  padding-left: 1rem;\n  margin-bottom: 1rem;\n}\n\n.settings-operator-container label {\n  margin-right: 1rem;\n  min-width: 100px;\n}\n\n.settings-operator-container .v-input {\n  max-width: 500px;\n}\n\n.settings-operator-container .v-input__details {\n  display: none;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Operator</h2>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Name</label>\n      <v-text-field\n        v-model=\"operator_name\"\n        density=\"compact\"\n        clearable\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog('operatorName')\"\n      ></v-text-field>\n    </section>\n    <section class=\"settings-operator-container\">\n      <label>Email</label>\n      <v-text-field\n        v-model=\"operator_email\"\n        density=\"compact\"\n        clearable\n        variant=\"outlined\"\n        append-icon=\"mdi-information\"\n        @click:append=\"openDialog('operatorEmail')\"\n      ></v-text-field>\n    </section>\n  </div>\n\n  <!-- Dialogs -->\n  <v-dialog v-model=\"dialogs.operatorName\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Operator Name Information</v-card-title>\n      <v-card-text>This is the operator name information dialog.</v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog('operatorName')\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n\n  <v-dialog v-model=\"dialogs.operatorEmail\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Operator Email Information</v-card-title>\n      <v-card-text>This is the operator email information dialog.</v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog('operatorEmail')\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      operator_name: '',\n      operator_email: '',\n      dialogs: {\n        operatorName: false,\n        operatorEmail: false,\n      },\n    };\n  },\n  created() {\n    if (this.$socket) {\n      this.$socket.on('msg-input:' + this.id, (msg) => {\n        if (msg.payload.operator_name) {\n          this.operator_name = msg.payload.operator_name;\n        }\n        if (msg.payload.operator_email) {\n          this.operator_email = msg.payload.operator_email;\n        }\n      });\n    }\n  },\n  methods: {\n    openDialog(dialogName) {\n      this.dialogs[dialogName] = true;\n    },\n    closeDialog(dialogName) {\n      this.dialogs[dialogName] = false;\n    },\n  },\n  watch: {\n    operator_name: {\n      handler(newVal) {\n        if (newVal != \"\" && newVal != null) {\n          this.send({\n            payload: {\n              operator_name: newVal,\n              operator_email: this.operator_email,\n            },\n          });\n        }\n      },\n      deep: true,\n    },\n    operator_email: {\n      handler(newVal) {\n        if (newVal != \"\" && newVal != null) {\n          this.send({\n            payload: {\n              operator_name: this.operator_name,\n              operator_email: newVal,\n            },\n          });\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.operator_email) {\n            this.operator_email = msg.operator_email;\n          }\n          if (msg.operator_name) {\n            this.operator_name = msg.operator_name;\n          }\n        });\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 630,
-        "y": 500,
+        "y": 600,
         "wires": [
             [
                 "460fb659adbbae17",
@@ -20429,7 +20490,7 @@
             "64f12fa191e7d7e0"
         ],
         "x": 145,
-        "y": 800,
+        "y": 900,
         "wires": [
             [
                 "8b6ce849b7c7c43f"
@@ -20449,7 +20510,7 @@
             "64f12fa191e7d7e0"
         ],
         "x": 145,
-        "y": 500,
+        "y": 600,
         "wires": [
             [
                 "def19b85f4af5b99",
@@ -20483,7 +20544,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 480,
+        "y": 580,
         "wires": [
             [
                 "33b7801889f49dfe"
@@ -20517,7 +20578,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 520,
+        "y": 620,
         "wires": [
             [
                 "33b7801889f49dfe"
@@ -20551,7 +20612,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 900,
-        "y": 480,
+        "y": 580,
         "wires": [
             [],
             []
@@ -20583,7 +20644,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 900,
-        "y": 520,
+        "y": 620,
         "wires": [
             [],
             []
@@ -20615,7 +20676,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 340,
+        "y": 440,
         "wires": [
             [
                 "679e3c949c5dce47"
@@ -20635,7 +20696,7 @@
             "64f12fa191e7d7e0"
         ],
         "x": 145,
-        "y": 340,
+        "y": 440,
         "wires": [
             [
                 "4a6052524bce45c6"
@@ -20655,14 +20716,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Preview</h2>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Flowrate preset</label>\n      <v-text-field v-model=\"flowrate_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[3]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Volume preset</label>\n      <v-text-field type=\"number\" disabled density=\"compact\" variant=\"outlined\">\n        <span class=\"mdi mdi-infinity\">\n      </v-text-field>\n      <v-text-field v-model=\"volume_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"volume_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"volume_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Focus preset</label>\n      <v-text-field v-model=\"focus_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[3]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate_preset: [],\n        volume: \"infini\",\n        volume_preset: [],\n        focus_preset: [],\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.flowrate_preset) {\n            this.flowrate_preset = msg.flowrate_preset;\n          }\n          if (msg.volume_preset) {\n            this.volume_preset = msg.volume_preset;\n          }\n          if (msg.focus_preset) {\n            this.focus_preset = msg.focus_preset;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      flowrate_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: newVal,\n              volume_preset: this.volume_preset,\n              focus_preset: this.focus_preset,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      volume_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: this.flowrate_preset,\n              volume_preset: newVal,\n              focus_preset: this.focus_preset,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      focus_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: this.flowrate_preset,\n              volume_preset: this.volume_preset,\n              focus_preset: newVal,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.flowrate_preset) {\n              this.flowrate_preset = msg.flowrate_preset;\n            }\n            if (msg.volume_preset) {\n              this.volume_preset = msg.volume_preset;\n            }\n            if (msg.focus_preset) {\n              this.focus_preset = msg.focus_preset;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-preview-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-preview-container label {\n    margin-right: 1rem;\n    min-width: 100px;\n  }\n\n  .settings-preview-container .v-input {\n    max-width: 100px;\n    margin-right: 0.25rem;\n  }\n\n  .settings-preview-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Preview</h2>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Flowrate preset</label>\n      <v-text-field v-model=\"flowrate_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"flowrate_preset[3]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Volume preset</label>\n      <v-text-field type=\"number\" disabled density=\"compact\" variant=\"outlined\">\n        <span class=\"mdi mdi-infinity\">\n      </v-text-field>\n      <v-text-field v-model=\"volume_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"volume_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"volume_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n    <section class=\"settings-preview-container\">\n      <label>Focus preset</label>\n      <v-text-field v-model=\"focus_preset[0]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[1]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[2]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n      <v-text-field v-model=\"focus_preset[3]\" type=\"number\" density=\"compact\" variant=\"outlined\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        flowrate_preset: [],\n        volume: \"infini\",\n        volume_preset: [],\n        focus_preset: [],\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.flowrate_preset) {\n            this.flowrate_preset = msg.flowrate_preset;\n          }\n          if (msg.volume_preset) {\n            this.volume_preset = msg.volume_preset;\n          }\n          if (msg.focus_preset) {\n            this.focus_preset = msg.focus_preset;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      flowrate_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: newVal,\n              volume_preset: this.volume_preset,\n              focus_preset: this.focus_preset,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      volume_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: this.flowrate_preset,\n              volume_preset: newVal,\n              focus_preset: this.focus_preset,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      focus_preset: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({ payload: {\n              flowrate_preset: this.flowrate_preset,\n              volume_preset: this.volume_preset,\n              focus_preset: newVal,\n            }});\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.flowrate_preset) {\n              this.flowrate_preset = msg.flowrate_preset;\n            }\n            if (msg.volume_preset) {\n              this.volume_preset = msg.volume_preset;\n            }\n            if (msg.focus_preset) {\n              this.focus_preset = msg.focus_preset;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 650,
-        "y": 660,
+        "y": 760,
         "wires": [
             [
                 "a0d6e1698fda59ed",
@@ -20684,7 +20745,7 @@
             "64f12fa191e7d7e0"
         ],
         "x": 145,
-        "y": 660,
+        "y": 760,
         "wires": [
             [
                 "683c6eaea5e163cb",
@@ -20719,7 +20780,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 620,
+        "y": 720,
         "wires": [
             [
                 "4cebedc5cc8a9e7b"
@@ -20753,7 +20814,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 950,
-        "y": 620,
+        "y": 720,
         "wires": [
             [],
             []
@@ -20785,7 +20846,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 660,
+        "y": 760,
         "wires": [
             [
                 "4cebedc5cc8a9e7b"
@@ -20819,7 +20880,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 340,
-        "y": 700,
+        "y": 800,
         "wires": [
             [
                 "4cebedc5cc8a9e7b"
@@ -20853,7 +20914,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 950,
-        "y": 660,
+        "y": 760,
         "wires": [
             [],
             []
@@ -20885,7 +20946,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 940,
-        "y": 700,
+        "y": 800,
         "wires": [
             [],
             []
@@ -20904,14 +20965,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Acquisition</h2>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Delay to stabilized</label>\n      <v-text-field v-model=\"delay_to_stabilize\" type=\"number\" density=\"compact\" suffix=\"s\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"openDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Flowrate in between each images</label>\n      <v-text-field v-model=\"flowrate_in_between\" type=\"number\" density=\"compact\" suffix=\"ml/min\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"openDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        delay_to_stabilize: '',\n        flowrate_in_between: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.delay_to_stabilize) {\n            this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n          }\n          if (msg.payload.flowrate_in_between) {\n            this.flowrate_in_between = msg.payload.flowrate_in_between;\n          }\n        });\n      }\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      },\n      closeDialog() {\n        this.dialog = false;\n      },\n    },\n    watch: {\n      delay_to_stabilize: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({\n              payload: {\n                delay_to_stabilize: newVal,\n                flowrate_in_between: this.flowrate_in_between\n              }\n            });\n          }\n        },\n        deep: true\n      },\n      flowrate_in_between: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({\n              payload: {\n                delay_to_stabilize: this.delay_to_stabilize,\n                flowrate_in_between: newVal\n              }\n            });\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.flowrate_in_between) {\n              this.flowrate_in_between = msg.payload.flowrate_in_between;\n            }\n            if (msg.payload.delay_to_stabilize) {\n              this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-acquisition-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n  }\n\n  .settings-acquisition-container label {\n    min-width: 230px;\n  }\n\n  .settings-acquisition-container .v-input {\n    max-width: 170px;\n  }\n\n  .settings-acquisition-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Acquisition</h2>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Delay to stabilized</label>\n      <v-text-field v-model=\"delay_to_stabilize\" type=\"number\" density=\"compact\" suffix=\"s\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"openDialog\"></v-text-field>\n    </section>\n    <section class=\"settings-acquisition-container\">\n      <label>Flowrate in between each images</label>\n      <v-text-field v-model=\"flowrate_in_between\" type=\"number\" density=\"compact\" suffix=\"ml/min\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"openDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog 1.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"closeDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        delay_to_stabilize: '',\n        flowrate_in_between: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.payload.delay_to_stabilize) {\n            this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n          }\n          if (msg.payload.flowrate_in_between) {\n            this.flowrate_in_between = msg.payload.flowrate_in_between;\n          }\n        });\n      }\n    },\n    methods: {\n      openDialog() {\n        this.dialog = true;\n      },\n      closeDialog() {\n        this.dialog = false;\n      },\n    },\n    watch: {\n      delay_to_stabilize: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({\n              payload: {\n                delay_to_stabilize: newVal,\n                flowrate_in_between: this.flowrate_in_between\n              }\n            });\n          }\n        },\n        deep: true\n      },\n      flowrate_in_between: {\n        handler(newVal) {\n          if (newVal != \"\" && newVal != null) {\n            this.send({\n              payload: {\n                delay_to_stabilize: this.delay_to_stabilize,\n                flowrate_in_between: newVal\n              }\n            });\n          }\n        },\n        deep: true,\n        immediate: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.payload.flowrate_in_between) {\n              this.flowrate_in_between = msg.payload.flowrate_in_between;\n            }\n            if (msg.payload.delay_to_stabilize) {\n              this.delay_to_stabilize = msg.payload.delay_to_stabilize;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 670,
-        "y": 920,
+        "y": 1020,
         "wires": [
             [
                 "e17de7cede28b990",
@@ -20932,7 +20993,7 @@
             "64f12fa191e7d7e0"
         ],
         "x": 145,
-        "y": 920,
+        "y": 1020,
         "wires": [
             [
                 "bfc1c9e460621e6b",
@@ -20966,7 +21027,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 350,
-        "y": 900,
+        "y": 1000,
         "wires": [
             [
                 "3405fdbeca45c434"
@@ -21000,7 +21061,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 360,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [
                 "3405fdbeca45c434"
@@ -21034,7 +21095,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 950,
-        "y": 900,
+        "y": 1000,
         "wires": [
             [],
             []
@@ -21066,7 +21127,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 960,
-        "y": 940,
+        "y": 1040,
         "wires": [
             [],
             []
@@ -21085,14 +21146,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Segmentation</h2>\n    </section>\n    <section class=\"settings-segmentation-container\">\n      <label>MSTS (Minimal size to segment)</label>\n      <v-text-field v-model=\"msts\" type=\"number\" density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        msts: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.msts) {\n            this.msts = msg.msts;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      msts: {\n        handler(newVal) {\n          this.send({ payload: newVal });\n        },\n        deep: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.msts) {\n              this.msts = msg.msts;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>\n\n<style>\n\n  .settings-container {\n    border: black 1px solid;\n    border-radius: 5px;\n    padding: 1rem;\n  }\n\n  .settings-segmentation-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n  }\n\n  .settings-segmentation-container label {\n    margin-right: 1rem;\n  }\n\n\n  .settings-segmentation-container .v-input {\n    max-width: 170px;\n  }\n\n  .settings-segmentation-container .v-input__details {\n    display: none;\n  }\n\n</style>\n",
+        "format": "<template>\n  <div class=\"settings-container\">\n    <section>\n      <h2>Segmentation</h2>\n    </section>\n    <section class=\"settings-segmentation-container\">\n      <label>MSTS (Minimal size to segment)</label>\n      <v-text-field v-model=\"msts\" type=\"number\" density=\"compact\" variant=\"outlined\" append-icon=\"mdi-information\" @click:append=\"switchDialog\"></v-text-field>\n    </section>\n  </div>\n  <v-dialog v-model=\"dialog\" max-width=\"500\">\n    <v-card>\n      <v-card-title>Information</v-card-title>\n      <v-card-text>\n        This is an information dialog.\n      </v-card-text>\n      <v-card-actions>\n        <v-btn color=\"primary\" text @click=\"switchDialog\">Close</v-btn>\n      </v-card-actions>\n    </v-card>\n  </v-dialog>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        msts: '',\n        dialog: false,\n      }\n    },\n    created() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.msts) {\n            this.msts = msg.msts;\n          }\n        });\n      }\n    },\n    methods: {\n      switchDialog() {\n        this.dialog = !this.dialog;\n      },\n    },\n    watch: {\n      msts: {\n        handler(newVal) {\n          this.send({ payload: newVal });\n        },\n        deep: true\n      },\n      '$socket': {\n        handler(newVal, oldVal) {\n          this.$socket.on('msg-input:' + this.id, (msg) => {\n            if (msg.msts) {\n              this.msts = msg.msts;\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  }\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 600,
-        "y": 1040,
+        "y": 1140,
         "wires": [
             [
                 "1d6f4ea4e54b0656"
@@ -21125,7 +21186,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 310,
-        "y": 1040,
+        "y": 1140,
         "wires": [
             [
                 "5feeca33f3a87c8a"
@@ -21159,7 +21220,7 @@
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
         "x": 850,
-        "y": 1040,
+        "y": 1140,
         "wires": [
             [],
             []
@@ -21178,7 +21239,7 @@
             "64f12fa191e7d7e0"
         ],
         "x": 145,
-        "y": 1040,
+        "y": 1140,
         "wires": [
             [
                 "7bfa8347d6717246"
@@ -21193,19 +21254,19 @@
         "group": "0531957b8d4ecb7d",
         "page": "",
         "ui": "",
-        "name": "settings-segmentation",
+        "name": "settings-reset-button",
         "order": 6,
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <div class=\"default-button-container\">\n    <v-btn color=\"orange darken-2\" class=\"default-settings-btn\" @click=\"confirmRestore\">Default settings</v-btn>\n  </div>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      msts: '',\n    };\n  },\n  methods: {\n    confirmRestore() {\n      if (confirm(\"Are you sure you want to reset default settings?\")) {\n        this.send({ payload: \"reset\" });\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .default-button-container {\n    position: relative;\n  }\n\n  .default-settings-btn {\n    position: absolute;\n    bottom: 1rem;\n    right: 0rem;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"default-button-container\">\n    <v-btn color=\"orange darken-2\" class=\"default-settings-btn\" @click=\"confirmRestore\">Default settings</v-btn>\n  </div>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      msts: '',\n    };\n  },\n  methods: {\n    confirmRestore() {\n      if (confirm(\"Are you sure you want to reset default settings?\")) {\n        this.send({ payload: \"reset\" });\n      }\n    },\n  },\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 230,
-        "y": 1140,
+        "y": 1240,
         "wires": [
             [
                 "250fac5d08b457a3",
@@ -21224,7 +21285,7 @@
             "f67384bd93fa9723"
         ],
         "x": 445,
-        "y": 1140,
+        "y": 1240,
         "wires": []
     },
     {
@@ -21303,7 +21364,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1060,
-        "y": 340,
+        "y": 440,
         "wires": [
             [
                 "fc701c9ad326380a"
@@ -21327,7 +21388,7 @@
         "finalize": "",
         "libs": [],
         "x": 860,
-        "y": 340,
+        "y": 440,
         "wires": [
             [
                 "51af5dbb613ee249"
@@ -21358,7 +21419,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1210,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "aefc0f84026bcf7b"
@@ -21379,7 +21440,7 @@
             "960c1b4e1358e139"
         ],
         "x": 1315,
-        "y": 340,
+        "y": 440,
         "wires": []
     },
     {
@@ -21393,7 +21454,7 @@
             "6810166ee9e618d8"
         ],
         "x": 1315,
-        "y": 380,
+        "y": 480,
         "wires": []
     },
     {
@@ -21415,7 +21476,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 490,
-        "y": 1180,
+        "y": 1280,
         "wires": [
             [
                 "5218538b73a8aa1d"
@@ -21443,7 +21504,7 @@
         "to": "",
         "reg": false,
         "x": 660,
-        "y": 1180,
+        "y": 1280,
         "wires": [
             [
                 "6db5780f32d06404"
@@ -21461,8 +21522,33 @@
             "d1f80e39243d05fb"
         ],
         "x": 785,
-        "y": 1180,
+        "y": 1280,
         "wires": []
+    },
+    {
+        "id": "6e6de8c26bc039d5",
+        "type": "ui-template",
+        "z": "5047c566973ee3a1",
+        "g": "342708c6c3fec39e",
+        "group": "",
+        "page": "6a4834caf5af80e2",
+        "ui": "",
+        "name": "Custom CSS - Settings",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "/* --------------------------------------------- */\n/* Common Styles for Settings Containers         */\n/* --------------------------------------------- */\n\n.settings-container {\n    border: 1px solid black;\n    border-radius: 5px;\n    padding: 1rem;\n}\n\n.settings-container .v-input__details {\n    display: none;\n}\n\n/* --------------------------------------------- */\n/* Template : top-header-home */\n/* --------------------------------------------- */\n\n.my-menu {\n    display: flex;\n    align-items: flex-start; /* Correction de 'flex-tart' */\n    justify-content: flex-end;\n}\n\n.gap-icon {\n    margin-right: 1rem;\n}\n\n.gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n}\n\n.header-top-home-container {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    border-bottom: 1px solid black;\n    display: flex;\n}\n\n.header-top-home-container-left {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1rem;\n    cursor: pointer;\n}\n\n.header-top-home-container-left img {\n    height: 2vw;\n    width: 2vw;\n    margin-right: 0.6rem;\n}\n\n.header-top-home-container-left p {\n    font-size: 1vw;\n    color: black;\n    font-weight: 600;\n}\n\n.header-top-home-container-right {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-grow: 1;\n}\n\n.header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n}\n\n.header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n}\n\n.header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n}\n\n/* --------------------------------------------- */\n/* Template : settings-operator */\n/* --------------------------------------------- */\n\n.settings-operator-container,\n.settings-preview-container,\n.settings-sample-container,\n.settings-acquisition-container,\n.settings-segmentation-container {\n    display: flex;\n    align-items: center;\n    padding-left: 1rem;\n    margin-bottom: 1rem;\n}\n\n.settings-operator-container label,\n.settings-preview-container label,\n.settings-sample-container label,\n.settings-acquisition-container label,\n.settings-segmentation-container label {\n    margin-right: 1rem;\n}\n\n.settings-operator-container .v-input,\n.settings-sample-container .v-input,\n.settings-acquisition-container .v-input,\n.settings-segmentation-container .v-input {\n    max-width: 500px;\n}\n\n.settings-preview-container .v-input {\n    max-width: 100px;\n    margin-right: 0.25rem;\n}\n\n.settings-acquisition-container label {\n    min-width: 230px;\n}\n\n.settings-acquisition-container .v-input,\n.settings-segmentation-container .v-input {\n    max-width: 170px;\n}\n\n/* --------------------------------------------- */\n/* Template : settings-reset-button */\n/* --------------------------------------------- */\n\n.default-button-container {\n    position: relative;\n}\n\n.default-settings-btn {\n    position: absolute;\n    bottom: 1rem;\n    right: 0rem;\n}\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 240,
+        "y": 320,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "55974a9928ce597e",
