@@ -238,8 +238,8 @@
             "88baa8ae55dc9fe2",
             "f7640955206f3cad"
         ],
-        "x": 174,
-        "y": 299,
+        "x": 159,
+        "y": 399,
         "w": 1192,
         "h": 202
     },
@@ -268,8 +268,8 @@
             "22424630f98f525f",
             "a514467c6bc076c0"
         ],
-        "x": 174,
-        "y": 1199,
+        "x": 159,
+        "y": 1299,
         "w": 1202,
         "h": 202
     },
@@ -301,8 +301,8 @@
             "0c3837abf17b6e69",
             "c727fe7b031df253"
         ],
-        "x": 174,
-        "y": 1779,
+        "x": 159,
+        "y": 1879,
         "w": 1262,
         "h": 242
     },
@@ -331,8 +331,8 @@
             "31086f2f8fadc1a9",
             "a64633dc848b180d"
         ],
-        "x": 174,
-        "y": 2039,
+        "x": 159,
+        "y": 2139,
         "w": 1282,
         "h": 202
     },
@@ -352,8 +352,8 @@
             "5de1187ebfd8bc79",
             "b708f61bae3b3542"
         ],
-        "x": 174,
-        "y": 1419,
+        "x": 159,
+        "y": 1519,
         "w": 1202,
         "h": 82
     },
@@ -1010,8 +1010,8 @@
             "f1cd6cda6811df0d",
             "86625c5739968525"
         ],
-        "x": 174,
-        "y": 839,
+        "x": 159,
+        "y": 939,
         "w": 1162,
         "h": 162
     },
@@ -1038,8 +1038,8 @@
             "d8c320a906f03e95",
             "30d76989325c8687"
         ],
-        "x": 174,
-        "y": 1019,
+        "x": 159,
+        "y": 1119,
         "w": 1162,
         "h": 162
     },
@@ -1068,8 +1068,8 @@
             "fbeebcd053912f51",
             "91ce13c6dbb7bfb1"
         ],
-        "x": 174,
-        "y": 519,
+        "x": 159,
+        "y": 619,
         "w": 1342,
         "h": 202
     },
@@ -1101,8 +1101,8 @@
             "06f62ec6bb72808a",
             "2fe68d76dd3ae605"
         ],
-        "x": 174,
-        "y": 1519,
+        "x": 159,
+        "y": 1619,
         "w": 1302,
         "h": 242
     },
@@ -1121,8 +1121,8 @@
             "b08415909e5dc4da",
             "ed805c7828d607cc"
         ],
-        "x": 174,
-        "y": 2273,
+        "x": 159,
+        "y": 2373,
         "w": 464,
         "h": 234
     },
@@ -1558,8 +1558,8 @@
             "bf31c62fba21e7bb",
             "e4e5f2ac69be59ad"
         ],
-        "x": 174,
-        "y": 739,
+        "x": 159,
+        "y": 839,
         "w": 632,
         "h": 82
     },
@@ -1579,7 +1579,7 @@
             "e367adcfacf8716e",
             "35280c47dcb8588f"
         ],
-        "x": 174,
+        "x": 159,
         "y": 19,
         "w": 222,
         "h": 122
@@ -1600,7 +1600,7 @@
             "08324bbd83565d26",
             "df824b3eae9a8d40"
         ],
-        "x": 174,
+        "x": 159,
         "y": 159,
         "w": 532,
         "h": 122
@@ -1968,8 +1968,8 @@
         "nodes": [
             "5b2b9e8bb104b3d7"
         ],
-        "x": 200,
-        "y": 2299,
+        "x": 185,
+        "y": 2399,
         "w": 412,
         "h": 82
     },
@@ -1987,8 +1987,8 @@
         "nodes": [
             "e7fdcbc88dc9b248"
         ],
-        "x": 200,
-        "y": 2399,
+        "x": 185,
+        "y": 2499,
         "w": 272,
         "h": 82
     },
@@ -2338,6 +2338,24 @@
         "y": 299,
         "w": 462,
         "h": 602
+    },
+    {
+        "id": "d3ea2957fe42b850",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Page CSS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4946452bd6ad426d"
+        ],
+        "x": 159,
+        "y": 299,
+        "w": 252,
+        "h": 82
     },
     {
         "id": "cae0178a8a69f787",
@@ -6917,6 +6935,7 @@
         "id": "b5fe8f07ffca93af",
         "type": "ui-template",
         "z": "2d41a8ed5aea3449",
+        "d": true,
         "group": "cc5bd9fa98de3240",
         "page": "",
         "ui": "",
@@ -6943,6 +6962,7 @@
         "id": "4cfa923ea2a75c0c",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "d": true,
         "name": "",
         "valuesConfig": "f90d50097c6eb575",
         "valuesConfigName": "acq",
@@ -6976,6 +6996,7 @@
         "id": "11ef71995338ebf2",
         "type": "inject",
         "z": "2d41a8ed5aea3449",
+        "d": true,
         "name": "",
         "props": [],
         "repeat": "",
@@ -6995,6 +7016,7 @@
         "id": "3442a9a7f346f637",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
+        "d": true,
         "name": "",
         "valuesConfig": "f90d50097c6eb575",
         "valuesConfigName": "acq",
@@ -9482,14 +9504,14 @@
         "width": "2",
         "height": "1",
         "head": "",
-        "format": "<template>\n    <div class=\"center-container\" @click=\"navigateToHome\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image-1\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        navigateToHome() {\n            this.send(\"Clicked!\");\n        }\n    }\n}\n</script>\n\n<style scoped>\n    h3 {\n        font-size: 1vw;\n    }\n\n    .center-container {\n        display: flex;\n        justify-content: flex-start;\n        align-items: center;\n        cursor: pointer;\n    }\n\n    .center-image-1 {\n        margin-right: 25px;\n        max-width: 40px;\n        line-height: 0px;\n    }\n\n</style>\n",
+        "format": "<template>\n    <div class=\"center-container\" @click=\"navigateToHome\">\n        <img src=\"https://pbs.twimg.com/profile_images/1656689767675822084/qIsmUgtr_400x400.jpg\" alt=\"Description de l'image\" class=\"center-image-1\">\n        <h3>PlanktoScope GUI</h3>\n    </div>\n</template>\n\n<script>\nexport default {\n    methods: {\n        navigateToHome() {\n            this.send(\"Clicked!\");\n        }\n    }\n}\n</script>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 640,
-        "y": 340,
+        "x": 625,
+        "y": 440,
         "wires": [
             [
                 "86d23d1c6a0ea540"
@@ -9509,14 +9531,14 @@
         "width": "7",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div>\n    <v-stepper class=\"my-stepper\" model-value=\"2\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n          class=\"selected-step\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        this.send(step);\n      }\n    }\n  }\n</script>\n\n<style scoped>\n  div.v-stepper.v-sheet {\n    background-color: transparent;\n    box-shadow: none;\n    border-radius: 0px;\n    overflow: hidden;\n  }\n\n  .v-stepper-header {\n    display: flex;\n    align-items: center;\n  }\n\n  .selected-step div.v-avatar.v-theme--nrdb.v-avatar--density-default.v-avatar--variant-flat.v-stepper-item__avatar {\n    background-color: #0a6eca;\n  }\n</style>",
+        "format": "<template>\n  <div>\n    <v-stepper class=\"my-stepper\" model-value=\"2\" non-linear>\n      <v-stepper-header>\n        <v-stepper-item\n          value=\"1\"\n          editable\n          @click=\"stepClicked(1)\"\n        >\n          Preview\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"2\"\n          editable\n          @click=\"stepClicked(2)\"\n          class=\"selected-step\"\n        >\n          Sample\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"3\"\n          editable\n          @click=\"stepClicked(3)\"\n        >\n          Acquisition\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"4\"\n          editable\n          @click=\"stepClicked(4)\"\n        >\n          Segmentation\n        </v-stepper-item>\n\n        <v-divider></v-divider>\n\n        <v-stepper-item\n          value=\"5\"\n          editable\n          @click=\"stepClicked(5)\"\n        >\n          Visualisation\n        </v-stepper-item>\n\n      </v-stepper-header>\n    </v-stepper>\n  </div>\n</template>\n\n<script>\n  export default {\n    name: 'StepperComponent',\n    methods: {\n      stepClicked(step) {\n        this.send(step);\n      }\n    }\n  }\n</script>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 650,
-        "y": 380,
+        "x": 635,
+        "y": 480,
         "wires": [
             [
                 "97a70986fa0406ce"
@@ -9531,8 +9553,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1090,
-        "y": 380,
+        "x": 1075,
+        "y": 480,
         "wires": [
             []
         ]
@@ -9550,8 +9572,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
-        "y": 380,
+        "x": 855,
+        "y": 480,
         "wires": [
             [
                 "62ed056b8dcaa302"
@@ -9571,14 +9593,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment-sgi\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field\n          v-model=\"projectName\"\n          @input=\"updatePayload\"\n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text icon-update\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1 dude.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          v-model=\"sampleId\"\n          @input=\"updatePayload\"\n          label=\"ex: S001\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment-sgi\">\n      <div class=\"label-bloc-sgi-2\">\n        <label class=\"v-label v-slider__label my-label-sgi-2\">Sampling Gear</label>\n      </div>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 0\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 1\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 2\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 3\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 4\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      toggle: null,\n      gear: \"\",\n      projectName: '',\n      sampleId: ''\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.project_name !== undefined) {\n            this.projectName = payload.project_name;\n          }\n\n          if (payload.gear !== undefined) {\n            this.gear = payload.gear;\n            \n            if (this.gear == \"Horizontal Net\") {\n                this.toggle = 0;\n            } else if (this.gear == \"Vertical Net\") {\n                this.toggle = 1;\n            } else if (this.gear == \"Niskin bottle\") {\n                this.toggle = 2;\n            } else if (this.gear == \"Lab culture\") {\n                this.toggle = 3;\n            } else if (this.gear == \"Demo / Test\") {\n                this.toggle = 4;\n            }\n          }\n\n          if (payload.sample_id !== undefined) {\n            this.sampleId = payload.sample_id;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    sendTitle(title) {\n      this.send({payload : {\n          gear: title\n      }});\n    },\n    updatePayload() {\n      const payload = {\n        project_name: this.projectName,\n        sample_id: this.sampleId\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .gear-selection {\n    width: 100%;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general-sgi {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n  }\n\n  .my-label-sgi-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-sgi {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-sgi {\n    display: flex;\n    flex: 0.2;\n    justify-content: center !important;\n    align-items: center;\n  }\n\n  .label-bloc-sgi-2 {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-toggle .v-btn--disabled {\n    opacity: 1;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .toggle-full-width {\n    width: 92% !important;\n  }\n\n  .v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    background-color: #ffffff !important;\n    color: #0a6eca !important;\n  }\n\n  .my-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n  }\n\n  .progress-info {\n    margin-top: 12px !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Sample general information</h2>\n    <div class=\"horizontal-alignment-sgi\">\n      <!-- Name of the project -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Name of the project</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field\n          v-model=\"projectName\"\n          @input=\"updatePayload\"\n          label=\"ex: Tara Pacifique\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          class=\"text-spacing my-v-text icon-update\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1 dude.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sample ID -->\n      <div class=\"label-bloc-sgi\">\n        <label class=\"v-label v-slider__label my-label-general-sgi\">Sample ID</label>\n      </div>\n      <div class=\"input-bloc-sgi\">\n        <v-text-field \n          v-model=\"sampleId\"\n          @input=\"updatePayload\"\n          label=\"ex: S001\"\n          variant=\"outlined\"\n          density=\"compact\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <!-- Sampling gear selection -->\n    <div class=\"horizontal-alignment-sgi\">\n      <div class=\"label-bloc-sgi-2\">\n        <label class=\"v-label v-slider__label my-label-sgi-2\">Sampling Gear</label>\n      </div>\n      <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"confortable\" color=\"#0a6eca\" divided\n        class=\"toggle-full-width my-toggle\">\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 0\" @click=\"sendTitle('Horizontal Net')\">Horizontal Net</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 1\" @click=\"sendTitle('Vertical Net')\">Vertical Net</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 2\" @click=\"sendTitle('Niskin bottle')\">Niskin bottle</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 3\" @click=\"sendTitle('Lab culture')\">Lab culture</v-btn>\n        <v-btn style=\"padding: 10px;\" :disabled=\"toggle == 4\" @click=\"sendTitle('Demo / Test')\">Demo / Test</v-btn>\n      </v-btn-toggle>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      toggle: null,\n      gear: \"\",\n      projectName: '',\n      sampleId: ''\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.project_name !== undefined) {\n            this.projectName = payload.project_name;\n          }\n\n          if (payload.gear !== undefined) {\n            this.gear = payload.gear;\n            \n            if (this.gear == \"Horizontal Net\") {\n                this.toggle = 0;\n            } else if (this.gear == \"Vertical Net\") {\n                this.toggle = 1;\n            } else if (this.gear == \"Niskin bottle\") {\n                this.toggle = 2;\n            } else if (this.gear == \"Lab culture\") {\n                this.toggle = 3;\n            } else if (this.gear == \"Demo / Test\") {\n                this.toggle = 4;\n            }\n          }\n\n          if (payload.sample_id !== undefined) {\n            this.sampleId = payload.sample_id;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    sendTitle(title) {\n      this.send({payload : {\n          gear: title\n      }});\n    },\n    updatePayload() {\n      const payload = {\n        project_name: this.projectName,\n        sample_id: this.sampleId\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 750,
-        "y": 620,
+        "x": 735,
+        "y": 720,
         "wires": [
             [
                 "26384e9142c6e77d"
@@ -9593,8 +9615,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1430,
-        "y": 680,
+        "x": 1415,
+        "y": 780,
         "wires": [
             []
         ]
@@ -9612,8 +9634,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1210,
-        "y": 680,
+        "x": 1195,
+        "y": 780,
         "wires": [
             [
                 "697ae94309963b9b"
@@ -9633,14 +9655,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Starting point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"coordFormat === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      coordFormat: \"\",\n      selectedDate: \"\",\n      selectedTime: \"\",\n      longitude: null,\n      latitude: null,\n      dmsLongitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.coordFormat !== undefined) {\n            this.coordFormat = payload.coordFormat;\n          }\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.gps) {\n            if (this.coordFormat === 'Decimal degrees (DD)') {\n              if (payload.gps.longitude !== undefined) {\n                this.longitude = payload.gps.longitude;\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.latitude = payload.gps.latitude;\n              }\n            } else {\n              if (payload.gps.longitude !== undefined) {\n                this.dmsLongitude = {\n                  ...this.dmsLongitude,\n                  ...payload.gps.longitude\n                };\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.dmsLatitude = {\n                  ...this.dmsLatitude,\n                  ...payload.gps.latitude\n                };\n              }\n            }\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.coordFormat === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload });\n    }\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .spacing {\n    margin-right: 15px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .container {\n    padding: 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .grid-container {\n    display: grid !important;\n    height: 5vh !important;\n  }\n\n  .my-label-gps {\n    font-weight: bold !important;\n    flex: 2 !important;\n    margin-bottom: 20px !important;\n    font-size: 1vw !important;\n  }\n\n  .label-DD {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-date {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-time {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    padding-left: 25px !important;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    justify-content: space-between !important;\n  }\n\n  .label-bloc-3 {\n    flex: 0.1;\n    display: flex;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .p-container {\n    display: inline-block !important;\n    height: 100px !important;\n  }\n\n  p#dms-format {\n    horizontal-align: top !important;\n    display: inline-block !important;\n    font-weight: bolder !important;\n    font-size: 20px !important\n  }\n\n  .v-select-compas {\n    min-width: 95px !important;\n  }\n\n  .v-text-format {\n  }\n\n  .v-text-format-2 {\n    min-width: 90px !important;\n  }\n\n  .dms {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    max-width: 100% !important;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Starting point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"coordFormat === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      coordFormat: \"\",\n      selectedDate: \"\",\n      selectedTime: \"\",\n      longitude: null,\n      latitude: null,\n      dmsLongitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.coordFormat !== undefined) {\n            this.coordFormat = payload.coordFormat;\n          }\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.gps) {\n            if (this.coordFormat === 'Decimal degrees (DD)') {\n              if (payload.gps.longitude !== undefined) {\n                this.longitude = payload.gps.longitude;\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.latitude = payload.gps.latitude;\n              }\n            } else {\n              if (payload.gps.longitude !== undefined) {\n                this.dmsLongitude = {\n                  ...this.dmsLongitude,\n                  ...payload.gps.longitude\n                };\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.dmsLatitude = {\n                  ...this.dmsLatitude,\n                  ...payload.gps.latitude\n                };\n              }\n            }\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.coordFormat === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload });\n    }\n  },\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 800,
-        "y": 920,
+        "x": 785,
+        "y": 1020,
         "wires": [
             [
                 "72b7984ea35d8a21",
@@ -9662,8 +9684,8 @@
             "d0f0965ace2cdaaf",
             "2bb3a49785cacf3b"
         ],
-        "x": 765,
-        "y": 780,
+        "x": 750,
+        "y": 880,
         "wires": []
     },
     {
@@ -9676,8 +9698,8 @@
             "764bf644172419d4",
             "32e3989018637909"
         ],
-        "x": 745,
-        "y": 880,
+        "x": 730,
+        "y": 980,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -9697,14 +9719,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Net specificity</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Mouth Opening Diam. -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Mouth Opening Diam.</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          variant=\"outlined\"\n          density=\"compact\"\n          v-model=\"mouthOpeningDiam\"\n          @input=\"updatePayload\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          suffix=\"cm\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Length of the Net -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Length of the Net</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"lengthOfTheNet\"\n          @input=\"updatePayload\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          suffix=\"cm\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"meshSize\"\n          @input=\"updatePayload\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\"\n          suffix=\"μm\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Volume of the collector -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Volume of the collector</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"volumeOfTheCollector\"\n          @input=\"updatePayload\"\n          variant=\"outlined\"\n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\" \n          @click:append-inner=\"openDialog4\" \n          suffix=\"mL\" \n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog4\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dialog4: false,\n      mouthOpeningDiam: 0,\n      lengthOfTheNet: 0,\n      meshSize: 0,\n      volumeOfTheCollector: 0,\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.mouth_opening_diam !== undefined) {\n            this.mouthOpeningDiam = payload.mouth_opening_diam;\n          }\n          if (payload.length_of_the_net !== undefined) {\n            this.lengthOfTheNet = payload.length_of_the_net;\n          }\n          if (payload.mesh_size !== undefined) {\n            this.meshSize = payload.mesh_size;\n          }\n          if (payload.volume_of_the_collector !== undefined) {\n            this.volumeOfTheCollector = payload.volume_of_the_collector;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    openDialog4() {\n      this.dialog4 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    closeDialog4() {\n      this.dialog4 = false;\n    },\n    updatePayload() {\n      const payload = {\n        mouth_opening_diam: this.mouthOpeningDiam,\n        length_of_the_net: this.lengthOfTheNet,\n        mesh_size: this.meshSize,\n        volume_of_the_collector: this.volumeOfTheCollector,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .label-bloc {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  /* Adjust font size for smaller screens */\n  @media (max-width: 1180px) {\n    .my-label-general {\n      font-size: 1.1vw;\n    }\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .v-field__suffix {\n    background-color: rgba(10, 110, 202, 1);\n    padding: 0 5px;\n    border-radius: 5px;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Net specificity</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Mouth Opening Diam. -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Mouth Opening Diam.</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          variant=\"outlined\"\n          density=\"compact\"\n          v-model=\"mouthOpeningDiam\"\n          @input=\"updatePayload\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\"\n          suffix=\"cm\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Length of the Net -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Length of the Net</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"lengthOfTheNet\"\n          @input=\"updatePayload\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\"\n          suffix=\"cm\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"meshSize\"\n          @input=\"updatePayload\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\"\n          suffix=\"μm\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Volume of the collector -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Volume of the collector</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"volumeOfTheCollector\"\n          @input=\"updatePayload\"\n          variant=\"outlined\"\n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\" \n          @click:append-inner=\"openDialog4\" \n          suffix=\"mL\" \n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog4\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dialog4: false,\n      mouthOpeningDiam: 0,\n      lengthOfTheNet: 0,\n      meshSize: 0,\n      volumeOfTheCollector: 0,\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.mouth_opening_diam !== undefined) {\n            this.mouthOpeningDiam = payload.mouth_opening_diam;\n          }\n          if (payload.length_of_the_net !== undefined) {\n            this.lengthOfTheNet = payload.length_of_the_net;\n          }\n          if (payload.mesh_size !== undefined) {\n            this.meshSize = payload.mesh_size;\n          }\n          if (payload.volume_of_the_collector !== undefined) {\n            this.volumeOfTheCollector = payload.volume_of_the_collector;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    openDialog4() {\n      this.dialog4 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    closeDialog4() {\n      this.dialog4 = false;\n    },\n    updatePayload() {\n      const payload = {\n        mouth_opening_diam: this.mouthOpeningDiam,\n        length_of_the_net: this.lengthOfTheNet,\n        mesh_size: this.meshSize,\n        volume_of_the_collector: this.volumeOfTheCollector,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 810,
-        "y": 1300,
+        "x": 795,
+        "y": 1400,
         "wires": [
             [
                 "6109a08395735bbd",
@@ -9727,8 +9749,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 340,
+        "x": 835,
+        "y": 440,
         "wires": [
             [
                 "87f5b98130be3cd8"
@@ -9743,8 +9765,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1070,
-        "y": 340,
+        "x": 1055,
+        "y": 440,
         "wires": [
             []
         ]
@@ -9762,14 +9784,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment-vertical-net\">\n      <!-- Filtered volume -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Filtered volume</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          variant=\"outlined\"\n          v-model=\"filteredVolume\"\n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog1')\"\n          suffix=\"L\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Dillution factor -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"dillutionFactor\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog2')\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog2')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"sieveMeshSize\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog3')\"\n          suffix=\"μm\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog3')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n\n    <div class=\"horizontal-alignment-vertical-net second-line\">\n      <!-- Depth Min -->\n      <div class=\"label-bloc-second-line\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth Min</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"depthMin\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog4')\"\n          suffix=\"m\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog4')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Depth Max -->\n      <div class=\"label-bloc-second-line-max\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth Max</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"depthMax\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog5')\"\n          suffix=\"m\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog5\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 5.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog5')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n\n    <div class=\"horizontal-alignment-vertical-net textarea-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea class=\"my-v-textarea\" variant=\"outlined\" \n      density=\"compact\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dialog4: false,\n      dialog5: false,\n      filteredVolume: 0,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depthMin: 0,\n      depthMax: 0,\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          if (newVal.payload.filtered_volume !== undefined) {\n            this.filteredVolume = newVal.payload.filtered_volume;\n          }\n          if (newVal.payload.dillution_factor !== undefined) {\n            this.dillutionFactor = newVal.payload.dillution_factor;\n          }\n          if (newVal.payload.sieve_mesh_size !== undefined) {\n            this.sieveMeshSize = newVal.payload.sieve_mesh_size;\n          }\n          if (newVal.payload.depth_min !== undefined) {\n            this.depthMin = newVal.payload.depth_min;\n          }\n          if (newVal.payload.depth_max !== undefined) {\n            this.depthMax = newVal.payload.depth_max;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog(dialog) {\n      this[dialog] = true;\n    },\n    closeDialog(dialog) {\n      this[dialog] = false;\n    },\n    updatePayload() {\n      const payload = {\n        filtered_volume: this.filteredVolume,\n        dillution_factor: this.dillutionFactor,\n        sieve_mesh_size: this.sieveMeshSize,\n        depth_min: this.depthMin,\n        depth_max: this.depthMax,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\nh2 {\n  color: #0a6eca !important;\n  margin-bottom: 12px !important;\n}\n\n.container {\n  padding: 10px 10px !important;\n  background-color: rgba(10, 110, 202, 0.1) !important;\n  border: solid black 1px !important;\n  border-radius: 5px !important;\n}\n\n.label-bloc {\n  display: flex;\n  flex: 0.3;\n  justify-content: left !important;\n  align-items: center;\n  padding-right: 10px;\n}\n\n.label-bloc-second-line {\n  display: flex;\n  flex: 0.18;\n  justify-content: left !important;\n  align-items: center;\n}\n\n.label-bloc-second-line-max {\n  display: flex;\n  flex: 0.18;\n  justify-content: center !important;\n  align-items: center;\n}\n\n.input-bloc {\n  flex: 0.7;\n  margin-right: 10px;\n}\n\n.my-label-general {\n  margin-bottom: 20px !important;\n  font-weight: bolder;\n}\n\n.my-label-comment {\n  font-weight: bold;\n  margin-right: 15px;\n  margin-bottom: 20px;\n  font-size: 1vw;\n}\n\n.horizontal-alignment-vertical-net {\n  display: flex !important;\n  flex-wrap: wrap;\n  align-items: center !important;\n  justify-content: space-between; \n}\n\n.horizontal-alignment-vertical-net.second-line {\n  justify-content: flex-start !important;\n}\n\n.textarea-alignment {\n  margin-top: 20px;\n}\n\n.text-spacing {\n  margin-right: 12px !important;\n}\n\n.my-v-text > .v-input__control {\n  background-color: #ffffff !important;\n  border-radius: 5px !important;\n}\n\n.my-v-textarea > .v-input__control {\n  background-color: #ffffff;\n  border-radius: 5px;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment-vertical-net\">\n      <!-- Filtered volume -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Filtered volume</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          variant=\"outlined\"\n          v-model=\"filteredVolume\"\n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog1')\"\n          suffix=\"L\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Dillution factor -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"dillutionFactor\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog2')\"\n          class=\"text-spacing my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog2')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"sieveMeshSize\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog3')\"\n          suffix=\"μm\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog3')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n\n    <div class=\"horizontal-alignment-vertical-net second-line\">\n      <!-- Depth Min -->\n      <div class=\"label-bloc-second-line\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth Min</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"depthMin\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog4')\"\n          suffix=\"m\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog4')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n\n      <!-- Depth Max -->\n      <div class=\"label-bloc-second-line-max\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth Max</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field\n          v-model=\"depthMax\"\n          variant=\"outlined\" \n          density=\"compact\"\n          type=\"number\"\n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog5')\"\n          suffix=\"m\"\n          class=\"my-v-text\"\n        ></v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog5\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 5.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog5')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n\n    <div class=\"horizontal-alignment-vertical-net textarea-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea class=\"my-v-textarea\" variant=\"outlined\" \n      density=\"compact\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dialog4: false,\n      dialog5: false,\n      filteredVolume: 0,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depthMin: 0,\n      depthMax: 0,\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          if (newVal.payload.filtered_volume !== undefined) {\n            this.filteredVolume = newVal.payload.filtered_volume;\n          }\n          if (newVal.payload.dillution_factor !== undefined) {\n            this.dillutionFactor = newVal.payload.dillution_factor;\n          }\n          if (newVal.payload.sieve_mesh_size !== undefined) {\n            this.sieveMeshSize = newVal.payload.sieve_mesh_size;\n          }\n          if (newVal.payload.depth_min !== undefined) {\n            this.depthMin = newVal.payload.depth_min;\n          }\n          if (newVal.payload.depth_max !== undefined) {\n            this.depthMax = newVal.payload.depth_max;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog(dialog) {\n      this[dialog] = true;\n    },\n    closeDialog(dialog) {\n      this[dialog] = false;\n    },\n    updatePayload() {\n      const payload = {\n        filtered_volume: this.filteredVolume,\n        dillution_factor: this.dillutionFactor,\n        sieve_mesh_size: this.sieveMeshSize,\n        depth_min: this.depthMin,\n        depth_max: this.depthMax,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 860,
-        "y": 1900,
+        "x": 845,
+        "y": 2000,
         "wires": [
             [
                 "38b39c419f51dc17",
@@ -9793,14 +9815,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Dillution factor -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"dillutionFactor\" \n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog1')\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"sieveMeshSize\" \n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog2')\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog2')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"depth\" \n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog3')\" \n          suffix=\"m\" \n          class=\"my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog3')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea v-model=\"sample_comment\" class=\"my-v-textarea\" variant=\"outlined\" density=\"compact\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depth: 0,\n      sample_comment: \"\"\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          if (newVal.payload.dillution_factor !== undefined) {\n            this.dillutionFactor = newVal.payload.dillution_factor;\n          }\n          if (newVal.payload.sieve_mesh_size !== undefined) {\n            this.sieveMeshSize = newVal.payload.sieve_mesh_size;\n          }\n          if (newVal.payload.depth !== undefined) {\n            this.depth = newVal.payload.depth;\n          }\n          if (newVal.payload.sample_comment !== undefined) {\n            this.sample_comment = newVal.payload.sample_comment;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog(dialog) {\n      this[dialog] = true;\n    },\n    closeDialog(dialog) {\n      this[dialog] = false;\n    },\n    updatePayload() {\n      const payload = {\n        dillution_factor: this.dillutionFactor,\n        sieve_mesh_size: this.sieveMeshSize,\n        depth: this.depth,\n        sample_comment: this.sample_comment,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .label-bloc-niskin-bottle {\n    display: flex;\n    flex: 0.1;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .my-label-comment {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  /* Adjust font size for smaller screens */\n  @media (max-width: 1180px) {\n    .my-label-general {\n      font-size: 1.1vw;\n    }\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-v-textarea>.v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Dillution factor -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"dillutionFactor\" \n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog1')\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"sieveMeshSize\" \n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog2')\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog2')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth -->\n      <div class=\"label-bloc-niskin-bottle\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"depth\" \n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          @input=\"updatePayload\"\n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog('dialog3')\" \n          suffix=\"m\" \n          class=\"my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog3')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea v-model=\"sample_comment\" class=\"my-v-textarea\" variant=\"outlined\" density=\"compact\"></v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\n  export default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depth: 0,\n      sample_comment: \"\"\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          if (newVal.payload.dillution_factor !== undefined) {\n            this.dillutionFactor = newVal.payload.dillution_factor;\n          }\n          if (newVal.payload.sieve_mesh_size !== undefined) {\n            this.sieveMeshSize = newVal.payload.sieve_mesh_size;\n          }\n          if (newVal.payload.depth !== undefined) {\n            this.depth = newVal.payload.depth;\n          }\n          if (newVal.payload.sample_comment !== undefined) {\n            this.sample_comment = newVal.payload.sample_comment;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog(dialog) {\n      this[dialog] = true;\n    },\n    closeDialog(dialog) {\n      this[dialog] = false;\n    },\n    updatePayload() {\n      const payload = {\n        dillution_factor: this.dillutionFactor,\n        sieve_mesh_size: this.sieveMeshSize,\n        depth: this.depth,\n        sample_comment: this.sample_comment,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 860,
-        "y": 2140,
+        "x": 845,
+        "y": 2240,
         "wires": [
             [
                 "78ed3523acf4aa56",
@@ -9823,14 +9845,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Bottle Specificity</h2>\n    <div class=\"horizontal-alignment-bottle-specificity\">\n      <!-- Volume of the bottle -->\n      <div class=\"label-bloc-bottle-specificity\">\n        <label class=\"v-label v-slider__label my-label-general\">Volume of the bottle</label>\n      </div>\n      <v-text-field \n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\" \n        v-model=\"volumeOfTheBottle\"\n        @input=\"updatePayload\"\n        append-inner-icon=\"mdi-information\" \n        @click:append-inner=\"openDialog('dialog1')\" \n        suffix=\"L\"\n        class=\"text-spacing my-v-text-bottle\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      volumeOfTheBottle: 0,\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload && newVal.payload.volume_of_the_bottle !== undefined) {\n          this.volumeOfTheBottle = newVal.payload.volume_of_the_bottle;\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog(dialog) {\n      this[dialog] = true;\n    },\n    closeDialog(dialog) {\n      this[dialog] = false;\n    },\n    updatePayload() {\n      const payload = {\n        volume_of_the_bottle: this.volumeOfTheBottle,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment-bottle-specificity {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .label-bloc-bottle-specificity {\n    display: flex;\n    flex: 0.1;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text-bottle > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .my-v-text-bottle {\n    max-width: 150px !important;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Bottle Specificity</h2>\n    <div class=\"horizontal-alignment-bottle-specificity\">\n      <!-- Volume of the bottle -->\n      <div class=\"label-bloc-bottle-specificity\">\n        <label class=\"v-label v-slider__label my-label-general\">Volume of the bottle</label>\n      </div>\n      <v-text-field \n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\" \n        v-model=\"volumeOfTheBottle\"\n        @input=\"updatePayload\"\n        append-inner-icon=\"mdi-information\" \n        @click:append-inner=\"openDialog('dialog1')\" \n        suffix=\"L\"\n        class=\"text-spacing my-v-text-bottle\"\n      ></v-text-field>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog('dialog1')\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      volumeOfTheBottle: 0,\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload && newVal.payload.volume_of_the_bottle !== undefined) {\n          this.volumeOfTheBottle = newVal.payload.volume_of_the_bottle;\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog(dialog) {\n      this[dialog] = true;\n    },\n    closeDialog(dialog) {\n      this[dialog] = false;\n    },\n    updatePayload() {\n      const payload = {\n        volume_of_the_bottle: this.volumeOfTheBottle,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 810,
-        "y": 1460,
+        "x": 795,
+        "y": 1560,
         "wires": [
             [
                 "b708f61bae3b3542"
@@ -9856,8 +9878,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 406,
-        "y": 2340,
+        "x": 391,
+        "y": 2440,
         "wires": [
             []
         ]
@@ -9881,8 +9903,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 336,
-        "y": 2440,
+        "x": 321,
+        "y": 2540,
         "wires": [
             []
         ]
@@ -9912,8 +9934,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
-        "y": 780,
+        "x": 405,
+        "y": 880,
         "wires": [
             [
                 "e5239cb6eb875cd1"
@@ -9929,7 +9951,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 620,
+        "x": 605,
         "y": 200,
         "wires": [
             []
@@ -9948,14 +9970,14 @@
         "width": "3",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list-item>\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Gallery', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n  },\n};\n</script>\n\n<style>\n  .my-menu {\n    display: flex;\n    align-items: flex-tart;\n    justify-content: flex-end;\n  }\n\n  .gap-icon {\n    margin-right: 1rem;\n  }\n\n  .gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n  }\n\n  .header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n  }\n\n  .header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n  }\n\n  .header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"header-top-home-information-container\">\n    <p id=\"date\"></p>\n    <p>-</p>\n    <p id=\"time-first-visit\"></p>\n    <span\n      class=\"mdi mdi-account\"\n      :style=\"{ color: 'black' }\"\n      @click=\"menu = true\"\n    ></span>\n  </div>\n  <v-menu class=\"my-menu\" v-model=\"menu\">\n    <v-list>\n      <!-- Section 1: Profile -->\n      <v-list-item>\n        <v-list-item-content>\n          <v-list-item-title class=\"black--text\"><v-icon class=\"gap-icon-profil\" color=\"black\">mdi-account</v-icon>{{ msg.payload.profilName }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 2: Menu Items with Icons -->\n      <v-list-item\n        v-for=\"item in menuItemsSection2\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n\n      <!-- Divider -->\n      <v-divider></v-divider>\n\n      <!-- Section 3: Reboot and Shutdown -->\n      <v-list-item\n        v-for=\"item in menuItemsSection3\"\n        :key=\"item.title\"\n        @click=\"menuItemClicked(item)\"\n      >\n        <v-list-item-content>\n          <v-list-item-title><v-icon class=\"gap-icon\" color=\"#076eac\">{{ item.icon }}</v-icon>{{ item.title }}</v-list-item-title>\n        </v-list-item-content>\n      </v-list-item>\n    </v-list>\n  </v-menu>\n</template>\n\n<script>\nexport default {\n  name: \"RealTimeInfo\",\n  data() {\n    return {\n      menu: false,\n      menuItemsSection2: [\n        { title: 'Home', icon: 'mdi-home' },\n        { title: 'Settings', icon: 'mdi-cog' },\n        { title: 'Gallery', icon: 'mdi-image' },\n        { title: 'Calibration', icon: 'mdi-bullseye' },\n        { title: 'Hardware', icon: 'mdi-cog-box' },\n        { title: 'Documentation', icon: 'mdi-text-box-search-outline' },\n        { title: 'Monitoring', icon: 'mdi-chart-line' }\n      ],\n      menuItemsSection3: [\n        { title: 'Reboot', icon: 'mdi-restart' },\n        { title: 'Shutdown', icon: 'mdi-power' }\n      ]\n    };\n  },\n  mounted() {\n    this.updateDateTime();\n    setInterval(this.updateDateTime, 1000);\n  },\n  methods: {\n    updateDateTime() {\n      const now = new Date();\n\n      const dateFormatter = new Intl.DateTimeFormat(\"en-US\", {\n        year: \"numeric\",\n        month: \"long\",\n        day: \"numeric\",\n      });\n\n      const timeFormatter = new Intl.DateTimeFormat(\"en-GB\", {\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false,\n        timeZone: \"UTC\",\n      });\n\n      const date = dateFormatter.format(now);\n      const time = timeFormatter.format(now) + \" (UTC)\";\n\n      document.getElementById(\"date\").innerText = date;\n      document.getElementById(\"time-first-visit\").innerText = time;\n    },\n    menuItemClicked(item) {\n        const currentUrl = new URL(window.location.href);\n        const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n        if (item.title == \"Gallery\") {\n            const relativePath = '/ps/data/browse/files/';\n            const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n            open(fullUrl.href, '_blank');\n        } else if (item.title == \"Documentation\") {\n            open(\"https://docs-edge.planktoscope.community\", '_blank');\n        } else if (item.title == \"Reboot\" || item.title == \"Shutdown\") {\n            if (confirm(\"Are you sure you want to do this action ?\")) {\n                this.send({ payload: item.title });\n            }\n        } else {\n            this.send({payload: item.title});\n        }\n    },\n  },\n};\n</script>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 660,
-        "y": 420,
+        "x": 645,
+        "y": 520,
         "wires": [
             [
                 "a7e174825f5991b0"
@@ -9970,8 +9992,8 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 1230,
-        "y": 400,
+        "x": 1215,
+        "y": 500,
         "wires": [
             []
         ]
@@ -9983,7 +10005,7 @@
         "g": "630d2ebfad069d63",
         "ui": "1eeac55ba6b9065f",
         "name": "",
-        "x": 250,
+        "x": 235,
         "y": 220,
         "wires": [
             [
@@ -10005,7 +10027,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
+        "x": 415,
         "y": 200,
         "wires": [
             [
@@ -10038,8 +10060,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 410,
-        "y": 420,
+        "x": 395,
+        "y": 520,
         "wires": [
             [
                 "7e6b0fe8d3df5f29"
@@ -10058,8 +10080,8 @@
             "df824b3eae9a8d40",
             "35280c47dcb8588f"
         ],
-        "x": 215,
-        "y": 420,
+        "x": 200,
+        "y": 520,
         "wires": [
             [
                 "c0aa6894fa9aaf74"
@@ -10091,8 +10113,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1140,
-        "y": 880,
+        "x": 1125,
+        "y": 980,
         "wires": [
             [],
             []
@@ -10123,8 +10145,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1140,
-        "y": 920,
+        "x": 1125,
+        "y": 1020,
         "wires": [
             [],
             []
@@ -10155,8 +10177,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1140,
-        "y": 960,
+        "x": 1125,
+        "y": 1060,
         "wires": [
             [],
             []
@@ -10187,8 +10209,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 880,
+        "x": 425,
+        "y": 980,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -10221,8 +10243,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 920,
+        "x": 425,
+        "y": 1020,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -10255,8 +10277,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 960,
+        "x": 425,
+        "y": 1060,
         "wires": [
             [
                 "83a6ffa643836e87"
@@ -10273,8 +10295,8 @@
         "links": [
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 880,
+        "x": 200,
+        "y": 980,
         "wires": [
             [
                 "96ab8a6338e4fcfc"
@@ -10292,8 +10314,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 920,
+        "x": 200,
+        "y": 1020,
         "wires": [
             [
                 "0f42da474afce82c"
@@ -10311,8 +10333,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 960,
+        "x": 200,
+        "y": 1060,
         "wires": [
             [
                 "3370481fa03529d1"
@@ -10332,8 +10354,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
-        "y": 780,
+        "x": 645,
+        "y": 880,
         "wires": [
             [
                 "764bf644172419d4"
@@ -10353,7 +10375,7 @@
             "ab8f773ee48978da",
             "91ce13c6dbb7bfb1"
         ],
-        "x": 335,
+        "x": 320,
         "y": 240,
         "wires": []
     },
@@ -10369,7 +10391,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 270,
+        "x": 255,
         "y": 60,
         "wires": [
             [
@@ -10420,7 +10442,7 @@
             "8e84a78cf2bc0972",
             "a64633dc848b180d"
         ],
-        "x": 355,
+        "x": 340,
         "y": 60,
         "wires": []
     },
@@ -10435,8 +10457,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 780,
+        "x": 200,
+        "y": 880,
         "wires": [
             [
                 "bf31c62fba21e7bb"
@@ -10456,14 +10478,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Ending point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"coordFormat === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      coordFormat: \"\",\n      selectedDate: \"\",\n      selectedTime: \"\",\n      longitude: null,\n      latitude: null,\n      dmsLongitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.coordFormat !== undefined) {\n            this.coordFormat = payload.coordFormat;\n          }\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.gps) {\n            if (this.coordFormat === 'Decimal degrees (DD)') {\n              if (payload.gps.longitude !== undefined) {\n                this.longitude = payload.gps.longitude;\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.latitude = payload.gps.latitude;\n              }\n            } else {\n              if (payload.gps.longitude !== undefined) {\n                this.dmsLongitude = {\n                  ...this.dmsLongitude,\n                  ...payload.gps.longitude\n                };\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.dmsLatitude = {\n                  ...this.dmsLatitude,\n                  ...payload.gps.latitude\n                };\n              }\n            }\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.coordFormat === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload });\n    }\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .spacing {\n    margin-right: 15px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .container {\n    padding: 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .grid-container {\n    display: grid !important;\n    height: 5vh !important;\n  }\n\n  .my-label-gps {\n    font-weight: bold !important;\n    flex: 2 !important;\n    margin-bottom: 20px !important;\n    font-size: 1vw !important;\n  }\n\n  .label-DD {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-date {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-time {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    padding-left: 25px !important;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    justify-content: space-between !important;\n  }\n\n  .label-bloc-3 {\n    flex: 0.1;\n    display: flex;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .p-container {\n    display: inline-block !important;\n    height: 100px !important;\n  }\n\n  p#dms-format {\n    horizontal-align: top !important;\n    display: inline-block !important;\n    font-weight: bolder !important;\n    font-size: 20px !important\n  }\n\n  .v-select-compas {\n    min-width: 95px !important;\n  }\n\n  .v-text-format {\n  }\n\n  .v-text-format-2 {\n    min-width: 90px !important;\n  }\n\n  .dms {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    max-width: 100% !important;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Ending point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"coordFormat === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      coordFormat: \"\",\n      selectedDate: \"\",\n      selectedTime: \"\",\n      longitude: null,\n      latitude: null,\n      dmsLongitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.coordFormat !== undefined) {\n            this.coordFormat = payload.coordFormat;\n          }\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.gps) {\n            if (this.coordFormat === 'Decimal degrees (DD)') {\n              if (payload.gps.longitude !== undefined) {\n                this.longitude = payload.gps.longitude;\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.latitude = payload.gps.latitude;\n              }\n            } else {\n              if (payload.gps.longitude !== undefined) {\n                this.dmsLongitude = {\n                  ...this.dmsLongitude,\n                  ...payload.gps.longitude\n                };\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.dmsLatitude = {\n                  ...this.dmsLatitude,\n                  ...payload.gps.latitude\n                };\n              }\n            }\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.coordFormat === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload });\n    }\n  },\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 800,
-        "y": 1100,
+        "x": 785,
+        "y": 1200,
         "wires": [
             [
                 "fc386a9e16260470",
@@ -10482,8 +10504,8 @@
             "764bf644172419d4",
             "32e3989018637909"
         ],
-        "x": 745,
-        "y": 1060,
+        "x": 730,
+        "y": 1160,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -10515,8 +10537,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1140,
-        "y": 1060,
+        "x": 1125,
+        "y": 1160,
         "wires": [
             [],
             []
@@ -10547,8 +10569,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1140,
-        "y": 1100,
+        "x": 1125,
+        "y": 1200,
         "wires": [
             [],
             []
@@ -10579,8 +10601,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1140,
-        "y": 1140,
+        "x": 1125,
+        "y": 1240,
         "wires": [
             [],
             []
@@ -10611,8 +10633,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 1060,
+        "x": 425,
+        "y": 1160,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -10645,8 +10667,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 1100,
+        "x": 425,
+        "y": 1200,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -10679,8 +10701,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 1140,
+        "x": 425,
+        "y": 1240,
         "wires": [
             [
                 "7749d4dc3f8e7fa5"
@@ -10699,8 +10721,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1060,
+        "x": 200,
+        "y": 1160,
         "wires": [
             [
                 "0d4af74dc3740347"
@@ -10718,8 +10740,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1100,
+        "x": 200,
+        "y": 1200,
         "wires": [
             [
                 "ac3ec79e3b41827f"
@@ -10737,8 +10759,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1140,
+        "x": 200,
+        "y": 1240,
         "wires": [
             [
                 "fb2959a5122f4779"
@@ -10770,8 +10792,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 410,
-        "y": 600,
+        "x": 395,
+        "y": 700,
         "wires": [
             [
                 "23a443593bbc53fe"
@@ -10804,8 +10826,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 400,
-        "y": 640,
+        "x": 385,
+        "y": 740,
         "wires": [
             [
                 "23a443593bbc53fe"
@@ -10824,8 +10846,8 @@
             "df824b3eae9a8d40",
             "35280c47dcb8588f"
         ],
-        "x": 215,
-        "y": 600,
+        "x": 200,
+        "y": 700,
         "wires": [
             [
                 "35bf8991beb7e84d"
@@ -10843,8 +10865,8 @@
             "df824b3eae9a8d40",
             "35280c47dcb8588f"
         ],
-        "x": 215,
-        "y": 640,
+        "x": 200,
+        "y": 740,
         "wires": [
             [
                 "6836b771497a13ae"
@@ -10876,8 +10898,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1230,
-        "y": 560,
+        "x": 1215,
+        "y": 660,
         "wires": [
             [],
             []
@@ -10908,8 +10930,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1220,
-        "y": 600,
+        "x": 1205,
+        "y": 700,
         "wires": [
             [],
             []
@@ -10934,8 +10956,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 940,
-        "y": 620,
+        "x": 925,
+        "y": 720,
         "wires": [
             [
                 "a1f5a28590776828",
@@ -10972,8 +10994,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 450,
-        "y": 1240,
+        "x": 435,
+        "y": 1340,
         "wires": [
             [
                 "cc28e6514a5a9c99"
@@ -10992,8 +11014,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1240,
+        "x": 200,
+        "y": 1340,
         "wires": [
             [
                 "73f91661b6841190"
@@ -11025,8 +11047,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 1280,
+        "x": 425,
+        "y": 1380,
         "wires": [
             [
                 "cc28e6514a5a9c99"
@@ -11045,8 +11067,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1280,
+        "x": 200,
+        "y": 1380,
         "wires": [
             [
                 "27c7bd9710ac7319"
@@ -11078,8 +11100,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
-        "y": 1320,
+        "x": 405,
+        "y": 1420,
         "wires": [
             [
                 "cc28e6514a5a9c99"
@@ -11098,8 +11120,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1320,
+        "x": 200,
+        "y": 1420,
         "wires": [
             [
                 "76c578ddabf2971c"
@@ -11131,8 +11153,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 460,
-        "y": 1360,
+        "x": 445,
+        "y": 1460,
         "wires": [
             [
                 "cc28e6514a5a9c99"
@@ -11151,8 +11173,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1360,
+        "x": 200,
+        "y": 1460,
         "wires": [
             [
                 "f92c7e06d2ed0d87"
@@ -11184,8 +11206,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1150,
-        "y": 1240,
+        "x": 1135,
+        "y": 1340,
         "wires": [
             [],
             []
@@ -11216,8 +11238,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1140,
-        "y": 1280,
+        "x": 1125,
+        "y": 1380,
         "wires": [
             [],
             []
@@ -11248,8 +11270,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1120,
-        "y": 1320,
+        "x": 1105,
+        "y": 1420,
         "wires": [
             [],
             []
@@ -11280,8 +11302,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1160,
-        "y": 1360,
+        "x": 1145,
+        "y": 1460,
         "wires": [
             [],
             []
@@ -11300,14 +11322,14 @@
         "width": "12",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Filtered volume -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Filtered volume</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"filteredVolume\" \n          @input=\"updatePayload\"\n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\" \n          suffix=\"L\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Dillution factor -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"dillutionFactor\" \n          @input=\"updatePayload\"\n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"sieveMeshSize\" \n          @input=\"updatePayload\"\n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\" \n          suffix=\"μm\" \n          class=\"my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth of the sample -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth of the sample</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"depthOfTheSample\" \n          @input=\"updatePayload\"\n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog4\" \n          suffix=\"m\" \n          class=\"my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog4\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea \n        v-model=\"sampleComment\" \n        @input=\"updatePayload\"\n        class=\"my-v-textarea\" \n        variant=\"outlined\" \n        density=\"compact\">\n      </v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dialog4: false,\n      filteredVolume: 0,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depthOfTheSample: 0,\n      sampleComment: '',\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.filtered_volume !== undefined) {\n            this.filteredVolume = payload.filtered_volume;\n          }\n          if (payload.dillution_factor !== undefined) {\n            this.dillutionFactor = payload.dillution_factor;\n          }\n          if (payload.sieve_mesh_size !== undefined) {\n            this.sieveMeshSize = payload.sieve_mesh_size;\n          }\n          if (payload.depth_of_the_sample !== undefined) {\n            this.depthOfTheSample = payload.depth_of_the_sample;\n          }\n          if (payload.sample_comment !== undefined) {\n            this.sampleComment = payload.sample_comment;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    openDialog4() {\n      this.dialog4 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    closeDialog4() {\n      this.dialog4 = false;\n    },\n    updatePayload() {\n      const payload = {\n        filtered_volume: this.filteredVolume,\n        dillution_factor: this.dillutionFactor,\n        sieve_mesh_size: this.sieveMeshSize,\n        depth_of_the_sample: this.depthOfTheSample,\n        sample_comment: this.sampleComment,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n  }\n\n  .label-bloc {\n    display: flex;\n    flex: 0.2;\n    justify-content: right !important;\n    align-items: center;\n  }\n\n  .input-bloc {\n    flex: 0.5;\n    margin-right: 10px;\n  }\n\n  .container {\n    padding: 10px 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .my-label-general {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  .my-label-comment {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n  }\n\n  /* Adjust font size for smaller screens */\n  @media (max-width: 1180px) {\n    .my-label-general {\n      font-size: 1.1vw;\n    }\n  }\n\n  .my-label-2 {\n    margin-top: 12px !important;\n  }\n\n  .my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    align-items: center !important;\n  }\n\n  .text-spacing {\n    margin-right: 12px !important;\n  }\n\n  .my-v-text>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .c>.v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  div .v-btn-toggle {\n    background-color: #ffffff !important;\n  }\n\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .my-v-textarea>.v-input__control {\n    background-color: #ffffff;\n    border-radius: 5px;\n  }\n</style>",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>Other Informations</h2>\n    <div class=\"horizontal-alignment\">\n      <!-- Filtered volume -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Filtered volume</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"filteredVolume\" \n          @input=\"updatePayload\"\n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog1\" \n          suffix=\"L\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog1\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 1.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog1\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Dillution factor -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Dillution factor</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"dillutionFactor\" \n          @input=\"updatePayload\"\n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog2\" \n          class=\"text-spacing my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog2\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 2.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog2\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Sieve mesh size -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Sieve mesh size</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"sieveMeshSize\" \n          @input=\"updatePayload\"\n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog3\" \n          suffix=\"μm\" \n          class=\"my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog3\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 3.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog3\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n      <!-- Depth of the sample -->\n      <div class=\"label-bloc\">\n        <label class=\"v-label v-slider__label my-label-general\">Depth of the sample</label>\n      </div>\n      <div class=\"input-bloc\">\n        <v-text-field \n          v-model=\"depthOfTheSample\" \n          @input=\"updatePayload\"\n          variant=\"outlined\" \n          density=\"compact\" \n          type=\"number\" \n          append-inner-icon=\"mdi-information\"\n          @click:append-inner=\"openDialog4\" \n          suffix=\"m\" \n          class=\"my-v-text\">\n        </v-text-field>\n      </div>\n      <v-dialog v-model=\"dialog4\" max-width=\"500\">\n        <v-card>\n          <v-card-title>Information</v-card-title>\n          <v-card-text>\n            This is an information dialog 4.\n          </v-card-text>\n          <v-card-actions>\n            <v-btn color=\"primary\" text @click=\"closeDialog4\">Close</v-btn>\n          </v-card-actions>\n        </v-card>\n      </v-dialog>\n    </div>\n    <div class=\"horizontal-alignment\">\n      <label class=\"v-label v-slider__label my-label-comment\">Sample comment</label>\n      <v-textarea \n        v-model=\"sampleComment\" \n        @input=\"updatePayload\"\n        class=\"my-v-textarea\" \n        variant=\"outlined\" \n        density=\"compact\">\n      </v-textarea>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      dialog1: false,\n      dialog2: false,\n      dialog3: false,\n      dialog4: false,\n      filteredVolume: 0,\n      dillutionFactor: 0,\n      sieveMeshSize: 0,\n      depthOfTheSample: 0,\n      sampleComment: '',\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.filtered_volume !== undefined) {\n            this.filteredVolume = payload.filtered_volume;\n          }\n          if (payload.dillution_factor !== undefined) {\n            this.dillutionFactor = payload.dillution_factor;\n          }\n          if (payload.sieve_mesh_size !== undefined) {\n            this.sieveMeshSize = payload.sieve_mesh_size;\n          }\n          if (payload.depth_of_the_sample !== undefined) {\n            this.depthOfTheSample = payload.depth_of_the_sample;\n          }\n          if (payload.sample_comment !== undefined) {\n            this.sampleComment = payload.sample_comment;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    openDialog1() {\n      this.dialog1 = true;\n    },\n    openDialog2() {\n      this.dialog2 = true;\n    },\n    openDialog3() {\n      this.dialog3 = true;\n    },\n    openDialog4() {\n      this.dialog4 = true;\n    },\n    closeDialog1() {\n      this.dialog1 = false;\n    },\n    closeDialog2() {\n      this.dialog2 = false;\n    },\n    closeDialog3() {\n      this.dialog3 = false;\n    },\n    closeDialog4() {\n      this.dialog4 = false;\n    },\n    updatePayload() {\n      const payload = {\n        filtered_volume: this.filteredVolume,\n        dillution_factor: this.dillutionFactor,\n        sieve_mesh_size: this.sieveMeshSize,\n        depth_of_the_sample: this.depthOfTheSample,\n        sample_comment: this.sampleComment,\n      };\n      this.send({ payload });\n    }\n  }\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 870,
-        "y": 1640,
+        "x": 855,
+        "y": 1740,
         "wires": [
             [
                 "b8e827b49ed71ded",
@@ -11343,8 +11365,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 1720,
+        "x": 425,
+        "y": 1820,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -11377,8 +11399,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 430,
-        "y": 1560,
+        "x": 415,
+        "y": 1660,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -11411,8 +11433,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 430,
-        "y": 1600,
+        "x": 415,
+        "y": 1700,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -11445,8 +11467,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 1640,
+        "x": 425,
+        "y": 1740,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -11479,8 +11501,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 450,
-        "y": 1680,
+        "x": 435,
+        "y": 1780,
         "wires": [
             [
                 "de68f6faec1d0aec"
@@ -11499,8 +11521,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1560,
+        "x": 200,
+        "y": 1660,
         "wires": [
             [
                 "11d0f008572b1816"
@@ -11518,8 +11540,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1600,
+        "x": 200,
+        "y": 1700,
         "wires": [
             [
                 "88988d2b5efe7a55"
@@ -11537,8 +11559,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1640,
+        "x": 200,
+        "y": 1740,
         "wires": [
             [
                 "aab491fd4d8d370e"
@@ -11556,8 +11578,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1680,
+        "x": 200,
+        "y": 1780,
         "wires": [
             [
                 "b59379492732a989"
@@ -11575,8 +11597,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1720,
+        "x": 200,
+        "y": 1820,
         "wires": [
             [
                 "d2e3027e09f33d42"
@@ -11608,8 +11630,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1260,
-        "y": 1720,
+        "x": 1245,
+        "y": 1820,
         "wires": [
             [],
             []
@@ -11640,8 +11662,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1250,
-        "y": 1560,
+        "x": 1235,
+        "y": 1660,
         "wires": [
             [],
             []
@@ -11672,8 +11694,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1250,
-        "y": 1600,
+        "x": 1235,
+        "y": 1700,
         "wires": [
             [],
             []
@@ -11704,8 +11726,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1260,
-        "y": 1640,
+        "x": 1245,
+        "y": 1740,
         "wires": [
             [],
             []
@@ -11736,8 +11758,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1270,
-        "y": 1680,
+        "x": 1255,
+        "y": 1780,
         "wires": [
             [],
             []
@@ -11768,8 +11790,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 460,
-        "y": 1460,
+        "x": 445,
+        "y": 1560,
         "wires": [
             [
                 "4a4db8d5c9ce9226"
@@ -11788,8 +11810,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1460,
+        "x": 200,
+        "y": 1560,
         "wires": [
             [
                 "8602fcc44b294bfc"
@@ -11821,8 +11843,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1160,
-        "y": 1460,
+        "x": 1145,
+        "y": 1560,
         "wires": [
             [],
             []
@@ -11853,8 +11875,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 430,
-        "y": 1820,
+        "x": 415,
+        "y": 1920,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -11887,8 +11909,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 430,
-        "y": 1860,
+        "x": 415,
+        "y": 1960,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -11921,8 +11943,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 1900,
+        "x": 425,
+        "y": 2000,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -11941,8 +11963,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1900,
+        "x": 200,
+        "y": 2000,
         "wires": [
             [
                 "ebabbfe97e25d57a"
@@ -11960,8 +11982,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1860,
+        "x": 200,
+        "y": 1960,
         "wires": [
             [
                 "ba086b5748dc75a9"
@@ -11979,8 +12001,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1820,
+        "x": 200,
+        "y": 1920,
         "wires": [
             [
                 "f31535161df5937b"
@@ -12012,8 +12034,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1230,
-        "y": 1820,
+        "x": 1215,
+        "y": 1920,
         "wires": [
             [],
             []
@@ -12044,8 +12066,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1230,
-        "y": 1860,
+        "x": 1215,
+        "y": 1960,
         "wires": [
             [],
             []
@@ -12076,8 +12098,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1240,
-        "y": 1900,
+        "x": 1225,
+        "y": 2000,
         "wires": [
             [],
             []
@@ -12108,8 +12130,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
-        "y": 1940,
+        "x": 405,
+        "y": 2040,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -12142,8 +12164,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
-        "y": 1980,
+        "x": 405,
+        "y": 2080,
         "wires": [
             [
                 "470cceda379e27fc"
@@ -12176,8 +12198,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1220,
-        "y": 1940,
+        "x": 1205,
+        "y": 2040,
         "wires": [
             [],
             []
@@ -12208,8 +12230,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1220,
-        "y": 1980,
+        "x": 1205,
+        "y": 2080,
         "wires": [
             [],
             []
@@ -12226,8 +12248,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1940,
+        "x": 200,
+        "y": 2040,
         "wires": [
             [
                 "b33763b35fe6bed5"
@@ -12245,8 +12267,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 1980,
+        "x": 200,
+        "y": 2080,
         "wires": [
             [
                 "5ff224fdd65af7b4"
@@ -12278,8 +12300,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 2120,
+        "x": 425,
+        "y": 2220,
         "wires": [
             [
                 "0eec8b84ecf95b07"
@@ -12312,8 +12334,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 430,
-        "y": 2080,
+        "x": 415,
+        "y": 2180,
         "wires": [
             [
                 "0eec8b84ecf95b07"
@@ -12332,8 +12354,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 2120,
+        "x": 200,
+        "y": 2220,
         "wires": [
             [
                 "5ac56b2b093b7f88"
@@ -12351,8 +12373,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 2080,
+        "x": 200,
+        "y": 2180,
         "wires": [
             [
                 "b5126cbae5244cd0"
@@ -12384,8 +12406,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1250,
-        "y": 2080,
+        "x": 1235,
+        "y": 2180,
         "wires": [
             [],
             []
@@ -12416,8 +12438,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1260,
-        "y": 2120,
+        "x": 1245,
+        "y": 2220,
         "wires": [
             [],
             []
@@ -12448,8 +12470,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 2160,
+        "x": 425,
+        "y": 2260,
         "wires": [
             [
                 "0eec8b84ecf95b07"
@@ -12468,8 +12490,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 2160,
+        "x": 200,
+        "y": 2260,
         "wires": [
             [
                 "d87add2bc6bd4ca6"
@@ -12501,8 +12523,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1260,
-        "y": 2160,
+        "x": 1245,
+        "y": 2260,
         "wires": [
             [],
             []
@@ -12533,8 +12555,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 440,
-        "y": 2200,
+        "x": 425,
+        "y": 2300,
         "wires": [
             [
                 "0eec8b84ecf95b07"
@@ -12567,8 +12589,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1260,
-        "y": 2200,
+        "x": 1245,
+        "y": 2300,
         "wires": [
             [],
             []
@@ -12585,8 +12607,8 @@
             "399010b7aa9cafb2",
             "d82f912c99fe109a"
         ],
-        "x": 215,
-        "y": 2200,
+        "x": 200,
+        "y": 2300,
         "wires": [
             [
                 "05ce26a33861a872"
@@ -12605,7 +12627,7 @@
         "once": true,
         "onceDelay": "2",
         "topic": "",
-        "x": 270,
+        "x": 255,
         "y": 100,
         "wires": [
             [
@@ -12626,7 +12648,7 @@
             "ab8f773ee48978da",
             "91ce13c6dbb7bfb1"
         ],
-        "x": 355,
+        "x": 340,
         "y": 100,
         "wires": []
     },
@@ -12655,8 +12677,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1230,
-        "y": 640,
+        "x": 1215,
+        "y": 740,
         "wires": [
             [],
             []
@@ -12672,8 +12694,8 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1325,
-        "y": 420,
+        "x": 1310,
+        "y": 520,
         "wires": []
     },
     {
@@ -12686,8 +12708,8 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1325,
-        "y": 460,
+        "x": 1310,
+        "y": 560,
         "wires": []
     },
     {
@@ -12713,8 +12735,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1220,
-        "y": 440,
+        "x": 1205,
+        "y": 540,
         "wires": [
             [
                 "88baa8ae55dc9fe2"
@@ -12743,8 +12765,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1060,
-        "y": 420,
+        "x": 1045,
+        "y": 520,
         "wires": [
             [
                 "85ae464a86f572ec"
@@ -12767,8 +12789,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
-        "y": 420,
+        "x": 855,
+        "y": 520,
         "wires": [
             [
                 "5c29c3693e422965"
@@ -12800,8 +12822,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 420,
-        "y": 560,
+        "x": 405,
+        "y": 660,
         "wires": [
             [
                 "23a443593bbc53fe"
@@ -12820,12 +12842,37 @@
             "df824b3eae9a8d40",
             "35280c47dcb8588f"
         ],
-        "x": 215,
-        "y": 560,
+        "x": 200,
+        "y": 660,
         "wires": [
             [
                 "fbeebcd053912f51"
             ]
+        ]
+    },
+    {
+        "id": "4946452bd6ad426d",
+        "type": "ui-template",
+        "z": "e988301e60e4b458",
+        "g": "d3ea2957fe42b850",
+        "group": "",
+        "page": "c392bc525769b274",
+        "ui": "",
+        "name": "Custom CSS - Sample",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "/* --------------------------------------------- */\n/* Template : Title */\n/* --------------------------------------------- */\n\nh3 {\n    font-size: 1vw;\n}\n\n.center-container {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    cursor: pointer;\n}\n\n.center-image-1 {\n    margin-right: 25px;\n    max-width: 40px;\n    line-height: 0;\n}\n\n/* --------------------------------------------- */\n/* Template : Step bar */\n/* --------------------------------------------- */\n\ndiv.v-stepper.v-sheet {\n    background-color: transparent;\n    box-shadow: none;\n    border-radius: 0;\n    overflow: hidden;\n}\n\n.v-stepper-header {\n    display: flex;\n    align-items: center;\n}\n\n  .selected-step div.v-avatar.v-theme--nrdb.v-avatar--density-default.v-avatar--variant-flat.v-stepper-item__avatar {\n    background-color: #0a6eca;\n}\n\n/* --------------------------------------------- */\n/* Template : Information */\n/* --------------------------------------------- */\n\n.my-menu {\n    display: flex;\n    justify-content: flex-end;\n}\n\n.gap-icon {\n    margin-right: 1rem;\n}\n\n.gap-icon-profil {\n    font-size: 35px;\n    height: 3rem;\n    width: 3rem;\n}\n\n.header-top-home-information-container {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-right: 1rem;\n}\n\n.header-top-home-information-container p {\n    margin: 0 5px;\n    font-size: 0.8vw;\n    color: black;\n}\n\n.header-top-home-information-container span {\n    color: black;\n    font-size: 35px;\n    cursor: pointer;\n}\n/* --------------------------------------------- */\n/* Common styles - All templates below          */\n/* --------------------------------------------- */\n\nh2 {\n    color: #0a6eca !important;\n    margin-bottom: 12px !important;\n}\n\n.container {\n    padding: 10px !important;\n    background-color: rgba(10, 110, 202, 0.1) !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n}\n\n.my-v-text > .v-input__control,\n.c > .v-input__control,\n.v-select-compas > .v-input__control,\n.my-v-textarea > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n}\n\n.horizontal-alignment,\n.horizontal-alignment-sgi,\n.horizontal-alignment-vertical-net {\n    display: flex !important;\n    align-items: center !important;\n}\n\n.horizontal-alignment-vertical-net {\n    flex-wrap: wrap;\n    justify-content: space-between;\n}\n\n.text-spacing {\n    margin-right: 12px !important;\n}\n\n.grid-container {\n    display: grid !important;\n    height: 5vh !important;\n}\n\n.spacing {\n    margin-right: 15px !important;\n}\n\n.my-label-general,\n.my-label-general-sgi,\n.my-label-sgi-2,\n.my-label-gps,\n.label-DD,\n.label-date,\n.label-time,\n.my-value-label,\n.my-label-comment {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    font-size: 1vw;\n}\n\n.input-bloc,\n.input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n}\n\n.my-toggle {\n    margin-top: 12px !important;\n    border-color: #0a6eca !important;\n    background-color: #ffffff !important;\n    color: #0a6eca !important;\n}\n\n.my-toggle .v-btn--disabled {\n    opacity: 1;\n}\n\n.my-toggle .v-btn--active {\n    background-color: #0a6eca !important;\n    color: white !important;\n}\n\n.toggle-full-width {\n    width: 92% !important;\n}\n\n.v-progress-linear {\n    margin-left: 20px !important;\n    border-radius: 5px !important;\n}\n\n.progress-info {\n    margin-top: 12px !important;\n}\n\n.v-field__suffix {\n    background-color: rgba(10, 110, 202, 1);\n    padding: 0 5px;\n    border-radius: 5px;\n}\n\ndiv .v-btn-toggle {\n    background-color: #ffffff !important;\n}\n\n/* Adjust font size for smaller screens */\n@media (max-width: 1180px) {\n    .my-label-general {\n        font-size: 1.1vw;\n    }\n}\n\n/* --------------------------------------------- */\n/* Template : Sample general information         */\n/* --------------------------------------------- */\n\n.my-label-general-sgi {\n    margin-bottom: 20px !important;\n    font-weight: bolder;\n}\n\n.my-label-sgi-2 {\n    margin-top: 12px !important;\n    font-weight: bolder;\n    font-size: 1vw;\n}\n\n.label-bloc-sgi,\n.label-bloc-sgi-2 {\n    flex: 0.2;\n}\n\n.label-bloc-sgi {\n    justify-content: center !important;\n}\n\n.label-bloc-sgi-2 {\n    justify-content: right !important;\n}\n\n.input-bloc-sgi {\n    flex: 0.5;\n    margin-right: 10px;\n}\n\n/* --------------------------------------------- */\n/* Template : Starting point & Ending point      */\n/* --------------------------------------------- */\n\n.p-container {\n    display: inline-block !important;\n    height: 100px !important;\n}\n\np#dms-format {\n    horizontal-align: top !important;\n    display: inline-block !important;\n    font-weight: bolder !important;\n    font-size: 20px !important;\n}\n\n.dms {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    max-width: 100% !important;\n}\n\n.label-bloc-3 {\n    flex: 0.1;\n    justify-content: left;\n}\n\n.v-text-format,\n.v-text-format-2 {\n    min-width: 90px !important;\n}\n\n.v-select-compas {\n    min-width: 95px !important;\n}\n\n/* --------------------------------------------- */\n/* Template : Net specificity                    */\n/* --------------------------------------------- */\n\n.my-label-2 {\n    margin-top: 12px !important;\n}\n\n.my-value-label {\n    color: #0a6eca !important;\n    font-weight: bold !important;\n}\n\n/* --------------------------------------------- */\n/* Template : Bottle specificity                 */\n/* --------------------------------------------- */\n\n.horizontal-alignment-bottle-specificity {\n    display: flex !important;\n    align-items: center !important;\n}\n\n.label-bloc-bottle-specificity {\n    flex: 0.1;\n    justify-content: left;\n    align-items: center;\n}\n\n.my-v-text-bottle > .v-input__control {\n    max-width: 150px !important;\n}\n\n/* --------------------------------------------- */\n/* Template : Other information - Horizontal Net */\n/* --------------------------------------------- */\n\n.label-bloc {\n    flex: 0.2;\n    justify-content: right !important;\n}\n\n.my-label-comment {\n    font-weight: bolder;\n}\n\n/* --------------------------------------------- */\n/* Template : Other information - Vertical Net   */\n/* --------------------------------------------- */\n\n.label-bloc {\n    flex: 0.3;\n    padding-right: 10px;\n}\n\n.label-bloc-second-line,\n.label-bloc-second-line-max {\n    flex: 0.18;\n}\n\n.label-bloc-second-line-max {\n    justify-content: center !important;\n}\n\n.input-bloc {\n    flex: 0.7;\n}\n\n.textarea-alignment {\n    margin-top: 20px;\n}\n\n/* --------------------------------------------- */\n/* Template : Other information - Niskin bottle  */\n/* --------------------------------------------- */\n\n.label-bloc-niskin-bottle {\n    flex: 0.1;\n    justify-content: right !important;\n}\n\n/* Ensure consistent styles for different templates */\n@media (max-width: 1180px) {\n    .my-label-general {\n        font-size: 1.1vw;\n    }\n}\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 285,
+        "y": 340,
+        "wires": [
+            []
         ]
     },
     {
