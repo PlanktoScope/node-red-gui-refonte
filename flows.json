@@ -847,11 +847,12 @@
             "color": "#000000"
         },
         "nodes": [
-            "7e44e412732eb023"
+            "7e44e412732eb023",
+            "bb4c88f66ff8edd0"
         ],
         "x": 84,
         "y": 399,
-        "w": 192,
+        "w": 242,
         "h": 82
     },
     {
@@ -22743,7 +22744,7 @@
         "g": "c0f5de4355b1dbd2",
         "name": "",
         "props": [],
-        "repeat": "5",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -22765,7 +22766,7 @@
         "mode": "link",
         "links": [
             "7b83d675be7b73a9",
-            "01ba7a39a6150e16"
+            "bb4c88f66ff8edd0"
         ],
         "x": 265,
         "y": 180,
@@ -22913,13 +22914,13 @@
         "width": "3",
         "height": "7",
         "head": "",
-        "format": "<template>\n  <div class=\"left-panel-container\">\n    <iframe src=\"http://92.167.184.163/admin/grafana/d-solo/host-summary/host-summary?orgId=1&refresh=5s&kiosk=&from=1722345929943&to=1722346229943&theme=dark&panelId=266\" width=\"450\" height=\"200\" frameborder=\"0\"></iframe>\n    <iframe src=\"http://92.167.184.163/admin/grafana/d-solo/host-summary/host-summary?orgId=1&refresh=5s&kiosk=&from=1722345959872&to=1722346259872&theme=dark&panelId=16\" width=\"450\" height=\"200\" frameborder=\"0\"></iframe>\n    <iframe src=\"http://92.167.184.163/admin/grafana/d-solo/host-summary/host-summary?orgId=1&refresh=5s&kiosk=&from=1722345972787&to=1722346272787&theme=dark&panelId=154\" width=\"450\" height=\"200\" frameborder=\"0\"></iframe>\n    <v-btn color=\"#076eac\" dark @click=\"moreDetails\">More details</v-btn>\n  </div>\n</template>\n\n<script>\nexport default {\n  methods: {\n    moreDetails() {\n      // URL relative à ouvrir\n      const relativeUrl = '/admin/grafana/d/host-summary/host-summary?orgId=1&refresh=5s&kiosk';\n      \n      // Fonction pour enlever le port d'une URL\n      function removePortFromUrl(url) {\n        return url.replace(/:\\d+/, ''); // Enlève les ports (comme :8080)\n      }\n      \n      // Récupérer dynamiquement la base URL\n      const baseUrl = `${window.location.protocol}//${window.location.hostname}`;\n      \n      // Construire l'URL complète\n      const fullUrl = `${removePortFromUrl(baseUrl)}${relativeUrl}`;\n      \n      // Ouvrir la nouvelle fenêtre\n      window.open(fullUrl, '_blank');\n    },\n  },\n};\n</script>\n\n<style scoped>\n.left-panel-container {\n  background-color: rgb(24, 27, 31);\n  border-radius: 4px;\n  padding: 1rem;\n  display: flex;\n  flex-direction: column; \n  align-items: center;\n  justify-content: center;\n}\n\niframe {\n  margin-bottom: 1rem;\n  width: 75%;\n}\n\niframe .grafana-app {\n  background-color: transparent !important;\n  border: none !important;\n}\n\nv-btn {\n  margin-top: 1rem;\n}\n</style>\n",
+        "format": "<template>\n  <div class=\"left-panel-container\">\n    <iframe :src=\"iframeSrc1\" width=\"450\" height=\"200\" frameborder=\"0\"></iframe>\n    <iframe :src=\"iframeSrc2\" width=\"450\" height=\"200\" frameborder=\"0\"></iframe>\n    <iframe :src=\"iframeSrc3\" width=\"450\" height=\"200\" frameborder=\"0\"></iframe>\n    <div class=\"button-container\">\n      <v-btn color=\"#076eac\" dark @click=\"moreDetails\">More details</v-btn>\n      <v-btn color=\"#4CAF50\" dark @click=\"refreshIframes\">Refresh Iframes</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      iframeSrc1: this.getIframeSrc(1724930270635, 1724930570635, 266),\n      iframeSrc2: this.getIframeSrc(1724930581410, 1724930881410, 16),\n      iframeSrc3: this.getIframeSrc(1724930590780, 1724930890780, 154)\n    };\n  },\n  methods: {\n    moreDetails() {\n      const relativeUrl = '/admin/grafana/d/host-summary/host-summary?orgId=1&refresh=5s&kiosk';\n      function removePortFromUrl(url) {\n        return url.replace(/:\\d+/, '');\n      }\n      const baseUrl = `${window.location.protocol}//${window.location.hostname}`;\n      const fullUrl = `${removePortFromUrl(baseUrl)}${relativeUrl}`;\n      window.open(fullUrl, '_blank');\n    },\n    refreshIframes() {\n      this.iframeSrc1 = this.getIframeSrc(1724930270635, 1724930570635, 266) + `&cache=${new Date().getTime()}`;\n      this.iframeSrc2 = this.getIframeSrc(1724930581410, 1724930881410, 16) + `&cache=${new Date().getTime()}`;\n      this.iframeSrc3 = this.getIframeSrc(1724930590780, 1724930890780, 154) + `&cache=${new Date().getTime()}`;\n    },\n    getIframeSrc(from, to, panelId) {\n      return `http://92.167.184.163/admin/grafana/d-solo/host-summary/host-summary?orgId=1&refresh=5s&kiosk=&panelId=${panelId}`;\n    }\n  }\n};\n</script>\n\n<style scoped>\n.left-panel-container {\n  background-color: rgb(24, 27, 31);\n  border-radius: 4px;\n  padding: 1rem;\n  display: flex;\n  flex-direction: column; \n  align-items: center;\n  justify-content: center;\n}\n\niframe {\n  margin-bottom: 1rem;\n  width: 75%;\n}\n\n.button-container {\n  display: flex;\n  gap: 1rem;\n  margin-top: 1rem;\n}\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 180,
+        "x": 230,
         "y": 440,
         "wires": [
             []
@@ -23679,5 +23680,22 @@
         "x": 560,
         "y": 660,
         "wires": []
+    },
+    {
+        "id": "bb4c88f66ff8edd0",
+        "type": "link in",
+        "z": "a697ff46c6e7b7fb",
+        "g": "cec7b5c348ba4e10",
+        "name": "link in 239",
+        "links": [
+            "a3a9370294d86cb2"
+        ],
+        "x": 125,
+        "y": 440,
+        "wires": [
+            [
+                "7e44e412732eb023"
+            ]
+        ]
     }
 ]
