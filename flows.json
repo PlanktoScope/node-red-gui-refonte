@@ -837,37 +837,6 @@
         "h": 142
     },
     {
-        "id": "6dabc68acbd23974",
-        "type": "group",
-        "z": "a697ff46c6e7b7fb",
-        "name": "Right pannel",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "f8fd4c2266066516",
-            "0395251fd0d40dfe",
-            "ee91ce21184552fa",
-            "ab09fc7b9f3e8189",
-            "04b077947f323ffb",
-            "4bd4ed61fe231982",
-            "07b89d6d2f243410",
-            "ac21946563059ca9",
-            "1a8330a03101a150",
-            "cba7a0cba93534cc",
-            "7fd6408cf7e06683",
-            "d015e87016b2d964",
-            "7ba43cf89d3a06cd",
-            "b96b929fdeaef889"
-        ],
-        "x": 84,
-        "y": 499,
-        "w": 1572,
-        "h": 222
-    },
-    {
         "id": "cec7b5c348ba4e10",
         "type": "group",
         "z": "a697ff46c6e7b7fb",
@@ -2070,6 +2039,49 @@
         "y": 1239,
         "w": 922,
         "h": 142
+    },
+    {
+        "id": "6dabc68acbd23974",
+        "type": "group",
+        "z": "a697ff46c6e7b7fb",
+        "name": "Right pannel",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f8fd4c2266066516",
+            "0395251fd0d40dfe",
+            "ee91ce21184552fa",
+            "ab09fc7b9f3e8189",
+            "04b077947f323ffb",
+            "4bd4ed61fe231982",
+            "07b89d6d2f243410",
+            "ac21946563059ca9",
+            "1a8330a03101a150",
+            "cba7a0cba93534cc",
+            "7fd6408cf7e06683",
+            "d015e87016b2d964",
+            "7ba43cf89d3a06cd",
+            "b96b929fdeaef889",
+            "db96d60c64af1ac5",
+            "f09c40752ec8a2c7",
+            "11937df3035d969c",
+            "7f2ee7b686012414",
+            "4199ed3908449046",
+            "0a2ccc577faeda7f",
+            "328d7086265dee74",
+            "8f44a1dbd4582f33",
+            "8c30d2e418c37b59",
+            "0bb61c9f0da42789",
+            "9e6a649555edc114",
+            "d89ed47f6d7e9dba"
+        ],
+        "x": 84,
+        "y": 499,
+        "w": 1612,
+        "h": 489.5
     },
     {
         "id": "b08415909e5dc4da",
@@ -22783,7 +22795,10 @@
             "078a7c562c7ec691",
             "1a8330a03101a150",
             "cba7a0cba93534cc",
-            "d015e87016b2d964"
+            "d015e87016b2d964",
+            "f51bc007ae5cfa7f",
+            "f173f9e485ea4ddf",
+            "05d5f52816fd0c4b"
         ],
         "x": 125,
         "y": 80,
@@ -22923,17 +22938,19 @@
         "width": "9",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Restarting Processes</h3>\n      <p>\n        Please be aware that managing the following processes: Pump, Focus, Light, Camera, Segmenter, may cause temporary\n        disruptions in system operations and data processing.\n      </p>\n    </div>\n\n    <div class=\"right-pannel-process\">\n      <section id=\"segmenter-process\" class=\"process-section\" @click=\"toggleCheckbox('segmenter')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Segmenter\" v-model=\"selectedProcesses.segmenter\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime: </span><span id=\"light\">12 hours, 34 minutes</span></p>\n          <p><span id=\"bold\"> Restart Time: </span><span id=\"light\">2024-07-05 14:30:00</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.segmenterStatus }}</span></p>\n        </div>\n      </section>\n      <section id=\"hardware-process\" class=\"process-section\" @click=\"toggleCheckbox('hardware')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Hardware\" v-model=\"selectedProcesses.hardware\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime:</span><span id=\"light\"> 12 hours, 34 minutes</span></p>\n          <p><span id=\"bold\">Last Restart Time:</span><span id=\"light\"> 2024-07-05 14:30:00</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.hardwareStatus }}</span></p>\n        </div>\n      </section>\n    </div>\n\n    <div class=\"button-div\">\n      <v-btn color=\"red\" dark @click=\"run\">Run</v-btn>\n      <v-btn color=\"red\" dark @click=\"kill\">Kill</v-btn>\n      <v-btn color=\"red\" dark @click=\"restart\">Restart</v-btn>\n    </div>\n  </div>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Accessing Backend Logs</h3>\n      <p>Please be aware that accessing backend logs requires proper understanding.</p>\n    </div>\n    <div class=\"button-div\">\n      <v-btn color=\"#076eac\" dark @click=\"controllersLogs\">Controllers Logs</v-btn>\n      <v-btn color=\"#076eac\" dark @click=\"processLogs\">Process Logs</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      selectedProcesses: {\n        segmenter: false,\n        hardware: false\n      },\n    };\n  },\n  methods: {\n    run() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'run'\n      }})\n    },\n    kill() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'kill'\n      }})\n    },\n    restart() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'restart'\n      }})\n    },\n    controllersLogs() {\n      this.send({payload: \"Controllers Logs\"});\n    },\n    processLogs() {\n      this.send({payload: \"Process Logs\"});\n    },\n    toggleCheckbox(process) {\n      this.selectedProcesses[process] = !this.selectedProcesses[process];\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .right-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    margin-bottom: 1rem;\n    color: white;\n  }\n\n  .right-pannel-text {\n    margin-bottom: 1rem;\n  }\n\n  .right-pannel-process {\n    display: flex;\n    align-items: center;\n  }\n\n  .process-section {\n    background-color: #161616;\n    padding: 0rem 1rem;\n    padding-bottom: 0.7rem;\n    border-radius: 4px;\n    margin-bottom: 1rem;\n    margin-right: 1rem;\n    width: 300px;\n    color: #ffffff;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    cursor: pointer;\n  }\n\n  .process-section:hover {\n    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);\n  }\n\n  .process-header {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    font-weight: bold;\n  }\n\n  .process-details span#bold {\n    font-weight: bold;\n  }\n\n  .process-details span#light {\n    font-weight: light;\n  }\n\n  .status {\n    line-height: 0px;\n    font-size: 2.5rem;\n  }\n\n  .status.ko {\n    color: red;\n  }\n\n  .status.working {\n    color: green;\n  }\n\n  .button-div {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n  }\n\n  .button-div .v-btn {\n    margin: 0.25rem;\n  }\n\n  .v-selection-control__wrapper {\n    margin-right: 10px;\n  }\n  \n  .v-label {\n    opacity: unset;\n  }\n\n  .v-selection-control--density-default {\n    --v-selection-control-size: 20px\n  }\n\n  .v-input__details {\n    display: none;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Restarting Processes</h3>\n      <p>\n        Please be aware that managing the following processes: Pump, Focus, Light, Camera, Segmenter, may cause temporary\n        disruptions in system operations and data processing.\n      </p>\n    </div>\n\n    <div class=\"right-pannel-process\">\n      <section id=\"segmenter-process\" class=\"process-section\" @click=\"toggleCheckbox('segmenter')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Segmenter\" v-model=\"selectedProcesses.segmenter\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime: </span><span id=\"light\">WIP</span></p>\n          <p><span id=\"bold\"> Restart Time: </span><span id=\"light\">WIP</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.segmenterStatus }}</span></p>\n        </div>\n      </section>\n      <section id=\"hardware-process\" class=\"process-section\" @click=\"toggleCheckbox('hardware')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Hardware\" v-model=\"selectedProcesses.hardware\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime:</span><span id=\"light\">WIP</span></p>\n          <p><span id=\"bold\">Last Restart Time:</span><span id=\"light\">WIP</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.hardwareStatus }}</span></p>\n        </div>\n      </section>\n    </div>\n\n    <div class=\"button-div\">\n      <v-btn color=\"red\" dark @click=\"run\">Run</v-btn>\n      <v-btn color=\"red\" dark @click=\"kill\">Kill</v-btn>\n      <v-btn color=\"red\" dark @click=\"restart\">Restart</v-btn>\n    </div>\n  </div>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Accessing Backend Logs</h3>\n      <p>Please be aware that accessing backend logs requires proper understanding.</p>\n    </div>\n    <div class=\"button-div\">\n      <v-btn color=\"#076eac\" dark @click=\"controllersLogs\">Controllers Logs</v-btn>\n      <v-btn color=\"#076eac\" dark @click=\"processLogs\">Process Logs</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      selectedProcesses: {\n        segmenter: false,\n        hardware: false\n      },\n    };\n  },\n  methods: {\n    run() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'run'\n      }})\n    },\n    kill() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'kill'\n      }})\n    },\n    restart() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'restart'\n      }})\n    },\n    controllersLogs() {\n      this.send({payload: \"Controllers Logs\"});\n    },\n    processLogs() {\n      this.send({payload: \"Process Logs\"});\n    },\n    toggleCheckbox(process) {\n      this.selectedProcesses[process] = !this.selectedProcesses[process];\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .right-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    margin-bottom: 1rem;\n    color: white;\n  }\n\n  .right-pannel-text {\n    margin-bottom: 1rem;\n  }\n\n  .right-pannel-process {\n    display: flex;\n    align-items: center;\n  }\n\n  .process-section {\n    background-color: #161616;\n    padding: 0rem 1rem;\n    padding-bottom: 0.7rem;\n    border-radius: 4px;\n    margin-bottom: 1rem;\n    margin-right: 1rem;\n    width: 300px;\n    color: #ffffff;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    cursor: pointer;\n  }\n\n  .process-section:hover {\n    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);\n  }\n\n  .process-header {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    font-weight: bold;\n  }\n\n  .process-details span#bold {\n    font-weight: bold;\n  }\n\n  .process-details span#light {\n    font-weight: light;\n  }\n\n  .status {\n    line-height: 0px;\n    font-size: 2.5rem;\n  }\n\n  .status.ko {\n    color: red;\n  }\n\n  .status.working {\n    color: green;\n  }\n\n  .button-div {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n  }\n\n  .button-div .v-btn {\n    margin: 0.25rem;\n  }\n\n  .v-selection-control__wrapper {\n    margin-right: 10px;\n  }\n  \n  .v-label {\n    opacity: unset;\n  }\n\n  .v-selection-control--density-default {\n    --v-selection-control-size: 20px\n  }\n\n  .v-input__details {\n    display: none;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 330,
-        "y": 560,
+        "y": 700,
         "wires": [
             [
-                "ee91ce21184552fa"
+                "ee91ce21184552fa",
+                "db96d60c64af1ac5",
+                "f09c40752ec8a2c7"
             ]
         ]
     },
@@ -22953,10 +22970,10 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "payload": "{\"segmenterStatus\":\"Working\",\"hardwareStatus\":\"KO\"}",
+        "payload": "{\"segmenterStatus\":\"WIP\",\"hardwareStatus\":\"WIP\"}",
         "payloadType": "json",
         "x": 180,
-        "y": 560,
+        "y": 700,
         "wires": [
             [
                 "f8fd4c2266066516"
@@ -22988,7 +23005,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 980,
+        "x": 1020,
         "y": 540,
         "wires": [
             [
@@ -23010,7 +23027,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1270,
+        "x": 1310,
         "y": 540,
         "wires": [
             [
@@ -23031,7 +23048,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 1300,
+        "x": 1340,
         "y": 580,
         "wires": [
             [
@@ -23052,7 +23069,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1300,
+        "x": 1340,
         "y": 620,
         "wires": [
             [
@@ -23083,7 +23100,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1210,
+        "x": 1250,
         "y": 660,
         "wires": [
             [
@@ -23117,7 +23134,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 610,
+        "x": 650,
         "y": 560,
         "wires": [
             [
@@ -23138,7 +23155,7 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 1615,
+        "x": 1655,
         "y": 640,
         "wires": []
     },
@@ -23152,7 +23169,7 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 1615,
+        "x": 1655,
         "y": 680,
         "wires": []
     },
@@ -23176,7 +23193,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 900,
+        "x": 940,
         "y": 580,
         "wires": [
             [
@@ -23194,7 +23211,7 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 1015,
+        "x": 1055,
         "y": 580,
         "wires": []
     },
@@ -23218,7 +23235,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1500,
+        "x": 1540,
         "y": 640,
         "wires": [
             [
@@ -23246,7 +23263,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1500,
+        "x": 1540,
         "y": 680,
         "wires": [
             [
@@ -23365,6 +23382,302 @@
         ],
         "x": 1325,
         "y": 340,
+        "wires": []
+    },
+    {
+        "id": "db96d60c64af1ac5",
+        "type": "switch",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "If \"process.segmenter\"",
+        "property": "payload.process.segmenter",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 700,
+        "wires": [
+            [
+                "7f2ee7b686012414",
+                "d89ed47f6d7e9dba"
+            ]
+        ]
+    },
+    {
+        "id": "f09c40752ec8a2c7",
+        "type": "switch",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "If \"process.hardware\"",
+        "property": "payload.process.hardware",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 880,
+        "wires": [
+            [
+                "11937df3035d969c",
+                "9e6a649555edc114"
+            ]
+        ]
+    },
+    {
+        "id": "11937df3035d969c",
+        "type": "switch",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "property": "payload.action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "kill",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "restart",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "run",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 730,
+        "y": 880,
+        "wires": [
+            [
+                "8c30d2e418c37b59"
+            ],
+            [
+                "8f44a1dbd4582f33"
+            ],
+            [
+                "0bb61c9f0da42789"
+            ]
+        ]
+    },
+    {
+        "id": "7f2ee7b686012414",
+        "type": "switch",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "",
+        "property": "payload.action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "kill",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "restart",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "run",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 730,
+        "y": 700,
+        "wires": [
+            [
+                "0a2ccc577faeda7f"
+            ],
+            [
+                "4199ed3908449046"
+            ],
+            [
+                "328d7086265dee74"
+            ]
+        ]
+    },
+    {
+        "id": "4199ed3908449046",
+        "type": "exec",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "command": "docker restart apps_ps_backend_proc-segmenter-server-1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Restart process",
+        "x": 900,
+        "y": 700,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0a2ccc577faeda7f",
+        "type": "exec",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "command": "docker stop apps_ps_backend_proc-segmenter-server-1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Kill process",
+        "x": 890,
+        "y": 640,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "328d7086265dee74",
+        "type": "exec",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "command": "docker start apps_ps_backend_proc-segmenter-server-1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Run process",
+        "x": 890,
+        "y": 760,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8f44a1dbd4582f33",
+        "type": "exec",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "command": "sudo systemctl restart planktoscope-org.device-backend.controller-planktoscopehat.service",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Restart process",
+        "x": 900,
+        "y": 880,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8c30d2e418c37b59",
+        "type": "exec",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "command": "sudo systemctl stop planktoscope-org.device-backend.controller-planktoscopehat.service",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Kill process",
+        "x": 890,
+        "y": 820,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0bb61c9f0da42789",
+        "type": "exec",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "command": "sudo systemctl start planktoscope-org.device-backend.controller-planktoscopehat.service",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Run process",
+        "x": 890,
+        "y": 940,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9e6a649555edc114",
+        "type": "debug",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "Action on hardware",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "d89ed47f6d7e9dba",
+        "type": "debug",
+        "z": "a697ff46c6e7b7fb",
+        "g": "6dabc68acbd23974",
+        "name": "Action on segmenter",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 660,
         "wires": []
     }
 ]
