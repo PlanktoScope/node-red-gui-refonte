@@ -1,6 +1,4 @@
-# **Guide d’installation & d’utilisation de Node-RED (dashboard V2)**
-
-*Version du document : V1*
+# **Guide d’installation & d’utilisation de Node-RED (dashboard V3)**
 
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/PlanktoScope/node-red-gui-refonte/tree/feat/doc/README.en.md)
 
@@ -23,9 +21,9 @@ Node-RED est un outil de développement visuel pour connecter des dispositifs ma
 
 ## **Installation sur le PlanktoScope**
 
-1. **Accès au Dashboard V1 du PlanktoScope**
+1. **Accès au Dashboard V2 du PlanktoScope**
 
-Après avoir inséré une carte SD contenant l'image du PlanktoScope, la V1 du dashboard est disponible en ligne. Vous pouvez accéder à la landing page du PlanktoScope via l'adresse suivante :
+Après avoir inséré une carte SD contenant l'image du PlanktoScope, la V2 du dashboard est disponible en ligne. Vous pouvez accéder à la landing page du PlanktoScope via l'adresse suivante :
 
 **Landing page :** `http://<adresse-ip-du-planktoscope>`
 
@@ -33,7 +31,7 @@ Depuis cette page, plusieurs options sont disponibles, dont :
 
 * **Node-RED dashboard editor :** Ce lien vous donne accès à l'éditeur du dashboard. Cet éditeur vous permet de modifier et personnaliser les différents éléments du dashboard.
 
-* **Node-RED dashboard :** Ce lien vous permet de voir la version V1 du dashboard. Cependant, veuillez noter qu'après l'installation de la version V2, ce lien ne fonctionnera plus.
+* **Node-RED dashboard :** Ce lien vous permet de voir la version V2 du dashboard. Cependant, veuillez noter qu'après l'installation de la version V3, ce lien ne fonctionnera plus. Pour voir la nouvelle version vous aurais besoin de celui-ci `http://92.167.184.163:1880/ps/node-red-v2/dashboard/`.
 
 
 2. **Démarrage du PlanktoScope**
@@ -122,7 +120,7 @@ Après avoir démarré Node-RED, vous serez accueilli par l'interface d'édition
     <img src="image-doc/Screen-2.png" alt="Screen 2" width="30%"/>
 </p>
 
-**Screen 1 :** Pour récupérer le Dashboard V2, veuillez cliquer sur Clone repository. 
+**Screen 1 :** Pour récupérer le Dashboard V3, veuillez cliquer sur Clone repository. 
 
 **Screen 2 :** Veuillez remplir Username et Email par celles que vous souhaitez *(ex : Mettre vos identifiants Github actuel)*. Ces informations seront celles qui vous identifient lors des push/pull. Puis cliquez sur Next.
 
@@ -175,13 +173,10 @@ Une fois toutes ses étapes finies, vous allez devoir redémarrer node-RED comme
 <div style="display: flex">
     <p align="center">
         <img src="image-doc/Screen-13.png" alt="Screen 13" width="45%"/>
-        <img src="image-doc/Screen-14.png" alt="Screen 14" width="45%"/>
     </p>
 </div>
 
-**Screen 13 :** Il devrait vous rester une dépendance qui serait downloadfile. Ensuite cliquez sur Manage project dependencies.
-
-**Screen 14 :** Ici vous avez la liste complète des dépendances. Vous allez devoir supprimer toutes celles qui ne sont plus utilisées. Dans notre cas : 
+**Screen 13 :** Ici vous avez la liste complète des dépendances. Vous allez devoir supprimer toutes celles qui ne sont plus utilisées. Dans notre cas : 
 - node-red-contrib-dir2files,  
 - node-red-contrib-gpsd,  
 - node-red-contrib-python3-function,  
@@ -190,4 +185,4 @@ Une fois toutes ses étapes finies, vous allez devoir redémarrer node-RED comme
 - node-red-node-pi-gpio,  
 - node-red-node-ui-list
 
-Puis allez dans l’onglet Install cherchez et installez le module downloadfile *(@prescient-devices/node-red-contrib-downloadfile).* Une fois installé, vous avez besoin de rafraîchir la page et votre installation de la V2 en ligne avec github project est terminée.
+Une fois fini, vous avez besoin de rafraîchir la page et votre installation de la V3 en ligne avec github project est terminée.

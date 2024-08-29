@@ -1,6 +1,4 @@
-# Node-RED (dashboard V2) installation & user guide
-
-*Document version : V1*
+# Node-RED (dashboard V3) installation & user guide
 
 [![en](https://img.shields.io/badge/lang-fr-red.svg)](https://github.com/PlanktoScope/node-red-gui-refonte/tree/feat/doc/README.md)
 
@@ -23,9 +21,9 @@ Node-RED is a visual development tool for connecting hardware devices, APIs and 
 
 ## **Installation on the PlanktoScope**.
 
-1. **Accessing the PlanktoScope V1 Dashboard** (in French)
+1. **Accessing the PlanktoScope V2 Dashboard** (in French)
 
-After inserting an SD card containing the PlanktoScope image, the V1 dashboard is available online. You can access the PlanktoScope landing page at the following address:
+After inserting an SD card containing the PlanktoScope image, the V2 dashboard is available online. You can access the PlanktoScope landing page at the following address:
 
 **Landing page :** `http://<planktoscope-ip-address>`
 
@@ -33,7 +31,7 @@ From this page, several options are available, including :
 
 * **Node-RED dashboard editor :** This link gives you access to the dashboard editor. This editor allows you to modify and customize the various elements of the dashboard.
 
-* **Node-RED dashboard:** This link takes you to the V1 version of the dashboard. However, please note that once you have installed version V2, this link will no longer work.
+* **Node-RED dashboard:** This link takes you to the V2 version of the dashboard. However, please note that once you have installed version V3, this link will no longer work. To see the new version you'll need this one `http://92.167.184.163:1880/ps/node-red-v2/dashboard/`.
 
 
 2. **Starting PlanktoScope** : Start by opening a terminal on your local machine.
@@ -122,7 +120,7 @@ After starting Node-RED, you'll be greeted by the editing interface, where you c
     <img src="image-doc/Screen-2.png" alt="Screen 2" width="30%"/>
 </p>
 
-**Screen 1 :** To retrieve Dashboard V2, please click on Clone repository. 
+**Screen 1 :** To retrieve Dashboard V3, please click on Clone repository. 
 
 **Screen 2 :** Please fill in Username and Email with the ones you want *(e.g. Put in your current Github credentials)*. This information will be used to identify you during push/pull operations. Then click on Next.
 
@@ -174,13 +172,10 @@ Once all these steps have been completed, you'll need to restart node-RED as you
 <div style="display: flex">
     <p align="center">
         <img src="image-doc/Screen-13.png" alt="Screen 13" width="45%"/>
-        <img src="image-doc/Screen-14.png" alt="Screen 14" width="45%"/>
     </p>
 </div>
 
-**Screen 13:** You should have one dependency left: downloadfile. Then click on Manage project dependencies.
-
-**Screen 14:** Here you have the complete list of dependencies. You'll need to delete any that are no longer in use. In our case : 
+**Screen 13:** Here you have the complete list of dependencies. You'll need to delete any that are no longer in use. In our case : 
 - node-red-contrib-dir2files,  
 - node-red-contrib-gpsd,  
 - node-red-contrib-python3-function,  
@@ -189,4 +184,4 @@ Once all these steps have been completed, you'll need to restart node-RED as you
 - node-red-node-pi-gpio,  
 - node-red-node-ui-list
 
-Then go to the Install tab, search for and install the downloadfile module *(@prescient-devices/node-red-contrib-downloadfile).* Once installed, you'll need to refresh the page and your online V2 installation with github project is complete.
+Once finished, you'll need to refresh the page and your online V3 installation with github project is complete.
