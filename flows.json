@@ -1508,8 +1508,8 @@
         "nodes": [
             "ab161f05c3e4b336"
         ],
-        "x": 1074,
-        "y": 1259,
+        "x": 294,
+        "y": 1159,
         "w": 192,
         "h": 82
     },
@@ -1955,6 +1955,96 @@
         "h": 82
     },
     {
+        "id": "d3ea2957fe42b850",
+        "type": "group",
+        "z": "e988301e60e4b458",
+        "name": "Page CSS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4946452bd6ad426d"
+        ],
+        "x": 159,
+        "y": 299,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "f63811ec890a44ab",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "Page CSS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "9413e05a5d2f5e7e"
+        ],
+        "x": 124,
+        "y": 139,
+        "w": 272,
+        "h": 82
+    },
+    {
+        "id": "adf65ce29d5c8a20",
+        "type": "group",
+        "z": "00a14f98244d252e",
+        "name": "Page CSS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b17fd9172fe5e9ff"
+        ],
+        "x": 84,
+        "y": 239,
+        "w": 292,
+        "h": 82
+    },
+    {
+        "id": "342708c6c3fec39e",
+        "type": "group",
+        "z": "5047c566973ee3a1",
+        "name": "Page CSS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "6e6de8c26bc039d5"
+        ],
+        "x": 104,
+        "y": 279,
+        "w": 272,
+        "h": 82
+    },
+    {
+        "id": "d77c3b592ad71e19",
+        "type": "group",
+        "z": "b70df4b6cc88d09a",
+        "name": "Page CSS",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "a609c0d38f83cf71"
+        ],
+        "x": 84,
+        "y": 239,
+        "w": 272,
+        "h": 82
+    },
+    {
         "id": "b08415909e5dc4da",
         "type": "group",
         "z": "e988301e60e4b458",
@@ -2340,94 +2430,28 @@
         "h": 602
     },
     {
-        "id": "d3ea2957fe42b850",
-        "type": "group",
-        "z": "e988301e60e4b458",
-        "name": "Page CSS",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "4946452bd6ad426d"
-        ],
-        "x": 159,
-        "y": 299,
-        "w": 252,
-        "h": 82
-    },
-    {
-        "id": "f63811ec890a44ab",
+        "id": "1ee1c9aa09d0bbcb",
         "type": "group",
         "z": "70f558eb9d60b6fc",
-        "name": "Page CSS",
+        "name": "Basic exemple",
         "style": {
             "stroke": "#000000",
             "label": true,
             "color": "#000000"
         },
         "nodes": [
-            "9413e05a5d2f5e7e"
+            "b5fe8f07ffca93af",
+            "4cfa923ea2a75c0c",
+            "11ef71995338ebf2",
+            "3442a9a7f346f637",
+            "bff9ae35feba33fc",
+            "4a4b4954e084dae2",
+            "3127fdb1519978ed"
         ],
         "x": 124,
-        "y": 139,
-        "w": 272,
-        "h": 82
-    },
-    {
-        "id": "adf65ce29d5c8a20",
-        "type": "group",
-        "z": "00a14f98244d252e",
-        "name": "Page CSS",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "b17fd9172fe5e9ff"
-        ],
-        "x": 84,
-        "y": 239,
-        "w": 292,
-        "h": 82
-    },
-    {
-        "id": "342708c6c3fec39e",
-        "type": "group",
-        "z": "5047c566973ee3a1",
-        "name": "Page CSS",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "6e6de8c26bc039d5"
-        ],
-        "x": 104,
-        "y": 279,
-        "w": 272,
-        "h": 82
-    },
-    {
-        "id": "d77c3b592ad71e19",
-        "type": "group",
-        "z": "b70df4b6cc88d09a",
-        "name": "Page CSS",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "a609c0d38f83cf71"
-        ],
-        "x": 84,
-        "y": 239,
-        "w": 272,
-        "h": 82
+        "y": 1239,
+        "w": 882,
+        "h": 142
     },
     {
         "id": "cae0178a8a69f787",
@@ -7004,119 +7028,6 @@
         ]
     },
     {
-        "id": "b5fe8f07ffca93af",
-        "type": "ui-template",
-        "z": "2d41a8ed5aea3449",
-        "d": true,
-        "group": "cc5bd9fa98de3240",
-        "page": "",
-        "ui": "",
-        "name": "Starting point",
-        "order": 1,
-        "width": "12",
-        "height": "1",
-        "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>Starting point</h2>\n    <div class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-date\">Date</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedDate\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"date\"\n        class=\"my-v-text\"\n      ></v-text-field>\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-time\">Time</label>\n      </div>\n      <v-text-field\n        v-model=\"selectedTime\"\n        @input=\"updatePayload\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"time\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-if=\"coordFormat === 'Decimal degrees (DD)'\" class=\"horizontal-alignment\">\n      <div class=\"label-bloc-3\">\n        <label class=\"v-label label-DD\">GPS</label>\n      </div>\n      <v-text-field\n        v-model=\"longitude\"\n        @input=\"updatePayload\"\n        label=\"Longitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text spacing\"\n      ></v-text-field>\n      <v-text-field\n        v-model=\"latitude\"\n        @input=\"updatePayload\"\n        label=\"Latitude\"\n        variant=\"outlined\"\n        density=\"compact\"\n        type=\"number\"\n        class=\"my-v-text\"\n      ></v-text-field>\n    </div>\n    <div v-else class=\"horizontal-alignment\">\n      <div class=\"dms\">\n        <div class=\"label-bloc-3\">\n          <label class=\"v-label my-label-gps\">GPS</label>\n        </div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLongitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLongitude.direction\"\n          @input=\"updatePayload\"\n          label=\"W-E\"\n          :items=\"['W', 'E']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n        <div class=\"grid-container\"><v-icon icon=\"mdi-minus\" size=\"large\"></v-icon></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.degrees\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">°</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.minutes\"\n          @input=\"updatePayload\"\n          label=\"XX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">'</p></div>\n        <v-text-field\n          v-model.number=\"dmsLatitude.seconds\"\n          @input=\"updatePayload\"\n          label=\"XX.XXX\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"my-v-text v-text-format-2\"\n        ></v-text-field>\n        <div class=\"p-container\"><p id=\"dms-format\">\"</p></div>\n        <v-select\n          v-model=\"dmsLatitude.direction\"\n          @input=\"updatePayload\"\n          label=\"N-S\"\n          :items=\"['N', 'S']\"\n          variant=\"outlined\"\n          density=\"compact\"\n          class=\"v-select-compas\"\n        ></v-select>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      coordFormat: \"\",\n      selectedDate: \"\",\n      selectedTime: \"\",\n      longitude: null,\n      latitude: null,\n      dmsLongitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'E',\n      },\n      dmsLatitude: {\n        degrees: null,\n        minutes: null,\n        seconds: null,\n        direction: 'N',\n      },\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          // Update fields based on the payload\n          if (payload.coordFormat !== undefined) {\n            this.coordFormat = payload.coordFormat;\n          }\n          if (payload.selectedDate !== undefined) {\n            this.selectedDate = payload.selectedDate;\n          }\n          if (payload.selectedTime !== undefined) {\n            this.selectedTime = payload.selectedTime;\n          }\n          if (payload.gps) {\n            if (this.coordFormat === 'Decimal degrees (DD)') {\n              if (payload.gps.longitude !== undefined) {\n                this.longitude = payload.gps.longitude;\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.latitude = payload.gps.latitude;\n              }\n            } else {\n              if (payload.gps.longitude !== undefined) {\n                this.dmsLongitude = {\n                  ...this.dmsLongitude,\n                  ...payload.gps.longitude\n                };\n              }\n              if (payload.gps.latitude !== undefined) {\n                this.dmsLatitude = {\n                  ...this.dmsLatitude,\n                  ...payload.gps.latitude\n                };\n              }\n            }\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  },\n  methods: {\n    updatePayload() {\n      const payload = {\n        date: this.selectedDate,\n        time: this.selectedTime,\n        gps: this.coordFormat === 'Decimal degrees (DD)'\n          ? { longitude: this.longitude, latitude: this.latitude }\n          : {\n              longitude: this.dmsLongitude,\n              latitude: this.dmsLatitude,\n            },\n      };\n      this.send({ payload });\n    }\n  },\n};\n</script>\n\n<style scoped>\n  h2 {\n    color: #0a6eca !important;\n  }\n\n  .spacing {\n    margin-right: 15px !important;\n  }\n\n  .my-v-text > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .v-select-compas > .v-input__control {\n    background-color: #ffffff !important;\n    border-radius: 5px !important;\n  }\n\n  .container {\n    padding: 10px !important;\n    border: solid black 1px !important;\n    border-radius: 5px !important;\n  }\n\n  .grid-container {\n    display: grid !important;\n    height: 5vh !important;\n  }\n\n  .my-label-gps {\n    font-weight: bold !important;\n    flex: 2 !important;\n    margin-bottom: 20px !important;\n    font-size: 1vw !important;\n  }\n\n  .label-DD {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-date {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    font-size: 1vw;\n  }\n\n  .label-time {\n    font-weight: bold !important;\n    margin-bottom: 20px !important;\n    padding-right: 15px !important;\n    padding-left: 25px !important;\n    font-size: 1vw;\n  }\n\n  .horizontal-alignment {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    justify-content: space-between !important;\n  }\n\n  .label-bloc-3 {\n    flex: 0.1;\n    display: flex;\n    justify-content: left;\n    align-items: center;\n  }\n\n  .p-container {\n    display: inline-block !important;\n    height: 100px !important;\n  }\n\n  p#dms-format {\n    horizontal-align: top !important;\n    display: inline-block !important;\n    font-weight: bolder !important;\n    font-size: 20px !important\n  }\n\n  .v-select-compas {\n    min-width: 95px !important;\n  }\n\n  .v-text-format {\n  }\n\n  .v-text-format-2 {\n    min-width: 90px !important;\n  }\n\n  .dms {\n    display: flex !important;\n    flex: 1 !important;\n    align-items: center !important;\n    max-width: 100% !important;\n  }\n</style>",
-        "storeOutMessages": true,
-        "passthru": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 720,
-        "y": 1300,
-        "wires": [
-            [
-                "3442a9a7f346f637"
-            ]
-        ]
-    },
-    {
-        "id": "4cfa923ea2a75c0c",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "d": true,
-        "name": "",
-        "valuesConfig": "f90d50097c6eb575",
-        "valuesConfigName": "acq",
-        "valueId": "b33a7620-63b8-11ef-896a-298ca7d12c69",
-        "value": "volume",
-        "command": "read",
-        "msgProperty": "payload.selectedDate",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 530,
-        "y": 1300,
-        "wires": [
-            [
-                "b5fe8f07ffca93af"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "11ef71995338ebf2",
-        "type": "inject",
-        "z": "2d41a8ed5aea3449",
-        "d": true,
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "2",
-        "topic": "",
-        "x": 370,
-        "y": 1300,
-        "wires": [
-            [
-                "4cfa923ea2a75c0c"
-            ]
-        ]
-    },
-    {
-        "id": "3442a9a7f346f637",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "d": true,
-        "name": "",
-        "valuesConfig": "f90d50097c6eb575",
-        "valuesConfigName": "acq",
-        "valueId": "b33a7620-63b8-11ef-896a-298ca7d12c69",
-        "value": "volume",
-        "command": "write",
-        "msgProperty": "payload.date",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 910,
-        "y": 1300,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
         "id": "ab161f05c3e4b336",
         "type": "ui-template",
         "z": "2d41a8ed5aea3449",
@@ -7135,8 +7046,8 @@
         "resendOnRefresh": true,
         "templateScope": "site:style",
         "className": "",
-        "x": 1170,
-        "y": 1300,
+        "x": 390,
+        "y": 1200,
         "wires": [
             []
         ]
@@ -9723,7 +9634,7 @@
         "page": "",
         "ui": "",
         "name": "Starting point",
-        "order": 2,
+        "order": 1,
         "width": "12",
         "height": "1",
         "head": "",
@@ -14428,6 +14339,152 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "b5fe8f07ffca93af",
+        "type": "ui-template",
+        "z": "70f558eb9d60b6fc",
+        "g": "1ee1c9aa09d0bbcb",
+        "group": "0e652f1b8a07fae8",
+        "page": "",
+        "ui": "",
+        "name": "Template exemple",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"acquisition-container\">\n    <h2>Template exemple</h2>\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Volume</label>\n        <v-text-field\n          v-model.number=\"volume\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"acquisition-my-v-text\"\n        ></v-text-field>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      volume: \"\",\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          if (payload.volume !== undefined) {\n            this.volume = payload.volume;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  }\n};\n</script>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 690,
+        "y": 1280,
+        "wires": [
+            [
+                "3442a9a7f346f637"
+            ]
+        ]
+    },
+    {
+        "id": "4cfa923ea2a75c0c",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "1ee1c9aa09d0bbcb",
+        "name": "",
+        "valuesConfig": "f90d50097c6eb575",
+        "valuesConfigName": "acq",
+        "valueId": "b33a7620-63b8-11ef-896a-298ca7d12c69",
+        "value": "volume",
+        "command": "read",
+        "msgProperty": "payload.volume",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 490,
+        "y": 1280,
+        "wires": [
+            [
+                "b5fe8f07ffca93af"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "11ef71995338ebf2",
+        "type": "inject",
+        "z": "70f558eb9d60b6fc",
+        "g": "1ee1c9aa09d0bbcb",
+        "name": "Run the flow of nodes",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "x": 270,
+        "y": 1280,
+        "wires": [
+            [
+                "4cfa923ea2a75c0c"
+            ]
+        ]
+    },
+    {
+        "id": "3442a9a7f346f637",
+        "type": "persistent value",
+        "z": "70f558eb9d60b6fc",
+        "g": "1ee1c9aa09d0bbcb",
+        "name": "",
+        "valuesConfig": "f90d50097c6eb575",
+        "valuesConfigName": "acq",
+        "valueId": "b33a7620-63b8-11ef-896a-298ca7d12c69",
+        "value": "volume",
+        "command": "write",
+        "msgProperty": "payload.volume",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 890,
+        "y": 1280,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bff9ae35feba33fc",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "1ee1c9aa09d0bbcb",
+        "name": "acq - volume [read]",
+        "info": "Cette node permet de récupérer la donnée \"volume\" dans la liste \"acq\".",
+        "x": 490,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "4a4b4954e084dae2",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "1ee1c9aa09d0bbcb",
+        "name": "Template exemple",
+        "info": "",
+        "x": 690,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "3127fdb1519978ed",
+        "type": "comment",
+        "z": "70f558eb9d60b6fc",
+        "g": "1ee1c9aa09d0bbcb",
+        "name": "acq - volume [write]",
+        "info": "Cette node permet de stocker, d'écrire la nouvelle donnée \"volume\" dans la liste \"acq\" pour remplacer l'ancienne.",
+        "x": 890,
+        "y": 1340,
+        "wires": []
     },
     {
         "id": "af3cbcd9f5f35be3",
