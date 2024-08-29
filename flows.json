@@ -945,11 +945,16 @@
             "7a6313a038e7fb05",
             "53e24b200c3a5f0f",
             "ad4d0fbf355e167c",
-            "79716f3ce5c936ab"
+            "79716f3ce5c936ab",
+            "51db7d6f6e96f676",
+            "6de2b170e3f9e0b7",
+            "1fc5b6ec62410d82",
+            "ddb990253977c127",
+            "7713a5a8e363c8a4"
         ],
         "x": 54,
         "y": 639,
-        "w": 1032,
+        "w": 1612,
         "h": 382
     },
     {
@@ -3114,6 +3119,15 @@
                 "datatype": "str",
                 "default": "",
                 "description": "Selecte model of the planktoscope",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "665e46c0-65e7-11ef-b953-ebeb13d27894",
+                "name": "led_state",
+                "datatype": "str",
+                "default": "false",
+                "description": "State of the LED",
                 "scope": "global",
                 "storage": "default"
             }
@@ -8714,7 +8728,7 @@
         "width": "4",
         "height": "2",
         "head": "",
-        "format": "<template>\n  <div class=\"container\">\n    <h2>LED</h2>\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\">\n        <v-icon left>mdi-led-off</v-icon>OFF\n      </v-btn>\n      <v-btn style=\"padding: 10px;\">\n        <v-icon right>mdi-led-on</v-icon>ON\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      toggle: null\n    };\n  },\n  watch: {\n    toggle(newVal) {\n      if (newVal === 0) {\n        this.send({\n          payload: {\n            action: \"off\",\n            led: 1\n          },\n          topic: 'light'\n        });\n      } else if (newVal === 1) {\n        this.send({\n          payload: {\n            action: \"on\",\n            led: 1\n          },\n          topic: 'light'\n        });\n      }\n    }\n  }\n};\n</script>",
+        "format": "<template>\n  <div class=\"container\">\n    <h2>LED</h2>\n    <v-btn-toggle v-model=\"toggle\" variant=\"outlined\" density=\"comfortable\" color=\"#0a6eca\" divided class=\"toggle\">\n      <v-btn style=\"padding: 10px;\">\n        <v-icon left>mdi-led-off</v-icon>OFF\n      </v-btn>\n      <v-btn style=\"padding: 10px;\">\n        <v-icon right>mdi-led-on</v-icon>ON\n      </v-btn>\n    </v-btn-toggle>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      toggle: null,\n      led_state: null\n    };\n  },\n  watch: {\n    toggle(newVal) {\n      if (newVal === 0) {\n        this.send({\n          payload: {\n            action: \"off\",\n            led: 1\n          },\n          topic: 'light'\n        });\n      } else if (newVal === 1) {\n        this.send({\n          payload: {\n            action: \"on\",\n            led: 1\n          },\n          topic: 'light'\n        });\n      }\n    },\n    '$socket': {\n      handler(newVal, oldVal) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.led_state) {\n            this.led_state = msg.led_state;\n            \n            if (this.led_state == \"on\") {\n                this.toggle = 1;\n            } else {\n                this.toggle = 0;\n            }\n          }\n        });\n      },\n      deep: true,\n      immediate: true\n    }\n  }\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
@@ -8897,7 +8911,7 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 300,
+        "x": 310,
         "y": 860,
         "wires": [
             [
@@ -8921,7 +8935,8 @@
             "d15da1418343d845",
             "ba4e5b0a18adb969",
             "e6eaab7bd19e4bfd",
-            "ea3180360e6e76c0"
+            "ea3180360e6e76c0",
+            "6de2b170e3f9e0b7"
         ],
         "x": 215,
         "y": 60,
@@ -9101,8 +9116,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1010,
-        "y": 840,
+        "x": 1030,
+        "y": 820,
         "wires": []
     },
     {
@@ -9125,7 +9140,8 @@
         "y": 840,
         "wires": [
             [
-                "13dc7e99c3b3cafc"
+                "13dc7e99c3b3cafc",
+                "ddb990253977c127"
             ]
         ]
     },
@@ -9143,7 +9159,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 360,
+        "x": 370,
         "y": 820,
         "wires": [
             [
@@ -9314,7 +9330,8 @@
             "d15da1418343d845",
             "ba4e5b0a18adb969",
             "e6eaab7bd19e4bfd",
-            "ea3180360e6e76c0"
+            "ea3180360e6e76c0",
+            "6de2b170e3f9e0b7"
         ],
         "x": 415,
         "y": 60,
@@ -9446,6 +9463,145 @@
         "x": 1065,
         "y": 420,
         "wires": []
+    },
+    {
+        "id": "51db7d6f6e96f676",
+        "type": "persistent value",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "665e46c0-65e7-11ef-b953-ebeb13d27894",
+        "value": "led_state",
+        "command": "read",
+        "msgProperty": "led_state",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 320,
+        "y": 920,
+        "wires": [
+            [
+                "e76753ed4e6ec711"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6de2b170e3f9e0b7",
+        "type": "link in",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "link in 238",
+        "links": [
+            "2f82ccfd843002d9",
+            "b55889accd88ab53",
+            "01f2bfc021ad0daf"
+        ],
+        "x": 95,
+        "y": 920,
+        "wires": [
+            [
+                "51db7d6f6e96f676"
+            ]
+        ]
+    },
+    {
+        "id": "1fc5b6ec62410d82",
+        "type": "persistent value",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "",
+        "valuesConfig": "3da386409fa03189",
+        "valuesConfigName": "Setting Metadata",
+        "valueId": "665e46c0-65e7-11ef-b953-ebeb13d27894",
+        "value": "led_state",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1500,
+        "y": 860,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ddb990253977c127",
+        "type": "switch",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "If \"payload.action\" ",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "light",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1070,
+        "y": 860,
+        "wires": [
+            [
+                "7713a5a8e363c8a4"
+            ]
+        ]
+    },
+    {
+        "id": "7713a5a8e363c8a4",
+        "type": "change",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.action",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 860,
+        "wires": [
+            [
+                "1fc5b6ec62410d82"
+            ]
+        ]
     },
     {
         "id": "c3c3454d430487e0",
