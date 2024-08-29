@@ -1537,9 +1537,9 @@
             "5aab3d77f5f76bba",
             "c813ee0363b277bb"
         ],
-        "x": 94,
+        "x": 104,
         "y": 379,
-        "w": 1392,
+        "w": 1372,
         "h": 189.5
     },
     {
@@ -2045,6 +2045,30 @@
         "h": 82
     },
     {
+        "id": "1ee1c9aa09d0bbcb",
+        "type": "group",
+        "z": "70f558eb9d60b6fc",
+        "name": "Basic exemple",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b5fe8f07ffca93af",
+            "4cfa923ea2a75c0c",
+            "11ef71995338ebf2",
+            "3442a9a7f346f637",
+            "bff9ae35feba33fc",
+            "4a4b4954e084dae2",
+            "3127fdb1519978ed"
+        ],
+        "x": 124,
+        "y": 1239,
+        "w": 922,
+        "h": 142
+    },
+    {
         "id": "b08415909e5dc4da",
         "type": "group",
         "z": "e988301e60e4b458",
@@ -2428,30 +2452,6 @@
         "y": 299,
         "w": 462,
         "h": 602
-    },
-    {
-        "id": "1ee1c9aa09d0bbcb",
-        "type": "group",
-        "z": "70f558eb9d60b6fc",
-        "name": "Basic exemple",
-        "style": {
-            "stroke": "#000000",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "b5fe8f07ffca93af",
-            "4cfa923ea2a75c0c",
-            "11ef71995338ebf2",
-            "3442a9a7f346f637",
-            "bff9ae35feba33fc",
-            "4a4b4954e084dae2",
-            "3127fdb1519978ed"
-        ],
-        "x": 124,
-        "y": 1239,
-        "w": 882,
-        "h": 142
     },
     {
         "id": "cae0178a8a69f787",
@@ -13177,7 +13177,8 @@
             "54b253242d0655f7",
             "a3ef94a3cec0838d",
             "83f49a7b01087a92",
-            "355739aa88762397"
+            "355739aa88762397",
+            "26e30a0fdffbd301"
         ],
         "x": 285,
         "y": 80,
@@ -13548,7 +13549,8 @@
         "name": "link out 103",
         "mode": "link",
         "links": [
-            "4317b389f6b1b156"
+            "4317b389f6b1b156",
+            "26e30a0fdffbd301"
         ],
         "x": 485,
         "y": 80,
@@ -14353,13 +14355,13 @@
         "width": "3",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"acquisition-container\">\n    <h2>Template exemple</h2>\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Volume</label>\n        <v-text-field\n          v-model.number=\"volume\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          class=\"acquisition-my-v-text\"\n        ></v-text-field>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      volume: \"\",\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          if (payload.volume !== undefined) {\n            this.volume = payload.volume;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  }\n};\n</script>",
+        "format": "<template>\n  <div class=\"acquisition-container\">\n    <h2>Template exemple</h2>\n    <div class=\"acquisition-horizontal-alignment\">\n      <label class=\"v-label v-slider__label acquisition-my-label\">Volume</label>\n        <v-text-field\n          v-model.number=\"volume\"\n          variant=\"outlined\"\n          density=\"compact\"\n          type=\"number\"\n          @change=\"sendVolume\"\n          class=\"acquisition-my-v-text\"\n        ></v-text-field>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: ['msg'],\n  data() {\n    return {\n      volume: \"\",\n    };\n  },\n  watch: {\n    msg: {\n      handler(newVal) {\n        if (newVal.payload) {\n          const { payload } = newVal;\n\n          if (payload.volume !== undefined) {\n            this.volume = payload.volume;\n          }\n        }\n      },\n      deep: true,\n      immediate: true,\n    },\n  }, \n  methods: {\n    sendVolume() {\n        this.send({\n            payload: {\n                volume: this.volume\n            }\n        })\n    },\n  }\n};\n</script>",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 690,
+        "x": 730,
         "y": 1280,
         "wires": [
             [
@@ -14392,7 +14394,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 490,
+        "x": 530,
         "y": 1280,
         "wires": [
             [
@@ -14406,14 +14408,14 @@
         "type": "inject",
         "z": "70f558eb9d60b6fc",
         "g": "1ee1c9aa09d0bbcb",
-        "name": "Run the flow of nodes",
+        "name": "Manual run the flow of nodes",
         "props": [],
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "2",
         "topic": "",
-        "x": 270,
+        "x": 290,
         "y": 1280,
         "wires": [
             [
@@ -14446,7 +14448,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 890,
+        "x": 930,
         "y": 1280,
         "wires": [
             [],
@@ -14460,7 +14462,7 @@
         "g": "1ee1c9aa09d0bbcb",
         "name": "acq - volume [read]",
         "info": "Cette node permet de récupérer la donnée \"volume\" dans la liste \"acq\".",
-        "x": 490,
+        "x": 530,
         "y": 1340,
         "wires": []
     },
@@ -14471,7 +14473,7 @@
         "g": "1ee1c9aa09d0bbcb",
         "name": "Template exemple",
         "info": "",
-        "x": 690,
+        "x": 730,
         "y": 1340,
         "wires": []
     },
@@ -14482,7 +14484,7 @@
         "g": "1ee1c9aa09d0bbcb",
         "name": "acq - volume [write]",
         "info": "Cette node permet de stocker, d'écrire la nouvelle donnée \"volume\" dans la liste \"acq\" pour remplacer l'ancienne.",
-        "x": 890,
+        "x": 930,
         "y": 1340,
         "wires": []
     },
