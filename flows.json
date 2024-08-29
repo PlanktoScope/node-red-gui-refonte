@@ -140,7 +140,7 @@
         ],
         "x": 54,
         "y": 319,
-        "w": 1192,
+        "w": 1302,
         "h": 202
     },
     {
@@ -190,7 +190,7 @@
         ],
         "x": 124,
         "y": 239,
-        "w": 1192,
+        "w": 1302,
         "h": 202
     },
     {
@@ -240,7 +240,7 @@
         ],
         "x": 159,
         "y": 399,
-        "w": 1192,
+        "w": 1307,
         "h": 202
     },
     {
@@ -386,7 +386,7 @@
         ],
         "x": 84,
         "y": 339,
-        "w": 1192,
+        "w": 1302,
         "h": 202
     },
     {
@@ -402,8 +402,8 @@
         "nodes": [
             "c356e55229da7519"
         ],
-        "x": 54,
-        "y": 539,
+        "x": 44,
+        "y": 519,
         "w": 192,
         "h": 82
     },
@@ -428,10 +428,10 @@
             "61aef8544c46a619",
             "c11d292985db0bd7"
         ],
-        "x": 54,
+        "x": 44,
         "y": 359,
-        "w": 1242,
-        "h": 162
+        "w": 1362,
+        "h": 142
     },
     {
         "id": "d6362eced379ae80",
@@ -448,8 +448,8 @@
             "77b032808eca46e4",
             "0e78c20a20947374"
         ],
-        "x": 54,
-        "y": 639,
+        "x": 44,
+        "y": 619,
         "w": 522,
         "h": 82
     },
@@ -587,7 +587,7 @@
         ],
         "x": 104,
         "y": 379,
-        "w": 1252,
+        "w": 1362,
         "h": 142
     },
     {
@@ -705,7 +705,7 @@
         ],
         "x": 84,
         "y": 339,
-        "w": 1152,
+        "w": 1262,
         "h": 142
     },
     {
@@ -833,7 +833,7 @@
         ],
         "x": 84,
         "y": 239,
-        "w": 1172,
+        "w": 1282,
         "h": 142
     },
     {
@@ -860,13 +860,12 @@
             "7fd6408cf7e06683",
             "d015e87016b2d964",
             "7ba43cf89d3a06cd",
-            "b96b929fdeaef889",
-            "31e5b0e4d97debdb"
+            "b96b929fdeaef889"
         ],
         "x": 84,
         "y": 499,
-        "w": 1392,
-        "h": 182
+        "w": 1572,
+        "h": 222
     },
     {
         "id": "cec7b5c348ba4e10",
@@ -950,7 +949,7 @@
         ],
         "x": 54,
         "y": 639,
-        "w": 912,
+        "w": 1032,
         "h": 382
     },
     {
@@ -974,7 +973,6 @@
             "05a7e133906e9ca9",
             "d4c9cf552809b2e8",
             "1163a00d165fb437",
-            "77c2eece35acdabc",
             "8ded6e7b8d7f625d",
             "7116c7bc43621124",
             "f66af7340c87d7de",
@@ -982,8 +980,8 @@
             "603a844dea8314bb",
             "434fc82c807acbb4"
         ],
-        "x": 54,
-        "y": 739,
+        "x": 44,
+        "y": 719,
         "w": 902,
         "h": 402
     },
@@ -1220,7 +1218,7 @@
         ],
         "x": 54,
         "y": 239,
-        "w": 992,
+        "w": 1052,
         "h": 142
     },
     {
@@ -1390,7 +1388,7 @@
         ],
         "x": 124,
         "y": 559,
-        "w": 1432,
+        "w": 1562,
         "h": 382
     },
     {
@@ -1426,7 +1424,7 @@
         "x": 84,
         "y": 699,
         "w": 1472,
-        "h": 222
+        "h": 282
     },
     {
         "id": "cd7cd2c05c7f55bf",
@@ -1451,7 +1449,7 @@
         ],
         "x": 84,
         "y": 559,
-        "w": 1052,
+        "w": 1172,
         "h": 122
     },
     {
@@ -1489,7 +1487,7 @@
             "19963a0df50a04b6"
         ],
         "x": 84,
-        "y": 959,
+        "y": 999,
         "w": 2152,
         "h": 282
     },
@@ -1677,7 +1675,7 @@
             "2b081acaeb1f304d",
             "71876f75ae3e4ba6"
         ],
-        "x": 54,
+        "x": 44,
         "y": 59,
         "w": 290,
         "h": 82
@@ -1696,7 +1694,7 @@
             "0007fbbf1742c6e8",
             "2cc4d8075a852a14"
         ],
-        "x": 54,
+        "x": 44,
         "y": 159,
         "w": 245,
         "h": 82
@@ -1949,7 +1947,7 @@
         "nodes": [
             "e8d666037e2d240a"
         ],
-        "x": 54,
+        "x": 44,
         "y": 259,
         "w": 232,
         "h": 82
@@ -7206,7 +7204,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
         "value": "first-visit",
         "command": "write",
@@ -7388,7 +7386,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "write",
@@ -7441,7 +7439,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "read",
@@ -7475,7 +7473,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "write",
@@ -7507,7 +7505,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
         "value": "operator_email",
         "command": "write",
@@ -7539,7 +7537,7 @@
         "g": "5c8dc5f5e1904bf8",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
         "value": "first-visit",
         "command": "read",
@@ -7599,7 +7597,7 @@
         "g": "96bb330907da5bdb",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "DATA",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
         "value": "first-visit",
         "command": "read",
@@ -7617,7 +7615,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 460,
+        "x": 480,
         "y": 300,
         "wires": [
             [
@@ -7645,7 +7643,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 650,
+        "x": 710,
         "y": 300,
         "wires": [
             [
@@ -7666,7 +7664,7 @@
         "links": [
             "4c23fa82d4496339"
         ],
-        "x": 755,
+        "x": 815,
         "y": 280,
         "wires": []
     },
@@ -7690,7 +7688,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
+        "x": 910,
         "y": 320,
         "wires": [
             [
@@ -7708,7 +7706,7 @@
         "links": [
             "f2332fa1b7e6397e"
         ],
-        "x": 1005,
+        "x": 1065,
         "y": 320,
         "wires": []
     },
@@ -7771,7 +7769,7 @@
         "name": "",
         "ui": "1eeac55ba6b9065f",
         "events": "all",
-        "x": 200,
+        "x": 190,
         "y": 200,
         "wires": [
             []
@@ -7795,7 +7793,7 @@
             "f3861367fad40248",
             "529259c0cda5c2e6"
         ],
-        "x": 95,
+        "x": 85,
         "y": 200,
         "wires": [
             [
@@ -7822,8 +7820,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 150,
-        "y": 580,
+        "x": 140,
+        "y": 560,
         "wires": [
             []
         ]
@@ -7847,8 +7845,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 560,
-        "y": 440,
+        "x": 550,
+        "y": 420,
         "wires": [
             [
                 "3f1969eeced7c689"
@@ -7874,8 +7872,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 160,
-        "y": 680,
+        "x": 150,
+        "y": 660,
         "wires": [
             [
                 "77b032808eca46e4"
@@ -7901,8 +7899,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 680,
-        "y": 860,
+        "x": 670,
+        "y": 840,
         "wires": [
             [
                 "9c55db6c6db0bda3"
@@ -7922,8 +7920,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 680,
+        "x": 370,
+        "y": 660,
         "wires": [
             [
                 "0e78c20a20947374"
@@ -7942,34 +7940,9 @@
             "9343f1c619041277",
             "331619c373e7be62"
         ],
-        "x": 535,
-        "y": 680,
+        "x": 525,
+        "y": 660,
         "wires": []
-    },
-    {
-        "id": "77c2eece35acdabc",
-        "type": "inject",
-        "z": "a707f17e5367291d",
-        "d": true,
-        "g": "0ba7fbaa34399b50",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"model\":\"PlanktoScope v2.6\",\"serialNumber\":\"U178\",\"version\":\"PlanktoScope OS v2024.1.0\",\"acquiredImage\":\"12 580\",\"segmentedObjects\":\"329 000\",\"storage\":45}",
-        "payloadType": "json",
-        "x": 840,
-        "y": 780,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "9c55db6c6db0bda3",
@@ -7977,15 +7950,15 @@
         "z": "a707f17e5367291d",
         "g": "0ba7fbaa34399b50",
         "name": "debug 30",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 850,
-        "y": 860,
+        "x": 840,
+        "y": 840,
         "wires": []
     },
     {
@@ -8001,8 +7974,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
-        "y": 440,
+        "x": 780,
+        "y": 420,
         "wires": [
             [
                 "c11d292985db0bd7"
@@ -8020,7 +7993,7 @@
             "2cc4d8075a852a14",
             "9343f1c619041277"
         ],
-        "x": 1255,
+        "x": 1105,
         "y": 400,
         "wires": []
     },
@@ -8037,8 +8010,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 310,
-        "y": 1060,
+        "x": 300,
+        "y": 1040,
         "wires": [
             [
                 "df09cb6825581861"
@@ -8062,8 +8035,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 340,
-        "y": 900,
+        "x": 330,
+        "y": 880,
         "wires": [
             [
                 "0e0b3ccea673a1ba"
@@ -8087,8 +8060,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 350,
-        "y": 980,
+        "x": 340,
+        "y": 960,
         "wires": [
             [
                 "7116c7bc43621124"
@@ -8108,8 +8081,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 320,
-        "y": 820,
+        "x": 310,
+        "y": 800,
         "wires": [
             [
                 "c12b20cf2c1520ae"
@@ -8129,8 +8102,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 860,
+        "x": 340,
+        "y": 840,
         "wires": [
             [
                 "6d32866022cd0317"
@@ -8150,8 +8123,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 940,
+        "x": 360,
+        "y": 920,
         "wires": [
             [
                 "6d32866022cd0317"
@@ -8165,7 +8138,7 @@
         "g": "0ba7fbaa34399b50",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "read",
@@ -8183,8 +8156,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 330,
-        "y": 780,
+        "x": 320,
+        "y": 760,
         "wires": [
             [
                 "6d32866022cd0317"
@@ -8206,8 +8179,8 @@
             "ddb68dd551c36b53",
             "c905e61be6997950"
         ],
-        "x": 125,
-        "y": 780,
+        "x": 115,
+        "y": 760,
         "wires": [
             [
                 "98944d374580fe02"
@@ -8228,8 +8201,8 @@
             "ddb68dd551c36b53",
             "c905e61be6997950"
         ],
-        "x": 125,
-        "y": 820,
+        "x": 115,
+        "y": 800,
         "wires": [
             [
                 "776a66175a11c854"
@@ -8250,8 +8223,8 @@
             "ddb68dd551c36b53",
             "c905e61be6997950"
         ],
-        "x": 125,
-        "y": 900,
+        "x": 115,
+        "y": 880,
         "wires": [
             [
                 "35ea264db9f15f9b"
@@ -8265,7 +8238,7 @@
         "g": "1921c1aafed7dc1b",
         "ui": "1eeac55ba6b9065f",
         "name": "",
-        "x": 130,
+        "x": 120,
         "y": 100,
         "wires": [
             [
@@ -8289,7 +8262,7 @@
             "434fc82c807acbb4",
             "b5fb72779a3a06ab"
         ],
-        "x": 215,
+        "x": 205,
         "y": 100,
         "wires": []
     },
@@ -8306,8 +8279,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 1020,
+        "x": 370,
+        "y": 1000,
         "wires": [
             [
                 "6d32866022cd0317"
@@ -8328,8 +8301,8 @@
             "ddb68dd551c36b53",
             "c905e61be6997950"
         ],
-        "x": 125,
-        "y": 980,
+        "x": 115,
+        "y": 960,
         "wires": [
             [
                 "8ded6e7b8d7f625d"
@@ -8349,8 +8322,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 1100,
+        "x": 390,
+        "y": 1080,
         "wires": [
             [
                 "6d32866022cd0317"
@@ -8371,8 +8344,8 @@
             "ddb68dd551c36b53",
             "c905e61be6997950"
         ],
-        "x": 95,
-        "y": 1060,
+        "x": 85,
+        "y": 1040,
         "wires": [
             [
                 "603a844dea8314bb"
@@ -8386,7 +8359,7 @@
         "g": "1daf5cfc8e29e5ad",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -8404,8 +8377,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 290,
-        "y": 440,
+        "x": 280,
+        "y": 420,
         "wires": [
             [
                 "ed5c88bb575ee514"
@@ -8422,8 +8395,8 @@
         "links": [
             "2b081acaeb1f304d"
         ],
-        "x": 95,
-        "y": 440,
+        "x": 85,
+        "y": 420,
         "wires": [
             [
                 "a9f01d97a7e9cb66"
@@ -8435,7 +8408,7 @@
         "type": "switch",
         "z": "a707f17e5367291d",
         "g": "1daf5cfc8e29e5ad",
-        "name": "",
+        "name": "If \"Reboot\" or \"Shutdown\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -8453,8 +8426,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1150,
-        "y": 460,
+        "x": 1200,
+        "y": 440,
         "wires": [
             [
                 "d4af39c15f3540b2"
@@ -8474,8 +8447,8 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1255,
-        "y": 440,
+        "x": 1365,
+        "y": 420,
         "wires": []
     },
     {
@@ -8488,8 +8461,8 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1255,
-        "y": 480,
+        "x": 1365,
+        "y": 460,
         "wires": []
     },
     {
@@ -8497,7 +8470,7 @@
         "type": "switch",
         "z": "a707f17e5367291d",
         "g": "1daf5cfc8e29e5ad",
-        "name": "",
+        "name": "If \"page\" ",
         "property": "payload.page",
         "propertyType": "msg",
         "rules": [
@@ -8512,7 +8485,7 @@
         "repair": false,
         "outputs": 2,
         "x": 990,
-        "y": 440,
+        "y": 420,
         "wires": [
             [
                 "7150e1ace23a0ffe"
@@ -8541,7 +8514,7 @@
         "resendOnRefresh": true,
         "templateScope": "page:style",
         "className": "",
-        "x": 170,
+        "x": 160,
         "y": 300,
         "wires": [
             []
@@ -9128,7 +9101,7 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 890,
+        "x": 1010,
         "y": 840,
         "wires": []
     },
@@ -9137,7 +9110,7 @@
         "type": "switch",
         "z": "db1e7a22029cc2a4",
         "g": "5387cbd03cda0166",
-        "name": "",
+        "name": "If \"payload\" is not empty",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -9148,7 +9121,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 760,
+        "x": 820,
         "y": 840,
         "wires": [
             [
@@ -9357,7 +9330,7 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1205,
+        "x": 1315,
         "y": 480,
         "wires": []
     },
@@ -9371,7 +9344,7 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1205,
+        "x": 1315,
         "y": 440,
         "wires": []
     },
@@ -9380,7 +9353,7 @@
         "type": "switch",
         "z": "db1e7a22029cc2a4",
         "g": "4237eacb62444cc7",
-        "name": "",
+        "name": "If \"Reboot\" or \"Shutdown\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -9398,7 +9371,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1100,
+        "x": 1160,
         "y": 460,
         "wires": [
             [
@@ -9414,7 +9387,7 @@
         "type": "switch",
         "z": "db1e7a22029cc2a4",
         "g": "4237eacb62444cc7",
-        "name": "",
+        "name": "If \"page\"",
         "property": "payload.page",
         "propertyType": "msg",
         "rules": [
@@ -9428,7 +9401,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 940,
+        "x": 950,
         "y": 440,
         "wires": [
             [
@@ -10925,7 +10898,7 @@
         "type": "switch",
         "z": "e988301e60e4b458",
         "g": "307fb977cf47b651",
-        "name": "If gear",
+        "name": "If \"gear\"",
         "property": "payload.gear",
         "propertyType": "msg",
         "rules": [
@@ -10939,7 +10912,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 925,
+        "x": 935,
         "y": 720,
         "wires": [
             [
@@ -12677,7 +12650,7 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1310,
+        "x": 1425,
         "y": 520,
         "wires": []
     },
@@ -12691,7 +12664,7 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1310,
+        "x": 1425,
         "y": 560,
         "wires": []
     },
@@ -12700,7 +12673,7 @@
         "type": "switch",
         "z": "e988301e60e4b458",
         "g": "610c7571a6ee5612",
-        "name": "",
+        "name": "If \"Reboot\" or \"Shutdown\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -12718,7 +12691,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1205,
+        "x": 1265,
         "y": 540,
         "wires": [
             [
@@ -12734,7 +12707,7 @@
         "type": "switch",
         "z": "e988301e60e4b458",
         "g": "610c7571a6ee5612",
-        "name": "",
+        "name": "If \"page\"",
         "property": "payload.page",
         "propertyType": "msg",
         "rules": [
@@ -12748,7 +12721,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1045,
+        "x": 1055,
         "y": 520,
         "wires": [
             [
@@ -13143,8 +13116,8 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 1370,
-        "y": 840,
+        "x": 1520,
+        "y": 820,
         "wires": []
     },
     {
@@ -13250,7 +13223,7 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 750,
+        "x": 820,
         "y": 1000,
         "wires": []
     },
@@ -13444,8 +13417,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1320,
-        "y": 620,
+        "x": 1350,
+        "y": 600,
         "wires": [
             [],
             []
@@ -13517,8 +13490,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1400,
-        "y": 880,
+        "x": 1550,
+        "y": 860,
         "wires": []
     },
     {
@@ -13683,8 +13656,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1340,
-        "y": 740,
+        "x": 1370,
+        "y": 720,
         "wires": [
             [],
             []
@@ -13695,7 +13668,7 @@
         "type": "change",
         "z": "70f558eb9d60b6fc",
         "g": "b383604c2ffb0c81",
-        "name": "Remove",
+        "name": "Remove payload",
         "rules": [
             {
                 "t": "set",
@@ -13710,7 +13683,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 270,
+        "x": 300,
         "y": 1020,
         "wires": [
             [
@@ -13748,7 +13721,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 560,
         "y": 1020,
         "wires": [
             [
@@ -13771,7 +13744,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
+        "x": 840,
         "y": 1040,
         "wires": []
     },
@@ -13793,8 +13766,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1210,
-        "y": 880,
+        "x": 1360,
+        "y": 860,
         "wires": [
             [
                 "60bc270ddfa20f0b",
@@ -13811,8 +13784,8 @@
         "links": [
             "21a88ef6574955eb"
         ],
-        "x": 1105,
-        "y": 880,
+        "x": 1255,
+        "y": 860,
         "wires": [
             [
                 "b7d43a5399350e4c"
@@ -13829,7 +13802,7 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1275,
+        "x": 1385,
         "y": 360,
         "wires": []
     },
@@ -13843,7 +13816,7 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1275,
+        "x": 1385,
         "y": 400,
         "wires": []
     },
@@ -13852,7 +13825,7 @@
         "type": "switch",
         "z": "70f558eb9d60b6fc",
         "g": "c285048823f34bc0",
-        "name": "",
+        "name": "If \"Reboot\" or \"Shutdown\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -13870,7 +13843,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1170,
+        "x": 1230,
         "y": 380,
         "wires": [
             [
@@ -13886,7 +13859,7 @@
         "type": "switch",
         "z": "70f558eb9d60b6fc",
         "g": "c285048823f34bc0",
-        "name": "",
+        "name": "If \"page\"",
         "property": "payload.page",
         "propertyType": "msg",
         "rules": [
@@ -13900,7 +13873,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1010,
+        "x": 1020,
         "y": 360,
         "wires": [
             [
@@ -14073,8 +14046,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1330,
-        "y": 700,
+        "x": 1360,
+        "y": 680,
         "wires": [
             [],
             []
@@ -14105,8 +14078,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1330,
-        "y": 660,
+        "x": 1360,
+        "y": 640,
         "wires": [
             [],
             []
@@ -14188,8 +14161,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1290,
-        "y": 780,
+        "x": 1320,
+        "y": 760,
         "wires": [
             [],
             []
@@ -14200,7 +14173,7 @@
         "type": "switch",
         "z": "70f558eb9d60b6fc",
         "g": "44d3381948f5bea1",
-        "name": "",
+        "name": "If \"action\" is \"stop\" or \"image\"",
         "property": "payload.action",
         "propertyType": "msg",
         "rules": [
@@ -14218,8 +14191,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 980,
-        "y": 780,
+        "x": 1000,
+        "y": 840,
         "wires": [
             [
                 "e2e666a913b7a662"
@@ -14240,8 +14213,8 @@
             "b0669e2b7f125e7e",
             "d3b072c2497a5209"
         ],
-        "x": 1015,
-        "y": 820,
+        "x": 1165,
+        "y": 860,
         "wires": []
     },
     {
@@ -14262,8 +14235,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1210,
-        "y": 840,
+        "x": 1360,
+        "y": 820,
         "wires": [
             [
                 "997c71e9dcf596e8",
@@ -14284,7 +14257,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 970,
+        "x": 980,
         "y": 700,
         "wires": [
             [
@@ -14309,7 +14282,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
+        "x": 960,
         "y": 740,
         "wires": [
             [
@@ -14535,7 +14508,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 950,
+        "x": 830,
         "y": 860,
         "wires": [
             [
@@ -14687,7 +14660,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 740,
+        "x": 860,
         "y": 600,
         "wires": [
             [
@@ -14709,7 +14682,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
+        "x": 1080,
         "y": 640,
         "wires": [
             [
@@ -14731,7 +14704,7 @@
         "finalize": "",
         "libs": [],
         "x": 1360,
-        "y": 880,
+        "y": 940,
         "wires": [
             [
                 "9529b63ced697421"
@@ -14774,7 +14747,7 @@
         "type": "switch",
         "z": "00a14f98244d252e",
         "g": "d3d7be8ef5f940c4",
-        "name": "",
+        "name": "If \"payload\" is \"clear\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -14792,8 +14765,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1150,
-        "y": 880,
+        "x": 1100,
+        "y": 920,
         "wires": [
             [
                 "e6ba170eea1efeb4"
@@ -14814,7 +14787,7 @@
             "da2a5658f65d64a4"
         ],
         "x": 1515,
-        "y": 880,
+        "y": 940,
         "wires": []
     },
     {
@@ -14828,7 +14801,7 @@
             "4b6824e2ecaa9016"
         ],
         "x": 1415,
-        "y": 840,
+        "y": 900,
         "wires": []
     },
     {
@@ -14843,7 +14816,7 @@
             "2f55e4293dac256a",
             "96b438fd7f029156"
         ],
-        "x": 605,
+        "x": 725,
         "y": 640,
         "wires": [
             [
@@ -14861,7 +14834,7 @@
         "links": [
             "67b91503eb38afe7"
         ],
-        "x": 1095,
+        "x": 1215,
         "y": 640,
         "wires": []
     },
@@ -15041,7 +15014,7 @@
         "oldrc": false,
         "name": "find \"metadata.json\"",
         "x": 260,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "41add91cc9a0f0d2"
@@ -15064,7 +15037,7 @@
         "addname": "",
         "property": "payload",
         "x": 450,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "dcdd3d182172e37b"
@@ -15085,7 +15058,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 1000,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "fae11872d37ca7ea"
@@ -15113,7 +15086,7 @@
         "to": "",
         "reg": false,
         "x": 620,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "abb1be992fc0f571"
@@ -15137,7 +15110,7 @@
         "repair": false,
         "outputs": 1,
         "x": 810,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "a7571dda2afc9bf5",
@@ -15159,7 +15132,7 @@
         "finalize": "",
         "libs": [],
         "x": 1290,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "baf89db54ae56a37"
@@ -15176,7 +15149,7 @@
             "d8c60c1b9271bea5"
         ],
         "x": 125,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "b66bf570c5656d37"
@@ -15197,7 +15170,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 1080,
+        "y": 1120,
         "wires": [
             [
                 "c5ba95b82832310f"
@@ -15221,7 +15194,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1550,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "97882a7a4f73a796"
@@ -15274,7 +15247,7 @@
         "type": "switch",
         "z": "00a14f98244d252e",
         "g": "d3d7be8ef5f940c4",
-        "name": "",
+        "name": "If \"topic\" is \"segmenter/segment\"",
         "property": "topic",
         "propertyType": "msg",
         "rules": [
@@ -15287,7 +15260,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 770,
+        "x": 850,
         "y": 780,
         "wires": [
             [
@@ -15310,7 +15283,7 @@
         "correl": "",
         "expiry": "",
         "broker": "a973d821cae4ecce",
-        "x": 890,
+        "x": 1050,
         "y": 780,
         "wires": []
     },
@@ -15346,7 +15319,7 @@
         "finalize": "",
         "libs": [],
         "x": 1310,
-        "y": 840,
+        "y": 900,
         "wires": [
             [
                 "a0368732ccfa08d8"
@@ -15358,7 +15331,7 @@
         "type": "switch",
         "z": "00a14f98244d252e",
         "g": "d3d7be8ef5f940c4",
-        "name": "",
+        "name": "If \"payload\" is \"Done\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -15371,7 +15344,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 770,
+        "x": 820,
         "y": 820,
         "wires": [
             [
@@ -15398,7 +15371,7 @@
         "type": "switch",
         "z": "00a14f98244d252e",
         "g": "99e9870d6e66aeaf",
-        "name": "",
+        "name": "If \"page\"",
         "property": "payload.page",
         "propertyType": "msg",
         "rules": [
@@ -15412,7 +15385,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 970,
+        "x": 980,
         "y": 460,
         "wires": [
             [
@@ -15449,7 +15422,7 @@
         "type": "switch",
         "z": "00a14f98244d252e",
         "g": "99e9870d6e66aeaf",
-        "name": "",
+        "name": "If \"Reboot\" or \"Shutdown\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -15467,7 +15440,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1130,
+        "x": 1190,
         "y": 480,
         "wires": [
             [
@@ -15488,7 +15461,7 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1235,
+        "x": 1345,
         "y": 460,
         "wires": []
     },
@@ -15502,7 +15475,7 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1235,
+        "x": 1345,
         "y": 500,
         "wires": []
     },
@@ -15520,7 +15493,7 @@
         "finalize": "",
         "libs": [],
         "x": 1470,
-        "y": 1080,
+        "y": 1120,
         "wires": [
             [
                 "156972ebab521833"
@@ -15541,7 +15514,7 @@
         "addname": "",
         "property": "payload",
         "x": 1350,
-        "y": 1120,
+        "y": 1160,
         "wires": [
             [
                 "945e4b2465a1e732"
@@ -15562,7 +15535,7 @@
         "oldrc": false,
         "name": "",
         "x": 1410,
-        "y": 1180,
+        "y": 1220,
         "wires": [
             [
                 "6d9b00293e8bc92f"
@@ -15585,7 +15558,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 1180,
+        "y": 1220,
         "wires": [
             [
                 "7d7daee3e1ed39f7"
@@ -15606,7 +15579,7 @@
         "finalize": "",
         "libs": [],
         "x": 1750,
-        "y": 1200,
+        "y": 1240,
         "wires": [
             [
                 "b3fc3025774d3e96"
@@ -15627,7 +15600,7 @@
         "addname": "",
         "property": "payload",
         "x": 1550,
-        "y": 1160,
+        "y": 1200,
         "wires": [
             [
                 "596d0884550802d2"
@@ -15651,7 +15624,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1570,
-        "y": 1200,
+        "y": 1240,
         "wires": [
             [
                 "3780e6a8fd770f31"
@@ -15669,7 +15642,7 @@
             "4b6824e2ecaa9016"
         ],
         "x": 2195,
-        "y": 1200,
+        "y": 1240,
         "wires": []
     },
     {
@@ -15721,7 +15694,7 @@
         "reduceInitType": "num",
         "reduceFixup": "",
         "x": 1760,
-        "y": 1080,
+        "y": 1120,
         "wires": [
             [
                 "e820a58dd9154f93"
@@ -15742,7 +15715,7 @@
         "finalize": "",
         "libs": [],
         "x": 1200,
-        "y": 1120,
+        "y": 1160,
         "wires": [
             [
                 "47704da97cb477f3"
@@ -15772,7 +15745,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 1910,
-        "y": 1200,
+        "y": 1240,
         "wires": [
             [
                 "a5eca0282a193652"
@@ -15793,7 +15766,7 @@
         "finalize": "",
         "libs": [],
         "x": 2070,
-        "y": 1200,
+        "y": 1240,
         "wires": [
             [
                 "2f55e4293dac256a"
@@ -15851,7 +15824,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
+        "x": 1070,
         "y": 600,
         "wires": [
             []
@@ -15862,7 +15835,7 @@
         "type": "switch",
         "z": "00a14f98244d252e",
         "g": "cd7cd2c05c7f55bf",
-        "name": "",
+        "name": "If \"reloadAcquisitionList\"",
         "property": "reloadAcquisitionList",
         "propertyType": "msg",
         "rules": [
@@ -15876,7 +15849,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 430,
+        "x": 490,
         "y": 620,
         "wires": [
             [
@@ -15898,7 +15871,7 @@
             "4cf3eec1ce2d4242",
             "7dedd91c30c6d657"
         ],
-        "x": 515,
+        "x": 635,
         "y": 640,
         "wires": []
     },
@@ -15927,8 +15900,8 @@
         "blockIfCompareValue": "",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1250,
-        "y": 780,
+        "x": 1150,
+        "y": 860,
         "wires": [
             [
                 "62d2042e91fbe197"
@@ -15982,8 +15955,8 @@
             "49ea401a0745e446",
             "d3b2e7d1bba0372d"
         ],
-        "x": 1435,
-        "y": 780,
+        "x": 1345,
+        "y": 860,
         "wires": []
     },
     {
@@ -16000,7 +15973,7 @@
         "finalize": "",
         "libs": [],
         "x": 1010,
-        "y": 1000,
+        "y": 1040,
         "wires": [
             []
         ]
@@ -21426,7 +21399,7 @@
         "type": "switch",
         "z": "5047c566973ee3a1",
         "g": "1001f50c9610fbab",
-        "name": "",
+        "name": "If \"page\"",
         "property": "payload.page",
         "propertyType": "msg",
         "rules": [
@@ -21440,7 +21413,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1060,
+        "x": 1070,
         "y": 440,
         "wires": [
             [
@@ -21477,7 +21450,7 @@
         "type": "switch",
         "z": "5047c566973ee3a1",
         "g": "1001f50c9610fbab",
-        "name": "",
+        "name": "If \"Reboot\" or \"Shutdown\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -21495,7 +21468,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1210,
+        "x": 1270,
         "y": 460,
         "wires": [
             [
@@ -21516,7 +21489,7 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1315,
+        "x": 1425,
         "y": 440,
         "wires": []
     },
@@ -21530,7 +21503,7 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1315,
+        "x": 1425,
         "y": 480,
         "wires": []
     },
@@ -22462,7 +22435,7 @@
         "type": "switch",
         "z": "b70df4b6cc88d09a",
         "g": "da310b26268026a0",
-        "name": "",
+        "name": "If \"page\"",
         "property": "payload.page",
         "propertyType": "msg",
         "rules": [
@@ -22476,7 +22449,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 930,
+        "x": 940,
         "y": 400,
         "wires": [
             [
@@ -22513,7 +22486,7 @@
         "type": "switch",
         "z": "b70df4b6cc88d09a",
         "g": "da310b26268026a0",
-        "name": "",
+        "name": "If \"Reboot\" or \"Shutdown\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -22531,7 +22504,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1090,
+        "x": 1150,
         "y": 420,
         "wires": [
             [
@@ -22552,7 +22525,7 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1195,
+        "x": 1305,
         "y": 400,
         "wires": []
     },
@@ -22566,7 +22539,7 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1195,
+        "x": 1305,
         "y": 440,
         "wires": []
     },
@@ -22794,18 +22767,17 @@
         "width": "9",
         "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Restarting Processes</h3>\n      <p>\n        Please be aware that managing the following processes: Pump, Focus, Light, Camera, Segmenter, may cause temporary\n        disruptions in system operations and data processing.\n      </p>\n    </div>\n\n    <div class=\"right-pannel-process\">\n      <section id=\"segmenter-process\" class=\"process-section\" @click=\"toggleCheckbox('segmenter')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Segmenter\" v-model=\"selectedProcesses.segmenter\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime: </span><span id=\"light\">12 hours, 34 minutes</span></p>\n          <p><span id=\"bold\"> Restart Time: </span><span id=\"light\">2024-07-05 14:30:00</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.segmenterStatus }}</span></p>\n        </div>\n      </section>\n      <section id=\"hardware-process\" class=\"process-section\" @click=\"toggleCheckbox('hardware')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Hardware\" v-model=\"selectedProcesses.hardware\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime:</span><span id=\"light\"> 12 hours, 34 minutes</span></p>\n          <p><span id=\"bold\">Last Restart Time:</span><span id=\"light\"> 2024-07-05 14:30:00</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.hardwareStatus }}</span></p>\n        </div>\n      </section>\n    </div>\n\n    <div class=\"button-div\">\n      <v-btn color=\"red\" dark @click=\"run\">Run</v-btn>\n      <v-btn color=\"red\" dark @click=\"kill\">Kill</v-btn>\n      <v-btn color=\"red\" dark @click=\"restart\">Restart</v-btn>\n    </div>\n  </div>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Accessing Backend Logs</h3>\n      <p>Please be aware that accessing backend logs requires proper understanding.</p>\n    </div>\n    <div class=\"button-div\">\n      <v-btn color=\"#076eac\" dark @click=\"controllersLogs\">Controllers Logs</v-btn>\n      <v-btn color=\"#076eac\" dark @click=\"processLogs\">Process Logs</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      selectedProcesses: {\n        segmenter: false,\n        hardware: false\n      },\n    };\n  },\n  methods: {\n    run() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'run'\n      }})\n    },\n    kill() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'kill'\n      }})\n    },\n    restart() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'restart'\n      }})\n    },\n    controllersLogs() {\n      this.send({payload: \"Controllers Logs button clicked\"});\n    },\n    processLogs() {\n      this.send({payload: \"Process Logs button clicked\"});\n    },\n    toggleCheckbox(process) {\n      this.selectedProcesses[process] = !this.selectedProcesses[process];\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .right-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    margin-bottom: 1rem;\n    color: white;\n  }\n\n  .right-pannel-text {\n    margin-bottom: 1rem;\n  }\n\n  .right-pannel-process {\n    display: flex;\n    align-items: center;\n  }\n\n  .process-section {\n    background-color: #161616;\n    padding: 0rem 1rem;\n    padding-bottom: 0.7rem;\n    border-radius: 4px;\n    margin-bottom: 1rem;\n    margin-right: 1rem;\n    width: 300px;\n    color: #ffffff;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    cursor: pointer;\n  }\n\n  .process-section:hover {\n    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);\n  }\n\n  .process-header {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    font-weight: bold;\n  }\n\n  .process-details span#bold {\n    font-weight: bold;\n  }\n\n  .process-details span#light {\n    font-weight: light;\n  }\n\n  .status {\n    line-height: 0px;\n    font-size: 2.5rem;\n  }\n\n  .status.ko {\n    color: red;\n  }\n\n  .status.working {\n    color: green;\n  }\n\n  .button-div {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n  }\n\n  .button-div .v-btn {\n    margin: 0.25rem;\n  }\n\n  .v-selection-control__wrapper {\n    margin-right: 10px;\n  }\n  \n  .v-label {\n    opacity: unset;\n  }\n\n  .v-selection-control--density-default {\n    --v-selection-control-size: 20px\n  }\n\n  .v-input__details {\n    display: none;\n  }\n</style>\n",
+        "format": "<template>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Restarting Processes</h3>\n      <p>\n        Please be aware that managing the following processes: Pump, Focus, Light, Camera, Segmenter, may cause temporary\n        disruptions in system operations and data processing.\n      </p>\n    </div>\n\n    <div class=\"right-pannel-process\">\n      <section id=\"segmenter-process\" class=\"process-section\" @click=\"toggleCheckbox('segmenter')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Segmenter\" v-model=\"selectedProcesses.segmenter\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime: </span><span id=\"light\">12 hours, 34 minutes</span></p>\n          <p><span id=\"bold\"> Restart Time: </span><span id=\"light\">2024-07-05 14:30:00</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.segmenterStatus }}</span></p>\n        </div>\n      </section>\n      <section id=\"hardware-process\" class=\"process-section\" @click=\"toggleCheckbox('hardware')\">\n        <div class=\"process-header\">\n          <v-checkbox label=\"Hardware\" v-model=\"selectedProcesses.hardware\" @click.stop></v-checkbox>\n        </div>\n        <div class=\"process-details\">\n          <p><span id=\"bold\">Runtime:</span><span id=\"light\"> 12 hours, 34 minutes</span></p>\n          <p><span id=\"bold\">Last Restart Time:</span><span id=\"light\"> 2024-07-05 14:30:00</span></p>\n          <p><span id=\"bold\">Status: </span><span id=\"light\">{{ msg.payload.hardwareStatus }}</span></p>\n        </div>\n      </section>\n    </div>\n\n    <div class=\"button-div\">\n      <v-btn color=\"red\" dark @click=\"run\">Run</v-btn>\n      <v-btn color=\"red\" dark @click=\"kill\">Kill</v-btn>\n      <v-btn color=\"red\" dark @click=\"restart\">Restart</v-btn>\n    </div>\n  </div>\n  <div class=\"right-pannel-container\">\n    <div class=\"right-pannel-text\">\n      <h3>Important Notice: Accessing Backend Logs</h3>\n      <p>Please be aware that accessing backend logs requires proper understanding.</p>\n    </div>\n    <div class=\"button-div\">\n      <v-btn color=\"#076eac\" dark @click=\"controllersLogs\">Controllers Logs</v-btn>\n      <v-btn color=\"#076eac\" dark @click=\"processLogs\">Process Logs</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      selectedProcesses: {\n        segmenter: false,\n        hardware: false\n      },\n    };\n  },\n  methods: {\n    run() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'run'\n      }})\n    },\n    kill() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'kill'\n      }})\n    },\n    restart() {\n      this.send({payload: {\n        process: this.selectedProcesses,\n        action: 'restart'\n      }})\n    },\n    controllersLogs() {\n      this.send({payload: \"Controllers Logs\"});\n    },\n    processLogs() {\n      this.send({payload: \"Process Logs\"});\n    },\n    toggleCheckbox(process) {\n      this.selectedProcesses[process] = !this.selectedProcesses[process];\n    },\n  },\n};\n</script>\n\n<style scoped>\n  .right-pannel-container {\n    background-color: rgba(0, 0, 0, 0.87);\n    border-radius: 4px;\n    padding: 1rem;\n    margin-bottom: 1rem;\n    color: white;\n  }\n\n  .right-pannel-text {\n    margin-bottom: 1rem;\n  }\n\n  .right-pannel-process {\n    display: flex;\n    align-items: center;\n  }\n\n  .process-section {\n    background-color: #161616;\n    padding: 0rem 1rem;\n    padding-bottom: 0.7rem;\n    border-radius: 4px;\n    margin-bottom: 1rem;\n    margin-right: 1rem;\n    width: 300px;\n    color: #ffffff;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n    cursor: pointer;\n  }\n\n  .process-section:hover {\n    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);\n  }\n\n  .process-header {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    font-weight: bold;\n  }\n\n  .process-details span#bold {\n    font-weight: bold;\n  }\n\n  .process-details span#light {\n    font-weight: light;\n  }\n\n  .status {\n    line-height: 0px;\n    font-size: 2.5rem;\n  }\n\n  .status.ko {\n    color: red;\n  }\n\n  .status.working {\n    color: green;\n  }\n\n  .button-div {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n  }\n\n  .button-div .v-btn {\n    margin: 0.25rem;\n  }\n\n  .v-selection-control__wrapper {\n    margin-right: 10px;\n  }\n  \n  .v-label {\n    opacity: unset;\n  }\n\n  .v-selection-control--density-default {\n    --v-selection-control-size: 20px\n  }\n\n  .v-input__details {\n    display: none;\n  }\n</style>\n",
         "storeOutMessages": true,
         "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 330,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
-                "ee91ce21184552fa",
-                "31e5b0e4d97debdb"
+                "ee91ce21184552fa"
             ]
         ]
     },
@@ -22828,7 +22800,7 @@
         "payload": "{\"segmenterStatus\":\"Working\",\"hardwareStatus\":\"KO\"}",
         "payloadType": "json",
         "x": 180,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "f8fd4c2266066516"
@@ -22860,7 +22832,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 720,
+        "x": 980,
         "y": 540,
         "wires": [
             [
@@ -22874,7 +22846,7 @@
         "type": "function",
         "z": "a697ff46c6e7b7fb",
         "g": "6dabc68acbd23974",
-        "name": "function 9",
+        "name": "Set right filename to open",
         "func": "var filename = \"/home/pi/device-backend/default-configs/\";\n\nif (msg.model_selected == \"PlanktoScope v2.1\") {\n    filename += \"v2.1.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.3\") {\n    filename += \"v2.3.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.5\") {\n    filename += \"v2.5.hardware.json\"\n} else if (msg.model_selected == \"PlanktoScope v2.6\") {\n    filename += \"v2.6.hardware.json\"\n}\n\nmsg.payload = {\n    filename: filename\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -22882,7 +22854,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
+        "x": 1270,
         "y": 540,
         "wires": [
             [
@@ -22903,8 +22875,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 1120,
-        "y": 540,
+        "x": 1300,
+        "y": 580,
         "wires": [
             [
                 "ac21946563059ca9"
@@ -22916,7 +22888,7 @@
         "type": "function",
         "z": "a697ff46c6e7b7fb",
         "g": "6dabc68acbd23974",
-        "name": "function 10",
+        "name": "Get hat from file",
         "func": "const parsedData = JSON.parse(msg.payload);\nconst hat = parsedData.stepper_type;\n\nmsg.payload = {\n    selected_hat: hat\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -22924,8 +22896,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 580,
+        "x": 1300,
+        "y": 620,
         "wires": [
             [
                 "ab09fc7b9f3e8189"
@@ -22937,7 +22909,7 @@
         "type": "switch",
         "z": "a697ff46c6e7b7fb",
         "g": "6dabc68acbd23974",
-        "name": "",
+        "name": "If \"selected_hat\" is \"adafruit\" or \"pscope_hat\"",
         "property": "payload.selected_hat",
         "propertyType": "msg",
         "rules": [
@@ -22955,8 +22927,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1150,
-        "y": 620,
+        "x": 1210,
+        "y": 660,
         "wires": [
             [
                 "7ba43cf89d3a06cd"
@@ -22971,26 +22943,26 @@
         "type": "switch",
         "z": "a697ff46c6e7b7fb",
         "g": "6dabc68acbd23974",
-        "name": "",
+        "name": "If \"payload\" is \"Process Logs\" or \"Controllers Logs\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
-                "v": "Controllers Logs button clicked",
+                "v": "Controllers Logs",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Process Logs button clicked",
+                "v": "Process Logs",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 480,
-        "y": 540,
+        "x": 610,
+        "y": 560,
         "wires": [
             [
                 "04b077947f323ffb"
@@ -23010,8 +22982,8 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 1435,
-        "y": 600,
+        "x": 1615,
+        "y": 640,
         "wires": []
     },
     {
@@ -23024,8 +22996,8 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 1435,
-        "y": 640,
+        "x": 1615,
+        "y": 680,
         "wires": []
     },
     {
@@ -23048,7 +23020,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
+        "x": 900,
         "y": 580,
         "wires": [
             [
@@ -23066,7 +23038,7 @@
         "links": [
             "9d2388378e60b099"
         ],
-        "x": 755,
+        "x": 1015,
         "y": 580,
         "wires": []
     },
@@ -23090,8 +23062,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1320,
-        "y": 600,
+        "x": 1500,
+        "y": 640,
         "wires": [
             [
                 "1a8330a03101a150"
@@ -23118,8 +23090,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1320,
-        "y": 640,
+        "x": 1500,
+        "y": 680,
         "wires": [
             [
                 "cba7a0cba93534cc"
@@ -23127,28 +23099,11 @@
         ]
     },
     {
-        "id": "31e5b0e4d97debdb",
-        "type": "debug",
-        "z": "a697ff46c6e7b7fb",
-        "g": "6dabc68acbd23974",
-        "name": "debug 46",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 620,
-        "wires": []
-    },
-    {
         "id": "4207f0b5f0838c18",
         "type": "switch",
         "z": "a697ff46c6e7b7fb",
         "g": "7cb61834f7876229",
-        "name": "",
+        "name": "If \"page\"",
         "property": "payload.page",
         "propertyType": "msg",
         "rules": [
@@ -23162,7 +23117,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 950,
+        "x": 960,
         "y": 300,
         "wires": [
             [
@@ -23199,7 +23154,7 @@
         "type": "switch",
         "z": "a697ff46c6e7b7fb",
         "g": "7cb61834f7876229",
-        "name": "",
+        "name": "If \"Reboot\" or \"Shutdown\"",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -23217,7 +23172,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1110,
+        "x": 1170,
         "y": 320,
         "wires": [
             [
@@ -23238,7 +23193,7 @@
         "links": [
             "960c1b4e1358e139"
         ],
-        "x": 1215,
+        "x": 1325,
         "y": 300,
         "wires": []
     },
@@ -23252,7 +23207,7 @@
         "links": [
             "6810166ee9e618d8"
         ],
-        "x": 1215,
+        "x": 1325,
         "y": 340,
         "wires": []
     }
