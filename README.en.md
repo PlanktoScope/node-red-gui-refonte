@@ -31,7 +31,7 @@ From this page, several options are available, including :
 
 * **Node-RED dashboard editor :** This link gives you access to the dashboard editor. This editor allows you to modify and customize the various elements of the dashboard.
 
-* **Node-RED dashboard:** This link takes you to the V2 version of the dashboard. However, please note that once you have installed version V3, this link will no longer work. To see the new version you'll need this one `http://92.167.184.163:1880/ps/node-red-v2/dashboard/`.
+* **Node-RED dashboard:** This link takes you to the V2 version of the dashboard. However, please note that once you have installed version V3, this link will no longer work. To see the new version you'll need this one `http://<planktoscope-ip-address>:1880/ps/node-red-v2/dashboard/`.
 
 
 2. **Starting PlanktoScope** : Start by opening a terminal on your local machine.
