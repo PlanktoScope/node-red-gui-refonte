@@ -112,6 +112,14 @@
         "env": []
     },
     {
+        "id": "09720271fb5e1262",
+        "type": "tab",
+        "label": "Calibration",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "4237eacb62444cc7",
         "type": "group",
         "z": "db1e7a22029cc2a4",
@@ -608,7 +616,7 @@
         ],
         "x": 104,
         "y": 859,
-        "w": 942,
+        "w": 952,
         "h": 82
     },
     {
@@ -920,7 +928,8 @@
             "6de2b170e3f9e0b7",
             "1fc5b6ec62410d82",
             "ddb990253977c127",
-            "7713a5a8e363c8a4"
+            "7713a5a8e363c8a4",
+            "9af6af3ff24e7c4d"
         ],
         "x": 54,
         "y": 639,
@@ -985,7 +994,7 @@
         ],
         "x": 159,
         "y": 939,
-        "w": 1162,
+        "w": 1172,
         "h": 162
     },
     {
@@ -1191,9 +1200,9 @@
             "d80ab3b457ba2653",
             "ddb9c4fcb2355d4c"
         ],
-        "x": 54,
+        "x": 44,
         "y": 239,
-        "w": 1052,
+        "w": 1062,
         "h": 142
     },
     {
@@ -1235,7 +1244,7 @@
         ],
         "x": 294,
         "y": 11.5,
-        "w": 452,
+        "w": 462,
         "h": 97
     },
     {
@@ -1275,8 +1284,8 @@
         ],
         "x": 298,
         "y": 213,
-        "w": 1514,
-        "h": 934
+        "w": 1334,
+        "h": 974
     },
     {
         "id": "33612d5553587d0f",
@@ -1521,9 +1530,9 @@
             "5aab3d77f5f76bba",
             "c813ee0363b277bb"
         ],
-        "x": 104,
+        "x": 94,
         "y": 379,
-        "w": 1372,
+        "w": 1392,
         "h": 189.5
     },
     {
@@ -1584,9 +1593,9 @@
             "08324bbd83565d26",
             "df824b3eae9a8d40"
         ],
-        "x": 159,
+        "x": 149,
         "y": 159,
-        "w": 532,
+        "w": 542,
         "h": 122
     },
     {
@@ -1605,7 +1614,7 @@
         ],
         "x": 54,
         "y": 219,
-        "w": 245,
+        "w": 248,
         "h": 82
     },
     {
@@ -1642,9 +1651,9 @@
             "000765d5a63540b8",
             "b55889accd88ab53"
         ],
-        "x": 54,
+        "x": 44,
         "y": 19,
-        "w": 402,
+        "w": 412,
         "h": 82
     },
     {
@@ -1661,9 +1670,9 @@
             "2b081acaeb1f304d",
             "71876f75ae3e4ba6"
         ],
-        "x": 44,
+        "x": 34,
         "y": 59,
-        "w": 290,
+        "w": 291,
         "h": 82
     },
     {
@@ -1682,7 +1691,7 @@
         ],
         "x": 44,
         "y": 159,
-        "w": 245,
+        "w": 248,
         "h": 82
     },
     {
@@ -1701,7 +1710,7 @@
         ],
         "x": 54,
         "y": 39,
-        "w": 245,
+        "w": 248,
         "h": 82
     },
     {
@@ -1720,9 +1729,9 @@
             "73dbec532343f666",
             "0804cf4b32049a1d"
         ],
-        "x": 124,
+        "x": 114,
         "y": 39,
-        "w": 402,
+        "w": 412,
         "h": 82
     },
     {
@@ -1740,9 +1749,9 @@
             "7508ddea7c6e85b2",
             "a502f95380d7ea32"
         ],
-        "x": 84,
+        "x": 74,
         "y": 139,
-        "w": 322,
+        "w": 332,
         "h": 82
     },
     {
@@ -1761,7 +1770,7 @@
         ],
         "x": 84,
         "y": 39,
-        "w": 245,
+        "w": 248,
         "h": 82
     },
     {
@@ -1780,9 +1789,9 @@
             "6fa34a1f2515c4cf",
             "dda766f441681122"
         ],
-        "x": 104,
+        "x": 94,
         "y": 79,
-        "w": 432,
+        "w": 442,
         "h": 82
     },
     {
@@ -1801,7 +1810,7 @@
         ],
         "x": 104,
         "y": 179,
-        "w": 245,
+        "w": 248,
         "h": 82
     },
     {
@@ -1840,9 +1849,9 @@
             "816b6e4b808a51b8",
             "9c2590d80c6812bb"
         ],
-        "x": 84,
+        "x": 74,
         "y": 139,
-        "w": 432,
+        "w": 442,
         "h": 82
     },
     {
@@ -1861,7 +1870,7 @@
         ],
         "x": 84,
         "y": 39,
-        "w": 245,
+        "w": 248,
         "h": 82
     },
     {
@@ -1880,7 +1889,7 @@
         ],
         "x": 84,
         "y": 139,
-        "w": 290,
+        "w": 291,
         "h": 82
     },
     {
@@ -1899,7 +1908,7 @@
         ],
         "x": 84,
         "y": 39,
-        "w": 292,
+        "w": 297,
         "h": 82
     },
     {
@@ -1969,9 +1978,9 @@
         "nodes": [
             "9413e05a5d2f5e7e"
         ],
-        "x": 124,
+        "x": 114,
         "y": 139,
-        "w": 272,
+        "w": 292,
         "h": 82
     },
     {
@@ -2047,9 +2056,9 @@
             "4a4b4954e084dae2",
             "3127fdb1519978ed"
         ],
-        "x": 134,
+        "x": 124,
         "y": 1299,
-        "w": 922,
+        "w": 932,
         "h": 142
     },
     {
@@ -2094,6 +2103,24 @@
         "y": 499,
         "w": 1612,
         "h": 489.5
+    },
+    {
+        "id": "33233301e691aaf6",
+        "type": "group",
+        "z": "09720271fb5e1262",
+        "name": "Streaming",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "28b36eff8f54c6bc"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 192,
+        "h": 82
     },
     {
         "id": "b08415909e5dc4da",
@@ -2331,7 +2358,7 @@
         ],
         "x": 324,
         "y": 239,
-        "w": 462,
+        "w": 402,
         "h": 602
     },
     {
@@ -2386,7 +2413,6 @@
             "27e95a294484b696",
             "9159b725b95585e8",
             "c3436332c18e7ae3",
-            "336dd37e7f9e8f95",
             "065732882c0856ab",
             "e107ea45d7fbc414",
             "00de106f51eea6b4",
@@ -2407,12 +2433,15 @@
             "ea6eccb844b26946",
             "37620e74d21bc71d",
             "29b0ec18e56f4db2",
-            "a5a114c1aa5776df"
+            "dad1199fa90df068",
+            "edb8758758764b66",
+            "060d63512a3414c6",
+            "6590835dbd50d073"
         ],
         "x": 804,
         "y": 239,
-        "w": 482,
-        "h": 882
+        "w": 402,
+        "h": 922
     },
     {
         "id": "5366a9c252403340",
@@ -2433,7 +2462,7 @@
         ],
         "x": 1304,
         "y": 239,
-        "w": 482,
+        "w": 302,
         "h": 122
     },
     {
@@ -2477,7 +2506,7 @@
         ],
         "x": 1864,
         "y": 299,
-        "w": 462,
+        "w": 402,
         "h": 602
     },
     {
@@ -3036,11 +3065,11 @@
     {
         "id": "3da386409fa03189",
         "type": "persistent values config",
-        "name": "Setting Metadata",
+        "name": "settings",
         "values": [
             {
                 "id": "a820b210-1122-11ef-859a-e74349e74cab",
-                "name": "first-visit",
+                "name": "first_visit",
                 "datatype": "bool",
                 "default": true,
                 "description": "First visit of the user on the PlanktoScope",
@@ -3049,7 +3078,7 @@
             },
             {
                 "id": "1e747130-1d0e-11ef-8a67-d1728875f042",
-                "name": "coord-format",
+                "name": "coord_format",
                 "datatype": "str",
                 "default": "Decimal degrees (DD)",
                 "description": "Format of coordonates",
@@ -3334,23 +3363,23 @@
     {
         "id": "0dfabcaf117a1a54",
         "type": "persistent values config",
-        "name": "Sample Metadata",
+        "name": "sample",
         "values": [
             {
                 "id": "8dad4db0-4e50-11ef-86a5-e9c7b2057935",
-                "name": "project_name",
+                "name": "project",
                 "datatype": "str",
-                "default": "default project name",
-                "description": "TO DO",
+                "default": "Name of the project",
+                "description": "The project name corresponds to the name of the general research project in which the sample was collected. The project name should reflect the initiative or study under which the sampling activity is conducted.",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "90285fd0-4e50-11ef-86a5-e9c7b2057935",
-                "name": "sample_id",
+                "name": "id",
                 "datatype": "str",
-                "default": "default id",
-                "description": "TO DO",
+                "default": "ID of the sample",
+                "description": "A unique identifier (ID) assigned to each sample.",
                 "scope": "global",
                 "storage": "default"
             },
@@ -3410,37 +3439,37 @@
             },
             {
                 "id": "80f7c120-4e52-11ef-86a5-e9c7b2057935",
-                "name": "mouth_opening_diam",
+                "name": "net_mouth_diameter",
                 "datatype": "str",
-                "default": "0",
-                "description": "TO DO",
+                "default": "30",
+                "description": "The diameter of the mouth (or opening) of the net used in sampling, measured in centimeters.",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "82b15800-4e52-11ef-86a5-e9c7b2057935",
-                "name": "length_of_the_net",
+                "name": "net_length_net",
                 "datatype": "str",
-                "default": "0",
-                "description": "TO DO",
+                "default": "120",
+                "description": "The length of the net used for sampling from the opening to the collector, measured in centimeters.",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "8330e840-4e52-11ef-86a5-e9c7b2057935",
-                "name": "mesh_size",
+                "name": "net_mesh_size",
                 "datatype": "str",
-                "default": "0",
-                "description": "TO DO",
+                "default": "20",
+                "description": "The size of the mesh used in the net, measured in micrometers (μm).",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "836ae400-4e52-11ef-86a5-e9c7b2057935",
-                "name": "volume_of_the_collector",
+                "name": "collected_volume",
                 "datatype": "str",
-                "default": "0",
-                "description": "TO DO",
+                "default": "50",
+                "description": "The volume of water collected after sampling, measured in milliliters.",
                 "scope": "global",
                 "storage": "default"
             },
@@ -3448,8 +3477,8 @@
                 "id": "40e9b2f0-4e5c-11ef-86a5-e9c7b2057935",
                 "name": "filtered_volume",
                 "datatype": "str",
-                "default": "0",
-                "description": "TO DO",
+                "default": "1500",
+                "description": "The volume of water filtered through the net during sampling, measured in liters.",
                 "scope": "global",
                 "storage": "default"
             },
@@ -3458,7 +3487,7 @@
                 "name": "dillution_factor",
                 "datatype": "str",
                 "default": "0",
-                "description": "TO DO",
+                "description": "The dilution factor used in the sample, represented as a numerical value.",
                 "scope": "global",
                 "storage": "default"
             },
@@ -3466,32 +3495,32 @@
                 "id": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
                 "name": "sieve_mesh_size",
                 "datatype": "str",
-                "default": "0",
-                "description": "TO DO",
+                "default": "200",
+                "description": "The size of the mesh used in the sieve, measured in micrometers (μm).",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "4195d170-4e5c-11ef-86a5-e9c7b2057935",
-                "name": "depth_of_the_sample",
+                "name": "depth",
                 "datatype": "str",
                 "default": "0",
-                "description": "TO DO",
+                "description": "The depth at which the sample was collected during a horizontal tow, measured in meters.",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "69ca7b50-4e5c-11ef-86a5-e9c7b2057935",
-                "name": "sample_comment",
+                "name": "comment",
                 "datatype": "str",
-                "default": "",
-                "description": "TO DO",
+                "default": "Comment",
+                "description": "A field for any additional comments or notes related to the sample.",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "21548210-4e63-11ef-86a5-e9c7b2057935",
-                "name": "volume_of_the_bottle",
+                "name": "niskin_volume",
                 "datatype": "str",
                 "default": "0",
                 "description": "TO DO",
@@ -3503,7 +3532,7 @@
                 "name": "depth_min",
                 "datatype": "str",
                 "default": "0",
-                "description": "TO DO",
+                "description": "The minimum depth reached during a vertical tow, measured in meters.",
                 "scope": "global",
                 "storage": "default"
             },
@@ -3512,25 +3541,16 @@
                 "name": "depth_max",
                 "datatype": "str",
                 "default": "0",
-                "description": "TO DO",
-                "scope": "global",
-                "storage": "default"
-            },
-            {
-                "id": "c0901960-4e64-11ef-86a5-e9c7b2057935",
-                "name": "depth",
-                "datatype": "str",
-                "default": "0",
-                "description": "TO DO",
+                "description": "The maximum depth reached during a vertical tow, measured in meters.",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "5ecde410-4ff8-11ef-8af0-151edf01ff7c",
-                "name": "sampling_gear",
+                "name": "gear",
                 "datatype": "str",
-                "default": "",
-                "description": "TO DO",
+                "default": "gear",
+                "description": "The type of gear used to collect the sample. This field describes the specific equipment used during the sampling process and provides context about the sampling method and conditions.",
                 "scope": "global",
                 "storage": "default"
             }
@@ -3539,38 +3559,38 @@
     {
         "id": "842103bc1301dfb9",
         "type": "persistent values config",
-        "name": "Acquisition Metadata",
+        "name": "acq",
         "values": [
             {
                 "id": "cb9cb620-4ffd-11ef-8af0-151edf01ff7c",
-                "name": "acquisition_id",
+                "name": "id",
                 "datatype": "str",
                 "default": "acq_id_0",
-                "description": "TO DO",
+                "description": "A unique identifier for the acquisition process.",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "18a9dd30-5017-11ef-8af0-151edf01ff7c",
-                "name": "acquisition_comment",
+                "name": "comment",
                 "datatype": "str",
                 "default": "",
-                "description": "TO DO",
+                "description": "A field for any additional comments or notes related to the acquisition process.",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "712e26d0-6068-11ef-9c85-81609e7d2b3e",
-                "name": "number_of_images",
+                "name": "nb_img_acquired",
                 "datatype": "str",
                 "default": "1",
-                "description": "TO DO",
+                "description": "The total number of images acquired during the acquisition process.",
                 "scope": "global",
                 "storage": "default"
             },
             {
                 "id": "7fd8e1c0-6068-11ef-9c85-81609e7d2b3e",
-                "name": "pumped_volume",
+                "name": "interframe_volume",
                 "datatype": "str",
                 "default": "0.08",
                 "description": "TO DO",
@@ -3681,14 +3701,41 @@
     {
         "id": "f90d50097c6eb575",
         "type": "persistent values config",
-        "name": "acq",
+        "name": "acq_tebedeleted",
         "values": [
             {
                 "id": "b33a7620-63b8-11ef-896a-298ca7d12c69",
                 "name": "volume",
-                "datatype": "num",
-                "default": 2,
+                "datatype": "str",
+                "default": "2",
                 "description": "unit in ml",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "eab66760-7111-11ef-a8ca-b1b54aa789fc",
+                "name": "wb_blue",
+                "datatype": "str",
+                "default": "1.0",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "f6bed920-7111-11ef-a8ca-b1b54aa789fc",
+                "name": "wb_red",
+                "datatype": "str",
+                "default": "1.0",
+                "description": "TO DO",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "f9c16ac0-7111-11ef-a8ca-b1b54aa789fc",
+                "name": "wb_hex",
+                "datatype": "str",
+                "default": "#ffff",
+                "description": "TO DO",
                 "scope": "global",
                 "storage": "default"
             }
@@ -3780,6 +3827,134 @@
                 "datatype": "str",
                 "default": "",
                 "description": "State of the segmentation",
+                "scope": "global",
+                "storage": "default"
+            }
+        ]
+    },
+    {
+        "id": "29e1be6120618b94",
+        "type": "ui-group",
+        "name": "Preview",
+        "page": "319a1360b7f5648b",
+        "width": "4",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d7c24bc572401a73",
+        "type": "ui-group",
+        "name": "Settings",
+        "page": "319a1360b7f5648b",
+        "width": "8",
+        "height": "1",
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "319a1360b7f5648b",
+        "type": "ui-page",
+        "name": "Calibration",
+        "ui": "1eeac55ba6b9065f",
+        "path": "/calibration",
+        "icon": "",
+        "layout": "grid",
+        "theme": "c0ea559892f9bd33",
+        "order": 12,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "4e4f42e2c36e1ace",
+        "type": "persistent values config",
+        "name": "object",
+        "values": [
+            {
+                "id": "c9fad590-7131-11ef-a8ca-b1b54aa789fc",
+                "name": "date",
+                "datatype": "str",
+                "default": "YYYYMMJJ",
+                "description": "This is the date the sampling process began, in Coordinated Universal Time (UTC). Typically when the plankton net is thrown.",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "00db4bd0-7132-11ef-a8ca-b1b54aa789fc",
+                "name": "time",
+                "datatype": "str",
+                "default": "HHMMSS",
+                "description": "This is the time the sampling process began, in Coordinated Universal Time (UTC). Typically when the plankton net is thrown.",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "1a70d380-7132-11ef-a8ca-b1b54aa789fc",
+                "name": "lon",
+                "datatype": "str",
+                "default": "DD or DMS",
+                "description": "The geographic longitude where the sampling process began in decimal degrees (DD) or sexagesimal degrees (DMS) format.",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "1d1b5a10-7132-11ef-a8ca-b1b54aa789fc",
+                "name": "lat",
+                "datatype": "str",
+                "default": "DD or DMS",
+                "description": "The geographic latitude where the sampling process began in decimal degrees (DD) or sexagesimal degrees (DMS) format.",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "1d240ca0-7132-11ef-a8ca-b1b54aa789fc",
+                "name": "date_end",
+                "datatype": "str",
+                "default": "YYYYMMJJ",
+                "description": "This is the date the sampling process stopped, in Coordinated Universal Time (UTC). Typically when the plankton net is retrieved.",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "20a6f1d0-7132-11ef-a8ca-b1b54aa789fc",
+                "name": "time_end",
+                "datatype": "str",
+                "default": "HHMMSS",
+                "description": "This is the time the sampling process stopped, in Coordinated Universal Time (UTC). Typically when the plankton net is retrieved.",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "23d1cbf0-7132-11ef-a8ca-b1b54aa789fc",
+                "name": "lon_end",
+                "datatype": "str",
+                "default": "DD or DMS",
+                "description": "The geographic longitude where the sampling process stopped in decimal degrees (DD) or sexagesimal degrees (DMS) format.",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "264e64b0-7132-11ef-a8ca-b1b54aa789fc",
+                "name": "lat_end",
+                "datatype": "str",
+                "default": "DD or DMS",
+                "description": "The geographic latitude where the sampling process stopped in decimal degrees (DD) or sexagesimal degrees (DMS) format.",
+                "scope": "global",
+                "storage": "default"
+            },
+            {
+                "id": "28bd8ff0-7132-11ef-a8ca-b1b54aa789fc",
+                "name": "link",
+                "datatype": "str",
+                "default": "",
+                "description": "TODO",
                 "scope": "global",
                 "storage": "default"
             }
@@ -4480,7 +4655,9 @@
             "865a97c719b421b7",
             "49e3527ee270a8b2",
             "714e4f841831d0f8",
-            "4e0513042a591ae7"
+            "4e0513042a591ae7",
+            "edb8758758764b66",
+            "6590835dbd50d073"
         ],
         "x": 895,
         "y": 160,
@@ -4493,9 +4670,9 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
-        "value": "first-visit",
+        "value": "first_visit",
         "command": "write",
         "msgProperty": "payload.Setting_Metadata_first-visit",
         "dynamicControl": false,
@@ -4511,7 +4688,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 540,
+        "x": 510,
         "y": 280,
         "wires": [
             [],
@@ -4525,9 +4702,9 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
+        "value": "coord_format",
         "command": "write",
         "msgProperty": "payload.Setting_Metadata_coord-format",
         "dynamicControl": false,
@@ -4543,7 +4720,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 550,
+        "x": 530,
         "y": 320,
         "wires": [
             [],
@@ -4557,7 +4734,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "write",
@@ -4575,7 +4752,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 560,
+        "x": 530,
         "y": 360,
         "wires": [
             [],
@@ -4589,7 +4766,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
         "value": "operator_email",
         "command": "write",
@@ -4607,7 +4784,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 560,
+        "x": 530,
         "y": 400,
         "wires": [
             [],
@@ -4621,7 +4798,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
         "value": "flowrate_preset",
         "command": "write",
@@ -4639,7 +4816,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 560,
+        "x": 530,
         "y": 440,
         "wires": [
             [],
@@ -4653,7 +4830,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
         "value": "volume_preset",
         "command": "write",
@@ -4671,7 +4848,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 560,
+        "x": 530,
         "y": 480,
         "wires": [
             [],
@@ -4685,7 +4862,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
         "value": "focus_preset",
         "command": "write",
@@ -4703,7 +4880,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 550,
+        "x": 530,
         "y": 520,
         "wires": [
             [],
@@ -4717,7 +4894,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
         "value": "delay_to_stabilized",
         "command": "write",
@@ -4735,7 +4912,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 570,
+        "x": 540,
         "y": 560,
         "wires": [
             [],
@@ -4749,7 +4926,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "16042860-42c0-11ef-89ad-e57161842148",
         "value": "flowrate_in_between",
         "command": "write",
@@ -4767,7 +4944,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 580,
+        "x": 550,
         "y": 600,
         "wires": [
             [],
@@ -4781,7 +4958,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "54330ee0-437d-11ef-946b-75401899c243",
         "value": "MSTS",
         "command": "reset",
@@ -4799,7 +4976,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 530,
+        "x": 500,
         "y": 640,
         "wires": [
             [],
@@ -4813,7 +4990,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "write",
@@ -4831,7 +5008,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 560,
+        "x": 530,
         "y": 800,
         "wires": [
             [],
@@ -4887,9 +5064,9 @@
         "g": "15f3b975f3b5eb77",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
+        "value": "coord_format",
         "command": "write",
         "msgProperty": "payload.Setting_Metadata_coord-format",
         "dynamicControl": false,
@@ -4905,7 +5082,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 550,
+        "x": 530,
         "y": 680,
         "wires": [
             [],
@@ -4919,9 +5096,7 @@
         "g": "15f3b975f3b5eb77",
         "name": "link in 185",
         "links": [
-            "e8eeb682015e557c",
-            "9379acf82c9c4075",
-            "685ab611734609b3"
+            "e8eeb682015e557c"
         ],
         "x": 365,
         "y": 280,
@@ -5198,11 +5373,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "8dad4db0-4e50-11ef-86a5-e9c7b2057935",
-        "value": "project_name",
+        "value": "project",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_project_name",
+        "msgProperty": "payload.sample_project",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5216,7 +5391,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1040,
+        "x": 980,
         "y": 280,
         "wires": [
             [],
@@ -5230,11 +5405,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "90285fd0-4e50-11ef-86a5-e9c7b2057935",
-        "value": "sample_id",
+        "value": "id",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_sample_id",
+        "msgProperty": "payload.sample_id",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5248,7 +5423,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1030,
+        "x": 970,
         "y": 320,
         "wires": [
             [],
@@ -5261,12 +5436,12 @@
         "z": "2d41a8ed5aea3449",
         "g": "b268cb4fc1962e4d",
         "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "907912f0-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "starting_point_date",
+        "valuesConfig": "4e4f42e2c36e1ace",
+        "valuesConfigName": "object",
+        "valueId": "c9fad590-7131-11ef-a8ca-b1b54aa789fc",
+        "value": "date",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_starting_point_date",
+        "msgProperty": "payload.object_date",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5280,7 +5455,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
+        "x": 970,
         "y": 360,
         "wires": [
             [],
@@ -5293,12 +5468,12 @@
         "z": "2d41a8ed5aea3449",
         "g": "b268cb4fc1962e4d",
         "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "aa48e480-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "starting_point_time",
+        "valuesConfig": "4e4f42e2c36e1ace",
+        "valuesConfigName": "object",
+        "valueId": "00db4bd0-7132-11ef-a8ca-b1b54aa789fc",
+        "value": "time",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_starting_point_time",
+        "msgProperty": "payload.object_time",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5312,7 +5487,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
+        "x": 970,
         "y": 400,
         "wires": [
             [],
@@ -5325,12 +5500,12 @@
         "z": "2d41a8ed5aea3449",
         "g": "b268cb4fc1962e4d",
         "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "b5faaac0-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "starting_point_gps",
+        "valuesConfig": "4e4f42e2c36e1ace",
+        "valuesConfigName": "object",
+        "valueId": "1a70d380-7132-11ef-a8ca-b1b54aa789fc",
+        "value": "lon",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_starting_point_gps",
+        "msgProperty": "payload.object_lon",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5344,7 +5519,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
+        "x": 970,
         "y": 440,
         "wires": [
             [],
@@ -5357,12 +5532,12 @@
         "z": "2d41a8ed5aea3449",
         "g": "b268cb4fc1962e4d",
         "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "d66c06a0-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "ending_point_date",
+        "valuesConfig": "4e4f42e2c36e1ace",
+        "valuesConfigName": "object",
+        "valueId": "1d240ca0-7132-11ef-a8ca-b1b54aa789fc",
+        "value": "date_end",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_ending_point_date",
+        "msgProperty": "payload.object_date_end",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5376,8 +5551,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 480,
+        "x": 990,
+        "y": 520,
         "wires": [
             [],
             []
@@ -5389,12 +5564,12 @@
         "z": "2d41a8ed5aea3449",
         "g": "b268cb4fc1962e4d",
         "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "d6b592c0-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "ending_point_time",
+        "valuesConfig": "4e4f42e2c36e1ace",
+        "valuesConfigName": "object",
+        "valueId": "20a6f1d0-7132-11ef-a8ca-b1b54aa789fc",
+        "value": "time_end",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_ending_point_time",
+        "msgProperty": "payload.object_time_end",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5408,8 +5583,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 520,
+        "x": 990,
+        "y": 560,
         "wires": [
             [],
             []
@@ -5421,12 +5596,12 @@
         "z": "2d41a8ed5aea3449",
         "g": "b268cb4fc1962e4d",
         "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "d6e55550-4dc3-11ef-86a5-e9c7b2057935",
-        "value": "ending_point_gps",
+        "valuesConfig": "4e4f42e2c36e1ace",
+        "valuesConfigName": "object",
+        "valueId": "23d1cbf0-7132-11ef-a8ca-b1b54aa789fc",
+        "value": "lon_end",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_ending_point_gps",
+        "msgProperty": "payload.object_lon_end",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5440,8 +5615,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 560,
+        "x": 980,
+        "y": 600,
         "wires": [
             [],
             []
@@ -5454,75 +5629,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "80f7c120-4e52-11ef-86a5-e9c7b2057935",
-        "value": "mouth_opening_diam",
+        "value": "net_mouth_diameter",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_mouth_opening_diam",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 1060,
-        "y": 600,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "e8b6810af3e18bd8",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "b268cb4fc1962e4d",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "82b15800-4e52-11ef-86a5-e9c7b2057935",
-        "value": "length_of_the_net",
-        "command": "write",
-        "msgProperty": "payload.Sample_Metadata_length_of_the_net",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 640,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "b9acdc5625182e2d",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "b268cb4fc1962e4d",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "8330e840-4e52-11ef-86a5-e9c7b2057935",
-        "value": "mesh_size",
-        "command": "write",
-        "msgProperty": "payload.Sample_Metadata_mesh_size",
+        "msgProperty": "payload.sample_net_mouth_diameter",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5544,17 +5655,17 @@
         ]
     },
     {
-        "id": "ed1762149f59cda0",
+        "id": "e8b6810af3e18bd8",
         "type": "persistent value",
         "z": "2d41a8ed5aea3449",
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "836ae400-4e52-11ef-86a5-e9c7b2057935",
-        "value": "volume_of_the_collector",
+        "valuesConfigName": "sample",
+        "valueId": "82b15800-4e52-11ef-86a5-e9c7b2057935",
+        "value": "net_length_net",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_volume_of_the_collector",
+        "msgProperty": "payload.sample_net_length_net",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5568,8 +5679,72 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1070,
+        "x": 1010,
         "y": 720,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b9acdc5625182e2d",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "sample",
+        "valueId": "8330e840-4e52-11ef-86a5-e9c7b2057935",
+        "value": "net_mesh_size",
+        "command": "write",
+        "msgProperty": "payload.sample_net_mesh_size",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1010,
+        "y": 760,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ed1762149f59cda0",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "",
+        "valuesConfig": "0dfabcaf117a1a54",
+        "valuesConfigName": "sample",
+        "valueId": "836ae400-4e52-11ef-86a5-e9c7b2057935",
+        "value": "collected_volume",
+        "command": "write",
+        "msgProperty": "payload.sample_collected_volume",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1020,
+        "y": 800,
         "wires": [
             [],
             []
@@ -5582,11 +5757,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "40e9b2f0-4e5c-11ef-86a5-e9c7b2057935",
         "value": "filtered_volume",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_filtered_volume",
+        "msgProperty": "payload.sample_filtered_volume",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5600,8 +5775,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1040,
-        "y": 760,
+        "x": 1010,
+        "y": 840,
         "wires": [
             [],
             []
@@ -5614,11 +5789,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "412c8850-4e5c-11ef-86a5-e9c7b2057935",
         "value": "dillution_factor",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_dillution_factor",
+        "msgProperty": "payload.sample_dillution_factor",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5632,8 +5807,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1040,
-        "y": 800,
+        "x": 1010,
+        "y": 880,
         "wires": [
             [],
             []
@@ -5646,11 +5821,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "415e94d0-4e5c-11ef-86a5-e9c7b2057935",
         "value": "sieve_mesh_size",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_sieve_mesh_size",
+        "msgProperty": "payload.sample_sieve_mesh_size",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5664,8 +5839,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 840,
+        "x": 1020,
+        "y": 920,
         "wires": [
             [],
             []
@@ -5678,11 +5853,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "4195d170-4e5c-11ef-86a5-e9c7b2057935",
-        "value": "depth_of_the_sample",
+        "value": "depth",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_depth_of_the_sample",
+        "msgProperty": "payload.sample_depth",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5696,8 +5871,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1060,
-        "y": 880,
+        "x": 980,
+        "y": 960,
         "wires": [
             [],
             []
@@ -5710,11 +5885,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "69ca7b50-4e5c-11ef-86a5-e9c7b2057935",
-        "value": "sample_comment",
+        "value": "comment",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_sample_comment",
+        "msgProperty": "payload.sample_comment",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5728,8 +5903,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1050,
-        "y": 920,
+        "x": 990,
+        "y": 1000,
         "wires": [
             [],
             []
@@ -5742,9 +5917,9 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "21548210-4e63-11ef-86a5-e9c7b2057935",
-        "value": "volume_of_the_bottle",
+        "value": "niskin_volume",
         "command": "write",
         "msgProperty": "payload.Sample_Metadata_volume_of_the_bottle",
         "dynamicControl": false,
@@ -5760,8 +5935,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1060,
-        "y": 960,
+        "x": 1010,
+        "y": 1040,
         "wires": [
             [],
             []
@@ -5774,11 +5949,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "92ae25b0-4e63-11ef-86a5-e9c7b2057935",
         "value": "depth_min",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_depth_min",
+        "msgProperty": "payload.sample_depth_min",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5792,8 +5967,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1030,
-        "y": 1000,
+        "x": 1000,
+        "y": 1080,
         "wires": [
             [],
             []
@@ -5806,11 +5981,11 @@
         "g": "b268cb4fc1962e4d",
         "name": "",
         "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
+        "valuesConfigName": "sample",
         "valueId": "978fb080-4e63-11ef-86a5-e9c7b2057935",
         "value": "depth_max",
         "command": "write",
-        "msgProperty": "payload.Sample_Metadata_depth_max",
+        "msgProperty": "payload.sample_depth_max",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -5824,40 +5999,8 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1030,
-        "y": 1040,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "336dd37e7f9e8f95",
-        "type": "persistent value",
-        "z": "2d41a8ed5aea3449",
-        "g": "b268cb4fc1962e4d",
-        "name": "",
-        "valuesConfig": "0dfabcaf117a1a54",
-        "valuesConfigName": "Sample Metadata",
-        "valueId": "c0901960-4e64-11ef-86a5-e9c7b2057935",
-        "value": "depth",
-        "command": "write",
-        "msgProperty": "payload.Sample_Metadata_depth",
-        "dynamicControl": false,
-        "dynamicCommandMsgProperty": "command",
-        "dynamicValueMsgProperty": "topic",
-        "deepCloneValue": false,
-        "outputPreviousValue": false,
-        "outputPreviousValueMsgProperty": "previous_value",
-        "collectValues": false,
-        "collectValuesMsgProperty": "values",
-        "blockIfEnable": false,
-        "blockIfRule": "eq",
-        "blockIfCompareValue": "true",
-        "outputMetaData": false,
-        "outputMetaDataMsgProperty": "meta",
-        "x": 1010,
-        "y": 1080,
+        "x": 1000,
+        "y": 1120,
         "wires": [
             [],
             []
@@ -5970,7 +6113,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 640,
+        "y": 720,
         "wires": [
             [
                 "e8b6810af3e18bd8"
@@ -5989,7 +6132,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 600,
+        "y": 680,
         "wires": [
             [
                 "04020e5373c00367"
@@ -6008,7 +6151,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 560,
+        "y": 600,
         "wires": [
             [
                 "b8ea680c60eadd3b"
@@ -6027,7 +6170,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 520,
+        "y": 560,
         "wires": [
             [
                 "a46dd7b988c2e887"
@@ -6046,7 +6189,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 480,
+        "y": 520,
         "wires": [
             [
                 "ae513f8a40e9873e"
@@ -6065,7 +6208,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 840,
+        "y": 920,
         "wires": [
             [
                 "9da0bff82fd913cb"
@@ -6084,7 +6227,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 800,
+        "y": 880,
         "wires": [
             [
                 "94a7c56b5a7d26c7"
@@ -6103,7 +6246,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 760,
+        "y": 840,
         "wires": [
             [
                 "30387afc9486ade0"
@@ -6122,7 +6265,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 720,
+        "y": 800,
         "wires": [
             [
                 "ed1762149f59cda0"
@@ -6141,7 +6284,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 680,
+        "y": 760,
         "wires": [
             [
                 "b9acdc5625182e2d"
@@ -6160,7 +6303,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "c3436332c18e7ae3"
@@ -6179,7 +6322,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 1000,
+        "y": 1080,
         "wires": [
             [
                 "9159b725b95585e8"
@@ -6198,7 +6341,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 960,
+        "y": 1040,
         "wires": [
             [
                 "27e95a294484b696"
@@ -6217,7 +6360,7 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 920,
+        "y": 1000,
         "wires": [
             [
                 "a501694d5a797c8b"
@@ -6236,29 +6379,10 @@
             "685ab611734609b3"
         ],
         "x": 845,
-        "y": 880,
+        "y": 960,
         "wires": [
             [
                 "927a5cee83a40dd6"
-            ]
-        ]
-    },
-    {
-        "id": "a5a114c1aa5776df",
-        "type": "link in",
-        "z": "2d41a8ed5aea3449",
-        "g": "b268cb4fc1962e4d",
-        "name": "link in 218",
-        "links": [
-            "e8eeb682015e557c",
-            "9379acf82c9c4075",
-            "685ab611734609b3"
-        ],
-        "x": 845,
-        "y": 1080,
-        "wires": [
-            [
-                "336dd37e7f9e8f95"
             ]
         ]
     },
@@ -6269,11 +6393,11 @@
         "g": "5366a9c252403340",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
-        "valuesConfigName": "Acquisition Metadata",
+        "valuesConfigName": "acq",
         "valueId": "cb9cb620-4ffd-11ef-8af0-151edf01ff7c",
-        "value": "acquisition_id",
+        "value": "id",
         "command": "write",
-        "msgProperty": "payload.Acquisition_Metadata_acquisition_id",
+        "msgProperty": "payload.acq_id",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -6287,7 +6411,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1550,
+        "x": 1460,
         "y": 280,
         "wires": [
             [],
@@ -6301,11 +6425,11 @@
         "g": "5366a9c252403340",
         "name": "",
         "valuesConfig": "842103bc1301dfb9",
-        "valuesConfigName": "Acquisition Metadata",
+        "valuesConfigName": "acq",
         "valueId": "18a9dd30-5017-11ef-8af0-151edf01ff7c",
-        "value": "acquisition_comment",
+        "value": "comment",
         "command": "write",
-        "msgProperty": "payload.Acquisition_Metadata_acquisition_comment",
+        "msgProperty": "payload.acq_comment",
         "dynamicControl": false,
         "dynamicCommandMsgProperty": "command",
         "dynamicValueMsgProperty": "topic",
@@ -6319,7 +6443,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 1570,
+        "x": 1480,
         "y": 320,
         "wires": [
             [],
@@ -6412,9 +6536,9 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "a820b210-1122-11ef-859a-e74349e74cab",
-        "value": "first-visit",
+        "value": "first_visit",
         "command": "write",
         "msgProperty": "payload.Setting_Metadata_first-visit",
         "dynamicControl": false,
@@ -6430,7 +6554,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2080,
+        "x": 2050,
         "y": 340,
         "wires": [
             [],
@@ -6444,9 +6568,9 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
+        "value": "coord_format",
         "command": "write",
         "msgProperty": "payload.Setting_Metadata_coord-format",
         "dynamicControl": false,
@@ -6462,7 +6586,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2090,
+        "x": 2070,
         "y": 380,
         "wires": [
             [],
@@ -6476,7 +6600,7 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "write",
@@ -6494,7 +6618,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2100,
+        "x": 2070,
         "y": 420,
         "wires": [
             [],
@@ -6508,7 +6632,7 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "456f9de0-42a3-11ef-89ad-e57161842148",
         "value": "operator_email",
         "command": "write",
@@ -6526,7 +6650,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2100,
+        "x": 2070,
         "y": 460,
         "wires": [
             [],
@@ -6540,7 +6664,7 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "ceeda8d0-42aa-11ef-89ad-e57161842148",
         "value": "flowrate_preset",
         "command": "write",
@@ -6558,7 +6682,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2100,
+        "x": 2070,
         "y": 500,
         "wires": [
             [],
@@ -6572,7 +6696,7 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "4552e290-42ad-11ef-89ad-e57161842148",
         "value": "volume_preset",
         "command": "write",
@@ -6590,7 +6714,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2100,
+        "x": 2070,
         "y": 540,
         "wires": [
             [],
@@ -6604,7 +6728,7 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "59a90800-42ad-11ef-89ad-e57161842148",
         "value": "focus_preset",
         "command": "write",
@@ -6622,7 +6746,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2090,
+        "x": 2070,
         "y": 580,
         "wires": [
             [],
@@ -6636,7 +6760,7 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "002259e0-42c0-11ef-89ad-e57161842148",
         "value": "delay_to_stabilized",
         "command": "write",
@@ -6654,7 +6778,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2110,
+        "x": 2080,
         "y": 620,
         "wires": [
             [],
@@ -6668,7 +6792,7 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "16042860-42c0-11ef-89ad-e57161842148",
         "value": "flowrate_in_between",
         "command": "write",
@@ -6686,7 +6810,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2120,
+        "x": 2090,
         "y": 660,
         "wires": [
             [],
@@ -6700,7 +6824,7 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "54330ee0-437d-11ef-946b-75401899c243",
         "value": "MSTS",
         "command": "reset",
@@ -6718,7 +6842,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2070,
+        "x": 2040,
         "y": 700,
         "wires": [
             [],
@@ -6732,7 +6856,7 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "bad09130-49af-11ef-9331-19c39f8156d0",
         "value": "model_selected",
         "command": "write",
@@ -6750,7 +6874,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2100,
+        "x": 2070,
         "y": 860,
         "wires": [
             [],
@@ -6806,9 +6930,9 @@
         "g": "8f8806a0020e12d3",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting Metadata",
+        "valuesConfigName": "settings",
         "valueId": "1e747130-1d0e-11ef-8a67-d1728875f042",
-        "value": "coord-format",
+        "value": "coord_format",
         "command": "write",
         "msgProperty": "payload.Setting_Metadata_coord-format",
         "dynamicControl": false,
@@ -6824,7 +6948,7 @@
         "blockIfCompareValue": "true",
         "outputMetaData": false,
         "outputMetaDataMsgProperty": "meta",
-        "x": 2090,
+        "x": 2070,
         "y": 740,
         "wires": [
             [],
@@ -7111,6 +7235,108 @@
         "y": 1200,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "dad1199fa90df068",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "",
+        "valuesConfig": "4e4f42e2c36e1ace",
+        "valuesConfigName": "object",
+        "valueId": "1d1b5a10-7132-11ef-a8ca-b1b54aa789fc",
+        "value": "lat",
+        "command": "write",
+        "msgProperty": "payload.object_lat",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 970,
+        "y": 480,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "edb8758758764b66",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 242",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 480,
+        "wires": [
+            [
+                "dad1199fa90df068"
+            ]
+        ]
+    },
+    {
+        "id": "060d63512a3414c6",
+        "type": "persistent value",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "",
+        "valuesConfig": "4e4f42e2c36e1ace",
+        "valuesConfigName": "object",
+        "valueId": "264e64b0-7132-11ef-a8ca-b1b54aa789fc",
+        "value": "lat_end",
+        "command": "write",
+        "msgProperty": "payload.object_lat_end",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 980,
+        "y": 640,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6590835dbd50d073",
+        "type": "link in",
+        "z": "2d41a8ed5aea3449",
+        "g": "b268cb4fc1962e4d",
+        "name": "link in 243",
+        "links": [
+            "e8eeb682015e557c",
+            "9379acf82c9c4075",
+            "685ab611734609b3"
+        ],
+        "x": 845,
+        "y": 640,
+        "wires": [
+            [
+                "060d63512a3414c6"
+            ]
         ]
     },
     {
@@ -9190,7 +9416,8 @@
         "wires": [
             [
                 "13dc7e99c3b3cafc",
-                "ddb990253977c127"
+                "ddb990253977c127",
+                "9af6af3ff24e7c4d"
             ]
         ]
     },
@@ -9651,6 +9878,24 @@
                 "1fc5b6ec62410d82"
             ]
         ]
+    },
+    {
+        "id": "9af6af3ff24e7c4d",
+        "type": "debug",
+        "z": "db1e7a22029cc2a4",
+        "g": "5387cbd03cda0166",
+        "name": "debug 58",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 780,
+        "wires": []
     },
     {
         "id": "c3c3454d430487e0",
@@ -13136,9 +13381,9 @@
         "name": "Streaming",
         "order": 1,
         "width": "8",
-        "height": "13",
+        "height": "1",
         "head": "",
-        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n        <img src=\"http://92.167.184.163/ps/hal/camera/streams/preview.mjpg\">\n        <!--<img src=\"/ps/hal/camera/streams/preview.mjpg\">-->\n    </div>\n    <!--<div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>-->\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n    };\n  },\n  methods: {\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;    },\n  },\n};\n</script>\n",
+        "format": "<template>\n  <div class=\"image-zoom-container\"\n       @touchstart=\"handleTouchStart\"\n       @touchmove.prevent=\"handleTouchMove\"\n       @touchend=\"handleTouchEnd\"\n       @mousemove=\"handleMouseMove\"\n       @mouseleave=\"handleMouseLeave\">\n    <div class=\"image-wrapper\">\n        <img :src=\"dynamicImageUrl\" ref=\"image\">\n    </div>\n    <!--<div class=\"zoomed-image\" :style=\"zoomedImageStyle\"></div>-->\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      zoomedImageStyle: {\n        display: 'none',\n        backgroundImage: '',\n        backgroundSize: 'cover',\n        transformOrigin: 'center center',\n        transform: 'scale(2)', // Facteur de zoom initial\n        pointerEvents: 'none',\n        position: 'absolute',\n        width: '150px', // Taille réduite de l'image zoomée\n        height: '200px', // Taille réduite de l'image zoomée\n        border: '1px solid black',\n        zIndex: '1000',\n      },\n      touchStartX: 0,\n      touchStartY: 0,\n      isTouching: false,\n      dynamicImageUrl: ''\n    };\n  },\n  mounted() {\n    this.setDynamicImageUrl();\n  },\n  methods: {\n    setDynamicImageUrl() {\n      const currentUrl = new URL(window.location.href);\n      const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n      const relativePath = '/ps/hal/camera/streams/preview.mjpg';\n      const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n      this.dynamicImageUrl = fullUrl.href;\n    },\n    handleMouseMove(e) {\n      if (!this.isTouching) {\n        this.updateZoomPosition(e);\n      }\n    },\n    handleTouchStart(e) {\n      const touch = e.touches[0];\n      this.touchStartX = touch.clientX;\n      this.touchStartY = touch.clientY;\n      this.isTouching = true;\n      this.updateZoomPosition(touch);\n    },\n    handleTouchMove(e) {\n      if (this.isTouching) {\n        const touch = e.touches[0];\n        this.updateZoomPosition(touch);\n      }\n    },\n    handleTouchEnd() {\n      this.isTouching = false;\n      this.zoomedImageStyle.display = 'none';\n    },\n    handleMouseLeave() {\n      if (!this.isTouching) {\n        this.zoomedImageStyle.display = 'none';\n      }\n    },\n    updateZoomPosition(e) {\n      const { left, top, width, height } = this.$refs.image.getBoundingClientRect();\n\n      const x = e.clientX - left;\n      const y = e.clientY - top;\n\n      const zoomBoxSize = 100;\n\n      // Calcul des déplacements pour centrer l'image zoomée sur le curseur/toucher\n      const zoomedX = -(x * 2 - zoomBoxSize / 2);\n      const zoomedY = -(y * 2 - zoomBoxSize / 2);\n\n      // Positionne l'image zoomée centrée sur le curseur/toucher\n      this.zoomedImageStyle.display = 'block';\n      this.zoomedImageStyle.backgroundImage = `url(${this.$refs.image.src})`;\n      this.zoomedImageStyle.backgroundSize = `${width * 2}px ${height * 2}px`;\n      this.zoomedImageStyle.backgroundPosition = `${zoomedX}px ${zoomedY}px`;\n      this.zoomedImageStyle.top = `${e.clientY - zoomBoxSize * 2 + 60}px`;\n      this.zoomedImageStyle.left = `${e.clientX - zoomBoxSize / 2}px`;\n    },\n  },\n};\n</script>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -13371,7 +13616,7 @@
         "g": "c285048823f34bc0",
         "name": "",
         "valuesConfig": "3da386409fa03189",
-        "valuesConfigName": "Setting metadata",
+        "valuesConfigName": "Setting Metadata",
         "valueId": "3a134aa0-42a3-11ef-89ad-e57161842148",
         "value": "operator_name",
         "command": "read",
@@ -14527,6 +14772,7 @@
         "id": "b5fe8f07ffca93af",
         "type": "ui-template",
         "z": "70f558eb9d60b6fc",
+        "d": true,
         "g": "1ee1c9aa09d0bbcb",
         "group": "0e652f1b8a07fae8",
         "page": "",
@@ -14554,6 +14800,7 @@
         "id": "4cfa923ea2a75c0c",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
+        "d": true,
         "g": "1ee1c9aa09d0bbcb",
         "name": "",
         "valuesConfig": "f90d50097c6eb575",
@@ -14608,6 +14855,7 @@
         "id": "3442a9a7f346f637",
         "type": "persistent value",
         "z": "70f558eb9d60b6fc",
+        "d": true,
         "g": "1ee1c9aa09d0bbcb",
         "name": "",
         "valuesConfig": "f90d50097c6eb575",
@@ -24033,6 +24281,783 @@
         "wires": [
             [
                 "7e44e412732eb023"
+            ]
+        ]
+    },
+    {
+        "id": "28b36eff8f54c6bc",
+        "type": "ui-template",
+        "z": "09720271fb5e1262",
+        "g": "33233301e691aaf6",
+        "group": "29e1be6120618b94",
+        "page": "",
+        "ui": "",
+        "name": "Streaming",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <div class=\"image-wrapper\">\n    <img :src=\"dynamicImageUrl\" class=\"rotated-image\">\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      dynamicImageUrl: ''\n    };\n  },\n  mounted() {\n    this.setDynamicImageUrl();\n  },\n  methods: {\n    setDynamicImageUrl() {\n      const currentUrl = new URL(window.location.href);\n      const baseUrlWithoutPort = currentUrl.protocol + '//' + currentUrl.hostname;\n\n      const relativePath = '/ps/hal/camera/streams/preview.mjpg';\n      const fullUrl = new URL(relativePath, baseUrlWithoutPort);\n\n      this.dynamicImageUrl = fullUrl.href;\n    },\n  },\n};\n</script>\n\n<style scoped>\n.image-wrapper {\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.rotated-image {\n  transform: rotate(90deg);\n  height: 100%; /* Set the height to 100% of the container */\n  width: auto; /* Adjust the width proportionally */\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2fd4c7ca3b252506",
+        "type": "ui-template",
+        "z": "09720271fb5e1262",
+        "group": "d7c24bc572401a73",
+        "page": "",
+        "ui": "",
+        "name": "Measure the Current Saturation Level",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <v-card title=\"Measure the Current Saturation Level\">\n    <v-card-text>\n      Use the color picker to measure the current color value on the streaming :\n      <input class=\"colorpicker\" type=\"color\" v-model=\"selectedColor\" @input=\"onColorInput\" />\n    </v-card-text>\n    <div class=\"progress-container\">\n      <div class=\"progress-bar\" :style=\"progressBarStyle\"></div>\n      <div v-for=\"(label, index) in scaleLabels\" :key=\"index\" :style=\"{ left: label.position + '%' }\" class=\"progress-scale-line\"></div>\n    </div>\n    <div class=\"progress-scale\">\n      <span v-for=\"(label, index) in scaleLabels\" :key=\"index\" :style=\"{ left: label.position + '%' }\" class=\"scale-label\">\n        {{ label.value }}%\n      </span>\n    </div>\n    <v-card-text>\n      The current saturation level is <b>{{ hsl.s }}%</b> and the ideal saturation has to be below 5%. Investigate more by looking at the other data: h: {{ hsl.h }}, s: {{ hsl.s }}%, l: {{ hsl.l }}%.\n    </v-card-text>\n  </v-card>\n</template>\n\n<script>\nexport default {\n  data: () => ({\n    selectedColor: \"#000000\", // Valeur par défaut pour le color picker\n    hsl: { h: 0, s: 0, l: 0 }, \n    scaleLabels: [\n      { value: 1, position: 0 },\n      { value: 5, position: 0 },\n      { value: 10, position: 0 },\n      { value: 20, position: 0 },\n      { value: 50, position: 0 },\n      { value: 100, position: 0 },\n    ],\n  }),\n  computed: {\n    progressBarStyle() {\n      const logScaleValue = this.calculateLogScale(this.hsl.s);\n      return {\n        width: `${logScaleValue}%`,\n        backgroundColor: this.hsl.s < 5 ? '#5cd65c' : '#ea5353',\n      };\n    }\n  },\n  methods: {\n    setColor(hexColor) {\n      this.selectedColor = hexColor;\n    },\n    onColorInput(event) {\n      this.selectedColor = event.target.value;\n      this.hsl = this.hexToHsl(this.selectedColor);\n      this.sendHexColor(); // Envoie la couleur hexadécimale au flux Node-RED\n    },\n    sendHexColor() {\n      // Envoi la couleur hex au flux Node-RED\n      this.send({ acq_wb_hex: this.selectedColor });\n    },\n    hexToHsl(hex) {\n      // Convertir l'hexadécimal en HSL\n      let r = 0,\n        g = 0,\n        b = 0;\n      if (hex.length === 7) {\n        r = parseInt(hex.slice(1, 3), 16);\n        g = parseInt(hex.slice(3, 5), 16);\n        b = parseInt(hex.slice(5, 7), 16);\n      } else if (hex.length === 4) {\n        r = parseInt(hex[1] + hex[1], 16);\n        g = parseInt(hex[2] + hex[2], 16);\n        b = parseInt(hex[3] + hex[3], 16);\n      }\n      r /= 255;\n      g /= 255;\n      b /= 255;\n      const max = Math.max(r, g, b),\n        min = Math.min(r, g, b);\n      let h = 0,\n        s = 0,\n        l = (max + min) / 2;\n      if (max !== min) {\n        const d = max - min;\n        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);\n        switch (max) {\n          case r:\n            h = (g - b) / d + (g < b ? 6 : 0);\n            break;\n          case g:\n            h = (b - r) / d + 2;\n            break;\n          case b:\n            h = (r - g) / d + 4;\n            break;\n        }\n        h /= 6;\n      }\n      return {\n        h: Math.round(h * 360),\n        s: Math.round(s * 100), \n        l: Math.round(l * 100),\n      };\n    },\n    calculateLogScale(value) {\n      // Appliquer une échelle logarithmique\n      const logValue = Math.log10(value + 1); \n      const logMax = Math.log10(101); \n      return (logValue / logMax) * 100;\n    },\n    calculateScalePositions() {\n      // Calculer les positions de l'échelle\n      this.scaleLabels = this.scaleLabels.map(label => ({\n        value: label.value,\n        position: this.calculateLogScale(label.value),\n      }));\n    },\n  },\n  mounted() {\n    this.calculateScalePositions(); \n  },\n};\n</script>\n\n<style>\n.progress-container {\n  position: relative;\n  width: 90%;\n  height: 30px;\n  background-color: #f4f5f6;\n  border-radius: 5px;\n  margin: 10px 5%;\n  border: 1px solid;\n}\n\n.progress-bar {\n  height: 100%;\n  border-radius: 5px;\n  transition: width 0.3s ease;\n}\n\n.progress-scale-line {\n  position: absolute;\n  height: 100%;\n  width: 1px;\n  top: 0;\n  background-color: #000;\n  pointer-events: none;\n}\n\n.progress-scale {\n  position: relative;\n  margin-top: 5px;\n  height: 20px;\n  width: 90%;\n  margin: 10px 5%;\n}\n\n.scale-label {\n  position: absolute;\n  bottom: 0;\n  font-size: 12px;\n  transform: translateX(-50%);\n  color: #000;\n}\n\n.colorpicker {\n  height: 2vw;\n  vertical-align: middle;\n  width: 5vw;\n  border: 1px solid;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 250,
+        "y": 500,
+        "wires": [
+            [
+                "571898cc5636bf38",
+                "1a3f6dbff51e735b",
+                "6c7a3ab08ad8f426"
+            ]
+        ]
+    },
+    {
+        "id": "0cda9812bb671964",
+        "type": "ui-template",
+        "z": "09720271fb5e1262",
+        "group": "d7c24bc572401a73",
+        "page": "",
+        "ui": "",
+        "name": "Display White Balance Settings",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <v-card title=\"Display White Balance Settings\">\n    <v-card-text>\n      <canvas id=\"wbChart\"></canvas>\n    </v-card-text>\n  </v-card>\n</template>\n\n\n\n<script>\nexport default {\n  data() {\n    return {\n      chart: null,\n    };\n  },\n  mounted() {\n    this.$nextTick(() => {\n      this.createChart(); // Initialize the chart after the component is fully mounted\n    });\n  },\n  beforeDestroy() {\n    if (this.chart) {\n      this.chart.destroy(); // Clean up the chart if the component is destroyed\n    }\n  },\n  methods: {\n    createChart(hexColor = '#000000') {\n      const canvas = document.getElementById('wbChart');\n      if (!canvas) {\n        console.error(\"Canvas element not found.\");\n        return;\n      }\n\n      const ctx = canvas.getContext('2d');\n      if (!ctx) {\n        console.error(\"Unable to get canvas context.\");\n        return;\n      }\n\n      const ratios = this.calculateRatiosFromHex(hexColor);\n\n      if (this.chart) {\n        this.chart.destroy(); // Ensure any existing chart is destroyed before creating a new one\n      }\n\n      this.chart = new Chart(ctx, {\n        type: 'scatter',\n        data: {\n          datasets: [\n            {\n              label: 'Current WB',\n              data: [{ x: ratios.bgRatio, y: ratios.rgRatio }],\n              backgroundColor: 'blue',\n              borderColor: 'black',\n              borderWidth: 1,\n              pointRadius: 10,\n              pointHoverRadius: 15,\n            },\n            {\n              label: 'Acceptable WB',\n              data: [{ x: 1, y: 1 }],\n              backgroundColor: '#5cd65c',\n              borderColor: 'black',\n              borderWidth: 1,\n              pointRadius: 50,\n              pointHoverRadius: 55,\n              pointStyle: 'circle',\n              fill: true,\n              showLine: false,\n            },\n          ],\n        },\n        options: {\n          responsive: true,\n          maintainAspectRatio: true,\n          scales: {\n            x: {\n              type: 'linear',\n              position: 'bottom',\n              title: {\n                display: true,\n                text: 'B/G Ratio',\n              },\n              min: 0.8,\n              max: 1.2,\n            },\n            y: {\n              type: 'linear',\n              title: {\n                display: true,\n                text: 'R/G Ratio',\n              },\n              min: 0.8,\n              max: 1.2,\n            },\n          },\n          plugins: {\n            legend: {\n              display: true,\n            },\n          },\n          animation: {\n            duration: 0, // Disabling animations might prevent some update issues\n          },\n        },\n      });\n    },\n    calculateRatiosFromHex(hex) {\n      const r = parseInt(hex.slice(1, 3), 16);\n      const g = parseInt(hex.slice(3, 5), 16);\n      const b = parseInt(hex.slice(5, 7), 16);\n\n      const rgRatio = r / g || 0;\n      const bgRatio = b / g || 0;\n\n      return { rgRatio, bgRatio };\n    },\n  },\n  watch: {\n    msg(newMsg) {\n      if (newMsg && newMsg.acq_wb_hex) {\n        this.createChart(newMsg.acq_wb_hex);\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n#wbChart {\n  width: 100% !important;\n  height: 400px !important;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 910,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "571898cc5636bf38",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "f90d50097c6eb575",
+        "valuesConfigName": "acq_tebedeleted",
+        "valueId": "f9c16ac0-7111-11ef-a8ca-b1b54aa789fc",
+        "value": "wb_hex",
+        "command": "write",
+        "msgProperty": "acq_wb_hex",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 600,
+        "y": 460,
+        "wires": [
+            [
+                "0cda9812bb671964",
+                "3af4f722fb72b11e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f97f0539aedb103b",
+        "type": "ui-template",
+        "z": "09720271fb5e1262",
+        "group": "d7c24bc572401a73",
+        "page": "",
+        "ui": "",
+        "name": "Adjust White Balance Settings",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "head": "",
+        "format": "<template>\n  <v-card title=\"Adjust White Balance Settings\">\n    <v-card-text>\n      Use the suggested values to adjust the white balance based on the color input.\n    </v-card-text>\n    <v-card-text>\n      <v-row>\n        <v-col cols=\"4\"></v-col>\n        <v-col cols=\"4\">Current</v-col>\n        <v-col cols=\"4\">Suggested</v-col>\n      </v-row>\n      <v-row>\n        <v-col cols=\"4\">AWRed</v-col>\n        <v-col cols=\"4\">\n          <v-text-field v-model=\"currentAWRed\" disabled variant=\"outlined\"></v-text-field>\n        </v-col>\n        <v-col cols=\"4\">\n          <v-text-field v-model=\"suggestedAWRed\" variant=\"outlined\"></v-text-field>\n        </v-col>\n      </v-row>\n      <v-row>\n        <v-col cols=\"4\">AWBlue</v-col>\n        <v-col cols=\"4\">\n          <v-text-field v-model=\"currentAWBlue\" disabled variant=\"outlined\"></v-text-field>\n        </v-col>\n        <v-col cols=\"4\">\n          <v-text-field v-model=\"suggestedAWBlue\" variant=\"outlined\"></v-text-field>\n        </v-col>\n      </v-row>\n    </v-card-text>\n    <v-card-actions>\n      <v-btn color=\"primary\" @click=\"sendSettings\" variant=\"outlined\">Apply Settings</v-btn>\n    </v-card-actions>\n  </v-card>\n</template>\n\n<script>\nexport default {\n  props: ['id'],\n  data() {\n    return {\n      currentAWRed: '',\n      currentAWBlue: '',\n      suggestedAWRed: '',\n      suggestedAWBlue: '',\n    };\n  },\n  mounted() {\n    this.setupSocketListeners();\n  },\n  methods: {\n    setupSocketListeners() {\n      if (this.$socket) {\n        this.$socket.on('msg-input:' + this.id, (msg) => {\n          if (msg.acq_wb_red !== undefined) {\n            this.currentAWRed = msg.acq_wb_red;\n          }\n          if (msg.acq_wb_blue !== undefined) {\n            this.currentAWBlue = msg.acq_wb_blue;\n          }\n          if (msg.acq_wb_hex !== undefined) {\n            this.calculateSuggestedAW(msg.acq_wb_hex);\n          }\n        });\n      }\n    },\n    hexToRgb(hex) {\n      hex = hex.replace(/^#/, '');\n      let bigint = parseInt(hex, 16);\n      let r = (bigint >> 16) & 255;\n      let g = (bigint >> 8) & 255;\n      let b = bigint & 255;\n      return { r, g, b };\n    },\n    calculateSuggestedAW(hexColor) {\n      const { r, g, b } = this.hexToRgb(hexColor);\n      let redAdjustment = (g - r) + parseInt(this.currentAWRed, 10);\n      let blueAdjustment = (g - b) + parseInt(this.currentAWBlue, 10);\n      this.suggestedAWRed = Math.max(0, redAdjustment).toString();\n      this.suggestedAWBlue = Math.max(0, blueAdjustment).toString();\n    },\n    sendSettings() {\n      const payload = {\n        payload: {\n          action: \"settings\",\n          settings: {\n            white_balance_gain: {\n              blue: this.suggestedAWBlue,\n              red: this.suggestedAWRed,\n            },\n          },\n        },\n        acq_wb_blue:this.suggestedAWBlue,\n        acq_wb_red:this.suggestedAWRed,\n        \n        topic: \"imager/image\",\n        \n      };\n      this.send(payload);\n    },\n  },\n};\n</script>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1190,
+        "y": 480,
+        "wires": [
+            [
+                "898bc8a622d350fd",
+                "2a8ce78af5d1f59f",
+                "8a5b632ac928bd53",
+                "1186db097086f0fc"
+            ]
+        ]
+    },
+    {
+        "id": "1a3f6dbff51e735b",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "acq",
+        "valueId": "922ad5f0-654e-11ef-a3f3-cd9b589d20f8",
+        "value": "wb_red",
+        "command": "read",
+        "msgProperty": "acq_wb_red",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 870,
+        "y": 540,
+        "wires": [
+            [
+                "f97f0539aedb103b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6c7a3ab08ad8f426",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "acq",
+        "valueId": "1f2c9820-6550-11ef-a3f3-cd9b589d20f8",
+        "value": "wb_blue",
+        "command": "read",
+        "msgProperty": "acq_wb_blue",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 880,
+        "y": 600,
+        "wires": [
+            [
+                "f97f0539aedb103b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3af4f722fb72b11e",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "acq",
+        "valueId": "af8f50e0-6557-11ef-a3f3-cd9b589d20f8",
+        "value": "wb_hex",
+        "command": "read",
+        "msgProperty": "acq_wb_hex",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "f97f0539aedb103b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "898bc8a622d350fd",
+        "type": "mqtt out",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 1470,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "2a8ce78af5d1f59f",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "acq",
+        "valueId": "922ad5f0-654e-11ef-a3f3-cd9b589d20f8",
+        "value": "wb_red",
+        "command": "write",
+        "msgProperty": "acq_wb_red",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1520,
+        "y": 500,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8a5b632ac928bd53",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "842103bc1301dfb9",
+        "valuesConfigName": "acq",
+        "valueId": "1f2c9820-6550-11ef-a3f3-cd9b589d20f8",
+        "value": "wb_blue",
+        "command": "write",
+        "msgProperty": "acq_wb_blue",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1520,
+        "y": 540,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5b819e1c645365d4",
+        "type": "comment",
+        "z": "09720271fb5e1262",
+        "name": "Step 1",
+        "info": "Voici la description en Markdown de la structure donnée :\n\n```markdown\n# Measure the Current Saturation Level\n\nUse the color picker to measure the current color value on the streaming :\n\n```html\n<input class=\"colorpicker\" type=\"color\" v-model=\"selectedColor\" @input=\"onColorInput\" />\n```\n\nA progress bar will display the current saturation level, and a scale will show the saturation percentage:\n\n- The progress bar dynamically reflects the saturation level using an appropriate color:\n  - Green if the saturation is below 5%\n  - Red if the saturation is above 5%\n\n- The scale displays key saturation percentages (1%, 5%, 10%, 20%, 50%, and 100%).\n\n## Current Saturation Information:\n\nThe current saturation level is **{{ hsl.s }}%**. The ideal saturation should be below **5%**.\n\n### Additional data:\n\n- Hue: **{{ hsl.h }}**\n- Saturation: **{{ hsl.s }}%**\n- Lightness: **{{ hsl.l }}%**\n\nYou can investigate more by adjusting the color input or observing other saturation levels.\n\n## Methods Used:\n\n- **hexToHsl(hex)**: Converts the selected color in hexadecimal to HSL values.\n- **calculateLogScale(value)**: Applies a logarithmic scale to the saturation value for accurate progress bar rendering.\n- **calculateScalePositions()**: Positions the scale labels along the logarithmic scale.\n\n## Styles:\n\nThe visual components are styled to be responsive with the following key elements:\n\n- **Progress Container**: The container for the progress bar is a 90% wide, rounded rectangle with a background color of `#f4f5f6` and a border.\n- **Progress Bar**: A dynamic bar that changes width and color based on the saturation value.\n- **Scale Labels and Lines**: Key saturation points are represented with lines and labels positioned along the progress bar.\n- **Color Picker**: The color picker is styled with a fixed width and height for easy interaction.\n\n```",
+        "x": 150,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "070b1be68b02d18d",
+        "type": "comment",
+        "z": "09720271fb5e1262",
+        "name": "Step 2",
+        "info": "Voici la description en Markdown de la structure donnée :\n\n```markdown\n# Adjust White Balance Settings\n\nThis component allows the user to adjust the white balance settings based on the color input and suggested values. It includes fields for both the current and suggested red and blue adjustment values, along with a button to apply the new settings.\n\n## User Interface:\n\n- **Current vs. Suggested Values**: \n  - Two columns are displayed for each value (AWRed and AWBlue), one showing the current value and the other the suggested adjustment.\n  - The current values are disabled, while the suggested values can be manually adjusted.\n\n```html\n<v-row>\n  <v-col cols=\"4\">AWRed</v-col>\n  <v-col cols=\"4\">\n    <v-text-field v-model=\"currentAWRed\" disabled variant=\"outlined\"></v-text-field>\n  </v-col>\n  <v-col cols=\"4\">\n    <v-text-field v-model=\"suggestedAWRed\" variant=\"outlined\"></v-text-field>\n  </v-col>\n</v-row>\n```\n\n- **Apply Settings Button**:\n  - Once the user adjusts the values, the \"Apply Settings\" button allows them to send the adjusted values for further processing.\n\n```html\n<v-btn color=\"primary\" @click=\"sendSettings\">Apply Settings</v-btn>\n```\n\n## Functionalities:\n\n### 1. **Setup Socket Listeners**:\n   - Listens for incoming messages from the socket to update the current red and blue white balance values (`acq_wb_red`, `acq_wb_blue`), and uses the color input (`acq_wb_hex`) to calculate suggested values.\n\n### 2. **Calculate Suggested AW Values**:\n   - Based on the provided hex color, the function calculates the suggested adjustment for the red and blue white balance values.\n   - The formula adjusts the red and blue gains based on the difference between green and red/blue values derived from the hex color.\n\n```javascript\ncalculateSuggestedAW(hexColor) {\n  const { r, g, b } = this.hexToRgb(hexColor);\n  let redAdjustment = (g - r) + parseInt(this.currentAWRed, 10);\n  let blueAdjustment = (g - b) + parseInt(this.currentAWBlue, 10);\n  this.suggestedAWRed = Math.max(0, redAdjustment).toString();\n  this.suggestedAWBlue = Math.max(0, blueAdjustment).toString();\n}\n```\n\n### 3. **Send Adjusted Settings**:\n   - When the \"Apply Settings\" button is clicked, the suggested white balance values for red and blue are packaged and sent to the system.\n\n```javascript\nsendSettings() {\n  const payload = {\n    payload: {\n      action: \"settings\",\n      settings: {\n        white_balance_gain: {\n          blue: this.suggestedAWBlue,\n          red: this.suggestedAWRed,\n        },\n      },\n    },\n    acq_wb_blue: this.suggestedAWBlue,\n    acq_wb_red: this.suggestedAWRed,\n    topic: \"imager/image\",\n  };\n  this.send(payload);\n}\n```\n\n## Methods:\n\n- **hexToRgb(hex)**: Converts a hexadecimal color string into its RGB components.\n- **calculateSuggestedAW(hexColor)**: Calculates the suggested red and blue white balance adjustments based on the provided hex color.\n- **sendSettings()**: Sends the adjusted white balance settings to the system via a payload.\n\n## Style:\n\n- **Text Fields**: Each text field is outlined, with the current values being disabled for editing.\n- **Button**: A primary-colored button is used for applying the settings.\n\n```html\n<v-text-field v-model=\"currentAWRed\" disabled variant=\"outlined\"></v-text-field>\n<v-btn color=\"primary\" @click=\"sendSettings\">Apply Settings</v-btn>\n```\n```",
+        "x": 1110,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bc034241df52012d",
+        "type": "inject",
+        "z": "09720271fb5e1262",
+        "name": "blue:140",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "imager/image",
+        "payload": "{\"action\":\"settings\",\"settings\":{\"white_balance_gain\":{\"blue\":140}}}",
+        "payloadType": "json",
+        "x": 800,
+        "y": 120,
+        "wires": [
+            [
+                "1aa04b0b98a4c84a",
+                "434e28c0f39f69bf"
+            ]
+        ]
+    },
+    {
+        "id": "1aa04b0b98a4c84a",
+        "type": "debug",
+        "z": "09720271fb5e1262",
+        "name": "debug 59",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "434e28c0f39f69bf",
+        "type": "mqtt out",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a973d821cae4ecce",
+        "x": 1190,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "08dd6e6f56991bf0",
+        "type": "inject",
+        "z": "09720271fb5e1262",
+        "name": "red:140",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "imager/image",
+        "payload": "{\"action\":\"settings\",\"settings\":{\"white_balance_gain\":{\"red\":140}}}",
+        "payloadType": "json",
+        "x": 790,
+        "y": 80,
+        "wires": [
+            [
+                "1aa04b0b98a4c84a",
+                "434e28c0f39f69bf"
+            ]
+        ]
+    },
+    {
+        "id": "1383cbc85ee0ac5c",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "f90d50097c6eb575",
+        "valuesConfigName": "acq",
+        "valueId": "f6bed920-7111-11ef-a8ca-b1b54aa789fc",
+        "value": "wb_red",
+        "command": "write",
+        "msgProperty": "payload.acq_wb_red",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1240,
+        "y": 200,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dd310132b5ea4bb4",
+        "type": "mqtt in",
+        "z": "09720271fb5e1262",
+        "name": "Listen imager status",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a973d821cae4ecce",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 1230,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f30d5fd482a612e6",
+        "type": "inject",
+        "z": "09720271fb5e1262",
+        "name": "red:140",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "imager/image",
+        "payload": "{\"acq_wb_red\":140}",
+        "payloadType": "json",
+        "x": 790,
+        "y": 260,
+        "wires": [
+            [
+                "1383cbc85ee0ac5c"
+            ]
+        ]
+    },
+    {
+        "id": "c66a6008b6b60ed1",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "f90d50097c6eb575",
+        "valuesConfigName": "acq",
+        "valueId": "eab66760-7111-11ef-a8ca-b1b54aa789fc",
+        "value": "wb_blue",
+        "command": "write",
+        "msgProperty": "payload.acq_wb_blue",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 1240,
+        "y": 260,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "83076d0f1b485010",
+        "type": "inject",
+        "z": "09720271fb5e1262",
+        "name": "blue:140",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "imager/image",
+        "payload": "{\"acq_wb_blue\":140}",
+        "payloadType": "json",
+        "x": 800,
+        "y": 300,
+        "wires": [
+            [
+                "c66a6008b6b60ed1"
+            ]
+        ]
+    },
+    {
+        "id": "be03ce83550ac20a",
+        "type": "inject",
+        "z": "09720271fb5e1262",
+        "name": "red:340",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "imager/image",
+        "payload": "{\"action\":\"settings\",\"settings\":{\"white_balance_gain\":{\"red\":340}}}",
+        "payloadType": "json",
+        "x": 790,
+        "y": 160,
+        "wires": [
+            [
+                "434e28c0f39f69bf"
+            ]
+        ]
+    },
+    {
+        "id": "8d8e4c8ea2bcbb19",
+        "type": "inject",
+        "z": "09720271fb5e1262",
+        "name": "red:340",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "imager/image",
+        "payload": "{\"acq_wb_red\":340}",
+        "payloadType": "json",
+        "x": 790,
+        "y": 220,
+        "wires": [
+            [
+                "1383cbc85ee0ac5c"
+            ]
+        ]
+    },
+    {
+        "id": "1186db097086f0fc",
+        "type": "debug",
+        "z": "09720271fb5e1262",
+        "name": "debug 61",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "3970c766e004ec30",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "f90d50097c6eb575",
+        "valuesConfigName": "acq_tebedeleted",
+        "valueId": "f6bed920-7111-11ef-a8ca-b1b54aa789fc",
+        "value": "wb_red",
+        "command": "write",
+        "msgProperty": "payload",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 600,
+        "y": 320,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "388854d062f69fa0",
+        "type": "inject",
+        "z": "09720271fb5e1262",
+        "name": "red:340",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "340",
+        "payloadType": "str",
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "3970c766e004ec30",
+                "f64943075313548f"
+            ]
+        ]
+    },
+    {
+        "id": "f64943075313548f",
+        "type": "debug",
+        "z": "09720271fb5e1262",
+        "name": "debug 62",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f1278bdf31f9aa01",
+        "type": "persistent value",
+        "z": "09720271fb5e1262",
+        "name": "",
+        "valuesConfig": "f90d50097c6eb575",
+        "valuesConfigName": "acq_tebedeleted",
+        "valueId": "b33a7620-63b8-11ef-896a-298ca7d12c69",
+        "value": "volume",
+        "command": "write",
+        "msgProperty": "payload.volume",
+        "dynamicControl": false,
+        "dynamicCommandMsgProperty": "command",
+        "dynamicValueMsgProperty": "topic",
+        "deepCloneValue": false,
+        "outputPreviousValue": false,
+        "outputPreviousValueMsgProperty": "previous_value",
+        "collectValues": false,
+        "collectValuesMsgProperty": "values",
+        "blockIfEnable": false,
+        "blockIfRule": "eq",
+        "blockIfCompareValue": "true",
+        "outputMetaData": false,
+        "outputMetaDataMsgProperty": "meta",
+        "x": 600,
+        "y": 220,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "67c5c8bcfeec8bf4",
+        "type": "inject",
+        "z": "09720271fb5e1262",
+        "name": "volume:340",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"volume\":340}",
+        "payloadType": "json",
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "f1278bdf31f9aa01"
             ]
         ]
     }
