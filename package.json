@@ -4,8 +4,7 @@
     "version": "0.0.1",
     "dependencies": {
         "@waldbaer/node-red-persistent-values": "1.6.0",
-        "@flowfuse/node-red-dashboard": "1.12.2",
-        "@prescient-devices/node-red-contrib-downloadfile": "1.1.0"
+        "@flowfuse/node-red-dashboard": "1.12.2"
     },
     "node-red": {
         "settings": {
