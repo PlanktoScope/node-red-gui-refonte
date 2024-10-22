@@ -945,7 +945,7 @@
         "page": "",
         "ui": "",
         "name": "2. Measure the Current Saturation Level",
-        "order": 3,
+        "order": 4,
         "width": 0,
         "height": 0,
         "head": "",
@@ -972,7 +972,7 @@
         "page": "",
         "ui": "",
         "name": "3. Display White Balance Settings",
-        "order": 4,
+        "order": 5,
         "width": "4",
         "height": "1",
         "head": "",
@@ -997,7 +997,7 @@
         "page": "",
         "ui": "",
         "name": "4. Adjust White Balance Settings",
-        "order": 5,
+        "order": 6,
         "width": "4",
         "height": "1",
         "head": "",
@@ -1146,7 +1146,7 @@
         "page": "",
         "ui": "",
         "name": "1. Reset the value of the gains",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "head": "",
@@ -1163,7 +1163,8 @@
                 "4c7717ee07b97e8b",
                 "0fa68c34208c36d2",
                 "958aac3964d0faf4",
-                "857257c8697a3b76"
+                "857257c8697a3b76",
+                "778ef58f071d9dc0"
             ]
         ]
     },
@@ -1314,7 +1315,7 @@
         "page": "",
         "ui": "",
         "name": "Step Bar",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "head": "",
@@ -1573,6 +1574,72 @@
                 "a99be895898a4f2f"
             ]
         ]
+    },
+    {
+        "id": "64813761dc02b452",
+        "type": "ui-switch",
+        "z": "6426e7bea6900426",
+        "name": "Switch LED",
+        "label": "Switch LED (label)",
+        "group": "af8acdfe9afbad74",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "pump",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "e593ddbbe78ae702"
+            ]
+        ]
+    },
+    {
+        "id": "e593ddbbe78ae702",
+        "type": "debug",
+        "z": "6426e7bea6900426",
+        "name": "debug 70",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "778ef58f071d9dc0",
+        "type": "debug",
+        "z": "6426e7bea6900426",
+        "name": "debug 71",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 420,
+        "wires": []
     },
     {
         "id": "300c2d2496f1d12d",
